@@ -3,28 +3,33 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-21 18:09+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-21 21:19+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../Doc/about.rst:3
 msgid "About these documents"
-msgstr ""
+msgstr "Riguardo questa documentazione"
 
 #: ../Doc/about.rst:6
 msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_, "
 "a document processor specifically written for the Python documentation."
 msgstr ""
+"Questi documenti sono stati generati da `Sphinx`_ a partire da sorgenti "
+"`reStructuredText`_, un elaboratore di documenti appositamente scritto per "
+"la documentazione di Python."
 
 #: ../Doc/about.rst:15
 msgid ""
@@ -33,32 +38,44 @@ msgid ""
 "look at the :ref:`reporting-bugs` page for information on how to do so.  New "
 "volunteers are always welcome!"
 msgstr ""
+"Lo sviluppo della documentazione e della sua toolchain è uno lavoro svolto "
+"esclusivamente da volontari, proprio come lo stesso Python.  Se si desidera "
+"contribuire, si prega di dare un'occhiata alla pagina :ref:`reporting-bugs` "
+"per avere maggiori informazioni su come farlo.  Nuovi volontari sono sempre "
+"i benvenuti!"
 
 #: ../Doc/about.rst:20
 msgid "Many thanks go to:"
-msgstr ""
+msgstr "Molte grazie a:"
 
 #: ../Doc/about.rst:22
 msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset "
 "and writer of much of the content;"
 msgstr ""
+"Fred L. Drake, Jr., il creatore del software per generare  documentazione "
+"Python e scrittore di gran parte del contenuto;"
 
 #: ../Doc/about.rst:24
 msgid ""
 "the `Docutils <http://docutils.sourceforge.net/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
 msgstr ""
+"il progetto `Docutils <http://docutils.sourceforge.net/>`_ per la creazione "
+"di reStructuredText e della suite Docutils;"
 
 #: ../Doc/about.rst:26
 msgid ""
 "Fredrik Lundh for his `Alternative Python Reference <http://effbot.org/zone/"
 "pyref.htm>`_ project from which Sphinx got many good ideas."
 msgstr ""
+"Fredrik Lundh per il suo progetto `Alternative Python Reference <http://"
+"effbot.org/zone/pyref.htm>`_ da cui Sphinx ha preso in prestito molte buone "
+"idee."
 
 #: ../Doc/about.rst:32
 msgid "Contributors to the Python Documentation"
-msgstr ""
+msgstr "Volontari che hanno contribuito alla documentazione di Python"
 
 #: ../Doc/about.rst:34
 msgid ""
@@ -66,9 +83,15 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
+"Molte persone hanno contribuito a scrivere il linguaggio Python, la libreria "
+"standard di Python e la documentazione di Python.  Per conoscere un elenco "
+"parziale dei volontari è possibile visitare la pagina :source:`Misc/ACKS`, "
+"presente nel codice sorgente della distribuzione Python."
 
 #: ../Doc/about.rst:38
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
+"È solo con il contributo dei membri della comunità di Python che Python ha "
+"una documentazione così meravigliosa — Grazie!"
