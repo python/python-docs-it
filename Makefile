@@ -13,7 +13,7 @@
 # documented in gen/src/3.6/Doc/Makefile as we're only delegating the
 # real work to the Python Doc Makefile.
 
-CPYTHON_CLONE := ../
+CPYTHON_CLONE := ../cpython/
 SPHINX_CONF := $(CPYTHON_CLONE)/Doc/conf.py
 LANGUAGE := {{cookiecutter.language}}
 VENV := ~/.venvs/python-docs-i18n/
