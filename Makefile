@@ -15,7 +15,7 @@
 
 CPYTHON_CLONE := ../cpython/
 SPHINX_CONF := $(CPYTHON_CLONE)/Doc/conf.py
-LANGUAGE := {{cookiecutter.language}}
+LANGUAGE := it_IT
 VENV := ~/.venvs/python-docs-i18n/
 PYTHON := $(shell which python3)
 MODE := html
