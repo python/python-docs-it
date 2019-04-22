@@ -3,26 +3,28 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-21 18:09+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-22 10:36+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../Doc/tutorial/interpreter.rst:5
 msgid "Using the Python Interpreter"
-msgstr ""
+msgstr "Uso dell'interprete di Python"
 
 #: ../Doc/tutorial/interpreter.rst:11
 msgid "Invoking the Interpreter"
-msgstr ""
+msgstr "Invocazione dell'interprete"
 
 #: ../Doc/tutorial/interpreter.rst:13
 msgid ""
@@ -31,6 +33,10 @@ msgid ""
 "local/bin` in your Unix shell's search path makes it possible to start it by "
 "typing the command:"
 msgstr ""
+"L'interprete Python è solitamente installato come :file:`/usr/local/bin/"
+"python3.7` su quelle macchine dove è disponibile; aggiungere :file:`/usr/usr/"
+"local/bin` al path di ricerca della vostra shell Unix rende possibile "
+"avviarlo digitando il comando:"
 
 #: ../Doc/tutorial/interpreter.rst:21
 msgid ""
@@ -39,6 +45,11 @@ msgid ""
 "local Python guru or system administrator.  (E.g., :file:`/usr/local/python` "
 "is a popular alternative location.)"
 msgstr ""
+"alla shell. [#]_ Poiché la scelta della cartella in cui è situato "
+"l'interprete è un'opzione di installazione, è possibile trovarlo anche in "
+"altri percorsi; verificate con il vostro guru Python o con l'amministratore "
+"di sistema.  (Ad esempio, :file:`/usr/local/python` è un'alternativa "
+"popolare.)"
 
 #: ../Doc/tutorial/interpreter.rst:26
 msgid ""
@@ -47,6 +58,11 @@ msgid ""
 "To add this directory to your path,  you can type the following command "
 "into :ref:`a command prompt window <faq-run-program-under-windows>`::"
 msgstr ""
+"Sulle macchine Windows, l'installazione di Python si trova solitamente in :"
+"file:`C:\\\\Python37`, anche se è possibile cambiarlo quando si esegue "
+"l’installazione.  Per aggiungere questa directory al proprio percorso, è "
+"possibile digitare il seguente comando in :ref:`a command prompt window <faq-"
+"run-program-under-windows>`::"
 
 #: ../Doc/tutorial/interpreter.rst:33
 msgid ""
@@ -55,6 +71,10 @@ msgid ""
 "exit status.  If that doesn't work, you can exit the interpreter by typing "
 "the following command: ``quit()``."
 msgstr ""
+"Digitando un carattere di fine file (:kbd:`Control-D` su Unix, :kbd:`Control-"
+"Z` su Windows) nel prompt, l'interprete esce con stato zero.  Se non "
+"funziona, è possibile uscire dall'interprete digitando il seguente comando: "
+"``quit()``."
 
 #: ../Doc/tutorial/interpreter.rst:38
 msgid ""
@@ -67,6 +87,16 @@ msgid ""
 "echoed, command line editing isn't available; you'll only be able to use "
 "backspace to remove characters from the current line."
 msgstr ""
+"Le funzioni di editing di linea dell'interprete includono l'editing "
+"interattivo, la sostituzione della storia e il completamento del codice su "
+"sistemi che supportano la lettura in linea.  Forse il controllo più veloce "
+"per vedere se la modifica da riga di comando è supportata è digitando :kbd:"
+"`Control-P` al primo prompt di Python che si ottiene.  Se emette un segnale "
+"acustico, si ha una modifica da riga di comando; vedere Appendix :ref:`tut-"
+"interacting` per un'introduzione alle combinazioni di tasti.  Se non vi "
+"sembra accada nulla, o se vedete la stringa ``^P``, la modifica a riga di "
+"comando non è disponibile; potrai usare solo il backspace per rimuovere i "
+"caratteri dalla riga corrente."
 
 #: ../Doc/tutorial/interpreter.rst:47
 msgid ""
@@ -75,6 +105,11 @@ msgid ""
 "interactively; when called with a file name argument or with a file as "
 "standard input, it reads and executes a *script* from that file."
 msgstr ""
+"L'interprete opera in maniera simile alla shell Unix: quando viene chiamato "
+"con lo *standard input* collegato ad un dispositivo tty, legge ed esegue i "
+"comandi in modo interattivo; quando viene chiamato con un nome di file come "
+"argomento o con un file come *standard input*, legge ed esegue un *script* "
+"da quel file."
 
 #: ../Doc/tutorial/interpreter.rst:52
 msgid ""
@@ -84,6 +119,11 @@ msgid ""
 "characters that are special to the shell, it is usually advised to quote "
 "*command* in its entirety with single quotes."
 msgstr ""
+"Un secondo modo di iniziare l'interprete è ``python -c command [arg] ...``, "
+"che esegue le istruzioni in *command*, analogamente all'opzione :option:`-"
+"c`.  Poiché le istruzioni di Python spesso contengono spazi o altri "
+"caratteri speciali per la shell, di solito si consiglia di racchiudere "
+"*command*, nella sua interezza, con apici singoli."
 
 #: ../Doc/tutorial/interpreter.rst:58
 msgid ""
@@ -91,6 +131,10 @@ msgid ""
 "``python -m module [arg] ...``, which executes the source file for *module* "
 "as if you had spelled out its full name on the command line."
 msgstr ""
+"Alcuni moduli Python sono utili anche come script.  Questi possono essere "
+"invocati usando ``python -m module [arg] ...``, che esegue il file sorgente "
+"del *modulo* come se tu avessi scritto il suo nome completo sulla riga di "
+"comando."
 
 #: ../Doc/tutorial/interpreter.rst:62
 msgid ""
@@ -98,14 +142,19 @@ msgid ""
 "script and enter interactive mode afterwards.  This can be done by passing :"
 "option:`-i` before the script."
 msgstr ""
+"Quando si utilizza un file di script, a volte è utile essere in grado di "
+"eseguire lo script ed entrare in modalità interattiva in seguito.  Questo "
+"può essere fatto passando :option:`-i` prima dello script."
 
 #: ../Doc/tutorial/interpreter.rst:66
 msgid "All command line options are described in :ref:`using-on-general`."
 msgstr ""
+"Tutte le opzioni della riga di comando sono descritte in :ref:`using-on-"
+"general`."
 
 #: ../Doc/tutorial/interpreter.rst:72
 msgid "Argument Passing"
-msgstr ""
+msgstr "Passare Argomenti"
 
 #: ../Doc/tutorial/interpreter.rst:74
 msgid ""
@@ -122,10 +171,24 @@ msgid ""
 "interpreter's option processing but left in ``sys.argv`` for  the command or "
 "module to handle."
 msgstr ""
+"Una volta resi noti all'interprete, il nome dello script e gli argomenti "
+"aggiuntivi vengono poi trasformati in una lista di stringhe e assegnati alla "
+"variabile ``argv`` nel modulo ``sys``.  È possibile accedere a questa lista "
+"eseguendo ``importa sys``.  La lunghezza della lista è almeno una; quando "
+"non viene dato alcuno script e nessun argomento, ``sys.argv[0]`` è una "
+"stringa vuota.  Quando il nome dello script è dato come ``'-'`` (che "
+"significa ingresso standard), ``sys.argv[0]`` è settato a ``’-‘``. Quando è "
+"usato il *comando* :option:`-c`, ``sys.argv[0]`` viene settato a ``’-c’``.  "
+"Quando viene usato il *modulo* :option:`-m`, ``sys.argv[0]``  viene "
+"impostato con il nome completo del modulo. Tutte le opzioni trovate dopo i "
+"comandi :option:`-c` o i moduli :option:`-m` non vengono consumati "
+"dell’interprete di Python che processa le opzioni, ma vengono lasciate in "
+"``sys.argv`` in modo che vengano poi gestite manualmente dal comando o dal "
+"modulo."
 
 #: ../Doc/tutorial/interpreter.rst:90
 msgid "Interactive Mode"
-msgstr ""
+msgstr "Modalità Interattiva"
 
 #: ../Doc/tutorial/interpreter.rst:92
 msgid ""
@@ -136,24 +199,36 @@ msgid ""
 "dots (``...``). The interpreter prints a welcome message stating its version "
 "number and a copyright notice before printing the first prompt:"
 msgstr ""
+"Quando i comandi vengono letti da una tty, l'interprete è detto essere in "
+"*modo interattivo*.  In questa modalità richiede il comando successivo con "
+"il *prompt*, di solito tre simboli di *maggiore di* (``>>>``); per le linee "
+"di continuazione viene emesso un *prompt* secondario, che per impostazione "
+"predefinita consiste di tre punti (``...``). L'interprete stampa un "
+"messaggio di benvenuto indicando il numero di versione e un avviso di "
+"copyright prima di stampare il *prompt*:"
 
 #: ../Doc/tutorial/interpreter.rst:109
 msgid ""
 "Continuation lines are needed when entering a multi-line construct. As an "
 "example, take a look at this :keyword:`if` statement::"
 msgstr ""
+"Le linee di continuazione sono necessarie quando si inserisce un costrutto "
+"su più linee. Come esempio, date un'occhiata a questa dichiarazione :keyword:"
+"`if`::"
 
 #: ../Doc/tutorial/interpreter.rst:119
 msgid "For more on interactive mode, see :ref:`tut-interac`."
 msgstr ""
+"Per ulteriori informazioni sulla modalità interattiva, vedere :ref:`tut-"
+"interac`."
 
 #: ../Doc/tutorial/interpreter.rst:125
 msgid "The Interpreter and Its Environment"
-msgstr ""
+msgstr "L'interprete e il suo ambiente"
 
 #: ../Doc/tutorial/interpreter.rst:131
 msgid "Source Code Encoding"
-msgstr ""
+msgstr "Codifica del codice sorgente"
 
 #: ../Doc/tutorial/interpreter.rst:133
 msgid ""
@@ -165,22 +240,35 @@ msgid ""
 "properly, your editor must recognize that the file is UTF-8, and it must use "
 "a font that supports all the characters in the file."
 msgstr ""
+"Per impostazione predefinita, i file sorgente di Python sono trattati come "
+"codificati in UTF-8.  In questa codifica, i caratteri della maggior parte "
+"delle lingue del mondo possono essere usati simultaneamente in stringhe, "
+"variabili e commenti --- la libreria standard tuttavia usa solo caratteri "
+"ASCII per le variabili, una convenzione che ogni codice portatile dovrebbe "
+"seguire.  Per visualizzare correttamente tutti questi caratteri, l'editor "
+"deve riconoscere che il file è UTF-8, e deve utilizzare un font che supporti "
+"tutti i caratteri del file."
 
 #: ../Doc/tutorial/interpreter.rst:141
 msgid ""
 "To declare an encoding other than the default one, a special comment line "
 "should be added as the *first* line of the file.  The syntax is as follows::"
 msgstr ""
+"Per dichiarare una codifica diversa da quella predefinita, è necessario "
+"aggiungere un commento speciale come *prima* riga del file.  La sintassi è "
+"la seguente::"
 
 #: ../Doc/tutorial/interpreter.rst:146
 msgid "where *encoding* is one of the valid :mod:`codecs` supported by Python."
-msgstr ""
+msgstr "dove *codifica* è uno dei :mod:`codecs` validi supportati da Python."
 
 #: ../Doc/tutorial/interpreter.rst:148
 msgid ""
 "For example, to declare that Windows-1252 encoding is to be used, the first "
 "line of your source code file should be::"
 msgstr ""
+"Per esempio, per dichiarare che deve essere usata la codifica Windows-1252, "
+"la prima riga del file del codice sorgente dovrebbe essere::"
 
 #: ../Doc/tutorial/interpreter.rst:153
 msgid ""
@@ -188,10 +276,14 @@ msgid ""
 "a :ref:`UNIX \"shebang\" line <tut-scripts>`.  In this case, the encoding "
 "declaration should be added as the second line of the file.  For example::"
 msgstr ""
+"Un'eccezione alla regola della *prima linea* è quando il codice sorgente "
+"inizia con una linea :ref:`UNIX “shebang” line <tut-scripts>`. In questo "
+"caso, la dichiarazione della codifica dovrebbe essere aggiunta come seconda "
+"riga del file.  Per esempio::"
 
 #: ../Doc/tutorial/interpreter.rst:161
 msgid "Footnotes"
-msgstr ""
+msgstr "Note"
 
 #: ../Doc/tutorial/interpreter.rst:162
 msgid ""
@@ -199,3 +291,6 @@ msgid ""
 "executable named ``python``, so that it does not conflict with a "
 "simultaneously installed Python 2.x executable."
 msgstr ""
+"Su Unix, l'interprete Python 3.x non è installato di default con "
+"l'eseguibile chiamato ``python``, in modo che non sia in conflitto con un "
+"eseguibile Python 2.x installato contemporaneamente."
