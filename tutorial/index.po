@@ -3,22 +3,24 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-21 18:09+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-22 09:15+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../Doc/tutorial/index.rst:5
 msgid "The Python Tutorial"
-msgstr ""
+msgstr "Tutorial su Python"
 
 #: ../Doc/tutorial/index.rst:7
 msgid ""
@@ -28,6 +30,13 @@ msgid ""
 "with its interpreted nature, make it an ideal language for scripting and "
 "rapid application development in many areas on most platforms."
 msgstr ""
+"Python è un linguaggio di programmazione potente e facile da imparare. "
+"Dispone di strutture di dati efficienti e di alto livello e di un approccio "
+"semplice ma efficace alla programmazione orientata agli oggetti. La sintassi "
+"elegante e la tipizzazione dinamica di Python, insieme alla sua natura "
+"interpretata, ne fanno un linguaggio ideale per lo scripting e il rapido "
+"sviluppo di applicazioni in molte aree per la maggior parte delle "
+"piattaforme."
 
 #: ../Doc/tutorial/index.rst:13
 msgid ""
@@ -37,6 +46,12 @@ msgid ""
 "site also contains distributions of and pointers to many free third party "
 "Python modules, programs and tools, and additional documentation."
 msgstr ""
+"L'interprete Python e l'ampia libreria standard sono liberamente disponibili "
+"in forma di codici sorgenti o binari per tutte le principali piattaforme dal "
+"sito web di Python, https://www.python.org/, e possono essere distribuiti "
+"gratuitamente. Lo stesso sito contiene anche distribuzioni e link a molti "
+"moduli, programmi e strumenti Python di terze parti gratuiti e "
+"documentazione aggiuntiva."
 
 #: ../Doc/tutorial/index.rst:19
 msgid ""
@@ -44,6 +59,10 @@ msgid ""
 "implemented in C or C++ (or other languages callable from C). Python is also "
 "suitable as an extension language for customizable applications."
 msgstr ""
+"L'interprete Python è facilmente ampliabile con nuove funzioni e tipi di "
+"dati implementati in C o C+++ (o altri linguaggi richiamabili da C). Python "
+"è adatto anche come linguaggio di estensione per applicazioni "
+"personalizzabili."
 
 #: ../Doc/tutorial/index.rst:23
 msgid ""
@@ -52,6 +71,10 @@ msgid ""
 "interpreter handy for hands-on experience, but all examples are self-"
 "contained, so the tutorial can be read off-line as well."
 msgstr ""
+"Questo tutorial introduce il lettore in modo informale ai concetti di base e "
+"alle caratteristiche del linguaggio e del sistema Python. Aiuta ad avere un "
+"interprete Python a portata di mano per un'esperienza pratica, ma tutti gli "
+"esempi sono autonomi, così il tutorial può essere letto anche off-line."
 
 #: ../Doc/tutorial/index.rst:28
 msgid ""
@@ -60,6 +83,11 @@ msgid ""
 "language.  To write extensions in C or C++, read :ref:`extending-index` and :"
 "ref:`c-api-index`. There are also several books covering Python in depth."
 msgstr ""
+"Per una descrizione degli oggetti e dei moduli standard, si veda :ref:"
+"`library-index`. :ref:`reference-index` fornisce una definizione più formale "
+"del linguaggio.  Per scrivere le estensioni in C o C+++, si legga :ref:"
+"`extending-index` e :ref:`c-api-index`. Ci sono anche diversi libri che "
+"coprono Python in profondità."
 
 #: ../Doc/tutorial/index.rst:33
 msgid ""
@@ -70,7 +98,14 @@ msgid ""
 "write Python modules and programs, and you will be ready to learn more about "
 "the various Python library modules described in :ref:`library-index`."
 msgstr ""
+"Questo tutorial non vuole essere completo e coprire ogni singola "
+"caratteristica, come pure ogni caratteristica usata comunemente. Invece, "
+"introduce molte delle caratteristiche più importanti di Python, e vi darà "
+"una buona idea sullo stile del linguaggio. Dopo averlo letto, sarete in "
+"grado di leggere e scrivere moduli e programmi Python, e sarete pronti per "
+"saperne di più sui vari moduli della libreria Python, i quali sono descritti "
+"in :ref:`library-index`."
 
 #: ../Doc/tutorial/index.rst:40
 msgid "The :ref:`glossary` is also worth going through."
-msgstr ""
+msgstr "Anche il :ref:`glossary` vale la pena di essere sfogliato."
