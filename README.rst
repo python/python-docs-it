@@ -153,9 +153,19 @@ translate untranslated ones (find them using ``make todo``)..
 Where to get help
 ~~~~~~~~~~~~~~~~~
 
+The coordinator for this translation is `acucci <https://www.alessandrocucci.it/>`_.
+
+Feel free to ask your questions on the ``#python-it`` channel on `freenode
+<https://webchat.freenode.net/>`_ (does not require registration)
+
 
 Translation Resources
 ---------------------
+
+- IRC channel `#python-it <http://irc.lc/freenode/python-it>`_ on freenode.
+- The `doc-sig mailing list
+  <https://mail.python.org/mailman/listinfo/doc-sig>`_.
+- `deepl.com/translator <https://www.deepl.com>`_
 
 
 Glossary
@@ -172,12 +182,12 @@ you may use
 ========================== ===========================================
 Term                       Proposed Translation
 ========================== ===========================================
--like                      similmente a
+-like                      di tipo
 abstract data type         tipo dato astratto
 argument                   argomento
-backslash                  *backslash*
+backslash                  barra rovescia, *backslash*
 bound                      legato a
-bug                        *bug*
+bug                        errore, *bug*
 built-in                   integrato   
 call stack                 pila
 debugging                  *debugging*
@@ -201,8 +211,8 @@ regular expression         espressione regolare
 return                     ritorno 
 simple quote               singoli apici
 socket                     *socket*
-statement                  frase
-subprocess                 sotto-processo
+statement                  dichiarazione
+subprocess                 sottoprocesso
 thread                     *thread*
 underscore                 *underscore*
 expression                 espressione
