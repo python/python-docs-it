@@ -38,7 +38,7 @@ You can contribute using:
 
 - Github
 - `transifex <https://www.transifex.com/python-doc/public/>`_
-- Or just by opening `an issue on github <https://github.com/alessandrocucci/python-docs-it/issues>`_
+- Or just by opening `an issue on github <https://github.com/python/python-docs-it/issues>`_
 
 
 Contributing using Github
@@ -56,7 +56,7 @@ Prerequisites:
 Let's start:
 
 You'll need to fork the `python-docs-it
-<https://github.com/alessandrocucci/python-docs-it>`_ clicking its ``Fork``
+<https://github.com/python/python-docs-it>`_ clicking its ``Fork``
 button. This creates a copy of the whole project on your github
 account: a place where you have the rights to do modifications.
 
@@ -71,7 +71,7 @@ Step by step:
     cd python-docs-it/
 
     # Add the upstream (the public repository) using HTTPS (won't ask for password):
-    git remote add upstream https://github.com/alessandrocucci/python-docs-it.git
+    git remote add upstream https://github.com/python/python-docs-it.git
 
 All the translations must be made on the latest release.
 We never translate on an oldest version, by example, the latest python release
@@ -106,7 +106,7 @@ Now you're ready to start a work session, each time you'll start a new task, sta
 
     # The previous command will print you a link to open a PR on github.
     # If you missed it, just go to
-    # https://github.com/alessandrocucci/python-docs-it/ and a nice "Compare & pull request"
+    # https://github.com/python/python-docs-it and a nice "Compare & pull request"
     # button should appear after a few seconds telling you can ask for a pull request.
 
     # Now someone is reviewing your modifications, and you'll want to fix their
