@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -221,7 +222,7 @@ msgstr ""
 
 #: ../Doc/extending/embedding.rst:199
 msgid ""
-"Upon return of the function, ``pValue`` is either *NULL* or it contains a "
+"Upon return of the function, ``pValue`` is either ``NULL`` or it contains a "
 "reference to the return value of the function.  Be sure to release the "
 "reference after examining the value."
 msgstr ""
@@ -303,8 +304,8 @@ msgstr ""
 
 #: ../Doc/extending/embedding.rst:304
 msgid ""
-"``pythonX.Y-config --ldflags`` will give you the recommended flags when "
-"linking:"
+"``pythonX.Y-config --ldflags --embed`` will give you the recommended flags "
+"when linking:"
 msgstr ""
 
 #: ../Doc/extending/embedding.rst:313

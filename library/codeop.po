@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -78,11 +79,12 @@ msgstr ""
 #: ../Doc/library/codeop.rst:45
 msgid ""
 "The *symbol* argument determines whether *source* is compiled as a statement "
-"(``'single'``, the default) or as an :term:`expression` (``'eval'``).  Any "
-"other value will cause :exc:`ValueError` to  be raised."
+"(``'single'``, the default), as a sequence of statements (``'exec'``) or as "
+"an :term:`expression` (``'eval'``).  Any other value will cause :exc:"
+"`ValueError` to  be raised."
 msgstr ""
 
-#: ../Doc/library/codeop.rst:51
+#: ../Doc/library/codeop.rst:52
 msgid ""
 "It is possible (but not likely) that the parser stops parsing with a "
 "successful outcome before reaching the end of the source; in this case, "
@@ -91,7 +93,7 @@ msgid ""
 "This will be fixed once the API for the parser is better."
 msgstr ""
 
-#: ../Doc/library/codeop.rst:60
+#: ../Doc/library/codeop.rst:61
 msgid ""
 "Instances of this class have :meth:`__call__` methods identical in signature "
 "to the built-in function :func:`compile`, but with the difference that if "
@@ -100,7 +102,7 @@ msgid ""
 "statement in force."
 msgstr ""
 
-#: ../Doc/library/codeop.rst:69
+#: ../Doc/library/codeop.rst:70
 msgid ""
 "Instances of this class have :meth:`__call__` methods identical in signature "
 "to :func:`compile_command`; the difference is that if the instance compiles "

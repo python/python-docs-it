@@ -8,16 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/pyclbr.rst:2
-msgid ":mod:`pyclbr` --- Python class browser support"
+msgid ":mod:`pyclbr` --- Python module browser support"
 msgstr ""
 
 #: ../Doc/library/pyclbr.rst:9
@@ -45,7 +46,13 @@ msgid ""
 "code."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:35
+#: ../Doc/library/pyclbr.rst:32
+msgid ""
+"This function is the original interface and is only kept for back "
+"compatibility.  It returns a filtered version of the following."
+msgstr ""
+
+#: ../Doc/library/pyclbr.rst:38
 msgid ""
 "Return a dictionary-based tree containing a function or class descriptors "
 "for each function and class defined in the module with a ``def`` or "
@@ -57,80 +64,86 @@ msgid ""
 "value is a list containing the package search path."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:45
+#: ../Doc/library/pyclbr.rst:48
 msgid ""
 "Descriptors for nested definitions.  They are accessed through the new "
-"children attibute.  Each has a new parent attribute."
+"children attribute.  Each has a new parent attribute."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:49
+#: ../Doc/library/pyclbr.rst:52
 msgid ""
 "The descriptors returned by these functions are instances of Function and "
 "Class classes.  Users are not expected to create instances of these classes."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:57
+#: ../Doc/library/pyclbr.rst:60
 msgid "Function Objects"
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:58
+#: ../Doc/library/pyclbr.rst:61
 msgid ""
 "Class :class:`Function` instances describe functions defined by def "
 "statements.  They have the following attributes:"
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:64
+#: ../Doc/library/pyclbr.rst:67
 msgid "Name of the file in which the function is defined."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:69
+#: ../Doc/library/pyclbr.rst:72
 msgid "The name of the module defining the function described."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:74
+#: ../Doc/library/pyclbr.rst:77
 msgid "The name of the function."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:79 ../Doc/library/pyclbr.rst:122
+#: ../Doc/library/pyclbr.rst:82 ../Doc/library/pyclbr.rst:132
 msgid "The line number in the file where the definition starts."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:84
+#: ../Doc/library/pyclbr.rst:87
 msgid "For top-level functions, None.  For nested functions, the parent."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:91 ../Doc/library/pyclbr.rst:134
+#: ../Doc/library/pyclbr.rst:94 ../Doc/library/pyclbr.rst:144
 msgid ""
 "A dictionary mapping names to descriptors for nested functions and classes."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:100
+#: ../Doc/library/pyclbr.rst:102
+msgid ""
+"``True`` for functions that are defined with the ``async`` prefix, ``False`` "
+"otherwise."
+msgstr ""
+
+#: ../Doc/library/pyclbr.rst:110
 msgid "Class Objects"
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:101
+#: ../Doc/library/pyclbr.rst:111
 msgid ""
 "Class :class:`Class` instances describe classes defined by class "
 "statements.  They have the same attributes as Functions and two more."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:107
+#: ../Doc/library/pyclbr.rst:117
 msgid "Name of the file in which the class is defined."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:112
+#: ../Doc/library/pyclbr.rst:122
 msgid "The name of the module defining the class described."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:117
+#: ../Doc/library/pyclbr.rst:127
 msgid "The name of the class."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:127
+#: ../Doc/library/pyclbr.rst:137
 msgid "For top-level classes, None.  For nested classes, the parent."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:142
+#: ../Doc/library/pyclbr.rst:152
 msgid ""
 "A list of :class:`Class` objects which describe the immediate base classes "
 "of the class being described.  Classes which are named as superclasses but "
@@ -138,7 +151,7 @@ msgid ""
 "with the class name instead of as :class:`Class` objects."
 msgstr ""
 
-#: ../Doc/library/pyclbr.rst:151
+#: ../Doc/library/pyclbr.rst:161
 msgid ""
 "A dictionary mapping method names to line numbers.  This can be derived from "
 "the newer children dictionary, but remains for back-compatibility."

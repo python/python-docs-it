@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +41,7 @@ msgstr ""
 
 #: ../Doc/extending/building.rst:20
 msgid ""
-"It returns either a fully-initialized module, or a :c:type:`PyModuleDef` "
+"It returns either a fully initialized module, or a :c:type:`PyModuleDef` "
 "instance. See :ref:`initializing-modules` for details."
 msgstr ""
 
@@ -143,7 +144,7 @@ msgstr ""
 
 #: ../Doc/extending/building.rst:148
 msgid ""
-"When an extension has been successfully build, there are three ways to use "
+"When an extension has been successfully built, there are three ways to use "
 "it."
 msgstr ""
 
@@ -166,7 +167,7 @@ msgstr ""
 
 #: ../Doc/extending/building.rst:161
 msgid ""
-"If the source distribution has been build successfully, maintainers can also "
+"If the source distribution has been built successfully, maintainers can also "
 "create binary distributions. Depending on the platform, one of the following "
 "commands can be used to do so. ::"
 msgstr ""

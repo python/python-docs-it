@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,9 +34,9 @@ msgstr ""
 
 #: ../Doc/library/pty.rst:19
 msgid ""
-"Because pseudo-terminal handling is highly platform dependent, there is code "
-"to do it only for Linux. (The Linux code is supposed to work on other "
-"platforms, but hasn't been tested yet.)"
+"Pseudo-terminal handling is highly platform dependent. This code is mainly "
+"tested on Linux, FreeBSD, and macOS (it is supposed to work on other POSIX "
+"platforms but it's not been thoroughly tested)."
 msgstr ""
 
 #: ../Doc/library/pty.rst:23
@@ -62,27 +63,73 @@ msgstr ""
 msgid ""
 "Spawn a process, and connect its controlling terminal with the current "
 "process's standard io. This is often used to baffle programs which insist on "
-"reading from the controlling terminal."
+"reading from the controlling terminal. It is expected that the process "
+"spawned behind the pty will eventually terminate, and when it does *spawn* "
+"will return."
 msgstr ""
 
-#: ../Doc/library/pty.rst:48
+#: ../Doc/library/pty.rst:50
 msgid ""
-"The functions *master_read* and *stdin_read* should be functions which read "
-"from a file descriptor. The defaults try to read 1024 bytes each time they "
-"are called."
+"A loop copies STDIN of the current process to the child and data received "
+"from the child to STDOUT of the current process. It is not signaled to the "
+"child if STDIN of the current process closes down."
 msgstr ""
 
-#: ../Doc/library/pty.rst:52
+#: ../Doc/library/pty.rst:54
+msgid ""
+"The functions *master_read* and *stdin_read* are passed a file descriptor "
+"which they should read from, and they should always return a byte string. In "
+"order to force spawn to return before the child process exits an empty byte "
+"array should be returned to signal end of file."
+msgstr ""
+
+#: ../Doc/library/pty.rst:59
+msgid ""
+"The default implementation for both functions will read and return up to "
+"1024 bytes each time the function is called. The *master_read* callback is "
+"passed the pseudoterminal’s master file descriptor to read output from the "
+"child process, and *stdin_read* is passed file descriptor 0, to read from "
+"the parent process's standard input."
+msgstr ""
+
+#: ../Doc/library/pty.rst:65
+msgid ""
+"Returning an empty byte string from either callback is interpreted as an end-"
+"of-file (EOF) condition, and that callback will not be called after that. If "
+"*stdin_read* signals EOF the controlling terminal can no longer communicate "
+"with the parent process OR the child process. Unless the child process will "
+"quit without any input, *spawn* will then loop forever. If *master_read* "
+"signals EOF the same behavior results (on linux at least)."
+msgstr ""
+
+#: ../Doc/library/pty.rst:72
+msgid ""
+"Return the exit status value from :func:`os.waitpid` on the child process."
+msgstr ""
+
+#: ../Doc/library/pty.rst:74
+msgid ""
+":func:`waitstatus_to_exitcode` can be used to convert the exit status into "
+"an exit code."
+msgstr ""
+
+#: ../Doc/library/pty.rst:77
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``pty.spawn`` with argument "
+"``argv``."
+msgstr ""
+
+#: ../Doc/library/pty.rst:79
 msgid ""
 ":func:`spawn` now returns the status value from :func:`os.waitpid` on the "
 "child process."
 msgstr ""
 
-#: ../Doc/library/pty.rst:57
+#: ../Doc/library/pty.rst:84
 msgid "Example"
 msgstr ""
 
-#: ../Doc/library/pty.rst:61
+#: ../Doc/library/pty.rst:88
 msgid ""
 "The following program acts like the Unix command :manpage:`script(1)`, using "
 "a pseudo-terminal to record all input and output of a terminal session in a "

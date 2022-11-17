@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: 2019-04-21 23:11+0200\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
-"Language-Team: \n"
-"Language: it_IT\n"
 "X-Generator: Poedit 2.2.1\n"
 
 #: ../Doc/license.rst:7
@@ -49,12 +49,13 @@ msgstr ""
 "us/) a Reston, Virginia, dove ha rilasciato diverse versioni del software."
 
 #: ../Doc/license.rst:22
+#, fuzzy
 msgid ""
 "In May 2000, Guido and the Python core development team moved to BeOpen.com "
 "to form the BeOpen PythonLabs team.  In October of the same year, the "
-"PythonLabs team moved to Digital Creations (now Zope Corporation; see http://"
-"www.zope.com/).  In 2001, the Python Software Foundation (PSF, see https://"
-"www.python.org/psf/) was formed, a non-profit organization created "
+"PythonLabs team moved to Digital Creations (now Zope Corporation; see "
+"https://www.zope.org/).  In 2001, the Python Software Foundation (PSF, see "
+"https://www.python.org/psf/) was formed, a non-profit organization created "
 "specifically to own Python-related Intellectual Property.  Zope Corporation "
 "is a sponsoring member of the PSF."
 msgstr ""
@@ -242,31 +243,55 @@ msgstr ""
 msgid "Terms and conditions for accessing or otherwise using Python"
 msgstr "Termini e condizioni di accesso o di utilizzo di Python"
 
-#: ../Doc/license.rst:77
+#: ../Doc/license.rst:75
+msgid ""
+"Python software and documentation are licensed under the :ref:`PSF License "
+"Agreement <PSF-license>`."
+msgstr ""
+
+#: ../Doc/license.rst:78
+msgid ""
+"Starting with Python 3.8.6, examples, recipes, and other code in the "
+"documentation are dual licensed under the PSF License Agreement and the :ref:"
+"`Zero-Clause BSD license <BSD0>`."
+msgstr ""
+
+#: ../Doc/license.rst:82
+msgid ""
+"Some software incorporated into Python is under different licenses. The "
+"licenses are listed with code falling under that license. See :ref:"
+"`OtherLicenses` for an incomplete list of these licenses."
+msgstr ""
+
+#: ../Doc/license.rst:90
 msgid "PSF LICENSE AGREEMENT FOR PYTHON |release|"
 msgstr "PSF ACCORDO DI LICENZA PER PYTHON |release|"
 
-#: ../Doc/license.rst:125
+#: ../Doc/license.rst:138
 msgid "BEOPEN.COM LICENSE AGREEMENT FOR PYTHON 2.0"
 msgstr "CONTRATTO DI LICENZA DI BEOPEN.COM PER PYTHON 2.0"
 
-#: ../Doc/license.rst:127
+#: ../Doc/license.rst:140
 msgid "BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1"
 msgstr "BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1"
 
-#: ../Doc/license.rst:172
+#: ../Doc/license.rst:185
 msgid "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
 msgstr "CNRI CONTRATTO DI LICENZA PER PYTHON 1.6.1"
 
-#: ../Doc/license.rst:237
+#: ../Doc/license.rst:250
 msgid "CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2"
 msgstr "CWI CONTRATTO DI LICENZA PER PYTHON DA 0.9.0 A 1.2"
 
-#: ../Doc/license.rst:262
+#: ../Doc/license.rst:277
+msgid "ZERO-CLAUSE BSD LICENSE FOR CODE IN THE PYTHON |release| DOCUMENTATION"
+msgstr ""
+
+#: ../Doc/license.rst:296
 msgid "Licenses and Acknowledgements for Incorporated Software"
 msgstr "Licenze e riconoscimenti per il software incorporato"
 
-#: ../Doc/license.rst:264
+#: ../Doc/license.rst:298
 msgid ""
 "This section is an incomplete, but growing list of licenses and "
 "acknowledgements for third-party software incorporated in the Python "
@@ -276,11 +301,11 @@ msgstr ""
 "riconoscimenti per software di terze parti incorporate nella distribuzione "
 "Python."
 
-#: ../Doc/license.rst:269
+#: ../Doc/license.rst:303
 msgid "Mersenne Twister"
 msgstr "Mersenne Twister"
 
-#: ../Doc/license.rst:271
+#: ../Doc/license.rst:305
 msgid ""
 "The :mod:`_random` module includes code based on a download from http://www."
 "math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html. The following "
@@ -290,76 +315,77 @@ msgstr ""
 "www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT/MT2002/emt19937ar.html. I "
 "seguenti sono i commenti testuali del codice originale::"
 
-#: ../Doc/license.rst:318
+#: ../Doc/license.rst:352
 msgid "Sockets"
 msgstr "Socket"
 
-#: ../Doc/license.rst:320
+#: ../Doc/license.rst:354
+#, fuzzy
 msgid ""
 "The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:"
 "`getnameinfo`, which are coded in separate source files from the WIDE "
-"Project, http://www.wide.ad.jp/. ::"
+"Project, https://www.wide.ad.jp/. ::"
 msgstr ""
 "Il modulo :mod:`socket` utilizza le funzioni, :func:`getaddrinfo`, e :func:"
 "`getnameinfo`, che sono codificati in file sorgenti separati dal progetto "
 "WIDE, http://www.wide.ad.jp/. ::"
 
-#: ../Doc/license.rst:353
+#: ../Doc/license.rst:387
 msgid "Asynchronous socket services"
 msgstr "Servizi di socket asincrone"
 
-#: ../Doc/license.rst:355
+#: ../Doc/license.rst:389
 msgid ""
 "The :mod:`asynchat` and :mod:`asyncore` modules contain the following "
 "notice::"
 msgstr ""
 "I moduli :mod:`asynchat` e :mod:`asyncore` contengono il seguente avviso::"
 
-#: ../Doc/license.rst:380
+#: ../Doc/license.rst:414
 msgid "Cookie management"
 msgstr "Gestione dei cookie"
 
-#: ../Doc/license.rst:382
+#: ../Doc/license.rst:416
 msgid "The :mod:`http.cookies` module contains the following notice::"
 msgstr "Il modulo :mod:`http.cookies` contiene il seguente avviso::"
 
-#: ../Doc/license.rst:408
+#: ../Doc/license.rst:442
 msgid "Execution tracing"
 msgstr "Tracciabilità dell'esecuzione"
 
-#: ../Doc/license.rst:410
+#: ../Doc/license.rst:444
 msgid "The :mod:`trace` module contains the following notice::"
 msgstr "Il modulo :mod:`trace` contiene il seguente avviso::"
 
-#: ../Doc/license.rst:441
+#: ../Doc/license.rst:475
 msgid "UUencode and UUdecode functions"
 msgstr "Funzioni UUencode e UUdecode"
 
-#: ../Doc/license.rst:443
+#: ../Doc/license.rst:477
 msgid "The :mod:`uu` module contains the following notice::"
 msgstr "Il modulo :mod:`uu` contiene il seguente avviso::"
 
-#: ../Doc/license.rst:471
+#: ../Doc/license.rst:505
 msgid "XML Remote Procedure Calls"
 msgstr "Chiamate di procedura remota XML"
 
-#: ../Doc/license.rst:473
+#: ../Doc/license.rst:507
 msgid "The :mod:`xmlrpc.client` module contains the following notice::"
 msgstr "Il modulo :mod:`xmlrpc.client` contiene il seguente avviso::"
 
-#: ../Doc/license.rst:504
+#: ../Doc/license.rst:538
 msgid "test_epoll"
 msgstr "test_epoll"
 
-#: ../Doc/license.rst:506
+#: ../Doc/license.rst:540
 msgid "The :mod:`test_epoll` module contains the following notice::"
 msgstr "Il modulo :mod:`test_epoll` contiene il seguente avviso::"
 
-#: ../Doc/license.rst:530
+#: ../Doc/license.rst:564
 msgid "Select kqueue"
 msgstr "Select kqueue"
 
-#: ../Doc/license.rst:532
+#: ../Doc/license.rst:566
 msgid ""
 "The :mod:`select` module contains the following notice for the kqueue "
 "interface::"
@@ -367,30 +393,33 @@ msgstr ""
 "Il modulo :mod:`select` contiene il seguente avviso per l'interfaccia "
 "kqueue::"
 
-#: ../Doc/license.rst:561
+#: ../Doc/license.rst:595
 msgid "SipHash24"
 msgstr "SipHash24"
 
-#: ../Doc/license.rst:563
+#: ../Doc/license.rst:597
+#, fuzzy
 msgid ""
 "The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of "
-"Dan Bernstein's SipHash24 algorithm. The contains the following note::"
+"Dan Bernstein's SipHash24 algorithm. It contains the following note::"
 msgstr ""
 "Il file :file:`Python/pyhash.c` contiene l'implementazione di Marek "
 "Majkowski' dell'algoritmo SipHash24 di Dan Bernstein. Contiene la seguente "
 "nota::"
 
-#: ../Doc/license.rst:590
+#: ../Doc/license.rst:624
 msgid "strtod and dtoa"
 msgstr "strtod e dtoa"
 
-#: ../Doc/license.rst:592
+#: ../Doc/license.rst:626
+#, fuzzy
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
-"the same name by David M. Gay, currently available from http://www.netlib."
-"org/fp/.  The original file, as retrieved on March 16, 2009, contains the "
-"following copyright and licensing notice::"
+"the same name by David M. Gay, currently available from https://web.archive."
+"org/web/20220517033456/http://www.netlib.org/fp/dtoa.c. The original file, "
+"as retrieved on March 16, 2009, contains the following copyright and "
+"licensing notice::"
 msgstr ""
 "Il file :file:`Python/dtoa.c`, che fornisce le funzioni C dtoa e strtod per "
 "la conversione dei numeri di tipo *doubles* C da e verso stringhe, è "
@@ -399,15 +428,16 @@ msgstr ""
 "recuperato il 16 marzo 2009, contiene il seguente avviso di copyright e "
 "licenza::"
 
-#: ../Doc/license.rst:620
+#: ../Doc/license.rst:654
 msgid "OpenSSL"
 msgstr "7.4 OpenSSL"
 
-#: ../Doc/license.rst:622
+#: ../Doc/license.rst:656
+#, fuzzy
 msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
-"system. Additionally, the Windows and Mac OS X installers for Python may "
+"system. Additionally, the Windows and macOS installers for Python may "
 "include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL "
 "license here::"
 msgstr ""
@@ -417,11 +447,11 @@ msgstr ""
 "Python possono includere una copia delle librerie OpenSSL, quindi includiamo "
 "una copia della licenza OpenSSL qui::"
 
-#: ../Doc/license.rst:757
+#: ../Doc/license.rst:791
 msgid "expat"
 msgstr "expat"
 
-#: ../Doc/license.rst:759
+#: ../Doc/license.rst:793
 msgid ""
 "The :mod:`pyexpat` extension is built using an included copy of the expat "
 "sources unless the build is configured ``--with-system-expat``::"
@@ -429,11 +459,11 @@ msgstr ""
 "L'estensione :mod:`pyexpat` è costruita usando una copia dei sorgenti expat "
 "a meno che la build non sia configurata con ``--with-system-expat``::"
 
-#: ../Doc/license.rst:786
+#: ../Doc/license.rst:820
 msgid "libffi"
 msgstr "libffi"
 
-#: ../Doc/license.rst:788
+#: ../Doc/license.rst:822
 msgid ""
 "The :mod:`_ctypes` extension is built using an included copy of the libffi "
 "sources unless the build is configured ``--with-system-libffi``::"
@@ -441,11 +471,11 @@ msgstr ""
 "L'estensione :mod:`_ctypes` è costruita usando una copia dei sorgenti libffi "
 "a meno che la build non sia configurata con ``--with-system-libffi```::"
 
-#: ../Doc/license.rst:815
+#: ../Doc/license.rst:849
 msgid "zlib"
 msgstr "zlib"
 
-#: ../Doc/license.rst:817
+#: ../Doc/license.rst:851
 msgid ""
 "The :mod:`zlib` extension is built using an included copy of the zlib "
 "sources if the zlib version found on the system is too old to be used for "
@@ -455,11 +485,11 @@ msgstr ""
 "la versione zlib trovata sul sistema è troppo vecchia per essere usata per "
 "la build::"
 
-#: ../Doc/license.rst:846
+#: ../Doc/license.rst:880
 msgid "cfuhash"
 msgstr "cfuhash"
 
-#: ../Doc/license.rst:848
+#: ../Doc/license.rst:882
 msgid ""
 "The implementation of the hash table used by the :mod:`tracemalloc` is based "
 "on the cfuhash project::"
@@ -467,11 +497,11 @@ msgstr ""
 "L'implementazione della tabella hash utilizzata da :mod:`tracemalloc` si "
 "basa sul progetto cfuhash::"
 
-#: ../Doc/license.rst:887
+#: ../Doc/license.rst:921
 msgid "libmpdec"
 msgstr "libmpdec"
 
-#: ../Doc/license.rst:889
+#: ../Doc/license.rst:923
 msgid ""
 "The :mod:`_decimal` module is built using an included copy of the libmpdec "
 "library unless the build is configured ``--with-system-libmpdec``::"
@@ -479,3 +509,42 @@ msgstr ""
 "Il modulo :mod:`_decimal` è costruito usando una copia della libreria "
 "libmpdec a meno che la build non sia configurata con ``--with-system-"
 "libmpdec```::"
+
+#: ../Doc/license.rst:953
+msgid "W3C C14N test suite"
+msgstr ""
+
+#: ../Doc/license.rst:955
+msgid ""
+"The C14N 2.0 test suite in the :mod:`test` package (``Lib/test/xmltestdata/"
+"c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-"
+"c14n2-testcases/ and is distributed under the 3-clause BSD license::"
+msgstr ""
+
+#: ../Doc/license.rst:989
+msgid "Audioop"
+msgstr ""
+
+#: ../Doc/license.rst:1010
+msgid ""
+"The audioop module uses the code base in g771.c file of the SoX project::"
+msgstr ""
+
+#: ../Doc/license.rst:991
+msgid ""
+"Programming the AdLib/Sound Blaster FM Music Chips Version 2.0 (24 Feb 1992) "
+"Copyright (c) 1991, 1992 by Jeffrey S. Lee jlee@smylex.uucp Warranty and "
+"Copyright Policy This document is provided on an \"as-is\" basis, and its "
+"author makes no warranty or representation, express or implied, with respect "
+"to its quality performance or fitness for a particular purpose.  In no event "
+"will the author of this document be liable for direct, indirect, special, "
+"incidental, or consequential damages arising out of the use or inability to "
+"use the information contained within.  Use of this document is at your own "
+"risk. This file may be used and copied freely so long as the applicable "
+"copyright notices are retained, and no modifications are made to the text of "
+"the document.  No money shall be charged for its distribution beyond "
+"reasonable shipping, handling and duplication costs, nor shall proprietary "
+"changes be made to this document so that it cannot be distributed freely.  "
+"This document may not be included in published material or commercial "
+"packages without the written consent of its author."
+msgstr ""

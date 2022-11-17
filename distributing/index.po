@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -64,7 +65,7 @@ msgstr ""
 
 #: ../Doc/distributing/index.rst:34
 msgid ""
-"the `Python Packaging Index <https://pypi.org>`__ is a public repository of "
+"the `Python Package Index <https://pypi.org>`__ is a public repository of "
 "open source licensed packages made available for use by other Python users"
 msgstr ""
 
@@ -74,7 +75,7 @@ msgid ""
 "developers and documentation authors responsible for the maintenance and "
 "evolution of the standard packaging tools and the associated metadata and "
 "file format standards. They maintain a variety of tools, documentation and "
-"issue trackers on both `GitHub <https://github.com/pypa>`__ and `BitBucket "
+"issue trackers on both `GitHub <https://github.com/pypa>`__ and `Bitbucket "
 "<https://bitbucket.org/pypa/>`__."
 msgstr ""
 
@@ -161,8 +162,8 @@ msgstr ""
 
 #: ../Doc/distributing/index.rst:104
 msgid ""
-"For POSIX users (including Mac OS X and Linux users), these instructions "
-"assume the use of a :term:`virtual environment`."
+"For POSIX users (including macOS and Linux users), these instructions assume "
+"the use of a :term:`virtual environment`."
 msgstr ""
 
 #: ../Doc/distributing/index.rst:107
@@ -177,77 +178,81 @@ msgid ""
 "recommended tools`_."
 msgstr ""
 
-#: ../Doc/distributing/index.rst:117
-msgid "Reading the guide"
+#: ../Doc/distributing/index.rst:123
+msgid "Reading the Python Packaging User Guide"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:119
+#: ../Doc/distributing/index.rst:125
 msgid ""
 "The Python Packaging User Guide covers the various key steps and elements "
-"involved in creating a project:"
+"involved in creating and publishing a project:"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:122
+#: ../Doc/distributing/index.rst:128
 msgid "`Project structure`_"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:123
+#: ../Doc/distributing/index.rst:129
 msgid "`Building and packaging the project`_"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:124
-msgid "`Uploading the project to the Python Packaging Index`_"
+#: ../Doc/distributing/index.rst:130
+msgid "`Uploading the project to the Python Package Index`_"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:135
-msgid "How do I...?"
-msgstr ""
-
-#: ../Doc/distributing/index.rst:137
-msgid "These are quick answers or links for some common tasks."
-msgstr ""
-
-#: ../Doc/distributing/index.rst:140
-msgid "... choose a name for my project?"
-msgstr ""
-
-#: ../Doc/distributing/index.rst:142
-msgid "This isn't an easy topic, but here are a few tips:"
+#: ../Doc/distributing/index.rst:131
+msgid "`The .pypirc file`_"
 msgstr ""
 
 #: ../Doc/distributing/index.rst:144
-msgid "check the Python Packaging Index to see if the name is already in use"
+msgid "How do I...?"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:145
+#: ../Doc/distributing/index.rst:146
+msgid "These are quick answers or links for some common tasks."
+msgstr ""
+
+#: ../Doc/distributing/index.rst:149
+msgid "... choose a name for my project?"
+msgstr ""
+
+#: ../Doc/distributing/index.rst:151
+msgid "This isn't an easy topic, but here are a few tips:"
+msgstr ""
+
+#: ../Doc/distributing/index.rst:153
+msgid "check the Python Package Index to see if the name is already in use"
+msgstr ""
+
+#: ../Doc/distributing/index.rst:154
 msgid ""
-"check popular hosting sites like GitHub, BitBucket, etc to see if there is "
+"check popular hosting sites like GitHub, Bitbucket, etc to see if there is "
 "already a project with that name"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:147
+#: ../Doc/distributing/index.rst:156
 msgid "check what comes up in a web search for the name you're considering"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:148
+#: ../Doc/distributing/index.rst:157
 msgid ""
 "avoid particularly common words, especially ones with multiple meanings, as "
 "they can make it difficult for users to find your software when searching "
 "for it"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:154
+#: ../Doc/distributing/index.rst:163
 msgid "... create and distribute binary extensions?"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:156
+#: ../Doc/distributing/index.rst:165
 msgid ""
 "This is actually quite a complex topic, with a variety of alternatives "
 "available depending on exactly what you're aiming to achieve. See the Python "
 "Packaging User Guide for more information and recommendations."
 msgstr ""
 
-#: ../Doc/distributing/index.rst:162
+#: ../Doc/distributing/index.rst:171
 msgid ""
 "`Python Packaging User Guide: Binary Extensions <https://packaging.python."
 "org/guides/packaging-binary-extensions/>`__"

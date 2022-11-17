@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,76 +50,76 @@ msgstr ""
 msgid "Raised for module specific errors."
 msgstr ""
 
-#: ../Doc/library/copy.rst:35
+#: ../Doc/library/copy.rst:36
 msgid ""
 "The difference between shallow and deep copying is only relevant for "
 "compound objects (objects that contain other objects, like lists or class "
 "instances):"
 msgstr ""
 
-#: ../Doc/library/copy.rst:38
+#: ../Doc/library/copy.rst:39
 msgid ""
 "A *shallow copy* constructs a new compound object and then (to the extent "
 "possible) inserts *references* into it to the objects found in the original."
 msgstr ""
 
-#: ../Doc/library/copy.rst:41
+#: ../Doc/library/copy.rst:42
 msgid ""
 "A *deep copy* constructs a new compound object and then, recursively, "
 "inserts *copies* into it of the objects found in the original."
 msgstr ""
 
-#: ../Doc/library/copy.rst:44
+#: ../Doc/library/copy.rst:45
 msgid ""
 "Two problems often exist with deep copy operations that don't exist with "
 "shallow copy operations:"
 msgstr ""
 
-#: ../Doc/library/copy.rst:47
+#: ../Doc/library/copy.rst:48
 msgid ""
 "Recursive objects (compound objects that, directly or indirectly, contain a "
 "reference to themselves) may cause a recursive loop."
 msgstr ""
 
-#: ../Doc/library/copy.rst:50
+#: ../Doc/library/copy.rst:51
 msgid ""
 "Because deep copy copies everything it may copy too much, such as data which "
 "is intended to be shared between copies."
 msgstr ""
 
-#: ../Doc/library/copy.rst:53
+#: ../Doc/library/copy.rst:54
 msgid "The :func:`deepcopy` function avoids these problems by:"
 msgstr ""
 
-#: ../Doc/library/copy.rst:55
+#: ../Doc/library/copy.rst:56
 msgid ""
 "keeping a ``memo`` dictionary of objects already copied during the current "
 "copying pass; and"
 msgstr ""
 
-#: ../Doc/library/copy.rst:58
+#: ../Doc/library/copy.rst:59
 msgid ""
 "letting user-defined classes override the copying operation or the set of "
 "components copied."
 msgstr ""
 
-#: ../Doc/library/copy.rst:61
+#: ../Doc/library/copy.rst:62
 msgid ""
 "This module does not copy types like module, method, stack trace, stack "
-"frame, file, socket, window, array, or any similar types.  It does \"copy\" "
+"frame, file, socket, window, or any similar types.  It does \"copy\" "
 "functions and classes (shallow and deeply), by returning the original object "
 "unchanged; this is compatible with the way these are treated by the :mod:"
 "`pickle` module."
 msgstr ""
 
-#: ../Doc/library/copy.rst:66
+#: ../Doc/library/copy.rst:67
 msgid ""
 "Shallow copies of dictionaries can be made using :meth:`dict.copy`, and of "
 "lists by assigning a slice of the entire list, for example, ``copied_list = "
 "original_list[:]``."
 msgstr ""
 
-#: ../Doc/library/copy.rst:72
+#: ../Doc/library/copy.rst:73
 msgid ""
 "Classes can use the same interfaces to control copying that they use to "
 "control pickling.  See the description of module :mod:`pickle` for "
@@ -126,7 +127,7 @@ msgid ""
 "registered pickle functions from the :mod:`copyreg` module."
 msgstr ""
 
-#: ../Doc/library/copy.rst:81
+#: ../Doc/library/copy.rst:82
 msgid ""
 "In order for a class to define its own copy implementation, it can define "
 "special methods :meth:`__copy__` and :meth:`__deepcopy__`.  The former is "
@@ -135,14 +136,15 @@ msgid ""
 "passed one argument, the ``memo`` dictionary.  If the :meth:`__deepcopy__` "
 "implementation needs to make a deep copy of a component, it should call the :"
 "func:`deepcopy` function with the component as first argument and the memo "
-"dictionary as second argument."
+"dictionary as second argument. The memo dictionary should be treated as an "
+"opaque object."
 msgstr ""
 
-#: ../Doc/library/copy.rst:93
+#: ../Doc/library/copy.rst:95
 msgid "Module :mod:`pickle`"
 msgstr ""
 
-#: ../Doc/library/copy.rst:93
+#: ../Doc/library/copy.rst:95
 msgid ""
 "Discussion of the special methods used to support object state retrieval and "
 "restoration."
