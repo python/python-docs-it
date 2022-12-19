@@ -19,7 +19,7 @@ LANGUAGE := it_IT
 VENV := ~/.venvs/python-docs-i18n/
 PYTHON := $(shell which python3)
 MODE := html
-BRANCH = 3.7
+BRANCH = 3.11
 COMMIT =
 JOBS = auto
 
@@ -57,7 +57,7 @@ progress:
 
 .PHONY: merge
 merge: upgrade_venv
-ifneq "$(shell cd $(CPYTHON_CLONE) 2>/dev/null && git describe --contains --all HEAD)" "$(BRANCH)"
+ifneq "$(shell cd $(CPYTHON_CLONE) 2>/dev/null && git branch --show-current)" "$(BRANCH)"
 	$(error "You're merging from a different branch:" "$(shell cd $(CPYTHON_CLONE) 2>/dev/null && git describe --contains --all HEAD)" vs "$(BRANCH)")
 endif
 	(cd $(CPYTHON_CLONE)/Doc; rm -f build/NEWS)
@@ -77,6 +77,7 @@ endif
 	            msgcat -o "$$PO" "$$POT";\
 	        fi\
 	    done
+	powrap -m
 
 
 .PHONY: fuzzy

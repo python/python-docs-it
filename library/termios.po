@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -94,18 +95,34 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/termios.rst:79
-msgid "Module :mod:`tty`"
-msgstr ""
-
-#: ../Doc/library/termios.rst:80
-msgid "Convenience functions for common terminal control operations."
-msgstr ""
-
-#: ../Doc/library/termios.rst:86
-msgid "Example"
+msgid ""
+"Return a tuple ``(ws_row, ws_col)`` containing the tty window size for file "
+"descriptor *fd*. Requires :const:`termios.TIOCGWINSZ` or :const:`termios."
+"TIOCGSIZE`."
 msgstr ""
 
 #: ../Doc/library/termios.rst:88
+msgid ""
+"Set the tty window size for file descriptor *fd* from *winsize*, which is a "
+"two-item tuple ``(ws_row, ws_col)`` like the one returned by :func:"
+"`tcgetwinsize`. Requires at least one of the pairs (:const:`termios."
+"TIOCGWINSZ`, :const:`termios.TIOCSWINSZ`); (:const:`termios.TIOCGSIZE`, :"
+"const:`termios.TIOCSSIZE`) to be defined."
+msgstr ""
+
+#: ../Doc/library/termios.rst:99
+msgid "Module :mod:`tty`"
+msgstr ""
+
+#: ../Doc/library/termios.rst:100
+msgid "Convenience functions for common terminal control operations."
+msgstr ""
+
+#: ../Doc/library/termios.rst:106
+msgid "Example"
+msgstr ""
+
+#: ../Doc/library/termios.rst:108
 msgid ""
 "Here's a function that prompts for a password with echoing turned off.  Note "
 "the technique using a separate :func:`tcgetattr` call and a :keyword:"

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: 2019-04-21 22:39+0200\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
-"Language-Team: \n"
-"Language: it_IT\n"
 "X-Generator: Poedit 2.2.1\n"
 
 #: ../Doc/bugs.rst:5
@@ -72,34 +72,78 @@ msgstr ""
 "gestita da volontari; la vostra richiesta verrà notata, anche se potrebbe "
 "volerci un po' di tempo per essere elaborata."
 
-#: ../Doc/bugs.rst:28
-msgid "`Documentation bugs`_ on the Python issue tracker"
+#: ../Doc/bugs.rst:30
+#, fuzzy
+msgid "`Documentation bugs`_"
+msgstr "Errori nella Documentazione"
+
+#: ../Doc/bugs.rst:30
+#, fuzzy
+msgid ""
+"A list of documentation bugs that have been submitted to the Python issue "
+"tracker."
 msgstr "`Documentation bugs`_ sul tracker di issue di Python"
 
 #: ../Doc/bugs.rst:33
+msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
+msgstr ""
+
+#: ../Doc/bugs.rst:33
+msgid ""
+"Overview of the process involved in reporting an improvement on the tracker."
+msgstr ""
+
+#: ../Doc/bugs.rst:36
+msgid ""
+"`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
+"with-documentation>`_"
+msgstr ""
+
+#: ../Doc/bugs.rst:36
+msgid ""
+"Comprehensive guide for individuals that are interested in contributing to "
+"Python documentation."
+msgstr ""
+
+#: ../Doc/bugs.rst:38
+msgid ""
+"`Documentation Translations <https://devguide.python.org/documenting/"
+"#translating>`_"
+msgstr ""
+
+#: ../Doc/bugs.rst:39
+msgid ""
+"A list of GitHub pages for documentation translation and their primary "
+"contacts."
+msgstr ""
+
+#: ../Doc/bugs.rst:45
 msgid "Using the Python issue tracker"
 msgstr "Utilizzo dell'Issue Tracker di Python"
 
-#: ../Doc/bugs.rst:35
+#: ../Doc/bugs.rst:47
+#, fuzzy
 msgid ""
-"Bug reports for Python itself should be submitted via the Python Bug Tracker "
-"(https://bugs.python.org/).  The bug tracker offers a Web form which allows "
-"pertinent information to be entered and submitted to the developers."
+"Issue reports for Python itself should be submitted via the GitHub issues "
+"tracker (https://github.com/python/cpython/issues). The GitHub issues "
+"tracker offers a web form which allows pertinent information to be entered "
+"and submitted to the developers."
 msgstr ""
 "Le segnalazioni di errori del linguaggio Python devono essere inviate "
 "tramite il *Python Bug Tracker* (https://bugs.python.org/).  Il bug tracker "
 "offre un modulo Web che permette di inserire e inviare informazioni "
 "pertinenti agli sviluppatori."
 
-#: ../Doc/bugs.rst:39
+#: ../Doc/bugs.rst:52
+#, fuzzy
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
 "already been reported.  The advantage in doing so, aside from saving the "
-"developers time, is that you learn what has been done to fix it; it may be "
+"developers' time, is that you learn what has been done to fix it; it may be "
 "that the problem has already been fixed for the next release, or additional "
 "information is needed (in which case you are welcome to provide it if you "
-"can!). To do this, search the bug database using the search box on the top "
-"of the page."
+"can!). To do this, search the tracker using the search box at the top of the "
+"page."
 msgstr ""
 "Il primo passo da fare quanto si vuole aprire una segnalazione è quello di "
 "cercare se il problema è già stato segnalato.  Il vantaggio nel farlo, oltre "
@@ -110,13 +154,13 @@ msgstr ""
 "nel database dei *bug* usando il campo di ricerca nella parte superiore "
 "della pagina."
 
-#: ../Doc/bugs.rst:46
+#: ../Doc/bugs.rst:59
+#, fuzzy
 msgid ""
-"If the problem you're reporting is not already in the bug tracker, go back "
-"to the Python Bug Tracker and log in.  If you don't already have a tracker "
-"account, select the \"Register\" link or, if you use OpenID, one of the "
-"OpenID provider logos in the sidebar.  It is not possible to submit a bug "
-"report anonymously."
+"If the problem you're reporting is not already in the list, log in to "
+"GitHub. If you don't already have a GitHub account, create a new account "
+"using the \"Sign up\" link. It is not possible to submit a bug report "
+"anonymously."
 msgstr ""
 "Se il problema che stai segnalando non è già presente nel bug tracker, torna "
 "al Bug Tracker Python e accedi usando le tue credenziali.  Se non si dispone "
@@ -124,29 +168,27 @@ msgstr ""
 "OpenID, uno dei loghi del provider OpenID nella barra laterale.  Non è "
 "possibile inviare una segnalazione di bug in forma anonima."
 
-#: ../Doc/bugs.rst:51
+#: ../Doc/bugs.rst:64
+#, fuzzy
 msgid ""
-"Being now logged in, you can submit a bug.  Select the \"Create New\" link "
-"in the sidebar to open the bug reporting form."
+"Being now logged in, you can submit an issue. Click on the \"New issue\" "
+"button in the top bar to report a new issue."
 msgstr ""
 "Ora che sei connesso, è possibile inviare una segnalazione.  Seleziona il "
 "link \"Crea Nuovo\" nella barra laterale per aprire il modulo di "
 "segnalazione dei bug."
 
-#: ../Doc/bugs.rst:54
-msgid ""
-"The submission form has a number of fields.  For the \"Title\" field, enter "
-"a *very* short description of the problem; less than ten words is good.  In "
-"the \"Type\" field, select the type of your problem; also select the "
-"\"Component\" and \"Versions\" to which the bug relates."
+#: ../Doc/bugs.rst:67
+msgid "The submission form has two fields, \"Title\" and \"Comment\"."
 msgstr ""
-"Il *form*  ha un certo numero di campi.  Per il campo \"Titolo\", inserisci "
-"una *molto* breve descrizione del problema; un titolo con meno di dieci "
-"parole è considerato buono.  Nel campo \"Tipo\", seleziona il tipo di "
-"problema; seleziona anche il \"Componente\" e le \"Versioni\" a cui il bug "
-"si riferisce."
 
-#: ../Doc/bugs.rst:59
+#: ../Doc/bugs.rst:69
+msgid ""
+"For the \"Title\" field, enter a *very* short description of the problem; "
+"less than ten words is good."
+msgstr ""
+
+#: ../Doc/bugs.rst:72
 msgid ""
 "In the \"Comment\" field, describe the problem in detail, including what you "
 "expected to happen and what did happen.  Be sure to include whether any "
@@ -159,17 +201,18 @@ msgstr ""
 "stavate utilizzando (incluse le informazioni sulle versioni, se dovesse "
 "essere utile)."
 
-#: ../Doc/bugs.rst:64
+#: ../Doc/bugs.rst:77
+#, fuzzy
 msgid ""
-"Each bug report will be assigned to a developer who will determine what "
-"needs to be done to correct the problem.  You will receive an update each "
-"time action is taken on the bug."
+"Each issue report will be reviewed by a developer who will determine what "
+"needs to be done to correct the problem. You will receive an update each "
+"time an action is taken on the issue."
 msgstr ""
 "Ogni segnalazione di bug sarà assegnata ad uno sviluppatore che determinerà "
 "cosa deve essere fatto per correggere il problema.  Riceverai un "
 "aggiornamento ogni volta che viene intrapresa un'azione a riguardo."
 
-#: ../Doc/bugs.rst:73
+#: ../Doc/bugs.rst:86
 msgid ""
 "`How to Report Bugs Effectively <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>`_"
@@ -177,7 +220,7 @@ msgstr ""
 "`Come segnalare efficacemente i bug <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>`_"
 
-#: ../Doc/bugs.rst:72
+#: ../Doc/bugs.rst:85
 msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
@@ -185,15 +228,16 @@ msgstr ""
 "Articolo che specifica come creare un'utile segnalazione riguardo un *bug*. "
 "Descrive che tipo di informazione è utile e perché è utile."
 
-#: ../Doc/bugs.rst:76
+#: ../Doc/bugs.rst:89
+#, fuzzy
 msgid ""
-"`Bug Writing Guidelines <https://developer.mozilla.org/en-US/docs/Mozilla/QA/"
-"Bug_writing_guidelines>`_"
+"`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
+"writing.html>`_"
 msgstr ""
 "`Linee Guida per la segnalazione dei *Bug* <https://developer.mozilla.org/en-"
 "US/docs/Mozilla/QA/Bug_writing_guidelines>`_"
 
-#: ../Doc/bugs.rst:76
+#: ../Doc/bugs.rst:89
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to "
 "the Mozilla project, but describes general good practices."
@@ -202,11 +246,11 @@ msgstr ""
 "queste sono specifiche del progetto Mozilla, ma descrivono le buone pratiche "
 "generali."
 
-#: ../Doc/bugs.rst:82
+#: ../Doc/bugs.rst:95
 msgid "Getting started contributing to Python yourself"
 msgstr "Come iniziare a contribuire a Python da soli"
 
-#: ../Doc/bugs.rst:84
+#: ../Doc/bugs.rst:97
 msgid ""
 "Beyond just reporting bugs that you find, you are also welcome to submit "
 "patches to fix them.  You can find more information on how to get started "
@@ -220,3 +264,15 @@ msgstr ""
 "avete domande, la `core-mentorship mailing list`_ è un luogo amichevole per "
 "ottenere risposte a tutte le domande relative al processo di risoluzione dei "
 "problemi in Python."
+
+#~ msgid ""
+#~ "The submission form has a number of fields.  For the \"Title\" field, "
+#~ "enter a *very* short description of the problem; less than ten words is "
+#~ "good.  In the \"Type\" field, select the type of your problem; also "
+#~ "select the \"Component\" and \"Versions\" to which the bug relates."
+#~ msgstr ""
+#~ "Il *form*  ha un certo numero di campi.  Per il campo \"Titolo\", "
+#~ "inserisci una *molto* breve descrizione del problema; un titolo con meno "
+#~ "di dieci parole è considerato buono.  Nel campo \"Tipo\", seleziona il "
+#~ "tipo di problema; seleziona anche il \"Componente\" e le \"Versioni\" a "
+#~ "cui il bug si riferisce."

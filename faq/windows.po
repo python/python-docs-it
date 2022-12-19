@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,11 +39,11 @@ msgstr ""
 #: ../Doc/faq/windows.rst:28
 msgid ""
 "Unless you use some sort of integrated development environment, you will end "
-"up *typing* Windows commands into what is variously referred to as a \"DOS "
-"window\" or \"Command prompt window\".  Usually you can create such a window "
-"from your search bar by searching for ``cmd``.  You should be able to "
-"recognize when you have started such a window because you will see a Windows "
-"\"command prompt\", which usually looks like this:"
+"up *typing* Windows commands into what is referred to as a \"Command prompt "
+"window\".  Usually you can create such a window from your search bar by "
+"searching for ``cmd``.  You should be able to recognize when you have "
+"started such a window because you will see a Windows \"command prompt\", "
+"which usually looks like this:"
 msgstr ""
 
 #: ../Doc/faq/windows.rst:39
@@ -164,18 +165,15 @@ msgstr ""
 
 #: ../Doc/faq/windows.rst:143
 msgid ""
-"See `cx_Freeze <https://anthony-tuininga.github.io/cx_Freeze/>`_ for a "
-"distutils extension that allows you to create console and GUI executables "
-"from Python code. `py2exe <http://www.py2exe.org/>`_, the most popular "
-"extension for building Python 2.x-based executables, does not yet support "
-"Python 3 but a version that does is in development."
+"See :ref:`faq-create-standalone-binary` for a list of tools that can be used "
+"to make executables."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:151
+#: ../Doc/faq/windows.rst:148
 msgid "Is a ``*.pyd`` file the same as a DLL?"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:153
+#: ../Doc/faq/windows.rst:150
 msgid ""
 "Yes, .pyd files are dll's, but there are a few differences.  If you have a "
 "DLL named ``foo.pyd``, then it must have a function ``PyInit_foo()``.  You "
@@ -185,7 +183,7 @@ msgid ""
 "as that would cause Windows to require the DLL to be present."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:160
+#: ../Doc/faq/windows.rst:157
 msgid ""
 "Note that the search path for foo.pyd is PYTHONPATH, not the same as the "
 "path that Windows uses to search for foo.dll.  Also, foo.pyd need not be "
@@ -196,26 +194,26 @@ msgid ""
 "available functions."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:169
+#: ../Doc/faq/windows.rst:166
 msgid "How can I embed Python into a Windows application?"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:171
+#: ../Doc/faq/windows.rst:168
 msgid ""
 "Embedding the Python interpreter in a Windows app can be summarized as "
 "follows:"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:173
+#: ../Doc/faq/windows.rst:170
 msgid ""
-"Do _not_ build Python into your .exe file directly.  On Windows, Python must "
-"be a DLL to handle importing modules that are themselves DLL's.  (This is "
-"the first key undocumented fact.)  Instead, link to :file:`python{NN}.dll`; "
-"it is typically installed in ``C:\\Windows\\System``.  *NN* is the Python "
-"version, a number such as \"33\" for Python 3.3."
+"Do **not** build Python into your .exe file directly.  On Windows, Python "
+"must be a DLL to handle importing modules that are themselves DLL's.  (This "
+"is the first key undocumented fact.)  Instead, link to :file:`python{NN}."
+"dll`; it is typically installed in ``C:\\Windows\\System``.  *NN* is the "
+"Python version, a number such as \"33\" for Python 3.3."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:179
+#: ../Doc/faq/windows.rst:176
 msgid ""
 "You can link to Python in two different ways.  Load-time linking means "
 "linking against :file:`python{NN}.lib`, while run-time linking means linking "
@@ -224,7 +222,7 @@ msgid ""
 "merely defines symbols for the linker.)"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:185
+#: ../Doc/faq/windows.rst:182
 msgid ""
 "Run-time linking greatly simplifies link options; everything happens at run "
 "time.  Your code must load :file:`python{NN}.dll` using the Windows "
@@ -235,22 +233,16 @@ msgid ""
 "API."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:192
-msgid ""
-"Borland note: convert :file:`python{NN}.lib` to OMF format using Coff2Omf."
-"exe first."
-msgstr ""
-
-#: ../Doc/faq/windows.rst:197
+#: ../Doc/faq/windows.rst:191
 msgid ""
 "If you use SWIG, it is easy to create a Python \"extension module\" that "
 "will make the app's data and methods available to Python.  SWIG will handle "
 "just about all the grungy details for you.  The result is C code that you "
-"link *into* your .exe file (!)  You do _not_ have to create a DLL file, and "
-"this also simplifies linking."
+"link *into* your .exe file (!)  You do **not** have to create a DLL file, "
+"and this also simplifies linking."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:203
+#: ../Doc/faq/windows.rst:197
 msgid ""
 "SWIG will create an init function (a C function) whose name depends on the "
 "name of the extension module.  For example, if the name of the module is "
@@ -259,54 +251,54 @@ msgid ""
 "initializes a mostly hidden helper class used by the shadow class."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:209
+#: ../Doc/faq/windows.rst:203
 msgid ""
 "The reason you can link the C code in step 2 into your .exe file is that "
 "calling the initialization function is equivalent to importing the module "
 "into Python! (This is the second key undocumented fact.)"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:213
+#: ../Doc/faq/windows.rst:207
 msgid ""
 "In short, you can use the following code to initialize the Python "
 "interpreter with your extension module."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:224
+#: ../Doc/faq/windows.rst:218
 msgid ""
 "There are two problems with Python's C API which will become apparent if you "
 "use a compiler other than MSVC, the compiler used to build pythonNN.dll."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:227
+#: ../Doc/faq/windows.rst:221
 msgid ""
-"Problem 1: The so-called \"Very High Level\" functions that take FILE * "
+"Problem 1: The so-called \"Very High Level\" functions that take ``FILE *`` "
 "arguments will not work in a multi-compiler environment because each "
-"compiler's notion of a struct FILE will be different.  From an "
-"implementation standpoint these are very _low_ level functions."
+"compiler's notion of a ``struct FILE`` will be different.  From an "
+"implementation standpoint these are very low level functions."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:232
+#: ../Doc/faq/windows.rst:226
 msgid ""
 "Problem 2: SWIG generates the following code when generating wrappers to "
 "void functions:"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:241
+#: ../Doc/faq/windows.rst:235
 msgid ""
 "Alas, Py_None is a macro that expands to a reference to a complex data "
 "structure called _Py_NoneStruct inside pythonNN.dll.  Again, this code will "
 "fail in a mult-compiler environment.  Replace such code by:"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:249
+#: ../Doc/faq/windows.rst:243
 msgid ""
 "It may be possible to use SWIG's ``%typemap`` command to make the change "
 "automatically, though I have not been able to get this to work (I'm a "
 "complete SWIG newbie)."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:253
+#: ../Doc/faq/windows.rst:247
 msgid ""
 "Using a Python shell script to put up a Python interpreter window from "
 "inside your Windows app is not a good idea; the resulting window will be "
@@ -318,18 +310,18 @@ msgid ""
 "and write() methods."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:262
+#: ../Doc/faq/windows.rst:256
 msgid "How do I keep editors from inserting tabs into my Python source?"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:264
+#: ../Doc/faq/windows.rst:258
 msgid ""
 "The FAQ does not recommend using tabs, and the Python style guide, :pep:`8`, "
 "recommends 4 spaces for distributed Python code; this is also the Emacs "
 "python-mode default."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:268
+#: ../Doc/faq/windows.rst:262
 msgid ""
 "Under any editor, mixing tabs and spaces is a bad idea.  MSVC is no "
 "different in this respect, and is easily configured to use spaces: Take :"
@@ -338,20 +330,33 @@ msgid ""
 "radio button."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:273
+#: ../Doc/faq/windows.rst:267
 msgid ""
 "Python raises :exc:`IndentationError` or :exc:`TabError` if mixed tabs and "
 "spaces are causing problems in leading whitespace. You may also run the :mod:"
 "`tabnanny` module to check a directory tree in batch mode."
 msgstr ""
 
-#: ../Doc/faq/windows.rst:280
+#: ../Doc/faq/windows.rst:274
 msgid "How do I check for a keypress without blocking?"
 msgstr ""
 
-#: ../Doc/faq/windows.rst:282
+#: ../Doc/faq/windows.rst:276
 msgid ""
-"Use the msvcrt module.  This is a standard Windows-specific extension "
+"Use the :mod:`msvcrt` module.  This is a standard Windows-specific extension "
 "module. It defines a function ``kbhit()`` which checks whether a keyboard "
 "hit is present, and ``getch()`` which gets one character without echoing it."
+msgstr ""
+
+#: ../Doc/faq/windows.rst:281
+msgid "How do I solve the missing api-ms-win-crt-runtime-l1-1-0.dll error?"
+msgstr ""
+
+#: ../Doc/faq/windows.rst:283
+msgid ""
+"This can occur on Python 3.5 and later when using Windows 8.1 or earlier "
+"without all updates having been installed. First ensure your operating "
+"system is supported and is up to date, and if that does not resolve the "
+"issue, visit the `Microsoft support page <https://support.microsoft.com/en-"
+"us/help/3118401/>`_ for guidance on manually installing the C Runtime update."
 msgstr ""

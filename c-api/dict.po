@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,17 +35,17 @@ msgstr ""
 #: ../Doc/c-api/dict.rst:24
 msgid ""
 "Return true if *p* is a dict object or an instance of a subtype of the dict "
-"type."
+"type.  This function always succeeds."
 msgstr ""
 
 #: ../Doc/c-api/dict.rst:30
 msgid ""
 "Return true if *p* is a dict object, but not an instance of a subtype of the "
-"dict type."
+"dict type.  This function always succeeds."
 msgstr ""
 
 #: ../Doc/c-api/dict.rst:36
-msgid "Return a new empty dictionary, or *NULL* on failure."
+msgid "Return a new empty dictionary, or ``NULL`` on failure."
 msgstr ""
 
 #: ../Doc/c-api/dict.rst:41
@@ -71,38 +72,41 @@ msgstr ""
 
 #: ../Doc/c-api/dict.rst:65
 msgid ""
-"Insert *value* into the dictionary *p* with a key of *key*.  *key* must be :"
+"Insert *val* into the dictionary *p* with a key of *key*.  *key* must be :"
 "term:`hashable`; if it isn't, :exc:`TypeError` will be raised. Return ``0`` "
-"on success or ``-1`` on failure."
+"on success or ``-1`` on failure.  This function *does not* steal a reference "
+"to *val*."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:74
+#: ../Doc/c-api/dict.rst:75
 msgid ""
-"Insert *value* into the dictionary *p* using *key* as a key. *key* should be "
-"a :c:type:`const char\\*`.  The key object is created using "
-"``PyUnicode_FromString(key)``.  Return ``0`` on success or ``-1`` on failure."
+"Insert *val* into the dictionary *p* using *key* as a key. *key* should be "
+"a :c:expr:`const char*`.  The key object is created using "
+"``PyUnicode_FromString(key)``.  Return ``0`` on success or ``-1`` on "
+"failure.  This function *does not* steal a reference to *val*."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:82
+#: ../Doc/c-api/dict.rst:83
 msgid ""
 "Remove the entry in dictionary *p* with key *key*. *key* must be hashable; "
-"if it isn't, :exc:`TypeError` is raised.  Return ``0`` on success or ``-1`` "
-"on failure."
+"if it isn't, :exc:`TypeError` is raised. If *key* is not in the dictionary, :"
+"exc:`KeyError` is raised. Return ``0`` on success or ``-1`` on failure."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:89
+#: ../Doc/c-api/dict.rst:91
 msgid ""
 "Remove the entry in dictionary *p* which has a key specified by the string "
-"*key*.  Return ``0`` on success or ``-1`` on failure."
-msgstr ""
-
-#: ../Doc/c-api/dict.rst:95
-msgid ""
-"Return the object from dictionary *p* which has a key *key*.  Return *NULL* "
-"if the key *key* is not present, but *without* setting an exception."
+"*key*. If *key* is not in the dictionary, :exc:`KeyError` is raised. Return "
+"``0`` on success or ``-1`` on failure."
 msgstr ""
 
 #: ../Doc/c-api/dict.rst:98
+msgid ""
+"Return the object from dictionary *p* which has a key *key*.  Return "
+"``NULL`` if the key *key* is not present, but *without* setting an exception."
+msgstr ""
+
+#: ../Doc/c-api/dict.rst:101
 msgid ""
 "Note that exceptions which occur while calling :meth:`__hash__` and :meth:"
 "`__eq__` methods will get suppressed. To get error reporting use :c:func:"
@@ -111,25 +115,31 @@ msgstr ""
 
 #: ../Doc/c-api/dict.rst:105
 msgid ""
-"Variant of :c:func:`PyDict_GetItem` that does not suppress exceptions. "
-"Return *NULL* **with** an exception set if an exception occurred.  Return "
-"*NULL* **without** an exception set if the key wasn't present."
+"Calling this API without :term:`GIL` held had been allowed for historical "
+"reason. It is no longer allowed."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:113
+#: ../Doc/c-api/dict.rst:112
+msgid ""
+"Variant of :c:func:`PyDict_GetItem` that does not suppress exceptions. "
+"Return ``NULL`` **with** an exception set if an exception occurred.  Return "
+"``NULL`` **without** an exception set if the key wasn't present."
+msgstr ""
+
+#: ../Doc/c-api/dict.rst:120
 msgid ""
 "This is the same as :c:func:`PyDict_GetItem`, but *key* is specified as a :c:"
-"type:`const char\\*`, rather than a :c:type:`PyObject\\*`."
+"expr:`const char*`, rather than a :c:expr:`PyObject*`."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:116
+#: ../Doc/c-api/dict.rst:123
 msgid ""
 "Note that exceptions which occur while calling :meth:`__hash__` and :meth:"
 "`__eq__` methods and creating a temporary string object will get suppressed. "
 "To get error reporting use :c:func:`PyDict_GetItemWithError()` instead."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:124
+#: ../Doc/c-api/dict.rst:131
 msgid ""
 "This is the same as the Python-level :meth:`dict.setdefault`.  If present, "
 "it returns the value corresponding to *key* from the dictionary *p*.  If the "
@@ -139,54 +149,54 @@ msgid ""
 "the insertion."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:134
+#: ../Doc/c-api/dict.rst:141
 msgid ""
 "Return a :c:type:`PyListObject` containing all the items from the dictionary."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:139
+#: ../Doc/c-api/dict.rst:146
 msgid ""
 "Return a :c:type:`PyListObject` containing all the keys from the dictionary."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:144
+#: ../Doc/c-api/dict.rst:151
 msgid ""
 "Return a :c:type:`PyListObject` containing all the values from the "
 "dictionary *p*."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:152
+#: ../Doc/c-api/dict.rst:159
 msgid ""
 "Return the number of items in the dictionary.  This is equivalent to "
 "``len(p)`` on a dictionary."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:158
+#: ../Doc/c-api/dict.rst:165
 msgid ""
 "Iterate over all key-value pairs in the dictionary *p*.  The :c:type:"
 "`Py_ssize_t` referred to by *ppos* must be initialized to ``0`` prior to the "
 "first call to this function to start the iteration; the function returns "
 "true for each pair in the dictionary, and false once all pairs have been "
-"reported.  The parameters *pkey* and *pvalue* should either point to :c:type:"
-"`PyObject\\*` variables that will be filled in with each key and value, "
-"respectively, or may be *NULL*.  Any references returned through them are "
+"reported.  The parameters *pkey* and *pvalue* should either point to :c:expr:"
+"`PyObject*` variables that will be filled in with each key and value, "
+"respectively, or may be ``NULL``.  Any references returned through them are "
 "borrowed.  *ppos* should not be altered during iteration. Its value "
 "represents offsets within the internal dictionary structure, and since the "
 "structure is sparse, the offsets are not consecutive."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:169
+#: ../Doc/c-api/dict.rst:176
 msgid "For example::"
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:179
+#: ../Doc/c-api/dict.rst:186
 msgid ""
 "The dictionary *p* should not be mutated during iteration.  It is safe to "
 "modify the values of the keys as you iterate over the dictionary, but only "
 "so long as the set of keys does not change.  For example::"
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:204
+#: ../Doc/c-api/dict.rst:211
 msgid ""
 "Iterate over mapping object *b* adding key-value pairs to dictionary *a*. "
 "*b* may be a dictionary, or any object supporting :c:func:`PyMapping_Keys` "
@@ -196,7 +206,7 @@ msgid ""
 "or ``-1`` if an exception was raised."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:214
+#: ../Doc/c-api/dict.rst:221
 msgid ""
 "This is the same as ``PyDict_Merge(a, b, 1)`` in C, and is similar to ``a."
 "update(b)`` in Python except that :c:func:`PyDict_Update` doesn't fall back "
@@ -205,15 +215,11 @@ msgid ""
 "exception was raised."
 msgstr ""
 
-#: ../Doc/c-api/dict.rst:223
+#: ../Doc/c-api/dict.rst:230
 msgid ""
 "Update or merge into dictionary *a*, from the key-value pairs in *seq2*. "
 "*seq2* must be an iterable object producing iterable objects of length 2, "
 "viewed as key-value pairs.  In case of duplicate keys, the last wins if "
 "*override* is true, else the first wins. Return ``0`` on success or ``-1`` "
 "if an exception was raised. Equivalent Python (except for the return value)::"
-msgstr ""
-
-#: ../Doc/c-api/dict.rst:238
-msgid "Clear the free list. Return the total number of freed items."
 msgstr ""

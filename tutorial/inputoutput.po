@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -135,19 +136,27 @@ msgstr ""
 
 #: ../Doc/tutorial/inputoutput.rst:136
 msgid ""
-"For a reference on these format specifications, see the reference guide for "
-"the :ref:`formatspec`."
+"The ``=`` specifier can be used to expand an expression to the text of the "
+"expression, an equal sign, then the representation of the evaluated "
+"expression:"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:142
+#: ../Doc/tutorial/inputoutput.rst:145
+msgid ""
+"See :ref:`self-documenting expressions <bpo-36817-whatsnew>` for more "
+"information on the ``=`` specifier. For a reference on these format "
+"specifications, see the reference guide for the :ref:`formatspec`."
+msgstr ""
+
+#: ../Doc/tutorial/inputoutput.rst:152
 msgid "The String format() Method"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:144
+#: ../Doc/tutorial/inputoutput.rst:154
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:149
+#: ../Doc/tutorial/inputoutput.rst:159
 msgid ""
 "The brackets and characters within them (called format fields) are replaced "
 "with the objects passed into the :meth:`str.format` method.  A number in the "
@@ -155,63 +164,63 @@ msgid ""
 "meth:`str.format` method. ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:159
+#: ../Doc/tutorial/inputoutput.rst:169
 msgid ""
 "If keyword arguments are used in the :meth:`str.format` method, their values "
 "are referred to by using the name of the argument. ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:166
+#: ../Doc/tutorial/inputoutput.rst:176
 msgid "Positional and keyword arguments can be arbitrarily combined::"
-msgstr ""
-
-#: ../Doc/tutorial/inputoutput.rst:172
-msgid ""
-"If you have a really long format string that you don't want to split up, it "
-"would be nice if you could reference the variables to be formatted by name "
-"instead of by position.  This can be done by simply passing the dict and "
-"using square brackets ``'[]'`` to access the keys ::"
 msgstr ""
 
 #: ../Doc/tutorial/inputoutput.rst:182
 msgid ""
-"This could also be done by passing the table as keyword arguments with the "
-"'**' notation. ::"
+"If you have a really long format string that you don't want to split up, it "
+"would be nice if you could reference the variables to be formatted by name "
+"instead of by position.  This can be done by simply passing the dict and "
+"using square brackets ``'[]'`` to access the keys. ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:189
+#: ../Doc/tutorial/inputoutput.rst:192
+msgid ""
+"This could also be done by passing the ``table`` dictionary as keyword "
+"arguments with the ``**`` notation. ::"
+msgstr ""
+
+#: ../Doc/tutorial/inputoutput.rst:199
 msgid ""
 "This is particularly useful in combination with the built-in function :func:"
 "`vars`, which returns a dictionary containing all local variables."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:192
+#: ../Doc/tutorial/inputoutput.rst:202
 msgid ""
-"As an example, the following lines produce a tidily-aligned set of columns "
+"As an example, the following lines produce a tidily aligned set of columns "
 "giving integers and their squares and cubes::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:209
+#: ../Doc/tutorial/inputoutput.rst:219
 msgid ""
 "For a complete overview of string formatting with :meth:`str.format`, see :"
 "ref:`formatstrings`."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:214
+#: ../Doc/tutorial/inputoutput.rst:224
 msgid "Manual String Formatting"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:216
+#: ../Doc/tutorial/inputoutput.rst:226
 msgid "Here's the same table of squares and cubes, formatted manually::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:234
+#: ../Doc/tutorial/inputoutput.rst:244
 msgid ""
 "(Note that the one space between each column was added by the way :func:"
 "`print` works: it always adds spaces between its arguments.)"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:237
+#: ../Doc/tutorial/inputoutput.rst:247
 msgid ""
 "The :meth:`str.rjust` method of string objects right-justifies a string in a "
 "field of a given width by padding it with spaces on the left. There are "
@@ -223,40 +232,41 @@ msgid ""
 "add a slice operation, as in ``x.ljust(n)[:n]``.)"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:246
+#: ../Doc/tutorial/inputoutput.rst:256
 msgid ""
 "There is another method, :meth:`str.zfill`, which pads a numeric string on "
 "the left with zeros.  It understands about plus and minus signs::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:258
+#: ../Doc/tutorial/inputoutput.rst:268
 msgid "Old string formatting"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:260
+#: ../Doc/tutorial/inputoutput.rst:270
 msgid ""
-"The ``%`` operator can also be used for string formatting. It interprets the "
-"left argument much like a :c:func:`sprintf`\\ -style format string to be "
-"applied to the right argument, and returns the string resulting from this "
-"formatting operation. For example::"
+"The % operator (modulo) can also be used for string formatting. Given "
+"``'string' % values``, instances of ``%`` in ``string`` are replaced with "
+"zero or more elements of ``values``. This operation is commonly known as "
+"string interpolation. For example::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:269
+#: ../Doc/tutorial/inputoutput.rst:279
 msgid ""
 "More information can be found in the :ref:`old-string-formatting` section."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:275
+#: ../Doc/tutorial/inputoutput.rst:285
 msgid "Reading and Writing Files"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:281
+#: ../Doc/tutorial/inputoutput.rst:291
 msgid ""
 ":func:`open` returns a :term:`file object`, and is most commonly used with "
-"two arguments: ``open(filename, mode)``."
+"two positional arguments and one keyword argument: ``open(filename, mode, "
+"encoding=None)``"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:293
+#: ../Doc/tutorial/inputoutput.rst:304
 msgid ""
 "The first argument is a string containing the filename.  The second argument "
 "is another string containing a few characters describing the way in which "
@@ -268,17 +278,19 @@ msgid ""
 "assumed if it's omitted."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:302
+#: ../Doc/tutorial/inputoutput.rst:313
 msgid ""
 "Normally, files are opened in :dfn:`text mode`, that means, you read and "
 "write strings from and to the file, which are encoded in a specific "
-"encoding. If encoding is not specified, the default is platform dependent "
-"(see :func:`open`). ``'b'`` appended to the mode opens the file in :dfn:"
-"`binary mode`: now the data is read and written in the form of bytes "
-"objects.  This mode should be used for all files that don't contain text."
+"*encoding*. If *encoding* is not specified, the default is platform "
+"dependent (see :func:`open`). Because UTF-8 is the modern de-facto standard, "
+"``encoding=\"utf-8\"`` is recommended unless you know that you need to use a "
+"different encoding. Appending a ``'b'`` to the mode opens the file in :dfn:"
+"`binary mode`. Binary mode data is read and written as :class:`bytes` "
+"objects. You can not specify *encoding* when opening file in binary mode."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:309
+#: ../Doc/tutorial/inputoutput.rst:323
 msgid ""
 "In text mode, the default when reading is to convert platform-specific line "
 "endings (``\\n`` on Unix, ``\\r\\n`` on Windows) to just ``\\n``.  When "
@@ -289,106 +301,111 @@ msgid ""
 "reading and writing such files."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:317
+#: ../Doc/tutorial/inputoutput.rst:331
 msgid ""
 "It is good practice to use the :keyword:`with` keyword when dealing with "
 "file objects.  The advantage is that the file is properly closed after its "
 "suite finishes, even if an exception is raised at some point.  Using :"
-"keyword:`!with` is also much shorter than writing equivalent :keyword:`try`"
-"\\ -\\ :keyword:`finally` blocks::"
+"keyword:`!with` is also much shorter than writing equivalent :keyword:"
+"`try`\\ -\\ :keyword:`finally` blocks::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:328
+#: ../Doc/tutorial/inputoutput.rst:344
 msgid ""
 "If you're not using the :keyword:`with` keyword, then you should call ``f."
 "close()`` to close the file and immediately free up any system resources "
-"used by it. If you don't explicitly close a file, Python's garbage collector "
-"will eventually destroy the object and close the open file for you, but the "
-"file may stay open for a while.  Another risk is that different Python "
-"implementations will do this clean-up at different times."
+"used by it."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:336
+#: ../Doc/tutorial/inputoutput.rst:349
+msgid ""
+"Calling ``f.write()`` without using the :keyword:`!with` keyword or calling "
+"``f.close()`` **might** result in the arguments of ``f.write()`` not being "
+"completely written to the disk, even if the program exits successfully."
+msgstr ""
+
+#: ../Doc/tutorial/inputoutput.rst:357
 msgid ""
 "After a file object is closed, either by a :keyword:`with` statement or by "
 "calling ``f.close()``, attempts to use the file object will automatically "
 "fail. ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:350
+#: ../Doc/tutorial/inputoutput.rst:371
 msgid "Methods of File Objects"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:352
+#: ../Doc/tutorial/inputoutput.rst:373
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:355
+#: ../Doc/tutorial/inputoutput.rst:376
 msgid ""
 "To read a file's contents, call ``f.read(size)``, which reads some quantity "
 "of data and returns it as a string (in text mode) or bytes object (in binary "
 "mode). *size* is an optional numeric argument.  When *size* is omitted or "
 "negative, the entire contents of the file will be read and returned; it's "
 "your problem if the file is twice as large as your machine's memory. "
-"Otherwise, at most *size* bytes are read and returned. If the end of the "
-"file has been reached, ``f.read()`` will return an empty string (``''``).  ::"
+"Otherwise, at most *size* characters (in text mode) or *size* bytes (in "
+"binary mode) are read and returned. If the end of the file has been reached, "
+"``f.read()`` will return an empty string (``''``).  ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:369
+#: ../Doc/tutorial/inputoutput.rst:390
 msgid ""
-"``f.readline()`` reads a single line from the file; a newline character (``"
-"\\n``) is left at the end of the string, and is only omitted on the last "
+"``f.readline()`` reads a single line from the file; a newline character "
+"(``\\n``) is left at the end of the string, and is only omitted on the last "
 "line of the file if the file doesn't end in a newline.  This makes the "
 "return value unambiguous; if ``f.readline()`` returns an empty string, the "
 "end of the file has been reached, while a blank line is represented by "
 "``'\\n'``, a string containing only a single newline.  ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:383
+#: ../Doc/tutorial/inputoutput.rst:404
 msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
 "memory efficient, fast, and leads to simple code::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:392
+#: ../Doc/tutorial/inputoutput.rst:413
 msgid ""
 "If you want to read all the lines of a file in a list you can also use "
 "``list(f)`` or ``f.readlines()``."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:395
+#: ../Doc/tutorial/inputoutput.rst:416
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "the number of characters written. ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:401
+#: ../Doc/tutorial/inputoutput.rst:422
 msgid ""
 "Other types of objects need to be converted -- either to a string (in text "
 "mode) or a bytes object (in binary mode) -- before writing them::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:409
+#: ../Doc/tutorial/inputoutput.rst:430
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in "
 "the file represented as number of bytes from the beginning of the file when "
 "in binary mode and an opaque number when in text mode."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:413
+#: ../Doc/tutorial/inputoutput.rst:434
 msgid ""
-"To change the file object's position, use ``f.seek(offset, from_what)``.  "
-"The position is computed from adding *offset* to a reference point; the "
-"reference point is selected by the *from_what* argument.  A *from_what* "
-"value of 0 measures from the beginning of the file, 1 uses the current file "
-"position, and 2 uses the end of the file as the reference point.  "
-"*from_what* can be omitted and defaults to 0, using the beginning of the "
-"file as the reference point. ::"
+"To change the file object's position, use ``f.seek(offset, whence)``.  The "
+"position is computed from adding *offset* to a reference point; the "
+"reference point is selected by the *whence* argument.  A *whence* value of 0 "
+"measures from the beginning of the file, 1 uses the current file position, "
+"and 2 uses the end of the file as the reference point.  *whence* can be "
+"omitted and defaults to 0, using the beginning of the file as the reference "
+"point. ::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:432
+#: ../Doc/tutorial/inputoutput.rst:453
 msgid ""
 "In text files (those opened without a ``b`` in the mode string), only seeks "
 "relative to the beginning of the file are allowed (the exception being "
@@ -397,18 +414,18 @@ msgid ""
 "*offset* value produces undefined behaviour."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:438
+#: ../Doc/tutorial/inputoutput.rst:459
 msgid ""
 "File objects have some additional methods, such as :meth:`~file.isatty` and :"
 "meth:`~file.truncate` which are less frequently used; consult the Library "
 "Reference for a complete guide to file objects."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:446
+#: ../Doc/tutorial/inputoutput.rst:467
 msgid "Saving structured data with :mod:`json`"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:450
+#: ../Doc/tutorial/inputoutput.rst:471
 msgid ""
 "Strings can easily be written to and read from a file.  Numbers take a bit "
 "more effort, since the :meth:`read` method only returns strings, which will "
@@ -418,11 +435,11 @@ msgid ""
 "serializing by hand becomes complicated."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:457
+#: ../Doc/tutorial/inputoutput.rst:478
 msgid ""
 "Rather than having users constantly writing and debugging code to save "
 "complicated data types to files, Python allows you to use the popular data "
-"interchange format called `JSON (JavaScript Object Notation) <http://json."
+"interchange format called `JSON (JavaScript Object Notation) <https://json."
 "org>`_.  The standard module called :mod:`json` can take Python data "
 "hierarchies, and convert them to string representations; this process is "
 "called :dfn:`serializing`.  Reconstructing the data from the string "
@@ -431,33 +448,39 @@ msgid ""
 "file or data, or sent over a network connection to some distant machine."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:468
+#: ../Doc/tutorial/inputoutput.rst:489
 msgid ""
 "The JSON format is commonly used by modern applications to allow for data "
 "exchange.  Many programmers are already familiar with it, which makes it a "
 "good choice for interoperability."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:472
+#: ../Doc/tutorial/inputoutput.rst:493
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation "
 "with a simple line of code::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:479
+#: ../Doc/tutorial/inputoutput.rst:501
 msgid ""
 "Another variant of the :func:`~json.dumps` function, called :func:`~json."
 "dump`, simply serializes the object to a :term:`text file`.  So if ``f`` is "
 "a :term:`text file` object opened for writing, we can do this::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:485
+#: ../Doc/tutorial/inputoutput.rst:507
 msgid ""
-"To decode the object again, if ``f`` is a :term:`text file` object which has "
-"been opened for reading::"
+"To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
+"file` object which has been opened for reading::"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:490
+#: ../Doc/tutorial/inputoutput.rst:513
+msgid ""
+"JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening "
+"JSON file as a :term:`text file` for both of reading and writing."
+msgstr ""
+
+#: ../Doc/tutorial/inputoutput.rst:516
 msgid ""
 "This simple serialization technique can handle lists and dictionaries, but "
 "serializing arbitrary class instances in JSON requires a bit of extra "
@@ -465,11 +488,11 @@ msgid ""
 "this."
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:496
+#: ../Doc/tutorial/inputoutput.rst:522
 msgid ":mod:`pickle` - the pickle module"
 msgstr ""
 
-#: ../Doc/tutorial/inputoutput.rst:498
+#: ../Doc/tutorial/inputoutput.rst:524
 msgid ""
 "Contrary to :ref:`JSON <tut-json>`, *pickle* is a protocol which allows the "
 "serialization of arbitrarily complex Python objects.  As such, it is "

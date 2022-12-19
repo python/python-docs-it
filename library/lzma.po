@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,10 +36,9 @@ msgstr ""
 #: ../Doc/library/lzma.rst:21
 msgid ""
 "The interface provided by this module is very similar to that of the :mod:"
-"`bz2` module. However, note that :class:`LZMAFile` is *not* thread-safe, "
-"unlike :class:`bz2.BZ2File`, so if you need to use a single :class:"
-"`LZMAFile` instance from multiple threads, it is necessary to protect it "
-"with a lock."
+"`bz2` module. Note that :class:`LZMAFile` and :class:`bz2.BZ2File` are *not* "
+"thread-safe, so if you need to use a single :class:`LZMAFile` instance from "
+"multiple threads, it is necessary to protect it with a lock."
 msgstr ""
 
 #: ../Doc/library/lzma.rst:29
@@ -67,10 +67,10 @@ msgstr ""
 
 #: ../Doc/library/lzma.rst:46
 msgid ""
-"The *mode* argument can be any of ``\"r\"``, ``\"rb\"``, ``\"w\"``, ``\"wb"
-"\"``, ``\"x\"``, ``\"xb\"``, ``\"a\"`` or ``\"ab\"`` for binary mode, or ``"
-"\"rt\"``, ``\"wt\"``, ``\"xt\"``, or ``\"at\"`` for text mode. The default "
-"is ``\"rb\"``."
+"The *mode* argument can be any of ``\"r\"``, ``\"rb\"``, ``\"w\"``, "
+"``\"wb\"``, ``\"x\"``, ``\"xb\"``, ``\"a\"`` or ``\"ab\"`` for binary mode, "
+"or ``\"rt\"``, ``\"wt\"``, ``\"xt\"``, or ``\"at\"`` for text mode. The "
+"default is ``\"rb\"``."
 msgstr ""
 
 #: ../Doc/library/lzma.rst:50 ../Doc/library/lzma.rst:95
@@ -126,8 +126,8 @@ msgstr ""
 msgid ""
 "The *mode* argument can be either ``\"r\"`` for reading (default), ``\"w\"`` "
 "for overwriting, ``\"x\"`` for exclusive creation, or ``\"a\"`` for "
-"appending. These can equivalently be given as ``\"rb\"``, ``\"wb\"``, ``\"xb"
-"\"`` and ``\"ab\"`` respectively."
+"appending. These can equivalently be given as ``\"rb\"``, ``\"wb\"``, "
+"``\"xb\"`` and ``\"ab\"`` respectively."
 msgstr ""
 
 #: ../Doc/library/lzma.rst:88
@@ -382,9 +382,9 @@ msgstr ""
 
 #: ../Doc/library/lzma.rst:260
 msgid ""
-"Attempting to decompress data after the end of stream is reached raises an "
-"`EOFError`.  Any data found after the end of the stream is ignored and saved "
-"in the :attr:`~.unused_data` attribute."
+"Attempting to decompress data after the end of stream is reached raises an :"
+"exc:`EOFError`.  Any data found after the end of the stream is ignored and "
+"saved in the :attr:`~.unused_data` attribute."
 msgstr ""
 
 #: ../Doc/library/lzma.rst:264
@@ -451,7 +451,8 @@ msgid "Miscellaneous"
 msgstr ""
 
 #: ../Doc/library/lzma.rst:316
-msgid "Returns true if the given integrity check is supported on this system."
+msgid ""
+"Return ``True`` if the given integrity check is supported on this system."
 msgstr ""
 
 #: ../Doc/library/lzma.rst:318

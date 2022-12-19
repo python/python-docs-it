@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -636,11 +637,11 @@ msgid "The ``errors`` module has the following attributes:"
 msgstr ""
 
 #: ../Doc/library/pyexpat.rst:668
-msgid "A dictionary mapping numeric error codes to their string descriptions."
+msgid "A dictionary mapping string descriptions to their error codes."
 msgstr ""
 
 #: ../Doc/library/pyexpat.rst:675
-msgid "A dictionary mapping string descriptions to their error codes."
+msgid "A dictionary mapping numeric error codes to their string descriptions."
 msgstr ""
 
 #: ../Doc/library/pyexpat.rst:685
@@ -790,7 +791,8 @@ msgid ""
 "suspended."
 msgstr ""
 
-#: ../Doc/library/pyexpat.rst:857
+#: ../Doc/library/pyexpat.rst:857 ../Doc/library/pyexpat.rst:890
+#: ../Doc/library/pyexpat.rst:895
 msgid "This should not be reported to Python applications."
 msgstr ""
 
@@ -801,11 +803,35 @@ msgid ""
 "input or to stop the parser."
 msgstr ""
 
-#: ../Doc/library/pyexpat.rst:871
+#: ../Doc/library/pyexpat.rst:872
+msgid ""
+"An attempt was made to undeclare reserved namespace prefix ``xml`` or to "
+"bind it to another namespace URI."
+msgstr ""
+
+#: ../Doc/library/pyexpat.rst:879
+msgid ""
+"An attempt was made to declare or undeclare reserved namespace prefix "
+"``xmlns``."
+msgstr ""
+
+#: ../Doc/library/pyexpat.rst:884
+msgid ""
+"An attempt was made to bind the URI of one the reserved namespace prefixes "
+"``xml`` and ``xmlns`` to another namespace prefix."
+msgstr ""
+
+#: ../Doc/library/pyexpat.rst:900
+msgid ""
+"The limit on input amplification factor (from DTD and entities) has been "
+"breached."
+msgstr ""
+
+#: ../Doc/library/pyexpat.rst:905
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/library/pyexpat.rst:872
+#: ../Doc/library/pyexpat.rst:906
 msgid ""
 "The encoding string included in XML output should conform to the appropriate "
 "standards. For example, \"UTF-8\" is valid, but \"UTF8\" is not. See https://"

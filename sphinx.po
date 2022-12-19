@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-21 18:09+0200\n"
+"POT-Creation-Date: 2022-11-18 00:29+0100\n"
 "PO-Revision-Date: 2019-04-21 23:08+0200\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
-"Language-Team: \n"
-"Language: it_IT\n"
 "X-Generator: Poedit 2.2.1\n"
 
 #: ../Doc/tools/templates/customsourcelink.html:3
@@ -38,11 +38,39 @@ msgstr "Dettaglio dell’implementazione di CPython:"
 msgid ""
 "Deprecated since version {deprecated}, will be removed in version {removed}"
 msgstr ""
-"Deprecato dalla versione {deprecated}, sarà rimosso nella versione "
-"{removed}."
+"Deprecato dalla versione {deprecated}, sarà rimosso nella versione {removed}."
+
+#: ../Doc/tools/templates/dummy.html:8
+#, fuzzy
+msgid "Deprecated since version {deprecated}, removed in version {removed}"
+msgstr ""
+"Deprecato dalla versione {deprecated}, sarà rimosso nella versione {removed}."
+
+#: ../Doc/tools/templates/dummy.html:13
+#, fuzzy
+msgid "in development"
+msgstr "Python 3.8 (in sviluppo)"
+
+#: ../Doc/tools/templates/dummy.html:14
+msgid "pre-release"
+msgstr ""
+
+#: ../Doc/tools/templates/dummy.html:15
+msgid "stable"
+msgstr ""
+
+#: ../Doc/tools/templates/dummy.html:16
+#, fuzzy
+msgid "security-fixes"
+msgstr "Python 3.6 (correzioni di sicurezza)"
+
+#: ../Doc/tools/templates/dummy.html:17
+msgid "EOL"
+msgstr ""
 
 #: ../Doc/tools/templates/indexcontent.html:8
-msgid "Welcome! This is the documentation for Python %(release)s."
+#, fuzzy
+msgid "Welcome! This is the official documentation for Python %(release)s."
 msgstr "Benvenuti! Questa è la documentazione di Python %(release)s."
 
 #: ../Doc/tools/templates/indexcontent.html:10
@@ -57,8 +85,8 @@ msgstr "Cosa c'è di nuovo in Python %(version)s?"
 msgid ""
 "or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents</a> since 2.0"
 msgstr ""
-"o <a href=\"%(whatsnew_index)s\">tutti i documenti \"Cosa c'è di nuovo\"</"
-"a> dalla versione 2.0"
+"o <a href=\"%(whatsnew_index)s\">tutti i documenti \"Cosa c'è di nuovo\"</a> "
+"dalla versione 2.0"
 
 #: ../Doc/tools/templates/indexcontent.html:15
 msgid "Tutorial"
@@ -193,15 +221,19 @@ msgid "Reporting bugs"
 msgstr "Segnalazione di *bug*"
 
 #: ../Doc/tools/templates/indexcontent.html:60
+#, fuzzy
+msgid "Contributing to Docs"
+msgstr "Distribuzione dei moduli Python"
+
+#: ../Doc/tools/templates/indexcontent.html:61
 msgid "About the documentation"
 msgstr "Informazioni sulla documentazione"
 
-#: ../Doc/tools/templates/indexcontent.html:62
+#: ../Doc/tools/templates/indexcontent.html:63
 msgid "History and License of Python"
 msgstr "Storia e licenza di Python"
 
-#: ../Doc/tools/templates/indexcontent.html:63
-#: ../Doc/tools/templates/layout.html:116
+#: ../Doc/tools/templates/indexcontent.html:64
 msgid "Copyright"
 msgstr "Copyright"
 
@@ -218,81 +250,86 @@ msgid "Docs by version"
 msgstr "Documenti per versione"
 
 #: ../Doc/tools/templates/indexsidebar.html:5
-msgid "Python 3.8 (in development)"
-msgstr "Python 3.8 (in sviluppo)"
+msgid "Stable"
+msgstr ""
 
 #: ../Doc/tools/templates/indexsidebar.html:6
-msgid "Python 3.7 (stable)"
-msgstr "Pitone 3.7 (stabile)"
+#, fuzzy
+msgid "In development"
+msgstr "Python 3.8 (in sviluppo)"
 
 #: ../Doc/tools/templates/indexsidebar.html:7
-msgid "Python 3.6 (security-fixes)"
-msgstr "Python 3.6 (correzioni di sicurezza)"
-
-#: ../Doc/tools/templates/indexsidebar.html:8
-msgid "Python 3.5 (security-fixes)"
-msgstr "Python 3.5 (correzioni di sicurezza)"
-
-#: ../Doc/tools/templates/indexsidebar.html:9
-msgid "Python 2.7 (stable)"
-msgstr "Pitone 2.7 (stabile)"
-
-#: ../Doc/tools/templates/indexsidebar.html:10
 msgid "All versions"
 msgstr "Tutte le versioni"
 
-#: ../Doc/tools/templates/indexsidebar.html:13
+#: ../Doc/tools/templates/indexsidebar.html:10
 msgid "Other resources"
 msgstr "Altre risorse"
 
-#: ../Doc/tools/templates/indexsidebar.html:16
+#: ../Doc/tools/templates/indexsidebar.html:13
 msgid "PEP Index"
 msgstr "Indice PEP"
 
-#: ../Doc/tools/templates/indexsidebar.html:17
+#: ../Doc/tools/templates/indexsidebar.html:14
 msgid "Beginner's Guide"
 msgstr "Guida per principianti"
 
-#: ../Doc/tools/templates/indexsidebar.html:18
+#: ../Doc/tools/templates/indexsidebar.html:15
 msgid "Book List"
 msgstr "Elenco di Libri"
 
-#: ../Doc/tools/templates/indexsidebar.html:19
+#: ../Doc/tools/templates/indexsidebar.html:16
 msgid "Audio/Visual Talks"
 msgstr "Interventi audio/video"
 
-#: ../Doc/tools/templates/layout.html:10
-msgid "Documentation "
-msgstr "Documentazione"
-
-#: ../Doc/tools/templates/layout.html:21
-msgid "Quick search"
-msgstr "Ricerca Veloce"
-
-#: ../Doc/tools/templates/layout.html:22
-msgid "Go"
-msgstr "Vai"
-
-#: ../Doc/tools/templates/layout.html:118
-msgid "The Python Software Foundation is a non-profit corporation."
-msgstr "La Python Software Foundation è una società senza scopo di lucro."
-
-#: ../Doc/tools/templates/layout.html:119
-msgid "Please donate."
-msgstr "Per favore, fai una donazione."
-
-#: ../Doc/tools/templates/layout.html:121
-msgid "Last updated on %(last_updated)s."
-msgstr "Ultimo aggiornamento su %(last_updated)s."
-
-#: ../Doc/tools/templates/layout.html:122
-msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
-msgstr "<a href=\"%(pathto_bugs)s\">Trovato un bug</a>?"
-
-#: ../Doc/tools/templates/layout.html:124
-msgid ""
-"Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> "
-"%(sphinx_version)s."
+#: ../Doc/tools/templates/indexsidebar.html:17
+msgid "Python Developer’s Guide"
 msgstr ""
-"Creato utilizzando <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> "
-"%(sphinx_version)s."
+
+#: ../Doc/tools/templates/layout.html:6
+msgid ""
+"This document is for an old version of Python that is no longer supported.\n"
+"    You should upgrade, and read the "
+msgstr ""
+
+#: ../Doc/tools/templates/layout.html:8
+#, fuzzy
+msgid " Python documentation for the current stable release"
+msgstr "Benvenuti! Questa è la documentazione di Python %(release)s."
+
+#~ msgid "Python 3.7 (stable)"
+#~ msgstr "Pitone 3.7 (stabile)"
+
+#~ msgid "Python 3.5 (security-fixes)"
+#~ msgstr "Python 3.5 (correzioni di sicurezza)"
+
+#~ msgid "Python 2.7 (stable)"
+#~ msgstr "Pitone 2.7 (stabile)"
+
+#~ msgid "Documentation "
+#~ msgstr "Documentazione"
+
+#~ msgid "Quick search"
+#~ msgstr "Ricerca Veloce"
+
+#~ msgid "Go"
+#~ msgstr "Vai"
+
+#~ msgid "The Python Software Foundation is a non-profit corporation."
+#~ msgstr "La Python Software Foundation è una società senza scopo di lucro."
+
+#~ msgid "Please donate."
+#~ msgstr "Per favore, fai una donazione."
+
+#~ msgid "Last updated on %(last_updated)s."
+#~ msgstr "Ultimo aggiornamento su %(last_updated)s."
+
+#~ msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
+#~ msgstr "<a href=\"%(pathto_bugs)s\">Trovato un bug</a>?"
+
+#~ msgid ""
+#~ "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> "
+#~ "%(sphinx_version)s."
+#~ msgstr ""
+#~ "Creato utilizzando <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> "
+#~ "%(sphinx_version)s."
