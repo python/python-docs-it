@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-18 00:29+0100\n"
-"PO-Revision-Date: 2019-04-21 21:48+0200\n"
+"PO-Revision-Date: 2023-01-06 12:13+0100\n"
 "Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: ../Doc/copyright.rst:3
 msgid "Copyright"
@@ -27,10 +27,9 @@ msgid "Python and this documentation is:"
 msgstr "Python e questa documentazione sono protetti da:"
 
 #: ../Doc/copyright.rst:7
-#, fuzzy
 msgid "Copyright © 2001-2022 Python Software Foundation. All rights reserved."
 msgstr ""
-"Copyright © 2001-2019 Python Software Foundation. Tutti i diritti riservati."
+"Copyright © 2001-2022 Python Software Foundation. Tutti i diritti riservati."
 
 #: ../Doc/copyright.rst:9
 msgid "Copyright © 2000 BeOpen.com. All rights reserved."
