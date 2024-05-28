@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -729,7 +729,7 @@ msgid ""
 "the features of generator expressions:"
 msgstr ""
 
-#: ../Doc/howto/functional.rst:640
+#: ../Doc/howto/functional.rst:631
 msgid ""
 ":func:`map(f, iterA, iterB, ...) <map>` returns an iterator over the sequence"
 msgstr ""
@@ -1105,8 +1105,8 @@ msgstr ""
 msgid ""
 "A related function is :func:`itertools.accumulate(iterable, func=operator."
 "add) <itertools.accumulate>`.  It performs the same calculation, but instead "
-"of returning only the final result, :func:`accumulate` returns an iterator "
-"that also yields each partial result::"
+"of returning only the final result, :func:`~itertools.accumulate` returns an "
+"iterator that also yields each partial result::"
 msgstr ""
 
 #: ../Doc/howto/functional.rst:1086
@@ -1302,12 +1302,12 @@ msgstr ""
 #: ../Doc/howto/functional.rst:1210
 msgid ""
 "**Structure and Interpretation of Computer Programs**, by Harold Abelson and "
-"Gerald Jay Sussman with Julie Sussman.  Full text at https://mitpress.mit."
-"edu/sicp/.  In this classic textbook of computer science, chapters 2 and 3 "
-"discuss the use of sequences and streams to organize the data flow inside a "
-"program.  The book uses Scheme for its examples, but many of the design "
-"approaches described in these chapters are applicable to functional-style "
-"Python code."
+"Gerald Jay Sussman with Julie Sussman.  The book can be found at https://"
+"mitpress.mit.edu/sicp.  In this classic textbook of computer science, "
+"chapters 2 and 3 discuss the use of sequences and streams to organize the "
+"data flow inside a program.  The book uses Scheme for its examples, but many "
+"of the design approaches described in these chapters are applicable to "
+"functional-style Python code."
 msgstr ""
 
 #: ../Doc/howto/functional.rst:1218
@@ -1329,14 +1329,20 @@ msgstr ""
 
 #: ../Doc/howto/functional.rst:1226
 msgid ""
+"https://en.wikipedia.org/wiki/Partial_application: Entry for the concept of "
+"partial function application."
+msgstr ""
+
+#: ../Doc/howto/functional.rst:1228
+msgid ""
 "https://en.wikipedia.org/wiki/Currying: Entry for the concept of currying."
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1229
+#: ../Doc/howto/functional.rst:1231
 msgid "Python-specific"
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1231
+#: ../Doc/howto/functional.rst:1233
 msgid ""
 "https://gnosis.cx/TPiP/: The first chapter of David Mertz's book :title-"
 "reference:`Text Processing in Python` discusses functional programming for "
@@ -1344,7 +1350,7 @@ msgid ""
 "Text Processing\"."
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1236
+#: ../Doc/howto/functional.rst:1238
 msgid ""
 "Mertz also wrote a 3-part series of articles on functional programming for "
 "IBM's DeveloperWorks site; see `part 1 <https://developer.ibm.com/articles/l-"
@@ -1352,27 +1358,27 @@ msgid ""
 "`part 3 <https://developer.ibm.com/tutorials/l-prog3/>`__,"
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1244
+#: ../Doc/howto/functional.rst:1246
 msgid "Python documentation"
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1246
+#: ../Doc/howto/functional.rst:1248
 msgid "Documentation for the :mod:`itertools` module."
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1248
+#: ../Doc/howto/functional.rst:1250
 msgid "Documentation for the :mod:`functools` module."
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1250
+#: ../Doc/howto/functional.rst:1252
 msgid "Documentation for the :mod:`operator` module."
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1252
+#: ../Doc/howto/functional.rst:1254
 msgid ":pep:`289`: \"Generator Expressions\""
 msgstr ""
 
-#: ../Doc/howto/functional.rst:1254
+#: ../Doc/howto/functional.rst:1256
 msgid ""
 ":pep:`342`: \"Coroutines via Enhanced Generators\" describes the new "
 "generator features in Python 2.5."

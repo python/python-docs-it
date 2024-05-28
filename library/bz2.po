@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/bz2.rst:2
-msgid ":mod:`bz2` --- Support for :program:`bzip2` compression"
+msgid ":mod:`!bz2` --- Support for :program:`bzip2` compression"
 msgstr ""
 
 #: ../Doc/library/bz2.rst:12
@@ -98,11 +98,11 @@ msgid ""
 "handling behavior, and line ending(s)."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:59 ../Doc/library/bz2.rst:124
+#: ../Doc/library/bz2.rst:59 ../Doc/library/bz2.rst:175
 msgid "The ``'x'`` (exclusive creation) mode was added."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:62 ../Doc/library/bz2.rst:131
+#: ../Doc/library/bz2.rst:62 ../Doc/library/bz2.rst:182
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
 
@@ -147,22 +147,22 @@ msgstr ""
 #: ../Doc/library/bz2.rst:89
 msgid ""
 ":class:`BZ2File` provides all of the members specified by the :class:`io."
-"BufferedIOBase`, except for :meth:`detach` and :meth:`truncate`. Iteration "
-"and the :keyword:`with` statement are supported."
+"BufferedIOBase`, except for :meth:`~io.BufferedIOBase.detach` and :meth:`~io."
+"IOBase.truncate`. Iteration and the :keyword:`with` statement are supported."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:93
-msgid ":class:`BZ2File` also provides the following method:"
+#: ../Doc/library/bz2.rst:94
+msgid ":class:`BZ2File` also provides the following methods and attributes:"
 msgstr ""
 
-#: ../Doc/library/bz2.rst:97
+#: ../Doc/library/bz2.rst:98
 msgid ""
 "Return buffered data without advancing the file position. At least one byte "
 "of data will be returned (unless at EOF). The exact number of bytes returned "
 "is unspecified."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:101
+#: ../Doc/library/bz2.rst:102
 msgid ""
 "While calling :meth:`peek` does not change the file position of the :class:"
 "`BZ2File`, it may change the position of the underlying file object (e.g. if "
@@ -170,99 +170,138 @@ msgid ""
 "*filename*)."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:109
+#: ../Doc/library/bz2.rst:111
+msgid "Return the file descriptor for the underlying file."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:117
+msgid "Return whether the file was opened for reading."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:123
+msgid "Return whether the file supports seeking."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:129
+msgid "Return whether the file was opened for writing."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:135
+msgid ""
+"Read up to *size* uncompressed bytes, while trying to avoid making multiple "
+"reads from the underlying stream. Reads up to a buffer's worth of data if "
+"size is negative."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:139
+msgid "Returns ``b''`` if the file is at EOF."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:145
+msgid "Read bytes into *b*."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:147
+msgid "Returns the number of bytes read (0 for EOF)."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:153
+msgid "``'rb'`` for reading and ``'wb'`` for writing."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:159
+msgid ""
+"The bzip2 file name.  Equivalent to the :attr:`~io.FileIO.name` attribute of "
+"the underlying :term:`file object`."
+msgstr ""
+
+#: ../Doc/library/bz2.rst:165
 msgid "Support for the :keyword:`with` statement was added."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:112
-msgid ""
-"The :meth:`fileno`, :meth:`readable`, :meth:`seekable`, :meth:`writable`, :"
-"meth:`read1` and :meth:`readinto` methods were added."
-msgstr ""
-
-#: ../Doc/library/bz2.rst:116
+#: ../Doc/library/bz2.rst:168
 msgid ""
 "Support was added for *filename* being a :term:`file object` instead of an "
 "actual filename."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:120
+#: ../Doc/library/bz2.rst:172
 msgid ""
 "The ``'a'`` (append) mode was added, along with support for reading multi-"
 "stream files."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:127
+#: ../Doc/library/bz2.rst:178
 msgid ""
 "The :meth:`~io.BufferedIOBase.read` method now accepts an argument of "
 "``None``."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:134
+#: ../Doc/library/bz2.rst:185
 msgid ""
 "The *buffering* parameter has been removed. It was ignored and deprecated "
 "since Python 3.0. Pass an open file object to control how the file is opened."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:139
+#: ../Doc/library/bz2.rst:190
 msgid "The *compresslevel* parameter became keyword-only."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:141
+#: ../Doc/library/bz2.rst:192
 msgid ""
 "This class is thread unsafe in the face of multiple simultaneous readers or "
 "writers, just like its equivalent classes in :mod:`gzip` and :mod:`lzma` "
 "have always been."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:148
+#: ../Doc/library/bz2.rst:199
 msgid "Incremental (de)compression"
 msgstr ""
 
-#: ../Doc/library/bz2.rst:152
+#: ../Doc/library/bz2.rst:203
 msgid ""
 "Create a new compressor object. This object may be used to compress data "
 "incrementally. For one-shot compression, use the :func:`compress` function "
 "instead."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:156 ../Doc/library/bz2.rst:244
+#: ../Doc/library/bz2.rst:207 ../Doc/library/bz2.rst:295
 msgid ""
 "*compresslevel*, if given, must be an integer between ``1`` and ``9``. The "
 "default is ``9``."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:161
+#: ../Doc/library/bz2.rst:212
 msgid ""
 "Provide data to the compressor object. Returns a chunk of compressed data if "
 "possible, or an empty byte string otherwise."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:164
+#: ../Doc/library/bz2.rst:215
 msgid ""
 "When you have finished providing data to the compressor, call the :meth:"
 "`flush` method to finish the compression process."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:170
+#: ../Doc/library/bz2.rst:221
 msgid ""
 "Finish the compression process. Returns the compressed data left in internal "
 "buffers."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:173
+#: ../Doc/library/bz2.rst:224
 msgid ""
 "The compressor object may not be used after this method has been called."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:178
+#: ../Doc/library/bz2.rst:229
 msgid ""
 "Create a new decompressor object. This object may be used to decompress data "
 "incrementally. For one-shot compression, use the :func:`decompress` function "
 "instead."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:183
+#: ../Doc/library/bz2.rst:234
 msgid ""
 "This class does not transparently handle inputs containing multiple "
 "compressed streams, unlike :func:`decompress` and :class:`BZ2File`. If you "
@@ -270,7 +309,7 @@ msgid ""
 "must use a new decompressor for each stream."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:190
+#: ../Doc/library/bz2.rst:241
 msgid ""
 "Decompress *data* (a :term:`bytes-like object`), returning uncompressed data "
 "as bytes. Some of *data* may be buffered internally, for use in later calls "
@@ -278,7 +317,7 @@ msgid ""
 "output of any previous calls to :meth:`decompress`."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:196
+#: ../Doc/library/bz2.rst:247
 msgid ""
 "If *max_length* is nonnegative, returns at most *max_length* bytes of "
 "decompressed data. If this limit is reached and further output can be "
@@ -287,99 +326,99 @@ msgid ""
 "``b''`` to obtain more of the output."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:203
+#: ../Doc/library/bz2.rst:254
 msgid ""
 "If all of the input data was decompressed and returned (either because this "
 "was less than *max_length* bytes, or because *max_length* was negative), "
 "the :attr:`~.needs_input` attribute will be set to ``True``."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:208
+#: ../Doc/library/bz2.rst:259
 msgid ""
 "Attempting to decompress data after the end of stream is reached raises an :"
 "exc:`EOFError`.  Any data found after the end of the stream is ignored and "
 "saved in the :attr:`~.unused_data` attribute."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:212
+#: ../Doc/library/bz2.rst:263
 msgid "Added the *max_length* parameter."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:217
+#: ../Doc/library/bz2.rst:268
 msgid "``True`` if the end-of-stream marker has been reached."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:224
+#: ../Doc/library/bz2.rst:275
 msgid "Data found after the end of the compressed stream."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:226
+#: ../Doc/library/bz2.rst:277
 msgid ""
 "If this attribute is accessed before the end of the stream has been reached, "
 "its value will be ``b''``."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:231
+#: ../Doc/library/bz2.rst:282
 msgid ""
 "``False`` if the :meth:`.decompress` method can provide more decompressed "
 "data before requiring new uncompressed input."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:238
+#: ../Doc/library/bz2.rst:289
 msgid "One-shot (de)compression"
 msgstr ""
 
-#: ../Doc/library/bz2.rst:242
+#: ../Doc/library/bz2.rst:293
 msgid "Compress *data*, a :term:`bytes-like object <bytes-like object>`."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:247
+#: ../Doc/library/bz2.rst:298
 msgid "For incremental compression, use a :class:`BZ2Compressor` instead."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:252
+#: ../Doc/library/bz2.rst:303
 msgid "Decompress *data*, a :term:`bytes-like object <bytes-like object>`."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:254
+#: ../Doc/library/bz2.rst:305
 msgid ""
 "If *data* is the concatenation of multiple compressed streams, decompress "
 "all of the streams."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:257
+#: ../Doc/library/bz2.rst:308
 msgid "For incremental decompression, use a :class:`BZ2Decompressor` instead."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:259
+#: ../Doc/library/bz2.rst:310
 msgid "Support for multi-stream inputs was added."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:265
+#: ../Doc/library/bz2.rst:316
 msgid "Examples of usage"
 msgstr ""
 
-#: ../Doc/library/bz2.rst:267
+#: ../Doc/library/bz2.rst:318
 msgid "Below are some examples of typical usage of the :mod:`bz2` module."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:269
+#: ../Doc/library/bz2.rst:320
 msgid ""
 "Using :func:`compress` and :func:`decompress` to demonstrate round-trip "
 "compression:"
 msgstr ""
 
-#: ../Doc/library/bz2.rst:287
+#: ../Doc/library/bz2.rst:338
 msgid "Using :class:`BZ2Compressor` for incremental compression:"
 msgstr ""
 
-#: ../Doc/library/bz2.rst:305
+#: ../Doc/library/bz2.rst:356
 msgid ""
 "The example above uses a very \"nonrandom\" stream of data (a stream of "
 "``b\"z\"`` chunks).  Random data tends to compress poorly, while ordered, "
 "repetitive data usually yields a high compression ratio."
 msgstr ""
 
-#: ../Doc/library/bz2.rst:309
+#: ../Doc/library/bz2.rst:360
 msgid "Writing and reading a bzip2-compressed file in binary mode:"
 msgstr ""

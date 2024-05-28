@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 #: ../Doc/library/asyncio-dev.rst:36
 msgid ""
 "setting the log level of the :ref:`asyncio logger <asyncio-logger>` to :py:"
-"data:`logging.DEBUG`, for example the following snippet of code can be run "
+"const:`logging.DEBUG`, for example the following snippet of code can be run "
 "at startup of the application::"
 msgstr ""
 
@@ -146,9 +146,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/asyncio-dev.rst:102
-msgid ""
-"To handle signals and to execute subprocesses, the event loop must be run in "
-"the main thread."
+msgid "To handle signals the event loop must be run in the main thread."
 msgstr ""
 
 #: ../Doc/library/asyncio-dev.rst:105
@@ -202,7 +200,7 @@ msgstr ""
 
 #: ../Doc/library/asyncio-dev.rst:145
 msgid ""
-"The default log level is :py:data:`logging.INFO`, which can be easily "
+"The default log level is :py:const:`logging.INFO`, which can be easily "
 "adjusted::"
 msgstr ""
 

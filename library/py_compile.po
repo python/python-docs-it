@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/py_compile.rst:2
-msgid ":mod:`py_compile` --- Compile Python source files"
+msgid ":mod:`!py_compile` --- Compile Python source files"
 msgstr ""
 
 #: ../Doc/library/py_compile.rst:10
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../Doc/library/py_compile.rst:99
 msgid ""
-"A enumeration of possible methods the interpreter can use to determine "
+"An enumeration of possible methods the interpreter can use to determine "
 "whether a bytecode file is up to date with a source file. The ``.pyc`` file "
 "indicates the desired invalidation mode in its header. See :ref:`pyc-"
 "invalidation` for more information on how Python invalidates ``.pyc`` files "
@@ -167,11 +167,11 @@ msgid ""
 "external to Python like a build system."
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:130
+#: ../Doc/library/py_compile.rst:131
 msgid "Command-Line Interface"
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:132
+#: ../Doc/library/py_compile.rst:133
 msgid ""
 "This module can be invoked as a script to compile several source files.  The "
 "files named in *filenames* are compiled and the resulting bytecode is cached "
@@ -180,28 +180,36 @@ msgid ""
 "status is nonzero if one of the files could not be compiled."
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:144
+#: ../Doc/library/py_compile.rst:145
 msgid ""
 "Positional arguments are files to compile.  If ``-`` is the only parameter, "
 "the list of files is taken from standard input."
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:149
+#: ../Doc/library/py_compile.rst:150
 msgid "Suppress errors output."
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:151
+#: ../Doc/library/py_compile.rst:152
 msgid "Added support for ``-``."
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:154
+#: ../Doc/library/py_compile.rst:155
 msgid "Added support for :option:`-q`."
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:160
+#: ../Doc/library/py_compile.rst:161
 msgid "Module :mod:`compileall`"
 msgstr ""
 
-#: ../Doc/library/py_compile.rst:161
+#: ../Doc/library/py_compile.rst:162
 msgid "Utilities to compile all Python source files in a directory tree."
+msgstr ""
+
+#: ../Doc/library/py_compile.rst:12
+msgid "file"
+msgstr ""
+
+#: ../Doc/library/py_compile.rst:12
+msgid "byte-code"
 msgstr ""

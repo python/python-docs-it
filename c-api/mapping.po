@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgstr ""
 msgid ""
 "Return ``1`` if the object provides the mapping protocol or supports "
 "slicing, and ``0`` otherwise.  Note that it returns ``1`` for Python classes "
-"with a :meth:`__getitem__` method, since in general it is impossible to "
-"determine what type of keys the class supports. This function always "
+"with a :meth:`~object.__getitem__` method, since in general it is impossible "
+"to determine what type of keys the class supports. This function always "
 "succeeds."
 msgstr ""
 
@@ -44,72 +44,123 @@ msgstr ""
 
 #: ../Doc/c-api/mapping.rst:31
 msgid ""
-"Return element of *o* corresponding to the string *key* or ``NULL`` on "
-"failure. This is the equivalent of the Python expression ``o[key]``. See "
-"also :c:func:`PyObject_GetItem`."
+"This is the same as :c:func:`PyObject_GetItem`, but *key* is specified as a :"
+"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
 msgstr ""
 
 #: ../Doc/c-api/mapping.rst:38
 msgid ""
-"Map the string *key* to the value *v* in object *o*.  Returns ``-1`` on "
-"failure.  This is the equivalent of the Python statement ``o[key] = v``. See "
-"also :c:func:`PyObject_SetItem`.  This function *does not* steal a reference "
-"to *v*."
+"Variant of :c:func:`PyObject_GetItem` which doesn't raise :exc:`KeyError` if "
+"the key is not found."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:46
+#: ../Doc/c-api/mapping.rst:41
 msgid ""
-"Remove the mapping for the object *key* from the object *o*.  Return ``-1`` "
-"on failure.  This is equivalent to the Python statement ``del o[key]``. This "
-"is an alias of :c:func:`PyObject_DelItem`."
+"If the key is found, return ``1`` and set *\\*result* to a new :term:`strong "
+"reference` to the corresponding value. If the key is not found, return ``0`` "
+"and set *\\*result* to ``NULL``; the :exc:`KeyError` is silenced. If an "
+"error other than :exc:`KeyError` is raised, return ``-1`` and set "
+"*\\*result* to ``NULL``."
 msgstr ""
 
 #: ../Doc/c-api/mapping.rst:53
 msgid ""
-"Remove the mapping for the string *key* from the object *o*.  Return ``-1`` "
-"on failure.  This is equivalent to the Python statement ``del o[key]``."
+"This is the same as :c:func:`PyMapping_GetOptionalItem`, but *key* is "
+"specified as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:59 ../Doc/c-api/mapping.rst:70
+#: ../Doc/c-api/mapping.rst:62
+msgid ""
+"This is the same as :c:func:`PyObject_SetItem`, but *key* is specified as a :"
+"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:69
+msgid "This is an alias of :c:func:`PyObject_DelItem`."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:74
+msgid ""
+"This is the same as :c:func:`PyObject_DelItem`, but *key* is specified as a :"
+"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:81
+msgid ""
+"Return ``1`` if the mapping object has the key *key* and ``0`` otherwise. "
+"This is equivalent to the Python expression ``key in o``. On failure, return "
+"``-1``."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:90
+msgid ""
+"This is the same as :c:func:`PyMapping_HasKeyWithError`, but *key* is "
+"specified as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:99
 msgid ""
 "Return ``1`` if the mapping object has the key *key* and ``0`` otherwise. "
 "This is equivalent to the Python expression ``key in o``. This function "
 "always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:63
+#: ../Doc/c-api/mapping.rst:105
 msgid ""
-"Note that exceptions which occur while calling the :meth:`__getitem__` "
-"method will get suppressed. To get error reporting use :c:func:"
+"Exceptions which occur when this calls :meth:`~object.__getitem__` method "
+"are silently ignored. For proper error handling, use :c:func:"
+"`PyMapping_HasKeyWithError`, :c:func:`PyMapping_GetOptionalItem` or :c:func:"
 "`PyObject_GetItem()` instead."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:74
+#: ../Doc/c-api/mapping.rst:113
 msgid ""
-"Note that exceptions which occur while calling the :meth:`__getitem__` "
-"method and creating a temporary string object will get suppressed. To get "
-"error reporting use :c:func:`PyMapping_GetItemString()` instead."
+"This is the same as :c:func:`PyMapping_HasKey`, but *key* is specified as a :"
+"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:81
+#: ../Doc/c-api/mapping.rst:119
+msgid ""
+"Exceptions that occur when this calls :meth:`~object.__getitem__` method or "
+"while creating the temporary :class:`str` object are silently ignored. For "
+"proper error handling, use :c:func:`PyMapping_HasKeyStringWithError`, :c:"
+"func:`PyMapping_GetOptionalItemString` or :c:func:`PyMapping_GetItemString` "
+"instead."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:129
 msgid ""
 "On success, return a list of the keys in object *o*.  On failure, return "
 "``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:84 ../Doc/c-api/mapping.rst:93
-#: ../Doc/c-api/mapping.rst:102
+#: ../Doc/c-api/mapping.rst:132 ../Doc/c-api/mapping.rst:141
+#: ../Doc/c-api/mapping.rst:150
 msgid "Previously, the function returned a list or a tuple."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:90
+#: ../Doc/c-api/mapping.rst:138
 msgid ""
 "On success, return a list of the values in object *o*.  On failure, return "
 "``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/mapping.rst:99
+#: ../Doc/c-api/mapping.rst:147
 msgid ""
 "On success, return a list of the items in object *o*, where each item is a "
 "tuple containing a key-value pair.  On failure, return ``NULL``."
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:23
+msgid "built-in function"
+msgstr ""
+
+#: ../Doc/c-api/mapping.rst:23
+msgid "len"
 msgstr ""

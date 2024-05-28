@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/email.message.rst:2
-msgid ":mod:`email.message`: Representing an email message"
+msgid ":mod:`!email.message`: Representing an email message"
 msgstr ""
 
 #: ../Doc/library/email.message.rst:10
@@ -68,10 +68,9 @@ msgid ""
 "The :class:`EmailMessage` dictionary-like interface is indexed by the header "
 "names, which must be ASCII values.  The values of the dictionary are strings "
 "with some extra methods.  Headers are stored and returned in case-preserving "
-"form, but field names are matched case-insensitively.  Unlike a real dict, "
-"there is an ordering to the keys, and there can be duplicate keys.  "
-"Additional methods are provided for working with headers that have duplicate "
-"keys."
+"form, but field names are matched case-insensitively.  The keys are ordered, "
+"but unlike a real dict, there can be duplicates.  Additional methods are "
+"provided for working with headers that have duplicate keys."
 msgstr ""
 
 #: ../Doc/library/email.message.rst:47
@@ -99,9 +98,9 @@ msgid ""
 "defaults to ``False``.  For backward compatibility with the base :class:"
 "`~email.message.Message` class *maxheaderlen* is accepted, but defaults to "
 "``None``, which means that by default the line length is controlled by the :"
-"attr:`~email.policy.EmailPolicy.max_line_length` of the policy.  The "
-"*policy* argument may be used to override the default policy obtained from "
-"the message instance.  This can be used to control some of the formatting "
+"attr:`~email.policy.Policy.max_line_length` of the policy.  The *policy* "
+"argument may be used to override the default policy obtained from the "
+"message instance.  This can be used to control some of the formatting "
 "produced by the method, since the specified *policy* will be passed to the :"
 "class:`~email.generator.Generator`."
 msgstr ""
@@ -266,11 +265,11 @@ msgstr ""
 
 #: ../Doc/library/email.message.rst:216
 msgid ""
-"If the :mod:`policy` defines certain headers to be unique (as the standard "
-"policies do), this method may raise a :exc:`ValueError` when an attempt is "
-"made to assign a value to such a header when one already exists.  This "
-"behavior is intentional for consistency's sake, but do not depend on it as "
-"we may choose to make such assignments do an automatic deletion of the "
+"If the :mod:`policy <email.policy>` defines certain headers to be unique (as "
+"the standard policies do), this method may raise a :exc:`ValueError` when an "
+"attempt is made to assign a value to such a header when one already exists.  "
+"This behavior is intentional for consistency's sake, but do not depend on it "
+"as we may choose to make such assignments do an automatic deletion of the "
 "existing header in the future."
 msgstr ""
 
@@ -298,8 +297,8 @@ msgstr ""
 #: ../Doc/library/email.message.rst:249
 msgid ""
 "Return the value of the named header field.  This is identical to :meth:"
-"`__getitem__` except that optional *failobj* is returned if the named header "
-"is missing (*failobj* defaults to ``None``)."
+"`~object.__getitem__` except that optional *failobj* is returned if the "
+"named header is missing (*failobj* defaults to ``None``)."
 msgstr ""
 
 #: ../Doc/library/email.message.rst:254
@@ -447,8 +446,8 @@ msgstr ""
 #: ../Doc/library/email.message.rst:380
 msgid ""
 "Note that existing parameter values of headers may be accessed through the :"
-"attr:`~email.headerregistry.BaseHeader.params` attribute of the header value "
-"(for example, ``msg['Content-Type'].params['charset']``)."
+"attr:`~email.headerregistry.ParameterizedMIMEHeader.params` attribute of the "
+"header value (for example, ``msg['Content-Type'].params['charset']``)."
 msgstr ""
 
 #: ../Doc/library/email.message.rst:384
@@ -749,8 +748,8 @@ msgstr ""
 
 #: ../Doc/library/email.message.rst:694
 msgid ""
-"Remove the payload and all of the :exc:`Content-` headers, leaving all other "
-"headers intact and in their original order."
+"Remove the payload and all of the :mailheader:`!Content-` headers, leaving "
+"all other headers intact and in their original order."
 msgstr ""
 
 #: ../Doc/library/email.message.rst:698

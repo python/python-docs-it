@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 #: ../Doc/c-api/complex.rst:66
 msgid ""
 "If *divisor* is null, this method returns zero and sets :c:data:`errno` to :"
-"c:data:`EDOM`."
+"c:macro:`!EDOM`."
 msgstr ""
 
 #: ../Doc/c-api/complex.rst:72
@@ -93,7 +93,7 @@ msgstr ""
 #: ../Doc/c-api/complex.rst:75
 msgid ""
 "If *num* is null and *exp* is not a positive real number, this method "
-"returns zero and sets :c:data:`errno` to :c:data:`EDOM`."
+"returns zero and sets :c:data:`errno` to :c:macro:`!EDOM`."
 msgstr ""
 
 #: ../Doc/c-api/complex.rst:80
@@ -137,24 +137,56 @@ msgstr ""
 msgid "Return the real part of *op* as a C :c:expr:`double`."
 msgstr ""
 
-#: ../Doc/c-api/complex.rst:123
+#: ../Doc/c-api/complex.rst:120
+msgid ""
+"If *op* is not a Python complex number object but has a :meth:`~object."
+"__complex__` method, this method will first be called to convert *op* to a "
+"Python complex number object.  If :meth:`!__complex__` is not defined then "
+"it falls back to call :c:func:`PyFloat_AsDouble` and returns its result.  "
+"Upon failure, this method returns ``-1.0``, so one should call :c:func:"
+"`PyErr_Occurred` to check for errors."
+msgstr ""
+
+#: ../Doc/c-api/complex.rst:127 ../Doc/c-api/complex.rst:141
+msgid "Use :meth:`~object.__complex__` if available."
+msgstr ""
+
+#: ../Doc/c-api/complex.rst:132
 msgid "Return the imaginary part of *op* as a C :c:expr:`double`."
 msgstr ""
 
-#: ../Doc/c-api/complex.rst:128
+#: ../Doc/c-api/complex.rst:134
+msgid ""
+"If *op* is not a Python complex number object but has a :meth:`~object."
+"__complex__` method, this method will first be called to convert *op* to a "
+"Python complex number object.  If :meth:`!__complex__` is not defined then "
+"it falls back to call :c:func:`PyFloat_AsDouble` and returns ``0.0`` on "
+"success.  Upon failure, this method returns ``-1.0``, so one should call :c:"
+"func:`PyErr_Occurred` to check for errors."
+msgstr ""
+
+#: ../Doc/c-api/complex.rst:146
 msgid "Return the :c:type:`Py_complex` value of the complex number *op*."
 msgstr ""
 
-#: ../Doc/c-api/complex.rst:130
+#: ../Doc/c-api/complex.rst:148
 msgid ""
-"If *op* is not a Python complex number object but has a :meth:`__complex__` "
-"method, this method will first be called to convert *op* to a Python complex "
-"number object.  If ``__complex__()`` is not defined then it falls back to :"
-"meth:`__float__`.  If ``__float__()`` is not defined then it falls back to :"
-"meth:`__index__`.  Upon failure, this method returns ``-1.0`` as a real "
-"value."
+"If *op* is not a Python complex number object but has a :meth:`~object."
+"__complex__` method, this method will first be called to convert *op* to a "
+"Python complex number object.  If :meth:`!__complex__` is not defined then "
+"it falls back to :meth:`~object.__float__`.  If :meth:`!__float__` is not "
+"defined then it falls back to :meth:`~object.__index__`.  Upon failure, this "
+"method returns ``-1.0`` as a real value."
 msgstr ""
 
-#: ../Doc/c-api/complex.rst:137
-msgid "Use :meth:`__index__` if available."
+#: ../Doc/c-api/complex.rst:155
+msgid "Use :meth:`~object.__index__` if available."
+msgstr ""
+
+#: ../Doc/c-api/complex.rst:8
+msgid "object"
+msgstr ""
+
+#: ../Doc/c-api/complex.rst:8
+msgid "complex number"
 msgstr ""

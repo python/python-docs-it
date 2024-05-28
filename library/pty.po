@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/pty.rst:2
-msgid ":mod:`pty` --- Pseudo-terminal utilities"
+msgid ":mod:`!pty` --- Pseudo-terminal utilities"
 msgstr ""
 
 #: ../Doc/library/pty.rst:11
@@ -33,17 +33,21 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/pty.rst:19
+msgid ":ref:`Availability <availability>`: Unix."
+msgstr ""
+
+#: ../Doc/library/pty.rst:21
 msgid ""
 "Pseudo-terminal handling is highly platform dependent. This code is mainly "
 "tested on Linux, FreeBSD, and macOS (it is supposed to work on other POSIX "
 "platforms but it's not been thoroughly tested)."
 msgstr ""
 
-#: ../Doc/library/pty.rst:23
+#: ../Doc/library/pty.rst:25
 msgid "The :mod:`pty` module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/pty.rst:28
+#: ../Doc/library/pty.rst:30
 msgid ""
 "Fork. Connect the child's controlling terminal to a pseudo-terminal. Return "
 "value is ``(pid, fd)``. Note that the child  gets *pid* 0, and the *fd* is "
@@ -52,14 +56,20 @@ msgid ""
 "the child's standard input and output)."
 msgstr ""
 
-#: ../Doc/library/pty.rst:37
+#: ../Doc/library/pty.rst:36
+msgid ""
+"On macOS the use of this function is unsafe when mixed with using higher-"
+"level system APIs, and that includes using :mod:`urllib.request`."
+msgstr ""
+
+#: ../Doc/library/pty.rst:42
 msgid ""
 "Open a new pseudo-terminal pair, using :func:`os.openpty` if possible, or "
 "emulation code for generic Unix systems. Return a pair of file descriptors "
 "``(master, slave)``, for the master and the slave end, respectively."
 msgstr ""
 
-#: ../Doc/library/pty.rst:44
+#: ../Doc/library/pty.rst:49
 msgid ""
 "Spawn a process, and connect its controlling terminal with the current "
 "process's standard io. This is often used to baffle programs which insist on "
@@ -68,14 +78,14 @@ msgid ""
 "will return."
 msgstr ""
 
-#: ../Doc/library/pty.rst:50
+#: ../Doc/library/pty.rst:55
 msgid ""
 "A loop copies STDIN of the current process to the child and data received "
 "from the child to STDOUT of the current process. It is not signaled to the "
 "child if STDIN of the current process closes down."
 msgstr ""
 
-#: ../Doc/library/pty.rst:54
+#: ../Doc/library/pty.rst:59
 msgid ""
 "The functions *master_read* and *stdin_read* are passed a file descriptor "
 "which they should read from, and they should always return a byte string. In "
@@ -83,7 +93,7 @@ msgid ""
 "array should be returned to signal end of file."
 msgstr ""
 
-#: ../Doc/library/pty.rst:59
+#: ../Doc/library/pty.rst:64
 msgid ""
 "The default implementation for both functions will read and return up to "
 "1024 bytes each time the function is called. The *master_read* callback is "
@@ -92,7 +102,7 @@ msgid ""
 "the parent process's standard input."
 msgstr ""
 
-#: ../Doc/library/pty.rst:65
+#: ../Doc/library/pty.rst:70
 msgid ""
 "Returning an empty byte string from either callback is interpreted as an end-"
 "of-file (EOF) condition, and that callback will not be called after that. If "
@@ -102,34 +112,34 @@ msgid ""
 "signals EOF the same behavior results (on linux at least)."
 msgstr ""
 
-#: ../Doc/library/pty.rst:72
+#: ../Doc/library/pty.rst:77
 msgid ""
 "Return the exit status value from :func:`os.waitpid` on the child process."
 msgstr ""
 
-#: ../Doc/library/pty.rst:74
+#: ../Doc/library/pty.rst:79
 msgid ""
-":func:`waitstatus_to_exitcode` can be used to convert the exit status into "
-"an exit code."
+":func:`os.waitstatus_to_exitcode` can be used to convert the exit status "
+"into an exit code."
 msgstr ""
 
-#: ../Doc/library/pty.rst:77
+#: ../Doc/library/pty.rst:82
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``pty.spawn`` with argument "
 "``argv``."
 msgstr ""
 
-#: ../Doc/library/pty.rst:79
+#: ../Doc/library/pty.rst:84
 msgid ""
 ":func:`spawn` now returns the status value from :func:`os.waitpid` on the "
 "child process."
 msgstr ""
 
-#: ../Doc/library/pty.rst:84
+#: ../Doc/library/pty.rst:89
 msgid "Example"
 msgstr ""
 
-#: ../Doc/library/pty.rst:88
+#: ../Doc/library/pty.rst:93
 msgid ""
 "The following program acts like the Unix command :manpage:`script(1)`, using "
 "a pseudo-terminal to record all input and output of a terminal session in a "

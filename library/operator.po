@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/operator.rst:2
-msgid ":mod:`operator` --- Standard operators as functions"
+msgid ":mod:`!operator` --- Standard operators as functions"
 msgstr ""
 
 #: ../Doc/library/operator.rst:9
@@ -67,10 +67,10 @@ msgstr ""
 
 #: ../Doc/library/operator.rst:61
 msgid ""
-"Return the outcome of :keyword:`not` *obj*.  (Note that there is no :meth:"
-"`__not__` method for object instances; only the interpreter core defines "
-"this operation.  The result is affected by the :meth:`__bool__` and :meth:"
-"`__len__` methods.)"
+"Return the outcome of :keyword:`not` *obj*.  (Note that there is no :meth:`!"
+"__not__` method for object instances; only the interpreter core defines this "
+"operation.  The result is affected by the :meth:`~object.__bool__` and :meth:"
+"`~object.__len__` methods.)"
 msgstr ""
 
 #: ../Doc/library/operator.rst:69
@@ -209,7 +209,7 @@ msgstr ""
 
 #: ../Doc/library/operator.rst:247
 msgid ""
-"Return an estimated length for the object *o*. First try to return its "
+"Return an estimated length for the object *obj*. First try to return its "
 "actual length, then an estimate using :meth:`object.__length_hint__`, and "
 "finally return the default value."
 msgstr ""
@@ -261,8 +261,8 @@ msgstr ""
 #: ../Doc/library/operator.rst:308
 msgid ""
 "Return a callable object that fetches *item* from its operand using the "
-"operand's :meth:`__getitem__` method.  If multiple items are specified, "
-"returns a tuple of lookup values.  For example:"
+"operand's :meth:`~object.__getitem__` method.  If multiple items are "
+"specified, returns a tuple of lookup values.  For example:"
 msgstr ""
 
 #: ../Doc/library/operator.rst:312
@@ -277,9 +277,9 @@ msgstr ""
 
 #: ../Doc/library/operator.rst:329
 msgid ""
-"The items can be any type accepted by the operand's :meth:`__getitem__` "
-"method.  Dictionaries accept any hashable value.  Lists, tuples, and strings "
-"accept an index or a slice:"
+"The items can be any type accepted by the operand's :meth:`~object."
+"__getitem__` method.  Dictionaries accept any :term:`hashable` value.  "
+"Lists, tuples, and strings accept an index or a slice:"
 msgstr ""
 
 #: ../Doc/library/operator.rst:343

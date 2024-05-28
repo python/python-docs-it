@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 #: ../Doc/c-api/slice.rst:36
 msgid ""
 "Returns ``0`` on success and ``-1`` on error with no exception set (unless "
-"one of the indices was not :const:`None` and failed to be converted to an "
+"one of the indices was not ``None`` and failed to be converted to an "
 "integer, in which case ``-1`` is returned with an exception set)."
 msgstr ""
 
@@ -137,7 +137,10 @@ msgstr ""
 
 #: ../Doc/c-api/slice.rst:121
 msgid ""
-"The Python ``Ellipsis`` object.  This object has no methods.  It needs to be "
-"treated just like any other object with respect to reference counts.  Like :"
-"c:data:`Py_None` it is a singleton object."
+"The Python ``Ellipsis`` object.  This object has no methods.  Like :c:data:"
+"`Py_None`, it is an :term:`immortal` singleton object."
+msgstr ""
+
+#: ../Doc/c-api/slice.rst:124
+msgid ":c:data:`Py_Ellipsis` is immortal."
 msgstr ""

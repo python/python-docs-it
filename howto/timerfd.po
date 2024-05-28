@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2024, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../Doc/howto/timerfd.rst:5
+msgid "timer file descriptor HOWTO"
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:0
+msgid "Release"
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:7
+msgid "1.13"
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:9
+msgid ""
+"This HOWTO discusses Python's support for the linux timer file descriptor."
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:13
+msgid "Examples"
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:15
+msgid ""
+"The following example shows how to use a timer file descriptor to execute a "
+"function twice a second:"
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:40
+msgid ""
+"To avoid the precision loss caused by the :class:`float` type, timer file "
+"descriptors allow specifying initial expiration and interval in integer "
+"nanoseconds with ``_ns`` variants of the functions."
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:44
+msgid ""
+"This example shows how :func:`~select.epoll` can be used with timer file "
+"descriptors to wait until the file descriptor is ready for reading:"
+msgstr ""
+
+#: ../Doc/howto/timerfd.rst:153
+msgid ""
+"This example shows how :func:`~select.select` can be used with timer file "
+"descriptors to wait until the file descriptor is ready for reading:"
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,4 +103,24 @@ msgid ""
 "exception value, and traceback object, exactly like the tuple returned by :"
 "func:`sys.exc_info`.  If the *info* argument is not supplied, the current "
 "exception is obtained from :func:`sys.exc_info`."
+msgstr ""
+
+#: ../Doc/library/cgitb.rst:13
+msgid "CGI"
+msgstr ""
+
+#: ../Doc/library/cgitb.rst:13
+msgid "exceptions"
+msgstr ""
+
+#: ../Doc/library/cgitb.rst:13
+msgid "tracebacks"
+msgstr ""
+
+#: ../Doc/library/cgitb.rst:13
+msgid "in CGI scripts"
+msgstr ""
+
+#: ../Doc/library/cgitb.rst:47
+msgid "excepthook() (in module sys)"
 msgstr ""

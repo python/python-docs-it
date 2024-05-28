@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/inspect.rst:2
-msgid ":mod:`inspect` --- Inspect live objects"
+msgid ":mod:`!inspect` --- Inspect live objects"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:10
+#: ../Doc/library/inspect.rst:15
 msgid "**Source code:** :source:`Lib/inspect.py`"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:14
+#: ../Doc/library/inspect.rst:19
 msgid ""
 "The :mod:`inspect` module provides several useful functions to help get "
 "information about live objects such as modules, classes, methods, functions, "
@@ -35,69 +35,56 @@ msgid ""
 "information you need to display a detailed traceback."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:21
+#: ../Doc/library/inspect.rst:26
 msgid ""
 "There are four main kinds of services provided by this module: type "
 "checking, getting source code, inspecting classes and functions, and "
 "examining the interpreter stack."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:29
+#: ../Doc/library/inspect.rst:34
 msgid "Types and members"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:31
+#: ../Doc/library/inspect.rst:36
 msgid ""
 "The :func:`getmembers` function retrieves the members of an object such as a "
 "class or module. The functions whose names begin with \"is\" are mainly "
 "provided as convenient choices for the second argument to :func:"
 "`getmembers`. They also help you determine when you can expect to find the "
-"following special attributes:"
+"following special attributes (see :ref:`import-mod-attrs` for module "
+"attributes):"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:41
+#: ../Doc/library/inspect.rst:46
 msgid "Type"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:41
+#: ../Doc/library/inspect.rst:46
 msgid "Attribute"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:41
+#: ../Doc/library/inspect.rst:46
 msgid "Description"
-msgstr ""
-
-#: ../Doc/library/inspect.rst:43
-msgid "module"
-msgstr ""
-
-#: ../Doc/library/inspect.rst:43 ../Doc/library/inspect.rst:48
-#: ../Doc/library/inspect.rst:58 ../Doc/library/inspect.rst:76
-#: ../Doc/library/inspect.rst:238
-msgid "__doc__"
-msgstr ""
-
-#: ../Doc/library/inspect.rst:43 ../Doc/library/inspect.rst:48
-#: ../Doc/library/inspect.rst:58 ../Doc/library/inspect.rst:76
-#: ../Doc/library/inspect.rst:238
-msgid "documentation string"
-msgstr ""
-
-#: ../Doc/library/inspect.rst:45
-msgid "__file__"
-msgstr ""
-
-#: ../Doc/library/inspect.rst:45
-msgid "filename (missing for built-in modules)"
 msgstr ""
 
 #: ../Doc/library/inspect.rst:48
 msgid "class"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:50 ../Doc/library/inspect.rst:60
-#: ../Doc/library/inspect.rst:78 ../Doc/library/inspect.rst:207
-#: ../Doc/library/inspect.rst:221 ../Doc/library/inspect.rst:240
+#: ../Doc/library/inspect.rst:48 ../Doc/library/inspect.rst:63
+#: ../Doc/library/inspect.rst:81 ../Doc/library/inspect.rst:248
+msgid "__doc__"
+msgstr ""
+
+#: ../Doc/library/inspect.rst:48 ../Doc/library/inspect.rst:63
+#: ../Doc/library/inspect.rst:81 ../Doc/library/inspect.rst:248
+msgid "documentation string"
+msgstr ""
+
+#: ../Doc/library/inspect.rst:50 ../Doc/library/inspect.rst:65
+#: ../Doc/library/inspect.rst:83 ../Doc/library/inspect.rst:217
+#: ../Doc/library/inspect.rst:231 ../Doc/library/inspect.rst:250
 msgid "__name__"
 msgstr ""
 
@@ -105,20 +92,20 @@ msgstr ""
 msgid "name with which this class was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:53 ../Doc/library/inspect.rst:63
-#: ../Doc/library/inspect.rst:81 ../Doc/library/inspect.rst:209
-#: ../Doc/library/inspect.rst:223 ../Doc/library/inspect.rst:243
+#: ../Doc/library/inspect.rst:53 ../Doc/library/inspect.rst:68
+#: ../Doc/library/inspect.rst:86 ../Doc/library/inspect.rst:219
+#: ../Doc/library/inspect.rst:233 ../Doc/library/inspect.rst:253
 msgid "__qualname__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:53 ../Doc/library/inspect.rst:63
-#: ../Doc/library/inspect.rst:81 ../Doc/library/inspect.rst:209
-#: ../Doc/library/inspect.rst:223 ../Doc/library/inspect.rst:243
+#: ../Doc/library/inspect.rst:53 ../Doc/library/inspect.rst:68
+#: ../Doc/library/inspect.rst:86 ../Doc/library/inspect.rst:219
+#: ../Doc/library/inspect.rst:233 ../Doc/library/inspect.rst:253
 msgid "qualified name"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:55 ../Doc/library/inspect.rst:73
-#: ../Doc/library/inspect.rst:106
+#: ../Doc/library/inspect.rst:55 ../Doc/library/inspect.rst:78
+#: ../Doc/library/inspect.rst:116
 msgid "__module__"
 msgstr ""
 
@@ -126,436 +113,452 @@ msgstr ""
 msgid "name of module in which this class was defined"
 msgstr ""
 
+#: ../Doc/library/inspect.rst:58 ../Doc/library/inspect.rst:111
+msgid "__type_params__"
+msgstr ""
+
 #: ../Doc/library/inspect.rst:58
+msgid ""
+"A tuple containing the :ref:`type parameters <type-params>` of a generic "
+"class"
+msgstr ""
+
+#: ../Doc/library/inspect.rst:63
 msgid "method"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:60
+#: ../Doc/library/inspect.rst:65
 msgid "name with which this method was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:65
+#: ../Doc/library/inspect.rst:70
 msgid "__func__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:65
+#: ../Doc/library/inspect.rst:70
 msgid "function object containing implementation of method"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:69 ../Doc/library/inspect.rst:245
+#: ../Doc/library/inspect.rst:74 ../Doc/library/inspect.rst:255
 msgid "__self__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:69
+#: ../Doc/library/inspect.rst:74
 msgid "instance to which this method is bound, or ``None``"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:73
+#: ../Doc/library/inspect.rst:78
 msgid "name of module in which this method was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:76
+#: ../Doc/library/inspect.rst:81
 msgid "function"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:78
+#: ../Doc/library/inspect.rst:83
 msgid "name with which this function was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:83
+#: ../Doc/library/inspect.rst:88
 msgid "__code__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:83
+#: ../Doc/library/inspect.rst:88
 msgid "code object containing compiled function :term:`bytecode`"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:87
+#: ../Doc/library/inspect.rst:92
 msgid "__defaults__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:87
+#: ../Doc/library/inspect.rst:92
 msgid "tuple of any default values for positional or keyword parameters"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:91
+#: ../Doc/library/inspect.rst:96
 msgid "__kwdefaults__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:91
+#: ../Doc/library/inspect.rst:96
 msgid "mapping of any default values for keyword-only parameters"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:95
+#: ../Doc/library/inspect.rst:100
 msgid "__globals__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:95
+#: ../Doc/library/inspect.rst:100
 msgid "global namespace in which this function was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:98
+#: ../Doc/library/inspect.rst:103
 msgid "__builtins__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:98
+#: ../Doc/library/inspect.rst:103
 msgid "builtins namespace"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:100
+#: ../Doc/library/inspect.rst:105
 msgid "__annotations__"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:100
+#: ../Doc/library/inspect.rst:105
 msgid ""
 "mapping of parameters names to annotations; ``\"return\"`` key is reserved "
 "for return annotations."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:106
+#: ../Doc/library/inspect.rst:111
+msgid ""
+"A tuple containing the :ref:`type parameters <type-params>` of a generic "
+"function"
+msgstr ""
+
+#: ../Doc/library/inspect.rst:116
 msgid "name of module in which this function was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:109
+#: ../Doc/library/inspect.rst:119
 msgid "traceback"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:109
+#: ../Doc/library/inspect.rst:119
 msgid "tb_frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:109
+#: ../Doc/library/inspect.rst:119
 msgid "frame object at this level"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:112
+#: ../Doc/library/inspect.rst:122
 msgid "tb_lasti"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:112 ../Doc/library/inspect.rst:134
+#: ../Doc/library/inspect.rst:122 ../Doc/library/inspect.rst:144
 msgid "index of last attempted instruction in bytecode"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:115
+#: ../Doc/library/inspect.rst:125
 msgid "tb_lineno"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:115 ../Doc/library/inspect.rst:137
+#: ../Doc/library/inspect.rst:125 ../Doc/library/inspect.rst:147
 msgid "current line number in Python source code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:118
+#: ../Doc/library/inspect.rst:128
 msgid "tb_next"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:118
+#: ../Doc/library/inspect.rst:128
 msgid "next inner traceback object (called by this level)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:122 ../Doc/library/inspect.rst:211
-#: ../Doc/library/inspect.rst:228
+#: ../Doc/library/inspect.rst:132 ../Doc/library/inspect.rst:221
+#: ../Doc/library/inspect.rst:238
 msgid "frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:122
+#: ../Doc/library/inspect.rst:132
 msgid "f_back"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:122
+#: ../Doc/library/inspect.rst:132
 msgid "next outer frame object (this frame's caller)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:125
+#: ../Doc/library/inspect.rst:135
 msgid "f_builtins"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:125
+#: ../Doc/library/inspect.rst:135
 msgid "builtins namespace seen by this frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:128
+#: ../Doc/library/inspect.rst:138
 msgid "f_code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:128
+#: ../Doc/library/inspect.rst:138
 msgid "code object being executed in this frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:131
+#: ../Doc/library/inspect.rst:141
 msgid "f_globals"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:131
+#: ../Doc/library/inspect.rst:141
 msgid "global namespace seen by this frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:134
+#: ../Doc/library/inspect.rst:144
 msgid "f_lasti"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:137
+#: ../Doc/library/inspect.rst:147
 msgid "f_lineno"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:140
+#: ../Doc/library/inspect.rst:150
 msgid "f_locals"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:140
+#: ../Doc/library/inspect.rst:150
 msgid "local namespace seen by this frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:143
+#: ../Doc/library/inspect.rst:153
 msgid "f_trace"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:143
+#: ../Doc/library/inspect.rst:153
 msgid "tracing function for this frame, or ``None``"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:146 ../Doc/library/inspect.rst:215
-#: ../Doc/library/inspect.rst:232
+#: ../Doc/library/inspect.rst:156 ../Doc/library/inspect.rst:225
+#: ../Doc/library/inspect.rst:242
 msgid "code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:146
+#: ../Doc/library/inspect.rst:156
 msgid "co_argcount"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:146
+#: ../Doc/library/inspect.rst:156
 msgid ""
 "number of arguments (not including keyword only arguments, \\* or \\*\\* "
 "args)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:151
+#: ../Doc/library/inspect.rst:161
 msgid "co_code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:151
+#: ../Doc/library/inspect.rst:161
 msgid "string of raw compiled bytecode"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:154
+#: ../Doc/library/inspect.rst:164
 msgid "co_cellvars"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:154
+#: ../Doc/library/inspect.rst:164
 msgid "tuple of names of cell variables (referenced by containing scopes)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:158
+#: ../Doc/library/inspect.rst:168
 msgid "co_consts"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:158
+#: ../Doc/library/inspect.rst:168
 msgid "tuple of constants used in the bytecode"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:161
+#: ../Doc/library/inspect.rst:171
 msgid "co_filename"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:161
+#: ../Doc/library/inspect.rst:171
 msgid "name of file in which this code object was created"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:165
+#: ../Doc/library/inspect.rst:175
 msgid "co_firstlineno"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:165
+#: ../Doc/library/inspect.rst:175
 msgid "number of first line in Python source code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:168
+#: ../Doc/library/inspect.rst:178
 msgid "co_flags"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:168
+#: ../Doc/library/inspect.rst:178
 msgid ""
 "bitmap of ``CO_*`` flags, read more :ref:`here <inspect-module-co-flags>`"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:172
+#: ../Doc/library/inspect.rst:182
 msgid "co_lnotab"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:172
+#: ../Doc/library/inspect.rst:182
 msgid "encoded mapping of line numbers to bytecode indices"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:176
+#: ../Doc/library/inspect.rst:186
 msgid "co_freevars"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:176
+#: ../Doc/library/inspect.rst:186
 msgid "tuple of names of free variables (referenced via a function's closure)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:180
+#: ../Doc/library/inspect.rst:190
 msgid "co_posonlyargcount"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:180
+#: ../Doc/library/inspect.rst:190
 msgid "number of positional only arguments"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:183
+#: ../Doc/library/inspect.rst:193
 msgid "co_kwonlyargcount"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:183
+#: ../Doc/library/inspect.rst:193
 msgid "number of keyword only arguments (not including \\*\\* arg)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:187
+#: ../Doc/library/inspect.rst:197
 msgid "co_name"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:187
+#: ../Doc/library/inspect.rst:197
 msgid "name with which this code object was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:190
+#: ../Doc/library/inspect.rst:200
 msgid "co_qualname"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:190
+#: ../Doc/library/inspect.rst:200
 msgid "fully qualified name with which this code object was defined"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:194
+#: ../Doc/library/inspect.rst:204
 msgid "co_names"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:194
+#: ../Doc/library/inspect.rst:204
 msgid "tuple of names other than arguments and function locals"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:198
+#: ../Doc/library/inspect.rst:208
 msgid "co_nlocals"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:198
+#: ../Doc/library/inspect.rst:208
 msgid "number of local variables"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:200
+#: ../Doc/library/inspect.rst:210
 msgid "co_stacksize"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:200
+#: ../Doc/library/inspect.rst:210
 msgid "virtual machine stack space required"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:203
+#: ../Doc/library/inspect.rst:213
 msgid "co_varnames"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:203
+#: ../Doc/library/inspect.rst:213
 msgid "tuple of names of arguments and local variables"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:207
+#: ../Doc/library/inspect.rst:217
 msgid "generator"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:207 ../Doc/library/inspect.rst:221
+#: ../Doc/library/inspect.rst:217 ../Doc/library/inspect.rst:231
 msgid "name"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:211
+#: ../Doc/library/inspect.rst:221
 msgid "gi_frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:213
+#: ../Doc/library/inspect.rst:223
 msgid "gi_running"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:213
+#: ../Doc/library/inspect.rst:223
 msgid "is the generator running?"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:215
+#: ../Doc/library/inspect.rst:225
 msgid "gi_code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:217
+#: ../Doc/library/inspect.rst:227
 msgid "gi_yieldfrom"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:217
+#: ../Doc/library/inspect.rst:227
 msgid "object being iterated by ``yield from``, or ``None``"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:221
+#: ../Doc/library/inspect.rst:231
 msgid "coroutine"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:225
+#: ../Doc/library/inspect.rst:235
 msgid "cr_await"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:225
+#: ../Doc/library/inspect.rst:235
 msgid "object being awaited on, or ``None``"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:228
+#: ../Doc/library/inspect.rst:238
 msgid "cr_frame"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:230
+#: ../Doc/library/inspect.rst:240
 msgid "cr_running"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:230
+#: ../Doc/library/inspect.rst:240
 msgid "is the coroutine running?"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:232
+#: ../Doc/library/inspect.rst:242
 msgid "cr_code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:234
+#: ../Doc/library/inspect.rst:244
 msgid "cr_origin"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:234
+#: ../Doc/library/inspect.rst:244
 msgid "where coroutine was created, or ``None``. See |coroutine-origin-link|"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:238
+#: ../Doc/library/inspect.rst:248
 msgid "builtin"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:240
+#: ../Doc/library/inspect.rst:250
 msgid "original name of this function or method"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:245
+#: ../Doc/library/inspect.rst:255
 msgid "instance to which a method is bound, or ``None``"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:252
+#: ../Doc/library/inspect.rst:262
 msgid "Add ``__qualname__`` and ``gi_yieldfrom`` attributes to generators."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:254
+#: ../Doc/library/inspect.rst:264
 msgid ""
 "The ``__name__`` attribute of generators is now set from the function name, "
 "instead of the code name, and it can now be modified."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:259
+#: ../Doc/library/inspect.rst:269
 msgid "Add ``cr_origin`` attribute to coroutines."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:263
+#: ../Doc/library/inspect.rst:273
 msgid "Add ``__builtins__`` attribute to functions."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:267
+#: ../Doc/library/inspect.rst:277
 msgid ""
 "Return all the members of an object in a list of ``(name, value)`` pairs "
 "sorted by name. If the optional *predicate* argument—which will be called "
@@ -563,14 +566,14 @@ msgid ""
 "the predicate returns a true value are included."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:274
+#: ../Doc/library/inspect.rst:284
 msgid ""
 ":func:`getmembers` will only return class attributes defined in the "
 "metaclass when the argument is a class and those attributes have been listed "
-"in the metaclass' custom :meth:`__dir__`."
+"in the metaclass' custom :meth:`~object.__dir__`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:281
+#: ../Doc/library/inspect.rst:291
 msgid ""
 "Return all the members of an object in a list of ``(name, value)`` pairs "
 "sorted by name without triggering dynamic lookup via the descriptor "
@@ -578,7 +581,7 @@ msgid ""
 "that satisfy a given predicate."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:288
+#: ../Doc/library/inspect.rst:298
 msgid ""
 ":func:`getmembers_static` may not be able to retrieve all members that "
 "getmembers can fetch (like dynamically created attributes) and may find "
@@ -587,7 +590,7 @@ msgid ""
 "cases."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:299
+#: ../Doc/library/inspect.rst:309
 msgid ""
 "Return the name of the module named by the file *path*, without including "
 "the names of enclosing packages. The file extension is checked against all "
@@ -596,202 +599,240 @@ msgid ""
 "``None`` is returned."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:305
+#: ../Doc/library/inspect.rst:315
 msgid ""
 "Note that this function *only* returns a meaningful name for actual Python "
 "modules - paths that potentially refer to Python packages will still return "
 "``None``."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:309
+#: ../Doc/library/inspect.rst:319
 msgid "The function is based directly on :mod:`importlib`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:315
+#: ../Doc/library/inspect.rst:325
 msgid "Return ``True`` if the object is a module."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:320
+#: ../Doc/library/inspect.rst:330
 msgid ""
 "Return ``True`` if the object is a class, whether built-in or created in "
 "Python code."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:326
+#: ../Doc/library/inspect.rst:336
 msgid "Return ``True`` if the object is a bound method written in Python."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:331
+#: ../Doc/library/inspect.rst:341
 msgid ""
 "Return ``True`` if the object is a Python function, which includes functions "
 "created by a :term:`lambda` expression."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:337
+#: ../Doc/library/inspect.rst:347
 msgid "Return ``True`` if the object is a Python generator function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:339
+#: ../Doc/library/inspect.rst:349
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a Python generator function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:346
+#: ../Doc/library/inspect.rst:353
+msgid ""
+"Functions wrapped in :func:`functools.partialmethod` now return ``True`` if "
+"the wrapped function is a Python generator function."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:359
 msgid "Return ``True`` if the object is a generator."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:351
+#: ../Doc/library/inspect.rst:364
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine function` (a function "
-"defined with an :keyword:`async def` syntax)."
+"defined with an :keyword:`async def` syntax), a :func:`functools.partial` "
+"wrapping a :term:`coroutine function`, or a sync function marked with :func:"
+"`markcoroutinefunction`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:356
+#: ../Doc/library/inspect.rst:371
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a :term:`coroutine function`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:363
+#: ../Doc/library/inspect.rst:375
+msgid ""
+"Sync functions marked with :func:`markcoroutinefunction` now return ``True``."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:379 ../Doc/library/inspect.rst:449
+msgid ""
+"Functions wrapped in :func:`functools.partialmethod` now return ``True`` if "
+"the wrapped function is a :term:`coroutine function`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:386
+msgid ""
+"Decorator to mark a callable as a :term:`coroutine function` if it would not "
+"otherwise be detected by :func:`iscoroutinefunction`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:389
+msgid ""
+"This may be of use for sync functions that return a :term:`coroutine`, if "
+"the function is passed to an API that requires :func:`iscoroutinefunction`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:392
+msgid ""
+"When possible, using an :keyword:`async def` function is preferred. Also "
+"acceptable is calling the function and testing the return with :func:"
+"`iscoroutine`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:401
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine` created by an :keyword:"
 "`async def` function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:371
+#: ../Doc/library/inspect.rst:409
 msgid ""
 "Return ``True`` if the object can be used in :keyword:`await` expression."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:373
+#: ../Doc/library/inspect.rst:411
 msgid ""
 "Can also be used to distinguish generator-based coroutines from regular "
-"generators::"
+"generators:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:390
+#: ../Doc/library/inspect.rst:432
 msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator` function, "
-"for example::"
+"for example:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:401
+#: ../Doc/library/inspect.rst:445
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a :term:`asynchronous generator` function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:408
+#: ../Doc/library/inspect.rst:455
 msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator iterator` "
 "created by an :term:`asynchronous generator` function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:415
+#: ../Doc/library/inspect.rst:462
 msgid "Return ``True`` if the object is a traceback."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:420
+#: ../Doc/library/inspect.rst:467
 msgid "Return ``True`` if the object is a frame."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:425
+#: ../Doc/library/inspect.rst:472
 msgid "Return ``True`` if the object is a code."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:430
+#: ../Doc/library/inspect.rst:477
 msgid ""
 "Return ``True`` if the object is a built-in function or a bound built-in "
 "method."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:435
+#: ../Doc/library/inspect.rst:482
 msgid ""
 "Return ``True`` if the type of object is a :class:`~types.MethodWrapperType`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:437
+#: ../Doc/library/inspect.rst:484
 msgid ""
 "These are instances of :class:`~types.MethodWrapperType`, such as :meth:"
 "`~object.__str__`, :meth:`~object.__eq__` and :meth:`~object.__repr__`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:445
+#: ../Doc/library/inspect.rst:492
 msgid ""
 "Return ``True`` if the object is a user-defined or built-in function or "
 "method."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:450
+#: ../Doc/library/inspect.rst:497
 msgid "Return ``True`` if the object is an abstract base class."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:455
+#: ../Doc/library/inspect.rst:502
 msgid ""
 "Return ``True`` if the object is a method descriptor, but not if :func:"
 "`ismethod`, :func:`isclass`, :func:`isfunction` or :func:`isbuiltin` are "
 "true."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:459
+#: ../Doc/library/inspect.rst:506
 msgid ""
 "This, for example, is true of ``int.__add__``.  An object passing this test "
 "has a :meth:`~object.__get__` method but not a :meth:`~object.__set__` "
 "method, but beyond that the set of attributes varies.  A :attr:`~definition."
-"__name__` attribute is usually sensible, and :attr:`__doc__` often is."
+"__name__` attribute is usually sensible, and :attr:`!__doc__` often is."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:465
+#: ../Doc/library/inspect.rst:512
 msgid ""
 "Methods implemented via descriptors that also pass one of the other tests "
 "return ``False`` from the :func:`ismethoddescriptor` test, simply because "
 "the other tests promise more -- you can, e.g., count on having the :attr:"
-"`__func__` attribute (etc) when an object passes :func:`ismethod`."
+"`~method.__func__` attribute (etc) when an object passes :func:`ismethod`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:473
+#: ../Doc/library/inspect.rst:521
 msgid "Return ``True`` if the object is a data descriptor."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:475
+#: ../Doc/library/inspect.rst:523
 msgid ""
 "Data descriptors have a :attr:`~object.__set__` or a :attr:`~object."
 "__delete__` method. Examples are properties (defined in Python), getsets, "
 "and members.  The latter two are defined in C and there are more specific "
 "tests available for those types, which is robust across Python "
 "implementations.  Typically, data descriptors will also have :attr:"
-"`~definition.__name__` and :attr:`__doc__` attributes (properties, getsets, "
+"`~definition.__name__` and :attr:`!__doc__` attributes (properties, getsets, "
 "and members have both of these attributes), but this is not guaranteed."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:486
+#: ../Doc/library/inspect.rst:534
 msgid "Return ``True`` if the object is a getset descriptor."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:490
+#: ../Doc/library/inspect.rst:538
 msgid ""
 "getsets are attributes defined in extension modules via :c:type:"
 "`PyGetSetDef` structures.  For Python implementations without such types, "
 "this method will always return ``False``."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:497
+#: ../Doc/library/inspect.rst:545
 msgid "Return ``True`` if the object is a member descriptor."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:501
+#: ../Doc/library/inspect.rst:549
 msgid ""
 "Member descriptors are attributes defined in extension modules via :c:type:"
 "`PyMemberDef` structures.  For Python implementations without such types, "
 "this method will always return ``False``."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:509
+#: ../Doc/library/inspect.rst:557
 msgid "Retrieving source code"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:513
+#: ../Doc/library/inspect.rst:561
 msgid ""
 "Get the documentation string for an object, cleaned up with :func:"
 "`cleandoc`. If the documentation string for an object is not provided and "
@@ -800,11 +841,11 @@ msgid ""
 "documentation string is invalid or missing."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:519
+#: ../Doc/library/inspect.rst:567
 msgid "Documentation strings are now inherited if not overridden."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:525
+#: ../Doc/library/inspect.rst:573
 msgid ""
 "Return in a single string any lines of comments immediately preceding the "
 "object's source code (for a class, function, or method), or at the top of "
@@ -813,57 +854,59 @@ msgid ""
 "been defined in C or the interactive shell."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:534
+#: ../Doc/library/inspect.rst:582
 msgid ""
 "Return the name of the (text or binary) file in which an object was defined. "
 "This will fail with a :exc:`TypeError` if the object is a built-in module, "
 "class, or function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:541
+#: ../Doc/library/inspect.rst:589
 msgid ""
 "Try to guess which module an object was defined in. Return ``None`` if the "
 "module cannot be determined."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:547
+#: ../Doc/library/inspect.rst:595
 msgid ""
 "Return the name of the Python source file in which an object was defined or "
 "``None`` if no way can be identified to get the source.  This will fail with "
 "a :exc:`TypeError` if the object is a built-in module, class, or function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:555
+#: ../Doc/library/inspect.rst:603
 msgid ""
 "Return a list of source lines and starting line number for an object. The "
 "argument may be a module, class, method, function, traceback, frame, or code "
 "object.  The source code is returned as a list of the lines corresponding to "
 "the object and the line number indicates where in the original source file "
 "the first line of code was found.  An :exc:`OSError` is raised if the source "
-"code cannot be retrieved."
+"code cannot be retrieved. A :exc:`TypeError` is raised if the object is a "
+"built-in module, class, or function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:562 ../Doc/library/inspect.rst:574
+#: ../Doc/library/inspect.rst:612 ../Doc/library/inspect.rst:626
 msgid ""
 ":exc:`OSError` is raised instead of :exc:`IOError`, now an alias of the "
 "former."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:569
+#: ../Doc/library/inspect.rst:619
 msgid ""
 "Return the text of the source code for an object. The argument may be a "
 "module, class, method, function, traceback, frame, or code object.  The "
 "source code is returned as a single string.  An :exc:`OSError` is raised if "
-"the source code cannot be retrieved."
+"the source code cannot be retrieved. A :exc:`TypeError` is raised if the "
+"object is a built-in module, class, or function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:581
+#: ../Doc/library/inspect.rst:633
 msgid ""
 "Clean up indentation from docstrings that are indented to line up with "
 "blocks of code."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:584
+#: ../Doc/library/inspect.rst:636
 msgid ""
 "All leading whitespace is removed from the first line.  Any leading "
 "whitespace that can be uniformly removed from the second line onwards is "
@@ -871,80 +914,87 @@ msgid ""
 "Also, all tabs are expanded to spaces."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:593
+#: ../Doc/library/inspect.rst:645
 msgid "Introspecting callables with the Signature object"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:597
+#: ../Doc/library/inspect.rst:649
 msgid ""
-"The Signature object represents the call signature of a callable object and "
-"its return annotation.  To retrieve a Signature object, use the :func:"
-"`signature` function."
+"The :class:`Signature` object represents the call signature of a callable "
+"object and its return annotation. To retrieve a :class:`!Signature` object, "
+"use the :func:`!signature` function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:603
-msgid "Return a :class:`Signature` object for the given ``callable``::"
+#: ../Doc/library/inspect.rst:656
+msgid "Return a :class:`Signature` object for the given *callable*:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:620
+#: ../Doc/library/inspect.rst:675
 msgid ""
 "Accepts a wide range of Python callables, from plain functions and classes "
 "to :func:`functools.partial` objects."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:623
+#: ../Doc/library/inspect.rst:678
 msgid ""
 "For objects defined in modules using stringized annotations (``from "
 "__future__ import annotations``), :func:`signature` will attempt to "
-"automatically un-stringize the annotations using :func:`inspect."
-"get_annotations()`.  The ``global``, ``locals``, and ``eval_str`` parameters "
-"are passed into :func:`inspect.get_annotations()` when resolving the "
-"annotations; see the documentation for :func:`inspect.get_annotations()` for "
-"instructions on how to use these parameters."
+"automatically un-stringize the annotations using :func:`get_annotations`.  "
+"The *globals*, *locals*, and *eval_str* parameters are passed into :func:"
+"`get_annotations` when resolving the annotations; see the documentation for :"
+"func:`get_annotations` for instructions on how to use these parameters."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:632
+#: ../Doc/library/inspect.rst:687
 msgid ""
 "Raises :exc:`ValueError` if no signature can be provided, and :exc:"
 "`TypeError` if that type of object is not supported.  Also, if the "
-"annotations are stringized, and ``eval_str`` is not false, the ``eval()`` "
-"call(s) to un-stringize the annotations could potentially raise any kind of "
-"exception."
+"annotations are stringized, and *eval_str* is not false, the ``eval()`` "
+"call(s) to un-stringize the annotations in :func:`get_annotations` could "
+"potentially raise any kind of exception."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:638
+#: ../Doc/library/inspect.rst:693
 msgid ""
 "A slash(/) in the signature of a function denotes that the parameters prior "
 "to it are positional-only. For more info, see :ref:`the FAQ entry on "
 "positional-only parameters <faq-positional-only-arguments>`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:642
+#: ../Doc/library/inspect.rst:697
 msgid ""
-"``follow_wrapped`` parameter. Pass ``False`` to get a signature of "
-"``callable`` specifically (``callable.__wrapped__`` will not be used to "
+"The *follow_wrapped* parameter was added. Pass ``False`` to get a signature "
+"of *callable* specifically (``callable.__wrapped__`` will not be used to "
 "unwrap decorated callables.)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:647
-msgid "``globals``, ``locals``, and ``eval_str`` parameters."
+#: ../Doc/library/inspect.rst:703 ../Doc/library/inspect.rst:827
+msgid "The *globals*, *locals*, and *eval_str* parameters were added."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:652
+#: ../Doc/library/inspect.rst:708
 msgid ""
 "Some callables may not be introspectable in certain implementations of "
 "Python.  For example, in CPython, some built-in functions defined in C "
 "provide no metadata about their arguments."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:659
+#: ../Doc/library/inspect.rst:714
 msgid ""
-"A Signature object represents the call signature of a function and its "
-"return annotation.  For each parameter accepted by the function it stores a :"
-"class:`Parameter` object in its :attr:`parameters` collection."
+"If the passed object has a :attr:`!__signature__` attribute, we may use it "
+"to create the signature. The exact semantics are an implementation detail "
+"and are subject to unannounced changes. Consult the source code for current "
+"semantics."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:663
+#: ../Doc/library/inspect.rst:722
+msgid ""
+"A :class:`!Signature` object represents the call signature of a function and "
+"its return annotation.  For each parameter accepted by the function it "
+"stores a :class:`Parameter` object in its :attr:`parameters` collection."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:727
 msgid ""
 "The optional *parameters* argument is a sequence of :class:`Parameter` "
 "objects, which is validated to check that there are no parameters with "
@@ -953,54 +1003,54 @@ msgid ""
 "defaults follow parameters without defaults."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:669
+#: ../Doc/library/inspect.rst:733
 msgid ""
-"The optional *return_annotation* argument, can be an arbitrary Python "
-"object, is the \"return\" annotation of the callable."
+"The optional *return_annotation* argument can be an arbitrary Python object. "
+"It represents the \"return\" annotation of the callable."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:672
+#: ../Doc/library/inspect.rst:736
 msgid ""
-"Signature objects are *immutable*.  Use :meth:`Signature.replace` to make a "
-"modified copy."
+":class:`!Signature` objects are *immutable*.  Use :meth:`Signature.replace` "
+"or :func:`copy.replace` to make a modified copy."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:675
-msgid "Signature objects are picklable and hashable."
+#: ../Doc/library/inspect.rst:739
+msgid ":class:`!Signature` objects are now picklable and :term:`hashable`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:680
+#: ../Doc/library/inspect.rst:744
 msgid "A special class-level marker to specify absence of a return annotation."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:684
+#: ../Doc/library/inspect.rst:748
 msgid ""
 "An ordered mapping of parameters' names to the corresponding :class:"
 "`Parameter` objects.  Parameters appear in strict definition order, "
 "including keyword-only parameters."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:688 ../Doc/library/inspect.rst:1012
+#: ../Doc/library/inspect.rst:752 ../Doc/library/inspect.rst:1106
 msgid ""
 "Python only explicitly guaranteed that it preserved the declaration order of "
 "keyword-only parameters as of version 3.7, although in practice this order "
 "had always been preserved in Python 3."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:695
+#: ../Doc/library/inspect.rst:759
 msgid ""
 "The \"return\" annotation for the callable.  If the callable has no "
 "\"return\" annotation, this attribute is set to :attr:`Signature.empty`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:700
+#: ../Doc/library/inspect.rst:764
 msgid ""
 "Create a mapping from positional and keyword arguments to parameters. "
 "Returns :class:`BoundArguments` if ``*args`` and ``**kwargs`` match the "
 "signature, or raises a :exc:`TypeError`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:706
+#: ../Doc/library/inspect.rst:770
 msgid ""
 "Works the same way as :meth:`Signature.bind`, but allows the omission of "
 "some required arguments (mimics :func:`functools.partial` behavior.) "
@@ -1008,250 +1058,274 @@ msgid ""
 "arguments do not match the signature."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:713
+#: ../Doc/library/inspect.rst:777
 msgid ""
-"Create a new Signature instance based on the instance replace was invoked "
-"on.  It is possible to pass different ``parameters`` and/or "
-"``return_annotation`` to override the corresponding properties of the base "
-"signature.  To remove return_annotation from the copied Signature, pass in :"
-"attr:`Signature.empty`."
+"Create a new :class:`Signature` instance based on the instance :meth:"
+"`replace` was invoked on. It is possible to pass different *parameters* and/"
+"or *return_annotation* to override the corresponding properties of the base "
+"signature.  To remove ``return_annotation`` from the copied :class:`!"
+"Signature`, pass in :attr:`Signature.empty`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:730
+#: ../Doc/library/inspect.rst:795
+msgid ""
+":class:`Signature` objects are also supported by the generic function :func:"
+"`copy.replace`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:800
+msgid "Create a string representation of the :class:`Signature` object."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:802
+msgid ""
+"If *max_width* is passed, the method will attempt to fit the signature into "
+"lines of at most *max_width* characters. If the signature is longer than "
+"*max_width*, all parameters will be on separate lines."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:811
 msgid ""
 "Return a :class:`Signature` (or its subclass) object for a given callable "
-"``obj``.  Pass ``follow_wrapped=False`` to get a signature of ``obj`` "
-"without unwrapping its ``__wrapped__`` chain. ``globalns`` and ``localns`` "
-"will be used as the namespaces when resolving annotations."
+"*obj*."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:735
-msgid "This method simplifies subclassing of :class:`Signature`::"
+#: ../Doc/library/inspect.rst:814
+msgid "This method simplifies subclassing of :class:`Signature`:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:744
-msgid "``globalns`` and ``localns`` parameters."
+#: ../Doc/library/inspect.rst:823
+msgid "Its behavior is otherwise identical to that of :func:`signature`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:750
+#: ../Doc/library/inspect.rst:833
 msgid ""
-"Parameter objects are *immutable*.  Instead of modifying a Parameter object, "
-"you can use :meth:`Parameter.replace` to create a modified copy."
+":class:`!Parameter` objects are *immutable*. Instead of modifying a :class:`!"
+"Parameter` object, you can use :meth:`Parameter.replace` or :func:`copy."
+"replace` to create a modified copy."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:753
-msgid "Parameter objects are picklable and hashable."
+#: ../Doc/library/inspect.rst:837
+msgid "Parameter objects are now picklable and :term:`hashable`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:758
+#: ../Doc/library/inspect.rst:842
 msgid ""
 "A special class-level marker to specify absence of default values and "
 "annotations."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:763
+#: ../Doc/library/inspect.rst:847
 msgid ""
 "The name of the parameter as a string.  The name must be a valid Python "
 "identifier."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:768
+#: ../Doc/library/inspect.rst:852
 msgid ""
 "CPython generates implicit parameter names of the form ``.0`` on the code "
 "objects used to implement comprehensions and generator expressions."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:772
+#: ../Doc/library/inspect.rst:856
 msgid ""
-"These parameter names are exposed by this module as names like ``implicit0``."
+"These parameter names are now exposed by this module as names like "
+"``implicit0``."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:778
+#: ../Doc/library/inspect.rst:862
 msgid ""
 "The default value for the parameter.  If the parameter has no default value, "
 "this attribute is set to :attr:`Parameter.empty`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:783
+#: ../Doc/library/inspect.rst:867
 msgid ""
 "The annotation for the parameter.  If the parameter has no annotation, this "
 "attribute is set to :attr:`Parameter.empty`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:788
+#: ../Doc/library/inspect.rst:872
 msgid ""
-"Describes how argument values are bound to the parameter.  Possible values "
-"(accessible via :class:`Parameter`, like ``Parameter.KEYWORD_ONLY``):"
+"Describes how argument values are bound to the parameter.  The possible "
+"values are accessible via :class:`Parameter` (like ``Parameter."
+"KEYWORD_ONLY``), and support comparison and ordering, in the following order:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:794
+#: ../Doc/library/inspect.rst:879
 msgid "Name"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:794
+#: ../Doc/library/inspect.rst:879
 msgid "Meaning"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:796
+#: ../Doc/library/inspect.rst:881
 msgid "*POSITIONAL_ONLY*"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:796
+#: ../Doc/library/inspect.rst:881
 msgid ""
 "Value must be supplied as a positional argument. Positional only parameters "
 "are those which appear before a ``/`` entry (if present) in a Python "
 "function definition."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:801
+#: ../Doc/library/inspect.rst:886
 msgid "*POSITIONAL_OR_KEYWORD*"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:801
+#: ../Doc/library/inspect.rst:886
 msgid ""
 "Value may be supplied as either a keyword or positional argument (this is "
 "the standard binding behaviour for functions implemented in Python.)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:806
+#: ../Doc/library/inspect.rst:891
 msgid "*VAR_POSITIONAL*"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:806
+#: ../Doc/library/inspect.rst:891
 msgid ""
 "A tuple of positional arguments that aren't bound to any other parameter. "
 "This corresponds to a ``*args`` parameter in a Python function definition."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:811
+#: ../Doc/library/inspect.rst:896
 msgid "*KEYWORD_ONLY*"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:811
+#: ../Doc/library/inspect.rst:896
 msgid ""
 "Value must be supplied as a keyword argument. Keyword only parameters are "
 "those which appear after a ``*`` or ``*args`` entry in a Python function "
 "definition."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:816
+#: ../Doc/library/inspect.rst:901
 msgid "*VAR_KEYWORD*"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:816
+#: ../Doc/library/inspect.rst:901
 msgid ""
 "A dict of keyword arguments that aren't bound to any other parameter. This "
 "corresponds to a ``**kwargs`` parameter in a Python function definition."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:822
-msgid "Example: print all keyword-only arguments without default values::"
+#: ../Doc/library/inspect.rst:907
+msgid "Example: print all keyword-only arguments without default values:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:836
-msgid "Describes a enum value of Parameter.kind."
+#: ../Doc/library/inspect.rst:923
+msgid "Describes a enum value of :attr:`Parameter.kind`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:840
-msgid "Example: print all descriptions of arguments::"
+#: ../Doc/library/inspect.rst:927
+msgid "Example: print all descriptions of arguments:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:855
+#: ../Doc/library/inspect.rst:944
 msgid ""
-"Create a new Parameter instance based on the instance replaced was invoked "
-"on.  To override a :class:`Parameter` attribute, pass the corresponding "
-"argument.  To remove a default value or/and an annotation from a Parameter, "
-"pass :attr:`Parameter.empty`."
+"Create a new :class:`Parameter` instance based on the instance replaced was "
+"invoked on.  To override a :class:`!Parameter` attribute, pass the "
+"corresponding argument.  To remove a default value or/and an annotation from "
+"a :class:`!Parameter`, pass :attr:`Parameter.empty`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:873
+#: ../Doc/library/inspect.rst:962
 msgid ""
-"In Python 3.3 Parameter objects were allowed to have ``name`` set to "
-"``None`` if their ``kind`` was set to ``POSITIONAL_ONLY``. This is no longer "
-"permitted."
+":class:`Parameter` objects are also supported by the generic function :func:"
+"`copy.replace`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:880
+#: ../Doc/library/inspect.rst:965
+msgid ""
+"In Python 3.3 :class:`Parameter` objects were allowed to have ``name`` set "
+"to ``None`` if their ``kind`` was set to ``POSITIONAL_ONLY``. This is no "
+"longer permitted."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:972
 msgid ""
 "Result of a :meth:`Signature.bind` or :meth:`Signature.bind_partial` call. "
 "Holds the mapping of arguments to the function's parameters."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:885
+#: ../Doc/library/inspect.rst:977
 msgid ""
 "A mutable mapping of parameters' names to arguments' values. Contains only "
 "explicitly bound arguments.  Changes in :attr:`arguments` will reflect in :"
 "attr:`args` and :attr:`kwargs`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:889
+#: ../Doc/library/inspect.rst:981
 msgid ""
 "Should be used in conjunction with :attr:`Signature.parameters` for any "
 "argument processing purposes."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:894
+#: ../Doc/library/inspect.rst:986
 msgid ""
 "Arguments for which :meth:`Signature.bind` or :meth:`Signature.bind_partial` "
 "relied on a default value are skipped. However, if needed, use :meth:"
 "`BoundArguments.apply_defaults` to add them."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:899
+#: ../Doc/library/inspect.rst:991
 msgid ""
 ":attr:`arguments` is now of type :class:`dict`. Formerly, it was of type :"
 "class:`collections.OrderedDict`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:905
+#: ../Doc/library/inspect.rst:997
 msgid ""
 "A tuple of positional arguments values.  Dynamically computed from the :attr:"
 "`arguments` attribute."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:910
+#: ../Doc/library/inspect.rst:1002
 msgid ""
 "A dict of keyword arguments values.  Dynamically computed from the :attr:"
 "`arguments` attribute."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:915
+#: ../Doc/library/inspect.rst:1007
 msgid "A reference to the parent :class:`Signature` object."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:919
+#: ../Doc/library/inspect.rst:1011
 msgid "Set default values for missing arguments."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:921
+#: ../Doc/library/inspect.rst:1013
 msgid ""
 "For variable-positional arguments (``*args``) the default is an empty tuple."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:924
+#: ../Doc/library/inspect.rst:1016
 msgid ""
 "For variable-keyword arguments (``**kwargs``) the default is an empty dict."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:937
+#: ../Doc/library/inspect.rst:1029
 msgid ""
 "The :attr:`args` and :attr:`kwargs` properties can be used to invoke "
-"functions::"
+"functions:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:950
+#: ../Doc/library/inspect.rst:1044
 msgid ":pep:`362` - Function Signature Object."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:951
+#: ../Doc/library/inspect.rst:1045
 msgid "The detailed specification, implementation details and examples."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:957
+#: ../Doc/library/inspect.rst:1051
 msgid "Classes and functions"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:961
+#: ../Doc/library/inspect.rst:1055
 msgid ""
 "Arrange the given list of classes into a hierarchy of nested lists. Where a "
 "nested list appears, it contains classes derived from the class whose entry "
@@ -1262,19 +1336,19 @@ msgid ""
 "will appear multiple times."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:972
+#: ../Doc/library/inspect.rst:1066
 msgid ""
 "Get the names and default values of a Python function's parameters.  A :term:"
 "`named tuple` is returned:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:975
+#: ../Doc/library/inspect.rst:1069
 msgid ""
 "``FullArgSpec(args, varargs, varkw, defaults, kwonlyargs, kwonlydefaults, "
 "annotations)``"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:978
+#: ../Doc/library/inspect.rst:1072
 msgid ""
 "*args* is a list of the positional parameter names. *varargs* is the name of "
 "the ``*`` parameter or ``None`` if arbitrary positional arguments are not "
@@ -1289,7 +1363,7 @@ msgid ""
 "report the function return value annotation (if any)."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:993
+#: ../Doc/library/inspect.rst:1087
 msgid ""
 "Note that :func:`signature` and :ref:`Signature Object <inspect-signature-"
 "object>` provide the recommended API for callable introspection, and support "
@@ -1299,14 +1373,14 @@ msgid ""
 "``inspect`` module API."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1000
+#: ../Doc/library/inspect.rst:1094
 msgid ""
 "This function is now based on :func:`signature`, but still ignores "
 "``__wrapped__`` attributes and includes the already bound first parameter in "
 "the signature output for bound methods."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1005
+#: ../Doc/library/inspect.rst:1099
 msgid ""
 "This method was previously documented as deprecated in favour of :func:"
 "`signature` in Python 3.5, but that decision has been reversed in order to "
@@ -1314,7 +1388,7 @@ msgid ""
 "code migrating away from the legacy :func:`getargspec` API."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1020
+#: ../Doc/library/inspect.rst:1114
 msgid ""
 "Get information about arguments passed into a particular frame.  A :term:"
 "`named tuple` ``ArgInfo(args, varargs, keywords, locals)`` is returned. "
@@ -1323,18 +1397,18 @@ msgid ""
 "dictionary of the given frame."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1027 ../Doc/library/inspect.rst:1037
+#: ../Doc/library/inspect.rst:1121 ../Doc/library/inspect.rst:1131
 msgid "This function was inadvertently marked as deprecated in Python 3.5."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1032
+#: ../Doc/library/inspect.rst:1126
 msgid ""
 "Format a pretty argument spec from the four values returned by :func:"
 "`getargvalues`.  The format\\* arguments are the corresponding optional "
 "formatting functions that are called to turn names and values into strings."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1042
+#: ../Doc/library/inspect.rst:1136
 msgid ""
 "Return a tuple of class cls's base classes, including cls, in method "
 "resolution order.  No class appears more than once in this tuple. Note that "
@@ -1342,7 +1416,7 @@ msgid ""
 "user-defined metatype is in use, cls will be the first element of the tuple."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1050
+#: ../Doc/library/inspect.rst:1144
 msgid ""
 "Bind the *args* and *kwds* to the argument names of the Python function or "
 "method *func*, as if it was called with them. For bound methods, bind also "
@@ -1352,14 +1426,14 @@ msgid ""
 "In case of invoking *func* incorrectly, i.e. whenever ``func(*args, "
 "**kwds)`` would raise an exception because of incompatible signature, an "
 "exception of the same type and the same or similar message is raised. For "
-"example::"
+"example:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1073
+#: ../Doc/library/inspect.rst:1170
 msgid "Use :meth:`Signature.bind` and :meth:`Signature.bind_partial` instead."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1079
+#: ../Doc/library/inspect.rst:1176
 msgid ""
 "Get the mapping of external name references in a Python function or method "
 "*func* to their current values. A :term:`named tuple` "
@@ -1371,18 +1445,18 @@ msgid ""
 "builtins."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1088
+#: ../Doc/library/inspect.rst:1185
 msgid ""
 ":exc:`TypeError` is raised if *func* is not a Python function or method."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1095
+#: ../Doc/library/inspect.rst:1192
 msgid ""
 "Get the object wrapped by *func*. It follows the chain of :attr:"
 "`__wrapped__` attributes returning the last object in the chain."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1098
+#: ../Doc/library/inspect.rst:1195
 msgid ""
 "*stop* is an optional callback accepting an object in the wrapper chain as "
 "its sole argument that allows the unwrapping to be terminated early if the "
@@ -1392,68 +1466,68 @@ msgid ""
 "``__signature__`` attribute defined."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1105
+#: ../Doc/library/inspect.rst:1202
 msgid ":exc:`ValueError` is raised if a cycle is encountered."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1112
+#: ../Doc/library/inspect.rst:1209
 msgid "Compute the annotations dict for an object."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1114
+#: ../Doc/library/inspect.rst:1211
 msgid ""
 "``obj`` may be a callable, class, or module. Passing in an object of any "
 "other type raises :exc:`TypeError`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1117
+#: ../Doc/library/inspect.rst:1214
 msgid ""
 "Returns a dict.  ``get_annotations()`` returns a new dict every time it's "
 "called; calling it twice on the same object will return two different but "
 "equivalent dicts."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1121
+#: ../Doc/library/inspect.rst:1218
 msgid "This function handles several details for you:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1123
+#: ../Doc/library/inspect.rst:1220
 msgid ""
 "If ``eval_str`` is true, values of type ``str`` will be un-stringized using :"
 "func:`eval()`.  This is intended for use with stringized annotations (``from "
 "__future__ import annotations``)."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1127
+#: ../Doc/library/inspect.rst:1224
 msgid ""
 "If ``obj`` doesn't have an annotations dict, returns an empty dict.  "
 "(Functions and methods always have an annotations dict; classes, modules, "
 "and other types of callables may not.)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1131
+#: ../Doc/library/inspect.rst:1228
 msgid ""
 "Ignores inherited annotations on classes.  If a class doesn't have its own "
 "annotations dict, returns an empty dict."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1133
+#: ../Doc/library/inspect.rst:1230
 msgid ""
 "All accesses to object members and dict values are done using ``getattr()`` "
 "and ``dict.get()`` for safety."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1135
+#: ../Doc/library/inspect.rst:1232
 msgid "Always, always, always returns a freshly created dict."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1137
+#: ../Doc/library/inspect.rst:1234
 msgid ""
 "``eval_str`` controls whether or not values of type ``str`` are replaced "
 "with the result of calling :func:`eval()` on those values:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1140
+#: ../Doc/library/inspect.rst:1237
 msgid ""
 "If eval_str is true, :func:`eval()` is called on values of type ``str``. "
 "(Note that ``get_annotations`` doesn't catch exceptions; if :func:`eval()` "
@@ -1461,12 +1535,12 @@ msgid ""
 "call.)"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1144
+#: ../Doc/library/inspect.rst:1241
 msgid ""
 "If eval_str is false (the default), values of type ``str`` are unchanged."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1146
+#: ../Doc/library/inspect.rst:1243
 msgid ""
 "``globals`` and ``locals`` are passed in to :func:`eval()`; see the "
 "documentation for :func:`eval()` for more information.  If ``globals`` or "
@@ -1474,35 +1548,35 @@ msgid ""
 "specific default, contingent on ``type(obj)``:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1151
+#: ../Doc/library/inspect.rst:1248
 msgid "If ``obj`` is a module, ``globals`` defaults to ``obj.__dict__``."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1152
+#: ../Doc/library/inspect.rst:1249
 msgid ""
 "If ``obj`` is a class, ``globals`` defaults to ``sys.modules[obj.__module__]."
 "__dict__`` and ``locals`` defaults to the ``obj`` class namespace."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1155
+#: ../Doc/library/inspect.rst:1252
 msgid ""
-"If ``obj`` is a callable, ``globals`` defaults to ``obj.__globals__``, "
-"although if ``obj`` is a wrapped function (using ``functools."
-"update_wrapper()``) it is first unwrapped."
+"If ``obj`` is a callable, ``globals`` defaults to :attr:`obj.__globals__ "
+"<function.__globals__>`, although if ``obj`` is a wrapped function (using :"
+"func:`functools.update_wrapper`) it is first unwrapped."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1159
+#: ../Doc/library/inspect.rst:1257
 msgid ""
 "Calling ``get_annotations`` is best practice for accessing the annotations "
 "dict of any object.  See :ref:`annotations-howto` for more information on "
 "annotations best practices."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1169
+#: ../Doc/library/inspect.rst:1267
 msgid "The interpreter stack"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1171
+#: ../Doc/library/inspect.rst:1269
 msgid ""
 "Some of the following functions return :class:`FrameInfo` objects. For "
 "backwards compatibility these objects allow tuple-like operations on all "
@@ -1510,95 +1584,95 @@ msgid ""
 "may be removed in the future."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1180
+#: ../Doc/library/inspect.rst:1278
 msgid "The :ref:`frame object <frame-objects>` that the record corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1184
+#: ../Doc/library/inspect.rst:1282
 msgid ""
 "The file name associated with the code being executed by the frame this "
 "record corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1189
+#: ../Doc/library/inspect.rst:1287
 msgid ""
 "The line number of the current line associated with the code being executed "
 "by the frame this record corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1194
+#: ../Doc/library/inspect.rst:1292
 msgid ""
 "The function name that is being executed by the frame this record "
 "corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1198
+#: ../Doc/library/inspect.rst:1296
 msgid ""
 "A list of lines of context from the source code that's being executed by the "
 "frame this record corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1203 ../Doc/library/inspect.rst:1242
+#: ../Doc/library/inspect.rst:1301 ../Doc/library/inspect.rst:1340
 msgid ""
 "The index of the current line being executed in the :attr:`code_context` "
 "list."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1207
+#: ../Doc/library/inspect.rst:1305
 msgid ""
 "A :class:`dis.Positions` object containing the start line number, end line "
 "number, start column offset, and end column offset associated with the "
 "instruction being executed by the frame this record corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1211
+#: ../Doc/library/inspect.rst:1309
 msgid "Return a :term:`named tuple` instead of a :class:`tuple`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1214
+#: ../Doc/library/inspect.rst:1312
 msgid ""
 ":class:`!FrameInfo` is now a class instance (that is backwards compatible "
 "with the previous :term:`named tuple`)."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1223
+#: ../Doc/library/inspect.rst:1321
 msgid ""
 "The file name associated with the code being executed by the frame this "
 "traceback corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1228
+#: ../Doc/library/inspect.rst:1326
 msgid ""
 "The line number of the current line associated with the code being executed "
 "by the frame this traceback corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1233
+#: ../Doc/library/inspect.rst:1331
 msgid ""
 "The function name that is being executed by the frame this traceback "
 "corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1237
+#: ../Doc/library/inspect.rst:1335
 msgid ""
 "A list of lines of context from the source code that's being executed by the "
 "frame this traceback corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1246
+#: ../Doc/library/inspect.rst:1344
 msgid ""
 "A :class:`dis.Positions` object containing the start line number, end line "
 "number, start column offset, and end column offset associated with the "
 "instruction being executed by the frame this traceback corresponds to."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1251
+#: ../Doc/library/inspect.rst:1349
 msgid ""
 ":class:`!Traceback` is now a class instance (that is backwards compatible "
 "with the previous :term:`named tuple`)."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1258
+#: ../Doc/library/inspect.rst:1356
 msgid ""
 "Keeping references to frame objects, as found in the first element of the "
 "frame records these functions return, can cause your program to create "
@@ -1610,7 +1684,7 @@ msgid ""
 "consumption which occurs."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1266
+#: ../Doc/library/inspect.rst:1364
 msgid ""
 "Though the cycle detector will catch these, destruction of the frames (and "
 "local variables) can be made deterministic by removing the cycle in a :"
@@ -1618,31 +1692,31 @@ msgid ""
 "disabled when Python was compiled or using :func:`gc.disable`.  For example::"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1278
+#: ../Doc/library/inspect.rst:1376
 msgid ""
 "If you want to keep the frame around (for example to print a traceback "
 "later), you can also break reference cycles by using the :meth:`frame.clear` "
 "method."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1282
+#: ../Doc/library/inspect.rst:1380
 msgid ""
 "The optional *context* argument supported by most of these functions "
 "specifies the number of lines of context to return, which are centered "
 "around the current line."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1289
+#: ../Doc/library/inspect.rst:1387
 msgid ""
 "Get information about a frame or traceback object.  A :class:`Traceback` "
 "object is returned."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1292
+#: ../Doc/library/inspect.rst:1390
 msgid "A :class:`Traceback` object is returned instead of a named tuple."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1297
+#: ../Doc/library/inspect.rst:1395
 msgid ""
 "Get a list of :class:`FrameInfo` objects for a frame and all outer frames. "
 "These frames represent the calls that lead to the creation of *frame*. The "
@@ -1650,19 +1724,19 @@ msgid ""
 "represents the outermost call on *frame*'s stack."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1302 ../Doc/library/inspect.rst:1317
-#: ../Doc/library/inspect.rst:1343 ../Doc/library/inspect.rst:1358
+#: ../Doc/library/inspect.rst:1400 ../Doc/library/inspect.rst:1415
+#: ../Doc/library/inspect.rst:1441 ../Doc/library/inspect.rst:1456
 msgid ""
 "A list of :term:`named tuples <named tuple>` ``FrameInfo(frame, filename, "
 "lineno, function, code_context, index)`` is returned."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1307 ../Doc/library/inspect.rst:1322
-#: ../Doc/library/inspect.rst:1348 ../Doc/library/inspect.rst:1363
+#: ../Doc/library/inspect.rst:1405 ../Doc/library/inspect.rst:1420
+#: ../Doc/library/inspect.rst:1446 ../Doc/library/inspect.rst:1461
 msgid "A list of :class:`FrameInfo` objects is returned."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1312
+#: ../Doc/library/inspect.rst:1410
 msgid ""
 "Get a list of :class:`FrameInfo` objects for a traceback's frame and all "
 "inner frames.  These frames represent calls made as a consequence of "
@@ -1670,11 +1744,11 @@ msgid ""
 "represents where the exception was raised."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1327
+#: ../Doc/library/inspect.rst:1425
 msgid "Return the frame object for the caller's stack frame."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1331
+#: ../Doc/library/inspect.rst:1429
 msgid ""
 "This function relies on Python stack frame support in the interpreter, which "
 "isn't guaranteed to exist in all implementations of Python.  If running in "
@@ -1682,14 +1756,14 @@ msgid ""
 "``None``."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1339
+#: ../Doc/library/inspect.rst:1437
 msgid ""
 "Return a list of :class:`FrameInfo` objects for the caller's stack.  The "
 "first entry in the returned list represents the caller; the last entry "
 "represents the outermost call on the stack."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1353
+#: ../Doc/library/inspect.rst:1451
 msgid ""
 "Return a list of :class:`FrameInfo` objects for the stack between the "
 "current frame and the frame in which an exception currently being handled "
@@ -1697,32 +1771,32 @@ msgid ""
 "entry represents where the exception was raised."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1367
+#: ../Doc/library/inspect.rst:1465
 msgid "Fetching attributes statically"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1369
+#: ../Doc/library/inspect.rst:1467
 msgid ""
 "Both :func:`getattr` and :func:`hasattr` can trigger code execution when "
 "fetching or checking for the existence of attributes. Descriptors, like "
-"properties, will be invoked and :meth:`__getattr__` and :meth:"
-"`__getattribute__` may be called."
+"properties, will be invoked and :meth:`~object.__getattr__` and :meth:"
+"`~object.__getattribute__` may be called."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1374
+#: ../Doc/library/inspect.rst:1473
 msgid ""
 "For cases where you want passive introspection, like documentation tools, "
 "this can be inconvenient. :func:`getattr_static` has the same signature as :"
 "func:`getattr` but avoids executing code when it fetches attributes."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1380
+#: ../Doc/library/inspect.rst:1479
 msgid ""
 "Retrieve attributes without triggering dynamic lookup via the descriptor "
-"protocol, :meth:`__getattr__` or :meth:`__getattribute__`."
+"protocol, :meth:`~object.__getattr__` or :meth:`~object.__getattribute__`."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1383
+#: ../Doc/library/inspect.rst:1483
 msgid ""
 "Note: this function may not be able to retrieve all attributes that getattr "
 "can fetch (like dynamically created attributes) and may find attributes that "
@@ -1730,31 +1804,31 @@ msgid ""
 "return descriptors objects instead of instance members."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1389
+#: ../Doc/library/inspect.rst:1489
 msgid ""
 "If the instance :attr:`~object.__dict__` is shadowed by another member (for "
 "example a property) then this function will be unable to find instance "
 "members."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1395
+#: ../Doc/library/inspect.rst:1495
 msgid ""
 ":func:`getattr_static` does not resolve descriptors, for example slot "
 "descriptors or getset descriptors on objects implemented in C. The "
 "descriptor object is returned instead of the underlying attribute."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1399
+#: ../Doc/library/inspect.rst:1499
 msgid ""
 "You can handle these with code like the following. Note that for arbitrary "
 "getset descriptors invoking these may trigger code execution::"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1425
-msgid "Current State of Generators and Coroutines"
+#: ../Doc/library/inspect.rst:1525
+msgid "Current State of Generators, Coroutines, and Asynchronous Generators"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1427
+#: ../Doc/library/inspect.rst:1527
 msgid ""
 "When implementing coroutine schedulers and for other advanced uses of "
 "generators, it is useful to determine whether a generator is currently "
@@ -1763,31 +1837,32 @@ msgid ""
 "generator to be determined easily."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1435
+#: ../Doc/library/inspect.rst:1535
 msgid "Get current state of a generator-iterator."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1441 ../Doc/library/inspect.rst:1456
+#: ../Doc/library/inspect.rst:1537 ../Doc/library/inspect.rst:1553
+#: ../Doc/library/inspect.rst:1570
 msgid "Possible states are:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1438
+#: ../Doc/library/inspect.rst:1539
 msgid "GEN_CREATED: Waiting to start execution."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1439
+#: ../Doc/library/inspect.rst:1540
 msgid "GEN_RUNNING: Currently being executed by the interpreter."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1440
+#: ../Doc/library/inspect.rst:1541
 msgid "GEN_SUSPENDED: Currently suspended at a yield expression."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1441
+#: ../Doc/library/inspect.rst:1542
 msgid "GEN_CLOSED: Execution has completed."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1447
+#: ../Doc/library/inspect.rst:1548
 msgid ""
 "Get current state of a coroutine object.  The function is intended to be "
 "used with coroutine objects created by :keyword:`async def` functions, but "
@@ -1795,30 +1870,55 @@ msgid ""
 "``cr_frame`` attributes."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1453
+#: ../Doc/library/inspect.rst:1555
 msgid "CORO_CREATED: Waiting to start execution."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1454
+#: ../Doc/library/inspect.rst:1556
 msgid "CORO_RUNNING: Currently being executed by the interpreter."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1455
+#: ../Doc/library/inspect.rst:1557
 msgid "CORO_SUSPENDED: Currently suspended at an await expression."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1456
+#: ../Doc/library/inspect.rst:1558
 msgid "CORO_CLOSED: Execution has completed."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1460
+#: ../Doc/library/inspect.rst:1564
+msgid ""
+"Get current state of an asynchronous generator object.  The function is "
+"intended to be used with asynchronous iterator objects created by :keyword:"
+"`async def` functions which use the :keyword:`yield` statement, but will "
+"accept any asynchronous generator-like object that has ``ag_running`` and "
+"``ag_frame`` attributes."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1572
+msgid "AGEN_CREATED: Waiting to start execution."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1573
+msgid "AGEN_RUNNING: Currently being executed by the interpreter."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1574
+msgid "AGEN_SUSPENDED: Currently suspended at a yield expression."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1575
+msgid "AGEN_CLOSED: Execution has completed."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1579
 msgid ""
 "The current internal state of the generator can also be queried. This is "
 "mostly useful for testing purposes, to ensure that internal state is being "
 "updated as expected:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1466
+#: ../Doc/library/inspect.rst:1585
 msgid ""
 "Get the mapping of live local variables in *generator* to their current "
 "values.  A dictionary is returned that maps from variable names to values. "
@@ -1826,14 +1926,14 @@ msgid ""
 "generator, and all the same caveats apply."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1471
+#: ../Doc/library/inspect.rst:1590
 msgid ""
 "If *generator* is a :term:`generator` with no currently associated frame, "
 "then an empty dictionary is returned.  :exc:`TypeError` is raised if "
 "*generator* is not a Python generator object."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1477
+#: ../Doc/library/inspect.rst:1596
 msgid ""
 "This function relies on the generator exposing a Python stack frame for "
 "introspection, which isn't guaranteed to be the case in all implementations "
@@ -1841,72 +1941,79 @@ msgid ""
 "dictionary."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1486
+#: ../Doc/library/inspect.rst:1605
 msgid ""
 "This function is analogous to :func:`~inspect.getgeneratorlocals`, but works "
 "for coroutine objects created by :keyword:`async def` functions."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1495
+#: ../Doc/library/inspect.rst:1612
+msgid ""
+"This function is analogous to :func:`~inspect.getgeneratorlocals`, but works "
+"for asynchronous generator objects created by :keyword:`async def` functions "
+"which use the :keyword:`yield` statement."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1622
 msgid "Code Objects Bit Flags"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1497
+#: ../Doc/library/inspect.rst:1624
 msgid ""
-"Python code objects have a ``co_flags`` attribute, which is a bitmap of the "
-"following flags:"
+"Python code objects have a :attr:`~codeobject.co_flags` attribute, which is "
+"a bitmap of the following flags:"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1502
+#: ../Doc/library/inspect.rst:1629
 msgid "The code object is optimized, using fast locals."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1506
+#: ../Doc/library/inspect.rst:1633
 msgid ""
-"If set, a new dict will be created for the frame's ``f_locals`` when the "
-"code object is executed."
+"If set, a new dict will be created for the frame's :attr:`~frame.f_locals` "
+"when the code object is executed."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1511
+#: ../Doc/library/inspect.rst:1638
 msgid "The code object has a variable positional parameter (``*args``-like)."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1515
+#: ../Doc/library/inspect.rst:1642
 msgid "The code object has a variable keyword parameter (``**kwargs``-like)."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1519
+#: ../Doc/library/inspect.rst:1646
 msgid "The flag is set when the code object is a nested function."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1523
+#: ../Doc/library/inspect.rst:1650
 msgid ""
 "The flag is set when the code object is a generator function, i.e. a "
 "generator object is returned when the code object is executed."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1528
+#: ../Doc/library/inspect.rst:1655
 msgid ""
 "The flag is set when the code object is a coroutine function. When the code "
 "object is executed it returns a coroutine object. See :pep:`492` for more "
 "details."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1536
+#: ../Doc/library/inspect.rst:1663
 msgid ""
 "The flag is used to transform generators into generator-based coroutines.  "
 "Generator objects with this flag can be used in ``await`` expression, and "
 "can ``yield from`` coroutine objects. See :pep:`492` for more details."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1545
+#: ../Doc/library/inspect.rst:1672
 msgid ""
 "The flag is set when the code object is an asynchronous generator function.  "
 "When the code object is executed it returns an asynchronous generator "
 "object.  See :pep:`525` for more details."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1552
+#: ../Doc/library/inspect.rst:1679
 msgid ""
 "The flags are specific to CPython, and may not be defined in other Python "
 "implementations.  Furthermore, the flags are an implementation detail, and "
@@ -1914,24 +2021,39 @@ msgid ""
 "use public APIs from the :mod:`inspect` module for any introspection needs."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1562
+#: ../Doc/library/inspect.rst:1687
+msgid "Buffer flags"
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1691
+msgid ""
+"This is an :class:`enum.IntFlag` that represents the flags that can be "
+"passed to the :meth:`~object.__buffer__` method of objects implementing the :"
+"ref:`buffer protocol <bufferobjects>`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1695
+msgid "The meaning of the flags is explained at :ref:`buffer-request-types`."
+msgstr ""
+
+#: ../Doc/library/inspect.rst:1722
 msgid "Command Line Interface"
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1564
+#: ../Doc/library/inspect.rst:1724
 msgid ""
 "The :mod:`inspect` module also provides a basic introspection capability "
 "from the command line."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1569
+#: ../Doc/library/inspect.rst:1729
 msgid ""
 "By default, accepts the name of a module and prints the source of that "
 "module. A class or function within the module can be printed instead by "
 "appended a colon and the qualified name of the target object."
 msgstr ""
 
-#: ../Doc/library/inspect.rst:1575
+#: ../Doc/library/inspect.rst:1735
 msgid ""
 "Print information about the specified object rather than the source code"
 msgstr ""

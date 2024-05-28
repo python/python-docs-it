@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgid ""
 "seekable file-like object. *mode* can be any of"
 msgstr ""
 
-#: ../Doc/library/sunau.rst:56
+#: ../Doc/library/sunau.rst:55
 msgid "``'r'``"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Read only mode."
 msgstr ""
 
-#: ../Doc/library/sunau.rst:59
+#: ../Doc/library/sunau.rst:58
 msgid "``'w'``"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/email.rst:2
-msgid ":mod:`email` --- An email and MIME handling package"
+msgid ":mod:`!email` --- An email and MIME handling package"
 msgstr ""
 
 #: ../Doc/library/email.rst:11
@@ -30,10 +30,10 @@ msgid ""
 "The :mod:`email` package is a library for managing email messages.  It is "
 "specifically *not* designed to do any sending of email messages to SMTP (:"
 "rfc:`2821`), NNTP, or other servers; those are functions of modules such as :"
-"mod:`smtplib` and :mod:`nntplib`.  The :mod:`email` package attempts to be "
-"as RFC-compliant as possible, supporting :rfc:`5322` and :rfc:`6532`, as "
-"well as such MIME-related RFCs as :rfc:`2045`, :rfc:`2046`, :rfc:`2047`, :"
-"rfc:`2183`, and :rfc:`2231`."
+"mod:`smtplib`.  The :mod:`email` package attempts to be as RFC-compliant as "
+"possible, supporting :rfc:`5322` and :rfc:`6532`, as well as such MIME-"
+"related RFCs as :rfc:`2045`, :rfc:`2046`, :rfc:`2047`, :rfc:`2183`, and :rfc:"
+"`2231`."
 msgstr ""
 
 #: ../Doc/library/email.rst:23
@@ -155,7 +155,7 @@ msgstr ""
 msgid "Legacy API:"
 msgstr ""
 
-#: ../Doc/library/email.rst:136
+#: ../Doc/library/email.rst:135
 msgid "Module :mod:`smtplib`"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgstr ""
 msgid "SMTP (Simple Mail Transport Protocol) client"
 msgstr ""
 
-#: ../Doc/library/email.rst:139
+#: ../Doc/library/email.rst:138
 msgid "Module :mod:`poplib`"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "POP (Post Office Protocol) client"
 msgstr ""
 
-#: ../Doc/library/email.rst:142
+#: ../Doc/library/email.rst:141
 msgid "Module :mod:`imaplib`"
 msgstr ""
 
@@ -179,28 +179,12 @@ msgstr ""
 msgid "IMAP (Internet Message Access Protocol) client"
 msgstr ""
 
-#: ../Doc/library/email.rst:145
-msgid "Module :mod:`nntplib`"
-msgstr ""
-
-#: ../Doc/library/email.rst:145
-msgid "NNTP (Net News Transport Protocol) client"
-msgstr ""
-
-#: ../Doc/library/email.rst:149
+#: ../Doc/library/email.rst:144
 msgid "Module :mod:`mailbox`"
 msgstr ""
 
-#: ../Doc/library/email.rst:148
+#: ../Doc/library/email.rst:145
 msgid ""
 "Tools for creating, reading, and managing collections of messages on disk "
 "using a variety standard formats."
-msgstr ""
-
-#: ../Doc/library/email.rst:151
-msgid "Module :mod:`smtpd`"
-msgstr ""
-
-#: ../Doc/library/email.rst:152
-msgid "SMTP server framework (primarily useful for testing)"
 msgstr ""

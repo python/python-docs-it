@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/bdb.rst:2
-msgid ":mod:`bdb` --- Debugger framework"
+msgid ":mod:`!bdb` --- Debugger framework"
 msgstr ""
 
 #: ../Doc/library/bdb.rst:7
@@ -134,7 +134,7 @@ msgid "Line number of the :class:`Breakpoint` within :attr:`file`."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:89
-msgid "True if a :class:`Breakpoint` at (file, line) is temporary."
+msgid "``True`` if a :class:`Breakpoint` at (file, line) is temporary."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:93
@@ -148,7 +148,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/bdb.rst:102
-msgid "True if :class:`Breakpoint` is enabled."
+msgid "``True`` if :class:`Breakpoint` is enabled."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:106
@@ -190,7 +190,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/bdb.rst:135
-msgid "The *skip* argument."
+msgid "Added the *skip* parameter."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:138
@@ -212,8 +212,9 @@ msgstr ""
 
 #: ../Doc/library/bdb.rst:151
 msgid ""
-"Set the :attr:`botframe`, :attr:`stopframe`, :attr:`returnframe` and :attr:"
-"`quitting` attributes with values ready to start debugging."
+"Set the :attr:`!botframe`, :attr:`!stopframe`, :attr:`!returnframe` and :"
+"attr:`quitting <Bdb.set_quit>` attributes with values ready to start "
+"debugging."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:156
@@ -280,8 +281,8 @@ msgstr ""
 msgid ""
 "If the debugger should stop on the current line, invoke the :meth:"
 "`user_line` method (which should be overridden in subclasses). Raise a :exc:"
-"`BdbQuit` exception if the :attr:`Bdb.quitting` flag is set (which can be "
-"set from :meth:`user_line`).  Return a reference to the :meth:"
+"`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag is set "
+"(which can be set from :meth:`user_line`).  Return a reference to the :meth:"
 "`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
@@ -289,8 +290,8 @@ msgstr ""
 msgid ""
 "If the debugger should stop on this function call, invoke the :meth:"
 "`user_call` method (which should be overridden in subclasses). Raise a :exc:"
-"`BdbQuit` exception if the :attr:`Bdb.quitting` flag is set (which can be "
-"set from :meth:`user_call`).  Return a reference to the :meth:"
+"`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag is set "
+"(which can be set from :meth:`user_call`).  Return a reference to the :meth:"
 "`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
@@ -298,18 +299,18 @@ msgstr ""
 msgid ""
 "If the debugger should stop on this function return, invoke the :meth:"
 "`user_return` method (which should be overridden in subclasses). Raise a :"
-"exc:`BdbQuit` exception if the :attr:`Bdb.quitting` flag is set (which can "
-"be set from :meth:`user_return`).  Return a reference to the :meth:"
-"`trace_dispatch` method for further tracing in that scope."
+"exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag is set "
+"(which can be set from :meth:`user_return`).  Return a reference to the :"
+"meth:`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:207
 msgid ""
 "If the debugger should stop at this exception, invokes the :meth:"
 "`user_exception` method (which should be overridden in subclasses). Raise a :"
-"exc:`BdbQuit` exception if the :attr:`Bdb.quitting` flag is set (which can "
-"be set from :meth:`user_exception`).  Return a reference to the :meth:"
-"`trace_dispatch` method for further tracing in that scope."
+"exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag is set "
+"(which can be set from :meth:`user_exception`).  Return a reference to the :"
+"meth:`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:213
@@ -319,15 +320,15 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/bdb.rst:218
-msgid "Return True if *module_name* matches any skip pattern."
+msgid "Return ``True`` if *module_name* matches any skip pattern."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:222
-msgid "Return True if *frame* is below the starting frame in the stack."
+msgid "Return ``True`` if *frame* is below the starting frame in the stack."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:226
-msgid "Return True if there is an effective breakpoint for this line."
+msgid "Return ``True`` if there is an effective breakpoint for this line."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:228
@@ -337,7 +338,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/bdb.rst:233
-msgid "Return True if any breakpoint exists for *frame*'s filename."
+msgid "Return ``True`` if any breakpoint exists for *frame*'s filename."
 msgstr ""
 
 #: ../Doc/library/bdb.rst:235
@@ -352,112 +353,124 @@ msgid ""
 "function."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:245
+#: ../Doc/library/bdb.rst:243
+msgid ""
+"*argument_list* is not used anymore and will always be ``None``. The "
+"argument is kept for backwards compatibility."
+msgstr ""
+
+#: ../Doc/library/bdb.rst:248
 msgid ""
 "Called from :meth:`dispatch_line` when either :meth:`stop_here` or :meth:"
 "`break_here` returns ``True``."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:250
+#: ../Doc/library/bdb.rst:253
 msgid ""
 "Called from :meth:`dispatch_return` when :meth:`stop_here` returns ``True``."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:254
+#: ../Doc/library/bdb.rst:257
 msgid ""
 "Called from :meth:`dispatch_exception` when :meth:`stop_here` returns "
 "``True``."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:259
+#: ../Doc/library/bdb.rst:262
 msgid "Handle how a breakpoint must be removed when it is a temporary one."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:261
+#: ../Doc/library/bdb.rst:264
 msgid "This method must be implemented by derived classes."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:264
+#: ../Doc/library/bdb.rst:267
 msgid ""
 "Derived classes and clients can call the following methods to affect the "
 "stepping state."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:269
+#: ../Doc/library/bdb.rst:272
 msgid "Stop after one line of code."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:273
+#: ../Doc/library/bdb.rst:276
 msgid "Stop on the next line in or below the given frame."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:277
+#: ../Doc/library/bdb.rst:280
 msgid "Stop when returning from the given frame."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:281
+#: ../Doc/library/bdb.rst:284
 msgid ""
 "Stop when the line with the *lineno* greater than the current one is reached "
 "or when returning from current frame."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:286
+#: ../Doc/library/bdb.rst:289
 msgid ""
 "Start debugging from *frame*.  If *frame* is not specified, debugging starts "
 "from caller's frame."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:291
+#: ../Doc/library/bdb.rst:292
+msgid ""
+":func:`set_trace` will enter the debugger immediately, rather than on the "
+"next line of code to be executed."
+msgstr ""
+
+#: ../Doc/library/bdb.rst:298
 msgid ""
 "Stop only at breakpoints or when finished.  If there are no breakpoints, set "
 "the system trace function to ``None``."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:296
+#: ../Doc/library/bdb.rst:305
 msgid ""
-"Set the :attr:`quitting` attribute to ``True``.  This raises :exc:`BdbQuit` "
-"in the next call to one of the :meth:`dispatch_\\*` methods."
+"Set the :attr:`!quitting` attribute to ``True``.  This raises :exc:`BdbQuit` "
+"in the next call to one of the :meth:`!dispatch_\\*` methods."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:300
+#: ../Doc/library/bdb.rst:309
 msgid ""
 "Derived classes and clients can call the following methods to manipulate "
 "breakpoints.  These methods return a string containing an error message if "
 "something went wrong, or ``None`` if all is well."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:306
+#: ../Doc/library/bdb.rst:315
 msgid ""
 "Set a new breakpoint.  If the *lineno* line doesn't exist for the *filename* "
 "passed as argument, return an error message.  The *filename* should be in "
 "canonical form, as described in the :meth:`canonic` method."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:312
+#: ../Doc/library/bdb.rst:321
 msgid ""
 "Delete the breakpoints in *filename* and *lineno*.  If none were set, return "
 "an error message."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:317
+#: ../Doc/library/bdb.rst:326
 msgid ""
 "Delete the breakpoint which has the index *arg* in the :attr:`Breakpoint."
 "bpbynumber`.  If *arg* is not numeric or out of range, return an error "
 "message."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:323
+#: ../Doc/library/bdb.rst:332
 msgid ""
 "Delete all breakpoints in *filename*.  If none were set, return an error "
 "message."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:328
+#: ../Doc/library/bdb.rst:337
 msgid ""
 "Delete all existing breakpoints.  If none were set, return an error message."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:333
+#: ../Doc/library/bdb.rst:342
 msgid ""
 "Return a breakpoint specified by the given number.  If *arg* is a string, it "
 "will be converted to a number.  If *arg* is a non-numeric string, if the "
@@ -465,103 +478,103 @@ msgid ""
 "raised."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:342
-msgid "Return True if there is a breakpoint for *lineno* in *filename*."
+#: ../Doc/library/bdb.rst:351
+msgid "Return ``True`` if there is a breakpoint for *lineno* in *filename*."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:346
+#: ../Doc/library/bdb.rst:355
 msgid ""
 "Return all breakpoints for *lineno* in *filename*, or an empty list if none "
 "are set."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:351
+#: ../Doc/library/bdb.rst:360
 msgid "Return all breakpoints in *filename*, or an empty list if none are set."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:355
+#: ../Doc/library/bdb.rst:364
 msgid "Return all breakpoints that are set."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:358
+#: ../Doc/library/bdb.rst:367
 msgid ""
 "Derived classes and clients can call the following methods to get a data "
 "structure representing a stack trace."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:363
+#: ../Doc/library/bdb.rst:372
 msgid "Return a list of (frame, lineno) tuples in a stack trace, and a size."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:365
+#: ../Doc/library/bdb.rst:374
 msgid ""
 "The most recently called frame is last in the list. The size is the number "
 "of frames below the frame where the debugger was invoked."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:370
+#: ../Doc/library/bdb.rst:379
 msgid ""
 "Return a string with information about a stack entry, which is a ``(frame, "
 "lineno)`` tuple.  The return string contains:"
 msgstr ""
 
-#: ../Doc/library/bdb.rst:373
+#: ../Doc/library/bdb.rst:382
 msgid "The canonical filename which contains the frame."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:374
+#: ../Doc/library/bdb.rst:383
 msgid "The function name or ``\"<lambda>\"``."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:375
+#: ../Doc/library/bdb.rst:384
 msgid "The input arguments."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:376
+#: ../Doc/library/bdb.rst:385
 msgid "The return value."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:377
+#: ../Doc/library/bdb.rst:386
 msgid "The line of code (if it exists)."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:380
+#: ../Doc/library/bdb.rst:389
 msgid ""
 "The following two methods can be called by clients to use a debugger to "
 "debug a :term:`statement`, given as a string."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:385
+#: ../Doc/library/bdb.rst:394
 msgid ""
 "Debug a statement executed via the :func:`exec` function.  *globals* "
-"defaults to :attr:`__main__.__dict__`, *locals* defaults to *globals*."
+"defaults to :attr:`!__main__.__dict__`, *locals* defaults to *globals*."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:390
+#: ../Doc/library/bdb.rst:399
 msgid ""
 "Debug an expression executed via the :func:`eval` function.  *globals* and "
 "*locals* have the same meaning as in :meth:`run`."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:395
+#: ../Doc/library/bdb.rst:404
 msgid "For backwards compatibility.  Calls the :meth:`run` method."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:399
+#: ../Doc/library/bdb.rst:408
 msgid "Debug a single function call, and return its result."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:402
+#: ../Doc/library/bdb.rst:411
 msgid "Finally, the module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/bdb.rst:406
+#: ../Doc/library/bdb.rst:415
 msgid ""
-"Return True if we should break here, depending on the way the :class:"
+"Return ``True`` if we should break here, depending on the way the :class:"
 "`Breakpoint` *b* was set."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:409
+#: ../Doc/library/bdb.rst:418
 msgid ""
 "If it was set via line number, it checks if :attr:`b.line <bdb.Breakpoint."
 "line>` is the same as the one in *frame*. If the breakpoint was set via :"
@@ -570,29 +583,33 @@ msgid ""
 "line."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:418
+#: ../Doc/library/bdb.rst:427
 msgid ""
 "Return ``(active breakpoint, delete temporary flag)`` or ``(None, None)`` as "
 "the breakpoint to act upon."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:421
+#: ../Doc/library/bdb.rst:430
 msgid ""
 "The *active breakpoint* is the first entry in :attr:`bplist <bdb.Breakpoint."
 "bplist>` for the (:attr:`file <bdb.Breakpoint.file>`, :attr:`line <bdb."
 "Breakpoint.line>`) (which must exist) that is :attr:`enabled <bdb.Breakpoint."
-"enabled>`, for which :func:`checkfuncname` is True, and that has neither a "
-"False :attr:`condition <bdb.Breakpoint.cond>` nor positive :attr:`ignore "
+"enabled>`, for which :func:`checkfuncname` is true, and that has neither a "
+"false :attr:`condition <bdb.Breakpoint.cond>` nor positive :attr:`ignore "
 "<bdb.Breakpoint.ignore>` count.  The *flag*, meaning that a temporary "
-"breakpoint should be deleted, is False only when the :attr:`cond <bdb."
+"breakpoint should be deleted, is ``False`` only when the :attr:`cond <bdb."
 "Breakpoint.cond>` cannot be evaluated (in which case, :attr:`ignore <bdb."
 "Breakpoint.ignore>` count is ignored)."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:432
-msgid "If no such entry exists, then (None, None) is returned."
+#: ../Doc/library/bdb.rst:441
+msgid "If no such entry exists, then ``(None, None)`` is returned."
 msgstr ""
 
-#: ../Doc/library/bdb.rst:437
+#: ../Doc/library/bdb.rst:446
 msgid "Start debugging with a :class:`Bdb` instance from caller's frame."
+msgstr ""
+
+#: ../Doc/library/bdb.rst:303
+msgid "quitting (bdb.Bdb attribute)"
 msgstr ""

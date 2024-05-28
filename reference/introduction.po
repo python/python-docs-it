@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Known implementations include:"
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:51
+#: ../Doc/reference/introduction.rst:49
 msgid "CPython"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgid ""
 "in C. New language features generally appear here first."
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:57
+#: ../Doc/reference/introduction.rst:53
 msgid "Jython"
 msgstr ""
 
@@ -100,7 +100,7 @@ msgid ""
 "jython.org/>`_."
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:63
+#: ../Doc/reference/introduction.rst:59
 msgid "Python for .NET"
 msgstr ""
 
@@ -112,7 +112,7 @@ msgid ""
 "<https://pythonnet.github.io/>`_."
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:69
+#: ../Doc/reference/introduction.rst:65
 msgid "IronPython"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgid ""
 ">`_."
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:77
+#: ../Doc/reference/introduction.rst:71
 msgid "PyPy"
 msgstr ""
 
@@ -136,8 +136,8 @@ msgid ""
 "support and a Just in Time compiler. One of the goals of the project is to "
 "encourage experimentation with the language itself by making it easier to "
 "modify the interpreter (since it is written in Python).  Additional "
-"information is available on `the PyPy project's home page <https://pypy.org/"
-">`_."
+"information is available on `the PyPy project's home page <https://www.pypy."
+"org/>`_."
 msgstr ""
 
 #: ../Doc/reference/introduction.rst:79
@@ -155,11 +155,12 @@ msgstr ""
 
 #: ../Doc/reference/introduction.rst:93
 msgid ""
-"The descriptions of lexical analysis and syntax use a modified BNF grammar "
-"notation.  This uses the following style of definition:"
+"The descriptions of lexical analysis and syntax use a modified `Backus–Naur "
+"form (BNF) <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form>`_ "
+"grammar notation.  This uses the following style of definition:"
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:100
+#: ../Doc/reference/introduction.rst:101
 msgid ""
 "The first line says that a ``name`` is an ``lc_letter`` followed by a "
 "sequence of zero or more ``lc_letter``\\ s and underscores.  An "
@@ -168,7 +169,7 @@ msgid ""
 "and grammar rules in this document.)"
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:105
+#: ../Doc/reference/introduction.rst:106
 msgid ""
 "Each rule begins with a name (which is the name defined by the rule) and ``::"
 "=``.  A vertical bar (``|``) is used to separate alternatives; it is the "
@@ -183,7 +184,7 @@ msgid ""
 "line after the first beginning with a vertical bar."
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:119
+#: ../Doc/reference/introduction.rst:120
 msgid ""
 "In lexical definitions (as the example above), two more conventions are "
 "used: Two literal characters separated by three dots mean a choice of any "
@@ -193,7 +194,7 @@ msgid ""
 "'control character' if needed."
 msgstr ""
 
-#: ../Doc/reference/introduction.rst:126
+#: ../Doc/reference/introduction.rst:127
 msgid ""
 "Even though the notation used is almost the same, there is a big difference "
 "between the meaning of lexical and syntactic definitions: a lexical "
@@ -202,4 +203,28 @@ msgid ""
 "lexical analysis. All uses of BNF in the next chapter (\"Lexical Analysis\") "
 "are lexical definitions; uses in subsequent chapters are syntactic "
 "definitions."
+msgstr ""
+
+#: ../Doc/reference/introduction.rst:91
+msgid "BNF"
+msgstr ""
+
+#: ../Doc/reference/introduction.rst:91
+msgid "grammar"
+msgstr ""
+
+#: ../Doc/reference/introduction.rst:91
+msgid "syntax"
+msgstr ""
+
+#: ../Doc/reference/introduction.rst:91
+msgid "notation"
+msgstr ""
+
+#: ../Doc/reference/introduction.rst:118
+msgid "lexical definitions"
+msgstr ""
+
+#: ../Doc/reference/introduction.rst:118
+msgid "ASCII"
 msgstr ""

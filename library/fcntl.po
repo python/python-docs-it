@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,26 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/fcntl.rst:2
-msgid ":mod:`fcntl` --- The ``fcntl`` and ``ioctl`` system calls"
+msgid ":mod:`!fcntl` --- The ``fcntl`` and ``ioctl`` system calls"
 msgstr ""
 
 #: ../Doc/library/fcntl.rst:16
 msgid ""
-"This module performs file control and I/O control on file descriptors. It is "
-"an interface to the :c:func:`fcntl` and :c:func:`ioctl` Unix routines.  For "
-"a complete description of these calls, see :manpage:`fcntl(2)` and :manpage:"
-"`ioctl(2)` Unix manual pages."
+"This module performs file and I/O control on file descriptors. It is an "
+"interface to the :c:func:`fcntl` and :c:func:`ioctl` Unix routines. See the :"
+"manpage:`fcntl(2)` and :manpage:`ioctl(2)` Unix manual pages for full "
+"details."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../Doc/includes/wasm-notavail.rst:5
-msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+#: ../Doc/library/fcntl.rst:21
+msgid ":ref:`Availability <availability>`: Unix, not WASI."
 msgstr ""
 
 #: ../Doc/library/fcntl.rst:23
@@ -57,38 +50,68 @@ msgstr ""
 
 #: ../Doc/library/fcntl.rst:33
 msgid ""
-"The fcntl module now contains ``F_ADD_SEALS``, ``F_GET_SEALS``, and "
+"The :mod:`!fcntl` module now contains ``F_ADD_SEALS``, ``F_GET_SEALS``, and "
 "``F_SEAL_*`` constants for sealing of :func:`os.memfd_create` file "
 "descriptors."
 msgstr ""
 
 #: ../Doc/library/fcntl.rst:38
 msgid ""
-"On macOS, the fcntl module exposes the ``F_GETPATH`` constant, which obtains "
-"the path of a file from a file descriptor. On Linux(>=3.15), the fcntl "
-"module exposes the ``F_OFD_GETLK``, ``F_OFD_SETLK`` and ``F_OFD_SETLKW`` "
-"constants, which are used when working with open file description locks."
+"On macOS, the :mod:`!fcntl` module exposes the ``F_GETPATH`` constant, which "
+"obtains the path of a file from a file descriptor. On Linux(>=3.15), the :"
+"mod:`!fcntl` module exposes the ``F_OFD_GETLK``, ``F_OFD_SETLK`` and "
+"``F_OFD_SETLKW`` constants, which are used when working with open file "
+"description locks."
 msgstr ""
 
 #: ../Doc/library/fcntl.rst:45
 msgid ""
-"On Linux >= 2.6.11, the fcntl module exposes the ``F_GETPIPE_SZ`` and "
-"``F_SETPIPE_SZ`` constants, which allow to check and modify a pipe's size "
-"respectively."
+"On Linux >= 2.6.11, the :mod:`!fcntl` module exposes the ``F_GETPIPE_SZ`` "
+"and ``F_SETPIPE_SZ`` constants, which allow to check and modify a pipe's "
+"size respectively."
 msgstr ""
 
 #: ../Doc/library/fcntl.rst:50
 msgid ""
-"On FreeBSD, the fcntl module exposes the ``F_DUP2FD`` and "
+"On FreeBSD, the :mod:`!fcntl` module exposes the ``F_DUP2FD`` and "
 "``F_DUP2FD_CLOEXEC`` constants, which allow to duplicate a file descriptor, "
 "the latter setting ``FD_CLOEXEC`` flag in addition."
 msgstr ""
 
 #: ../Doc/library/fcntl.rst:55
+msgid ""
+"On Linux >= 4.5, the :mod:`fcntl` module exposes the ``FICLONE`` and "
+"``FICLONERANGE`` constants, which allow to share some data of one file with "
+"another file by reflinking on some filesystems (e.g., btrfs, OCFS2, and "
+"XFS). This behavior is commonly referred to as \"copy-on-write\"."
+msgstr ""
+
+#: ../Doc/library/fcntl.rst:61
+msgid ""
+"On Linux >= 2.6.32, the :mod:`!fcntl` module exposes the ``F_GETOWN_EX``, "
+"``F_SETOWN_EX``, ``F_OWNER_TID``, ``F_OWNER_PID``, ``F_OWNER_PGRP`` "
+"constants, which allow to direct I/O availability signals to a specific "
+"thread, process, or process group. On Linux >= 4.13, the :mod:`!fcntl` "
+"module exposes the ``F_GET_RW_HINT``, ``F_SET_RW_HINT``, "
+"``F_GET_FILE_RW_HINT``, ``F_SET_FILE_RW_HINT``, and ``RWH_WRITE_LIFE_*`` "
+"constants, which allow to inform the kernel about the relative expected "
+"lifetime of writes on a given inode or via a particular open file "
+"description. On Linux >= 5.1 and NetBSD, the :mod:`!fcntl` module exposes "
+"the ``F_SEAL_FUTURE_WRITE`` constant for use with ``F_ADD_SEALS`` and "
+"``F_GET_SEALS`` operations. On FreeBSD, the :mod:`!fcntl` module exposes the "
+"``F_READAHEAD``, ``F_ISUNIONSTACK``, and ``F_KINFO`` constants. On macOS and "
+"FreeBSD, the :mod:`!fcntl` module exposes the ``F_RDAHEAD`` constant. On "
+"NetBSD and AIX, the :mod:`!fcntl` module exposes the ``F_CLOSEM`` constant. "
+"On NetBSD, the :mod:`!fcntl` module exposes the ``F_MAXFD`` constant. On "
+"macOS and NetBSD, the :mod:`!fcntl` module exposes the ``F_GETNOSIGPIPE`` "
+"and ``F_SETNOSIGPIPE`` constant."
+msgstr ""
+
+#: ../Doc/library/fcntl.rst:82
 msgid "The module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:60
+#: ../Doc/library/fcntl.rst:87
 msgid ""
 "Perform the operation *cmd* on file descriptor *fd* (file objects providing "
 "a :meth:`~io.IOBase.fileno` method are accepted as well).  The values used "
@@ -107,23 +130,23 @@ msgid ""
 "result in a segmentation violation or a more subtle data corruption."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:77
-msgid "If the :c:func:`fcntl` fails, an :exc:`OSError` is raised."
+#: ../Doc/library/fcntl.rst:104
+msgid "If the :c:func:`fcntl` call fails, an :exc:`OSError` is raised."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:88
+#: ../Doc/library/fcntl.rst:106
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments "
 "``fd``, ``cmd``, ``arg``."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:84
+#: ../Doc/library/fcntl.rst:111
 msgid ""
 "This function is identical to the :func:`~fcntl.fcntl` function, except that "
 "the argument handling is even more complicated."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:87
+#: ../Doc/library/fcntl.rst:114
 msgid ""
 "The *request* parameter is limited to values that can fit in 32-bits. "
 "Additional constants of interest for use as the *request* argument can be "
@@ -131,26 +154,26 @@ msgid ""
 "relevant C header files."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:92
+#: ../Doc/library/fcntl.rst:119
 msgid ""
 "The parameter *arg* can be one of an integer, an object supporting the read-"
 "only buffer interface (like :class:`bytes`) or an object supporting the read-"
 "write buffer interface (like :class:`bytearray`)."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:96
+#: ../Doc/library/fcntl.rst:123
 msgid ""
 "In all but the last case, behaviour is as for the :func:`~fcntl.fcntl` "
 "function."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:99
+#: ../Doc/library/fcntl.rst:126
 msgid ""
 "If a mutable buffer is passed, then the behaviour is determined by the value "
 "of the *mutate_flag* parameter."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:102
+#: ../Doc/library/fcntl.rst:129
 msgid ""
 "If it is false, the buffer's mutability is ignored and behaviour is as for a "
 "read-only buffer, except that the 1024 byte limit mentioned above is avoided "
@@ -158,7 +181,7 @@ msgid ""
 "system wants to put there, things should work."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:107
+#: ../Doc/library/fcntl.rst:134
 msgid ""
 "If *mutate_flag* is true (the default), then the buffer is (in effect) "
 "passed to the underlying :func:`ioctl` system call, the latter's return code "
@@ -169,21 +192,22 @@ msgid ""
 "copied back into the supplied buffer."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:115
-msgid "If the :c:func:`ioctl` fails, an :exc:`OSError` exception is raised."
+#: ../Doc/library/fcntl.rst:142
+msgid ""
+"If the :c:func:`ioctl` call fails, an :exc:`OSError` exception is raised."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:117
+#: ../Doc/library/fcntl.rst:144
 msgid "An example::"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:139
+#: ../Doc/library/fcntl.rst:157
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments "
 "``fd``, ``request``, ``arg``."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:135
+#: ../Doc/library/fcntl.rst:162
 msgid ""
 "Perform the lock operation *operation* on file descriptor *fd* (file objects "
 "providing a :meth:`~io.IOBase.fileno` method are accepted as well). See the "
@@ -191,17 +215,18 @@ msgid ""
 "function is emulated using :c:func:`fcntl`.)"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:140
-msgid "If the :c:func:`flock` fails, an :exc:`OSError` exception is raised."
+#: ../Doc/library/fcntl.rst:167
+msgid ""
+"If the :c:func:`flock` call fails, an :exc:`OSError` exception is raised."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:151
+#: ../Doc/library/fcntl.rst:169
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments "
 "``fd``, ``operation``."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:147
+#: ../Doc/library/fcntl.rst:174
 msgid ""
 "This is essentially a wrapper around the :func:`~fcntl.fcntl` locking calls. "
 "*fd* is the file descriptor (file objects providing a :meth:`~io.IOBase."
@@ -209,68 +234,71 @@ msgid ""
 "*cmd* is one of the following values:"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:152
-msgid ":const:`LOCK_UN` -- unlock"
+#: ../Doc/library/fcntl.rst:181
+msgid "Release an existing lock."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:153
-msgid ":const:`LOCK_SH` -- acquire a shared lock"
+#: ../Doc/library/fcntl.rst:185
+msgid "Acquire a shared lock."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:154
-msgid ":const:`LOCK_EX` -- acquire an exclusive lock"
+#: ../Doc/library/fcntl.rst:189
+msgid "Acquire an exclusive lock."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:156
+#: ../Doc/library/fcntl.rst:193
 msgid ""
-"When *cmd* is :const:`LOCK_SH` or :const:`LOCK_EX`, it can also be bitwise "
-"ORed with :const:`LOCK_NB` to avoid blocking on lock acquisition. If :const:"
-"`LOCK_NB` is used and the lock cannot be acquired, an :exc:`OSError` will be "
-"raised and the exception will have an *errno* attribute set to :const:"
-"`EACCES` or :const:`EAGAIN` (depending on the operating system; for "
-"portability, check for both values).  On at least some systems, :const:"
-"`LOCK_EX` can only be used if the file descriptor refers to a file opened "
-"for writing."
+"Bitwise OR with any of the other three ``LOCK_*`` constants to make the "
+"request non-blocking."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:165
+#: ../Doc/library/fcntl.rst:196
+msgid ""
+"If :const:`!LOCK_NB` is used and the lock cannot be acquired, an :exc:"
+"`OSError` will be raised and the exception will have an *errno* attribute "
+"set to :const:`~errno.EACCES` or :const:`~errno.EAGAIN` (depending on the "
+"operating system; for portability, check for both values).  On at least some "
+"systems, :const:`!LOCK_EX` can only be used if the file descriptor refers to "
+"a file opened for writing."
+msgstr ""
+
+#: ../Doc/library/fcntl.rst:203
 msgid ""
 "*len* is the number of bytes to lock, *start* is the byte offset at which "
 "the lock starts, relative to *whence*, and *whence* is as with :func:`io."
 "IOBase.seek`, specifically:"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:169
-msgid ":const:`0` -- relative to the start of the file (:data:`os.SEEK_SET`)"
+#: ../Doc/library/fcntl.rst:207
+msgid "``0`` -- relative to the start of the file (:const:`os.SEEK_SET`)"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:170
-msgid ""
-":const:`1` -- relative to the current buffer position (:data:`os.SEEK_CUR`)"
+#: ../Doc/library/fcntl.rst:208
+msgid "``1`` -- relative to the current buffer position (:const:`os.SEEK_CUR`)"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:171
-msgid ":const:`2` -- relative to the end of the file (:data:`os.SEEK_END`)"
+#: ../Doc/library/fcntl.rst:209
+msgid "``2`` -- relative to the end of the file (:const:`os.SEEK_END`)"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:173
+#: ../Doc/library/fcntl.rst:211
 msgid ""
 "The default for *start* is 0, which means to start at the beginning of the "
 "file. The default for *len* is 0 which means to lock to the end of the "
 "file.  The default for *whence* is also 0."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:186
+#: ../Doc/library/fcntl.rst:215
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments "
 "``fd``, ``cmd``, ``len``, ``start``, ``whence``."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:179
+#: ../Doc/library/fcntl.rst:217
 msgid "Examples (all on a SVR4 compliant system)::"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:189
+#: ../Doc/library/fcntl.rst:227
 msgid ""
 "Note that in the first example the return value variable *rv* will hold an "
 "integer value; in the second example it will hold a :class:`bytes` object.  "
@@ -278,13 +306,25 @@ msgid ""
 "therefore using the :func:`flock` call may be better."
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:200
+#: ../Doc/library/fcntl.rst:235
 msgid "Module :mod:`os`"
 msgstr ""
 
-#: ../Doc/library/fcntl.rst:198
+#: ../Doc/library/fcntl.rst:236
 msgid ""
-"If the locking flags :data:`~os.O_SHLOCK` and :data:`~os.O_EXLOCK` are "
+"If the locking flags :const:`~os.O_SHLOCK` and :const:`~os.O_EXLOCK` are "
 "present in the :mod:`os` module (on BSD only), the :func:`os.open` function "
 "provides an alternative to the :func:`lockf` and :func:`flock` functions."
+msgstr ""
+
+#: ../Doc/library/fcntl.rst:10
+msgid "UNIX"
+msgstr ""
+
+#: ../Doc/library/fcntl.rst:10
+msgid "file control"
+msgstr ""
+
+#: ../Doc/library/fcntl.rst:10
+msgid "I/O control"
 msgstr ""

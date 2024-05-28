@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/email.errors.rst:2
-msgid ":mod:`email.errors`: Exception and Defect classes"
+msgid ":mod:`!email.errors`: Exception and Defect classes"
 msgstr ""
 
 #: ../Doc/library/email.errors.rst:7
@@ -79,7 +79,19 @@ msgid ""
 "`~email.mime.image.MIMEImage`)."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:62
+#: ../Doc/library/email.errors.rst:63
+msgid ""
+"This is the base class for all defects found when parsing email messages. It "
+"is derived from :exc:`ValueError`."
+msgstr ""
+
+#: ../Doc/library/email.errors.rst:68
+msgid ""
+"This is the base class for all defects found when parsing email headers. It "
+"is derived from :exc:`MessageDefect`."
+msgstr ""
+
+#: ../Doc/library/email.errors.rst:71
 msgid ""
 "Here is the list of the defects that the :class:`~email.parser.FeedParser` "
 "can find while parsing messages.  Note that the defects are added to the "
@@ -89,59 +101,59 @@ msgid ""
 "not."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:68
+#: ../Doc/library/email.errors.rst:77
 msgid ""
 "All defect classes are subclassed from :class:`email.errors.MessageDefect`."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:70
+#: ../Doc/library/email.errors.rst:79
 msgid ""
 ":class:`NoBoundaryInMultipartDefect` -- A message claimed to be a multipart, "
 "but had no :mimetype:`boundary` parameter."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:73
+#: ../Doc/library/email.errors.rst:82
 msgid ""
 ":class:`StartBoundaryNotFoundDefect` -- The start boundary claimed in the :"
 "mailheader:`Content-Type` header was never found."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:76
+#: ../Doc/library/email.errors.rst:85
 msgid ""
 ":class:`CloseBoundaryNotFoundDefect` -- A start boundary was found, but no "
 "corresponding close boundary was ever found."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:81
+#: ../Doc/library/email.errors.rst:90
 msgid ""
 ":class:`FirstHeaderLineIsContinuationDefect` -- The message had a "
 "continuation line as its first header line."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:84
+#: ../Doc/library/email.errors.rst:93
 msgid ""
 ":class:`MisplacedEnvelopeHeaderDefect` - A \"Unix From\" header was found in "
 "the middle of a header block."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:87
+#: ../Doc/library/email.errors.rst:96
 msgid ""
 ":class:`MissingHeaderBodySeparatorDefect` - A line was found while parsing "
 "headers that had no leading white space but contained no ':'.  Parsing "
 "continues assuming that the line represents the first line of the body."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:93
+#: ../Doc/library/email.errors.rst:102
 msgid ""
 ":class:`MalformedHeaderDefect` -- A header was found that was missing a "
 "colon, or was otherwise malformed."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:96
+#: ../Doc/library/email.errors.rst:105
 msgid "This defect has not been used for several Python versions."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:99
+#: ../Doc/library/email.errors.rst:108
 msgid ""
 ":class:`MultipartInvariantViolationDefect` -- A message claimed to be a :"
 "mimetype:`multipart`, but no subparts were found.  Note that when a message "
@@ -150,28 +162,28 @@ msgid ""
 "`multipart`."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:104
+#: ../Doc/library/email.errors.rst:113
 msgid ""
 ":class:`InvalidBase64PaddingDefect` -- When decoding a block of base64 "
 "encoded bytes, the padding was not correct.  Enough padding is added to "
 "perform the decode, but the resulting decoded bytes may be invalid."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:108
+#: ../Doc/library/email.errors.rst:117
 msgid ""
 ":class:`InvalidBase64CharactersDefect` -- When decoding a block of base64 "
 "encoded bytes, characters outside the base64 alphabet were encountered. The "
 "characters are ignored, but the resulting decoded bytes may be invalid."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:112
+#: ../Doc/library/email.errors.rst:121
 msgid ""
 ":class:`InvalidBase64LengthDefect` -- When decoding a block of base64 "
 "encoded bytes, the number of non-padding base64 characters was invalid (1 "
 "more than a multiple of 4).  The encoded block was kept as-is."
 msgstr ""
 
-#: ../Doc/library/email.errors.rst:116
+#: ../Doc/library/email.errors.rst:125
 msgid ""
 ":class:`InvalidDateDefect` -- When decoding an invalid or unparsable date "
 "field. The original value is kept as-is."

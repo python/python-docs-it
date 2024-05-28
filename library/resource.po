@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/resource.rst:2
-msgid ":mod:`resource` --- Resource usage information"
+msgid ":mod:`!resource` --- Resource usage information"
 msgstr ""
 
 #: ../Doc/library/resource.rst:13
@@ -27,15 +27,8 @@ msgid ""
 "resources utilized by a program."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../Doc/includes/wasm-notavail.rst:5
-msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+#: ../Doc/library/resource.rst:16
+msgid ":ref:`Availability <availability>`: Unix, not WASI."
 msgstr ""
 
 #: ../Doc/library/resource.rst:18
@@ -120,7 +113,7 @@ msgstr ""
 msgid "VxWorks only supports setting :data:`RLIMIT_NOFILE`."
 msgstr ""
 
-#: ../Doc/library/resource.rst:92
+#: ../Doc/library/resource.rst:83
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``resource.setrlimit`` with "
 "arguments ``resource``, ``limits``."
@@ -149,13 +142,13 @@ msgid ""
 "process."
 msgstr ""
 
-#: ../Doc/library/resource.rst:111
+#: ../Doc/library/resource.rst:102
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``resource.prlimit`` with "
 "arguments ``pid``, ``resource``, ``limits``."
 msgstr ""
 
-#: ../Doc/library/resource.rst:105
+#: ../Doc/library/resource.rst:104
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.36 with glibc >= 2.13."
 msgstr ""
 
@@ -229,100 +222,100 @@ msgstr ""
 msgid "The largest area of mapped memory which the process may occupy."
 msgstr ""
 
-#: ../Doc/library/resource.rst:183
+#: ../Doc/library/resource.rst:180 ../Doc/library/resource.rst:268
+msgid ":ref:`Availability <availability>`: FreeBSD >= 11."
+msgstr ""
+
+#: ../Doc/library/resource.rst:185
 msgid ""
 "The maximum area (in bytes) of address space which may be taken by the "
 "process."
 msgstr ""
 
-#: ../Doc/library/resource.rst:188
+#: ../Doc/library/resource.rst:190
 msgid "The number of bytes that can be allocated for POSIX message queues."
 msgstr ""
 
-#: ../Doc/library/resource.rst:191 ../Doc/library/resource.rst:228
+#: ../Doc/library/resource.rst:192 ../Doc/library/resource.rst:229
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.8."
 msgstr ""
 
-#: ../Doc/library/resource.rst:197
+#: ../Doc/library/resource.rst:199
 msgid "The ceiling for the process's nice level (calculated as 20 - rlim_cur)."
 msgstr ""
 
-#: ../Doc/library/resource.rst:200 ../Doc/library/resource.rst:209
+#: ../Doc/library/resource.rst:201 ../Doc/library/resource.rst:210
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.12."
 msgstr ""
 
-#: ../Doc/library/resource.rst:206
+#: ../Doc/library/resource.rst:208
 msgid "The ceiling of the real-time priority."
 msgstr ""
 
-#: ../Doc/library/resource.rst:215
+#: ../Doc/library/resource.rst:217
 msgid ""
 "The time limit (in microseconds) on CPU time that a process can spend under "
 "real-time scheduling without making a blocking syscall."
 msgstr ""
 
-#: ../Doc/library/resource.rst:219
+#: ../Doc/library/resource.rst:220
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.25."
 msgstr ""
 
-#: ../Doc/library/resource.rst:225
+#: ../Doc/library/resource.rst:227
 msgid "The number of signals which the process may queue."
 msgstr ""
 
-#: ../Doc/library/resource.rst:233
+#: ../Doc/library/resource.rst:235
 msgid ""
 "The maximum size (in bytes) of socket buffer usage for this user. This "
 "limits the amount of network memory, and hence the amount of mbufs, that "
 "this user may hold at any time."
 msgstr ""
 
-#: ../Doc/library/resource.rst:238 ../Doc/library/resource.rst:251
-#: ../Doc/library/resource.rst:259
+#: ../Doc/library/resource.rst:239 ../Doc/library/resource.rst:252
+#: ../Doc/library/resource.rst:260
 msgid ":ref:`Availability <availability>`: FreeBSD."
 msgstr ""
 
-#: ../Doc/library/resource.rst:243
+#: ../Doc/library/resource.rst:245
 msgid ""
 "The maximum size (in bytes) of the swap space that may be reserved or used "
 "by all of this user id's processes. This limit is enforced only if bit 1 of "
-"the vm.overcommit sysctl is set. Please see `tuning(7) <https://www.freebsd."
+"the vm.overcommit sysctl is set. Please see `tuning(7) <https://man.freebsd."
 "org/cgi/man.cgi?query=tuning&sektion=7>`__ for a complete description of "
 "this sysctl."
 msgstr ""
 
-#: ../Doc/library/resource.rst:256
+#: ../Doc/library/resource.rst:258
 msgid "The maximum number of pseudo-terminals created by this user id."
 msgstr ""
 
-#: ../Doc/library/resource.rst:264
+#: ../Doc/library/resource.rst:266
 msgid "The maximum number of kqueues this user id is allowed to create."
 msgstr ""
 
-#: ../Doc/library/resource.rst:267
-msgid ":ref:`Availability <availability>`: FreeBSD >= 11."
-msgstr ""
-
-#: ../Doc/library/resource.rst:271
+#: ../Doc/library/resource.rst:273
 msgid "Resource Usage"
 msgstr ""
 
-#: ../Doc/library/resource.rst:273
+#: ../Doc/library/resource.rst:275
 msgid "These functions are used to retrieve resource usage information:"
 msgstr ""
 
-#: ../Doc/library/resource.rst:278
+#: ../Doc/library/resource.rst:280
 msgid ""
 "This function returns an object that describes the resources consumed by "
 "either the current process or its children, as specified by the *who* "
 "parameter.  The *who* parameter should be specified using one of the :const:"
-"`RUSAGE_\\*` constants described below."
+"`!RUSAGE_\\*` constants described below."
 msgstr ""
 
-#: ../Doc/library/resource.rst:283
+#: ../Doc/library/resource.rst:285
 msgid "A simple example::"
 msgstr ""
 
-#: ../Doc/library/resource.rst:297
+#: ../Doc/library/resource.rst:299
 msgid ""
 "The fields of the return value each describe how a particular system "
 "resource has been used, e.g. amount of time spent running is user mode or "
@@ -331,13 +324,13 @@ msgid ""
 "is using."
 msgstr ""
 
-#: ../Doc/library/resource.rst:302
+#: ../Doc/library/resource.rst:304
 msgid ""
 "For backward compatibility, the return value is also accessible as a tuple "
 "of 16 elements."
 msgstr ""
 
-#: ../Doc/library/resource.rst:305
+#: ../Doc/library/resource.rst:307
 msgid ""
 "The fields :attr:`ru_utime` and :attr:`ru_stime` of the return value are "
 "floating point values representing the amount of time spent executing in "
@@ -347,249 +340,249 @@ msgid ""
 "summary is presented here:"
 msgstr ""
 
-#: ../Doc/library/resource.rst:312
+#: ../Doc/library/resource.rst:314
 msgid "Index"
 msgstr ""
 
-#: ../Doc/library/resource.rst:312
+#: ../Doc/library/resource.rst:314
 msgid "Field"
 msgstr ""
 
-#: ../Doc/library/resource.rst:312
+#: ../Doc/library/resource.rst:314
 msgid "Resource"
 msgstr ""
 
-#: ../Doc/library/resource.rst:314
+#: ../Doc/library/resource.rst:316
 msgid "``0``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:314
+#: ../Doc/library/resource.rst:316
 msgid ":attr:`ru_utime`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:314
+#: ../Doc/library/resource.rst:316
 msgid "time in user mode (float seconds)"
 msgstr ""
 
-#: ../Doc/library/resource.rst:316
+#: ../Doc/library/resource.rst:318
 msgid "``1``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:316
+#: ../Doc/library/resource.rst:318
 msgid ":attr:`ru_stime`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:316
+#: ../Doc/library/resource.rst:318
 msgid "time in system mode (float seconds)"
 msgstr ""
 
-#: ../Doc/library/resource.rst:318
+#: ../Doc/library/resource.rst:320
 msgid "``2``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:318
+#: ../Doc/library/resource.rst:320
 msgid ":attr:`ru_maxrss`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:318
+#: ../Doc/library/resource.rst:320
 msgid "maximum resident set size"
 msgstr ""
 
-#: ../Doc/library/resource.rst:320
+#: ../Doc/library/resource.rst:322
 msgid "``3``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:320
+#: ../Doc/library/resource.rst:322
 msgid ":attr:`ru_ixrss`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:320
+#: ../Doc/library/resource.rst:322
 msgid "shared memory size"
 msgstr ""
 
-#: ../Doc/library/resource.rst:322
+#: ../Doc/library/resource.rst:324
 msgid "``4``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:322
+#: ../Doc/library/resource.rst:324
 msgid ":attr:`ru_idrss`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:322
+#: ../Doc/library/resource.rst:324
 msgid "unshared memory size"
 msgstr ""
 
-#: ../Doc/library/resource.rst:324
+#: ../Doc/library/resource.rst:326
 msgid "``5``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:324
+#: ../Doc/library/resource.rst:326
 msgid ":attr:`ru_isrss`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:324
+#: ../Doc/library/resource.rst:326
 msgid "unshared stack size"
 msgstr ""
 
-#: ../Doc/library/resource.rst:326
+#: ../Doc/library/resource.rst:328
 msgid "``6``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:326
+#: ../Doc/library/resource.rst:328
 msgid ":attr:`ru_minflt`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:326
+#: ../Doc/library/resource.rst:328
 msgid "page faults not requiring I/O"
 msgstr ""
 
-#: ../Doc/library/resource.rst:328
+#: ../Doc/library/resource.rst:330
 msgid "``7``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:328
+#: ../Doc/library/resource.rst:330
 msgid ":attr:`ru_majflt`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:328
+#: ../Doc/library/resource.rst:330
 msgid "page faults requiring I/O"
 msgstr ""
 
-#: ../Doc/library/resource.rst:330
+#: ../Doc/library/resource.rst:332
 msgid "``8``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:330
+#: ../Doc/library/resource.rst:332
 msgid ":attr:`ru_nswap`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:330
+#: ../Doc/library/resource.rst:332
 msgid "number of swap outs"
 msgstr ""
 
-#: ../Doc/library/resource.rst:332
+#: ../Doc/library/resource.rst:334
 msgid "``9``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:332
+#: ../Doc/library/resource.rst:334
 msgid ":attr:`ru_inblock`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:332
+#: ../Doc/library/resource.rst:334
 msgid "block input operations"
 msgstr ""
 
-#: ../Doc/library/resource.rst:334
+#: ../Doc/library/resource.rst:336
 msgid "``10``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:334
+#: ../Doc/library/resource.rst:336
 msgid ":attr:`ru_oublock`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:334
+#: ../Doc/library/resource.rst:336
 msgid "block output operations"
 msgstr ""
 
-#: ../Doc/library/resource.rst:336
+#: ../Doc/library/resource.rst:338
 msgid "``11``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:336
+#: ../Doc/library/resource.rst:338
 msgid ":attr:`ru_msgsnd`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:336
+#: ../Doc/library/resource.rst:338
 msgid "messages sent"
 msgstr ""
 
-#: ../Doc/library/resource.rst:338
+#: ../Doc/library/resource.rst:340
 msgid "``12``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:338
+#: ../Doc/library/resource.rst:340
 msgid ":attr:`ru_msgrcv`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:338
+#: ../Doc/library/resource.rst:340
 msgid "messages received"
 msgstr ""
 
-#: ../Doc/library/resource.rst:340
+#: ../Doc/library/resource.rst:342
 msgid "``13``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:340
+#: ../Doc/library/resource.rst:342
 msgid ":attr:`ru_nsignals`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:340
+#: ../Doc/library/resource.rst:342
 msgid "signals received"
 msgstr ""
 
-#: ../Doc/library/resource.rst:342
+#: ../Doc/library/resource.rst:344
 msgid "``14``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:342
+#: ../Doc/library/resource.rst:344
 msgid ":attr:`ru_nvcsw`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:342
+#: ../Doc/library/resource.rst:344
 msgid "voluntary context switches"
 msgstr ""
 
-#: ../Doc/library/resource.rst:344
+#: ../Doc/library/resource.rst:346
 msgid "``15``"
 msgstr ""
 
-#: ../Doc/library/resource.rst:344
+#: ../Doc/library/resource.rst:346
 msgid ":attr:`ru_nivcsw`"
 msgstr ""
 
-#: ../Doc/library/resource.rst:344
+#: ../Doc/library/resource.rst:346
 msgid "involuntary context switches"
 msgstr ""
 
-#: ../Doc/library/resource.rst:347
+#: ../Doc/library/resource.rst:349
 msgid ""
 "This function will raise a :exc:`ValueError` if an invalid *who* parameter "
 "is specified. It may also raise :exc:`error` exception in unusual "
 "circumstances."
 msgstr ""
 
-#: ../Doc/library/resource.rst:353
+#: ../Doc/library/resource.rst:355
 msgid ""
 "Returns the number of bytes in a system page. (This need not be the same as "
 "the hardware page size.)"
 msgstr ""
 
-#: ../Doc/library/resource.rst:356
+#: ../Doc/library/resource.rst:358
 msgid ""
-"The following :const:`RUSAGE_\\*` symbols are passed to the :func:"
+"The following :const:`!RUSAGE_\\*` symbols are passed to the :func:"
 "`getrusage` function to specify which processes information should be "
 "provided for."
 msgstr ""
 
-#: ../Doc/library/resource.rst:362
+#: ../Doc/library/resource.rst:364
 msgid ""
 "Pass to :func:`getrusage` to request resources consumed by the calling "
 "process, which is the sum of resources used by all threads in the process."
 msgstr ""
 
-#: ../Doc/library/resource.rst:368
+#: ../Doc/library/resource.rst:370
 msgid ""
 "Pass to :func:`getrusage` to request resources consumed by child processes "
 "of the calling process which have been terminated and waited for."
 msgstr ""
 
-#: ../Doc/library/resource.rst:374
+#: ../Doc/library/resource.rst:376
 msgid ""
 "Pass to :func:`getrusage` to request resources consumed by both the current "
 "process and child processes.  May not be available on all systems."
 msgstr ""
 
-#: ../Doc/library/resource.rst:380
+#: ../Doc/library/resource.rst:382
 msgid ""
 "Pass to :func:`getrusage` to request resources consumed by the current "
 "thread.  May not be available on all systems."

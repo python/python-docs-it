@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/ipaddress.rst:2
-msgid ":mod:`ipaddress` --- IPv4/IPv6 manipulation library"
+msgid ":mod:`!ipaddress` --- IPv4/IPv6 manipulation library"
 msgstr ""
 
 #: ../Doc/library/ipaddress.rst:9
@@ -154,39 +154,28 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/ipaddress.rst:132
-msgid ""
-"The above change was also included in Python 3.9 starting with version 3.9.5."
-msgstr ""
-
-#: ../Doc/library/ipaddress.rst:137
-msgid ""
-"The above change was also included in Python 3.8 starting with version "
-"3.8.12."
-msgstr ""
-
-#: ../Doc/library/ipaddress.rst:142
 msgid "The appropriate version number: ``4`` for IPv4, ``6`` for IPv6."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:146
+#: ../Doc/library/ipaddress.rst:136
 msgid ""
 "The total number of bits in the address representation for this version: "
 "``32`` for IPv4, ``128`` for IPv6."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:149
+#: ../Doc/library/ipaddress.rst:139
 msgid ""
 "The prefix defines the number of leading bits in an  address that are "
 "compared to determine whether or not an address is part of a network."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:156
+#: ../Doc/library/ipaddress.rst:146
 msgid ""
 "The string representation in dotted decimal notation. Leading zeroes are "
 "never included in the representation."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:159
+#: ../Doc/library/ipaddress.rst:149
 msgid ""
 "As IPv4 does not define a shorthand notation for addresses with octets set "
 "to zero, these two attributes are always the same as ``str(addr)`` for IPv4 "
@@ -194,63 +183,128 @@ msgid ""
 "that can handle both IPv4 and IPv6 addresses."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:166
+#: ../Doc/library/ipaddress.rst:156
 msgid ""
 "The binary representation of this address - a :class:`bytes` object of the "
 "appropriate length (most significant octet first). This is 4 bytes for IPv4 "
 "and 16 bytes for IPv6."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:172
+#: ../Doc/library/ipaddress.rst:162
 msgid "The name of the reverse DNS PTR record for the IP address, e.g.::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:179
+#: ../Doc/library/ipaddress.rst:169
 msgid ""
 "This is the name that could be used for performing a PTR lookup, not the "
 "resolved hostname itself."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:186
+#: ../Doc/library/ipaddress.rst:176
 msgid ""
 "``True`` if the address is reserved for multicast use.  See :RFC:`3171` (for "
 "IPv4) or :RFC:`2373` (for IPv6)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:191
+#: ../Doc/library/ipaddress.rst:181
 msgid ""
-"``True`` if the address is allocated for private networks.  See iana-ipv4-"
-"special-registry_ (for IPv4) or iana-ipv6-special-registry_ (for IPv6)."
+"``True`` if the address is defined as not globally reachable by iana-ipv4-"
+"special-registry_ (for IPv4) or iana-ipv6-special-registry_ (for IPv6) with "
+"the following exceptions:"
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:185
+msgid ""
+"``is_private`` is ``False`` for the shared address space (``100.64.0.0/10``)"
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:186 ../Doc/library/ipaddress.rst:213
+msgid ""
+"For IPv4-mapped IPv6-addresses the ``is_private`` value is determined by the "
+"semantics of the underlying IPv4 addresses and the following condition holds "
+"(see :attr:`IPv6Address.ipv4_mapped`)::"
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:192
+msgid ""
+"``is_private`` has value opposite to :attr:`is_global`, except for the "
+"shared address space (``100.64.0.0/10`` range) where they are both ``False``."
 msgstr ""
 
 #: ../Doc/library/ipaddress.rst:197
-msgid ""
-"``True`` if the address is allocated for public networks.  See iana-ipv4-"
-"special-registry_ (for IPv4) or iana-ipv6-special-registry_ (for IPv6)."
+msgid "Fixed some false positives and false negatives."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:205
+#: ../Doc/library/ipaddress.rst:199
+msgid ""
+"``192.0.0.0/24`` is considered private with the exception of "
+"``192.0.0.9/32`` and ``192.0.0.10/32`` (previously: only the "
+"``192.0.0.0/29`` sub-range was considered private)."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:201
+msgid "``64:ff9b:1::/48`` is considered private."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:202
+msgid "``2002::/16`` is considered private."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:203
+msgid ""
+"There are exceptions within ``2001::/23`` (otherwise considered private): "
+"``2001:1::1/128``, ``2001:1::2/128``, ``2001:3::/32``, ``2001:4:112::/48``, "
+"``2001:20::/28``, ``2001:30::/28``. The exceptions are not considered "
+"private."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:209
+msgid ""
+"``True`` if the address is defined as globally reachable by iana-ipv4-"
+"special-registry_ (for IPv4) or iana-ipv6-special-registry_ (for IPv6) with "
+"the following exception:"
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:219
+msgid ""
+"``is_global`` has value opposite to :attr:`is_private`, except for the "
+"shared address space (``100.64.0.0/10`` range) where they are both ``False``."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:226
+msgid ""
+"Fixed some false positives and false negatives, see :attr:`is_private` for "
+"details."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:230
 msgid ""
 "``True`` if the address is unspecified.  See :RFC:`5735` (for IPv4) or :RFC:"
 "`2373` (for IPv6)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:210
+#: ../Doc/library/ipaddress.rst:235
 msgid "``True`` if the address is otherwise IETF reserved."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:214
+#: ../Doc/library/ipaddress.rst:239
 msgid ""
 "``True`` if this is a loopback address.  See :RFC:`3330` (for IPv4) or :RFC:"
 "`2373` (for IPv6)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:219
+#: ../Doc/library/ipaddress.rst:244
 msgid ""
 "``True`` if the address is reserved for link-local usage.  See :RFC:`3927`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:227
+#: ../Doc/library/ipaddress.rst:249
+msgid ""
+":class:`IPv4Address` object representing the IPv4-mapped IPv6 address. See :"
+"RFC:`4291`."
+msgstr ""
+
+#: ../Doc/library/ipaddress.rst:259
 msgid ""
 "Returns a string representation of the IP address, controlled by an explicit "
 "format string. *fmt* can be one of the following: ``'s'``, the default "
@@ -262,17 +316,17 @@ msgid ""
 "used by ``format``, ``str.format`` and f-strings."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:254
+#: ../Doc/library/ipaddress.rst:286
 msgid ""
 "Construct an IPv6 address.  An :exc:`AddressValueError` is raised if "
 "*address* is not a valid IPv6 address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:257
+#: ../Doc/library/ipaddress.rst:289
 msgid "The following constitutes a valid IPv6 address:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:259
+#: ../Doc/library/ipaddress.rst:291
 msgid ""
 "A string consisting of eight groups of four hexadecimal digits, each group "
 "representing 16 bits.  The groups are separated by colons. This describes an "
@@ -282,7 +336,7 @@ msgid ""
 "to ``\"::abc:7:def\"``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:267
+#: ../Doc/library/ipaddress.rst:299
 msgid ""
 "Optionally, the string may also have a scope zone ID, expressed with a "
 "suffix ``%scope_id``. If present, the scope ID must be non-empty, and may "
@@ -291,43 +345,39 @@ msgid ""
 "the node."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:272
+#: ../Doc/library/ipaddress.rst:304
 msgid "An integer that fits into 128 bits."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:273
+#: ../Doc/library/ipaddress.rst:305
 msgid ""
 "An integer packed into a :class:`bytes` object of length 16, big-endian."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:283
+#: ../Doc/library/ipaddress.rst:315
 msgid ""
 "The short form of the address representation, with leading zeroes in groups "
 "omitted and the longest sequence of groups consisting entirely of zeroes "
 "collapsed to a single empty group."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:287
+#: ../Doc/library/ipaddress.rst:319
 msgid "This is also the value returned by ``str(addr)`` for IPv6 addresses."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:291
+#: ../Doc/library/ipaddress.rst:323
 msgid ""
 "The long form of the address representation, with all leading zeroes and "
 "groups consisting entirely of zeroes included."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:295
+#: ../Doc/library/ipaddress.rst:327
 msgid ""
 "For the following attributes and methods, see the corresponding "
 "documentation of the :class:`IPv4Address` class:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:310
-msgid "is_global"
-msgstr ""
-
-#: ../Doc/library/ipaddress.rst:315
+#: ../Doc/library/ipaddress.rst:347
 msgid ""
 "``True`` if the address is reserved for site-local usage.  Note that the "
 "site-local address space has been deprecated by :RFC:`3879`. Use :attr:"
@@ -335,21 +385,21 @@ msgid ""
 "local addresses as defined by :RFC:`4193`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:322
+#: ../Doc/library/ipaddress.rst:354
 msgid ""
 "For addresses that appear to be IPv4 mapped addresses (starting with ``::"
 "FFFF/96``), this property will report the embedded IPv4 address. For any "
 "other address, this property will be ``None``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:328
+#: ../Doc/library/ipaddress.rst:360
 msgid ""
 "For scoped addresses as defined by :RFC:`4007`, this property identifies the "
 "particular zone of the address's scope that the address belongs to, as a "
 "string. When no scope zone is specified, this property will be ``None``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:334
+#: ../Doc/library/ipaddress.rst:366
 msgid ""
 "For addresses that appear to be 6to4 addresses  (starting with "
 "``2002::/16``) as defined by :RFC:`3056`, this property will report the "
@@ -357,7 +407,7 @@ msgid ""
 "``None``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:341
+#: ../Doc/library/ipaddress.rst:373
 msgid ""
 "For addresses that appear to be Teredo addresses (starting with "
 "``2001::/32``) as defined by :RFC:`4380`, this property will report the "
@@ -365,65 +415,65 @@ msgid ""
 "property will be ``None``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:348
+#: ../Doc/library/ipaddress.rst:380
 msgid ""
 "Refer to the corresponding method documentation in :class:`IPv4Address`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:354
+#: ../Doc/library/ipaddress.rst:386
 msgid "Conversion to Strings and Integers"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:356
+#: ../Doc/library/ipaddress.rst:388
 msgid ""
 "To interoperate with networking interfaces such as the socket module, "
 "addresses must be converted to strings or integers. This is handled using "
 "the :func:`str` and :func:`int` builtin functions::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:369
+#: ../Doc/library/ipaddress.rst:401
 msgid ""
 "Note that IPv6 scoped addresses are converted to integers without scope zone "
 "ID."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:373 ../Doc/library/ipaddress.rst:757
-#: ../Doc/library/ipaddress.rst:893
+#: ../Doc/library/ipaddress.rst:405 ../Doc/library/ipaddress.rst:789
+#: ../Doc/library/ipaddress.rst:925
 msgid "Operators"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:375
+#: ../Doc/library/ipaddress.rst:407
 msgid ""
 "Address objects support some operators.  Unless stated otherwise, operators "
 "can only be applied between compatible objects (i.e. IPv4 with IPv4, IPv6 "
 "with IPv6)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:381
+#: ../Doc/library/ipaddress.rst:413
 msgid "Comparison operators"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:383
+#: ../Doc/library/ipaddress.rst:415
 msgid ""
 "Address objects can be compared with the usual set of comparison operators. "
 "Same IPv6 addresses with different scope zone IDs are not equal. Some "
 "examples::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:400
+#: ../Doc/library/ipaddress.rst:432
 msgid "Arithmetic operators"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:402
+#: ../Doc/library/ipaddress.rst:434
 msgid ""
 "Integers can be added to or subtracted from address objects.  Some examples::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:415
+#: ../Doc/library/ipaddress.rst:447
 msgid "IP Network definitions"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:417
+#: ../Doc/library/ipaddress.rst:449
 msgid ""
 "The :class:`IPv4Network` and :class:`IPv6Network` objects provide a "
 "mechanism for defining and inspecting IP network definitions.  A network "
@@ -434,11 +484,11 @@ msgid ""
 "addresses in the inclusive range ``192.168.1.0`` to ``192.168.1.255``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:427
+#: ../Doc/library/ipaddress.rst:459
 msgid "Prefix, net mask and host mask"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:429
+#: ../Doc/library/ipaddress.rst:461
 msgid ""
 "There are several equivalent ways to specify IP network masks.  A *prefix* "
 "``/<nbits>`` is a notation that denotes how many high-order bits are set in "
@@ -450,11 +500,11 @@ msgid ""
 "mask equivalent to ``/24`` in IPv4 is ``0.0.0.255``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:440
+#: ../Doc/library/ipaddress.rst:472
 msgid "Network objects"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:442
+#: ../Doc/library/ipaddress.rst:474
 msgid ""
 "All attributes implemented by address objects are implemented by network "
 "objects as well.  In addition, network objects implement additional "
@@ -464,12 +514,12 @@ msgid ""
 "keys in dictionaries."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:451
+#: ../Doc/library/ipaddress.rst:483
 msgid ""
 "Construct an IPv4 network definition.  *address* can be one of the following:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:453
+#: ../Doc/library/ipaddress.rst:485
 msgid ""
 "A string consisting of an IP address and an optional mask, separated by a "
 "slash (``/``).  The IP address is the network address, and the mask can be "
@@ -481,26 +531,26 @@ msgid ""
 "it's considered to be ``/32``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:462
+#: ../Doc/library/ipaddress.rst:494
 msgid ""
 "For example, the following *address* specifications are equivalent: "
 "``192.168.1.0/24``, ``192.168.1.0/255.255.255.0`` and "
 "``192.168.1.0/0.0.0.255``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:466
+#: ../Doc/library/ipaddress.rst:498
 msgid ""
 "An integer that fits into 32 bits.  This is equivalent to a single-address "
 "network, with the network address being *address* and the mask being ``/32``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:470
+#: ../Doc/library/ipaddress.rst:502
 msgid ""
 "An integer packed into a :class:`bytes` object of length 4, big-endian. The "
 "interpretation is similar to an integer *address*."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:473
+#: ../Doc/library/ipaddress.rst:505
 msgid ""
 "A two-tuple of an address description and a netmask, where the address "
 "description is either a string, a 32-bits integer, a 4-bytes packed integer, "
@@ -509,92 +559,92 @@ msgid ""
 "prefix mask (e.g. ``255.255.255.0``)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:479
+#: ../Doc/library/ipaddress.rst:511
 msgid ""
 "An :exc:`AddressValueError` is raised if *address* is not a valid IPv4 "
 "address.  A :exc:`NetmaskValueError` is raised if the mask is not valid for "
 "an IPv4 address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:483 ../Doc/library/ipaddress.rst:703
+#: ../Doc/library/ipaddress.rst:515 ../Doc/library/ipaddress.rst:735
 msgid ""
 "If *strict* is ``True`` and host bits are set in the supplied address, then :"
 "exc:`ValueError` is raised.  Otherwise, the host bits are masked out to "
 "determine the appropriate network address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:487
+#: ../Doc/library/ipaddress.rst:519
 msgid ""
 "Unless stated otherwise, all network methods accepting other network/address "
 "objects will raise :exc:`TypeError` if the argument's IP version is "
 "incompatible to ``self``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:493 ../Doc/library/ipaddress.rst:709
+#: ../Doc/library/ipaddress.rst:525 ../Doc/library/ipaddress.rst:741
 msgid "Added the two-tuple form for the *address* constructor parameter."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:498
+#: ../Doc/library/ipaddress.rst:530
 msgid ""
 "Refer to the corresponding attribute documentation in :class:`IPv4Address`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:508
+#: ../Doc/library/ipaddress.rst:540
 msgid ""
 "These attributes are true for the network as a whole if they are true for "
 "both the network address and the broadcast address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:513
+#: ../Doc/library/ipaddress.rst:545
 msgid ""
 "The network address for the network. The network address and the prefix "
 "length together uniquely define a network."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:518
+#: ../Doc/library/ipaddress.rst:550
 msgid ""
 "The broadcast address for the network. Packets sent to the broadcast address "
 "should be received by every host on the network."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:523
+#: ../Doc/library/ipaddress.rst:555
 msgid "The host mask, as an :class:`IPv4Address` object."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:527
+#: ../Doc/library/ipaddress.rst:559
 msgid "The net mask, as an :class:`IPv4Address` object."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:533
+#: ../Doc/library/ipaddress.rst:565
 msgid ""
 "A string representation of the network, with the mask in prefix notation."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:536
+#: ../Doc/library/ipaddress.rst:568
 msgid ""
 "``with_prefixlen`` and ``compressed`` are always the same as "
 "``str(network)``. ``exploded`` uses the exploded form the network address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:542
+#: ../Doc/library/ipaddress.rst:574
 msgid ""
 "A string representation of the network, with the mask in net mask notation."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:547
+#: ../Doc/library/ipaddress.rst:579
 msgid ""
 "A string representation of the network, with the mask in host mask notation."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:552
+#: ../Doc/library/ipaddress.rst:584
 msgid "The total number of addresses in the network."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:556
+#: ../Doc/library/ipaddress.rst:588
 msgid "Length of the network prefix, in bits."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:560
+#: ../Doc/library/ipaddress.rst:592
 msgid ""
 "Returns an iterator over the usable hosts in the network.  The usable hosts "
 "are all the IP addresses that belong to the network, except the network "
@@ -604,20 +654,20 @@ msgid ""
 "containing the single host address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:578
+#: ../Doc/library/ipaddress.rst:610
 msgid ""
 "``True`` if this network is partly or wholly contained in *other* or *other* "
 "is wholly contained in this network."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:583
+#: ../Doc/library/ipaddress.rst:615
 msgid ""
 "Computes the network definitions resulting from removing the given *network* "
 "from this one.  Returns an iterator of network objects. Raises :exc:"
 "`ValueError` if *network* is not completely contained in this network."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:596
+#: ../Doc/library/ipaddress.rst:628
 msgid ""
 "The subnets that join to make the current network definition, depending on "
 "the argument values.  *prefixlen_diff* is the amount our prefix length "
@@ -627,7 +677,7 @@ msgid ""
 "network objects."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:621
+#: ../Doc/library/ipaddress.rst:653
 msgid ""
 "The supernet containing this network definition, depending on the argument "
 "values.  *prefixlen_diff* is the amount our prefix length should be "
@@ -636,33 +686,33 @@ msgid ""
 "*new_prefix* must be set.  Returns a single network object."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:637
+#: ../Doc/library/ipaddress.rst:669
 msgid "Return ``True`` if this network is a subnet of *other*."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:648
+#: ../Doc/library/ipaddress.rst:680
 msgid "Return ``True`` if this network is a supernet of *other*."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:659
+#: ../Doc/library/ipaddress.rst:691
 msgid ""
 "Compare this network to *other*.  In this comparison only the network "
 "addresses are considered; host bits aren't.  Returns either ``-1``, ``0`` or "
 "``1``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:670
+#: ../Doc/library/ipaddress.rst:702
 msgid ""
 "It uses the same ordering and comparison algorithm as \"<\", \"==\", and "
 "\">\""
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:676
+#: ../Doc/library/ipaddress.rst:708
 msgid ""
 "Construct an IPv6 network definition.  *address* can be one of the following:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:678
+#: ../Doc/library/ipaddress.rst:710
 msgid ""
 "A string consisting of an IP address and an optional prefix length, "
 "separated by a slash (``/``).  The IP address is the network address, and "
@@ -670,26 +720,26 @@ msgid ""
 "length is provided, it's considered to be ``/128``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:683
+#: ../Doc/library/ipaddress.rst:715
 msgid ""
 "Note that currently expanded netmasks are not supported.  That means ``2001:"
 "db00::0/24`` is a valid argument while ``2001:db00::0/ffff:ff00::`` is not."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:687
+#: ../Doc/library/ipaddress.rst:719
 msgid ""
 "An integer that fits into 128 bits.  This is equivalent to a single-address "
 "network, with the network address being *address* and the mask being "
 "``/128``."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:691
+#: ../Doc/library/ipaddress.rst:723
 msgid ""
 "An integer packed into a :class:`bytes` object of length 16, big-endian. The "
 "interpretation is similar to an integer *address*."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:694
+#: ../Doc/library/ipaddress.rst:726
 msgid ""
 "A two-tuple of an address description and a netmask, where the address "
 "description is either a string, a 128-bits integer, a 16-bytes packed "
@@ -697,14 +747,14 @@ msgid ""
 "representing the prefix length."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:699
+#: ../Doc/library/ipaddress.rst:731
 msgid ""
 "An :exc:`AddressValueError` is raised if *address* is not a valid IPv6 "
 "address.  A :exc:`NetmaskValueError` is raised if the mask is not valid for "
 "an IPv6 address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:732
+#: ../Doc/library/ipaddress.rst:764
 msgid ""
 "Returns an iterator over the usable hosts in the network.  The usable hosts "
 "are all the IP addresses that belong to the network, except the Subnet-"
@@ -713,139 +763,139 @@ msgid ""
 "of 128 will return a list containing the single host address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:747
+#: ../Doc/library/ipaddress.rst:779
 msgid ""
 "Refer to the corresponding attribute documentation in :class:`IPv4Network`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:752
+#: ../Doc/library/ipaddress.rst:784
 msgid ""
 "These attribute is true for the network as a whole if it is true for both "
 "the network address and the broadcast address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:759
+#: ../Doc/library/ipaddress.rst:791
 msgid ""
 "Network objects support some operators.  Unless stated otherwise, operators "
 "can only be applied between compatible objects (i.e. IPv4 with IPv4, IPv6 "
 "with IPv6)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:765 ../Doc/library/ipaddress.rst:901
+#: ../Doc/library/ipaddress.rst:797 ../Doc/library/ipaddress.rst:933
 msgid "Logical operators"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:767
+#: ../Doc/library/ipaddress.rst:799
 msgid ""
 "Network objects can be compared with the usual set of logical operators. "
 "Network objects are ordered first by network address, then by net mask."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:772
+#: ../Doc/library/ipaddress.rst:804
 msgid "Iteration"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:774
+#: ../Doc/library/ipaddress.rst:806
 msgid ""
 "Network objects can be iterated to list all the addresses belonging to the "
 "network.  For iteration, *all* hosts are returned, including unusable hosts "
 "(for usable hosts, use the :meth:`~IPv4Network.hosts` method).  An example::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:801
+#: ../Doc/library/ipaddress.rst:833
 msgid "Networks as containers of addresses"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:803
+#: ../Doc/library/ipaddress.rst:835
 msgid "Network objects can act as containers of addresses.  Some examples::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:816
+#: ../Doc/library/ipaddress.rst:848
 msgid "Interface objects"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:818
+#: ../Doc/library/ipaddress.rst:850
 msgid ""
 "Interface objects are :term:`hashable`, so they can be used as keys in "
 "dictionaries."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:823
+#: ../Doc/library/ipaddress.rst:855
 msgid ""
 "Construct an IPv4 interface.  The meaning of *address* is as in the "
 "constructor of :class:`IPv4Network`, except that arbitrary host addresses "
 "are always accepted."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:827
+#: ../Doc/library/ipaddress.rst:859
 msgid ""
 ":class:`IPv4Interface` is a subclass of :class:`IPv4Address`, so it inherits "
 "all the attributes from that class.  In addition, the following attributes "
 "are available:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:833
+#: ../Doc/library/ipaddress.rst:865
 msgid "The address (:class:`IPv4Address`) without network information."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:841
+#: ../Doc/library/ipaddress.rst:873
 msgid "The network (:class:`IPv4Network`) this interface belongs to."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:849
+#: ../Doc/library/ipaddress.rst:881
 msgid ""
 "A string representation of the interface with the mask in prefix notation."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:857
+#: ../Doc/library/ipaddress.rst:889
 msgid ""
 "A string representation of the interface with the network as a net mask."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:865
+#: ../Doc/library/ipaddress.rst:897
 msgid ""
 "A string representation of the interface with the network as a host mask."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:874
+#: ../Doc/library/ipaddress.rst:906
 msgid ""
 "Construct an IPv6 interface.  The meaning of *address* is as in the "
 "constructor of :class:`IPv6Network`, except that arbitrary host addresses "
 "are always accepted."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:878
+#: ../Doc/library/ipaddress.rst:910
 msgid ""
 ":class:`IPv6Interface` is a subclass of :class:`IPv6Address`, so it inherits "
 "all the attributes from that class.  In addition, the following attributes "
 "are available:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:888
+#: ../Doc/library/ipaddress.rst:920
 msgid ""
 "Refer to the corresponding attribute documentation in :class:`IPv4Interface`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:895
+#: ../Doc/library/ipaddress.rst:927
 msgid ""
 "Interface objects support some operators.  Unless stated otherwise, "
 "operators can only be applied between compatible objects (i.e. IPv4 with "
 "IPv4, IPv6 with IPv6)."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:903
+#: ../Doc/library/ipaddress.rst:935
 msgid ""
 "Interface objects can be compared with the usual set of logical operators."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:905
+#: ../Doc/library/ipaddress.rst:937
 msgid ""
 "For equality comparison (``==`` and ``!=``), both the IP address and network "
 "must be the same for the objects to be equal.  An interface will not compare "
 "equal to any address or network object."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:909
+#: ../Doc/library/ipaddress.rst:941
 msgid ""
 "For ordering (``<``, ``>``, etc) the rules are different.  Interface and "
 "address objects with the same IP version can be compared, and the address "
@@ -854,15 +904,15 @@ msgid ""
 "then by their IP addresses."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:917
+#: ../Doc/library/ipaddress.rst:949
 msgid "Other Module Level Functions"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:919
+#: ../Doc/library/ipaddress.rst:951
 msgid "The module also provides the following module level functions:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:923
+#: ../Doc/library/ipaddress.rst:955
 msgid ""
 "Represent an address as 4 packed bytes in network (big-endian) order. "
 "*address* is an integer representation of an IPv4 IP address.  A :exc:"
@@ -870,7 +920,7 @@ msgid ""
 "IP address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:936
+#: ../Doc/library/ipaddress.rst:968
 msgid ""
 "Represent an address as 16 packed bytes in network (big-endian) order. "
 "*address* is an integer representation of an IPv6 IP address.  A :exc:"
@@ -878,7 +928,7 @@ msgid ""
 "IP address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:944
+#: ../Doc/library/ipaddress.rst:976
 msgid ""
 "Return an iterator of the summarized network range given the first and last "
 "IP addresses.  *first* is the first :class:`IPv4Address` or :class:"
@@ -889,7 +939,7 @@ msgid ""
 "address version is not 4 or 6."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:960
+#: ../Doc/library/ipaddress.rst:992
 msgid ""
 "Return an iterator of the collapsed :class:`IPv4Network` or :class:"
 "`IPv6Network` objects.  *addresses* is an iterator of :class:`IPv4Network` "
@@ -897,38 +947,38 @@ msgid ""
 "*addresses* contains mixed version objects."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:973
+#: ../Doc/library/ipaddress.rst:1005
 msgid ""
 "Return a key suitable for sorting between networks and addresses.  Address "
 "and Network objects are not sortable by default; they're fundamentally "
 "different, so the expression::"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:979
+#: ../Doc/library/ipaddress.rst:1011
 msgid ""
 "doesn't make sense.  There are some times however, where you may wish to "
 "have :mod:`ipaddress` sort these anyway.  If you need to do this, you can "
 "use this function as the *key* argument to :func:`sorted()`."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:983
+#: ../Doc/library/ipaddress.rst:1015
 msgid "*obj* is either a network or address object."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:987
+#: ../Doc/library/ipaddress.rst:1019
 msgid "Custom Exceptions"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:989
+#: ../Doc/library/ipaddress.rst:1021
 msgid ""
 "To support more specific error reporting from class constructors, the module "
 "defines the following exceptions:"
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:994
+#: ../Doc/library/ipaddress.rst:1026
 msgid "Any value error related to the address."
 msgstr ""
 
-#: ../Doc/library/ipaddress.rst:999
+#: ../Doc/library/ipaddress.rst:1031
 msgid "Any value error related to the net mask."
 msgstr ""

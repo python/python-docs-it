@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,54 +133,55 @@ msgstr ""
 #: ../Doc/library/devmode.rst:61
 msgid ""
 "Call :func:`faulthandler.enable` at Python startup to install handlers for "
-"the :const:`SIGSEGV`, :const:`SIGFPE`, :const:`SIGABRT`, :const:`SIGBUS` "
-"and :const:`SIGILL` signals to dump the Python traceback on a crash."
+"the :const:`~signal.SIGSEGV`, :const:`~signal.SIGFPE`, :const:`~signal."
+"SIGABRT`, :const:`~signal.SIGBUS` and :const:`~signal.SIGILL` signals to "
+"dump the Python traceback on a crash."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:65
+#: ../Doc/library/devmode.rst:66
 msgid ""
 "It behaves as if the :option:`-X faulthandler <-X>` command line option is "
 "used or if the :envvar:`PYTHONFAULTHANDLER` environment variable is set to "
 "``1``."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:69
+#: ../Doc/library/devmode.rst:70
 msgid ""
 "Enable :ref:`asyncio debug mode <asyncio-debug-mode>`. For example, :mod:"
 "`asyncio` checks for coroutines that were not awaited and logs them."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:72
+#: ../Doc/library/devmode.rst:73
 msgid ""
 "It behaves as if the :envvar:`PYTHONASYNCIODEBUG` environment variable is "
 "set to ``1``."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:75
+#: ../Doc/library/devmode.rst:76
 msgid ""
 "Check the *encoding* and *errors* arguments for string encoding and decoding "
 "operations. Examples: :func:`open`, :meth:`str.encode` and :meth:`bytes."
 "decode`."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:79
+#: ../Doc/library/devmode.rst:80
 msgid ""
 "By default, for best performance, the *errors* argument is only checked at "
 "the first encoding/decoding error and the *encoding* argument is sometimes "
 "ignored for empty strings."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:83
+#: ../Doc/library/devmode.rst:84
 msgid "The :class:`io.IOBase` destructor logs ``close()`` exceptions."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:84
+#: ../Doc/library/devmode.rst:85
 msgid ""
-"Set the :attr:`~sys.flags.dev_mode` attribute of :attr:`sys.flags` to "
+"Set the :attr:`~sys.flags.dev_mode` attribute of :data:`sys.flags` to "
 "``True``."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:87
+#: ../Doc/library/devmode.rst:88
 msgid ""
 "The Python Development Mode does not enable the :mod:`tracemalloc` module by "
 "default, because the overhead cost (to performance and memory) would be too "
@@ -191,63 +192,63 @@ msgid ""
 "allocated."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:94
+#: ../Doc/library/devmode.rst:95
 msgid ""
 "The Python Development Mode does not prevent the :option:`-O` command line "
 "option from removing :keyword:`assert` statements nor from setting :const:"
 "`__debug__` to ``False``."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:98
+#: ../Doc/library/devmode.rst:99
 msgid ""
 "The Python Development Mode can only be enabled at the Python startup. Its "
 "value can be read from :data:`sys.flags.dev_mode <sys.flags>`."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:101
+#: ../Doc/library/devmode.rst:102
 msgid "The :class:`io.IOBase` destructor now logs ``close()`` exceptions."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:104
+#: ../Doc/library/devmode.rst:105
 msgid ""
 "The *encoding* and *errors* arguments are now checked for string encoding "
 "and decoding operations."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:110
+#: ../Doc/library/devmode.rst:111
 msgid "ResourceWarning Example"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:112
+#: ../Doc/library/devmode.rst:113
 msgid ""
 "Example of a script counting the number of lines of the text file specified "
 "in the command line::"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:126
+#: ../Doc/library/devmode.rst:127
 msgid ""
 "The script does not close the file explicitly. By default, Python does not "
 "emit any warning. Example using README.txt, which has 269 lines:"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:134
+#: ../Doc/library/devmode.rst:135
 msgid ""
 "Enabling the Python Development Mode displays a :exc:`ResourceWarning` "
 "warning:"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:144
+#: ../Doc/library/devmode.rst:145
 msgid ""
 "In addition, enabling :mod:`tracemalloc` shows the line where the file was "
 "opened:"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:159
+#: ../Doc/library/devmode.rst:160
 msgid ""
 "The fix is to close explicitly the file. Example using a context manager::"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:167
+#: ../Doc/library/devmode.rst:168
 msgid ""
 "Not closing a resource explicitly can leave a resource open for way longer "
 "than expected; it can cause severe issues upon exiting Python. It is bad in "
@@ -255,25 +256,25 @@ msgid ""
 "application more deterministic and more reliable."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:174
+#: ../Doc/library/devmode.rst:175
 msgid "Bad file descriptor error example"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:176
+#: ../Doc/library/devmode.rst:177
 msgid "Script displaying the first line of itself::"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:189
+#: ../Doc/library/devmode.rst:190
 msgid "By default, Python does not emit any warning:"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:196
+#: ../Doc/library/devmode.rst:197
 msgid ""
 "The Python Development Mode shows a :exc:`ResourceWarning` and logs a \"Bad "
 "file descriptor\" error when finalizing the file object:"
 msgstr ""
 
-#: ../Doc/library/devmode.rst:212
+#: ../Doc/library/devmode.rst:213
 msgid ""
 "``os.close(fp.fileno())`` closes the file descriptor. When the file object "
 "finalizer tries to close the file descriptor again, it fails with the ``Bad "
@@ -282,7 +283,7 @@ msgid ""
 "`18748` for an example)."
 msgstr ""
 
-#: ../Doc/library/devmode.rst:218
+#: ../Doc/library/devmode.rst:219
 msgid ""
 "The fix is to remove the ``os.close(fp.fileno())`` line, or open the file "
 "with ``closefd=False``."

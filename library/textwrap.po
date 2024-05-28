@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/textwrap.rst:2
-msgid ":mod:`textwrap` --- Text wrapping and filling"
+msgid ":mod:`!textwrap` --- Text wrapping and filling"
 msgstr ""
 
 #: ../Doc/library/textwrap.rst:10
@@ -74,7 +74,7 @@ msgid ""
 "First the whitespace in *text* is collapsed (all whitespace is replaced by "
 "single spaces).  If the result fits in the *width*, it is returned. "
 "Otherwise, enough words are dropped from the end so that the remaining words "
-"plus the :attr:`placeholder` fit within :attr:`width`::"
+"plus the *placeholder* fit within *width*::"
 msgstr ""
 
 #: ../Doc/library/textwrap.rst:72
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../Doc/library/textwrap.rst:157
 msgid ""
-"You can re-use the same :class:`TextWrapper` object many times, and you can "
+"You can reuse the same :class:`TextWrapper` object many times, and you can "
 "change any of its options through direct assignment to instance attributes "
 "between uses."
 msgstr ""
@@ -185,7 +185,7 @@ msgstr ""
 #: ../Doc/library/textwrap.rst:175
 msgid ""
 "(default: ``True``) If true, then all tab characters in *text* will be "
-"expanded to spaces using the :meth:`expandtabs` method of *text*."
+"expanded to spaces using the :meth:`~str.expandtabs` method of *text*."
 msgstr ""
 
 #: ../Doc/library/textwrap.rst:181
@@ -249,8 +249,8 @@ msgid ""
 "However, the sentence detection algorithm is imperfect: it assumes that a "
 "sentence ending consists of a lowercase letter followed by one of ``'.'``, "
 "``'!'``, or ``'?'``, possibly followed by one of ``'\"'`` or ``\"'\"``, "
-"followed by a space.  One problem with this is algorithm is that it is "
-"unable to detect the difference between \"Dr.\" in ::"
+"followed by a space.  One problem with this algorithm is that it is unable "
+"to detect the difference between \"Dr.\" in ::"
 msgstr ""
 
 #: ../Doc/library/textwrap.rst:246
@@ -319,4 +319,12 @@ msgstr ""
 msgid ""
 "Wraps the single paragraph in *text*, and returns a single string containing "
 "the wrapped paragraph."
+msgstr ""
+
+#: ../Doc/library/textwrap.rst:285
+msgid "..."
+msgstr ""
+
+#: ../Doc/library/textwrap.rst:285
+msgid "placeholder"
 msgstr ""

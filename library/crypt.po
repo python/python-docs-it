@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,14 +25,15 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/crypt.py`"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:23
+#: ../Doc/library/crypt.rst:24
 msgid ""
 "The :mod:`crypt` module is deprecated (see :pep:`PEP 594 <594#crypt>` for "
 "details and alternatives). The :mod:`hashlib` module is a potential "
-"replacement for certain use cases."
+"replacement for certain use cases. The :pypi:`passlib` package can replace "
+"all use cases of this module."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:26
+#: ../Doc/library/crypt.rst:27
 msgid ""
 "This module implements an interface to the :manpage:`crypt(3)` routine, "
 "which is a one-way hash function based upon a modified DES algorithm; see "
@@ -41,7 +42,7 @@ msgid ""
 "attempting to crack Unix passwords with a dictionary."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:34
+#: ../Doc/library/crypt.rst:35
 msgid ""
 "Notice that the behavior of this module depends on the actual "
 "implementation  of the :manpage:`crypt(3)` routine in the running system.  "
@@ -53,7 +54,7 @@ msgstr ""
 msgid ":ref:`Availability <availability>`: Unix, not VxWorks."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
+#: ../Doc/includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
@@ -64,65 +65,65 @@ msgid ""
 "more information."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:44
+#: ../Doc/library/crypt.rst:45
 msgid "Hashing Methods"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:48
+#: ../Doc/library/crypt.rst:49
 msgid ""
 "The :mod:`crypt` module defines the list of hashing methods (not all methods "
 "are available on all platforms):"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:53
+#: ../Doc/library/crypt.rst:54
 msgid ""
 "A Modular Crypt Format method with 16 character salt and 86 character hash "
 "based on the SHA-512 hash function.  This is the strongest method."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:58
+#: ../Doc/library/crypt.rst:59
 msgid ""
 "Another Modular Crypt Format method with 16 character salt and 43 character "
 "hash based on the SHA-256 hash function."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:63
+#: ../Doc/library/crypt.rst:64
 msgid ""
 "Another Modular Crypt Format method with 22 character salt and 31 character "
 "hash based on the Blowfish cipher."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:70
+#: ../Doc/library/crypt.rst:71
 msgid ""
 "Another Modular Crypt Format method with 8 character salt and 22 character "
 "hash based on the MD5 hash function."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:75
+#: ../Doc/library/crypt.rst:76
 msgid ""
 "The traditional method with a 2 character salt and 13 characters of hash.  "
 "This is the weakest method."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:80
+#: ../Doc/library/crypt.rst:81
 msgid "Module Attributes"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:86
+#: ../Doc/library/crypt.rst:87
 msgid ""
 "A list of available password hashing algorithms, as ``crypt.METHOD_*`` "
 "objects.  This list is sorted from strongest to weakest."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:92
+#: ../Doc/library/crypt.rst:93
 msgid "Module Functions"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:94
+#: ../Doc/library/crypt.rst:95
 msgid "The :mod:`crypt` module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:98
+#: ../Doc/library/crypt.rst:99
 msgid ""
 "*word* will usually be a user's password as typed at a prompt or  in a "
 "graphical interface.  The optional *salt* is either a string as returned "
@@ -132,14 +133,14 @@ msgid ""
 "strongest method available in :attr:`methods` will be used."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:105
+#: ../Doc/library/crypt.rst:106
 msgid ""
 "Checking a password is usually done by passing the plain-text password as "
 "*word* and the full results of a previous :func:`crypt` call, which should "
 "be the same as the results of this call."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:109
+#: ../Doc/library/crypt.rst:110
 msgid ""
 "*salt* (either a random 2 or 16 character string, possibly prefixed with "
 "``$digit$`` to indicate the method) which will be used to perturb the "
@@ -148,36 +149,36 @@ msgid ""
 "``$digit$``."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:115
+#: ../Doc/library/crypt.rst:116
 msgid ""
 "Returns the hashed password as a string, which will be composed of "
 "characters from the same alphabet as the salt."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:120
+#: ../Doc/library/crypt.rst:121
 msgid ""
 "Since a few :manpage:`crypt(3)` extensions allow different values, with "
 "different sizes in the *salt*, it is recommended to use  the full crypted "
 "password as salt when checking for a password."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:124
+#: ../Doc/library/crypt.rst:125
 msgid "Accept ``crypt.METHOD_*`` values in addition to strings for *salt*."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:130
+#: ../Doc/library/crypt.rst:131
 msgid ""
 "Return a randomly generated salt of the specified method.  If no *method* is "
 "given, the strongest method available in :attr:`methods` is used."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:134
+#: ../Doc/library/crypt.rst:135
 msgid ""
 "The return value is a string suitable for passing as the *salt* argument to :"
 "func:`crypt`."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:137
+#: ../Doc/library/crypt.rst:138
 msgid ""
 "*rounds* specifies the number of rounds for ``METHOD_SHA256``, "
 "``METHOD_SHA512`` and ``METHOD_BLOWFISH``. For ``METHOD_SHA256`` and "
@@ -187,23 +188,36 @@ msgid ""
 "sup:`31`), the default is ``4096`` (2\\ :sup:`12`)."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:147
+#: ../Doc/library/crypt.rst:148
 msgid "Added the *rounds* parameter."
 msgstr ""
 
-#: ../Doc/library/crypt.rst:152
+#: ../Doc/library/crypt.rst:153
 msgid "Examples"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:154
+#: ../Doc/library/crypt.rst:155
 msgid ""
 "A simple example illustrating typical use (a constant-time comparison "
 "operation is needed to limit exposure to timing attacks. :func:`hmac."
 "compare_digest` is suitable for this purpose)::"
 msgstr ""
 
-#: ../Doc/library/crypt.rst:174
+#: ../Doc/library/crypt.rst:175
 msgid ""
 "To generate a hash of a password using the strongest available method and "
 "check it against the original::"
+msgstr ""
+
+#: ../Doc/library/crypt.rst:15 ../Doc/library/crypt.rst:33
+#: ../Doc/library/crypt.rst:119
+msgid "crypt(3)"
+msgstr ""
+
+#: ../Doc/library/crypt.rst:15
+msgid "cipher"
+msgstr ""
+
+#: ../Doc/library/crypt.rst:15
+msgid "DES"
 msgstr ""

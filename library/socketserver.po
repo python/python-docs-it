@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/socketserver.rst:2
-msgid ":mod:`socketserver` --- A framework for network servers"
+msgid ":mod:`!socketserver` --- A framework for network servers"
 msgstr ""
 
 #: ../Doc/library/socketserver.rst:7
@@ -31,15 +31,14 @@ msgid ""
 "servers."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
 #: ../Doc/library/socketserver.rst:15
@@ -126,59 +125,70 @@ msgstr ""
 msgid ""
 "Note that :class:`UnixDatagramServer` derives from :class:`UDPServer`, not "
 "from :class:`UnixStreamServer` --- the only difference between an IP and a "
-"Unix stream server is the address family, which is simply repeated in both "
-"Unix server classes."
+"Unix server is the address family."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:106
+#: ../Doc/library/socketserver.rst:105
 msgid ""
 "Forking and threading versions of each type of server can be created using "
 "these mix-in classes.  For instance, :class:`ThreadingUDPServer` is created "
 "as follows::"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:113
+#: ../Doc/library/socketserver.rst:112
 msgid ""
 "The mix-in class comes first, since it overrides a method defined in :class:"
 "`UDPServer`.  Setting the various attributes also changes the behavior of "
 "the underlying server mechanism."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:117
+#: ../Doc/library/socketserver.rst:116
 msgid ""
 ":class:`ForkingMixIn` and the Forking classes mentioned below are only "
 "available on POSIX platforms that support :func:`~os.fork`."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:120
+#: ../Doc/library/socketserver.rst:121
 msgid ""
-":meth:`socketserver.ForkingMixIn.server_close` waits until all child "
-"processes complete, except if :attr:`socketserver.ForkingMixIn."
-"block_on_close` attribute is false."
+":meth:`ForkingMixIn.server_close <BaseServer.server_close>` waits until all "
+"child processes complete, except if :attr:`block_on_close` attribute is "
+"``False``."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:124
+#: ../Doc/library/socketserver.rst:125
 msgid ""
-":meth:`socketserver.ThreadingMixIn.server_close` waits until all non-daemon "
-"threads complete, except if :attr:`socketserver.ThreadingMixIn."
-"block_on_close` attribute is false. Use daemonic threads by setting :data:"
-"`ThreadingMixIn.daemon_threads` to ``True`` to not wait until threads "
-"complete."
+":meth:`ThreadingMixIn.server_close <BaseServer.server_close>` waits until "
+"all non-daemon threads complete, except if :attr:`block_on_close` attribute "
+"is ``False``."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:133
+#: ../Doc/library/socketserver.rst:131
 msgid ""
-":meth:`socketserver.ForkingMixIn.server_close` and :meth:`socketserver."
-"ThreadingMixIn.server_close` now waits until all child processes and non-"
-"daemonic threads complete. Add a new :attr:`socketserver.ForkingMixIn."
-"block_on_close` class attribute to opt-in for the pre-3.7 behaviour."
+"For :class:`ThreadingMixIn` use daemonic threads by setting :data:"
+"`ThreadingMixIn.daemon_threads <daemon_threads>` to ``True`` to not wait "
+"until threads complete."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:145
+#: ../Doc/library/socketserver.rst:137
+msgid ""
+":meth:`ForkingMixIn.server_close <BaseServer.server_close>` and :meth:"
+"`ThreadingMixIn.server_close <BaseServer.server_close>` now waits until all "
+"child processes and non-daemonic threads complete. Add a new :attr:"
+"`ForkingMixIn.block_on_close <block_on_close>` class attribute to opt-in for "
+"the pre-3.7 behaviour."
+msgstr ""
+
+#: ../Doc/library/socketserver.rst:153
 msgid "These classes are pre-defined using the mix-in classes."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:148
+#: ../Doc/library/socketserver.rst:155
+msgid ""
+"The ``ForkingUnixStreamServer`` and ``ForkingUnixDatagramServer`` classes "
+"were added."
+msgstr ""
+
+#: ../Doc/library/socketserver.rst:159
 msgid ""
 "To implement a service, you must derive a class from :class:"
 "`BaseRequestHandler` and redefine its :meth:`~BaseRequestHandler.handle` "
@@ -189,7 +199,7 @@ msgid ""
 "`DatagramRequestHandler`."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:156
+#: ../Doc/library/socketserver.rst:167
 msgid ""
 "Of course, you still have to use your head!  For instance, it makes no sense "
 "to use a forking server if the service contains state in memory that can be "
@@ -199,7 +209,7 @@ msgid ""
 "probably have to use locks to protect the integrity of the shared data."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:163
+#: ../Doc/library/socketserver.rst:174
 msgid ""
 "On the other hand, if you are building an HTTP server where all data is "
 "stored externally (for instance, in the file system), a synchronous class "
@@ -209,7 +219,7 @@ msgid ""
 "appropriate."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:169
+#: ../Doc/library/socketserver.rst:180
 msgid ""
 "In some cases, it may be appropriate to process part of a request "
 "synchronously, but to finish processing in a forked child depending on the "
@@ -218,7 +228,7 @@ msgid ""
 "`~BaseRequestHandler.handle` method."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:174
+#: ../Doc/library/socketserver.rst:185
 msgid ""
 "Another approach to handling multiple simultaneous requests in an "
 "environment that supports neither threads nor :func:`~os.fork` (or where "
@@ -227,15 +237,14 @@ msgid ""
 "decide which request to work on next (or whether to handle a new incoming "
 "request).  This is particularly important for stream services where each "
 "client can potentially be connected for a long time (if threads or "
-"subprocesses cannot be used).  See :mod:`asyncore` for another way to manage "
-"this."
+"subprocesses cannot be used)."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:188
+#: ../Doc/library/socketserver.rst:198
 msgid "Server Objects"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:192
+#: ../Doc/library/socketserver.rst:202
 msgid ""
 "This is the superclass of all Server objects in the module.  It defines the "
 "interface, given below, but does not implement most of the methods, which is "
@@ -243,14 +252,14 @@ msgid ""
 "`server_address` and :attr:`RequestHandlerClass` attributes."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:200
+#: ../Doc/library/socketserver.rst:210
 msgid ""
 "Return an integer file descriptor for the socket on which the server is "
 "listening.  This function is most commonly passed to :mod:`selectors`, to "
 "allow monitoring multiple servers in the same process."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:207
+#: ../Doc/library/socketserver.rst:217
 msgid ""
 "Process a single request.  This function calls the following methods in "
 "order: :meth:`get_request`, :meth:`verify_request`, and :meth:"
@@ -261,7 +270,7 @@ msgid ""
 "`handle_request` will return."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:219
+#: ../Doc/library/socketserver.rst:229
 msgid ""
 "Handle requests until an explicit :meth:`shutdown` request.  Poll for "
 "shutdown every *poll_interval* seconds. Ignores the :attr:`timeout` "
@@ -271,41 +280,41 @@ msgid ""
 "clean up zombie child processes."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:227
+#: ../Doc/library/socketserver.rst:237
 msgid "Added ``service_actions`` call to the ``serve_forever`` method."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:233
+#: ../Doc/library/socketserver.rst:243
 msgid ""
 "This is called in the :meth:`serve_forever` loop. This method can be "
 "overridden by subclasses or mixin classes to perform actions specific to a "
 "given service, such as cleanup actions."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:241
+#: ../Doc/library/socketserver.rst:251
 msgid ""
 "Tell the :meth:`serve_forever` loop to stop and wait until it does. :meth:"
 "`shutdown` must be called while :meth:`serve_forever` is running in a "
 "different thread otherwise it will deadlock."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:248
+#: ../Doc/library/socketserver.rst:258
 msgid "Clean up the server. May be overridden."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:253
+#: ../Doc/library/socketserver.rst:263
 msgid ""
 "The family of protocols to which the server's socket belongs. Common "
 "examples are :const:`socket.AF_INET` and :const:`socket.AF_UNIX`."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:259
+#: ../Doc/library/socketserver.rst:269
 msgid ""
 "The user-provided request handler class; an instance of this class is "
 "created for each request."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:265
+#: ../Doc/library/socketserver.rst:275
 msgid ""
 "The address on which the server is listening.  The format of addresses "
 "varies depending on the protocol family; see the documentation for the :mod:"
@@ -314,22 +323,22 @@ msgid ""
 "``('127.0.0.1', 80)``, for example."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:274
+#: ../Doc/library/socketserver.rst:284
 msgid ""
 "The socket object on which the server will listen for incoming requests."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:277
+#: ../Doc/library/socketserver.rst:287
 msgid "The server classes support the following class variables:"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:283
+#: ../Doc/library/socketserver.rst:293
 msgid ""
 "Whether the server will allow the reuse of an address.  This defaults to :"
 "const:`False`, and can be set in subclasses to change the policy."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:289
+#: ../Doc/library/socketserver.rst:299
 msgid ""
 "The size of the request queue.  If it takes a long time to process a single "
 "request, any requests that arrive while the server is busy are placed into a "
@@ -338,40 +347,40 @@ msgid ""
 "default value is usually 5, but this can be overridden by subclasses."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:298
+#: ../Doc/library/socketserver.rst:308
 msgid ""
 "The type of socket used by the server; :const:`socket.SOCK_STREAM` and :"
 "const:`socket.SOCK_DGRAM` are two common values."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:304
+#: ../Doc/library/socketserver.rst:314
 msgid ""
 "Timeout duration, measured in seconds, or :const:`None` if no timeout is "
 "desired.  If :meth:`handle_request` receives no incoming requests within the "
 "timeout period, the :meth:`handle_timeout` method is called."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:309
+#: ../Doc/library/socketserver.rst:319
 msgid ""
 "There are various server methods that can be overridden by subclasses of "
 "base server classes like :class:`TCPServer`; these methods aren't useful to "
 "external users of the server object."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:318
+#: ../Doc/library/socketserver.rst:328
 msgid ""
 "Actually processes the request by instantiating :attr:`RequestHandlerClass` "
 "and calling its :meth:`~BaseRequestHandler.handle` method."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:324
+#: ../Doc/library/socketserver.rst:334
 msgid ""
 "Must accept a request from the socket, and return a 2-tuple containing the "
 "*new* socket object to be used to communicate with the client, and the "
 "client's address."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:331
+#: ../Doc/library/socketserver.rst:341
 msgid ""
 "This function is called if the :meth:`~BaseRequestHandler.handle` method of "
 "a :attr:`RequestHandlerClass` instance raises an exception.  The default "
@@ -379,11 +388,11 @@ msgid ""
 "further requests."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:336
+#: ../Doc/library/socketserver.rst:346
 msgid "Now only called for exceptions derived from the :exc:`Exception` class."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:343
+#: ../Doc/library/socketserver.rst:353
 msgid ""
 "This function is called when the :attr:`timeout` attribute has been set to a "
 "value other than :const:`None` and the timeout period has passed with no "
@@ -392,7 +401,7 @@ msgid ""
 "threading servers this method does nothing."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:352
+#: ../Doc/library/socketserver.rst:362
 msgid ""
 "Calls :meth:`finish_request` to create an instance of the :attr:"
 "`RequestHandlerClass`.  If desired, this function can create a new process "
@@ -400,20 +409,20 @@ msgid ""
 "`ThreadingMixIn` classes do this."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:364
+#: ../Doc/library/socketserver.rst:374
 msgid ""
 "Called by the server's constructor to activate the server.  The default "
 "behavior for a TCP server just invokes :meth:`~socket.socket.listen` on the "
 "server's socket.  May be overridden."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:371
+#: ../Doc/library/socketserver.rst:381
 msgid ""
 "Called by the server's constructor to bind the socket to the desired "
 "address. May be overridden."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:377
+#: ../Doc/library/socketserver.rst:387
 msgid ""
 "Must return a Boolean value; if the value is :const:`True`, the request will "
 "be processed, and if it's :const:`False`, the request will be denied.  This "
@@ -421,17 +430,17 @@ msgid ""
 "default implementation always returns :const:`True`."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:383
+#: ../Doc/library/socketserver.rst:393
 msgid ""
 "Support for the :term:`context manager` protocol was added.  Exiting the "
 "context manager is equivalent to calling :meth:`server_close`."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:389
+#: ../Doc/library/socketserver.rst:399
 msgid "Request Handler Objects"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:393
+#: ../Doc/library/socketserver.rst:403
 msgid ""
 "This is the superclass of all request handler objects.  It defines the "
 "interface, given below.  A concrete request handler subclass must define a "
@@ -439,125 +448,143 @@ msgid ""
 "instance of the subclass is created for each request."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:402
+#: ../Doc/library/socketserver.rst:412
 msgid ""
 "Called before the :meth:`handle` method to perform any initialization "
 "actions required.  The default implementation does nothing."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:408
+#: ../Doc/library/socketserver.rst:418
 msgid ""
 "This function must do all the work required to service a request.  The "
 "default implementation does nothing.  Several instance attributes are "
-"available to it; the request is available as :attr:`self.request`; the "
-"client address as :attr:`self.client_address`; and the server instance as :"
-"attr:`self.server`, in case it needs access to per-server information."
+"available to it; the request is available as :attr:`request`; the client "
+"address as :attr:`client_address`; and the server instance as :attr:"
+"`server`, in case it needs access to per-server information."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:414
+#: ../Doc/library/socketserver.rst:424
 msgid ""
-"The type of :attr:`self.request` is different for datagram or stream "
-"services.  For stream services, :attr:`self.request` is a socket object; for "
-"datagram services, :attr:`self.request` is a pair of string and socket."
+"The type of :attr:`request` is different for datagram or stream services.  "
+"For stream services, :attr:`request` is a socket object; for datagram "
+"services, :attr:`request` is a pair of string and socket."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:421
+#: ../Doc/library/socketserver.rst:431
 msgid ""
 "Called after the :meth:`handle` method to perform any clean-up actions "
 "required.  The default implementation does nothing.  If :meth:`setup` raises "
 "an exception, this function will not be called."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:429
+#: ../Doc/library/socketserver.rst:438
+msgid ""
+"The *new* :class:`socket.socket` object to be used to communicate with the "
+"client."
+msgstr ""
+
+#: ../Doc/library/socketserver.rst:444
+msgid "Client address returned by :meth:`BaseServer.get_request`."
+msgstr ""
+
+#: ../Doc/library/socketserver.rst:449
+msgid ":class:`BaseServer` object used for handling the request."
+msgstr ""
+
+#: ../Doc/library/socketserver.rst:455
 msgid ""
 "These :class:`BaseRequestHandler` subclasses override the :meth:"
 "`~BaseRequestHandler.setup` and :meth:`~BaseRequestHandler.finish` methods, "
-"and provide :attr:`self.rfile` and :attr:`self.wfile` attributes. The :attr:"
-"`self.rfile` and :attr:`self.wfile` attributes can be read or written, "
-"respectively, to get the request data or return data to the client."
+"and provide :attr:`rfile` and :attr:`wfile` attributes."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:436
+#: ../Doc/library/socketserver.rst:461
 msgid ""
-"The :attr:`rfile` attributes of both classes support the :class:`io."
-"BufferedIOBase` readable interface, and :attr:`DatagramRequestHandler.wfile` "
-"supports the :class:`io.BufferedIOBase` writable interface."
+"A file object from which receives the request is read. Support the :class:"
+"`io.BufferedIOBase` readable interface."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:441
+#: ../Doc/library/socketserver.rst:466
 msgid ""
-":attr:`StreamRequestHandler.wfile` also supports the :class:`io."
-"BufferedIOBase` writable interface."
+"A file object to which the reply is written. Support the :class:`io."
+"BufferedIOBase` writable interface"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:447
+#: ../Doc/library/socketserver.rst:470
+msgid ""
+":attr:`wfile` also supports the :class:`io.BufferedIOBase` writable "
+"interface."
+msgstr ""
+
+#: ../Doc/library/socketserver.rst:476
 msgid "Examples"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:450
+#: ../Doc/library/socketserver.rst:479
 msgid ":class:`socketserver.TCPServer` Example"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:452 ../Doc/library/socketserver.rst:551
+#: ../Doc/library/socketserver.rst:481 ../Doc/library/socketserver.rst:581
 msgid "This is the server side::"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:482
+#: ../Doc/library/socketserver.rst:511
 msgid ""
 "An alternative request handler class that makes use of streams (file-like "
 "objects that simplify communication by providing the standard file "
 "interface)::"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:497
+#: ../Doc/library/socketserver.rst:526
 msgid ""
 "The difference is that the ``readline()`` call in the second handler will "
 "call ``recv()`` multiple times until it encounters a newline character, "
 "while the single ``recv()`` call in the first handler will just return what "
-"has been sent from the client in one ``sendall()`` call."
+"has been received so far from the client's ``sendall()`` call (typically all "
+"of it, but this is not guaranteed by the TCP protocol)."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:503 ../Doc/library/socketserver.rst:575
+#: ../Doc/library/socketserver.rst:533 ../Doc/library/socketserver.rst:605
 msgid "This is the client side::"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:524 ../Doc/library/socketserver.rst:650
+#: ../Doc/library/socketserver.rst:554 ../Doc/library/socketserver.rst:680
 msgid "The output of the example should look something like this:"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:526
+#: ../Doc/library/socketserver.rst:556
 msgid "Server:"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:536
+#: ../Doc/library/socketserver.rst:566
 msgid "Client:"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:549
+#: ../Doc/library/socketserver.rst:579
 msgid ":class:`socketserver.UDPServer` Example"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:594
+#: ../Doc/library/socketserver.rst:624
 msgid ""
 "The output of the example should look exactly like for the TCP server "
 "example."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:598
+#: ../Doc/library/socketserver.rst:628
 msgid "Asynchronous Mixins"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:600
+#: ../Doc/library/socketserver.rst:630
 msgid ""
 "To build asynchronous handlers, use the :class:`ThreadingMixIn` and :class:"
 "`ForkingMixIn` classes."
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:603
+#: ../Doc/library/socketserver.rst:633
 msgid "An example for the :class:`ThreadingMixIn` class::"
 msgstr ""
 
-#: ../Doc/library/socketserver.rst:661
+#: ../Doc/library/socketserver.rst:691
 msgid ""
 "The :class:`ForkingMixIn` class is used in the same way, except that the "
 "server will spawn a new process for each request. Available only on POSIX "

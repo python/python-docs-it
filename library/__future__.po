@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/__future__.rst:2
-msgid ":mod:`__future__` --- Future statement definitions"
+msgid ":mod:`!__future__` --- Future statement definitions"
 msgstr ""
 
 #: ../Doc/library/__future__.rst:7
@@ -26,23 +26,28 @@ msgid "**Source code:** :source:`Lib/__future__.py`"
 msgstr ""
 
 #: ../Doc/library/__future__.rst:11
-msgid ":mod:`__future__` is a real module, and serves three purposes:"
+msgid ""
+"Imports of the form ``from __future__ import feature`` are called :ref:"
+"`future statements <future>`. These are special-cased by the Python compiler "
+"to allow the use of new Python features in modules containing the future "
+"statement before the release in which the feature becomes standard."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:13
+#: ../Doc/library/__future__.rst:16
+msgid ""
+"While these future statements are given additional special meaning by the "
+"Python compiler, they are still executed like any other import statement and "
+"the :mod:`__future__` exists and is handled by the import system the same "
+"way any other Python module would be. This design serves three purposes:"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:21
 msgid ""
 "To avoid confusing existing tools that analyze import statements and expect "
 "to find the modules they're importing."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:16
-msgid ""
-"To ensure that :ref:`future statements <future>` run under releases prior to "
-"2.1 at least yield runtime exceptions (the import of :mod:`__future__` will "
-"fail, because there was no module of that name prior to 2.1)."
-msgstr ""
-
-#: ../Doc/library/__future__.rst:20
+#: ../Doc/library/__future__.rst:24
 msgid ""
 "To document when incompatible changes were introduced, and when they will be "
 "--- or were --- made mandatory.  This is a form of executable documentation, "
@@ -50,30 +55,190 @@ msgid ""
 "examining its contents."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:25
+#: ../Doc/library/__future__.rst:29
+msgid ""
+"To ensure that :ref:`future statements <future>` run under releases prior to "
+"Python 2.1 at least yield runtime exceptions (the import of :mod:"
+"`__future__` will fail, because there was no module of that name prior to "
+"2.1)."
+msgstr ""
+
+#: ../Doc/library/__future__.rst:34
+msgid "Module Contents"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:36
+msgid ""
+"No feature description will ever be deleted from :mod:`__future__`. Since "
+"its introduction in Python 2.1 the following features have found their way "
+"into the language using this mechanism:"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:41
+msgid "feature"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:41
+msgid "optional in"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:41
+msgid "mandatory in"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:41
+msgid "effect"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:43
+msgid "nested_scopes"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:43
+msgid "2.1.0b1"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:43
+msgid "2.2"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:43
+msgid ":pep:`227`: *Statically Nested Scopes*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:46
+msgid "generators"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:46
+msgid "2.2.0a1"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:46
+msgid "2.3"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:46
+msgid ":pep:`255`: *Simple Generators*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:49
+msgid "division"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:49
+msgid "2.2.0a2"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:49 ../Doc/library/__future__.rst:52
+#: ../Doc/library/__future__.rst:58 ../Doc/library/__future__.rst:61
+msgid "3.0"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:49
+msgid ":pep:`238`: *Changing the Division Operator*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:52
+msgid "absolute_import"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:52 ../Doc/library/__future__.rst:55
+msgid "2.5.0a1"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:52
+msgid ":pep:`328`: *Imports: Multi-Line and Absolute/Relative*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:55
+msgid "with_statement"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:55
+msgid "2.6"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:55
+msgid ":pep:`343`: *The \"with\" Statement*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:58
+msgid "print_function"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:58 ../Doc/library/__future__.rst:61
+msgid "2.6.0a2"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:58
+msgid ":pep:`3105`: *Make print a function*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:61
+msgid "unicode_literals"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:61
+msgid ":pep:`3112`: *Bytes literals in Python 3000*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:64
+msgid "generator_stop"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:64
+msgid "3.5.0b1"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:64
+msgid "3.7"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:64
+msgid ":pep:`479`: *StopIteration handling inside generators*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:67
+msgid "annotations"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:67
+msgid "3.7.0b1"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:67
+msgid "TBD [1]_"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:67
+msgid ":pep:`563`: *Postponed evaluation of annotations*"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:77
 msgid "Each statement in :file:`__future__.py` is of the form::"
 msgstr ""
 
-#: ../Doc/library/__future__.rst:31
+#: ../Doc/library/__future__.rst:82
 msgid ""
 "where, normally, *OptionalRelease* is less than *MandatoryRelease*, and both "
 "are 5-tuples of the same form as :data:`sys.version_info`::"
 msgstr ""
 
-#: ../Doc/library/__future__.rst:41
+#: ../Doc/library/__future__.rst:94
 msgid ""
 "*OptionalRelease* records the first release in which the feature was "
 "accepted."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:43
+#: ../Doc/library/__future__.rst:98
 msgid ""
 "In the case of a *MandatoryRelease* that has not yet occurred, "
 "*MandatoryRelease* predicts the release in which the feature will become "
 "part of the language."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:47
+#: ../Doc/library/__future__.rst:102
 msgid ""
 "Else *MandatoryRelease* records when the feature became part of the "
 "language; in releases at or after that, modules no longer need a future "
@@ -81,175 +246,21 @@ msgid ""
 "imports."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:51
+#: ../Doc/library/__future__.rst:106
 msgid ""
 "*MandatoryRelease* may also be ``None``, meaning that a planned feature got "
-"dropped."
+"dropped or that it is not yet decided."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:54
-msgid ""
-"Instances of class :class:`_Feature` have two corresponding methods, :meth:"
-"`getOptionalRelease` and :meth:`getMandatoryRelease`."
-msgstr ""
-
-#: ../Doc/library/__future__.rst:57
+#: ../Doc/library/__future__.rst:111
 msgid ""
 "*CompilerFlag* is the (bitfield) flag that should be passed in the fourth "
 "argument to the built-in function :func:`compile` to enable the feature in "
-"dynamically compiled code.  This flag is stored in the :attr:`compiler_flag` "
-"attribute on :class:`_Feature` instances."
+"dynamically compiled code.  This flag is stored in the :attr:`_Feature."
+"compiler_flag` attribute on :class:`_Feature` instances."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:62
-msgid ""
-"No feature description will ever be deleted from :mod:`__future__`. Since "
-"its introduction in Python 2.1 the following features have found their way "
-"into the language using this mechanism:"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:67
-msgid "feature"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:67
-msgid "optional in"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:67
-msgid "mandatory in"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:67
-msgid "effect"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:69
-msgid "nested_scopes"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:69
-msgid "2.1.0b1"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:69
-msgid "2.2"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:69
-msgid ":pep:`227`: *Statically Nested Scopes*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:72
-msgid "generators"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:72
-msgid "2.2.0a1"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:72
-msgid "2.3"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:72
-msgid ":pep:`255`: *Simple Generators*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:75
-msgid "division"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:75
-msgid "2.2.0a2"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:75 ../Doc/library/__future__.rst:78
-#: ../Doc/library/__future__.rst:84 ../Doc/library/__future__.rst:87
-msgid "3.0"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:75
-msgid ":pep:`238`: *Changing the Division Operator*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:78
-msgid "absolute_import"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:78 ../Doc/library/__future__.rst:81
-msgid "2.5.0a1"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:78
-msgid ":pep:`328`: *Imports: Multi-Line and Absolute/Relative*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:81
-msgid "with_statement"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:81
-msgid "2.6"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:81
-msgid ":pep:`343`: *The \"with\" Statement*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:84
-msgid "print_function"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:84 ../Doc/library/__future__.rst:87
-msgid "2.6.0a2"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:84
-msgid ":pep:`3105`: *Make print a function*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:87
-msgid "unicode_literals"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:87
-msgid ":pep:`3112`: *Bytes literals in Python 3000*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:90
-msgid "generator_stop"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:90
-msgid "3.5.0b1"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:90
-msgid "3.7"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:90
-msgid ":pep:`479`: *StopIteration handling inside generators*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:93
-msgid "annotations"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:93
-msgid "3.7.0b1"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:93
-msgid "TBD [1]_"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:93
-msgid ":pep:`563`: *Postponed evaluation of annotations*"
-msgstr ""
-
-#: ../Doc/library/__future__.rst:100
+#: ../Doc/library/__future__.rst:117
 msgid ""
 "``from __future__ import annotations`` was previously scheduled to become "
 "mandatory in Python 3.10, but the Python Steering Council twice decided to "
@@ -260,10 +271,18 @@ msgid ""
 "final decision has been made yet. See also :pep:`563` and :pep:`649`."
 msgstr ""
 
-#: ../Doc/library/__future__.rst:110
+#: ../Doc/library/__future__.rst:127
 msgid ":ref:`future`"
 msgstr ""
 
-#: ../Doc/library/__future__.rst:111
+#: ../Doc/library/__future__.rst:128
 msgid "How the compiler treats future imports."
+msgstr ""
+
+#: ../Doc/library/__future__.rst:130
+msgid ":pep:`236` - Back to the __future__"
+msgstr ""
+
+#: ../Doc/library/__future__.rst:131
+msgid "The original proposal for the __future__ mechanism."
 msgstr ""

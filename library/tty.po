@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/tty.rst:2
-msgid ":mod:`tty` --- Terminal control functions"
+msgid ":mod:`!tty` --- Terminal control functions"
 msgstr ""
 
 #: ../Doc/library/tty.rst:11
@@ -32,32 +32,80 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/tty.rst:18
+msgid ":ref:`Availability <availability>`: Unix."
+msgstr ""
+
+#: ../Doc/library/tty.rst:20
 msgid ""
 "Because it requires the :mod:`termios` module, it will work only on Unix."
 msgstr ""
 
-#: ../Doc/library/tty.rst:20
+#: ../Doc/library/tty.rst:22
 msgid "The :mod:`tty` module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/tty.rst:25
+#: ../Doc/library/tty.rst:27
+msgid ""
+"Convert the tty attribute list *mode*, which is a list like the one returned "
+"by :func:`termios.tcgetattr`, to that of a tty in raw mode."
+msgstr ""
+
+#: ../Doc/library/tty.rst:35
+msgid ""
+"Convert the tty attribute list *mode*, which is a list like the one returned "
+"by :func:`termios.tcgetattr`, to that of a tty in cbreak mode."
+msgstr ""
+
+#: ../Doc/library/tty.rst:38
+msgid ""
+"This clears the ``ECHO`` and ``ICANON`` local mode flags in *mode* as well "
+"as setting the minimum input to 1 byte with no delay."
+msgstr ""
+
+#: ../Doc/library/tty.rst:43
+msgid ""
+"The ``ICRNL`` flag is no longer cleared. This matches Linux and macOS ``stty "
+"cbreak`` behavior and what :func:`setcbreak` historically did."
+msgstr ""
+
+#: ../Doc/library/tty.rst:50
 msgid ""
 "Change the mode of the file descriptor *fd* to raw. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
-"tcsetattr`."
+"tcsetattr`. The return value of :func:`termios.tcgetattr` is saved before "
+"setting *fd* to raw mode; this value is returned."
 msgstr ""
 
-#: ../Doc/library/tty.rst:32
+#: ../Doc/library/tty.rst:55 ../Doc/library/tty.rst:69
+msgid ""
+"The return value is now the original tty attributes, instead of ``None``."
+msgstr ""
+
+#: ../Doc/library/tty.rst:61
 msgid ""
 "Change the mode of file descriptor *fd* to cbreak. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
-"tcsetattr`."
+"tcsetattr`. The return value of :func:`termios.tcgetattr` is saved before "
+"setting *fd* to cbreak mode; this value is returned."
 msgstr ""
 
-#: ../Doc/library/tty.rst:39
+#: ../Doc/library/tty.rst:66
+msgid ""
+"This clears the ``ECHO`` and ``ICANON`` local mode flags as well as setting "
+"the minimum input to 1 byte with no delay."
+msgstr ""
+
+#: ../Doc/library/tty.rst:72
+msgid ""
+"The ``ICRNL`` flag is no longer cleared. This restores the behavior of "
+"Python 3.11 and earlier as well as matching what Linux, macOS, & BSDs "
+"describe in their ``stty(1)`` man pages regarding cbreak mode."
+msgstr ""
+
+#: ../Doc/library/tty.rst:80
 msgid "Module :mod:`termios`"
 msgstr ""
 
-#: ../Doc/library/tty.rst:40
+#: ../Doc/library/tty.rst:81
 msgid "Low-level terminal control interface."
 msgstr ""

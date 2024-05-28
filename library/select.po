@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/select.rst:2
-msgid ":mod:`select` --- Waiting for I/O completion"
+msgid ":mod:`!select` --- Waiting for I/O completion"
 msgstr ""
 
 #: ../Doc/library/select.rst:9
 msgid ""
-"This module provides access to the :c:func:`select` and :c:func:`poll` "
-"functions available in most operating systems, :c:func:`devpoll` available "
-"on Solaris and derivatives, :c:func:`epoll` available on Linux 2.5+ and :c:"
-"func:`kqueue` available on most BSD. Note that on Windows, it only works for "
-"sockets; on other operating systems, it also works for other file types (in "
-"particular, on Unix, it works on pipes). It cannot be used on regular files "
-"to determine whether a file has grown since it was last read."
+"This module provides access to the :c:func:`!select` and :c:func:`!poll` "
+"functions available in most operating systems, :c:func:`!devpoll` available "
+"on Solaris and derivatives, :c:func:`!epoll` available on Linux 2.5+ and :c:"
+"func:`!kqueue` available on most BSD. Note that on Windows, it only works "
+"for sockets; on other operating systems, it also works for other file types "
+"(in particular, on Unix, it works on pipes). It cannot be used on regular "
+"files to determine whether a file has grown since it was last read."
 msgstr ""
 
 #: ../Doc/library/select.rst:20
@@ -40,15 +40,14 @@ msgid ""
 "precise control over the OS-level primitives used."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
 #: ../Doc/library/select.rst:27
@@ -72,10 +71,10 @@ msgstr ""
 
 #: ../Doc/library/select.rst:44
 msgid ""
-":c:func:`devpoll` objects are linked to the number of file descriptors "
+":c:func:`!devpoll` objects are linked to the number of file descriptors "
 "allowed at the time of instantiation. If your program reduces this value, :c:"
-"func:`devpoll` will fail. If your program increases this value, :c:func:"
-"`devpoll` may return an incomplete list of active file descriptors."
+"func:`!devpoll` will fail. If your program increases this value, :c:func:`!"
+"devpoll` may return an incomplete list of active file descriptors."
 msgstr ""
 
 #: ../Doc/library/select.rst:50 ../Doc/library/select.rst:79
@@ -97,7 +96,7 @@ msgstr ""
 msgid ""
 "*sizehint* informs epoll about the expected number of events to be "
 "registered.  It must be positive, or ``-1`` to use the default. It is only "
-"used on older systems where :c:func:`epoll_create1` is not available; "
+"used on older systems where :c:func:`!epoll_create1` is not available; "
 "otherwise it has no effect (though its value is still checked)."
 msgstr ""
 
@@ -159,7 +158,7 @@ msgstr ""
 
 #: ../Doc/library/select.rst:120
 msgid ""
-"This is a straightforward interface to the Unix :c:func:`select` system "
+"This is a straightforward interface to the Unix :c:func:`!select` system "
 "call. The first three arguments are iterables of 'waitable objects': either "
 "integers representing file descriptors or objects with a parameterless "
 "method named :meth:`~io.IOBase.fileno` returning such an integer:"
@@ -209,8 +208,9 @@ msgstr ""
 #: ../Doc/library/select.rst:156
 msgid ""
 "File objects on Windows are not acceptable, but sockets are.  On Windows, "
-"the underlying :c:func:`select` function is provided by the WinSock library, "
-"and does not handle file descriptors that don't originate from WinSock."
+"the underlying :c:func:`!select` function is provided by the WinSock "
+"library, and does not handle file descriptors that don't originate from "
+"WinSock."
 msgstr ""
 
 #: ../Doc/library/select.rst:161 ../Doc/library/select.rst:267
@@ -226,7 +226,7 @@ msgstr ""
 msgid ""
 "The minimum number of bytes which can be written without blocking to a pipe "
 "when the pipe has been reported as ready for writing by :func:`~select."
-"select`, :func:`poll` or another interface in this module.  This doesn't "
+"select`, :func:`!poll` or another interface in this module.  This doesn't "
 "apply to other kind of file-like objects such as sockets."
 msgstr ""
 
@@ -234,7 +234,7 @@ msgstr ""
 msgid "This value is guaranteed by POSIX to be at least 512."
 msgstr ""
 
-#: ../Doc/library/select.rst:178
+#: ../Doc/library/select.rst:177
 msgid ":ref:`Availability <availability>`: Unix"
 msgstr ""
 
@@ -244,14 +244,14 @@ msgstr ""
 
 #: ../Doc/library/select.rst:187
 msgid ""
-"Solaris and derivatives have ``/dev/poll``. While :c:func:`select` is "
-"O(highest file descriptor) and :c:func:`poll` is O(number of file "
-"descriptors), ``/dev/poll`` is O(active file descriptors)."
+"Solaris and derivatives have ``/dev/poll``. While :c:func:`!select` is *O*\\ "
+"(*highest file descriptor*) and :c:func:`!poll` is *O*\\ (*number of file "
+"descriptors*), ``/dev/poll`` is *O*\\ (*active file descriptors*)."
 msgstr ""
 
 #: ../Doc/library/select.rst:191
 msgid ""
-"``/dev/poll`` behaviour is very close to the standard :c:func:`poll` object."
+"``/dev/poll`` behaviour is very close to the standard :c:func:`!poll` object."
 msgstr ""
 
 #: ../Doc/library/select.rst:197
@@ -278,7 +278,7 @@ msgstr ""
 #: ../Doc/library/select.rst:224
 msgid ""
 "*eventmask* is an optional bitmask describing the type of events you want to "
-"check for. The constants are the same that with :c:func:`poll` object. The "
+"check for. The constants are the same that with :c:func:`!poll` object. The "
 "default value is a combination of the constants :const:`POLLIN`, :const:"
 "`POLLPRI`, and :const:`POLLOUT`."
 msgstr ""
@@ -287,7 +287,7 @@ msgstr ""
 msgid ""
 "Registering a file descriptor that's already registered is not an error, but "
 "the result is undefined. The appropriate action is to unregister or modify "
-"it first. This is an important difference compared with :c:func:`poll`."
+"it first. This is an important difference compared with :c:func:`!poll`."
 msgstr ""
 
 #: ../Doc/library/select.rst:239
@@ -514,14 +514,14 @@ msgstr ""
 
 #: ../Doc/library/select.rst:379
 msgid ""
-"The :c:func:`poll` system call, supported on most Unix systems, provides "
+"The :c:func:`!poll` system call, supported on most Unix systems, provides "
 "better scalability for network servers that service many, many clients at "
-"the same time. :c:func:`poll` scales better because the system call only "
-"requires listing the file descriptors of interest, while :c:func:`select` "
+"the same time. :c:func:`!poll` scales better because the system call only "
+"requires listing the file descriptors of interest, while :c:func:`!select` "
 "builds a bitmap, turns on bits for the fds of interest, and then afterward "
-"the whole bitmap has to be linearly scanned again. :c:func:`select` is "
-"O(highest file descriptor), while :c:func:`poll` is O(number of file "
-"descriptors)."
+"the whole bitmap has to be linearly scanned again. :c:func:`!select` is "
+"*O*\\ (*highest file descriptor*), while :c:func:`!poll` is *O*\\ (*number "
+"of file descriptors*)."
 msgstr ""
 
 #: ../Doc/library/select.rst:396
@@ -662,7 +662,7 @@ msgid "Kevent Objects"
 msgstr ""
 
 #: ../Doc/library/select.rst:508
-msgid "https://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
+msgid "https://man.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
 msgstr ""
 
 #: ../Doc/library/select.rst:512
@@ -997,4 +997,16 @@ msgstr ""
 
 #: ../Doc/library/select.rst:650
 msgid "User defined value."
+msgstr ""
+
+#: ../Doc/library/select.rst:141
+msgid "socket() (in module socket)"
+msgstr ""
+
+#: ../Doc/library/select.rst:141
+msgid "popen() (in module os)"
+msgstr ""
+
+#: ../Doc/library/select.rst:154
+msgid "WinSock"
 msgstr ""

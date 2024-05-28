@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/zlib.rst:2
-msgid ":mod:`zlib` --- Compression compatible with :program:`gzip`"
+msgid ":mod:`!zlib` --- Compression compatible with :program:`gzip`"
 msgstr ""
 
 #: ../Doc/library/zlib.rst:10
@@ -428,7 +428,7 @@ msgid ""
 "The version string of the zlib library actually loaded by the interpreter."
 msgstr ""
 
-#: ../Doc/library/zlib.rst:336
+#: ../Doc/library/zlib.rst:335
 msgid "Module :mod:`gzip`"
 msgstr ""
 
@@ -436,7 +436,7 @@ msgstr ""
 msgid "Reading and writing :program:`gzip`\\ -format files."
 msgstr ""
 
-#: ../Doc/library/zlib.rst:339
+#: ../Doc/library/zlib.rst:338
 msgid "http://www.zlib.net"
 msgstr ""
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "The zlib library home page."
 msgstr ""
 
-#: ../Doc/library/zlib.rst:342
+#: ../Doc/library/zlib.rst:341
 msgid "http://www.zlib.net/manual.html"
 msgstr ""
 
@@ -452,4 +452,12 @@ msgstr ""
 msgid ""
 "The zlib manual explains  the semantics and usage of the library's many "
 "functions."
+msgstr ""
+
+#: ../Doc/library/zlib.rst:123
+msgid "Cyclic Redundancy Check"
+msgstr ""
+
+#: ../Doc/library/zlib.rst:123
+msgid "checksum"
 msgstr ""

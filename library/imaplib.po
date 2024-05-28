@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/imaplib.rst:2
-msgid ":mod:`imaplib` --- IMAP4 protocol client"
+msgid ":mod:`!imaplib` --- IMAP4 protocol client"
 msgstr ""
 
 #: ../Doc/library/imaplib.rst:14
@@ -34,15 +34,14 @@ msgid ""
 "that the ``STATUS`` command is not supported in IMAP4."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
 #: ../Doc/library/imaplib.rst:31
@@ -58,7 +57,7 @@ msgid ""
 "initialized. If *host* is not specified, ``''`` (the local host) is used. If "
 "*port* is omitted, the standard IMAP4 port (143) is used. The optional "
 "*timeout* parameter specifies a timeout in seconds for the connection "
-"attempt. If timeout is not given or is None, the global default socket "
+"attempt. If timeout is not given or is ``None``, the global default socket "
 "timeout is used."
 msgstr ""
 
@@ -73,7 +72,7 @@ msgstr ""
 msgid "Support for the :keyword:`with` statement was added."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:57 ../Doc/library/imaplib.rst:124
+#: ../Doc/library/imaplib.rst:57 ../Doc/library/imaplib.rst:111
 msgid "The optional *timeout* parameter was added."
 msgstr ""
 
@@ -120,70 +119,58 @@ msgstr ""
 
 #: ../Doc/library/imaplib.rst:99
 msgid ""
-"*keyfile* and *certfile* are a legacy alternative to *ssl_context* - they "
-"can point to PEM-formatted private key and certificate chain files for the "
-"SSL connection.  Note that the *keyfile*/*certfile* parameters are mutually "
-"exclusive with *ssl_context*, a :class:`ValueError` is raised if *keyfile*/"
-"*certfile* is provided along with *ssl_context*."
-msgstr ""
-
-#: ../Doc/library/imaplib.rst:105
-msgid ""
 "The optional *timeout* parameter specifies a timeout in seconds for the "
-"connection attempt. If timeout is not given or is None, the global default "
-"socket timeout is used."
+"connection attempt. If timeout is not given or is ``None``, the global "
+"default socket timeout is used."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:109
+#: ../Doc/library/imaplib.rst:103
 msgid "*ssl_context* parameter was added."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:112
+#: ../Doc/library/imaplib.rst:106
 msgid ""
 "The class now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:119
-msgid ""
-"*keyfile* and *certfile* are deprecated in favor of *ssl_context*. Please "
-"use :meth:`ssl.SSLContext.load_cert_chain` instead, or let :func:`ssl."
-"create_default_context` select the system's trusted CA certificates for you."
+#: ../Doc/library/imaplib.rst:114
+msgid "The deprecated *keyfile* and *certfile* parameters have been removed."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:127
+#: ../Doc/library/imaplib.rst:117
 msgid "The second subclass allows for connections created by a child process:"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:132
+#: ../Doc/library/imaplib.rst:122
 msgid ""
 "This is a subclass derived from :class:`IMAP4` that connects to the ``stdin/"
 "stdout`` file descriptors created by passing *command* to ``subprocess."
 "Popen()``."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:137
+#: ../Doc/library/imaplib.rst:127
 msgid "The following utility functions are defined:"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:142
+#: ../Doc/library/imaplib.rst:132
 msgid ""
 "Parse an IMAP4 ``INTERNALDATE`` string and return corresponding local time.  "
 "The return value is a :class:`time.struct_time` tuple or ``None`` if the "
 "string has wrong format."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:148
+#: ../Doc/library/imaplib.rst:138
 msgid ""
 "Converts an integer into a bytes representation using characters from the "
 "set [``A`` .. ``P``]."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:154
+#: ../Doc/library/imaplib.rst:144
 msgid "Converts an IMAP4 ``FLAGS`` response to a tuple of individual flags."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:159
+#: ../Doc/library/imaplib.rst:149
 msgid ""
 "Convert *date_time* to an IMAP4 ``INTERNALDATE`` representation. The return "
 "value is a string in the form: ``\"DD-Mmm-YYYY HH:MM:SS +HHMM\"`` (including "
@@ -195,7 +182,7 @@ msgid ""
 "already be in the correct format."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:169
+#: ../Doc/library/imaplib.rst:159
 msgid ""
 "Note that IMAP4 message numbers change as the mailbox changes; in "
 "particular, after an ``EXPUNGE`` command performs deletions the remaining "
@@ -203,30 +190,30 @@ msgid ""
 "the UID command."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:173
+#: ../Doc/library/imaplib.rst:163
 msgid ""
 "At the end of the module, there is a test section that contains a more "
 "extensive example of usage."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:179
+#: ../Doc/library/imaplib.rst:169
 msgid ""
 "Documents describing the protocol, sources for servers implementing it, by "
 "the University of Washington's IMAP Information Center can all be found at "
 "(**Source Code**) https://github.com/uw-imap/imap (**Not Maintained**)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:187
+#: ../Doc/library/imaplib.rst:177
 msgid "IMAP4 Objects"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:189
+#: ../Doc/library/imaplib.rst:179
 msgid ""
 "All IMAP4rev1 commands are represented by methods of the same name, either "
-"upper-case or lower-case."
+"uppercase or lowercase."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:192
+#: ../Doc/library/imaplib.rst:182
 msgid ""
 "All arguments to commands are converted to strings, except for "
 "``AUTHENTICATE``, and the last argument to ``APPEND`` which is passed as an "
@@ -238,7 +225,7 @@ msgid ""
 "(eg: ``r'(\\Deleted)'``)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:200
+#: ../Doc/library/imaplib.rst:190
 msgid ""
 "Each command returns a tuple: ``(type, [data, ...])`` where *type* is "
 "usually ``'OK'`` or ``'NO'``, and *data* is either the text from the command "
@@ -247,7 +234,7 @@ msgid ""
 "response, and the second part contains the data (ie: 'literal' value)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:206
+#: ../Doc/library/imaplib.rst:196
 msgid ""
 "The *message_set* options to commands below is a string specifying one or "
 "more messages to be acted upon.  It may be a simple message number "
@@ -256,30 +243,30 @@ msgid ""
 "an asterisk to indicate an infinite upper bound (``'3:*'``)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:212
+#: ../Doc/library/imaplib.rst:202
 msgid "An :class:`IMAP4` instance has the following methods:"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:217
+#: ../Doc/library/imaplib.rst:207
 msgid "Append *message* to named mailbox."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:222
+#: ../Doc/library/imaplib.rst:212
 msgid "Authenticate command --- requires response processing."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:224
+#: ../Doc/library/imaplib.rst:214
 msgid ""
 "*mechanism* specifies which authentication mechanism is to be used - it "
 "should appear in the instance variable ``capabilities`` in the form "
 "``AUTH=mechanism``."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:227
+#: ../Doc/library/imaplib.rst:217
 msgid "*authobject* must be a callable object::"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:231
+#: ../Doc/library/imaplib.rst:221
 msgid ""
 "It will be called to process server continuation responses; the *response* "
 "argument it is passed will be ``bytes``.  It should return ``bytes`` *data* "
@@ -287,195 +274,195 @@ msgid ""
 "``None`` if the client abort response ``*`` should be sent instead."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:236
+#: ../Doc/library/imaplib.rst:226
 msgid ""
 "string usernames and passwords are now encoded to ``utf-8`` instead of being "
 "limited to ASCII."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:243
+#: ../Doc/library/imaplib.rst:233
 msgid "Checkpoint mailbox on server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:248
+#: ../Doc/library/imaplib.rst:238
 msgid ""
 "Close currently selected mailbox. Deleted messages are removed from writable "
 "mailbox. This is the recommended command before ``LOGOUT``."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:254
+#: ../Doc/library/imaplib.rst:244
 msgid "Copy *message_set* messages onto end of *new_mailbox*."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:259
+#: ../Doc/library/imaplib.rst:249
 msgid "Create new mailbox named *mailbox*."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:264
+#: ../Doc/library/imaplib.rst:254
 msgid "Delete old mailbox named *mailbox*."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:269
+#: ../Doc/library/imaplib.rst:259
 msgid "Delete the ACLs (remove any rights) set for who on mailbox."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:274
+#: ../Doc/library/imaplib.rst:264
 msgid ""
 "Enable *capability* (see :rfc:`5161`).  Most capabilities do not need to be "
 "enabled.  Currently only the ``UTF8=ACCEPT`` capability is supported (see :"
 "RFC:`6855`)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:278
+#: ../Doc/library/imaplib.rst:268
 msgid "The :meth:`enable` method itself, and :RFC:`6855` support."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:284
+#: ../Doc/library/imaplib.rst:274
 msgid ""
 "Permanently remove deleted items from selected mailbox. Generates an "
 "``EXPUNGE`` response for each deleted message. Returned data contains a list "
 "of ``EXPUNGE`` message numbers in order received."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:291
+#: ../Doc/library/imaplib.rst:281
 msgid ""
 "Fetch (parts of) messages.  *message_parts* should be a string of message "
 "part names enclosed within parentheses, eg: ``\"(UID BODY[TEXT])\"``.  "
 "Returned data are tuples of message part envelope and data."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:298
+#: ../Doc/library/imaplib.rst:288
 msgid ""
 "Get the ``ACL``\\ s for *mailbox*. The method is non-standard, but is "
 "supported by the ``Cyrus`` server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:304
+#: ../Doc/library/imaplib.rst:294
 msgid ""
 "Retrieve the specified ``ANNOTATION``\\ s for *mailbox*. The method is non-"
 "standard, but is supported by the ``Cyrus`` server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:310
+#: ../Doc/library/imaplib.rst:300
 msgid ""
 "Get the ``quota`` *root*'s resource usage and limits. This method is part of "
 "the IMAP4 QUOTA extension defined in rfc2087."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:316
+#: ../Doc/library/imaplib.rst:306
 msgid ""
 "Get the list of ``quota`` ``roots`` for the named *mailbox*. This method is "
 "part of the IMAP4 QUOTA extension defined in rfc2087."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:322
+#: ../Doc/library/imaplib.rst:312
 msgid ""
 "List mailbox names in *directory* matching *pattern*.  *directory* defaults "
 "to the top-level mail folder, and *pattern* defaults to match anything.  "
 "Returned data contains a list of ``LIST`` responses."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:329
+#: ../Doc/library/imaplib.rst:319
 msgid ""
 "Identify the client using a plaintext password. The *password* will be "
 "quoted."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:334
+#: ../Doc/library/imaplib.rst:324
 msgid ""
 "Force use of ``CRAM-MD5`` authentication when identifying the client to "
 "protect the password.  Will only work if the server ``CAPABILITY`` response "
 "includes the phrase ``AUTH=CRAM-MD5``."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:341
+#: ../Doc/library/imaplib.rst:331
 msgid "Shutdown connection to server. Returns server ``BYE`` response."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:343
+#: ../Doc/library/imaplib.rst:333
 msgid "The method no longer ignores silently arbitrary exceptions."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:349
+#: ../Doc/library/imaplib.rst:339
 msgid ""
 "List subscribed mailbox names in directory matching pattern. *directory* "
 "defaults to the top level directory and *pattern* defaults to match any "
 "mailbox. Returned data are tuples of message part envelope and data."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:356
+#: ../Doc/library/imaplib.rst:346
 msgid "Show my ACLs for a mailbox (i.e. the rights that I have on mailbox)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:361
+#: ../Doc/library/imaplib.rst:351
 msgid "Returns IMAP namespaces as defined in :rfc:`2342`."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:366
+#: ../Doc/library/imaplib.rst:356
 msgid "Send ``NOOP`` to server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:371
+#: ../Doc/library/imaplib.rst:361
 msgid ""
 "Opens socket to *port* at *host*. The optional *timeout* parameter specifies "
 "a timeout in seconds for the connection attempt. If timeout is not given or "
-"is None, the global default socket timeout is used. Also note that if the "
-"*timeout* parameter is set to be zero, it will raise a :class:`ValueError` "
-"to reject creating a non-blocking socket. This method is implicitly called "
-"by the :class:`IMAP4` constructor. The connection objects established by "
-"this method will be used in the :meth:`IMAP4.read`, :meth:`IMAP4.readline`, :"
-"meth:`IMAP4.send`, and :meth:`IMAP4.shutdown` methods. You may override this "
-"method."
+"is ``None``, the global default socket timeout is used. Also note that if "
+"the *timeout* parameter is set to be zero, it will raise a :class:"
+"`ValueError` to reject creating a non-blocking socket. This method is "
+"implicitly called by the :class:`IMAP4` constructor. The connection objects "
+"established by this method will be used in the :meth:`IMAP4.read`, :meth:"
+"`IMAP4.readline`, :meth:`IMAP4.send`, and :meth:`IMAP4.shutdown` methods. "
+"You may override this method."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:390
+#: ../Doc/library/imaplib.rst:381
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``imaplib.open`` with arguments "
 "``self``, ``host``, ``port``."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:383
+#: ../Doc/library/imaplib.rst:373
 msgid "The *timeout* parameter was added."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:388
+#: ../Doc/library/imaplib.rst:378
 msgid ""
 "Fetch truncated part of a message. Returned data is a tuple of message part "
 "envelope and data."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:394
+#: ../Doc/library/imaplib.rst:384
 msgid ""
 "Assume authentication as *user*. Allows an authorised administrator to proxy "
 "into any user's mailbox."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:400
+#: ../Doc/library/imaplib.rst:390
 msgid ""
 "Reads *size* bytes from the remote server. You may override this method."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:405
+#: ../Doc/library/imaplib.rst:395
 msgid "Reads one line from the remote server. You may override this method."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:410
+#: ../Doc/library/imaplib.rst:400
 msgid ""
 "Prompt server for an update. Returned data is ``None`` if no new messages, "
 "else value of ``RECENT`` response."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:416
+#: ../Doc/library/imaplib.rst:406
 msgid "Rename mailbox named *oldmailbox* to *newmailbox*."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:421
+#: ../Doc/library/imaplib.rst:411
 msgid ""
 "Return data for response *code* if received, or ``None``. Returns the given "
 "code, instead of the usual type."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:427
+#: ../Doc/library/imaplib.rst:417
 msgid ""
 "Search mailbox for matching messages.  *charset* may be ``None``, in which "
 "case no ``CHARSET`` will be specified in the request to the server.  The "
@@ -485,63 +472,63 @@ msgid ""
 "`enable` command."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:434
+#: ../Doc/library/imaplib.rst:424
 msgid "Example::"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:445
+#: ../Doc/library/imaplib.rst:435
 msgid ""
 "Select a mailbox. Returned data is the count of messages in *mailbox* "
 "(``EXISTS`` response).  The default *mailbox* is ``'INBOX'``.  If the "
 "*readonly* flag is set, modifications to the mailbox are not allowed."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:452
+#: ../Doc/library/imaplib.rst:442
 msgid "Sends ``data`` to the remote server. You may override this method."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:463
+#: ../Doc/library/imaplib.rst:454
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``imaplib.send`` with arguments "
 "``self``, ``data``."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:459
+#: ../Doc/library/imaplib.rst:449
 msgid ""
 "Set an ``ACL`` for *mailbox*. The method is non-standard, but is supported "
 "by the ``Cyrus`` server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:465
+#: ../Doc/library/imaplib.rst:455
 msgid ""
 "Set ``ANNOTATION``\\ s for *mailbox*. The method is non-standard, but is "
 "supported by the ``Cyrus`` server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:471
+#: ../Doc/library/imaplib.rst:461
 msgid ""
 "Set the ``quota`` *root*'s resource *limits*. This method is part of the "
 "IMAP4 QUOTA extension defined in rfc2087."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:477
+#: ../Doc/library/imaplib.rst:467
 msgid ""
 "Close connection established in ``open``.  This method is implicitly called "
 "by :meth:`IMAP4.logout`.  You may override this method."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:483
+#: ../Doc/library/imaplib.rst:473
 msgid "Returns socket instance used to connect to server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:488
+#: ../Doc/library/imaplib.rst:478
 msgid ""
 "The ``sort`` command is a variant of ``search`` with sorting semantics for "
 "the results.  Returned data contains a space separated list of matching "
 "message numbers."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:492
+#: ../Doc/library/imaplib.rst:482
 msgid ""
 "Sort has two arguments before the *search_criterion* argument(s); a "
 "parenthesized list of *sort_criteria*, and the searching *charset*.  Note "
@@ -553,68 +540,68 @@ msgid ""
 "searching criteria.  It then returns the numbers of matching messages."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:501 ../Doc/library/imaplib.rst:572
+#: ../Doc/library/imaplib.rst:491 ../Doc/library/imaplib.rst:562
 msgid "This is an ``IMAP4rev1`` extension command."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:506
+#: ../Doc/library/imaplib.rst:496
 msgid ""
 "Send a ``STARTTLS`` command.  The *ssl_context* argument is optional and "
 "should be a :class:`ssl.SSLContext` object.  This will enable encryption on "
 "the IMAP connection.  Please read :ref:`ssl-security` for best practices."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:513
+#: ../Doc/library/imaplib.rst:503
 msgid ""
 "The method now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:521
+#: ../Doc/library/imaplib.rst:511
 msgid "Request named status conditions for *mailbox*."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:526
+#: ../Doc/library/imaplib.rst:516
 msgid ""
 "Alters flag dispositions for messages in mailbox.  *command* is specified by "
 "section 6.4.6 of :rfc:`2060` as being one of \"FLAGS\", \"+FLAGS\", or \"-"
 "FLAGS\", optionally with a suffix of \".SILENT\"."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:530
+#: ../Doc/library/imaplib.rst:520
 msgid "For example, to set the delete flag on all messages::"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:539
+#: ../Doc/library/imaplib.rst:529
 msgid ""
 "Creating flags containing ']' (for example: \"[test]\") violates :rfc:`3501` "
 "(the IMAP protocol).  However, imaplib has historically allowed creation of "
 "such tags, and popular IMAP servers, such as Gmail, accept and produce such "
 "flags.  There are non-Python programs which also create such tags.  Although "
 "it is an RFC violation and IMAP clients and servers are supposed to be "
-"strict, imaplib nonetheless continues to allow such tags to be created for "
+"strict, imaplib still continues to allow such tags to be created for "
 "backward compatibility reasons, and as of Python 3.6, handles them if they "
 "are sent from the server, since this improves real-world compatibility."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:551
+#: ../Doc/library/imaplib.rst:541
 msgid "Subscribe to new mailbox."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:556
+#: ../Doc/library/imaplib.rst:546
 msgid ""
 "The ``thread`` command is a variant of ``search`` with threading semantics "
 "for the results.  Returned data contains a space separated list of thread "
 "members."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:559
+#: ../Doc/library/imaplib.rst:549
 msgid ""
 "Thread members consist of zero or more messages numbers, delimited by "
 "spaces, indicating successive parent and child."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:562
+#: ../Doc/library/imaplib.rst:552
 msgid ""
 "Thread has two arguments before the *search_criterion* argument(s); a "
 "*threading_algorithm*, and the searching *charset*.  Note that unlike "
@@ -622,12 +609,12 @@ msgid ""
 "``uid thread`` command which corresponds to ``thread`` the way that ``uid "
 "search`` corresponds to ``search``.  The ``thread`` command first searches "
 "the mailbox for messages that match the given searching criteria using the "
-"charset argument for the interpretation of strings in the searching "
+"*charset* argument for the interpretation of strings in the searching "
 "criteria. It then returns the matching messages threaded according to the "
 "specified threading algorithm."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:577
+#: ../Doc/library/imaplib.rst:567
 msgid ""
 "Execute command args with messages identified by UID, rather than message "
 "number.  Returns response appropriate to command.  At least one argument "
@@ -635,11 +622,11 @@ msgid ""
 "an exception will be raised."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:585
+#: ../Doc/library/imaplib.rst:575
 msgid "Unsubscribe from old mailbox."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:589
+#: ../Doc/library/imaplib.rst:579
 msgid ""
 ":meth:`imaplib.IMAP4.unselect` frees server's resources associated with the "
 "selected mailbox and returns the server to the authenticated state. This "
@@ -647,41 +634,57 @@ msgid ""
 "that no messages are permanently removed from the currently selected mailbox."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:599
+#: ../Doc/library/imaplib.rst:589
 msgid ""
 "Allow simple extension commands notified by server in ``CAPABILITY`` "
 "response."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:602
+#: ../Doc/library/imaplib.rst:592
 msgid "The following attributes are defined on instances of :class:`IMAP4`:"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:606
+#: ../Doc/library/imaplib.rst:596
 msgid ""
 "The most recent supported protocol in the ``CAPABILITY`` response from the "
 "server."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:612
+#: ../Doc/library/imaplib.rst:602
 msgid ""
 "Integer value to control debugging output.  The initialize value is taken "
 "from the module variable ``Debug``.  Values greater than three trace each "
 "command."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:618
+#: ../Doc/library/imaplib.rst:608
 msgid ""
 "Boolean value that is normally ``False``, but is set to ``True`` if an :meth:"
 "`enable` command is successfully issued for the ``UTF8=ACCEPT`` capability."
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:628
+#: ../Doc/library/imaplib.rst:618
 msgid "IMAP4 Example"
 msgstr ""
 
-#: ../Doc/library/imaplib.rst:630
+#: ../Doc/library/imaplib.rst:620
 msgid ""
 "Here is a minimal example (without error checking) that opens a mailbox and "
 "retrieves and prints all messages::"
+msgstr ""
+
+#: ../Doc/library/imaplib.rst:16
+msgid "IMAP4"
+msgstr ""
+
+#: ../Doc/library/imaplib.rst:16
+msgid "protocol"
+msgstr ""
+
+#: ../Doc/library/imaplib.rst:16
+msgid "IMAP4_SSL"
+msgstr ""
+
+#: ../Doc/library/imaplib.rst:16
+msgid "IMAP4_stream"
 msgstr ""

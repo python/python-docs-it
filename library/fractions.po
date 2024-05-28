@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/fractions.rst:2
-msgid ":mod:`fractions` --- Rational numbers"
+msgid ":mod:`!fractions` --- Rational numbers"
 msgstr ""
 
 #: ../Doc/library/fractions.rst:10
@@ -40,8 +40,8 @@ msgstr ""
 msgid ""
 "The first version requires that *numerator* and *denominator* are instances "
 "of :class:`numbers.Rational` and returns a new :class:`Fraction` instance "
-"with value ``numerator/denominator``. If *denominator* is :const:`0`, it "
-"raises a :exc:`ZeroDivisionError`. The second version requires that "
+"with value ``numerator/denominator``. If *denominator* is ``0``, it raises "
+"a :exc:`ZeroDivisionError`. The second version requires that "
 "*other_fraction* is an instance of :class:`numbers.Rational` and returns a :"
 "class:`Fraction` instance with the same value.  The next two versions accept "
 "either a :class:`float` or a :class:`decimal.Decimal` instance, and return "
@@ -69,9 +69,9 @@ msgstr ""
 msgid ""
 "The :class:`Fraction` class inherits from the abstract base class :class:"
 "`numbers.Rational`, and implements all of the methods and operations from "
-"that class.  :class:`Fraction` instances are hashable, and should be treated "
-"as immutable.  In addition, :class:`Fraction` has the following properties "
-"and methods:"
+"that class.  :class:`Fraction` instances are :term:`hashable`, and should be "
+"treated as immutable.  In addition, :class:`Fraction` has the following "
+"properties and methods:"
 msgstr ""
 
 #: ../Doc/library/fractions.rst:84
@@ -99,69 +99,91 @@ msgid ""
 "SupportsInt`` instance checks."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:103
+#: ../Doc/library/fractions.rst:101
+msgid ""
+"Space is allowed around the slash for string inputs: ``Fraction('2 / 3')``."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:104
+msgid ""
+":class:`Fraction` instances now support float-style formatting, with "
+"presentation types ``\"e\"``, ``\"E\"``, ``\"f\"``, ``\"F\"``, ``\"g\"``, "
+"``\"G\"`` and ``\"%\"\"``."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:109
+msgid ""
+"Formatting of :class:`Fraction` instances without a presentation type now "
+"supports fill, alignment, sign handling, minimum width and grouping."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:115
 msgid "Numerator of the Fraction in lowest term."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:107
+#: ../Doc/library/fractions.rst:119
 msgid "Denominator of the Fraction in lowest term."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:112
+#: ../Doc/library/fractions.rst:124
 msgid ""
-"Return a tuple of two integers, whose ratio is equal to the Fraction and "
-"with a positive denominator."
+"Return a tuple of two integers, whose ratio is equal to the original "
+"Fraction.  The ratio is in lowest terms and has a positive denominator."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:119
+#: ../Doc/library/fractions.rst:132
+msgid "Return ``True`` if the Fraction is an integer."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:138
 msgid ""
 "Alternative constructor which only accepts instances of :class:`float` or :"
 "class:`numbers.Integral`. Beware that ``Fraction.from_float(0.3)`` is not "
 "the same value as ``Fraction(3, 10)``."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:125
+#: ../Doc/library/fractions.rst:144
 msgid ""
 "From Python 3.2 onwards, you can also construct a :class:`Fraction` instance "
 "directly from a :class:`float`."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:131
+#: ../Doc/library/fractions.rst:150
 msgid ""
 "Alternative constructor which only accepts instances of :class:`decimal."
 "Decimal` or :class:`numbers.Integral`."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:136
+#: ../Doc/library/fractions.rst:155
 msgid ""
 "From Python 3.2 onwards, you can also construct a :class:`Fraction` instance "
 "directly from a :class:`decimal.Decimal` instance."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:143
+#: ../Doc/library/fractions.rst:162
 msgid ""
 "Finds and returns the closest :class:`Fraction` to ``self`` that has "
 "denominator at most max_denominator.  This method is useful for finding "
 "rational approximations to a given floating-point number:"
 msgstr ""
 
-#: ../Doc/library/fractions.rst:151
+#: ../Doc/library/fractions.rst:170
 msgid "or for recovering a rational number that's represented as a float:"
 msgstr ""
 
-#: ../Doc/library/fractions.rst:164
+#: ../Doc/library/fractions.rst:183
 msgid ""
 "Returns the greatest :class:`int` ``<= self``.  This method can also be "
 "accessed through the :func:`math.floor` function:"
 msgstr ""
 
-#: ../Doc/library/fractions.rst:174
+#: ../Doc/library/fractions.rst:193
 msgid ""
 "Returns the least :class:`int` ``>= self``.  This method can also be "
 "accessed through the :func:`math.ceil` function."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:181
+#: ../Doc/library/fractions.rst:200
 msgid ""
 "The first version returns the nearest :class:`int` to ``self``, rounding "
 "half to even. The second version rounds ``self`` to the nearest multiple of "
@@ -170,10 +192,41 @@ msgid ""
 "func:`round` function."
 msgstr ""
 
-#: ../Doc/library/fractions.rst:190
+#: ../Doc/library/fractions.rst:208
+msgid ""
+"Provides support for formatting of :class:`Fraction` instances via the :meth:"
+"`str.format` method, the :func:`format` built-in function, or :ref:"
+"`Formatted string literals <f-strings>`."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:212
+msgid ""
+"If the ``format_spec`` format specification string does not end with one of "
+"the presentation types ``'e'``, ``'E'``, ``'f'``, ``'F'``, ``'g'``, ``'G'`` "
+"or ``'%'`` then formatting follows the general rules for fill, alignment, "
+"sign handling, minimum width, and grouping as described in the :ref:`format "
+"specification mini-language <formatspec>`. The \"alternate form\" flag "
+"``'#'`` is supported: if present, it forces the output string to always "
+"include an explicit denominator, even when the value being formatted is an "
+"exact integer. The zero-fill flag ``'0'`` is not supported."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:222
+msgid ""
+"If the ``format_spec`` format specification string ends with one of the "
+"presentation types ``'e'``, ``'E'``, ``'f'``, ``'F'``, ``'g'``, ``'G'`` or "
+"``'%'`` then formatting follows the rules outlined for the :class:`float` "
+"type in the :ref:`formatspec` section."
+msgstr ""
+
+#: ../Doc/library/fractions.rst:227
+msgid "Here are some examples::"
+msgstr ""
+
+#: ../Doc/library/fractions.rst:251
 msgid "Module :mod:`numbers`"
 msgstr ""
 
-#: ../Doc/library/fractions.rst:191
+#: ../Doc/library/fractions.rst:252
 msgid "The abstract base classes making up the numeric tower."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,4 +116,62 @@ msgstr ""
 msgid ""
 ":func:`eval` is used for expression input.  It ignores leading whitespace. "
 "The string argument to :func:`eval` must have the following form:"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:8
+msgid "interpreter"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:21
+msgid "program"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:23
+#: ../Doc/reference/toplevel_components.rst:39
+msgid "module"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:23
+msgid "sys"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:23
+#: ../Doc/reference/toplevel_components.rst:39
+msgid "__main__"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:23
+msgid "builtins"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:39
+msgid "interactive mode"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:49
+msgid "UNIX"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:49
+msgid "Windows"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:49
+msgid "command line"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:49
+msgid "standard input"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:100
+msgid "input"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:101
+msgid "built-in function"
+msgstr ""
+
+#: ../Doc/reference/toplevel_components.rst:101
+msgid "eval"
 msgstr ""

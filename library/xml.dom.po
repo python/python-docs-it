@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/xml.dom.rst:2
-msgid ":mod:`xml.dom` --- The Document Object Model API"
+msgid ":mod:`!xml.dom` --- The Document Object Model API"
 msgstr ""
 
 #: ../Doc/library/xml.dom.rst:10
@@ -92,7 +92,7 @@ msgid ""
 "mapping requirements."
 msgstr ""
 
-#: ../Doc/library/xml.dom.rst:71
+#: ../Doc/library/xml.dom.rst:70
 msgid ""
 "`Document Object Model (DOM) Level 2 Specification <https://www.w3.org/"
 "TR/2000/REC-DOM-Level-2-Core-20001113/>`_"
@@ -102,7 +102,7 @@ msgstr ""
 msgid "The W3C recommendation upon which the Python DOM API is based."
 msgstr ""
 
-#: ../Doc/library/xml.dom.rst:74
+#: ../Doc/library/xml.dom.rst:73
 msgid ""
 "`Document Object Model (DOM) Level 1 Specification <https://www.w3.org/TR/"
 "REC-DOM-Level-1/>`_"
@@ -902,8 +902,8 @@ msgstr ""
 #: ../Doc/library/xml.dom.rst:736
 msgid ""
 "There are also experimental methods that give this class more mapping "
-"behavior. You can use them or you can use the standardized :meth:"
-"`getAttribute\\*` family of methods on the :class:`Element` objects."
+"behavior. You can use them or you can use the standardized :meth:`!"
+"getAttribute\\*` family of methods on the :class:`Element` objects."
 msgstr ""
 
 #: ../Doc/library/xml.dom.rst:744

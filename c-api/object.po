@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,63 +22,249 @@ msgid "Object Protocol"
 msgstr ""
 
 #: ../Doc/c-api/object.rst:11
+msgid "Get a :term:`strong reference` to a constant."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:13
+msgid "Set an exception and return ``NULL`` if *constant_id* is invalid."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:15
+msgid "*constant_id* must be one of these constant identifiers:"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:20
+msgid "Constant Identifier"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:20
+msgid "Value"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:20
+msgid "Returned object"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:22 ../Doc/c-api/object.rst:27
+msgid "``0``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:22
+msgid ":py:data:`None`"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:23 ../Doc/c-api/object.rst:28
+msgid "``1``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:23
+msgid ":py:data:`False`"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:24
+msgid "``2``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:24
+msgid ":py:data:`True`"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:25
+msgid "``3``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:25
+msgid ":py:data:`Ellipsis`"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:26
+msgid "``4``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:26
+msgid ":py:data:`NotImplemented`"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:27
+msgid "``5``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:28
+msgid "``6``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:29
+msgid "``7``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:29
+msgid "``''``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:30
+msgid "``8``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:30
+msgid "``b''``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:31
+msgid "``9``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:31
+msgid "``()``"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:34
+msgid ""
+"Numeric values are only given for projects which cannot use the constant "
+"identifiers."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:42
+msgid "In CPython, all of these constants are :term:`immortal`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:47
+msgid ""
+"Similar to :c:func:`Py_GetConstant`, but return a :term:`borrowed reference`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:50
+msgid ""
+"This function is primarily intended for backwards compatibility: using :c:"
+"func:`Py_GetConstant` is recommended for new code."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:53
+msgid ""
+"The reference is borrowed from the interpreter, and is valid until the "
+"interpreter finalization. .. versionadded:: 3.13"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:60
 msgid ""
 "The ``NotImplemented`` singleton, used to signal that an operation is not "
 "implemented for the given type combination."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:17
+#: ../Doc/c-api/object.rst:66
 msgid ""
 "Properly handle returning :c:data:`Py_NotImplemented` from within a C "
-"function (that is, increment the reference count of NotImplemented and "
-"return it)."
+"function (that is, create a new :term:`strong reference` to :const:"
+"`NotImplemented` and return it)."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:24
+#: ../Doc/c-api/object.rst:73
+msgid ""
+"Flag to be used with multiple functions that print the object (like :c:func:"
+"`PyObject_Print` and :c:func:`PyFile_WriteObject`). If passed, these "
+"function would use the :func:`str` of the object instead of the :func:`repr`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:81
 msgid ""
 "Print an object *o*, on file *fp*.  Returns ``-1`` on error.  The flags "
 "argument is used to enable certain printing options.  The only option "
-"currently supported is :const:`Py_PRINT_RAW`; if given, the :func:`str` of "
+"currently supported is :c:macro:`Py_PRINT_RAW`; if given, the :func:`str` of "
 "the object is written instead of the :func:`repr`."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:32 ../Doc/c-api/object.rst:43
+#: ../Doc/c-api/object.rst:89
 msgid ""
-"Returns ``1`` if *o* has the attribute *attr_name*, and ``0`` otherwise.  "
-"This is equivalent to the Python expression ``hasattr(o, attr_name)``.  This "
-"function always succeeds."
+"Returns ``1`` if *o* has the attribute *attr_name*, and ``0`` otherwise. "
+"This is equivalent to the Python expression ``hasattr(o, attr_name)``. On "
+"failure, return ``-1``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:36
+#: ../Doc/c-api/object.rst:98
 msgid ""
-"Note that exceptions which occur while calling :meth:`__getattr__` and :meth:"
-"`__getattribute__` methods will get suppressed. To get error reporting use :"
-"c:func:`PyObject_GetAttr()` instead."
+"This is the same as :c:func:`PyObject_HasAttrWithError`, but *attr_name* is "
+"specified as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:47
+#: ../Doc/c-api/object.rst:107
 msgid ""
-"Note that exceptions which occur while calling :meth:`__getattr__` and :meth:"
-"`__getattribute__` methods and creating a temporary string object will get "
-"suppressed. To get error reporting use :c:func:`PyObject_GetAttrString()` "
-"instead."
+"Returns ``1`` if *o* has the attribute *attr_name*, and ``0`` otherwise. "
+"This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:55
+#: ../Doc/c-api/object.rst:112
+msgid ""
+"Exceptions that occur when this calls :meth:`~object.__getattr__` and :meth:"
+"`~object.__getattribute__` methods are silently ignored. For proper error "
+"handling, use :c:func:`PyObject_HasAttrWithError`, :c:func:"
+"`PyObject_GetOptionalAttr` or :c:func:`PyObject_GetAttr` instead."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:120
+msgid ""
+"This is the same as :c:func:`PyObject_HasAttr`, but *attr_name* is specified "
+"as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:126
+msgid ""
+"Exceptions that occur when this calls :meth:`~object.__getattr__` and :meth:"
+"`~object.__getattribute__` methods or while creating the temporary :class:"
+"`str` object are silently ignored. For proper error handling, use :c:func:"
+"`PyObject_HasAttrStringWithError`, :c:func:`PyObject_GetOptionalAttrString` "
+"or :c:func:`PyObject_GetAttrString` instead."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:136
 msgid ""
 "Retrieve an attribute named *attr_name* from object *o*. Returns the "
 "attribute value on success, or ``NULL`` on failure.  This is the equivalent "
 "of the Python expression ``o.attr_name``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:62
+#: ../Doc/c-api/object.rst:140
 msgid ""
-"Retrieve an attribute named *attr_name* from object *o*. Returns the "
-"attribute value on success, or ``NULL`` on failure. This is the equivalent "
-"of the Python expression ``o.attr_name``."
+"If the missing attribute should not be treated as a failure, you can use :c:"
+"func:`PyObject_GetOptionalAttr` instead."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:69
+#: ../Doc/c-api/object.rst:146
+msgid ""
+"This is the same as :c:func:`PyObject_GetAttr`, but *attr_name* is specified "
+"as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:150
+msgid ""
+"If the missing attribute should not be treated as a failure, you can use :c:"
+"func:`PyObject_GetOptionalAttrString` instead."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:156
+msgid ""
+"Variant of :c:func:`PyObject_GetAttr` which doesn't raise :exc:"
+"`AttributeError` if the attribute is not found."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:159
+msgid ""
+"If the attribute is found, return ``1`` and set *\\*result* to a new :term:"
+"`strong reference` to the attribute. If the attribute is not found, return "
+"``0`` and set *\\*result* to ``NULL``; the :exc:`AttributeError` is "
+"silenced. If an error other than :exc:`AttributeError` is raised, return "
+"``-1`` and set *\\*result* to ``NULL``."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:171
+msgid ""
+"This is the same as :c:func:`PyObject_GetOptionalAttr`, but *attr_name* is "
+"specified as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:179
 msgid ""
 "Generic attribute getter function that is meant to be put into a type "
 "object's ``tp_getattro`` slot.  It looks for a descriptor in the dictionary "
@@ -88,27 +274,34 @@ msgid ""
 "descriptors don't.  Otherwise, an :exc:`AttributeError` is raised."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:79 ../Doc/c-api/object.rst:91
+#: ../Doc/c-api/object.rst:189
 msgid ""
 "Set the value of the attribute named *attr_name*, for object *o*, to the "
 "value *v*. Raise an exception and return ``-1`` on failure; return ``0`` on "
 "success.  This is the equivalent of the Python statement ``o.attr_name = v``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:84
+#: ../Doc/c-api/object.rst:194
 msgid ""
 "If *v* is ``NULL``, the attribute is deleted. This behaviour is deprecated "
 "in favour of using :c:func:`PyObject_DelAttr`, but there are currently no "
 "plans to remove it."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:96
+#: ../Doc/c-api/object.rst:201
+msgid ""
+"This is the same as :c:func:`PyObject_SetAttr`, but *attr_name* is specified "
+"as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:205
 msgid ""
 "If *v* is ``NULL``, the attribute is deleted, but this feature is deprecated "
 "in favour of using :c:func:`PyObject_DelAttrString`."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:102
+#: ../Doc/c-api/object.rst:211
 msgid ""
 "Generic attribute setter and deleter function that is meant to be put into a "
 "type object's :c:member:`~PyTypeObject.tp_setattro` slot.  It looks for a "
@@ -120,19 +313,26 @@ msgid ""
 "returned."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:114 ../Doc/c-api/object.rst:120
+#: ../Doc/c-api/object.rst:223
 msgid ""
 "Delete attribute named *attr_name*, for object *o*. Returns ``-1`` on "
 "failure. This is the equivalent of the Python statement ``del o.attr_name``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:126
+#: ../Doc/c-api/object.rst:229
+msgid ""
+"This is the same as :c:func:`PyObject_DelAttr`, but *attr_name* is specified "
+"as a :c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
+"`PyObject*`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:236
 msgid ""
 "A generic implementation for the getter of a ``__dict__`` descriptor. It "
 "creates the dictionary if necessary."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:129
+#: ../Doc/c-api/object.rst:239
 msgid ""
 "This function may also be called to get the :py:attr:`~object.__dict__` of "
 "the object *o*. Pass ``NULL`` for *context* when calling it. Since this "
@@ -141,58 +341,67 @@ msgid ""
 "the object."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:135
+#: ../Doc/c-api/object.rst:245
 msgid "On failure, returns ``NULL`` with an exception set."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:142
+#: ../Doc/c-api/object.rst:252
 msgid ""
 "A generic implementation for the setter of a ``__dict__`` descriptor. This "
 "implementation does not allow the dictionary to be deleted."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:150
+#: ../Doc/c-api/object.rst:260
 msgid ""
 "Return a pointer to :py:attr:`~object.__dict__` of the object *obj*. If "
 "there is no ``__dict__``, return ``NULL`` without setting an exception."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:153
+#: ../Doc/c-api/object.rst:263
 msgid ""
 "This function may need to allocate memory for the dictionary, so it may be "
 "more efficient to call :c:func:`PyObject_GetAttr` when accessing an "
 "attribute on the object."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:160
+#: ../Doc/c-api/object.rst:270
 msgid ""
 "Compare the values of *o1* and *o2* using the operation specified by *opid*, "
-"which must be one of :const:`Py_LT`, :const:`Py_LE`, :const:`Py_EQ`, :const:"
-"`Py_NE`, :const:`Py_GT`, or :const:`Py_GE`, corresponding to ``<``, ``<=``, "
-"``==``, ``!=``, ``>``, or ``>=`` respectively. This is the equivalent of the "
-"Python expression ``o1 op o2``, where ``op`` is the operator corresponding "
-"to *opid*. Returns the value of the comparison on success, or ``NULL`` on "
+"which must be one of :c:macro:`Py_LT`, :c:macro:`Py_LE`, :c:macro:`Py_EQ`, :"
+"c:macro:`Py_NE`, :c:macro:`Py_GT`, or :c:macro:`Py_GE`, corresponding to "
+"``<``, ``<=``, ``==``, ``!=``, ``>``, or ``>=`` respectively. This is the "
+"equivalent of the Python expression ``o1 op o2``, where ``op`` is the "
+"operator corresponding to *opid*. Returns the value of the comparison on "
+"success, or ``NULL`` on failure."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:280
+msgid ""
+"Compare the values of *o1* and *o2* using the operation specified by *opid*, "
+"like :c:func:`PyObject_RichCompare`, but returns ``-1`` on error, ``0`` if "
+"the result is false, ``1`` otherwise."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:285
+msgid ""
+"If *o1* and *o2* are the same object, :c:func:`PyObject_RichCompareBool` "
+"will always return ``1`` for :c:macro:`Py_EQ` and ``0`` for :c:macro:`Py_NE`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:290
+msgid ""
+"Format *obj* using *format_spec*. This is equivalent to the Python "
+"expression ``format(obj, format_spec)``."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:293
+msgid ""
+"*format_spec* may be ``NULL``. In this case the call is equivalent to "
+"``format(obj)``. Returns the formatted string on success, ``NULL`` on "
 "failure."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:170
-msgid ""
-"Compare the values of *o1* and *o2* using the operation specified by *opid*, "
-"which must be one of :const:`Py_LT`, :const:`Py_LE`, :const:`Py_EQ`, :const:"
-"`Py_NE`, :const:`Py_GT`, or :const:`Py_GE`, corresponding to ``<``, ``<=``, "
-"``==``, ``!=``, ``>``, or ``>=`` respectively. Returns ``-1`` on error, "
-"``0`` if the result is false, ``1`` otherwise. This is the equivalent of the "
-"Python expression ``o1 op o2``, where ``op`` is the operator corresponding "
-"to *opid*."
-msgstr ""
-
-#: ../Doc/c-api/object.rst:179
-msgid ""
-"If *o1* and *o2* are the same object, :c:func:`PyObject_RichCompareBool` "
-"will always return ``1`` for :const:`Py_EQ` and ``0`` for :const:`Py_NE`."
-msgstr ""
-
-#: ../Doc/c-api/object.rst:186
+#: ../Doc/c-api/object.rst:301
 msgid ""
 "Compute a string representation of object *o*.  Returns the string "
 "representation on success, ``NULL`` on failure.  This is the equivalent of "
@@ -200,13 +409,13 @@ msgid ""
 "function."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:190 ../Doc/c-api/object.rst:214
+#: ../Doc/c-api/object.rst:305 ../Doc/c-api/object.rst:329
 msgid ""
 "This function now includes a debug assertion to help ensure that it does not "
 "silently discard an active exception."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:198
+#: ../Doc/c-api/object.rst:313
 msgid ""
 "As :c:func:`PyObject_Repr`, compute a string representation of object *o*, "
 "but escape the non-ASCII characters in the string returned by :c:func:"
@@ -215,7 +424,7 @@ msgid ""
 "Called by the :func:`ascii` built-in function."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:209
+#: ../Doc/c-api/object.rst:324
 msgid ""
 "Compute a string representation of object *o*.  Returns the string "
 "representation on success, ``NULL`` on failure.  This is the equivalent of "
@@ -223,7 +432,7 @@ msgid ""
 "function and, therefore, by the :func:`print` function."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:223
+#: ../Doc/c-api/object.rst:338
 msgid ""
 "Compute a bytes representation of object *o*.  ``NULL`` is returned on "
 "failure and a bytes object on success.  This is equivalent to the Python "
@@ -232,20 +441,20 @@ msgid ""
 "bytes object."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:232
+#: ../Doc/c-api/object.rst:347
 msgid ""
 "Return ``1`` if the class *derived* is identical to or derived from the "
 "class *cls*, otherwise return ``0``.  In case of an error, return ``-1``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:235 ../Doc/c-api/object.rst:254
+#: ../Doc/c-api/object.rst:350 ../Doc/c-api/object.rst:369
 msgid ""
 "If *cls* is a tuple, the check will be done against every entry in *cls*. "
 "The result will be ``1`` when at least one of the checks returns ``1``, "
 "otherwise it will be ``0``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:239
+#: ../Doc/c-api/object.rst:354
 msgid ""
 "If *cls* has a :meth:`~class.__subclasscheck__` method, it will be called to "
 "determine the subclass status as described in :pep:`3119`.  Otherwise, "
@@ -253,91 +462,91 @@ msgid ""
 "e. contained in ``cls.__mro__``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:244
+#: ../Doc/c-api/object.rst:359
 msgid ""
 "Normally only class objects, i.e. instances of :class:`type` or a derived "
 "class, are considered classes.  However, objects can override this by having "
-"a :attr:`__bases__` attribute (which must be a tuple of base classes)."
+"a :attr:`~class.__bases__` attribute (which must be a tuple of base classes)."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:251
+#: ../Doc/c-api/object.rst:366
 msgid ""
 "Return ``1`` if *inst* is an instance of the class *cls* or a subclass of "
 "*cls*, or ``0`` if not.  On error, returns ``-1`` and sets an exception."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:258
+#: ../Doc/c-api/object.rst:373
 msgid ""
 "If *cls* has a :meth:`~class.__instancecheck__` method, it will be called to "
 "determine the subclass status as described in :pep:`3119`.  Otherwise, "
 "*inst* is an instance of *cls* if its class is a subclass of *cls*."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:262
+#: ../Doc/c-api/object.rst:377
 msgid ""
 "An instance *inst* can override what is considered its class by having a :"
-"attr:`__class__` attribute."
+"attr:`~instance.__class__` attribute."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:265
+#: ../Doc/c-api/object.rst:380
 msgid ""
 "An object *cls* can override if it is considered a class, and what its base "
-"classes are, by having a :attr:`__bases__` attribute (which must be a tuple "
-"of base classes)."
+"classes are, by having a :attr:`~class.__bases__` attribute (which must be a "
+"tuple of base classes)."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:274
+#: ../Doc/c-api/object.rst:389
 msgid ""
 "Compute and return the hash value of an object *o*.  On failure, return "
 "``-1``. This is the equivalent of the Python expression ``hash(o)``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:277
+#: ../Doc/c-api/object.rst:392
 msgid ""
 "The return type is now Py_hash_t.  This is a signed integer the same size "
 "as :c:type:`Py_ssize_t`."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:284
+#: ../Doc/c-api/object.rst:399
 msgid ""
-"Set a :exc:`TypeError` indicating that ``type(o)`` is not hashable and "
-"return ``-1``. This function receives special treatment when stored in a "
+"Set a :exc:`TypeError` indicating that ``type(o)`` is not :term:`hashable` "
+"and return ``-1``. This function receives special treatment when stored in a "
 "``tp_hash`` slot, allowing a type to explicitly indicate to the interpreter "
 "that it is not hashable."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:292
+#: ../Doc/c-api/object.rst:407
 msgid ""
 "Returns ``1`` if the object *o* is considered to be true, and ``0`` "
 "otherwise. This is equivalent to the Python expression ``not not o``.  On "
 "failure, return ``-1``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:299
+#: ../Doc/c-api/object.rst:414
 msgid ""
 "Returns ``0`` if the object *o* is considered to be true, and ``1`` "
 "otherwise. This is equivalent to the Python expression ``not o``.  On "
 "failure, return ``-1``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:308
+#: ../Doc/c-api/object.rst:423
 msgid ""
 "When *o* is non-``NULL``, returns a type object corresponding to the object "
 "type of object *o*. On failure, raises :exc:`SystemError` and returns "
 "``NULL``.  This is equivalent to the Python expression ``type(o)``. This "
-"function increments the reference count of the return value. There's really "
-"no reason to use this function instead of the :c:func:`Py_TYPE()` function, "
-"which returns a pointer of type :c:expr:`PyTypeObject*`, except when the "
-"incremented reference count is needed."
+"function creates a new :term:`strong reference` to the return value. There's "
+"really no reason to use this function instead of the :c:func:`Py_TYPE()` "
+"function, which returns a pointer of type :c:expr:`PyTypeObject*`, except "
+"when a new :term:`strong reference` is needed."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:319
+#: ../Doc/c-api/object.rst:435
 msgid ""
 "Return non-zero if the object *o* is of type *type* or a subtype of *type*, "
 "and ``0`` otherwise.  Both parameters must be non-``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:328
+#: ../Doc/c-api/object.rst:444
 msgid ""
 "Return the length of object *o*.  If the object *o* provides either the "
 "sequence and mapping protocols, the sequence length is returned.  On error, "
@@ -345,7 +554,7 @@ msgid ""
 "``len(o)``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:335
+#: ../Doc/c-api/object.rst:451
 msgid ""
 "Return an estimated length for the object *o*. First try to return its "
 "actual length, then an estimate using :meth:`~object.__length_hint__`, and "
@@ -354,26 +563,26 @@ msgid ""
 "defaultvalue)``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:345
+#: ../Doc/c-api/object.rst:461
 msgid ""
 "Return element of *o* corresponding to the object *key* or ``NULL`` on "
 "failure. This is the equivalent of the Python expression ``o[key]``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:351
+#: ../Doc/c-api/object.rst:467
 msgid ""
 "Map the object *key* to the value *v*.  Raise an exception and return ``-1`` "
 "on failure; return ``0`` on success.  This is the equivalent of the Python "
 "statement ``o[key] = v``.  This function *does not* steal a reference to *v*."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:359
+#: ../Doc/c-api/object.rst:475
 msgid ""
 "Remove the mapping for the object *key* from the object *o*.  Return ``-1`` "
 "on failure.  This is equivalent to the Python statement ``del o[key]``."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:365
+#: ../Doc/c-api/object.rst:481
 msgid ""
 "This is equivalent to the Python expression ``dir(o)``, returning a "
 "(possibly empty) list of strings appropriate for the object argument, or "
@@ -383,7 +592,7 @@ msgid ""
 "`PyErr_Occurred` will return false."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:374
+#: ../Doc/c-api/object.rst:490
 msgid ""
 "This is equivalent to the Python expression ``iter(o)``. It returns a new "
 "iterator for the object argument, or the object  itself if the object is "
@@ -391,11 +600,113 @@ msgid ""
 "object cannot be iterated."
 msgstr ""
 
-#: ../Doc/c-api/object.rst:382
+#: ../Doc/c-api/object.rst:498
 msgid ""
 "This is the equivalent to the Python expression ``aiter(o)``. Takes an :"
 "class:`AsyncIterable` object and returns an :class:`AsyncIterator` for it. "
 "This is typically a new iterator but if the argument is an :class:"
 "`AsyncIterator`, this returns itself. Raises :exc:`TypeError` and returns "
 "``NULL`` if the object cannot be iterated."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:508
+msgid "Get a pointer to subclass-specific data reserved for *cls*."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:510
+msgid ""
+"The object *o* must be an instance of *cls*, and *cls* must have been "
+"created using negative :c:member:`PyType_Spec.basicsize`. Python does not "
+"check this."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:514
+msgid "On error, set an exception and return ``NULL``."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:520
+msgid ""
+"Return the size of the instance memory space reserved for *cls*, i.e. the "
+"size of the memory :c:func:`PyObject_GetTypeData` returns."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:523
+msgid ""
+"This may be larger than requested using :c:member:`-PyType_Spec.basicsize "
+"<PyType_Spec.basicsize>`; it is safe to use this larger size (e.g. with :c:"
+"func:`!memset`)."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:526
+msgid ""
+"The type *cls* **must** have been created using negative :c:member:"
+"`PyType_Spec.basicsize`. Python does not check this."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:530
+msgid "On error, set an exception and return a negative value."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:536
+msgid ""
+"Get a pointer to per-item data for a class with :c:macro:"
+"`Py_TPFLAGS_ITEMS_AT_END`."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:539
+msgid ""
+"On error, set an exception and return ``NULL``. :py:exc:`TypeError` is "
+"raised if *o* does not have :c:macro:`Py_TPFLAGS_ITEMS_AT_END` set."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:547
+msgid "Visit the managed dictionary of *obj*."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:549 ../Doc/c-api/object.rst:558
+msgid ""
+"This function must only be called in a traverse function of the type which "
+"has the :c:macro:`Py_TPFLAGS_MANAGED_DICT` flag set."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:556
+msgid "Clear the managed dictionary of *obj*."
+msgstr ""
+
+#: ../Doc/c-api/object.rst:299 ../Doc/c-api/object.rst:311
+#: ../Doc/c-api/object.rst:336 ../Doc/c-api/object.rst:387
+#: ../Doc/c-api/object.rst:421 ../Doc/c-api/object.rst:442
+msgid "built-in function"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:299
+msgid "repr"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:311
+msgid "ascii"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:319
+msgid "string"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:319
+msgid "PyObject_Str (C function)"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:336
+msgid "bytes"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:387
+msgid "hash"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:421
+msgid "type"
+msgstr ""
+
+#: ../Doc/c-api/object.rst:442
+msgid "len"
 msgstr ""

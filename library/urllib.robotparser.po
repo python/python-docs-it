@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/urllib.robotparser.rst:2
-msgid ":mod:`urllib.robotparser` ---  Parser for robots.txt"
+msgid ":mod:`!urllib.robotparser` ---  Parser for robots.txt"
 msgstr ""
 
 #: ../Doc/library/urllib.robotparser.rst:10
@@ -97,4 +97,20 @@ msgstr ""
 msgid ""
 "The following example demonstrates basic use of the :class:`RobotFileParser` "
 "class::"
+msgstr ""
+
+#: ../Doc/library/urllib.robotparser.rst:12
+msgid "WWW"
+msgstr ""
+
+#: ../Doc/library/urllib.robotparser.rst:12
+msgid "World Wide Web"
+msgstr ""
+
+#: ../Doc/library/urllib.robotparser.rst:12
+msgid "URL"
+msgstr ""
+
+#: ../Doc/library/urllib.robotparser.rst:12
+msgid "robots.txt"
 msgstr ""

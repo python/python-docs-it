@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,16 +164,20 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/apiabiversion.rst:61
-msgid "This version is also available via the symbol :data:`Py_Version`."
+msgid "Use this for numeric comparisons, e.g. ``#if PY_VERSION_HEX >= ...``."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:65
+#: ../Doc/c-api/apiabiversion.rst:63
+msgid "This version is also available via the symbol :c:var:`Py_Version`."
+msgstr ""
+
+#: ../Doc/c-api/apiabiversion.rst:67
 msgid ""
 "The Python runtime version number encoded in a single constant integer, with "
 "the same format as the :c:macro:`PY_VERSION_HEX` macro. This contains the "
 "Python version used at run time."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:71
+#: ../Doc/c-api/apiabiversion.rst:73
 msgid "All the given macros are defined in :source:`Include/patchlevel.h`."
 msgstr ""

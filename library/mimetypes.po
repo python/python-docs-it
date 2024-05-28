@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/mimetypes.rst:2
-msgid ":mod:`mimetypes` --- Map filenames to MIME types"
+msgid ":mod:`!mimetypes` --- Map filenames to MIME types"
 msgstr ""
 
 #: ../Doc/library/mimetypes.rst:9
@@ -81,41 +81,54 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/mimetypes.rst:54
-msgid "Added support for url being a :term:`path-like object`."
+msgid "Added support for *url* being a :term:`path-like object`."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:60
+#: ../Doc/library/mimetypes.rst:57
+msgid ""
+"Passing a file path instead of URL is :term:`soft deprecated`. Use :func:"
+"`guess_file_type` for this."
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:66
+msgid ""
+"Guess the type of a file based on its path, given by *path*. Similar to the :"
+"func:`guess_type` function, but accepts a path instead of URL. Path can be a "
+"string, a bytes object or a :term:`path-like object`."
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:75
 msgid ""
 "Guess the extensions for a file based on its MIME type, given by *type*. The "
 "return value is a list of strings giving all possible filename extensions, "
 "including the leading dot (``'.'``).  The extensions are not guaranteed to "
 "have been associated with any particular data stream, but would be mapped to "
-"the MIME type *type* by :func:`guess_type`."
+"the MIME type *type* by :func:`guess_type` and :func:`guess_file_type`."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:66 ../Doc/library/mimetypes.rst:78
+#: ../Doc/library/mimetypes.rst:81 ../Doc/library/mimetypes.rst:93
 msgid ""
 "The optional *strict* argument has the same meaning as with the :func:"
 "`guess_type` function."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:71
+#: ../Doc/library/mimetypes.rst:86
 msgid ""
 "Guess the extension for a file based on its MIME type, given by *type*. The "
 "return value is a string giving a filename extension, including the leading "
 "dot (``'.'``).  The extension is not guaranteed to have been associated with "
 "any particular data stream, but would be mapped to the MIME type *type* by :"
-"func:`guess_type`.  If no extension can be guessed for *type*, ``None`` is "
-"returned."
+"func:`guess_type` and :func:`guess_file_type`. If no extension can be "
+"guessed for *type*, ``None`` is returned."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:80
+#: ../Doc/library/mimetypes.rst:95
 msgid ""
 "Some additional functions and data items are available for controlling the "
 "behavior of the module."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:86
+#: ../Doc/library/mimetypes.rst:101
 msgid ""
 "Initialize the internal data structures.  If given, *files* must be a "
 "sequence of file names which should be used to augment the default type "
@@ -125,25 +138,25 @@ msgid ""
 "Calling :func:`init` repeatedly is allowed."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:93
+#: ../Doc/library/mimetypes.rst:108
 msgid ""
 "Specifying an empty list for *files* will prevent the system defaults from "
 "being applied: only the well-known values will be present from a built-in "
 "list."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:96
+#: ../Doc/library/mimetypes.rst:111
 msgid ""
 "If *files* is ``None`` the internal data structure is completely rebuilt to "
 "its initial default value. This is a stable operation and will produce the "
 "same results when called multiple times."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:100
+#: ../Doc/library/mimetypes.rst:115
 msgid "Previously, Windows registry settings were ignored."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:106
+#: ../Doc/library/mimetypes.rst:121
 msgid ""
 "Load the type map given in the file *filename*, if it exists.  The type map "
 "is returned as a dictionary mapping filename extensions, including the "
@@ -151,7 +164,7 @@ msgid ""
 "file *filename* does not exist or cannot be read, ``None`` is returned."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:114
+#: ../Doc/library/mimetypes.rst:129
 msgid ""
 "Add a mapping from the MIME type *type* to the extension *ext*. When the "
 "extension is already known, the new type will replace the old one. When the "
@@ -159,26 +172,26 @@ msgid ""
 "extensions."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:118
+#: ../Doc/library/mimetypes.rst:133
 msgid ""
 "When *strict* is ``True`` (the default), the mapping will be added to the "
 "official MIME types, otherwise to the non-standard ones."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:124
+#: ../Doc/library/mimetypes.rst:139
 msgid ""
 "Flag indicating whether or not the global data structures have been "
 "initialized. This is set to ``True`` by :func:`init`."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:132
+#: ../Doc/library/mimetypes.rst:147
 msgid ""
 "List of type map file names commonly installed.  These files are typically "
 "named :file:`mime.types` and are installed in different locations by "
 "different packages."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:139
+#: ../Doc/library/mimetypes.rst:154
 msgid ""
 "Dictionary mapping suffixes to suffixes.  This is used to allow recognition "
 "of encoded files for which the encoding and the type are indicated by the "
@@ -186,36 +199,36 @@ msgid ""
 "`.tar.gz` to allow the encoding and type to be recognized separately."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:147
+#: ../Doc/library/mimetypes.rst:162
 msgid "Dictionary mapping filename extensions to encoding types."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:152
+#: ../Doc/library/mimetypes.rst:167
 msgid "Dictionary mapping filename extensions to MIME types."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:157
+#: ../Doc/library/mimetypes.rst:172
 msgid ""
 "Dictionary mapping filename extensions to non-standard, but commonly found "
 "MIME types."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:161
+#: ../Doc/library/mimetypes.rst:176
 msgid "An example usage of the module::"
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:178
+#: ../Doc/library/mimetypes.rst:193
 msgid "MimeTypes Objects"
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:180
+#: ../Doc/library/mimetypes.rst:195
 msgid ""
 "The :class:`MimeTypes` class may be useful for applications which may want "
 "more than one MIME-type database; it provides an interface similar to the "
 "one of the :mod:`mimetypes` module."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:187
+#: ../Doc/library/mimetypes.rst:202
 msgid ""
 "This class represents a MIME-types database.  By default, it provides access "
 "to the same database as the rest of this module. The initial database is a "
@@ -225,13 +238,13 @@ msgid ""
 "cleared before loading additional data if the default data is not desired."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:194
+#: ../Doc/library/mimetypes.rst:209
 msgid ""
 "The optional *filenames* parameter can be used to cause additional files to "
 "be loaded \"on top\" of the default database."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:200
+#: ../Doc/library/mimetypes.rst:215
 msgid ""
 "Dictionary mapping suffixes to suffixes.  This is used to allow recognition "
 "of encoded files for which the encoding and the type are indicated by the "
@@ -240,13 +253,13 @@ msgid ""
 "is initially a copy of the global :data:`suffix_map` defined in the module."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:209
+#: ../Doc/library/mimetypes.rst:224
 msgid ""
 "Dictionary mapping filename extensions to encoding types.  This is initially "
 "a copy of the global :data:`encodings_map` defined in the module."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:215
+#: ../Doc/library/mimetypes.rst:230
 msgid ""
 "Tuple containing two dictionaries, mapping filename extensions to MIME "
 "types: the first dictionary is for the non-standards types and the second "
@@ -254,7 +267,7 @@ msgid ""
 "and :data:`types_map`."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:223
+#: ../Doc/library/mimetypes.rst:238
 msgid ""
 "Tuple containing two dictionaries, mapping MIME types to a list of filename "
 "extensions: the first dictionary is for the non-standards types and the "
@@ -262,52 +275,79 @@ msgid ""
 "`common_types` and :data:`types_map`."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:231
+#: ../Doc/library/mimetypes.rst:246
 msgid ""
 "Similar to the :func:`guess_extension` function, using the tables stored as "
 "part of the object."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:237
+#: ../Doc/library/mimetypes.rst:252
 msgid ""
 "Similar to the :func:`guess_type` function, using the tables stored as part "
 "of the object."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:243
+#: ../Doc/library/mimetypes.rst:258
+msgid ""
+"Similar to the :func:`guess_file_type` function, using the tables stored as "
+"part of the object."
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:266
 msgid ""
 "Similar to the :func:`guess_all_extensions` function, using the tables "
 "stored as part of the object."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:249
+#: ../Doc/library/mimetypes.rst:272
 msgid ""
 "Load MIME information from a file named *filename*.  This uses :meth:"
 "`readfp` to parse the file."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:252
+#: ../Doc/library/mimetypes.rst:275
 msgid ""
 "If *strict* is ``True``, information will be added to list of standard "
 "types, else to the list of non-standard types."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:258
+#: ../Doc/library/mimetypes.rst:281
 msgid ""
 "Load MIME type information from an open file *fp*.  The file must have the "
 "format of the standard :file:`mime.types` files."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:261 ../Doc/library/mimetypes.rst:271
+#: ../Doc/library/mimetypes.rst:284 ../Doc/library/mimetypes.rst:294
 msgid ""
 "If *strict* is ``True``, information will be added to the list of standard "
 "types, else to the list of non-standard types."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:267
+#: ../Doc/library/mimetypes.rst:290
 msgid "Load MIME type information from the Windows registry."
 msgstr ""
 
-#: ../Doc/library/mimetypes.rst:270
+#: ../Doc/library/mimetypes.rst:292
 msgid ":ref:`Availability <availability>`: Windows."
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:11 ../Doc/library/mimetypes.rst:31
+#: ../Doc/library/mimetypes.rst:64
+msgid "MIME"
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:11
+msgid "content type"
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:31 ../Doc/library/mimetypes.rst:64
+msgid "headers"
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:145
+msgid "file"
+msgstr ""
+
+#: ../Doc/library/mimetypes.rst:145
+msgid "mime.types"
 msgstr ""

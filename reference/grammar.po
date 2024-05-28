@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/reference/grammar.rst:2
+#: ../Doc/reference/grammar.rst:4
 msgid "Full Grammar specification"
 msgstr ""
 
-#: ../Doc/reference/grammar.rst:4
+#: ../Doc/reference/grammar.rst:6
 msgid ""
 "This is the full Python grammar, derived directly from the grammar used to "
 "generate the CPython parser (see :source:`Grammar/python.gram`). The version "
 "here omits details related to code generation and error recovery."
 msgstr ""
 
-#: ../Doc/reference/grammar.rst:9
+#: ../Doc/reference/grammar.rst:11
 msgid ""
 "The notation is a mixture of `EBNF <https://en.wikipedia.org/wiki/"
 "Extended_Backus%E2%80%93Naur_form>`_ and `PEG <https://en.wikipedia.org/wiki/"

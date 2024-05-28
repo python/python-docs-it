@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,9 +35,8 @@ msgstr ""
 msgid ""
 "The :class:`FieldStorage` class can typically be replaced with :func:`urllib."
 "parse.parse_qsl` for ``GET`` and ``HEAD`` requests, and the :mod:`email."
-"message` module or `multipart <https://pypi.org/project/multipart/>`_ for "
-"``POST`` and ``PUT``. Most :ref:`utility functions <functions-in-cgi-"
-"module>` have replacements."
+"message` module or :pypi:`multipart` for ``POST`` and ``PUT``. Most :ref:"
+"`utility functions <functions-in-cgi-module>` have replacements."
 msgstr ""
 
 #: ../Doc/library/cgi.rst:30
@@ -58,7 +57,7 @@ msgid ""
 "of this variable is ``0``, meaning the request size is unlimited."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
+#: ../Doc/includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
@@ -410,8 +409,7 @@ msgid ""
 "This function, like the rest of the :mod:`cgi` module, is deprecated. It can "
 "be replaced with the functionality in the :mod:`email` package (e.g. :class:"
 "`email.message.EmailMessage`/:class:`email.message.Message`) which "
-"implements the same MIME RFCs, or with the `multipart <https://pypi.org/"
-"project/multipart/>`__ PyPI project."
+"implements the same MIME RFCs, or with the :pypi:`multipart` PyPI project."
 msgstr ""
 
 #: ../Doc/library/cgi.rst:342
@@ -697,4 +695,49 @@ msgid ""
 "the field values should be supplied in, but knowing whether a request was "
 "received from a conforming browser, or even from a browser at all, is "
 "tedious and error-prone."
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "WWW"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "server"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10 ../Doc/library/cgi.rst:389
+#: ../Doc/library/cgi.rst:462
+msgid "CGI"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "protocol"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "HTTP"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "MIME"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "headers"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "URL"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:10
+msgid "Common Gateway Interface"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:389
+msgid "security"
+msgstr ""
+
+#: ../Doc/library/cgi.rst:462
+msgid "debugging"
 msgstr ""

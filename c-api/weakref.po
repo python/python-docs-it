@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,17 +31,19 @@ msgstr ""
 
 #: ../Doc/c-api/weakref.rst:16
 msgid ""
-"Return true if *ob* is either a reference or proxy object.  This function "
-"always succeeds."
+"Return non-zero if *ob* is either a reference or proxy object.  This "
+"function always succeeds."
 msgstr ""
 
 #: ../Doc/c-api/weakref.rst:22
 msgid ""
-"Return true if *ob* is a reference object.  This function always succeeds."
+"Return non-zero if *ob* is a reference object.  This function always "
+"succeeds."
 msgstr ""
 
 #: ../Doc/c-api/weakref.rst:27
-msgid "Return true if *ob* is a proxy object.  This function always succeeds."
+msgid ""
+"Return non-zero if *ob* is a proxy object.  This function always succeeds."
 msgstr ""
 
 #: ../Doc/c-api/weakref.rst:32
@@ -52,7 +54,7 @@ msgid ""
 "a callable object that receives notification when *ob* is garbage collected; "
 "it should accept a single parameter, which will be the weak reference object "
 "itself. *callback* may also be ``None`` or ``NULL``.  If *ob* is not a "
-"weakly referencable object, or if *callback* is not callable, ``None``, or "
+"weakly referenceable object, or if *callback* is not callable, ``None``, or "
 "``NULL``, this will return ``NULL`` and raise :exc:`TypeError`."
 msgstr ""
 
@@ -64,17 +66,37 @@ msgid ""
 "can be a callable object that receives notification when *ob* is garbage "
 "collected; it should accept a single parameter, which will be the weak "
 "reference object itself. *callback* may also be ``None`` or ``NULL``.  If "
-"*ob* is not a weakly referencable object, or if *callback* is not callable, "
+"*ob* is not a weakly referenceable object, or if *callback* is not callable, "
 "``None``, or ``NULL``, this will return ``NULL`` and raise :exc:`TypeError`."
 msgstr ""
 
 #: ../Doc/c-api/weakref.rst:56
 msgid ""
-"Return the referenced object from a weak reference, *ref*.  If the referent "
-"is no longer live, returns :const:`Py_None`."
+"Get a :term:`strong reference` to the referenced object from a weak "
+"reference, *ref*, into *\\*pobj*."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:59
+msgid ""
+"On success, set *\\*pobj* to a new :term:`strong reference` to the "
+"referenced object and return 1."
 msgstr ""
 
 #: ../Doc/c-api/weakref.rst:61
+msgid "If the reference is dead, set *\\*pobj* to ``NULL`` and return 0."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:62
+msgid "On error, raise an exception and return -1."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:69
+msgid ""
+"Return a :term:`borrowed reference` to the referenced object from a weak "
+"reference, *ref*.  If the referent is no longer live, returns ``Py_None``."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:74
 msgid ""
 "This function returns a :term:`borrowed reference` to the referenced object. "
 "This means that you should always call :c:func:`Py_INCREF` on the object "
@@ -82,6 +104,23 @@ msgid ""
 "reference."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:69
+#: ../Doc/c-api/weakref.rst:80 ../Doc/c-api/weakref.rst:88
+msgid "Use :c:func:`PyWeakref_GetRef` instead."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:85
 msgid "Similar to :c:func:`PyWeakref_GetObject`, but does no error checking."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:93
+msgid ""
+"This function is called by the :c:member:`~PyTypeObject.tp_dealloc` handler "
+"to clear weak references."
+msgstr ""
+
+#: ../Doc/c-api/weakref.rst:96
+msgid ""
+"This iterates through the weak references for *object* and calls callbacks "
+"for those references which have one. It returns when all callbacks have been "
+"attempted."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "This table contains all events raised by :func:`sys.audit` or :c:func:"
 "`PySys_Audit` calls throughout the CPython runtime and the standard "
-"library.  These calls were added in 3.8.0 or later (see :pep:`578`)."
+"library.  These calls were added in 3.8 or later (see :pep:`578`)."
 msgstr ""
 
 #: ../Doc/library/audit_events.rst:12
@@ -115,4 +115,8 @@ msgstr ""
 
 #: ../Doc/library/audit_events.rst:46
 msgid "``obj``"
+msgstr ""
+
+#: ../Doc/library/audit_events.rst:3
+msgid "audit events"
 msgstr ""

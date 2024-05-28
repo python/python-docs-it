@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -310,4 +310,20 @@ msgid ""
 "primarily meant to do echo cancellation.  A reasonably fast way to do this "
 "is to pick the most energetic piece of the output sample, locate that in the "
 "input sample and subtract the whole output sample from the input sample::"
+msgstr ""
+
+#: ../Doc/library/audioop.rst:24
+msgid "Intel/DVI ADPCM"
+msgstr ""
+
+#: ../Doc/library/audioop.rst:24
+msgid "ADPCM, Intel/DVI"
+msgstr ""
+
+#: ../Doc/library/audioop.rst:24
+msgid "a-LAW"
+msgstr ""
+
+#: ../Doc/library/audioop.rst:24
+msgid "u-LAW"
 msgstr ""

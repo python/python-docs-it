@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,11 +116,11 @@ msgstr ""
 msgid ""
 "The header files are typically installed with Python.  On Unix, these  are "
 "located in the directories :file:`{prefix}/include/pythonversion/` and :file:"
-"`{exec_prefix}/include/pythonversion/`, where :envvar:`prefix` and :envvar:"
-"`exec_prefix` are defined by the corresponding parameters to Python's :"
-"program:`configure` script and *version* is ``'%d.%d' % sys."
-"version_info[:2]``.  On Windows, the headers are installed in :file:"
-"`{prefix}/include`, where :envvar:`prefix` is the installation directory "
+"`{exec_prefix}/include/pythonversion/`, where :option:`prefix <--prefix>` "
+"and :option:`exec_prefix <--exec-prefix>` are defined by the corresponding "
+"parameters to Python's :program:`configure` script and *version* is ``'%d."
+"%d' % sys.version_info[:2]``.  On Windows, the headers are installed in :"
+"file:`{prefix}/include`, where ``prefix`` is the installation directory "
 "specified to the installer."
 msgstr ""
 
@@ -130,8 +130,8 @@ msgid ""
 "compiler's search path for includes.  Do *not* place the parent directories "
 "on the search path and then use ``#include <pythonX.Y/Python.h>``; this will "
 "break on multi-platform builds since the platform independent headers under :"
-"envvar:`prefix` include the platform specific headers from :envvar:"
-"`exec_prefix`."
+"option:`prefix <--prefix>` include the platform specific headers from :"
+"option:`exec_prefix <--exec-prefix>`."
 msgstr ""
 
 #: ../Doc/c-api/intro.rst:95
@@ -154,95 +154,111 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/intro.rst:110
+msgid ""
+"Declare an extension module ``PyInit`` initialization function. The function "
+"return type is :c:expr:`PyObject*`. The macro declares any special linkage "
+"declarations required by the platform, and for C++ declares the function as "
+"``extern \"C\"``."
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:115
+msgid ""
+"The initialization function must be named :samp:`PyInit_{name}`, where "
+"*name* is the name of the module, and should be the only non-\\ ``static`` "
+"item defined in the module file. Example::"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:134
 msgid "Return the absolute value of ``x``."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:116
+#: ../Doc/c-api/intro.rst:140
 msgid ""
 "Ask the compiler to always inline a static inline function. The compiler can "
 "ignore it and decides to not inline the function."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:119
+#: ../Doc/c-api/intro.rst:143
 msgid ""
 "It can be used to inline performance critical static inline functions when "
 "building Python in debug mode with function inlining disabled. For example, "
 "MSC disables function inlining when building in debug mode."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:123
+#: ../Doc/c-api/intro.rst:147
 msgid ""
 "Marking blindly a static inline function with Py_ALWAYS_INLINE can result in "
 "worse performances (due to increased code size for example). The compiler is "
 "usually smarter than the developer for the cost/benefit analysis."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:127
+#: ../Doc/c-api/intro.rst:151
 msgid ""
-"If Python is :ref:`built in debug mode <debug-build>` (if the ``Py_DEBUG`` "
-"macro is defined), the :c:macro:`Py_ALWAYS_INLINE` macro does nothing."
+"If Python is :ref:`built in debug mode <debug-build>` (if the :c:macro:"
+"`Py_DEBUG` macro is defined), the :c:macro:`Py_ALWAYS_INLINE` macro does "
+"nothing."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:130
+#: ../Doc/c-api/intro.rst:154
 msgid "It must be specified before the function return type. Usage::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:138
+#: ../Doc/c-api/intro.rst:162
 msgid ""
 "Argument must be a character or an integer in the range [-128, 127] or [0, "
 "255].  This macro returns ``c`` cast to an ``unsigned char``."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:143
+#: ../Doc/c-api/intro.rst:167
 msgid ""
 "Use this for deprecated declarations.  The macro must be placed before the "
 "symbol name."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:146 ../Doc/c-api/intro.rst:232
-#: ../Doc/c-api/intro.rst:250
+#: ../Doc/c-api/intro.rst:170 ../Doc/c-api/intro.rst:256
+#: ../Doc/c-api/intro.rst:274
 msgid "Example::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:150
+#: ../Doc/c-api/intro.rst:174
 msgid "MSVC support was added."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:155
+#: ../Doc/c-api/intro.rst:179
 msgid ""
 "Like ``getenv(s)``, but returns ``NULL`` if :option:`-E` was passed on the "
-"command line (i.e. if ``Py_IgnoreEnvironmentFlag`` is set)."
+"command line (see :c:member:`PyConfig.use_environment`)."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:160
+#: ../Doc/c-api/intro.rst:184
 msgid "Return the maximum value between ``x`` and ``y``."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:166
+#: ../Doc/c-api/intro.rst:190
 msgid "Return the size of a structure (``type``) ``member`` in bytes."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:172
+#: ../Doc/c-api/intro.rst:196
 msgid "Return the minimum value between ``x`` and ``y``."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:178
+#: ../Doc/c-api/intro.rst:202
 msgid ""
 "Disable inlining on a function. For example, it reduces the C stack "
 "consumption: useful on LTO+PGO builds which heavily inline code (see :issue:"
 "`33720`)."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:182
+#: ../Doc/c-api/intro.rst:206
 msgid "Usage::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:190
+#: ../Doc/c-api/intro.rst:214
 msgid ""
 "Convert ``x`` to a C string.  E.g. ``Py_STRINGIFY(123)`` returns ``\"123\"``."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:197
+#: ../Doc/c-api/intro.rst:221
 msgid ""
 "Use this when you have a code path that cannot be reached by design. For "
 "example, in the ``default:`` clause in a ``switch`` statement for which all "
@@ -250,20 +266,20 @@ msgid ""
 "where you might be tempted to put an ``assert(0)`` or ``abort()`` call."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:202
+#: ../Doc/c-api/intro.rst:226
 msgid ""
 "In release mode, the macro helps the compiler to optimize the code, and "
 "avoids a warning about unreachable code.  For example, the macro is "
 "implemented with ``__builtin_unreachable()`` on GCC in release mode."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:206
+#: ../Doc/c-api/intro.rst:230
 msgid ""
 "A use for ``Py_UNREACHABLE()`` is following a call a function that never "
 "returns but that is not declared :c:macro:`_Py_NO_RETURN`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:209
+#: ../Doc/c-api/intro.rst:233
 msgid ""
 "If a code path is very unlikely code but can be reached under exceptional "
 "case, this macro must not be used.  For example, under low memory condition "
@@ -272,41 +288,41 @@ msgid ""
 "reported to caller, :c:func:`Py_FatalError` can be used."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:219
+#: ../Doc/c-api/intro.rst:243
 msgid ""
 "Use this for unused arguments in a function definition to silence compiler "
 "warnings. Example: ``int func(int a, int Py_UNUSED(b)) { return a; }``."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:226
+#: ../Doc/c-api/intro.rst:250
 msgid ""
 "Creates a variable with name ``name`` that can be used in docstrings. If "
 "Python is built without docstrings, the value will be empty."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:229
+#: ../Doc/c-api/intro.rst:253
 msgid ""
 "Use :c:macro:`PyDoc_STRVAR` for docstrings to support building Python "
 "without docstrings, as specified in :pep:`7`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:244
+#: ../Doc/c-api/intro.rst:268
 msgid ""
 "Creates a docstring for the given input string or an empty string if "
 "docstrings are disabled."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:247
+#: ../Doc/c-api/intro.rst:271
 msgid ""
 "Use :c:macro:`PyDoc_STR` in specifying docstrings to support building Python "
 "without docstrings, as specified in :pep:`7`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:262
+#: ../Doc/c-api/intro.rst:286
 msgid "Objects, Types and Reference Counts"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:266
+#: ../Doc/c-api/intro.rst:290
 msgid ""
 "Most Python/C API functions have one or more arguments as well as a return "
 "value of type :c:expr:`PyObject*`.  This type is a pointer to an opaque data "
@@ -321,7 +337,7 @@ msgid ""
 "objects."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:277
+#: ../Doc/c-api/intro.rst:301
 msgid ""
 "All Python objects (even Python integers) have a :dfn:`type` and a :dfn:"
 "`reference count`.  An object's type determines what kind of object it is (e."
@@ -332,85 +348,88 @@ msgid ""
 "a Python list."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:288
+#: ../Doc/c-api/intro.rst:312
 msgid "Reference Counts"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:290
+#: ../Doc/c-api/intro.rst:314
 msgid ""
 "The reference count is important because today's computers have a  finite "
-"(and often severely limited) memory size; it counts how many  different "
-"places there are that have a reference to an object.  Such a  place could be "
-"another object, or a global (or static) C variable, or  a local variable in "
-"some C function. When an object's reference count  becomes zero, the object "
-"is deallocated.  If it contains references to  other objects, their "
-"reference count is decremented. Those other  objects may be deallocated in "
-"turn, if this decrement makes their reference count become zero, and so on.  "
-"(There's an obvious problem  with objects that reference each other here; "
-"for now, the solution is  \"don't do that.\")"
+"(and often severely limited) memory size; it counts how many different "
+"places there are that have a :term:`strong reference` to an object. Such a "
+"place could be another object, or a global (or static) C variable, or a "
+"local variable in some C function. When the last :term:`strong reference` to "
+"an object is released (i.e. its reference count becomes zero), the object is "
+"deallocated. If it contains references to other objects, those references "
+"are released. Those other objects may be deallocated in turn, if there are "
+"no more references to them, and so on.  (There's an obvious problem  with "
+"objects that reference each other here; for now, the solution is \"don't do "
+"that.\")"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:305
+#: ../Doc/c-api/intro.rst:331
 msgid ""
-"Reference counts are always manipulated explicitly.  The normal way is  to "
-"use the macro :c:func:`Py_INCREF` to increment an object's reference count "
-"by one, and :c:func:`Py_DECREF` to decrement it by   one.  The :c:func:"
+"Reference counts are always manipulated explicitly.  The normal way is to "
+"use the macro :c:func:`Py_INCREF` to take a new reference to an object (i.e. "
+"increment its reference count by one), and :c:func:`Py_DECREF` to release "
+"that reference (i.e. decrement the reference count by one).  The :c:func:"
 "`Py_DECREF` macro is considerably more complex than the incref one, since it "
 "must check whether the reference count becomes zero and then cause the "
-"object's deallocator to be called. The deallocator is a function pointer "
+"object's deallocator to be called.  The deallocator is a function pointer "
 "contained in the object's type structure.  The type-specific deallocator "
-"takes care of decrementing the reference counts for other objects contained "
-"in the object if this is a compound object type, such as a list, as well as "
-"performing any additional finalization that's needed.  There's no chance "
-"that the reference count can overflow; at least as many bits are used to "
-"hold the reference count as there are distinct memory locations in virtual "
-"memory (assuming ``sizeof(Py_ssize_t) >= sizeof(void*)``). Thus, the "
-"reference count increment is a simple operation."
+"takes care of releasing references for other objects contained in the object "
+"if this is a compound object type, such as a list, as well as performing any "
+"additional finalization that's needed.  There's no chance that the reference "
+"count can overflow; at least as many bits are used to hold the reference "
+"count as there are distinct memory locations in virtual memory (assuming "
+"``sizeof(Py_ssize_t) >= sizeof(void*)``). Thus, the reference count "
+"increment is a simple operation."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:319
+#: ../Doc/c-api/intro.rst:347
 msgid ""
-"It is not necessary to increment an object's reference count for every  "
-"local variable that contains a pointer to an object.  In theory, the  "
-"object's reference count goes up by one when the variable is made to  point "
-"to it and it goes down by one when the variable goes out of  scope.  "
-"However, these two cancel each other out, so at the end the  reference count "
-"hasn't changed.  The only real reason to use the  reference count is to "
-"prevent the object from being deallocated as  long as our variable is "
-"pointing to it.  If we know that there is at  least one other reference to "
-"the object that lives at least as long as our variable, there is no need to "
-"increment the reference count  temporarily. An important situation where "
-"this arises is in objects  that are passed as arguments to C functions in an "
-"extension module  that are called from Python; the call mechanism guarantees "
-"to hold a  reference to every argument for the duration of the call."
+"It is not necessary to hold a :term:`strong reference` (i.e. increment the "
+"reference count) for every local variable that contains a pointer to an "
+"object.  In theory, the  object's reference count goes up by one when the "
+"variable is made to  point to it and it goes down by one when the variable "
+"goes out of  scope.  However, these two cancel each other out, so at the end "
+"the  reference count hasn't changed.  The only real reason to use the  "
+"reference count is to prevent the object from being deallocated as  long as "
+"our variable is pointing to it.  If we know that there is at  least one "
+"other reference to the object that lives at least as long as our variable, "
+"there is no need to take a new :term:`strong reference` (i.e. increment the "
+"reference count) temporarily. An important situation where this arises is in "
+"objects  that are passed as arguments to C functions in an extension module  "
+"that are called from Python; the call mechanism guarantees to hold a  "
+"reference to every argument for the duration of the call."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:333
+#: ../Doc/c-api/intro.rst:363
 msgid ""
 "However, a common pitfall is to extract an object from a list and hold on to "
-"it for a while without incrementing its reference count. Some other "
-"operation might conceivably remove the object from the list, decrementing "
-"its reference count and possibly deallocating it. The real danger is that "
-"innocent-looking operations may invoke arbitrary Python code which could do "
-"this; there is a code path which allows control to flow back to the user "
-"from a :c:func:`Py_DECREF`, so almost any operation is potentially dangerous."
+"it for a while without taking a new reference.  Some other operation might "
+"conceivably remove the object from the list, releasing that reference, and "
+"possibly deallocating it. The real danger is that innocent-looking "
+"operations may invoke arbitrary Python code which could do this; there is a "
+"code path which allows control to flow back to the user from a :c:func:"
+"`Py_DECREF`, so almost any operation is potentially dangerous."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:341
+#: ../Doc/c-api/intro.rst:371
 msgid ""
 "A safe approach is to always use the generic operations (functions  whose "
 "name begins with ``PyObject_``, ``PyNumber_``, ``PySequence_`` or "
-"``PyMapping_``). These operations always increment the reference count of "
-"the object they return. This leaves the caller with the responsibility to "
-"call :c:func:`Py_DECREF` when they are done with the result; this soon "
-"becomes second nature."
+"``PyMapping_``). These operations always create a new :term:`strong "
+"reference` (i.e. increment the reference count) of the object they return. "
+"This leaves the caller with the responsibility to call :c:func:`Py_DECREF` "
+"when they are done with the result; this soon becomes second nature."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:351
+#: ../Doc/c-api/intro.rst:382
 msgid "Reference Count Details"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:353
+#: ../Doc/c-api/intro.rst:384
 msgid ""
 "The reference count behavior of functions in the Python/C API is best  "
 "explained in terms of *ownership of references*.  Ownership pertains to "
@@ -418,8 +437,8 @@ msgid ""
 "shared).  \"Owning a reference\" means being responsible for calling "
 "Py_DECREF on it when the reference is no longer needed.  Ownership can also "
 "be transferred, meaning that the code that receives ownership of the "
-"reference then becomes responsible for eventually decref'ing it by calling :"
-"c:func:`Py_DECREF` or :c:func:`Py_XDECREF` when it's no longer needed---or "
+"reference then becomes responsible for eventually releasing it by calling :c:"
+"func:`Py_DECREF` or :c:func:`Py_XDECREF` when it's no longer needed---or "
 "passing on this responsibility (usually to its caller). When a function "
 "passes ownership of a reference on to its caller, the caller is said to "
 "receive a *new* reference.  When no ownership is transferred, the caller is "
@@ -427,7 +446,7 @@ msgid ""
 "`borrowed reference`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:366
+#: ../Doc/c-api/intro.rst:397
 msgid ""
 "Conversely, when a calling function passes in a reference to an  object, "
 "there are two possibilities: the function *steals* a  reference to the "
@@ -436,7 +455,7 @@ msgid ""
 "reference, and you are not responsible for it any longer."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:376
+#: ../Doc/c-api/intro.rst:407
 msgid ""
 "Few functions steal references; the two notable exceptions are :c:func:"
 "`PyList_SetItem` and :c:func:`PyTuple_SetItem`, which  steal a reference to "
@@ -448,7 +467,7 @@ msgid ""
 "below)::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:391
+#: ../Doc/c-api/intro.rst:422
 msgid ""
 "Here, :c:func:`PyLong_FromLong` returns a new reference which is immediately "
 "stolen by :c:func:`PyTuple_SetItem`.  When you want to keep using an object "
@@ -456,7 +475,7 @@ msgid ""
 "another reference before calling the reference-stealing function."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:396
+#: ../Doc/c-api/intro.rst:427
 msgid ""
 "Incidentally, :c:func:`PyTuple_SetItem` is the *only* way to set tuple "
 "items; :c:func:`PySequence_SetItem` and :c:func:`PyObject_SetItem` refuse to "
@@ -464,13 +483,13 @@ msgid ""
 "func:`PyTuple_SetItem` for tuples that you are creating yourself."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:401
+#: ../Doc/c-api/intro.rst:432
 msgid ""
 "Equivalent code for populating a list can be written using :c:func:"
 "`PyList_New` and :c:func:`PyList_SetItem`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:404
+#: ../Doc/c-api/intro.rst:435
 msgid ""
 "However, in practice, you will rarely use these ways of creating and "
 "populating a tuple or list.  There's a generic function, :c:func:"
@@ -479,18 +498,18 @@ msgid ""
 "be replaced by the following (which also takes care of the error checking)::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:415
+#: ../Doc/c-api/intro.rst:446
 msgid ""
 "It is much more common to use :c:func:`PyObject_SetItem` and friends with "
 "items whose references you are only borrowing, like arguments that were "
 "passed in to the function you are writing.  In that case, their behaviour "
-"regarding reference counts is much saner, since you don't have to increment "
-"a reference count so you can give a reference away (\"have it be stolen\").  "
+"regarding references is much saner, since you don't have to take a new "
+"reference just so you can give that reference away (\"have it be stolen\").  "
 "For example, this function sets all items of a list (actually, any mutable "
 "sequence) to a given item::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:445
+#: ../Doc/c-api/intro.rst:476
 msgid ""
 "The situation is slightly different for function return values.   While "
 "passing a reference to most functions does not change your  ownership "
@@ -503,7 +522,7 @@ msgid ""
 "becomes the owner of the reference)."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:454
+#: ../Doc/c-api/intro.rst:485
 msgid ""
 "It is important to realize that whether you own a reference returned  by a "
 "function depends on which function you call only --- *the plumage* (the type "
@@ -514,18 +533,18 @@ msgid ""
 "the same arguments), you do own a reference to the returned object."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:466
+#: ../Doc/c-api/intro.rst:497
 msgid ""
 "Here is an example of how you could write a function that computes the sum "
 "of the items in a list of integers; once using  :c:func:`PyList_GetItem`, "
 "and once using :c:func:`PySequence_GetItem`. ::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:530
+#: ../Doc/c-api/intro.rst:561
 msgid "Types"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:532
+#: ../Doc/c-api/intro.rst:563
 msgid ""
 "There are few other data types that play a significant role in  the Python/C "
 "API; most are simple C types such as :c:expr:`int`,  :c:expr:`long`, :c:expr:"
@@ -536,7 +555,7 @@ msgid ""
 "that use them."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:542
+#: ../Doc/c-api/intro.rst:573
 msgid ""
 "A signed integral type such that ``sizeof(Py_ssize_t) == sizeof(size_t)``. "
 "C99 doesn't define such a thing directly (size_t is an unsigned integral "
@@ -544,11 +563,11 @@ msgid ""
 "positive value of type :c:type:`Py_ssize_t`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:551
+#: ../Doc/c-api/intro.rst:582
 msgid "Exceptions"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:553
+#: ../Doc/c-api/intro.rst:584
 msgid ""
 "The Python programmer only needs to deal with exceptions if specific  error "
 "handling is required; unhandled exceptions are automatically  propagated to "
@@ -557,7 +576,7 @@ msgid ""
 "stack traceback."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:561
+#: ../Doc/c-api/intro.rst:592
 msgid ""
 "For C programmers, however, error checking always has to be explicit.  All "
 "functions in the Python/C API can raise exceptions, unless an explicit claim "
@@ -572,7 +591,7 @@ msgid ""
 "explicitly documented."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:576
+#: ../Doc/c-api/intro.rst:607
 msgid ""
 "Exception state is maintained in per-thread storage (this is  equivalent to "
 "using global storage in an unthreaded application).  A  thread can be in one "
@@ -585,7 +604,7 @@ msgid ""
 "clears the exception state."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:586
+#: ../Doc/c-api/intro.rst:617
 msgid ""
 "The full exception state consists of three objects (all of which can  be "
 "``NULL``): the exception type, the corresponding exception  value, and the "
@@ -598,7 +617,7 @@ msgid ""
 "``sys.exc_info()`` and friends."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:598
+#: ../Doc/c-api/intro.rst:629
 msgid ""
 "Note that starting with Python 1.5, the preferred, thread-safe way to access "
 "the exception state from Python code is to call the function :func:`sys."
@@ -612,7 +631,7 @@ msgid ""
 "referenced by the stack frames in the traceback."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:609
+#: ../Doc/c-api/intro.rst:640
 msgid ""
 "As a general principle, a function that calls another function to  perform "
 "some task should check whether the called function raised an  exception, and "
@@ -623,20 +642,20 @@ msgid ""
 "of the error."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:618
+#: ../Doc/c-api/intro.rst:649
 msgid ""
 "A simple example of detecting exceptions and passing them on is shown in "
-"the :c:func:`sum_sequence` example above.  It so happens that this example "
+"the :c:func:`!sum_sequence` example above.  It so happens that this example "
 "doesn't need to clean up any owned references when it detects an error.  The "
 "following example function shows some error cleanup.  First, to remind you "
 "why you like Python, we show the equivalent Python code::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:633
+#: ../Doc/c-api/intro.rst:664
 msgid "Here is the corresponding C code, in all its glory::"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:685
+#: ../Doc/c-api/intro.rst:716
 msgid ""
 "This example represents an endorsed use of the ``goto`` statement  in C! It "
 "illustrates the use of :c:func:`PyErr_ExceptionMatches` and :c:func:"
@@ -649,11 +668,11 @@ msgid ""
 "success after the final call made is successful."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:699
+#: ../Doc/c-api/intro.rst:730
 msgid "Embedding Python"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:701
+#: ../Doc/c-api/intro.rst:732
 msgid ""
 "The one important task that only embedders (as opposed to extension writers) "
 "of the Python interpreter have to worry about is the initialization, and "
@@ -661,7 +680,7 @@ msgid ""
 "the interpreter can only be used after the interpreter has been initialized."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:714
+#: ../Doc/c-api/intro.rst:745
 msgid ""
 "The basic initialization function is :c:func:`Py_Initialize`. This "
 "initializes the table of loaded modules, and creates the fundamental "
@@ -669,7 +688,7 @@ msgid ""
 "initializes the module search path (``sys.path``)."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:719
+#: ../Doc/c-api/intro.rst:750
 msgid ""
 ":c:func:`Py_Initialize` does not set the \"script argument list\"  (``sys."
 "argv``). If this variable is needed by Python code that will be executed "
@@ -677,7 +696,7 @@ msgid ""
 "must be set: see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:724
+#: ../Doc/c-api/intro.rst:755
 msgid ""
 "On most systems (in particular, on Unix and Windows, although the details "
 "are slightly different), :c:func:`Py_Initialize` calculates the module "
@@ -689,7 +708,7 @@ msgid ""
 "on the shell command search path (the environment variable :envvar:`PATH`)."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:733
+#: ../Doc/c-api/intro.rst:764
 msgid ""
 "For instance, if the Python executable is found in :file:`/usr/local/bin/"
 "python`, it will assume that the libraries are in :file:`/usr/local/lib/"
@@ -700,18 +719,18 @@ msgid ""
 "in front of the standard path by setting :envvar:`PYTHONPATH`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:748
+#: ../Doc/c-api/intro.rst:778
 msgid ""
-"The embedding application can steer the search by calling "
-"``Py_SetProgramName(file)`` *before* calling  :c:func:`Py_Initialize`.  Note "
-"that :envvar:`PYTHONHOME` still overrides this and :envvar:`PYTHONPATH` is "
-"still inserted in front of the standard path.  An application that requires "
-"total control has to provide its own implementation of :c:func:"
+"The embedding application can steer the search by setting :c:member:"
+"`PyConfig.program_name` *before* calling :c:func:`Py_InitializeFromConfig`. "
+"Note that :envvar:`PYTHONHOME` still overrides this and :envvar:`PYTHONPATH` "
+"is still inserted in front of the standard path.  An application that "
+"requires total control has to provide its own implementation of :c:func:"
 "`Py_GetPath`, :c:func:`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, and :c:"
 "func:`Py_GetProgramFullPath` (all defined in :file:`Modules/getpath.c`)."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:758
+#: ../Doc/c-api/intro.rst:789
 msgid ""
 "Sometimes, it is desirable to \"uninitialize\" Python.  For instance,  the "
 "application may want to start over (make another call to :c:func:"
@@ -725,18 +744,18 @@ msgid ""
 "released."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:772
+#: ../Doc/c-api/intro.rst:803
 msgid "Debugging Builds"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:774
+#: ../Doc/c-api/intro.rst:805
 msgid ""
 "Python can be built with several macros to enable extra checks of the "
 "interpreter and extension modules.  These checks tend to add a large amount "
 "of overhead to the runtime so they are not enabled by default."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:778
+#: ../Doc/c-api/intro.rst:809
 msgid ""
 "A full list of the various types of debugging builds is in the file :file:"
 "`Misc/SpecialBuilds.txt` in the Python source distribution. Builds are "
@@ -746,24 +765,24 @@ msgid ""
 "section."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:784
+#: ../Doc/c-api/intro.rst:817
 msgid ""
-"Compiling the interpreter with the :c:macro:`Py_DEBUG` macro defined "
+"Compiling the interpreter with the :c:macro:`!Py_DEBUG` macro defined "
 "produces what is generally meant by :ref:`a debug build of Python <debug-"
-"build>`. :c:macro:`Py_DEBUG` is enabled in the Unix build by adding :option:"
+"build>`. :c:macro:`!Py_DEBUG` is enabled in the Unix build by adding :option:"
 "`--with-pydebug` to the :file:`./configure` command. It is also implied by "
-"the presence of the not-Python-specific :c:macro:`_DEBUG` macro.  When :c:"
-"macro:`Py_DEBUG` is enabled in the Unix build, compiler optimization is "
+"the presence of the not-Python-specific :c:macro:`!_DEBUG` macro.  When :c:"
+"macro:`!Py_DEBUG` is enabled in the Unix build, compiler optimization is "
 "disabled."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:792
+#: ../Doc/c-api/intro.rst:825
 msgid ""
 "In addition to the reference count debugging described below, extra checks "
 "are performed, see :ref:`Python Debug Build <debug-build>`."
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:795
+#: ../Doc/c-api/intro.rst:828
 msgid ""
 "Defining :c:macro:`Py_TRACE_REFS` enables reference tracing (see the :option:"
 "`configure --with-trace-refs option <--with-trace-refs>`). When defined, a "
@@ -773,8 +792,132 @@ msgid ""
 "this happens after every statement run by the interpreter.)"
 msgstr ""
 
-#: ../Doc/c-api/intro.rst:802
+#: ../Doc/c-api/intro.rst:835
 msgid ""
 "Please refer to :file:`Misc/SpecialBuilds.txt` in the Python source "
 "distribution for more detailed information."
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:288
+msgid "object"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:288
+msgid "type"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:327
+msgid "Py_INCREF (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:327
+msgid "Py_DECREF (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:403
+msgid "PyList_SetItem (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:403
+msgid "PyTuple_SetItem (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:474
+msgid "set_all()"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:493
+msgid "PyList_GetItem (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:493
+msgid "PySequence_GetItem (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:523
+msgid "sum_list()"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:555 ../Doc/c-api/intro.rst:647
+msgid "sum_sequence()"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:590
+msgid "PyErr_Occurred (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:603
+msgid "PyErr_SetString (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:603 ../Doc/c-api/intro.rst:711
+msgid "PyErr_Clear (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:627
+msgid "exc_info (in module sys)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:662 ../Doc/c-api/intro.rst:709
+msgid "incr_item()"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:711
+msgid "PyErr_ExceptionMatches (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:711
+msgid "Py_XDECREF (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "Py_Initialize (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "module"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "builtins"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "__main__"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "sys"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "search"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "path"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:737
+msgid "path (in module sys)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:772
+msgid "Py_GetPath (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:772
+msgid "Py_GetPrefix (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:772
+msgid "Py_GetExecPrefix (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:772
+msgid "Py_GetProgramFullPath (C function)"
+msgstr ""
+
+#: ../Doc/c-api/intro.rst:787
+msgid "Py_IsInitialized (C function)"
 msgstr ""

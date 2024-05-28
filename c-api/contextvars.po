@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,14 +21,14 @@ msgstr ""
 msgid "Context Variables Objects"
 msgstr ""
 
-#: ../Doc/c-api/contextvars.rst:13
+#: ../Doc/c-api/contextvars.rst:15
 msgid ""
 "In Python 3.7.1 the signatures of all context variables C APIs were "
 "**changed** to use :c:type:`PyObject` pointers instead of :c:type:"
 "`PyContext`, :c:type:`PyContextVar`, and :c:type:`PyContextToken`, e.g.::"
 msgstr ""
 
-#: ../Doc/c-api/contextvars.rst:24
+#: ../Doc/c-api/contextvars.rst:26
 msgid "See :issue:`34762` for more details."
 msgstr ""
 

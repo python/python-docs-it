@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2024, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../Doc/c-api/hash.rst:4
+msgid "PyHash API"
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:6
+msgid ""
+"See also the :c:member:`PyTypeObject.tp_hash` member and :ref:`numeric-hash`."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:10
+msgid "Hash value type: signed integer."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:16
+msgid "Hash value type: unsigned integer."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:22
+msgid ""
+"The `Mersenne prime <https://en.wikipedia.org/wiki/Mersenne_prime>`_ ``P = "
+"2**n -1``, used for numeric hash scheme."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:28
+msgid "The exponent ``n`` of ``P`` in :c:macro:`PyHASH_MODULUS`."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:34
+msgid "The hash value returned for a positive infinity."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:40
+msgid "The multiplier used for the imaginary part of a complex number."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:46
+msgid "Hash function definition used by :c:func:`PyHash_GetFuncDef`."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:54
+msgid "Hash function name (UTF-8 encoded string)."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:58
+msgid "Internal size of the hash value in bits."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:62
+msgid "Size of seed input in bits."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:69
+msgid "Get the hash function definition."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:72
+msgid ":pep:`456` \"Secure and interchangeable hash algorithm\"."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:79
+msgid ""
+"Hash a pointer value: process the pointer value as an integer (cast it to "
+"``uintptr_t`` internally). The pointer is not dereferenced."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:82
+msgid "The function cannot fail: it cannot return ``-1``."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:88
+msgid ""
+"Generic hashing function that is meant to be put into a type object's "
+"``tp_hash`` slot. Its result only depends on the object's identity."
+msgstr ""
+
+#: ../Doc/c-api/hash.rst:93
+msgid "In CPython, it is equivalent to :c:func:`Py_HashPointer`."
+msgstr ""

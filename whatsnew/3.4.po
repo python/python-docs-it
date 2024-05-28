@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,10 +375,10 @@ msgstr ""
 msgid ""
 "However, as this migration is currently still incomplete, the legacy "
 "versions of those guides remaining available as :ref:`install-index` and :"
-"ref:`distutils-index`."
+"ref:`setuptools-index`."
 msgstr ""
 
-#: ../Doc/whatsnew/3.4.rst:255
+#: ../Doc/whatsnew/3.4.rst:254
 msgid ":pep:`453` -- Explicit bootstrapping of pip in Python installations"
 msgstr ""
 
@@ -688,7 +688,7 @@ msgid ""
 "enumeration values."
 msgstr ""
 
-#: ../Doc/whatsnew/3.4.rst:519
+#: ../Doc/whatsnew/3.4.rst:518
 msgid ":pep:`435` -- Adding an Enum type to the Python standard library"
 msgstr ""
 
@@ -813,23 +813,23 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:608
 msgid ""
-"The :meth:`~aifc.aifc.getparams` method now returns a namedtuple rather than "
-"a plain tuple.  (Contributed by Claudiu Popa in :issue:`17818`.)"
+"The :meth:`!getparams` method now returns a namedtuple rather than a plain "
+"tuple.  (Contributed by Claudiu Popa in :issue:`17818`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:611
 msgid ""
-":func:`aifc.open` now supports the context management protocol: when used in "
-"a :keyword:`with` block, the :meth:`~aifc.aifc.close` method of the returned "
-"object will be called automatically at the end of the block.  (Contributed "
-"by Serhiy Storchacha in :issue:`16486`.)"
+":func:`!aifc.open` now supports the context management protocol: when used "
+"in a :keyword:`with` block, the :meth:`!close` method of the returned object "
+"will be called automatically at the end of the block.  (Contributed by "
+"Serhiy Storchacha in :issue:`16486`.)"
 msgstr ""
 
-#: ../Doc/whatsnew/3.4.rst:616
+#: ../Doc/whatsnew/3.4.rst:616 ../Doc/whatsnew/3.4.rst:1543
 msgid ""
-"The :meth:`~aifc.aifc.writeframesraw` and :meth:`~aifc.aifc.writeframes` "
-"methods now accept any :term:`bytes-like object`.  (Contributed by Serhiy "
-"Storchaka in :issue:`8311`.)"
+"The :meth:`!writeframesraw` and :meth:`!writeframes` methods now accept any :"
+"term:`bytes-like object`.  (Contributed by Serhiy Storchaka in :issue:"
+"`8311`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:622
@@ -849,19 +849,19 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:632
 msgid ""
-":mod:`audioop` now supports 24-bit samples.  (Contributed by Serhiy "
+":mod:`!audioop` now supports 24-bit samples.  (Contributed by Serhiy "
 "Storchaka in :issue:`12866`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:635
 msgid ""
-"New :func:`~audioop.byteswap` function converts big-endian samples to little-"
-"endian and vice versa.  (Contributed by Serhiy Storchaka in :issue:`19641`.)"
+"New :func:`!byteswap` function converts big-endian samples to little-endian "
+"and vice versa.  (Contributed by Serhiy Storchaka in :issue:`19641`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:639
 msgid ""
-"All :mod:`audioop` functions now accept any :term:`bytes-like object`.  "
+"All :mod:`!audioop` functions now accept any :term:`bytes-like object`.  "
 "Strings are not accepted: they didn't work before, now they raise an error "
 "right away. (Contributed by Serhiy Storchaka in :issue:`16685`.)"
 msgstr ""
@@ -1029,7 +1029,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:778
 msgid ""
-"A new :ref:`option flag <doctest-options>`, :data:`~doctest.FAIL_FAST`, "
+"A new :ref:`option flag <doctest-options>`, :const:`~doctest.FAIL_FAST`, "
 "halts test running as soon as the first failure is detected.  (Contributed "
 "by R. David Murray and Daniel Urban in :issue:`16522`.)"
 msgstr ""
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:844
 msgid ""
-"New module attribute :data:`~filecmp.DEFAULT_IGNORES` provides the list of "
+"New module attribute :const:`~filecmp.DEFAULT_IGNORES` provides the list of "
 "directories that are used as the default value for the *ignore* parameter of "
 "the :func:`~filecmp.dircmp` function.  (Contributed by Eli Bendersky in :"
 "issue:`15442`.)"
@@ -1158,7 +1158,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:874
 msgid ""
-":func:`~functools.total_ordering` now supports a return value of :const:"
+":func:`~functools.total_ordering` now supports a return value of :data:"
 "`NotImplemented` from the underlying comparison function.  (Contributed by "
 "Katie Miller in :issue:`10042`.)"
 msgstr ""
@@ -1329,8 +1329,8 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:994
 msgid ""
-"The :func:`~importlib.reload` function has been moved from :mod:`imp` to :"
-"mod:`importlib` as part of the :mod:`imp` module deprecation.  (Contributed "
+"The :func:`~importlib.reload` function has been moved from :mod:`!imp` to :"
+"mod:`importlib` as part of the :mod:`!imp` module deprecation.  (Contributed "
 "by Berker Peksag in :issue:`18193`.)"
 msgstr ""
 
@@ -1338,7 +1338,7 @@ msgstr ""
 msgid ""
 ":mod:`importlib.util` now has a :data:`~importlib.util.MAGIC_NUMBER` "
 "attribute providing access to the bytecode version number.  This replaces "
-"the :func:`~imp.get_magic` function in the deprecated :mod:`imp` module. "
+"the :func:`!get_magic` function in the deprecated :mod:`!imp` module. "
 "(Contributed by Brett Cannon in :issue:`18192`.)"
 msgstr ""
 
@@ -1346,7 +1346,7 @@ msgstr ""
 msgid ""
 "New :mod:`importlib.util` functions :func:`~importlib.util."
 "cache_from_source` and :func:`~importlib.util.source_from_cache` replace the "
-"same-named functions in the deprecated :mod:`imp` module.  (Contributed by "
+"same-named functions in the deprecated :mod:`!imp` module.  (Contributed by "
 "Brett Cannon in :issue:`18194`.)"
 msgstr ""
 
@@ -1607,11 +1607,12 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1191
 msgid ""
-":func:`os.open` supports two new flags on platforms that provide them, :data:"
-"`~os.O_PATH` (un-opened file descriptor), and :data:`~os.O_TMPFILE` (unnamed "
-"temporary file; as of 3.4.0 release available only on Linux systems with a "
-"kernel version of 3.11 or newer that have uapi headers).  (Contributed by "
-"Christian Heimes in :issue:`18673` and Benjamin Peterson, respectively.)"
+":func:`os.open` supports two new flags on platforms that provide them, :"
+"const:`~os.O_PATH` (un-opened file descriptor), and :const:`~os.O_TMPFILE` "
+"(unnamed temporary file; as of 3.4.0 release available only on Linux systems "
+"with a kernel version of 3.11 or newer that have uapi headers).  "
+"(Contributed by Christian Heimes in :issue:`18673` and Benjamin Peterson, "
+"respectively.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1199
@@ -1671,9 +1672,9 @@ msgid ""
 "stdlib serialization protocols, with new :func:`~plistlib.load`, :func:"
 "`~plistlib.dump`, :func:`~plistlib.loads`, and :func:`~plistlib.dumps` "
 "functions.  (The older API is now deprecated.)  In addition to the already "
-"supported XML plist format (:data:`~plistlib.FMT_XML`), it also now supports "
-"the binary plist format (:data:`~plistlib.FMT_BINARY`).  (Contributed by "
-"Ronald Oussoren and others in :issue:`14455`.)"
+"supported XML plist format (:const:`~plistlib.FMT_XML`), it also now "
+"supports the binary plist format (:const:`~plistlib.FMT_BINARY`).  "
+"(Contributed by Ronald Oussoren and others in :issue:`14455`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1247
@@ -1791,16 +1792,16 @@ msgstr ""
 #: ../Doc/whatsnew/3.4.rst:1325
 msgid ""
 "On Linux kernel version 2.6.36 or later, there are also some new Linux "
-"specific constants: :attr:`~resource.RLIMIT_MSGQUEUE`, :attr:`~resource."
-"RLIMIT_NICE`, :attr:`~resource.RLIMIT_RTPRIO`, :attr:`~resource."
-"RLIMIT_RTTIME`, and :attr:`~resource.RLIMIT_SIGPENDING`. (Contributed by "
+"specific constants: :const:`~resource.RLIMIT_MSGQUEUE`, :const:`~resource."
+"RLIMIT_NICE`, :const:`~resource.RLIMIT_RTPRIO`, :const:`~resource."
+"RLIMIT_RTTIME`, and :const:`~resource.RLIMIT_SIGPENDING`. (Contributed by "
 "Christian Heimes in :issue:`19324`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1331
 msgid ""
 "On FreeBSD version 9 and later, there some new FreeBSD specific constants: :"
-"attr:`~resource.RLIMIT_SBSIZE`, :attr:`~resource.RLIMIT_SWAP`, and :attr:"
+"const:`~resource.RLIMIT_SBSIZE`, :const:`~resource.RLIMIT_SWAP`, and :const:"
 "`~resource.RLIMIT_NPTS`.  (Contributed by Claudiu Popa in :issue:`19343`.)"
 msgstr ""
 
@@ -1853,9 +1854,9 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1372
 msgid ""
-"The :class:`~smtpd.SMTPServer` and :class:`~smtpd.SMTPChannel` classes now "
-"accept a *map* keyword argument which, if specified, is passed in to :class:"
-"`asynchat.async_chat` as its *map* argument.  This allows an application to "
+"The :class:`!SMTPServer` and :class:`!SMTPChannel` classes now accept a "
+"*map* keyword argument which, if specified, is passed in to :class:`!"
+"asynchat.async_chat` as its *map* argument.  This allows an application to "
 "avoid affecting the global socket map.  (Contributed by Vinay Sajip in :"
 "issue:`11959`.)"
 msgstr ""
@@ -1878,7 +1879,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1391
 msgid ""
-"The socket module now supports the :data:`~socket.CAN_BCM` protocol on "
+"The socket module now supports the :const:`~socket.CAN_BCM` protocol on "
 "platforms that support it.  (Contributed by Brian Thorne in :issue:`15359`.)"
 msgstr ""
 
@@ -1897,7 +1898,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1402
-msgid "The :data:`~socket.AF_LINK` constant is now available on BSD and OSX."
+msgid "The :const:`~socket.AF_LINK` constant is now available on BSD and OSX."
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1404
@@ -1976,10 +1977,10 @@ msgid ""
 "If OpenSSL 0.9.8 or later is available, :class:`~ssl.SSLContext` has a new "
 "attribute :attr:`~ssl.SSLContext.verify_flags` that can be used to control "
 "the certificate verification process by setting it to some combination of "
-"the new constants :data:`~ssl.VERIFY_DEFAULT`, :data:`~ssl."
-"VERIFY_CRL_CHECK_LEAF`, :data:`~ssl.VERIFY_CRL_CHECK_CHAIN`, or :data:`~ssl."
-"VERIFY_X509_STRICT`. OpenSSL does not do any CRL verification by default.  "
-"(Contributed by Christien Heimes in :issue:`8813`.)"
+"the new constants :const:`~ssl.VERIFY_DEFAULT`, :const:`~ssl."
+"VERIFY_CRL_CHECK_LEAF`, :const:`~ssl.VERIFY_CRL_CHECK_CHAIN`, or :const:"
+"`~ssl.VERIFY_X509_STRICT`. OpenSSL does not do any CRL verification by "
+"default.  (Contributed by Christien Heimes in :issue:`8813`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1468
@@ -2031,8 +2032,8 @@ msgstr ""
 #: ../Doc/whatsnew/3.4.rst:1502
 msgid ""
 "The module supports new :mod:`~stat.ST_MODE` flags, :mod:`~stat.S_IFDOOR`, :"
-"attr:`~stat.S_IFPORT`, and :attr:`~stat.S_IFWHT`.  (Contributed by Christian "
-"Hiemes in :issue:`11016`.)"
+"const:`~stat.S_IFPORT`, and :const:`~stat.S_IFWHT`.  (Contributed by "
+"Christian Hiemes in :issue:`11016`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1508
@@ -2071,13 +2072,13 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1531
 msgid ""
-"The :meth:`~sunau.getparams` method now returns a namedtuple rather than a "
-"plain tuple.  (Contributed by Claudiu Popa in :issue:`18901`.)"
+"The :meth:`!getparams` method now returns a namedtuple rather than a plain "
+"tuple.  (Contributed by Claudiu Popa in :issue:`18901`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1534
 msgid ""
-":meth:`sunau.open` now supports the context management protocol: when used "
+":meth:`!sunau.open` now supports the context management protocol: when used "
 "in a :keyword:`with` block, the ``close`` method of the returned object will "
 "be called automatically at the end of the block.  (Contributed by Serhiy "
 "Storchaka in :issue:`18878`.)"
@@ -2088,13 +2089,6 @@ msgid ""
 ":meth:`.AU_write.setsampwidth` now supports 24 bit samples, thus adding "
 "support for writing 24 sample using the module.  (Contributed by Serhiy "
 "Storchaka in :issue:`19261`.)"
-msgstr ""
-
-#: ../Doc/whatsnew/3.4.rst:1543
-msgid ""
-"The :meth:`~sunau.AU_write.writeframesraw` and :meth:`~sunau.AU_write."
-"writeframes` methods now accept any :term:`bytes-like object`.  (Contributed "
-"by Serhiy Storchaka in :issue:`8311`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1549
@@ -2503,7 +2497,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1852
 msgid ""
-"The PEP adds additional fields to the :attr:`sys.hash_info` named tuple to "
+"The PEP adds additional fields to the :data:`sys.hash_info` named tuple to "
 "describe the hash algorithm in use by the currently executing binary.  "
 "Otherwise, the PEP does not alter any existing CPython APIs."
 msgstr ""
@@ -2563,8 +2557,8 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:1894
 msgid ""
-"The new :c:func:`Py_SetStandardStreamEncoding` pre-initialization API allows "
-"applications embedding the CPython interpreter to reliably force a "
+"The new :c:func:`!Py_SetStandardStreamEncoding` pre-initialization API "
+"allows applications embedding the CPython interpreter to reliably force a "
 "particular encoding and error handler for the standard streams. (Contributed "
 "by Bastien Montagne and Nick Coghlan in :issue:`16129`.)"
 msgstr ""
@@ -2627,7 +2621,7 @@ msgid ""
 "The :ref:`python <using-on-cmdline>` command has a new :ref:`option <using-"
 "on-misc-options>`, ``-I``, which causes it to run in \"isolated mode\", "
 "which means that :data:`sys.path` contains neither the script's directory "
-"nor the user's ``site-packages`` directory, and all :envvar:`PYTHON*` "
+"nor the user's ``site-packages`` directory, and all :envvar:`!PYTHON*` "
 "environment variables are ignored (it implies both ``-s`` and ``-E``).  "
 "Other restrictions may also be applied in the future, with the goal being to "
 "isolate the execution of a script from the user's environment.  This is "
@@ -2840,29 +2834,29 @@ msgstr ""
 #: ../Doc/whatsnew/3.4.rst:2079
 msgid ""
 "As mentioned in :ref:`whatsnew-pep-451`, a number of :mod:`importlib` "
-"methods and functions are deprecated: :meth:`importlib.find_loader` is "
-"replaced by :func:`importlib.util.find_spec`; :meth:`importlib.machinery."
+"methods and functions are deprecated: :meth:`!importlib.find_loader` is "
+"replaced by :func:`importlib.util.find_spec`; :meth:`!importlib.machinery."
 "PathFinder.find_module` is replaced by :meth:`importlib.machinery.PathFinder."
-"find_spec`; :meth:`importlib.abc.MetaPathFinder.find_module` is replaced by :"
-"meth:`importlib.abc.MetaPathFinder.find_spec`; :meth:`importlib.abc."
-"PathEntryFinder.find_loader` and :meth:`~importlib.abc.PathEntryFinder."
-"find_module` are replaced by :meth:`importlib.abc.PathEntryFinder."
-"find_spec`; all of the ``xxxLoader`` ABC ``load_module`` methods (:meth:"
-"`importlib.abc.Loader.load_module`, :meth:`importlib.abc.InspectLoader."
-"load_module`, :meth:`importlib.abc.FileLoader.load_module`, :meth:`importlib."
-"abc.SourceLoader.load_module`) should no longer be implemented, instead "
-"loaders should implement an ``exec_module`` method (:meth:`importlib.abc."
-"Loader.exec_module`, :meth:`importlib.abc.InspectLoader.exec_module` :meth:"
-"`importlib.abc.SourceLoader.exec_module`) and let the import system take "
-"care of the rest; and :meth:`importlib.abc.Loader.module_repr`, :meth:"
-"`importlib.util.module_for_loader`, :meth:`importlib.util.set_loader`, and :"
-"meth:`importlib.util.set_package` are no longer needed because their "
-"functions are now handled automatically by the import system."
+"find_spec`; :meth:`!importlib.abc.MetaPathFinder.find_module` is replaced "
+"by :meth:`importlib.abc.MetaPathFinder.find_spec`; :meth:`!importlib.abc."
+"PathEntryFinder.find_loader` and :meth:`!find_module` are replaced by :meth:"
+"`importlib.abc.PathEntryFinder.find_spec`; all of the :samp:`{xxx}Loader` "
+"ABC ``load_module`` methods (:meth:`!importlib.abc.Loader.load_module`, :"
+"meth:`!importlib.abc.InspectLoader.load_module`, :meth:`!importlib.abc."
+"FileLoader.load_module`, :meth:`!importlib.abc.SourceLoader.load_module`) "
+"should no longer be implemented, instead loaders should implement an "
+"``exec_module`` method (:meth:`importlib.abc.Loader.exec_module`, :meth:"
+"`importlib.abc.InspectLoader.exec_module` :meth:`importlib.abc.SourceLoader."
+"exec_module`) and let the import system take care of the rest; and :meth:`!"
+"importlib.abc.Loader.module_repr`, :meth:`!importlib.util."
+"module_for_loader`, :meth:`!importlib.util.set_loader`, and :meth:`!"
+"importlib.util.set_package` are no longer needed because their functions are "
+"now handled automatically by the import system."
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2104
 msgid ""
-"The :mod:`imp` module is pending deprecation. To keep compatibility with "
+"The :mod:`!imp` module is pending deprecation. To keep compatibility with "
 "Python 2/3 code bases, the module's removal is currently not scheduled."
 msgstr ""
 
@@ -3146,7 +3140,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2280
 msgid ""
-":meth:`importlib.util.module_for_loader` now sets ``__loader__`` and "
+":meth:`!importlib.util.module_for_loader` now sets ``__loader__`` and "
 "``__package__`` unconditionally to properly support reloading. If this is "
 "not desired then you will need to set these attributes manually. You can "
 "use :func:`importlib.util.module_to_load` for module management."
@@ -3178,7 +3172,7 @@ msgid ""
 "code then you can see if the module's ``__spec__.location`` is set to "
 "``'frozen'``, check if the loader is a subclass of :class:`importlib."
 "machinery.FrozenImporter`, or if Python 2 compatibility is necessary you can "
-"use :func:`imp.is_frozen`."
+"use :func:`!imp.is_frozen`."
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2305
@@ -3275,13 +3269,12 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2373
 msgid ""
-"The :attr:`~cgi.FieldStorage.file` attribute is now automatically closed "
-"when the creating :class:`cgi.FieldStorage` instance is garbage collected. "
-"If you were pulling the file object out separately from the :class:`cgi."
-"FieldStorage` instance and not keeping the instance alive, then you should "
-"either store the entire :class:`cgi.FieldStorage` instance or read the "
-"contents of the file before the :class:`cgi.FieldStorage` instance is "
-"garbage collected."
+"The :attr:`!file` attribute is now automatically closed when the creating :"
+"class:`!cgi.FieldStorage` instance is garbage collected. If you were pulling "
+"the file object out separately from the :class:`!cgi.FieldStorage` instance "
+"and not keeping the instance alive, then you should either store the entire :"
+"class:`!cgi.FieldStorage` instance or read the contents of the file before "
+"the :class:`!cgi.FieldStorage` instance is garbage collected."
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2380
@@ -3332,8 +3325,8 @@ msgstr ""
 #: ../Doc/whatsnew/3.4.rst:2407
 msgid ""
 "Parameter names in ``__annotations__`` dicts are now mangled properly, "
-"similarly to ``__kwdefaults__``.  (Contributed by Yury Selivanov in :issue:"
-"`20625`.)"
+"similarly to :attr:`~function.__kwdefaults__`. (Contributed by Yury "
+"Selivanov in :issue:`20625`.)"
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2411
@@ -3346,7 +3339,7 @@ msgstr ""
 #: ../Doc/whatsnew/3.4.rst:2415
 msgid ""
 "Because :mod:`unittest.TestSuite` now drops references to tests after they "
-"are run, test harnesses that re-use a :class:`~unittest.TestSuite` to re-run "
+"are run, test harnesses that reuse a :class:`~unittest.TestSuite` to re-run "
 "a set of tests may fail.   Test suites should not be re-used in this fashion "
 "since it means state is retained between test runs, breaking the test "
 "isolation that :mod:`unittest` is designed to provide.  However, if the lack "
@@ -3377,7 +3370,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2437
 msgid ""
-":mod:`audioop` functions now raise an error immediately if passed string "
+":mod:`!audioop` functions now raise an error immediately if passed string "
 "input, instead of failing randomly later on (:issue:`16685`)."
 msgstr ""
 

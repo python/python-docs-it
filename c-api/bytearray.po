@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,4 +97,12 @@ msgstr ""
 
 #: ../Doc/c-api/bytearray.rst:85
 msgid "Similar to :c:func:`PyByteArray_Size`, but without error checking."
+msgstr ""
+
+#: ../Doc/c-api/bytearray.rst:8
+msgid "object"
+msgstr ""
+
+#: ../Doc/c-api/bytearray.rst:8
+msgid "bytearray"
 msgstr ""

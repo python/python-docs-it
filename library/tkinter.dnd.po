@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/tkinter.dnd.rst:2
-msgid ":mod:`tkinter.dnd` --- Drag and drop support"
+msgid ":mod:`!tkinter.dnd` --- Drag and drop support"
 msgstr ""
 
 #: ../Doc/library/tkinter.dnd.rst:8
@@ -57,11 +57,12 @@ msgstr ""
 
 #: ../Doc/library/tkinter.dnd.rst:28
 msgid ""
-"If *dnd_accept* is not present or returns None, search moves to parent widget"
+"If *dnd_accept* is not present or returns ``None``, search moves to parent "
+"widget"
 msgstr ""
 
 #: ../Doc/library/tkinter.dnd.rst:29
-msgid "If no target widget is found, then the target object is None"
+msgid "If no target widget is found, then the target object is ``None``"
 msgstr ""
 
 #: ../Doc/library/tkinter.dnd.rst:31

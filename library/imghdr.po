@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,9 @@ msgstr ""
 
 #: ../Doc/library/imghdr.rst:24
 msgid ""
-"Tests the image data contained in the file named by *file*, and returns a "
-"string describing the image type.  If optional *h* is provided, the *file* "
-"argument is ignored and *h* is assumed to contain the byte stream to test."
+"Test the image data contained in the file named *file* and return a string "
+"describing the image type.  If *h* is provided, the *file* argument is "
+"ignored and *h* is assumed to contain the byte stream to test."
 msgstr ""
 
 #: ../Doc/library/imghdr.rst:28

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/warnings.rst:2
-msgid ":mod:`warnings` --- Warning control"
+msgid ":mod:`!warnings` --- Warning control"
 msgstr ""
 
 #: ../Doc/library/warnings.rst:7
@@ -583,22 +583,45 @@ msgstr ""
 
 #: ../Doc/library/warnings.rst:413
 msgid ""
-"This makes the warning refer to :func:`deprecation`'s caller, rather than to "
-"the source of :func:`deprecation` itself (since the latter would defeat the "
+"This makes the warning refer to ``deprecated_api``'s caller, rather than to "
+"the source of ``deprecated_api`` itself (since the latter would defeat the "
 "purpose of the warning message)."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:417 ../Doc/library/warnings.rst:440
+#: ../Doc/library/warnings.rst:417
+msgid ""
+"The *skip_file_prefixes* keyword argument can be used to indicate which "
+"stack frames are ignored when counting stack levels. This can be useful when "
+"you want the warning to always appear at call sites outside of a package "
+"when a constant *stacklevel* does not fit all call paths or is otherwise "
+"challenging to maintain. If supplied, it must be a tuple of strings. When "
+"prefixes are supplied, stacklevel is implicitly overridden to be ``max(2, "
+"stacklevel)``. To cause a warning to be attributed to the caller from "
+"outside of the current package you might write::"
+msgstr ""
+
+#: ../Doc/library/warnings.rst:440
+msgid ""
+"This makes the warning refer to both the ``example.lower.one_way()`` and "
+"``package.higher.another_way()`` call sites only from calling code living "
+"outside of ``example`` package."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:444 ../Doc/library/warnings.rst:470
 msgid ""
 "*source*, if supplied, is the destroyed object which emitted a :exc:"
 "`ResourceWarning`."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:420
+#: ../Doc/library/warnings.rst:447
 msgid "Added *source* parameter."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:426
+#: ../Doc/library/warnings.rst:450
+msgid "Added *skip_file_prefixes*."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:456
 msgid ""
 "This is a low-level interface to the functionality of :func:`warn`, passing "
 "in explicitly the message, category, filename and line number, and "
@@ -610,7 +633,7 @@ msgid ""
 "case *category* will be ignored."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:435
+#: ../Doc/library/warnings.rst:465
 msgid ""
 "*module_globals*, if supplied, should be the global namespace in use by the "
 "code for which the warning is issued.  (This argument is used to support "
@@ -618,11 +641,11 @@ msgid ""
 "import sources)."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:443
+#: ../Doc/library/warnings.rst:473
 msgid "Add the *source* parameter."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:449
+#: ../Doc/library/warnings.rst:479
 msgid ""
 "Write a warning to a file.  The default implementation calls "
 "``formatwarning(message, category, filename, lineno, line)`` and writes the "
@@ -633,7 +656,7 @@ msgid ""
 "line specified by *filename* and *lineno*."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:460
+#: ../Doc/library/warnings.rst:490
 msgid ""
 "Format a warning the standard way.  This returns a string which may contain "
 "embedded newlines and ends in a newline.  *line* is a line of source code to "
@@ -642,7 +665,7 @@ msgid ""
 "*lineno*."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:469
+#: ../Doc/library/warnings.rst:499
 msgid ""
 "Insert an entry into the list of :ref:`warnings filter specifications "
 "<warning-filter>`.  The entry is inserted at the front by default; if "
@@ -654,7 +677,7 @@ msgid ""
 "everything."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:481
+#: ../Doc/library/warnings.rst:511
 msgid ""
 "Insert a simple entry into the list of :ref:`warnings filter specifications "
 "<warning-filter>`.  The meaning of the function parameters is as for :func:"
@@ -663,18 +686,59 @@ msgid ""
 "and line number match."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:490
+#: ../Doc/library/warnings.rst:520
 msgid ""
 "Reset the warnings filter.  This discards the effect of all previous calls "
 "to :func:`filterwarnings`, including that of the :option:`-W` command line "
 "options and calls to :func:`simplefilter`."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:496
+#: ../Doc/library/warnings.rst:527
+msgid "Decorator to indicate that a class, function or overload is deprecated."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:529
+msgid ""
+"When this decorator is applied to an object, deprecation warnings may be "
+"emitted at runtime when the object is used. :term:`static type checkers "
+"<static type checker>` will also generate a diagnostic on usage of the "
+"deprecated object."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:534
+msgid "Usage::"
+msgstr ""
+
+#: ../Doc/library/warnings.rst:553
+msgid ""
+"The warning specified by *category* will be emitted at runtime on use of "
+"deprecated objects. For functions, that happens on calls; for classes, on "
+"instantiation and on creation of subclasses. If the *category* is ``None``, "
+"no warning is emitted at runtime. The *stacklevel* determines where the "
+"warning is emitted. If it is ``1`` (the default), the warning is emitted at "
+"the direct caller of the deprecated object; if it is higher, it is emitted "
+"further up the stack. Static type checker behavior is not affected by the "
+"*category* and *stacklevel* arguments."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:564
+msgid ""
+"The deprecation message passed to the decorator is saved in the "
+"``__deprecated__`` attribute on the decorated object. If applied to an "
+"overload, the decorator must be after the :func:`@overload <typing."
+"overload>` decorator for the attribute to exist on the overload as returned "
+"by :func:`typing.get_overloads`."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:571
+msgid "See :pep:`702`."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:576
 msgid "Available Context Managers"
 msgstr ""
 
-#: ../Doc/library/warnings.rst:500
+#: ../Doc/library/warnings.rst:580
 msgid ""
 "A context manager that copies and, upon exit, restores the warnings filter "
 "and the :func:`showwarning` function. If the *record* argument is :const:"
@@ -685,21 +749,21 @@ msgid ""
 "has attributes with the same names as the arguments to :func:`showwarning`."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:509
+#: ../Doc/library/warnings.rst:589
 msgid ""
 "The *module* argument takes a module that will be used instead of the module "
 "returned when you import :mod:`warnings` whose filter will be protected. "
 "This argument exists primarily for testing the :mod:`warnings` module itself."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:514
+#: ../Doc/library/warnings.rst:594
 msgid ""
 "If the *action* argument is not ``None``, the remaining arguments are passed "
 "to :func:`simplefilter` as if it were called immediately on entering the "
 "context."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:520
+#: ../Doc/library/warnings.rst:600
 msgid ""
 "The :class:`catch_warnings` manager works by replacing and then later "
 "restoring the module's :func:`showwarning` function and internal list of "
@@ -707,6 +771,10 @@ msgid ""
 "state and therefore is not thread-safe."
 msgstr ""
 
-#: ../Doc/library/warnings.rst:528
+#: ../Doc/library/warnings.rst:608
 msgid "Added the *action*, *category*, *lineno*, and *append* parameters."
+msgstr ""
+
+#: ../Doc/library/warnings.rst:9
+msgid "warnings"
 msgstr ""

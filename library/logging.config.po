@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/logging.config.rst:2
-msgid ":mod:`logging.config` --- Logging configuration"
+msgid ":mod:`!logging.config` --- Logging configuration"
 msgstr ""
 
 #: ../Doc/library/logging.config.rst:10
@@ -136,85 +136,77 @@ msgid ""
 "chosen configuration)."
 msgstr ""
 
+#: ../Doc/library/logging.config.rst:90
+msgid ""
+"It will raise :exc:`FileNotFoundError` if the file doesn't exist and :exc:"
+"`RuntimeError` if the file is invalid or empty."
+msgstr ""
+
 #: ../Doc/library/logging.config.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:90
+#: ../Doc/library/logging.config.rst:94
 msgid ""
 "A filename, or a file-like object, or an instance derived from :class:"
-"`~configparser.RawConfigParser`. If a ``RawConfigParser``-derived instance "
-"is passed, it is used as is. Otherwise, a :class:`~configparser."
-"Configparser` is instantiated, and the configuration read by it from the "
+"`~configparser.RawConfigParser`. If a :class:`!RawConfigParser`-derived "
+"instance is passed, it is used as is. Otherwise, a :class:`~configparser."
+"ConfigParser` is instantiated, and the configuration read by it from the "
 "object passed in ``fname``. If that has a :meth:`readline` method, it is "
 "assumed to be a file-like object and read using :meth:`~configparser."
 "ConfigParser.read_file`; otherwise, it is assumed to be a filename and "
 "passed to :meth:`~configparser.ConfigParser.read`."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:102
-msgid ""
-"Defaults to be passed to the ConfigParser can be specified in this argument."
-msgstr ""
-
-#: ../Doc/library/logging.config.rst:105
-msgid ""
-"If specified as ``False``, loggers which                                 "
-"exist when this call is made are left                                 "
-"enabled. The default is ``True`` because "
-"this                                 enables old behaviour in "
-"a                                 backward-compatible way. This behaviour is "
-"to                                 disable any existing non-root loggers "
-"unless                                 they or their ancestors are "
-"explicitly named                                 in the logging "
-"configuration.  :param encoding: The encoding used to open file when *fname* "
-"is filename."
-msgstr ""
-
-#: ../Doc/library/logging.config.rst:112
-msgid "If specified as ``False``, loggers which"
-msgstr ""
-
 #: ../Doc/library/logging.config.rst:106
 msgid ""
-"exist when this call is made are left enabled. The default is ``True`` "
-"because this enables old behaviour in a backward-compatible way. This "
-"behaviour is to disable any existing non-root loggers unless they or their "
-"ancestors are explicitly named in the logging configuration."
+"Defaults to be passed to the :class:`!ConfigParser` can be specified in this "
+"argument."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:0
-msgid "param encoding"
+#: ../Doc/library/logging.config.rst:109
+msgid ""
+"If specified as ``False``, loggers which exist when this call is made are "
+"left enabled. The default is ``True`` because this enables old behaviour in "
+"a backward-compatible way. This behaviour is to disable any existing non-"
+"root loggers unless they or their ancestors are explicitly named in the "
+"logging configuration."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:114
+#: ../Doc/library/logging.config.rst:118
 msgid "The encoding used to open file when *fname* is filename."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:116
+#: ../Doc/library/logging.config.rst:120
 msgid ""
 "An instance of a subclass of :class:`~configparser.RawConfigParser` is   now "
 "accepted as a value for ``fname``. This facilitates:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:120
+#: ../Doc/library/logging.config.rst:124
 msgid ""
 "Use of a configuration file where logging configuration is just part of the "
 "overall application configuration."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:122
+#: ../Doc/library/logging.config.rst:126
 msgid ""
 "Use of a configuration read from a file, and then modified by the using "
 "application (e.g. based on command-line parameters or other aspects of the "
 "runtime environment) before being passed to ``fileConfig``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:126
-msgid "The *encoding* parameter is added."
+#: ../Doc/library/logging.config.rst:130
+msgid "Added the *encoding* parameter."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:131
+#: ../Doc/library/logging.config.rst:133
+msgid ""
+"An exception will be thrown if the provided file doesn't exist or is invalid "
+"or empty."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:139
 msgid ""
 "Starts up a socket server on the specified port, and listens for new "
 "configurations. If no port is specified, the module's default :const:"
@@ -226,7 +218,7 @@ msgid ""
 "func:`stopListening`."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:140
+#: ../Doc/library/logging.config.rst:148
 msgid ""
 "The ``verify`` argument, if specified, should be a callable which should "
 "verify whether bytes received across the socket are valid and should be "
@@ -240,14 +232,14 @@ msgid ""
 "(perhaps if decryption were performed)."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:151
+#: ../Doc/library/logging.config.rst:159
 msgid ""
 "To send a configuration to the socket, read in the configuration file and "
 "send it to the socket as a sequence of bytes preceded by a four-byte length "
 "string packed in binary using ``struct.pack('>L', n)``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:159
+#: ../Doc/library/logging.config.rst:167
 msgid ""
 "Because portions of the configuration are passed through :func:`eval`, use "
 "of this function may open its users to a security risk. While the function "
@@ -265,11 +257,11 @@ msgid ""
 "from being applied."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:175
+#: ../Doc/library/logging.config.rst:183
 msgid "The ``verify`` argument was added."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:180
+#: ../Doc/library/logging.config.rst:188
 msgid ""
 "If you want to send configurations to the listener which don't disable "
 "existing loggers, you will need to use a JSON format for the configuration, "
@@ -278,18 +270,18 @@ msgid ""
 "you send."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:189
+#: ../Doc/library/logging.config.rst:197
 msgid ""
 "Stops the listening server which was created with a call to :func:`listen`. "
 "This is typically called before calling :meth:`join` on the return value "
 "from :func:`listen`."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:195
+#: ../Doc/library/logging.config.rst:203
 msgid "Security considerations"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:197
+#: ../Doc/library/logging.config.rst:205
 msgid ""
 "The logging configuration functionality tries to offer convenience, and in "
 "part this is done by offering the ability to convert text in configuration "
@@ -302,11 +294,11 @@ msgid ""
 "bad can happen if you load them, before actually loading them."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:211
+#: ../Doc/library/logging.config.rst:219
 msgid "Configuration dictionary schema"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:213
+#: ../Doc/library/logging.config.rst:221
 msgid ""
 "Describing a logging configuration requires listing the various objects to "
 "create and the connections between them; for example, you may create a "
@@ -319,23 +311,23 @@ msgid ""
 "connections` below."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:225
+#: ../Doc/library/logging.config.rst:233
 msgid "Dictionary Schema Details"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:227
+#: ../Doc/library/logging.config.rst:235
 msgid ""
 "The dictionary passed to :func:`dictConfig` must contain the following keys:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:230
+#: ../Doc/library/logging.config.rst:238
 msgid ""
 "*version* - to be set to an integer value representing the schema version.  "
 "The only valid value at present is 1, but having this key allows the schema "
 "to evolve while still preserving backwards compatibility."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:235
+#: ../Doc/library/logging.config.rst:243
 msgid ""
 "All other keys are optional, but if present they will be interpreted as "
 "described below.  In all cases below where a 'configuring dict' is "
@@ -345,37 +337,41 @@ msgid ""
 "otherwise, the context is used to determine what to instantiate."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:244
+#: ../Doc/library/logging.config.rst:252
 msgid ""
 "*formatters* - the corresponding value will be a dict in which each key is a "
 "formatter id and each value is a dict describing how to configure the "
 "corresponding :class:`~logging.Formatter` instance."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:248
+#: ../Doc/library/logging.config.rst:256
 msgid ""
 "The configuring dict is searched for the following optional keys which "
 "correspond to the arguments passed to create a :class:`~logging.Formatter` "
 "object:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:252
+#: ../Doc/library/logging.config.rst:260
 msgid "``format``"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:253
+#: ../Doc/library/logging.config.rst:261
 msgid "``datefmt``"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:254
+#: ../Doc/library/logging.config.rst:262
 msgid "``style``"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:255
+#: ../Doc/library/logging.config.rst:263
 msgid "``validate`` (since version >=3.8)"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:257
+#: ../Doc/library/logging.config.rst:264
+msgid "``defaults`` (since version >=3.12)"
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:266
 msgid ""
 "An optional ``class`` key indicates the name of the formatter's class (as a "
 "dotted module and class name).  The instantiation arguments are as for :"
@@ -386,60 +382,60 @@ msgid ""
 "configuration keys, you should use :ref:`logging-config-dict-userdef`."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:266
+#: ../Doc/library/logging.config.rst:275
 msgid ""
 "*filters* - the corresponding value will be a dict in which each key is a "
 "filter id and each value is a dict describing how to configure the "
 "corresponding Filter instance."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:270
+#: ../Doc/library/logging.config.rst:279
 msgid ""
 "The configuring dict is searched for the key ``name`` (defaulting to the "
 "empty string) and this is used to construct a :class:`logging.Filter` "
 "instance."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:274
+#: ../Doc/library/logging.config.rst:283
 msgid ""
 "*handlers* - the corresponding value will be a dict in which each key is a "
 "handler id and each value is a dict describing how to configure the "
 "corresponding Handler instance."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:278 ../Doc/library/logging.config.rst:323
+#: ../Doc/library/logging.config.rst:287 ../Doc/library/logging.config.rst:332
 msgid "The configuring dict is searched for the following keys:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:280
+#: ../Doc/library/logging.config.rst:289
 msgid ""
 "``class`` (mandatory).  This is the fully qualified name of the handler "
 "class."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:283
+#: ../Doc/library/logging.config.rst:292
 msgid "``level`` (optional).  The level of the handler."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:285
+#: ../Doc/library/logging.config.rst:294
 msgid "``formatter`` (optional).  The id of the formatter for this handler."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:288
+#: ../Doc/library/logging.config.rst:297
 msgid "``filters`` (optional).  A list of ids of the filters for this handler."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:291 ../Doc/library/logging.config.rst:332
+#: ../Doc/library/logging.config.rst:300 ../Doc/library/logging.config.rst:341
 msgid "``filters`` can take filter instances in addition to ids."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:294
+#: ../Doc/library/logging.config.rst:303
 msgid ""
 "All *other* keys are passed through as keyword arguments to the handler's "
 "constructor.  For example, given the snippet:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:313
+#: ../Doc/library/logging.config.rst:322
 msgid ""
 "the handler with id ``console`` is instantiated as a :class:`logging."
 "StreamHandler`, using ``sys.stdout`` as the underlying stream.  The handler "
@@ -448,44 +444,44 @@ msgid ""
 "maxBytes=1024, backupCount=3``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:319
+#: ../Doc/library/logging.config.rst:328
 msgid ""
 "*loggers* - the corresponding value will be a dict in which each key is a "
 "logger name and each value is a dict describing how to configure the "
 "corresponding Logger instance."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:325
+#: ../Doc/library/logging.config.rst:334
 msgid "``level`` (optional).  The level of the logger."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:327
+#: ../Doc/library/logging.config.rst:336
 msgid "``propagate`` (optional).  The propagation setting of the logger."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:329
+#: ../Doc/library/logging.config.rst:338
 msgid "``filters`` (optional).  A list of ids of the filters for this logger."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:335
+#: ../Doc/library/logging.config.rst:344
 msgid ""
 "``handlers`` (optional).  A list of ids of the handlers for this logger."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:338
+#: ../Doc/library/logging.config.rst:347
 msgid ""
 "The specified loggers will be configured according to the level, "
 "propagation, filters and handlers specified."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:341
+#: ../Doc/library/logging.config.rst:350
 msgid ""
 "*root* - this will be the configuration for the root logger. Processing of "
 "the configuration will be as for any logger, except that the ``propagate`` "
 "setting will not be applicable."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:345
+#: ../Doc/library/logging.config.rst:354
 msgid ""
 "*incremental* - whether the configuration is to be interpreted as "
 "incremental to the existing configuration.  This value defaults to "
@@ -494,13 +490,13 @@ msgid ""
 "`fileConfig` API."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:351
+#: ../Doc/library/logging.config.rst:360
 msgid ""
 "If the specified value is ``True``, the configuration is processed as "
 "described in the section on :ref:`logging-config-dict-incremental`."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:354
+#: ../Doc/library/logging.config.rst:363
 msgid ""
 "*disable_existing_loggers* - whether any existing non-root loggers are to be "
 "disabled. This setting mirrors the parameter of the same name in :func:"
@@ -508,11 +504,11 @@ msgid ""
 "ignored if *incremental* is ``True``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:362
+#: ../Doc/library/logging.config.rst:371
 msgid "Incremental Configuration"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:364
+#: ../Doc/library/logging.config.rst:373
 msgid ""
 "It is difficult to provide complete flexibility for incremental "
 "configuration.  For example, because objects such as filters and formatters "
@@ -520,7 +516,7 @@ msgid ""
 "to such anonymous objects when augmenting a configuration."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:370
+#: ../Doc/library/logging.config.rst:379
 msgid ""
 "Furthermore, there is not a compelling case for arbitrarily altering the "
 "object graph of loggers, handlers, filters, formatters at run-time, once a "
@@ -531,7 +527,7 @@ msgid ""
 "worth the complexity it adds to the implementation."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:379
+#: ../Doc/library/logging.config.rst:388
 msgid ""
 "Thus, when the ``incremental`` key of a configuration dict is present and is "
 "``True``, the system will completely ignore any ``formatters`` and "
@@ -540,7 +536,7 @@ msgid ""
 "``loggers`` and ``root`` entries."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:385
+#: ../Doc/library/logging.config.rst:394
 msgid ""
 "Using a value in the configuration dict lets configurations to be sent over "
 "the wire as pickled dicts to a socket listener. Thus, the logging verbosity "
@@ -548,11 +544,11 @@ msgid ""
 "and restart the application."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:393
+#: ../Doc/library/logging.config.rst:402
 msgid "Object connections"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:395
+#: ../Doc/library/logging.config.rst:404
 msgid ""
 "The schema describes a set of logging objects - loggers, handlers, "
 "formatters, filters - which are connected to each other in an object graph.  "
@@ -568,17 +564,17 @@ msgid ""
 "source and the destination object with that id."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:409
+#: ../Doc/library/logging.config.rst:418
 msgid "So, for example, consider the following YAML snippet:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:430
+#: ../Doc/library/logging.config.rst:439
 msgid ""
 "(Note: YAML used here because it's a little more readable than the "
 "equivalent Python source form for the dictionary.)"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:433
+#: ../Doc/library/logging.config.rst:442
 msgid ""
 "The ids for loggers are the logger names which would be used "
 "programmatically to obtain a reference to those loggers, e.g. ``foo.bar."
@@ -589,7 +585,7 @@ msgid ""
 "configuration call is complete."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:441
+#: ../Doc/library/logging.config.rst:450
 msgid ""
 "The above snippet indicates that logger named ``foo.bar.baz`` should have "
 "two handlers attached to it, which are described by the handler ids ``h1`` "
@@ -597,11 +593,11 @@ msgid ""
 "the formatter for ``h2`` is that described by id ``precise``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:451
+#: ../Doc/library/logging.config.rst:460
 msgid "User-defined objects"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:453
+#: ../Doc/library/logging.config.rst:462
 msgid ""
 "The schema supports user-defined objects for handlers, filters and "
 "formatters.  (Loggers do not need to have different types for different "
@@ -609,7 +605,7 @@ msgid ""
 "defined logger classes.)"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:458
+#: ../Doc/library/logging.config.rst:467
 msgid ""
 "Objects to be configured are described by dictionaries which detail their "
 "configuration.  In some places, the logging system will be able to infer "
@@ -622,7 +618,7 @@ msgid ""
 "made available under the special key ``'()'``.  Here's a concrete example:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:484
+#: ../Doc/library/logging.config.rst:493
 msgid ""
 "The above YAML snippet defines three formatters.  The first, with id "
 "``brief``, is a standard :class:`logging.Formatter` instance with the "
@@ -633,11 +629,11 @@ msgid ""
 "configuration sub-dictionaries::"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:496
+#: ../Doc/library/logging.config.rst:505
 msgid "and::"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:503
+#: ../Doc/library/logging.config.rst:512
 msgid ""
 "respectively, and as these dictionaries do not contain the special key "
 "``'()'``, the instantiation is inferred from the context: as a result, "
@@ -646,7 +642,7 @@ msgid ""
 "is::"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:516
+#: ../Doc/library/logging.config.rst:525
 msgid ""
 "and this contains the special key ``'()'``, which means that user-defined "
 "instantiation is wanted.  In this case, the specified factory callable will "
@@ -658,7 +654,15 @@ msgid ""
 "assumed to be returned by the call::"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:528
+#: ../Doc/library/logging.config.rst:537
+msgid ""
+"The values for keys such as ``bar``, ``spam`` and ``answer`` in the above "
+"example should not be configuration dictionaries or references such as "
+"``cfg://foo`` or ``ext://bar``, because they will not be processed by the "
+"configuration machinery, but passed to the callable as-is."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:542
 msgid ""
 "The key ``'()'`` has been used as the special key because it is not a valid "
 "keyword parameter name, and so will not clash with the names of the keyword "
@@ -666,13 +670,13 @@ msgid ""
 "corresponding value is a callable."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:533
+#: ../Doc/library/logging.config.rst:547
 msgid ""
 "The ``filters`` member of ``handlers`` and ``loggers`` can take filter "
 "instances in addition to ids."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:537
+#: ../Doc/library/logging.config.rst:551
 msgid ""
 "You can also specify a special key ``'.'`` whose value is a dictionary is a "
 "mapping of attribute names to values. If found, the specified attributes "
@@ -680,17 +684,50 @@ msgid ""
 "following configuration::"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:553
+#: ../Doc/library/logging.config.rst:567
 msgid ""
 "the returned formatter will have attribute ``foo`` set to ``'bar'`` and "
 "attribute ``baz`` set to ``'bozz'``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:560
+#: ../Doc/library/logging.config.rst:570
+msgid ""
+"The values for attributes such as ``foo`` and ``baz`` in the above example "
+"should not be configuration dictionaries or references such as ``cfg://foo`` "
+"or ``ext://bar``, because they will not be processed by the configuration "
+"machinery, but set as attribute values as-is."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:579
+msgid "Handler configuration order"
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:581
+msgid ""
+"Handlers are configured in alphabetical order of their keys, and a "
+"configured handler replaces the configuration dictionary in (a working copy "
+"of) the ``handlers`` dictionary in the schema. If you use a construct such "
+"as ``cfg://handlers.foo``, then initially ``handlers['foo']`` points to the "
+"configuration dictionary for the handler named ``foo``, and later (once that "
+"handler has been configured) it points to the configured handler instance. "
+"Thus, ``cfg://handlers.foo`` could resolve to either a dictionary or a "
+"handler instance. In general, it is wise to name handlers in a way such that "
+"dependent handlers are configured _after_ any handlers they depend on; that "
+"allows something like ``cfg://handlers.foo`` to be used in configuring a "
+"handler that depends on handler ``foo``. If that dependent handler were "
+"named ``bar``, problems would result, because the configuration of ``bar`` "
+"would be attempted before that of ``foo``, and ``foo`` would not yet have "
+"been configured. However, if the dependent handler were named ``foobar``, it "
+"would be configured after ``foo``, with the result that ``cfg://handlers."
+"foo`` would resolve to configured handler ``foo``, and not its configuration "
+"dictionary."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:602
 msgid "Access to external objects"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:562
+#: ../Doc/library/logging.config.rst:604
 msgid ""
 "There are times where a configuration needs to refer to objects external to "
 "the configuration, for example ``sys.stderr``.  If the configuration dict is "
@@ -705,7 +742,7 @@ msgid ""
 "import mechanisms."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:575
+#: ../Doc/library/logging.config.rst:617
 msgid ""
 "The handling of such prefixes is done in a way analogous to protocol "
 "handling: there is a generic mechanism to look for prefixes which match the "
@@ -715,11 +752,11 @@ msgid ""
 "prefix is not recognised, then the string value will be left as-is."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:587
+#: ../Doc/library/logging.config.rst:629
 msgid "Access to internal objects"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:589
+#: ../Doc/library/logging.config.rst:631
 msgid ""
 "As well as external objects, there is sometimes also a need to refer to "
 "objects in the configuration.  This will be done implicitly by the "
@@ -730,7 +767,7 @@ msgid ""
 "and resolve to the appropriate destination object."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:597
+#: ../Doc/library/logging.config.rst:639
 msgid ""
 "However, a more generic mechanism is needed for user-defined objects which "
 "are not known to the :mod:`logging` module.  For example, consider :class:"
@@ -744,7 +781,7 @@ msgid ""
 "resolution system allows the user to specify:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:619
+#: ../Doc/library/logging.config.rst:661
 msgid ""
 "The literal string ``'cfg://handlers.file'`` will be resolved in an "
 "analogous way to strings with the ``ext://`` prefix, but looking in the "
@@ -753,7 +790,7 @@ msgid ""
 "format``.  Thus, given the following snippet:"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:637
+#: ../Doc/library/logging.config.rst:679
 msgid ""
 "in the configuration, the string ``'cfg://handlers'`` would resolve to the "
 "dict with key ``handlers``, the string ``'cfg://handlers.email`` would "
@@ -764,12 +801,13 @@ msgid ""
 "``subject`` value could be accessed using either ``'cfg://handlers.email."
 "subject'`` or, equivalently, ``'cfg://handlers.email[subject]'``.  The "
 "latter form only needs to be used if the key contains spaces or non-"
-"alphanumeric characters.  If an index value consists only of decimal digits, "
+"alphanumeric characters. Please note that the characters ``[`` and ``]`` are "
+"not allowed in the keys. If an index value consists only of decimal digits, "
 "access will be attempted using the corresponding integer value, falling back "
 "to the string value if needed."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:651
+#: ../Doc/library/logging.config.rst:694
 msgid ""
 "Given a string ``cfg://handlers.myhandler.mykey.123``, this will resolve to "
 "``config_dict['handlers']['myhandler']['mykey']['123']``. If the string is "
@@ -779,11 +817,11 @@ msgid ""
 "['mykey']['123']`` if that fails."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:663
+#: ../Doc/library/logging.config.rst:706
 msgid "Import resolution and custom importers"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:665
+#: ../Doc/library/logging.config.rst:708
 msgid ""
 "Import resolution, by default, uses the builtin :func:`__import__` function "
 "to do its importing. You may want to replace this with your own importing "
@@ -795,17 +833,119 @@ msgid ""
 "instance level, you need to wrap it with :func:`staticmethod`. For example::"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:680
+#: ../Doc/library/logging.config.rst:723
 msgid ""
 "You don't need to wrap with :func:`staticmethod` if you're setting the "
 "import callable on a configurator *instance*."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:687
+#: ../Doc/library/logging.config.rst:729
+msgid "Configuring QueueHandler and QueueListener"
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:731
+msgid ""
+"If you want to configure a :class:`~logging.handlers.QueueHandler`, noting "
+"that this is normally used in conjunction with a :class:`~logging.handlers."
+"QueueListener`, you can configure both together. After the configuration, "
+"the ``QueueListener`` instance will be available as the :attr:`~logging."
+"handlers.QueueHandler.listener` attribute of the created handler, and that "
+"in turn will be available to you using :func:`~logging.getHandlerByName` and "
+"passing the name you have used for the ``QueueHandler`` in your "
+"configuration. The dictionary schema for configuring the pair is shown in "
+"the example YAML snippet below."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:752
+msgid "The ``queue`` and ``listener`` keys are optional."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:754
+msgid ""
+"If the ``queue`` key is present, the corresponding value can be one of the "
+"following:"
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:756
+msgid ""
+"An actual instance of :class:`queue.Queue` or a subclass thereof. This is of "
+"course only possible if you are constructing or modifying the configuration "
+"dictionary in code."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:760
+msgid ""
+"A string that resolves to a callable which, when called with no arguments, "
+"returns the :class:`queue.Queue` instance to use. That callable could be a :"
+"class:`queue.Queue` subclass or a function which returns a suitable queue "
+"instance, such as ``my.module.queue_factory()``."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:765
+msgid ""
+"A dict with a ``'()'`` key which is constructed in the usual way as "
+"discussed in :ref:`logging-config-dict-userdef`. The result of this "
+"construction should be a :class:`queue.Queue` instance."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:769
+msgid ""
+"If the  ``queue`` key is absent, a standard unbounded :class:`queue.Queue` "
+"instance is created and used."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:772
+msgid ""
+"If the ``listener`` key is present, the corresponding value can be one of "
+"the following:"
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:774
+msgid ""
+"A subclass of :class:`logging.handlers.QueueListener`. This is of course "
+"only possible if you are constructing or modifying the configuration "
+"dictionary in code."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:778
+msgid ""
+"A string which resolves to a class which is a subclass of ``QueueListener``, "
+"such as ``'my.package.CustomListener'``."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:781
+msgid ""
+"A dict with a ``'()'`` key which is constructed in the usual way as "
+"discussed in :ref:`logging-config-dict-userdef`. The result of this "
+"construction should be a callable with the same signature as the "
+"``QueueListener`` initializer."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:785
+msgid ""
+"If the ``listener`` key is absent, :class:`logging.handlers.QueueListener` "
+"is used."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:787
+msgid ""
+"The values under the ``handlers`` key are the names of other handlers in the "
+"configuration (not shown in the above snippet) which will be passed to the "
+"queue listener."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:791
+msgid ""
+"Any custom queue handler and listener classes will need to be defined with "
+"the same initialization signatures as :class:`~logging.handlers."
+"QueueHandler` and :class:`~logging.handlers.QueueListener`."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:800
 msgid "Configuration file format"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:689
+#: ../Doc/library/logging.config.rst:802
 msgid ""
 "The configuration file format understood by :func:`fileConfig` is based on :"
 "mod:`configparser` functionality. The file must contain sections called "
@@ -822,7 +962,7 @@ msgid ""
 "specified in a section called ``[logger_root]``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:704
+#: ../Doc/library/logging.config.rst:817
 msgid ""
 "The :func:`fileConfig` API is older than the :func:`dictConfig` API and does "
 "not provide functionality to cover certain aspects of logging. For example, "
@@ -835,17 +975,17 @@ msgid ""
 "when it's convenient to do so."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:714
+#: ../Doc/library/logging.config.rst:827
 msgid "Examples of these sections in the file are given below."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:727
+#: ../Doc/library/logging.config.rst:840
 msgid ""
 "The root logger must specify a level and a list of handlers. An example of a "
 "root logger section is given below."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:736
+#: ../Doc/library/logging.config.rst:849
 msgid ""
 "The ``level`` entry can be one of ``DEBUG, INFO, WARNING, ERROR, CRITICAL`` "
 "or ``NOTSET``. For the root logger only, ``NOTSET`` means that all messages "
@@ -853,7 +993,7 @@ msgid ""
 "of the ``logging`` package's namespace."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:741
+#: ../Doc/library/logging.config.rst:854
 msgid ""
 "The ``handlers`` entry is a comma-separated list of handler names, which "
 "must appear in the ``[handlers]`` section. These names must appear in the "
@@ -861,13 +1001,13 @@ msgid ""
 "file."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:746
+#: ../Doc/library/logging.config.rst:859
 msgid ""
 "For loggers other than the root logger, some additional information is "
 "required. This is illustrated by the following example."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:757
+#: ../Doc/library/logging.config.rst:870
 msgid ""
 "The ``level`` and ``handlers`` entries are interpreted as for the root "
 "logger, except that if a non-root logger's level is specified as ``NOTSET``, "
@@ -880,20 +1020,20 @@ msgid ""
 "application to get the logger."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:766
+#: ../Doc/library/logging.config.rst:879
 msgid ""
 "Sections which specify handler configuration are exemplified by the "
 "following."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:776
+#: ../Doc/library/logging.config.rst:889
 msgid ""
 "The ``class`` entry indicates the handler's class (as determined by :func:"
 "`eval` in the ``logging`` package's namespace). The ``level`` is interpreted "
 "as for loggers, and ``NOTSET`` is taken to mean 'log everything'."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:780
+#: ../Doc/library/logging.config.rst:893
 msgid ""
 "The ``formatter`` entry indicates the key name of the formatter for this "
 "handler. If blank, a default formatter (``logging._defaultFormatter``) is "
@@ -901,7 +1041,7 @@ msgid ""
 "and have a corresponding section in the configuration file."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:785
+#: ../Doc/library/logging.config.rst:898
 msgid ""
 "The ``args`` entry, when :ref:`evaluated <func-eval>` in the context of the "
 "``logging`` package's namespace, is the list of arguments to the constructor "
@@ -910,7 +1050,7 @@ msgid ""
 "provided, it defaults to ``()``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:791
+#: ../Doc/library/logging.config.rst:904
 msgid ""
 "The optional ``kwargs`` entry, when :ref:`evaluated <func-eval>` in the "
 "context of the ``logging`` package's namespace, is the keyword argument dict "
@@ -918,19 +1058,26 @@ msgid ""
 "``{}``."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:848
+#: ../Doc/library/logging.config.rst:961
 msgid ""
 "Sections which specify formatter configuration are typified by the following."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:859
+#: ../Doc/library/logging.config.rst:973
 msgid ""
 "The arguments for the formatter configuration are the same as the keys in "
 "the dictionary schema :ref:`formatters section <logging-config-dictschema-"
 "formatters>`."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:865
+#: ../Doc/library/logging.config.rst:977
+msgid ""
+"The ``defaults`` entry, when :ref:`evaluated <func-eval>` in the context of "
+"the ``logging`` package's namespace, is a dictionary of default values for "
+"custom formatting fields. If not provided, it defaults to ``None``."
+msgstr ""
+
+#: ../Doc/library/logging.config.rst:984
 msgid ""
 "Due to the use of :func:`eval` as described above, there are potential "
 "security risks which result from using the :func:`listen` to send and "
@@ -939,18 +1086,18 @@ msgid ""
 "`listen` documentation for more information."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:874
+#: ../Doc/library/logging.config.rst:992
 msgid "Module :mod:`logging`"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:874
+#: ../Doc/library/logging.config.rst:993
 msgid "API reference for the logging module."
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:876
+#: ../Doc/library/logging.config.rst:995
 msgid "Module :mod:`logging.handlers`"
 msgstr ""
 
-#: ../Doc/library/logging.config.rst:877
+#: ../Doc/library/logging.config.rst:996
 msgid "Useful handlers included with the logging module."
 msgstr ""

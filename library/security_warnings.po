@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,82 +32,82 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/security_warnings.rst:12
-msgid ":mod:`cgi`: :ref:`CGI security considerations <cgi-security>`"
-msgstr ""
-
-#: ../Doc/library/security_warnings.rst:13
 msgid ""
 ":mod:`hashlib`: :ref:`all constructors take a \"usedforsecurity\" keyword-"
 "only argument disabling known insecure and blocked algorithms <hashlib-"
 "usedforsecurity>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:16
+#: ../Doc/library/security_warnings.rst:15
 msgid ""
 ":mod:`http.server` is not suitable for production use, only implementing "
 "basic security checks. See the :ref:`security considerations <http.server-"
 "security>`."
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:18
+#: ../Doc/library/security_warnings.rst:17
 msgid ""
 ":mod:`logging`: :ref:`Logging configuration uses eval() <logging-eval-"
 "security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:20
+#: ../Doc/library/security_warnings.rst:19
 msgid ""
 ":mod:`multiprocessing`: :ref:`Connection.recv() uses pickle <multiprocessing-"
 "recv-pickle-security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:22
+#: ../Doc/library/security_warnings.rst:21
 msgid ":mod:`pickle`: :ref:`Restricting globals in pickle <pickle-restrict>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:23
+#: ../Doc/library/security_warnings.rst:22
 msgid ""
 ":mod:`random` shouldn't be used for security purposes, use :mod:`secrets` "
 "instead"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:25
+#: ../Doc/library/security_warnings.rst:24
 msgid ""
 ":mod:`shelve`: :ref:`shelve is based on pickle and thus unsuitable for "
 "dealing with untrusted sources <shelve-security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:27
+#: ../Doc/library/security_warnings.rst:26
 msgid ":mod:`ssl`: :ref:`SSL/TLS security considerations <ssl-security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:28
+#: ../Doc/library/security_warnings.rst:27
 msgid ""
 ":mod:`subprocess`: :ref:`Subprocess security considerations <subprocess-"
 "security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:30
+#: ../Doc/library/security_warnings.rst:29
 msgid ""
 ":mod:`tempfile`: :ref:`mktemp is deprecated due to vulnerability to race "
 "conditions <tempfile-mktemp-deprecated>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:32
+#: ../Doc/library/security_warnings.rst:31
 msgid ":mod:`xml`: :ref:`XML vulnerabilities <xml-vulnerabilities>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:33
+#: ../Doc/library/security_warnings.rst:32
 msgid ""
 ":mod:`zipfile`: :ref:`maliciously prepared .zip files can cause disk volume "
 "exhaustion <zipfile-resources-limitations>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:36
+#: ../Doc/library/security_warnings.rst:35
 msgid ""
 "The :option:`-I` command line option can be used to run Python in isolated "
 "mode. When it cannot be used, the :option:`-P` option or the :envvar:"
 "`PYTHONSAFEPATH` environment variable can be used to not prepend a "
 "potentially unsafe path to :data:`sys.path` such as the current directory, "
 "the script's directory or an empty string."
+msgstr ""
+
+#: ../Doc/library/security_warnings.rst:3
+msgid "security considerations"
 msgstr ""

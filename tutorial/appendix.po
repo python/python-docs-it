@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,24 +25,56 @@ msgstr ""
 msgid "Interactive Mode"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:16
+#: ../Doc/tutorial/appendix.rst:13
+msgid ""
+"There are two variants of the interactive :term:`REPL`.  The classic basic "
+"interpreter is supported on all platforms with minimal line control "
+"capabilities."
+msgstr ""
+
+#: ../Doc/tutorial/appendix.rst:17
+msgid ""
+"On Unix-like systems (e.g. Linux or macOS) with :mod:`curses` and :mod:"
+"`readline` support, a new interactive shell is used by default. This one "
+"supports color, multiline editing, history browsing, and paste mode.  To "
+"disable color, see :ref:`using-on-controlling-color` for details.  Function "
+"keys provide some additional functionality. :kbd:`F1` enters the interactive "
+"help browser :mod:`pydoc`. :kbd:`F2` allows for browsing command-line "
+"history without output nor the :term:`>>>` and :term:`...` prompts. :kbd:"
+"`F3` enters \"paste mode\", which makes pasting larger blocks of code "
+"easier. Press :kbd:`F3` to return to the regular prompt."
+msgstr ""
+
+#: ../Doc/tutorial/appendix.rst:28
+msgid ""
+"When using the new interactive shell, exit the shell by typing :kbd:`exit` "
+"or :kbd:`quit`. Adding call parentheses after those commands is not required."
+msgstr ""
+
+#: ../Doc/tutorial/appendix.rst:32
+msgid ""
+"If the new interactive shell is not desired, it can be disabled via the :"
+"envvar:`PYTHON_BASIC_REPL` environment variable."
+msgstr ""
+
+#: ../Doc/tutorial/appendix.rst:38
 msgid "Error Handling"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:18
+#: ../Doc/tutorial/appendix.rst:40
 msgid ""
 "When an error occurs, the interpreter prints an error message and a stack "
 "trace. In interactive mode, it then returns to the primary prompt; when "
 "input came from a file, it exits with a nonzero exit status after printing "
 "the stack trace. (Exceptions handled by an :keyword:`except` clause in a :"
 "keyword:`try` statement are not errors in this context.)  Some errors are "
-"unconditionally fatal and cause an exit with a nonzero exit; this applies to "
-"internal inconsistencies and some cases of running out of memory.  All error "
-"messages are written to the standard error stream; normal output from "
-"executed commands is written to standard output."
+"unconditionally fatal and cause an exit with a nonzero exit status; this "
+"applies to internal inconsistencies and some cases of running out of "
+"memory.  All error messages are written to the standard error stream; normal "
+"output from executed commands is written to standard output."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:28
+#: ../Doc/tutorial/appendix.rst:50
 msgid ""
 "Typing the interrupt character (usually :kbd:`Control-C` or :kbd:`Delete`) "
 "to the primary or secondary prompt cancels the input and returns to the "
@@ -51,17 +83,17 @@ msgid ""
 "`try` statement."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:38
+#: ../Doc/tutorial/appendix.rst:60
 msgid "Executable Python Scripts"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:40
+#: ../Doc/tutorial/appendix.rst:62
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:45
+#: ../Doc/tutorial/appendix.rst:67
 msgid ""
 "(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
 "beginning of the script and giving the file an executable mode.  The ``#!`` "
@@ -71,13 +103,13 @@ msgid ""
 "``'#'``, is used to start a comment in Python."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:52
+#: ../Doc/tutorial/appendix.rst:74
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:59
+#: ../Doc/tutorial/appendix.rst:81
 msgid ""
 "On Windows systems, there is no notion of an \"executable mode\".  The "
 "Python installer automatically associates ``.py`` files with ``python.exe`` "
@@ -86,11 +118,11 @@ msgid ""
 "normally appears is suppressed."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:69
+#: ../Doc/tutorial/appendix.rst:91
 msgid "The Interactive Startup File"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:71
+#: ../Doc/tutorial/appendix.rst:93
 msgid ""
 "When you use Python interactively, it is frequently handy to have some "
 "standard commands executed every time the interpreter is started.  You can "
@@ -99,7 +131,7 @@ msgid ""
 "the :file:`.profile` feature of the Unix shells."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:77
+#: ../Doc/tutorial/appendix.rst:99
 msgid ""
 "This file is only read in interactive sessions, not when Python reads "
 "commands from a script, and not when :file:`/dev/tty` is given as the "
@@ -110,7 +142,7 @@ msgid ""
 "``sys.ps1`` and ``sys.ps2`` in this file."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:85
+#: ../Doc/tutorial/appendix.rst:107
 msgid ""
 "If you want to read an additional start-up file from the current directory, "
 "you can program this in the global start-up file using code like ``if os."
@@ -119,19 +151,19 @@ msgid ""
 "script::"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:102
+#: ../Doc/tutorial/appendix.rst:124
 msgid "The Customization Modules"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:104
+#: ../Doc/tutorial/appendix.rst:126
 msgid ""
-"Python provides two hooks to let you customize it: :mod:`sitecustomize` and :"
-"mod:`usercustomize`.  To see how it works, you need first to find the "
+"Python provides two hooks to let you customize it: :index:`sitecustomize` "
+"and :index:`usercustomize`.  To see how it works, you need first to find the "
 "location of your user site-packages directory.  Start Python and run this "
 "code::"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:112
+#: ../Doc/tutorial/appendix.rst:134
 msgid ""
 "Now you can create a file named :file:`usercustomize.py` in that directory "
 "and put anything you want in it.  It will affect every invocation of Python, "
@@ -139,18 +171,18 @@ msgid ""
 "import."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:116
+#: ../Doc/tutorial/appendix.rst:138
 msgid ""
-":mod:`sitecustomize` works in the same way, but is typically created by an "
+":index:`sitecustomize` works in the same way, but is typically created by an "
 "administrator of the computer in the global site-packages directory, and is "
-"imported before :mod:`usercustomize`.  See the documentation of the :mod:"
+"imported before :index:`usercustomize`.  See the documentation of the :mod:"
 "`site` module for more details."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:123
+#: ../Doc/tutorial/appendix.rst:145
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:124
+#: ../Doc/tutorial/appendix.rst:146
 msgid "A problem with the GNU Readline package may prevent this."
 msgstr ""

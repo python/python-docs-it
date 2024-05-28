@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,60 +34,64 @@ msgstr ""
 #: ../Doc/c-api/gcsupport.rst:15
 msgid ""
 "To create a container type, the :c:member:`~PyTypeObject.tp_flags` field of "
-"the type object must include the :const:`Py_TPFLAGS_HAVE_GC` and provide an "
-"implementation of the :c:member:`~PyTypeObject.tp_traverse` handler.  If "
+"the type object must include the :c:macro:`Py_TPFLAGS_HAVE_GC` and provide "
+"an implementation of the :c:member:`~PyTypeObject.tp_traverse` handler.  If "
 "instances of the type are mutable, a :c:member:`~PyTypeObject.tp_clear` "
 "implementation must also be provided."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:24
+#: ../Doc/c-api/gcsupport.rst:21
+msgid ":c:macro:`Py_TPFLAGS_HAVE_GC`"
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:22
 msgid ""
 "Objects with a type with this flag set must conform with the rules "
 "documented here.  For convenience these objects will be referred to as "
 "container objects."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:28
+#: ../Doc/c-api/gcsupport.rst:26
 msgid "Constructors for container types must conform to two rules:"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:30
+#: ../Doc/c-api/gcsupport.rst:28
 msgid ""
-"The memory for the object must be allocated using :c:func:`PyObject_GC_New` "
-"or :c:func:`PyObject_GC_NewVar`."
+"The memory for the object must be allocated using :c:macro:`PyObject_GC_New` "
+"or :c:macro:`PyObject_GC_NewVar`."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:33
+#: ../Doc/c-api/gcsupport.rst:31
 msgid ""
 "Once all the fields which may contain references to other containers are "
 "initialized, it must call :c:func:`PyObject_GC_Track`."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:36
+#: ../Doc/c-api/gcsupport.rst:34
 msgid ""
 "Similarly, the deallocator for the object must conform to a similar pair of "
 "rules:"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:39
+#: ../Doc/c-api/gcsupport.rst:37
 msgid ""
 "Before fields which refer to other containers are invalidated, :c:func:"
 "`PyObject_GC_UnTrack` must be called."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:42
+#: ../Doc/c-api/gcsupport.rst:40
 msgid ""
 "The object's memory must be deallocated using :c:func:`PyObject_GC_Del`."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:45
+#: ../Doc/c-api/gcsupport.rst:43
 msgid ""
 "If a type adds the Py_TPFLAGS_HAVE_GC, then it *must* implement at least a :"
 "c:member:`~PyTypeObject.tp_traverse` handler or explicitly use one from its "
 "subclass or subclasses."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:49
+#: ../Doc/c-api/gcsupport.rst:47
 msgid ""
 "When calling :c:func:`PyType_Ready` or some of the APIs that indirectly call "
 "it like :c:func:`PyType_FromSpecWithBases` or :c:func:`PyType_FromSpec` the "
@@ -95,29 +99,57 @@ msgid ""
 "tp_flags`, :c:member:`~PyTypeObject.tp_traverse` and :c:member:"
 "`~PyTypeObject.tp_clear` fields if the type inherits from a class that "
 "implements the garbage collector protocol and the child class does *not* "
-"include the :const:`Py_TPFLAGS_HAVE_GC` flag."
+"include the :c:macro:`Py_TPFLAGS_HAVE_GC` flag."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:59
+#: ../Doc/c-api/gcsupport.rst:57
 msgid ""
-"Analogous to :c:func:`PyObject_New` but for container objects with the :"
-"const:`Py_TPFLAGS_HAVE_GC` flag set."
+"Analogous to :c:macro:`PyObject_New` but for container objects with the :c:"
+"macro:`Py_TPFLAGS_HAVE_GC` flag set."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:65
+#: ../Doc/c-api/gcsupport.rst:62
 msgid ""
-"Analogous to :c:func:`PyObject_NewVar` but for container objects with the :"
-"const:`Py_TPFLAGS_HAVE_GC` flag set."
+"Analogous to :c:macro:`PyObject_NewVar` but for container objects with the :"
+"c:macro:`Py_TPFLAGS_HAVE_GC` flag set."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:71
+#: ../Doc/c-api/gcsupport.rst:67
 msgid ""
-"Resize an object allocated by :c:func:`PyObject_NewVar`.  Returns the "
-"resized object or ``NULL`` on failure.  *op* must not be tracked by the "
-"collector yet."
+"Analogous to :c:macro:`PyObject_GC_New` but allocates *extra_size* bytes at "
+"the end of the object (at offset :c:member:`~PyTypeObject.tp_basicsize`). "
+"The allocated memory is initialized to zeros, except for the :c:type:`Python "
+"object header <PyObject>`."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:73
+msgid ""
+"The extra data will be deallocated with the object, but otherwise it is not "
+"managed by Python."
 msgstr ""
 
 #: ../Doc/c-api/gcsupport.rst:77
+msgid ""
+"The function is marked as unstable because the final mechanism for reserving "
+"extra data after an instance is not yet decided. For allocating a variable "
+"number of fields, prefer using :c:type:`PyVarObject` and :c:member:"
+"`~PyTypeObject.tp_itemsize` instead."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:88
+msgid ""
+"Resize an object allocated by :c:macro:`PyObject_NewVar`. Returns the "
+"resized object of type ``TYPE*`` (refers to any C type) or ``NULL`` on "
+"failure."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:92
+msgid ""
+"*op* must be of type :c:expr:`PyVarObject *` and must not be tracked by the "
+"collector yet. *newsize* must be of type :c:type:`Py_ssize_t`."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:99
 msgid ""
 "Adds the object *op* to the set of container objects tracked by the "
 "collector.  The collector can run at unexpected times so objects must be "
@@ -126,45 +158,45 @@ msgid ""
 "usually near the end of the constructor."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:86
+#: ../Doc/c-api/gcsupport.rst:108
 msgid ""
 "Returns non-zero if the object implements the garbage collector protocol, "
 "otherwise returns 0."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:89
+#: ../Doc/c-api/gcsupport.rst:111
 msgid ""
 "The object cannot be tracked by the garbage collector if this function "
 "returns 0."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:94
+#: ../Doc/c-api/gcsupport.rst:116
 msgid ""
 "Returns 1 if the object type of *op* implements the GC protocol and *op* is "
 "being currently tracked by the garbage collector and 0 otherwise."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:97
+#: ../Doc/c-api/gcsupport.rst:119
 msgid "This is analogous to the Python function :func:`gc.is_tracked`."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:104
+#: ../Doc/c-api/gcsupport.rst:126
 msgid ""
 "Returns 1 if the object type of *op* implements the GC protocol and *op* has "
 "been already finalized by the garbage collector and 0 otherwise."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:107
+#: ../Doc/c-api/gcsupport.rst:129
 msgid "This is analogous to the Python function :func:`gc.is_finalized`."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:114
+#: ../Doc/c-api/gcsupport.rst:136
 msgid ""
-"Releases memory allocated to an object using :c:func:`PyObject_GC_New` or :c:"
-"func:`PyObject_GC_NewVar`."
+"Releases memory allocated to an object using :c:macro:`PyObject_GC_New` or :"
+"c:macro:`PyObject_GC_NewVar`."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:120
+#: ../Doc/c-api/gcsupport.rst:142
 msgid ""
 "Remove the object *op* from the set of container objects tracked by the "
 "collector.  Note that :c:func:`PyObject_GC_Track` can be called again on "
@@ -174,19 +206,19 @@ msgid ""
 "handler become invalid."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:129
+#: ../Doc/c-api/gcsupport.rst:151
 msgid ""
-"The :c:func:`_PyObject_GC_TRACK` and :c:func:`_PyObject_GC_UNTRACK` macros "
+"The :c:func:`!_PyObject_GC_TRACK` and :c:func:`!_PyObject_GC_UNTRACK` macros "
 "have been removed from the public C API."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:132
+#: ../Doc/c-api/gcsupport.rst:154
 msgid ""
 "The :c:member:`~PyTypeObject.tp_traverse` handler accepts a function "
 "parameter of this type:"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:137
+#: ../Doc/c-api/gcsupport.rst:159
 msgid ""
 "Type of the visitor function passed to the :c:member:`~PyTypeObject."
 "tp_traverse` handler. The function should be called with an object to "
@@ -196,13 +228,13 @@ msgid ""
 "users will need to write their own visitor functions."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:144
+#: ../Doc/c-api/gcsupport.rst:166
 msgid ""
 "The :c:member:`~PyTypeObject.tp_traverse` handler must have the following "
 "type:"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:149
+#: ../Doc/c-api/gcsupport.rst:171
 msgid ""
 "Traversal function for a container object.  Implementations must call the "
 "*visit* function for each object directly contained by *self*, with the "
@@ -212,7 +244,7 @@ msgid ""
 "returned immediately."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:156
+#: ../Doc/c-api/gcsupport.rst:178
 msgid ""
 "To simplify writing :c:member:`~PyTypeObject.tp_traverse` handlers, a :c:"
 "func:`Py_VISIT` macro is provided.  In order to use this macro, the :c:"
@@ -220,20 +252,20 @@ msgid ""
 "exactly *visit* and *arg*:"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:163
+#: ../Doc/c-api/gcsupport.rst:185
 msgid ""
 "If *o* is not ``NULL``, call the *visit* callback, with arguments *o* and "
 "*arg*.  If *visit* returns a non-zero value, then return it. Using this "
 "macro, :c:member:`~PyTypeObject.tp_traverse` handlers look like::"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:176
+#: ../Doc/c-api/gcsupport.rst:198
 msgid ""
 "The :c:member:`~PyTypeObject.tp_clear` handler must be of the :c:type:"
 "`inquiry` type, or ``NULL`` if the object is immutable."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:182
+#: ../Doc/c-api/gcsupport.rst:204
 msgid ""
 "Drop references that may have created reference cycles.  Immutable objects "
 "do not have to define this method since they can never directly create "
@@ -243,23 +275,23 @@ msgid ""
 "in a reference cycle."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:191
+#: ../Doc/c-api/gcsupport.rst:213
 msgid "Controlling the Garbage Collector State"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:193
+#: ../Doc/c-api/gcsupport.rst:215
 msgid ""
 "The C-API provides the following functions for controlling garbage "
 "collection runs."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:198
+#: ../Doc/c-api/gcsupport.rst:220
 msgid ""
 "Perform a full garbage collection, if the garbage collector is enabled. "
 "(Note that :func:`gc.collect` runs it unconditionally.)"
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:201
+#: ../Doc/c-api/gcsupport.rst:223
 msgid ""
 "Returns the number of collected + unreachable objects which cannot be "
 "collected. If the garbage collector is disabled or already collecting, "
@@ -267,20 +299,58 @@ msgid ""
 "data:`sys.unraisablehook`. This function does not raise exceptions."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:211
+#: ../Doc/c-api/gcsupport.rst:233
 msgid ""
 "Enable the garbage collector: similar to :func:`gc.enable`. Returns the "
 "previous state, 0 for disabled and 1 for enabled."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:219
+#: ../Doc/c-api/gcsupport.rst:241
 msgid ""
 "Disable the garbage collector: similar to :func:`gc.disable`. Returns the "
 "previous state, 0 for disabled and 1 for enabled."
 msgstr ""
 
-#: ../Doc/c-api/gcsupport.rst:227
+#: ../Doc/c-api/gcsupport.rst:249
 msgid ""
 "Query the state of the garbage collector: similar to :func:`gc.isenabled`. "
 "Returns the current state, 0 for disabled and 1 for enabled."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:256
+msgid "Querying Garbage Collector State"
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:258
+msgid ""
+"The C-API provides the following interface for querying information about "
+"the garbage collector."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:263
+msgid ""
+"Run supplied *callback* on all live GC-capable objects. *arg* is passed "
+"through to all invocations of *callback*."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:267
+msgid ""
+"If new objects are (de)allocated by the callback it is undefined if they "
+"will be visited."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:270
+msgid ""
+"Garbage collection is disabled during operation. Explicitly running a "
+"collection in the callback may lead to undefined behaviour e.g. visiting the "
+"same objects multiple times or not at all."
+msgstr ""
+
+#: ../Doc/c-api/gcsupport.rst:278
+msgid ""
+"Type of the visitor function to be passed to :c:func:"
+"`PyUnstable_GC_VisitObjects`. *arg* is the same as the *arg* passed to "
+"``PyUnstable_GC_VisitObjects``. Return ``0`` to continue iteration, return "
+"``1`` to stop iteration. Other return values are reserved for now so "
+"behavior on returning anything else is undefined."
 msgstr ""

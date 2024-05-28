@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/graphlib.rst:2
-msgid ":mod:`graphlib` --- Functionality to operate with graph-like structures"
+msgid ""
+":mod:`!graphlib` --- Functionality to operate with graph-like structures"
 msgstr ""
 
 #: ../Doc/library/graphlib.rst:8
@@ -26,7 +27,9 @@ msgid "**Source code:** :source:`Lib/graphlib.py`"
 msgstr ""
 
 #: ../Doc/library/graphlib.rst:20
-msgid "Provides functionality to topologically sort a graph of hashable nodes."
+msgid ""
+"Provides functionality to topologically sort a graph of :term:`hashable` "
+"nodes."
 msgstr ""
 
 #: ../Doc/library/graphlib.rst:22
@@ -93,7 +96,7 @@ msgstr ""
 #: ../Doc/library/graphlib.rst:87
 msgid ""
 "Add a new node and its predecessors to the graph. Both the *node* and all "
-"elements in *predecessors* must be hashable."
+"elements in *predecessors* must be :term:`hashable`."
 msgstr ""
 
 #: ../Doc/library/graphlib.rst:90
@@ -137,8 +140,8 @@ msgstr ""
 
 #: ../Doc/library/graphlib.rst:118
 msgid ""
-"The :meth:`~TopologicalSorter.__bool__` method of this class defers to this "
-"function, so instead of::"
+"The :meth:`~object.__bool__` method of this class defers to this function, "
+"so instead of::"
 msgstr ""
 
 #: ../Doc/library/graphlib.rst:124
@@ -220,7 +223,7 @@ msgstr ""
 #: ../Doc/library/graphlib.rst:207
 msgid ""
 "The detected cycle can be accessed via the second element in the :attr:"
-"`~CycleError.args` attribute of the exception instance and consists in a "
+"`~BaseException.args` attribute of the exception instance and consists in a "
 "list of nodes, such that each node is, in the graph, an immediate "
 "predecessor of the next node in the list. In the reported list, the first "
 "and the last node will be the same, to make it clear that it is cyclic."

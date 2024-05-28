@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/uuid.rst:2
-msgid ":mod:`uuid` --- UUID objects according to :rfc:`4122`"
+msgid ":mod:`!uuid` --- UUID objects according to :rfc:`4122`"
 msgstr ""
 
 #: ../Doc/library/uuid.rst:9
@@ -46,8 +46,9 @@ msgid ""
 "Depending on support from the underlying platform, :func:`uuid1` may or may "
 "not return a \"safe\" UUID.  A safe UUID is one which is generated using "
 "synchronization methods that ensure no two processes can obtain the same "
-"UUID.  All instances of :class:`UUID` have an :attr:`is_safe` attribute "
-"which relays any information about the UUID's safety, using this enumeration:"
+"UUID.  All instances of :class:`UUID` have an :attr:`~UUID.is_safe` "
+"attribute which relays any information about the UUID's safety, using this "
+"enumeration:"
 msgstr ""
 
 #: ../Doc/library/uuid.rst:34
@@ -120,106 +121,74 @@ msgid ""
 "six individual attributes and two derived attributes:"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:99
+#: ../Doc/library/uuid.rst:100
 msgid "Field"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:99
+#: ../Doc/library/uuid.rst:101
 msgid "Meaning"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:101
-msgid ":attr:`time_low`"
+#: ../Doc/library/uuid.rst:104
+msgid "The first 32 bits of the UUID."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:101
-msgid "the first 32 bits of the UUID"
+#: ../Doc/library/uuid.rst:107 ../Doc/library/uuid.rst:110
+msgid "The next 16 bits of the UUID."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:103
-msgid ":attr:`time_mid`"
+#: ../Doc/library/uuid.rst:113 ../Doc/library/uuid.rst:116
+msgid "The next 8 bits of the UUID."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:103 ../Doc/library/uuid.rst:105
-msgid "the next 16 bits of the UUID"
+#: ../Doc/library/uuid.rst:119
+msgid "The last 48 bits of the UUID."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:105
-msgid ":attr:`time_hi_version`"
+#: ../Doc/library/uuid.rst:122
+msgid "The 60-bit timestamp."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:107
-msgid ":attr:`clock_seq_hi_variant`"
+#: ../Doc/library/uuid.rst:125
+msgid "The 14-bit sequence number."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:107 ../Doc/library/uuid.rst:109
-msgid "the next 8 bits of the UUID"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:109
-msgid ":attr:`clock_seq_low`"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:111
-msgid ":attr:`node`"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:111
-msgid "the last 48 bits of the UUID"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:113
-msgid ":attr:`time`"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:113
-msgid "the 60-bit timestamp"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:115
-msgid ":attr:`clock_seq`"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:115
-msgid "the 14-bit sequence number"
-msgstr ""
-
-#: ../Doc/library/uuid.rst:121
+#: ../Doc/library/uuid.rst:130
 msgid "The UUID as a 32-character lowercase hexadecimal string."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:126
+#: ../Doc/library/uuid.rst:135
 msgid "The UUID as a 128-bit integer."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:131
+#: ../Doc/library/uuid.rst:140
 msgid "The UUID as a URN as specified in :rfc:`4122`."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:136
+#: ../Doc/library/uuid.rst:145
 msgid ""
 "The UUID variant, which determines the internal layout of the UUID. This "
 "will be one of the constants :const:`RESERVED_NCS`, :const:`RFC_4122`, :"
 "const:`RESERVED_MICROSOFT`, or :const:`RESERVED_FUTURE`."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:143
+#: ../Doc/library/uuid.rst:152
 msgid ""
 "The UUID version number (1 through 5, meaningful only when the variant is :"
 "const:`RFC_4122`)."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:148
+#: ../Doc/library/uuid.rst:157
 msgid ""
 "An enumeration of :class:`SafeUUID` which indicates whether the platform "
 "generated the UUID in a multiprocessing-safe way."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:153
+#: ../Doc/library/uuid.rst:162
 msgid "The :mod:`uuid` module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:158
+#: ../Doc/library/uuid.rst:167
 msgid ""
 "Get the hardware address as a 48-bit positive integer.  The first time this "
 "runs, it may launch a separate program, which could be quite slow.  If all "
@@ -232,14 +201,14 @@ msgid ""
 "locally administered MAC addresses, but with no other ordering guarantees."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:168
+#: ../Doc/library/uuid.rst:177
 msgid ""
 "Universally administered MAC addresses are preferred over locally "
 "administered MAC addresses, since the former are guaranteed to be globally "
 "unique, while the latter are not."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:178
+#: ../Doc/library/uuid.rst:187
 msgid ""
 "Generate a UUID from a host ID, sequence number, and the current time. If "
 "*node* is not given, :func:`getnode` is used to obtain the hardware address. "
@@ -247,84 +216,153 @@ msgid ""
 "random 14-bit sequence number is chosen."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:188
+#: ../Doc/library/uuid.rst:197
 msgid ""
 "Generate a UUID based on the MD5 hash of a namespace identifier (which is a "
-"UUID) and a name (which is a string)."
+"UUID) and a name (which is a :class:`bytes` object or a string that will be "
+"encoded using UTF-8)."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:196
+#: ../Doc/library/uuid.rst:206
 msgid "Generate a random UUID."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:203
+#: ../Doc/library/uuid.rst:213
 msgid ""
 "Generate a UUID based on the SHA-1 hash of a namespace identifier (which is "
-"a UUID) and a name (which is a string)."
+"a UUID) and a name (which is a :class:`bytes` object or a string that will "
+"be encoded using UTF-8)."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:208
+#: ../Doc/library/uuid.rst:219
 msgid ""
 "The :mod:`uuid` module defines the following namespace identifiers for use "
 "with :func:`uuid3` or :func:`uuid5`."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:214
+#: ../Doc/library/uuid.rst:225
 msgid ""
 "When this namespace is specified, the *name* string is a fully qualified "
 "domain name."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:220
+#: ../Doc/library/uuid.rst:231
 msgid "When this namespace is specified, the *name* string is a URL."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:225
+#: ../Doc/library/uuid.rst:236
 msgid "When this namespace is specified, the *name* string is an ISO OID."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:230
+#: ../Doc/library/uuid.rst:241
 msgid ""
 "When this namespace is specified, the *name* string is an X.500 DN in DER or "
 "a text output format."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:233
+#: ../Doc/library/uuid.rst:244
 msgid ""
 "The :mod:`uuid` module defines the following constants for the possible "
-"values of the :attr:`variant` attribute:"
+"values of the :attr:`~UUID.variant` attribute:"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:239
+#: ../Doc/library/uuid.rst:250
 msgid "Reserved for NCS compatibility."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:244
+#: ../Doc/library/uuid.rst:255
 msgid "Specifies the UUID layout given in :rfc:`4122`."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:249
+#: ../Doc/library/uuid.rst:260
 msgid "Reserved for Microsoft compatibility."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:254
+#: ../Doc/library/uuid.rst:265
 msgid "Reserved for future definition."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:260
+#: ../Doc/library/uuid.rst:270
 msgid ":rfc:`4122` - A Universally Unique IDentifier (UUID) URN Namespace"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:260
+#: ../Doc/library/uuid.rst:271
 msgid ""
 "This specification defines a Uniform Resource Name namespace for UUIDs, the "
 "internal format of UUIDs, and methods of generating UUIDs."
 msgstr ""
 
-#: ../Doc/library/uuid.rst:267
+#: ../Doc/library/uuid.rst:278
+msgid "Command-Line Usage"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:282
+msgid ""
+"The :mod:`uuid` module can be executed as a script from the command line."
+msgstr ""
+
+#: ../Doc/library/uuid.rst:288
+msgid "The following options are accepted:"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:294
+msgid "Show the help message and exit."
+msgstr ""
+
+#: ../Doc/library/uuid.rst:299
+msgid ""
+"Specify the function name to use to generate the uuid. By default :func:"
+"`uuid4` is used."
+msgstr ""
+
+#: ../Doc/library/uuid.rst:305
+msgid ""
+"The namespace is a ``UUID``, or ``@ns`` where ``ns`` is a well-known "
+"predefined UUID addressed by namespace name. Such as ``@dns``, ``@url``, "
+"``@oid``, and ``@x500``. Only required for :func:`uuid3` / :func:`uuid5` "
+"functions."
+msgstr ""
+
+#: ../Doc/library/uuid.rst:312
+msgid ""
+"The name used as part of generating the uuid. Only required for :func:"
+"`uuid3` / :func:`uuid5` functions."
+msgstr ""
+
+#: ../Doc/library/uuid.rst:319
 msgid "Example"
 msgstr ""
 
-#: ../Doc/library/uuid.rst:269
+#: ../Doc/library/uuid.rst:321
 msgid "Here are some examples of typical usage of the :mod:`uuid` module::"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:360
+msgid "Command-Line Example"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:362
+msgid ""
+"Here are some examples of typical usage of the :mod:`uuid` command line "
+"interface:"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:182
+msgid "getnode"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:192
+msgid "uuid1"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:201
+msgid "uuid3"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:208
+msgid "uuid4"
+msgstr ""
+
+#: ../Doc/library/uuid.rst:217
+msgid "uuid5"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/xml.sax.utils.rst:2
-msgid ":mod:`xml.sax.saxutils` --- SAX Utilities"
+msgid ":mod:`!xml.sax.saxutils` --- SAX Utilities"
 msgstr ""
 
 #: ../Doc/library/xml.sax.utils.rst:10
@@ -44,11 +44,18 @@ msgid ""
 "``'<'`` and ``'>'`` are always escaped, even if *entities* is provided."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:31
+#: ../Doc/library/xml.sax.utils.rst:30
+msgid ""
+"This function should only be used to escape characters that can't be used "
+"directly in XML. Do not use this function as a general string translation "
+"function."
+msgstr ""
+
+#: ../Doc/library/xml.sax.utils.rst:36
 msgid "Unescape ``'&amp;'``, ``'&lt;'``, and ``'&gt;'`` in a string of data."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:33
+#: ../Doc/library/xml.sax.utils.rst:38
 msgid ""
 "You can unescape other strings of data by passing a dictionary as the "
 "optional *entities* parameter.  The keys and values must all be strings; "
@@ -57,7 +64,7 @@ msgid ""
 "provided."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:41
+#: ../Doc/library/xml.sax.utils.rst:46
 msgid ""
 "Similar to :func:`escape`, but also prepares *data* to be used as an "
 "attribute value.  The return value is a quoted version of *data* with any "
@@ -69,13 +76,13 @@ msgid ""
 "directly as an attribute value::"
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:53
+#: ../Doc/library/xml.sax.utils.rst:58
 msgid ""
 "This function is useful when generating attribute values for HTML or any "
 "SGML using the reference concrete syntax."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:59
+#: ../Doc/library/xml.sax.utils.rst:64
 msgid ""
 "This class implements the :class:`~xml.sax.handler.ContentHandler` interface "
 "by writing SAX events back into an XML document. In other words, using an :"
@@ -88,11 +95,11 @@ msgid ""
 "a single self-closed tag."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:69
-msgid "The *short_empty_elements* parameter."
+#: ../Doc/library/xml.sax.utils.rst:74
+msgid "Added the *short_empty_elements* parameter."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:75
+#: ../Doc/library/xml.sax.utils.rst:80
 msgid ""
 "This class is designed to sit between an :class:`~xml.sax.xmlreader."
 "XMLReader` and the client application's event handlers.  By default, it does "
@@ -101,12 +108,12 @@ msgid ""
 "stream or the configuration requests as they pass through."
 msgstr ""
 
-#: ../Doc/library/xml.sax.utils.rst:85
+#: ../Doc/library/xml.sax.utils.rst:90
 msgid ""
 "This function takes an input source and an optional base URL and returns a "
 "fully resolved :class:`~xml.sax.xmlreader.InputSource` object ready for "
 "reading.  The input source can be given as a string, a file-like object, or "
 "an :class:`~xml.sax.xmlreader.InputSource` object; parsers will use this "
-"function to implement the polymorphic *source* argument to their :meth:"
-"`parse` method."
+"function to implement the polymorphic *source* argument to their :meth:`~xml."
+"sax.xmlreader.XMLReader.parse` method."
 msgstr ""

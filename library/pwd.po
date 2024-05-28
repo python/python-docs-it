@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/pwd.rst:2
-msgid ":mod:`pwd` --- The password database"
+msgid ":mod:`!pwd` --- The password database"
 msgstr ""
 
 #: ../Doc/library/pwd.rst:10
@@ -27,15 +27,8 @@ msgid ""
 "It is available on all Unix versions."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../Doc/includes/wasm-notavail.rst:5
-msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+#: ../Doc/library/pwd.rst:13
+msgid ":ref:`Availability <availability>`: Unix, not WASI, not iOS."
 msgstr ""
 
 #: ../Doc/library/pwd.rst:15
@@ -147,47 +140,38 @@ msgid ""
 "is raised if the entry asked for cannot be found."
 msgstr ""
 
-#: ../Doc/library/pwd.rst:44
+#: ../Doc/library/pwd.rst:42
 msgid ""
 "In traditional Unix the field ``pw_passwd`` usually contains a password "
-"encrypted with a DES derived algorithm (see module :mod:`crypt`).  However "
-"most modern unices  use a so-called *shadow password* system.  On those "
-"unices the *pw_passwd* field only contains an asterisk (``'*'``) or the  "
-"letter ``'x'`` where the encrypted password is stored in a file :file:`/etc/"
-"shadow` which is not world readable.  Whether the *pw_passwd* field contains "
-"anything useful is system-dependent.  If available, the :mod:`spwd` module "
-"should be used where access to the encrypted password is required."
+"encrypted with a DES derived algorithm.  However most modern unices  use a "
+"so-called *shadow password* system.  On those unices the *pw_passwd* field "
+"only contains an asterisk (``'*'``) or the  letter ``'x'`` where the "
+"encrypted password is stored in a file :file:`/etc/shadow` which is not "
+"world readable.  Whether the *pw_passwd* field contains anything useful is "
+"system-dependent."
 msgstr ""
 
-#: ../Doc/library/pwd.rst:53
+#: ../Doc/library/pwd.rst:50
 msgid "It defines the following items:"
 msgstr ""
 
-#: ../Doc/library/pwd.rst:58
+#: ../Doc/library/pwd.rst:55
 msgid "Return the password database entry for the given numeric user ID."
 msgstr ""
 
-#: ../Doc/library/pwd.rst:63
+#: ../Doc/library/pwd.rst:60
 msgid "Return the password database entry for the given user name."
 msgstr ""
 
-#: ../Doc/library/pwd.rst:68
+#: ../Doc/library/pwd.rst:65
 msgid ""
 "Return a list of all available password database entries, in arbitrary order."
 msgstr ""
 
-#: ../Doc/library/pwd.rst:74
+#: ../Doc/library/pwd.rst:70
 msgid "Module :mod:`grp`"
 msgstr ""
 
-#: ../Doc/library/pwd.rst:74
+#: ../Doc/library/pwd.rst:71
 msgid "An interface to the group database, similar to this."
-msgstr ""
-
-#: ../Doc/library/pwd.rst:76
-msgid "Module :mod:`spwd`"
-msgstr ""
-
-#: ../Doc/library/pwd.rst:77
-msgid "An interface to the shadow password database, similar to this."
 msgstr ""

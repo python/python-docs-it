@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/selectors.rst:2
-msgid ":mod:`selectors` --- High-level I/O multiplexing"
+msgid ":mod:`!selectors` --- High-level I/O multiplexing"
 msgstr ""
 
 #: ../Doc/library/selectors.rst:9
@@ -42,8 +42,8 @@ msgid ""
 "concrete implementations (:class:`KqueueSelector`, :class:"
 "`EpollSelector`...), that can be used to wait for I/O readiness notification "
 "on multiple file objects. In the following, \"file object\" refers to any "
-"object with a :meth:`fileno()` method, or a raw file descriptor. See :term:"
-"`file object`."
+"object with a :meth:`~io.IOBase.fileno` method, or a raw file descriptor. "
+"See :term:`file object`."
 msgstr ""
 
 #: ../Doc/library/selectors.rst:26
@@ -69,15 +69,14 @@ msgstr ""
 msgid "Low-level I/O multiplexing module."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
 #: ../Doc/library/selectors.rst:44
@@ -104,15 +103,7 @@ msgid "Meaning"
 msgstr ""
 
 #: ../Doc/library/selectors.rst:63
-msgid ":const:`EVENT_READ`"
-msgstr ""
-
-#: ../Doc/library/selectors.rst:63
 msgid "Available for read"
-msgstr ""
-
-#: ../Doc/library/selectors.rst:65
-msgid ":const:`EVENT_WRITE`"
 msgstr ""
 
 #: ../Doc/library/selectors.rst:65
@@ -199,8 +190,8 @@ msgstr ""
 
 #: ../Doc/library/selectors.rst:135
 msgid ""
-"This is equivalent to :meth:`BaseSelector.unregister(fileobj)` followed by :"
-"meth:`BaseSelector.register(fileobj, events, data)`, except that it can be "
+"This is equivalent to ``BaseSelector.unregister(fileobj)`` followed by "
+"``BaseSelector.register(fileobj, events, data)``, except that it can be "
 "implemented more efficiently."
 msgstr ""
 

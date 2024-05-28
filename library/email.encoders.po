@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/email.encoders.rst:2
-msgid ":mod:`email.encoders`: Encoders"
+msgid ":mod:`!email.encoders`: Encoders"
 msgstr ""
 
 #: ../Doc/library/email.encoders.rst:7
@@ -57,8 +57,8 @@ msgstr ""
 #: ../Doc/library/email.encoders.rst:27
 msgid ""
 "The :mod:`email` package provides some convenient encoders in its :mod:"
-"`encoders` module.  These encoders are actually used by the :class:`~email."
-"mime.audio.MIMEAudio` and :class:`~email.mime.image.MIMEImage` class "
+"`~email.encoders` module.  These encoders are actually used by the :class:"
+"`~email.mime.audio.MIMEAudio` and :class:`~email.mime.image.MIMEImage` class "
 "constructors to provide default encodings.  All encoder functions take "
 "exactly one argument, the message object to encode.  They usually extract "
 "the payload, encode it, and reset the payload to this newly encoded value.  "

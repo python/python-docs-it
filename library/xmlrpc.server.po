@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/xmlrpc.server.rst:2
-msgid ":mod:`xmlrpc.server` --- Basic XML-RPC servers"
+msgid ":mod:`!xmlrpc.server` --- Basic XML-RPC servers"
 msgstr ""
 
 #: ../Doc/library/xmlrpc.server.rst:10
@@ -40,15 +40,14 @@ msgid ""
 "see :ref:`xml-vulnerabilities`."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
 #: ../Doc/library/xmlrpc.server.rst:32
@@ -107,8 +106,8 @@ msgstr ""
 #: ../Doc/library/xmlrpc.server.rst:85 ../Doc/library/xmlrpc.server.rst:299
 msgid ""
 "Register a function that can respond to XML-RPC requests.  If *name* is "
-"given, it will be the method name associated with *function*, otherwise "
-"``function.__name__`` will be used.  *name* is a string, and may contain "
+"given, it will be the method name associated with *function*, otherwise :"
+"attr:`function.__name__` will be used.  *name* is a string, and may contain "
 "characters not legal in Python identifiers, including the period character."
 msgstr ""
 
@@ -116,7 +115,7 @@ msgstr ""
 msgid ""
 "This method can also be used as a decorator.  When used as a decorator, "
 "*name* can only be given as a keyword argument to register *function* under "
-"*name*.  If no *name* is given, ``function.__name__`` will be used."
+"*name*.  If no *name* is given, :attr:`function.__name__` will be used."
 msgstr ""
 
 #: ../Doc/library/xmlrpc.server.rst:94 ../Doc/library/xmlrpc.server.rst:308

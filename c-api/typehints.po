@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgid "Here's an example of how to make an extension type generic::"
 msgstr ""
 
 #: ../Doc/c-api/typehints.rst:38
-msgid "The data model method :meth:`__class_getitem__`."
+msgid "The data model method :meth:`~object.__class_getitem__`."
 msgstr ""
 
 #: ../Doc/c-api/typehints.rst:44

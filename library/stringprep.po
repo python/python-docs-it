@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/stringprep.rst:2
-msgid ":mod:`stringprep` --- Internet String Preparation"
+msgid ":mod:`!stringprep` --- Internet String Preparation"
 msgstr ""
 
 #: ../Doc/library/stringprep.rst:10
@@ -50,8 +50,8 @@ msgstr ""
 #: ../Doc/library/stringprep.rst:29
 msgid ""
 "The module :mod:`stringprep` only exposes the tables from :rfc:`3454`. As "
-"these tables would be very large to represent them as dictionaries or lists, "
-"the module uses the Unicode character database internally. The module source "
+"these tables would be very large to represent as dictionaries or lists, the "
+"module uses the Unicode character database internally. The module source "
 "code itself was generated using the ``mkstringprep.py`` utility."
 msgstr ""
 

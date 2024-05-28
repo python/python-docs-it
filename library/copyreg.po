@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/copyreg.rst:2
-msgid ":mod:`copyreg` --- Register :mod:`pickle` support functions"
+msgid ":mod:`!copyreg` --- Register :mod:`!pickle` support functions"
 msgstr ""
 
 #: ../Doc/library/copyreg.rst:7
@@ -43,8 +43,8 @@ msgstr ""
 #: ../Doc/library/copyreg.rst:30
 msgid ""
 "Declares that *function* should be used as a \"reduction\" function for "
-"objects of type *type*.  *function* should return either a string or a tuple "
-"containing two or three elements. See the :attr:`~pickle.Pickler."
+"objects of type *type*.  *function* must return either a string or a tuple "
+"containing between two and six elements. See the :attr:`~pickle.Pickler."
 "dispatch_table` for more details on the interface of *function*."
 msgstr ""
 
@@ -69,4 +69,16 @@ msgstr ""
 msgid ""
 "The example below would like to show how to register a pickle function and "
 "how it will be used:"
+msgstr ""
+
+#: ../Doc/library/copyreg.rst:9
+msgid "module"
+msgstr ""
+
+#: ../Doc/library/copyreg.rst:9
+msgid "pickle"
+msgstr ""
+
+#: ../Doc/library/copyreg.rst:9
+msgid "copy"
 msgstr ""

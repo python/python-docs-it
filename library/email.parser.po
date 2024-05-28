@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/email.parser.rst:2
-msgid ":mod:`email.parser`: Parsing email messages"
+msgid ":mod:`!email.parser`: Parsing email messages"
 msgstr ""
 
 #: ../Doc/library/email.parser.rst:7
@@ -68,9 +68,10 @@ msgid ""
 "Note that the parser can be extended in limited ways, and of course you can "
 "implement your own parser completely from scratch.  All of the logic that "
 "connects the :mod:`email` package's bundled parser and the :class:`~email."
-"message.EmailMessage` class is embodied in the :mod:`policy` class, so a "
-"custom parser can create message object trees any way it finds necessary by "
-"implementing custom versions of the appropriate :mod:`policy` methods."
+"message.EmailMessage` class is embodied in the :class:`~email.policy.Policy` "
+"class, so a custom parser can create message object trees any way it finds "
+"necessary by implementing custom versions of the appropriate :class:`!"
+"Policy` methods."
 msgstr ""
 
 #: ../Doc/library/email.parser.rst:49

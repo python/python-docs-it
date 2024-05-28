@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/pickletools.rst:2
-msgid ":mod:`pickletools` --- Tools for pickle developers"
+msgid ":mod:`!pickletools` --- Tools for pickle developers"
 msgstr ""
 
 #: ../Doc/library/pickletools.rst:8
@@ -35,11 +35,11 @@ msgid ""
 "the :mod:`pickletools` module relevant."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:21
+#: ../Doc/library/pickletools.rst:23
 msgid "Command line usage"
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:25
+#: ../Doc/library/pickletools.rst:27
 msgid ""
 "When invoked from the command line, ``python -m pickletools`` will "
 "disassemble the contents of one or more pickle files.  Note that if you want "
@@ -49,42 +49,42 @@ msgid ""
 "pickletools`` is a safer option because it does not execute pickle bytecode."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:33
+#: ../Doc/library/pickletools.rst:35
 msgid "For example, with a tuple ``(1, 2)`` pickled in file ``x.pickle``:"
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:50
+#: ../Doc/library/pickletools.rst:52
 msgid "Command line options"
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:56
+#: ../Doc/library/pickletools.rst:58
 msgid "Annotate each line with a short opcode description."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:60
+#: ../Doc/library/pickletools.rst:62
 msgid "Name of a file where the output should be written."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:64
+#: ../Doc/library/pickletools.rst:66
 msgid "The number of blanks by which to indent a new MARK level."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:68
+#: ../Doc/library/pickletools.rst:70
 msgid ""
 "When multiple objects are disassembled, preserve memo between disassemblies."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:73
+#: ../Doc/library/pickletools.rst:75
 msgid ""
 "When more than one pickle file are specified, print given preamble before "
 "each disassembly."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:79
+#: ../Doc/library/pickletools.rst:81
 msgid "Programmatic Interface"
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:84
+#: ../Doc/library/pickletools.rst:86
 msgid ""
 "Outputs a symbolic disassembly of the pickle to the file-like object *out*, "
 "defaulting to ``sys.stdout``.  *pickle* can be a string or a file-like "
@@ -97,11 +97,11 @@ msgid ""
 "where annotation should start."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:95
-msgid "The *annotate* argument."
+#: ../Doc/library/pickletools.rst:97
+msgid "Added the *annotate* parameter."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:100
+#: ../Doc/library/pickletools.rst:102
 msgid ""
 "Provides an :term:`iterator` over all of the opcodes in a pickle, returning "
 "a sequence of ``(opcode, arg, pos)`` triples.  *opcode* is an instance of "
@@ -110,7 +110,7 @@ msgid ""
 "is located. *pickle* can be a string or a file-like object."
 msgstr ""
 
-#: ../Doc/library/pickletools.rst:108
+#: ../Doc/library/pickletools.rst:110
 msgid ""
 "Returns a new equivalent pickle string after eliminating unused ``PUT`` "
 "opcodes. The optimized pickle is shorter, takes less transmission time, "

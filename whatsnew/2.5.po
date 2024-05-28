@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,7 +165,7 @@ msgid ""
 "around your conditional expressions, you won't run into this case."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:123
+#: ../Doc/whatsnew/2.5.rst:122
 msgid ":pep:`308` - Conditional Expressions"
 msgstr ""
 
@@ -230,7 +230,7 @@ msgid ""
 "previous example would be::"
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:201
+#: ../Doc/whatsnew/2.5.rst:200
 msgid ":pep:`309` - Partial Function Application"
 msgstr ""
 
@@ -282,7 +282,7 @@ msgid ""
 "Package uploading was implemented by Martin von Löwis and Richard Jones."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:248
+#: ../Doc/whatsnew/2.5.rst:247
 msgid ":pep:`314` - Metadata for Python Software Packages v1.1"
 msgstr ""
 
@@ -385,7 +385,7 @@ msgid ""
 "import statement, only the ``from ... import`` form."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:331
+#: ../Doc/whatsnew/2.5.rst:330
 msgid ":pep:`328` - Imports: Multi-Line and Absolute/Relative"
 msgstr ""
 
@@ -630,7 +630,7 @@ msgid ""
 "exhausted."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:549
+#: ../Doc/whatsnew/2.5.rst:544
 msgid ":pep:`342` - Coroutines via Enhanced Generators"
 msgstr ""
 
@@ -646,7 +646,7 @@ msgid ""
 "Hettinger and :pep:`325` by Samuele Pedroni."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:552
+#: ../Doc/whatsnew/2.5.rst:551
 msgid "https://en.wikipedia.org/wiki/Coroutine"
 msgstr ""
 
@@ -688,22 +688,22 @@ msgstr ""
 #: ../Doc/whatsnew/2.5.rst:577
 msgid ""
 "The expression is evaluated, and it should result in an object that supports "
-"the context management protocol (that is, has :meth:`__enter__` and :meth:"
-"`__exit__` methods."
+"the context management protocol (that is, has :meth:`~object.__enter__` and :"
+"meth:`~object.__exit__` methods."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:581
 msgid ""
-"The object's :meth:`__enter__` is called before *with-block* is executed and "
-"therefore can run set-up code. It also may return a value that is bound to "
-"the name *variable*, if given.  (Note carefully that *variable* is *not* "
-"assigned the result of *expression*.)"
+"The object's :meth:`~object.__enter__` is called before *with-block* is "
+"executed and therefore can run set-up code. It also may return a value that "
+"is bound to the name *variable*, if given.  (Note carefully that *variable* "
+"is *not* assigned the result of *expression*.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:586
 msgid ""
-"After execution of the *with-block* is finished, the object's :meth:"
-"`__exit__` method is called, even if the block raised an exception, and can "
+"After execution of the *with-block* is finished, the object's :meth:`~object."
+"__exit__` method is called, even if the block raised an exception, and can "
 "therefore run clean-up code."
 msgstr ""
 
@@ -734,7 +734,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.5.rst:611
 msgid ""
 "In this case, *f* is the same object created by :func:`open`, because :meth:"
-"`file.__enter__` returns *self*."
+"`~object.__enter__` returns *self*."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:614
@@ -776,13 +776,13 @@ msgstr ""
 #: ../Doc/whatsnew/2.5.rst:654
 msgid ""
 "The expression is evaluated and should result in an object called a "
-"\"context manager\".  The context manager must have :meth:`__enter__` and :"
-"meth:`__exit__` methods."
+"\"context manager\".  The context manager must have :meth:`~object."
+"__enter__` and :meth:`~object.__exit__` methods."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:658
 msgid ""
-"The context manager's :meth:`__enter__` method is called.  The value "
+"The context manager's :meth:`~object.__enter__` method is called.  The value "
 "returned is assigned to *VAR*.  If no ``'as VAR'`` clause is present, the "
 "value is simply discarded."
 msgstr ""
@@ -804,8 +804,8 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:672
 msgid ""
-"If *BLOCK* didn't raise an exception,  the :meth:`__exit__` method is still "
-"called, but *type*, *value*, and *traceback* are all ``None``."
+"If *BLOCK* didn't raise an exception,  the :meth:`~object.__exit__` method "
+"is still called, but *type*, *value*, and *traceback* are all ``None``."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:675
@@ -838,19 +838,19 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:706
 msgid ""
-"The :meth:`__enter__` method is pretty easy, having only to start a new "
-"transaction.  For this application the resulting cursor object would be a "
-"useful result, so the method will return it.  The user can then add ``as "
+"The :meth:`~object.__enter__` method is pretty easy, having only to start a "
+"new transaction.  For this application the resulting cursor object would be "
+"a useful result, so the method will return it.  The user can then add ``as "
 "cursor`` to their ':keyword:`with`' statement to bind the cursor to a "
 "variable name. ::"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:718
 msgid ""
-"The :meth:`__exit__` method is the most complicated because it's where most "
-"of the work has to be done.  The method has to check if an exception "
-"occurred.  If there was no exception, the transaction is committed.  The "
-"transaction is rolled back if there was an exception."
+"The :meth:`~object.__exit__` method is the most complicated because it's "
+"where most of the work has to be done.  The method has to check if an "
+"exception occurred.  If there was no exception, the transaction is "
+"committed.  The transaction is rolled back if there was an exception."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:723
@@ -877,12 +877,12 @@ msgid ""
 "The decorator is called :func:`contextmanager`, and lets you write a single "
 "generator function instead of defining a new class.  The generator should "
 "yield exactly one value.  The code up to the :keyword:`yield` will be "
-"executed as the :meth:`__enter__` method, and the value yielded will be the "
-"method's return value that will get bound to the variable in the ':keyword:"
-"`with`' statement's :keyword:`!as` clause, if any.  The code after the :"
-"keyword:`yield` will be executed in the :meth:`__exit__` method.  Any "
-"exception raised in the block will be raised by the :keyword:`!yield` "
-"statement."
+"executed as the :meth:`~object.__enter__` method, and the value yielded will "
+"be the method's return value that will get bound to the variable in the ':"
+"keyword:`with`' statement's :keyword:`!as` clause, if any.  The code after "
+"the :keyword:`yield` will be executed in the :meth:`~object.__exit__` "
+"method.  Any exception raised in the block will be raised by the :keyword:`!"
+"yield` statement."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:757
@@ -906,7 +906,7 @@ msgid ""
 "bound to a variable, and calls ``object.close`` at the end of the block. ::"
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:803
+#: ../Doc/whatsnew/2.5.rst:799
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
@@ -1104,10 +1104,10 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:957
 msgid ""
-"A corresponding :attr:`nb_index` slot was added to the C-level :c:type:"
-"`PyNumberMethods` structure to let C extensions implement this protocol. "
-"``PyNumber_Index(obj)`` can be used in extension code to call the :meth:"
-"`__index__` function and retrieve its result."
+"A corresponding :c:member:`~PyNumberMethods.nb_index` slot was added to the "
+"C-level :c:type:`PyNumberMethods` structure to let C extensions implement "
+"this protocol. ``PyNumber_Index(obj)`` can be used in extension code to call "
+"the :meth:`__index__` function and retrieve its result."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:965
@@ -1340,11 +1340,11 @@ msgstr ""
 msgid ""
 "It's now illegal to mix iterating over a file  with ``for line in file`` and "
 "calling  the file object's :meth:`read`/:meth:`readline`/:meth:`readlines` "
-"methods.  Iteration uses an internal buffer and the  :meth:`read\\*` methods "
-"don't use that buffer.   Instead they would return the data following the "
-"buffer, causing the data to appear out of order.  Mixing iteration and these "
-"methods will now trigger a :exc:`ValueError` from the :meth:`read\\*` "
-"method. (Implemented by Thomas Wouters.)"
+"methods.  Iteration uses an internal buffer and the  :meth:`!read\\*` "
+"methods don't use that buffer.   Instead they would return the data "
+"following the buffer, causing the data to appear out of order.  Mixing "
+"iteration and these methods will now trigger a :exc:`ValueError` from the :"
+"meth:`!read\\*` method. (Implemented by Thomas Wouters.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1178
@@ -1410,7 +1410,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1225
 msgid ""
-"The :mod:`audioop` module now supports the a-LAW encoding, and the code for "
+"The :mod:`!audioop` module now supports the a-LAW encoding, and the code for "
 "u-LAW encoding has been improved.  (Contributed by Lars Immisch.)"
 msgstr ""
 
@@ -1560,8 +1560,8 @@ msgid ""
 "`universal newlines` mode.  Another new parameter, *openhook*, lets you use "
 "a function other than :func:`open`  to open the input files.  Once you're "
 "iterating over the set of files, the :class:`FileInput` object's new :meth:"
-"`fileno` returns the file descriptor for the currently opened file. "
-"(Contributed by Georg Brandl.)"
+"`~fileinput.fileno` returns the file descriptor for the currently opened "
+"file. (Contributed by Georg Brandl.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1354
@@ -1646,16 +1646,16 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1425
 msgid ""
-"New module: the :mod:`msilib` module allows creating Microsoft Installer :"
+"New module: the :mod:`!msilib` module allows creating Microsoft Installer :"
 "file:`.msi` files and CAB files.  Some support for reading the :file:`.msi` "
 "database is also included. (Contributed by Martin von Löwis.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1429
 msgid ""
-"The :mod:`nis` module now supports accessing domains other than the system "
-"default domain by supplying a *domain* argument to the :func:`nis.match` "
-"and :func:`nis.maps` functions. (Contributed by Ben Bell.)"
+"The :mod:`!nis` module now supports accessing domains other than the system "
+"default domain by supplying a *domain* argument to the :func:`!nis.match` "
+"and :func:`!nis.maps` functions. (Contributed by Ben Bell.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1433
@@ -1688,9 +1688,9 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1451
 msgid ""
-"Constants named :attr:`os.SEEK_SET`, :attr:`os.SEEK_CUR`, and :attr:`os."
+"Constants named :const:`os.SEEK_SET`, :const:`os.SEEK_CUR`, and :const:`os."
 "SEEK_END` have been added; these are the parameters to the :func:`os.lseek` "
-"function.  Two new constants for locking are :attr:`os.O_SHLOCK` and :attr:"
+"function.  Two new constants for locking are :const:`os.O_SHLOCK` and :const:"
 "`os.O_EXLOCK`."
 msgstr ""
 
@@ -1726,10 +1726,10 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1481
 msgid ""
-"The :mod:`pickle` and :mod:`cPickle` modules no longer accept a return value "
-"of ``None`` from the :meth:`__reduce__` method; the method must return a "
-"tuple of arguments instead.  The ability to return ``None`` was deprecated "
-"in Python 2.4, so this completes the removal of the feature."
+"The :mod:`pickle` and :mod:`!cPickle` modules no longer accept a return "
+"value of ``None`` from the :meth:`~object.__reduce__` method; the method "
+"must return a tuple of arguments instead.  The ability to return ``None`` "
+"was deprecated in Python 2.4, so this completes the removal of the feature."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1486
@@ -1791,11 +1791,11 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1522
 msgid ""
-"The :mod:`SimpleXMLRPCServer` and :mod:`DocXMLRPCServer`  classes now have "
-"a :attr:`rpc_paths` attribute that constrains XML-RPC operations to a "
-"limited set of URL paths; the default is to allow only ``'/'`` and ``'/"
-"RPC2'``.  Setting :attr:`rpc_paths` to ``None`` or an empty tuple disables  "
-"this path checking."
+"The :mod:`SimpleXMLRPCServer <xmlrpc.server>` and :mod:`DocXMLRPCServer "
+"<xmlrpc.server>`  classes now have a :attr:`rpc_paths` attribute that "
+"constrains XML-RPC operations to a limited set of URL paths; the default is "
+"to allow only ``'/'`` and ``'/RPC2'``.  Setting :attr:`rpc_paths` to "
+"``None`` or an empty tuple disables  this path checking."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1529
@@ -1826,7 +1826,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1545
 msgid ""
-"New module: the :mod:`spwd` module provides functions for accessing the "
+"New module: the :mod:`!spwd` module provides functions for accessing the "
 "shadow password database on systems that support  shadow passwords."
 msgstr ""
 
@@ -1908,7 +1908,7 @@ msgstr ""
 msgid ""
 "The :mod:`unicodedata` module has been updated to use version 4.1.0 of the "
 "Unicode character database.  Version 3.2.0 is required  by some "
-"specifications, so it's still available as  :attr:`unicodedata.ucd_3_2_0`."
+"specifications, so it's still available as  :data:`unicodedata.ucd_3_2_0`."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1607
@@ -1953,10 +1953,11 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1653
 msgid ""
-"The :mod:`xmlrpclib` module now supports returning  :class:`~datetime."
-"datetime` objects for the XML-RPC date type.  Supply  ``use_datetime=True`` "
-"to the :func:`loads` function or the :class:`Unmarshaller` class to enable "
-"this feature. (Contributed by Skip Montanaro.)"
+"The :mod:`xmlrpclib <xmlrpc.client>` module now supports returning  :class:"
+"`~datetime.datetime` objects for the XML-RPC date type.  Supply  "
+"``use_datetime=True`` to the :func:`~xmlrpc.client.loads` function or the :"
+"class:`!Unmarshaller` class to enable this feature. (Contributed by Skip "
+"Montanaro.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1660
@@ -1982,7 +1983,7 @@ msgstr ""
 msgid ""
 "The :mod:`ctypes` package, written by Thomas Heller, has been added  to the "
 "standard library.  :mod:`ctypes` lets you call arbitrary functions  in "
-"shared libraries or DLLs.  Long-time users may remember the :mod:`dl` "
+"shared libraries or DLLs.  Long-time users may remember the :mod:`!dl` "
 "module, which provides functions for loading shared libraries and calling "
 "functions in them. The :mod:`ctypes` package is much fancier."
 msgstr ""
@@ -2046,7 +2047,7 @@ msgid ""
 "modules, now that :mod:`ctypes` is included with core Python."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:1750
+#: ../Doc/whatsnew/2.5.rst:1749
 msgid ""
 "https://web.archive.org/web/20180410025338/http://starship.python.net/crew/"
 "theller/ctypes/"
@@ -2268,15 +2269,15 @@ msgstr ""
 #: ../Doc/whatsnew/2.5.rst:1879
 msgid ""
 "A new :mod:`hashlib` module, written by Gregory P. Smith,  has been added to "
-"replace the :mod:`md5` and :mod:`sha` modules.  :mod:`hashlib` adds support "
-"for additional secure hashes (SHA-224, SHA-256, SHA-384, and SHA-512). When "
-"available, the module uses OpenSSL for fast platform optimized "
-"implementations of algorithms."
+"replace the :mod:`!md5` and :mod:`!sha` modules.  :mod:`hashlib` adds "
+"support for additional secure hashes (SHA-224, SHA-256, SHA-384, and "
+"SHA-512). When available, the module uses OpenSSL for fast platform "
+"optimized implementations of algorithms."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:1885
 msgid ""
-"The old :mod:`md5` and :mod:`sha` modules still exist as wrappers around "
+"The old :mod:`!md5` and :mod:`!sha` modules still exist as wrappers around "
 "hashlib to preserve backwards compatibility.  The new module's interface is "
 "very close to that of the old modules, but not identical. The most "
 "significant difference is that the constructor functions for creating new "
@@ -2386,7 +2387,7 @@ msgid ""
 "www.sqlite.org."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:2023
+#: ../Doc/whatsnew/2.5.rst:2022
 msgid "https://www.pysqlite.org"
 msgstr ""
 
@@ -2394,7 +2395,7 @@ msgstr ""
 msgid "The pysqlite web page."
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:2027
+#: ../Doc/whatsnew/2.5.rst:2025
 msgid "https://www.sqlite.org"
 msgstr ""
 
@@ -2435,7 +2436,7 @@ msgid ""
 "Setting up a server takes only a few lines of code::"
 msgstr ""
 
-#: ../Doc/whatsnew/2.5.rst:2069
+#: ../Doc/whatsnew/2.5.rst:2068
 msgid ""
 "https://web.archive.org/web/20160331090247/http://wsgi.readthedocs.org/en/"
 "latest/"
@@ -2507,10 +2508,10 @@ msgid ""
 "definition of the various AST nodes in :file:`Parser/Python.asdl`.  A Python "
 "script reads this file and generates a set of C structure definitions in :"
 "file:`Include/Python-ast.h`.  The :c:func:`PyParser_ASTFromString` and :c:"
-"func:`PyParser_ASTFromFile`, defined in :file:`Include/pythonrun.h`, take "
+"func:`!PyParser_ASTFromFile`, defined in :file:`Include/pythonrun.h`, take "
 "Python source as input and return the root of an AST representing the "
-"contents. This AST can then be turned into a code object by :c:func:"
-"`PyAST_Compile`.  For more information, read the source code, and then ask "
+"contents. This AST can then be turned into a code object by :c:func:`!"
+"PyAST_Compile`.  For more information, read the source code, and then ask "
 "questions on python-dev."
 msgstr ""
 
@@ -2549,11 +2550,11 @@ msgstr ""
 msgid ""
 "Previously these different families all reduced to the platform's :c:func:"
 "`malloc` and :c:func:`free` functions.  This meant  it didn't matter if you "
-"got things wrong and allocated memory with the :c:func:`PyMem` function but "
-"freed it with the :c:func:`PyObject` function.  With 2.5's changes to "
-"obmalloc, these families now do different things and mismatches will "
-"probably result in a segfault.  You should carefully test your C extension "
-"modules with Python 2.5."
+"got things wrong and allocated memory with the ``PyMem`` function but freed "
+"it with the ``PyObject`` function.  With 2.5's changes to obmalloc, these "
+"families now do different things and mismatches will probably result in a "
+"segfault.  You should carefully test your C extension modules with Python "
+"2.5."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2159
@@ -2580,11 +2581,11 @@ msgid ""
 "``Py_LOCAL(type)`` declares the function as returning a value of the "
 "specified *type* and uses a fast-calling qualifier. "
 "``Py_LOCAL_INLINE(type)`` does the same thing and also requests the function "
-"be inlined.  If :c:func:`PY_LOCAL_AGGRESSIVE` is defined before :file:"
-"`python.h` is included, a set of more aggressive optimizations are enabled "
-"for the module; you should benchmark the results to find out if these "
-"optimizations actually make the code faster.  (Contributed by Fredrik Lundh "
-"at the NeedForSpeed sprint.)"
+"be inlined.  If macro :c:macro:`!PY_LOCAL_AGGRESSIVE` is defined before :"
+"file:`python.h` is included, a set of more aggressive optimizations are "
+"enabled for the module; you should benchmark the results to find out if "
+"these optimizations actually make the code faster.  (Contributed by Fredrik "
+"Lundh at the NeedForSpeed sprint.)"
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2181
@@ -2595,7 +2596,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2184
 msgid ""
-"The :c:func:`PyErr_Warn` function for issuing warnings is now deprecated in "
+"The :c:func:`!PyErr_Warn` function for issuing warnings is now deprecated in "
 "favour of ``PyErr_WarnEx(category, message, stacklevel)`` which lets you "
 "specify the number of stack frames separating this function and the caller.  "
 "A *stacklevel* of 1 is the function calling :c:func:`PyErr_WarnEx`, 2 is the "
@@ -2611,7 +2612,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2194
 msgid ""
-"The :c:func:`PyRange_New` function was removed.  It was never documented, "
+"The :c:func:`!PyRange_New` function was removed.  It was never documented, "
 "never used in the core code, and had dangerously lax error checking.  In the "
 "unlikely case that your extensions were using it, you can replace it by "
 "something like the following::"
@@ -2693,19 +2694,19 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2256
 msgid ""
-"Library: The :mod:`pickle` and :mod:`cPickle` modules no longer accept a "
-"return value of ``None`` from the :meth:`__reduce__` method; the method must "
-"return a tuple of arguments instead.  The modules also no longer accept the "
-"deprecated *bin* keyword parameter."
+"Library: The :mod:`pickle` and :mod:`!cPickle` modules no longer accept a "
+"return value of ``None`` from the :meth:`~object.__reduce__` method; the "
+"method must return a tuple of arguments instead.  The modules also no longer "
+"accept the deprecated *bin* keyword parameter."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2261
 msgid ""
-"Library: The :mod:`SimpleXMLRPCServer` and :mod:`DocXMLRPCServer`  classes "
-"now have a :attr:`rpc_paths` attribute that constrains XML-RPC operations to "
-"a limited set of URL paths; the default is to allow only ``'/'`` and ``'/"
-"RPC2'``. Setting  :attr:`rpc_paths` to ``None`` or an empty tuple disables  "
-"this path checking."
+"Library: The :mod:`SimpleXMLRPCServer <xmlrpc.server>` and :mod:"
+"`DocXMLRPCServer <xmlrpc.server>`  classes now have a :attr:`rpc_paths` "
+"attribute that constrains XML-RPC operations to a limited set of URL paths; "
+"the default is to allow only ``'/'`` and ``'/RPC2'``. Setting  :attr:"
+"`rpc_paths` to ``None`` or an empty tuple disables  this path checking."
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2267
@@ -2737,4 +2738,12 @@ msgid ""
 "Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, "
 "Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas "
 "Wouters."
+msgstr ""
+
+#: ../Doc/whatsnew/2.5.rst:1342
+msgid "universal newlines"
+msgstr ""
+
+#: ../Doc/whatsnew/2.5.rst:1342
+msgid "What's new"
 msgstr ""

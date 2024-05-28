@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/html.parser.rst:2
-msgid ":mod:`html.parser` --- Simple HTML and XHTML parser"
+msgid ":mod:`!html.parser` --- Simple HTML and XHTML parser"
 msgstr ""
 
 #: ../Doc/library/html.parser.rst:7
@@ -192,10 +192,10 @@ msgstr ""
 #: ../Doc/library/html.parser.rst:175
 msgid ""
 "This method is called to process decimal and hexadecimal numeric character "
-"references of the form ``&#NNN;`` and ``&#xNNN;``.  For example, the decimal "
-"equivalent for ``&gt;`` is ``&#62;``, whereas the hexadecimal is ``&#x3E;``; "
-"in this case the method will receive ``'62'`` or ``'x3E'``.  This method is "
-"never called if *convert_charrefs* is ``True``."
+"references of the form :samp:`&#{NNN};` and :samp:`&#x{NNN};`.  For example, "
+"the decimal equivalent for ``&gt;`` is ``&#62;``, whereas the hexadecimal is "
+"``&#x3E;``; in this case the method will receive ``'62'`` or ``'x3E'``.  "
+"This method is never called if *convert_charrefs* is ``True``."
 msgstr ""
 
 #: ../Doc/library/html.parser.rst:184
@@ -301,4 +301,12 @@ msgstr ""
 
 #: ../Doc/library/html.parser.rst:331
 msgid "Parsing invalid HTML (e.g. unquoted attributes) also works::"
+msgstr ""
+
+#: ../Doc/library/html.parser.rst:9
+msgid "HTML"
+msgstr ""
+
+#: ../Doc/library/html.parser.rst:9
+msgid "XHTML"
 msgstr ""

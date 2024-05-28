@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/asyncio.rst:66
+#: ../Doc/library/asyncio.rst:80
 msgid "High-level APIs"
 msgstr ""
 
-#: ../Doc/library/asyncio.rst:78
+#: ../Doc/library/asyncio.rst:92
 msgid "Low-level APIs"
 msgstr ""
 
-#: ../Doc/library/asyncio.rst:89
+#: ../Doc/library/asyncio.rst:103
 msgid "Guides and Tutorials"
 msgstr ""
 
 #: ../Doc/library/asyncio.rst:2
-msgid ":mod:`asyncio` --- Asynchronous I/O"
+msgid ":mod:`!asyncio` --- Asynchronous I/O"
 msgstr ""
 
-#: ../Doc/library/asyncio.rst:None
+#: ../Doc/library/asyncio.rst:-1
 msgid "Hello World!"
 msgstr ""
 
@@ -91,9 +91,9 @@ msgstr ""
 #: ../Doc/library/asyncio.rst:48
 msgid ""
 "create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
-"asynchronous APIs for :meth:`networking <loop.create_server>`, running :meth:"
-"`subprocesses <loop.subprocess_exec>`, handling :meth:`OS signals <loop."
-"add_signal_handler>`, etc;"
+"asynchronous APIs for :ref:`networking <loop_create_server>`, running :ref:"
+"`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
+"<loop_add_signal_handler>`, etc;"
 msgstr ""
 
 #: ../Doc/library/asyncio.rst:53
@@ -108,21 +108,24 @@ msgid ""
 "await syntax."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/library/asyncio.rst:61
+msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
+msgstr ""
+
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
-#: ../Doc/library/asyncio.rst:65
+#: ../Doc/library/asyncio.rst:79
 msgid "Reference"
 msgstr ""
 
-#: ../Doc/library/asyncio.rst:98
+#: ../Doc/library/asyncio.rst:112
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr ""

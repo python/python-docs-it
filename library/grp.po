@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/grp.rst:2
-msgid ":mod:`grp` --- The group database"
+msgid ":mod:`!grp` --- The group database"
 msgstr ""
 
 #: ../Doc/library/grp.rst:10
@@ -27,15 +27,8 @@ msgid ""
 "all Unix versions."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../Doc/includes/wasm-notavail.rst:5
-msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+#: ../Doc/library/grp.rst:13
+msgid ":ref:`Availability <availability>`: Unix, not WASI, not iOS."
 msgstr ""
 
 #: ../Doc/library/grp.rst:15
@@ -141,18 +134,10 @@ msgstr ""
 msgid "Return a list of all available group entries, in arbitrary order."
 msgstr ""
 
-#: ../Doc/library/grp.rst:65
+#: ../Doc/library/grp.rst:64
 msgid "Module :mod:`pwd`"
 msgstr ""
 
 #: ../Doc/library/grp.rst:65
 msgid "An interface to the user database, similar to this."
-msgstr ""
-
-#: ../Doc/library/grp.rst:67
-msgid "Module :mod:`spwd`"
-msgstr ""
-
-#: ../Doc/library/grp.rst:68
-msgid "An interface to the shadow password database, similar to this."
 msgstr ""

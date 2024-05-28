@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,4 +28,24 @@ msgid ""
 "these modules require the presence of the system-dependent module :mod:"
 "`socket`, which is currently supported on most popular platforms.  Here is "
 "an overview:"
+msgstr ""
+
+#: ../Doc/library/internet.rst:7
+msgid "WWW"
+msgstr ""
+
+#: ../Doc/library/internet.rst:7
+msgid "Internet"
+msgstr ""
+
+#: ../Doc/library/internet.rst:7
+msgid "World Wide Web"
+msgstr ""
+
+#: ../Doc/library/internet.rst:12
+msgid "module"
+msgstr ""
+
+#: ../Doc/library/internet.rst:12
+msgid "socket"
 msgstr ""

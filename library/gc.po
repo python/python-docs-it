@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/gc.rst:2
-msgid ":mod:`gc` --- Garbage Collector interface"
+msgid ":mod:`!gc` --- Garbage Collector interface"
 msgstr ""
 
 #: ../Doc/library/gc.rst:12
@@ -56,7 +56,7 @@ msgid ""
 "With no arguments, run a full collection.  The optional argument "
 "*generation* may be an integer specifying which generation to collect (from "
 "0 to 2).  A :exc:`ValueError` is raised if the generation number  is "
-"invalid. The number of unreachable objects found is returned."
+"invalid. The sum of collected objects and uncollectable objects is returned."
 msgstr ""
 
 #: ../Doc/library/gc.rst:48
@@ -67,65 +67,71 @@ msgid ""
 "implementation, in particular :class:`float`."
 msgstr ""
 
-#: ../Doc/library/gc.rst:56
+#: ../Doc/library/gc.rst:53
+msgid ""
+"The effect of calling ``gc.collect()`` while the interpreter is already "
+"performing a collection is undefined."
+msgstr ""
+
+#: ../Doc/library/gc.rst:59
 msgid ""
 "Set the garbage collection debugging flags. Debugging information will be "
 "written to ``sys.stderr``.  See below for a list of debugging flags which "
 "can be combined using bit operations to control debugging."
 msgstr ""
 
-#: ../Doc/library/gc.rst:63
+#: ../Doc/library/gc.rst:66
 msgid "Return the debugging flags currently set."
 msgstr ""
 
-#: ../Doc/library/gc.rst:68
+#: ../Doc/library/gc.rst:71
 msgid ""
 "Returns a list of all objects tracked by the collector, excluding the list "
-"returned. If *generation* is not None, return only the objects tracked by "
-"the collector that are in that generation."
-msgstr ""
-
-#: ../Doc/library/gc.rst:72
-msgid "New *generation* parameter."
+"returned. If *generation* is not ``None``, return only the objects tracked "
+"by the collector that are in that generation."
 msgstr ""
 
 #: ../Doc/library/gc.rst:75
+msgid "New *generation* parameter."
+msgstr ""
+
+#: ../Doc/library/gc.rst:78
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``gc.get_objects`` with argument "
 "``generation``."
 msgstr ""
 
-#: ../Doc/library/gc.rst:79
+#: ../Doc/library/gc.rst:82
 msgid ""
 "Return a list of three per-generation dictionaries containing collection "
 "statistics since interpreter start.  The number of keys may change in the "
 "future, but currently each dictionary will contain the following items:"
 msgstr ""
 
-#: ../Doc/library/gc.rst:84
+#: ../Doc/library/gc.rst:87
 msgid "``collections`` is the number of times this generation was collected;"
 msgstr ""
 
-#: ../Doc/library/gc.rst:86
+#: ../Doc/library/gc.rst:89
 msgid ""
 "``collected`` is the total number of objects collected inside this "
 "generation;"
 msgstr ""
 
-#: ../Doc/library/gc.rst:89
+#: ../Doc/library/gc.rst:92
 msgid ""
 "``uncollectable`` is the total number of objects which were found to be "
 "uncollectable (and were therefore moved to the :data:`garbage` list) inside "
 "this generation."
 msgstr ""
 
-#: ../Doc/library/gc.rst:98
+#: ../Doc/library/gc.rst:101
 msgid ""
 "Set the garbage collection thresholds (the collection frequency). Setting "
 "*threshold0* to zero disables collection."
 msgstr ""
 
-#: ../Doc/library/gc.rst:101
+#: ../Doc/library/gc.rst:104
 msgid ""
 "The GC classifies objects into three generations depending on how many "
 "collection sweeps they have survived.  New objects are placed in the "
@@ -144,19 +150,19 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../Doc/library/gc.rst:118
+#: ../Doc/library/gc.rst:121
 msgid ""
 "Return the current collection  counts as a tuple of ``(count0, count1, "
 "count2)``."
 msgstr ""
 
-#: ../Doc/library/gc.rst:124
+#: ../Doc/library/gc.rst:127
 msgid ""
 "Return the current collection thresholds as a tuple of ``(threshold0, "
 "threshold1, threshold2)``."
 msgstr ""
 
-#: ../Doc/library/gc.rst:130
+#: ../Doc/library/gc.rst:133
 msgid ""
 "Return the list of objects that directly refer to any of objs. This function "
 "will only locate those containers which support garbage collection; "
@@ -164,7 +170,7 @@ msgid ""
 "collection will not be found."
 msgstr ""
 
-#: ../Doc/library/gc.rst:135
+#: ../Doc/library/gc.rst:138
 msgid ""
 "Note that objects which have already been dereferenced, but which live in "
 "cycles and have not yet been collected by the garbage collector can be "
@@ -172,7 +178,7 @@ msgid ""
 "call :func:`collect` before calling :func:`get_referrers`."
 msgstr ""
 
-#: ../Doc/library/gc.rst:141
+#: ../Doc/library/gc.rst:144
 msgid ""
 "Care must be taken when using objects returned by :func:`get_referrers` "
 "because some of them could still be under construction and hence in a "
@@ -180,13 +186,13 @@ msgid ""
 "other than debugging."
 msgstr ""
 
-#: ../Doc/library/gc.rst:146
+#: ../Doc/library/gc.rst:149
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``gc.get_referrers`` with "
 "argument ``objs``."
 msgstr ""
 
-#: ../Doc/library/gc.rst:151
+#: ../Doc/library/gc.rst:154
 msgid ""
 "Return a list of objects directly referred to by any of the arguments. The "
 "referents returned are those objects visited by the arguments' C-level :c:"
@@ -198,13 +204,13 @@ msgid ""
 "object may or may not appear in the result list."
 msgstr ""
 
-#: ../Doc/library/gc.rst:159
+#: ../Doc/library/gc.rst:162
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``gc.get_referents`` with "
 "argument ``objs``."
 msgstr ""
 
-#: ../Doc/library/gc.rst:163
+#: ../Doc/library/gc.rst:166
 msgid ""
 "Returns ``True`` if the object is currently tracked by the garbage "
 "collector, ``False`` otherwise.  As a general rule, instances of atomic "
@@ -214,39 +220,47 @@ msgid ""
 "instances (e.g. dicts containing only atomic keys and values)::"
 msgstr ""
 
-#: ../Doc/library/gc.rst:188
+#: ../Doc/library/gc.rst:191
 msgid ""
 "Returns ``True`` if the given object has been finalized by the garbage "
 "collector, ``False`` otherwise. ::"
 msgstr ""
 
-#: ../Doc/library/gc.rst:209
+#: ../Doc/library/gc.rst:212
 msgid ""
-"Freeze all the objects tracked by gc - move them to a permanent generation "
-"and ignore all the future collections. This can be used before a POSIX "
-"fork() call to make the gc copy-on-write friendly or to speed up collection. "
-"Also collection before a POSIX fork() call may free pages for future "
-"allocation which can cause copy-on-write too so it's advised to disable gc "
-"in parent process and freeze before fork and enable gc in child process."
+"Freeze all the objects tracked by the garbage collector; move them to a "
+"permanent generation and ignore them in all the future collections."
 msgstr ""
 
-#: ../Doc/library/gc.rst:221
+#: ../Doc/library/gc.rst:215
+msgid ""
+"If a process will ``fork()`` without ``exec()``, avoiding unnecessary copy-"
+"on-write in child processes will maximize memory sharing and reduce overall "
+"memory usage. This requires both avoiding creation of freed \"holes\" in "
+"memory pages in the parent process and ensuring that GC collections in child "
+"processes won't touch the ``gc_refs`` counter of long-lived objects "
+"originating in the parent process. To accomplish both, call ``gc.disable()`` "
+"early in the parent process, ``gc.freeze()`` right before ``fork()``, and "
+"``gc.enable()`` early in child processes."
+msgstr ""
+
+#: ../Doc/library/gc.rst:229
 msgid ""
 "Unfreeze the objects in the permanent generation, put them back into the "
 "oldest generation."
 msgstr ""
 
-#: ../Doc/library/gc.rst:229
+#: ../Doc/library/gc.rst:237
 msgid "Return the number of objects in the permanent generation."
 msgstr ""
 
-#: ../Doc/library/gc.rst:234
+#: ../Doc/library/gc.rst:242
 msgid ""
 "The following variables are provided for read-only access (you can mutate "
 "the values but should not rebind them):"
 msgstr ""
 
-#: ../Doc/library/gc.rst:239
+#: ../Doc/library/gc.rst:247
 msgid ""
 "A list of objects which the collector found to be unreachable but could not "
 "be freed (uncollectable objects).  Starting with Python 3.4, this list "
@@ -254,13 +268,13 @@ msgid ""
 "types with a non-``NULL`` ``tp_del`` slot."
 msgstr ""
 
-#: ../Doc/library/gc.rst:244
+#: ../Doc/library/gc.rst:252
 msgid ""
 "If :const:`DEBUG_SAVEALL` is set, then all unreachable objects will be added "
 "to this list rather than freed."
 msgstr ""
 
-#: ../Doc/library/gc.rst:247
+#: ../Doc/library/gc.rst:255
 msgid ""
 "If this list is non-empty at :term:`interpreter shutdown`, a :exc:"
 "`ResourceWarning` is emitted, which is silent by default.  If :const:"
@@ -268,105 +282,105 @@ msgid ""
 "printed."
 msgstr ""
 
-#: ../Doc/library/gc.rst:253
+#: ../Doc/library/gc.rst:261
 msgid ""
-"Following :pep:`442`, objects with a :meth:`__del__` method don't end up in :"
-"attr:`gc.garbage` anymore."
+"Following :pep:`442`, objects with a :meth:`~object.__del__` method don't "
+"end up in :data:`gc.garbage` anymore."
 msgstr ""
 
-#: ../Doc/library/gc.rst:259
+#: ../Doc/library/gc.rst:267
 msgid ""
 "A list of callbacks that will be invoked by the garbage collector before and "
 "after collection.  The callbacks will be called with two arguments, *phase* "
 "and *info*."
 msgstr ""
 
-#: ../Doc/library/gc.rst:263
+#: ../Doc/library/gc.rst:271
 msgid "*phase* can be one of two values:"
 msgstr ""
 
-#: ../Doc/library/gc.rst:265
+#: ../Doc/library/gc.rst:273
 msgid "\"start\": The garbage collection is about to start."
 msgstr ""
 
-#: ../Doc/library/gc.rst:267
+#: ../Doc/library/gc.rst:275
 msgid "\"stop\": The garbage collection has finished."
 msgstr ""
 
-#: ../Doc/library/gc.rst:269
+#: ../Doc/library/gc.rst:277
 msgid ""
 "*info* is a dict providing more information for the callback.  The following "
 "keys are currently defined:"
 msgstr ""
 
-#: ../Doc/library/gc.rst:272
+#: ../Doc/library/gc.rst:280
 msgid "\"generation\": The oldest generation being collected."
 msgstr ""
 
-#: ../Doc/library/gc.rst:274
+#: ../Doc/library/gc.rst:282
 msgid ""
 "\"collected\": When *phase* is \"stop\", the number of objects successfully "
 "collected."
 msgstr ""
 
-#: ../Doc/library/gc.rst:277
+#: ../Doc/library/gc.rst:285
 msgid ""
 "\"uncollectable\": When *phase* is \"stop\", the number of objects that "
 "could not be collected and were put in :data:`garbage`."
 msgstr ""
 
-#: ../Doc/library/gc.rst:280
+#: ../Doc/library/gc.rst:288
 msgid ""
 "Applications can add their own callbacks to this list.  The primary use "
 "cases are:"
 msgstr ""
 
-#: ../Doc/library/gc.rst:283
+#: ../Doc/library/gc.rst:291
 msgid ""
 "Gathering statistics about garbage collection, such as how often various "
 "generations are collected, and how long the collection takes."
 msgstr ""
 
-#: ../Doc/library/gc.rst:287
+#: ../Doc/library/gc.rst:295
 msgid ""
 "Allowing applications to identify and clear their own uncollectable types "
 "when they appear in :data:`garbage`."
 msgstr ""
 
-#: ../Doc/library/gc.rst:293
+#: ../Doc/library/gc.rst:301
 msgid "The following constants are provided for use with :func:`set_debug`:"
 msgstr ""
 
-#: ../Doc/library/gc.rst:298
+#: ../Doc/library/gc.rst:306
 msgid ""
 "Print statistics during collection.  This information can be useful when "
 "tuning the collection frequency."
 msgstr ""
 
-#: ../Doc/library/gc.rst:304
+#: ../Doc/library/gc.rst:312
 msgid "Print information on collectable objects found."
 msgstr ""
 
-#: ../Doc/library/gc.rst:309
+#: ../Doc/library/gc.rst:317
 msgid ""
 "Print information of uncollectable objects found (objects which are not "
 "reachable but cannot be freed by the collector).  These objects will be "
 "added to the ``garbage`` list."
 msgstr ""
 
-#: ../Doc/library/gc.rst:313
+#: ../Doc/library/gc.rst:321
 msgid ""
 "Also print the contents of the :data:`garbage` list at :term:`interpreter "
 "shutdown`, if it isn't empty."
 msgstr ""
 
-#: ../Doc/library/gc.rst:319
+#: ../Doc/library/gc.rst:327
 msgid ""
 "When set, all unreachable objects found will be appended to *garbage* rather "
 "than being freed.  This can be useful for debugging a leaking program."
 msgstr ""
 
-#: ../Doc/library/gc.rst:325
+#: ../Doc/library/gc.rst:333
 msgid ""
 "The debugging flags necessary for the collector to print information about a "
 "leaking program (equal to ``DEBUG_COLLECTABLE | DEBUG_UNCOLLECTABLE | "

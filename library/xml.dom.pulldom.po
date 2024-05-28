@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/xml.dom.pulldom.rst:2
-msgid ":mod:`xml.dom.pulldom` --- Support for building partial DOM trees"
+msgid ":mod:`!xml.dom.pulldom` --- Support for building partial DOM trees"
 msgstr ""
 
 #: ../Doc/library/xml.dom.pulldom.rst:9
@@ -149,7 +149,7 @@ msgid "DOMEventStream Objects"
 msgstr ""
 
 #: ../Doc/library/xml.dom.pulldom.rst:117
-msgid "Support for :meth:`__getitem__` method has been removed."
+msgid "Support for :meth:`~object.__getitem__` method has been removed."
 msgstr ""
 
 #: ../Doc/library/xml.dom.pulldom.rst:122

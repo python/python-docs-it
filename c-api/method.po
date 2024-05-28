@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../Doc/c-api/method.rst:10
 msgid ""
-"An instance method is a wrapper for a :c:data:`PyCFunction` and the new way "
-"to bind a :c:data:`PyCFunction` to a class object. It replaces the former "
+"An instance method is a wrapper for a :c:type:`PyCFunction` and the new way "
+"to bind a :c:type:`PyCFunction` to a class object. It replaces the former "
 "call ``PyMethod_New(func, NULL, class)``."
 msgstr ""
 
@@ -103,4 +103,20 @@ msgstr ""
 
 #: ../Doc/c-api/method.rst:95
 msgid "Macro version of :c:func:`PyMethod_Self` which avoids error checking."
+msgstr ""
+
+#: ../Doc/c-api/method.rst:8 ../Doc/c-api/method.rst:50
+msgid "object"
+msgstr ""
+
+#: ../Doc/c-api/method.rst:8
+msgid "instancemethod"
+msgstr ""
+
+#: ../Doc/c-api/method.rst:50
+msgid "method"
+msgstr ""
+
+#: ../Doc/c-api/method.rst:59
+msgid "MethodType (in module types)"
 msgstr ""

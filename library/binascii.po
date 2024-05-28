@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/binascii.rst:2
-msgid ":mod:`binascii` --- Convert between binary and ASCII"
+msgid ":mod:`!binascii` --- Convert between binary and ASCII"
 msgstr ""
 
-#: ../Doc/library/binascii.rst:14
+#: ../Doc/library/binascii.rst:13
 msgid ""
 "The :mod:`binascii` module contains a number of methods to convert between "
 "binary and various ASCII-encoded binary representations. Normally, you will "
-"not use these functions directly but use wrapper modules like :mod:`uu` or :"
-"mod:`base64` instead. The :mod:`binascii` module contains low-level "
-"functions written in C for greater speed that are used by the higher-level "
-"modules."
+"not use these functions directly but use wrapper modules like :mod:`base64` "
+"instead. The :mod:`binascii` module contains low-level functions written in "
+"C for greater speed that are used by the higher-level modules."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:23
+#: ../Doc/library/binascii.rst:22
 msgid ""
 "``a2b_*`` functions accept Unicode strings containing only ASCII characters. "
 "Other functions only accept :term:`bytes-like objects <bytes-like object>` "
@@ -39,22 +38,22 @@ msgid ""
 "the buffer protocol)."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:28
+#: ../Doc/library/binascii.rst:27
 msgid "ASCII-only unicode strings are now accepted by the ``a2b_*`` functions."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:32
+#: ../Doc/library/binascii.rst:31
 msgid "The :mod:`binascii` module defines the following functions:"
 msgstr ""
 
-#: ../Doc/library/binascii.rst:37
+#: ../Doc/library/binascii.rst:36
 msgid ""
 "Convert a single line of uuencoded data back to binary and return the binary "
 "data. Lines normally contain 45 (binary) bytes, except for the last line. "
 "Line data may be followed by whitespace."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:44
+#: ../Doc/library/binascii.rst:43
 msgid ""
 "Convert binary data to a line of ASCII characters, the return value is the "
 "converted line, including a newline char. The length of *data* should be at "
@@ -62,23 +61,23 @@ msgid ""
 "spaces."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:48
+#: ../Doc/library/binascii.rst:47
 msgid "Added the *backtick* parameter."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:54
+#: ../Doc/library/binascii.rst:53
 msgid ""
 "Convert a block of base64 data back to binary and return the binary data. "
 "More than one line may be passed at a time."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:57
+#: ../Doc/library/binascii.rst:56
 msgid ""
 "If *strict_mode* is true, only valid base64 data will be converted. Invalid "
 "base64 data will raise :exc:`binascii.Error`."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:64
+#: ../Doc/library/binascii.rst:59
 msgid "Valid base64:"
 msgstr ""
 
@@ -206,7 +205,7 @@ msgid ""
 "errors, but may be handled by reading a little more data and trying again."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:180
+#: ../Doc/library/binascii.rst:178
 msgid "Module :mod:`base64`"
 msgstr ""
 
@@ -215,18 +214,18 @@ msgid ""
 "Support for RFC compliant base64-style encoding in base 16, 32, 64, and 85."
 msgstr ""
 
-#: ../Doc/library/binascii.rst:183
-msgid "Module :mod:`uu`"
-msgstr ""
-
-#: ../Doc/library/binascii.rst:183
-msgid "Support for UU encoding used on Unix."
-msgstr ""
-
-#: ../Doc/library/binascii.rst:185
+#: ../Doc/library/binascii.rst:182
 msgid "Module :mod:`quopri`"
 msgstr ""
 
-#: ../Doc/library/binascii.rst:186
+#: ../Doc/library/binascii.rst:183
 msgid "Support for quoted-printable encoding used in MIME email messages."
+msgstr ""
+
+#: ../Doc/library/binascii.rst:8
+msgid "module"
+msgstr ""
+
+#: ../Doc/library/binascii.rst:8
+msgid "base64"
 msgstr ""

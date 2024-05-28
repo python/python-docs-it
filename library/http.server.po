@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/http.server.rst:2
-msgid ":mod:`http.server` --- HTTP servers"
+msgid ":mod:`!http.server` --- HTTP servers"
 msgstr ""
 
 #: ../Doc/library/http.server.rst:7
@@ -35,15 +35,14 @@ msgid ""
 "ref:`basic security checks <http.server-security>`."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: ../Doc/includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
 #: ../Doc/includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
+"availability` for more information."
 msgstr ""
 
 #: ../Doc/library/http.server.rst:27
@@ -89,10 +88,10 @@ msgstr ""
 msgid ""
 "The handler will parse the request and the headers, then call a method "
 "specific to the request type. The method name is constructed from the "
-"request. For example, for the request method ``SPAM``, the :meth:`do_SPAM` "
+"request. For example, for the request method ``SPAM``, the :meth:`!do_SPAM` "
 "method will be called with no arguments. All of the relevant information is "
 "stored in instance variables of the handler.  Subclasses should not need to "
-"override or extend the :meth:`__init__` method."
+"override or extend the :meth:`!__init__` method."
 msgstr ""
 
 #: ../Doc/library/http.server.rst:73
@@ -233,13 +232,13 @@ msgstr ""
 msgid ""
 "Calls :meth:`handle_one_request` once (or, if persistent connections are "
 "enabled, multiple times) to handle incoming HTTP requests. You should never "
-"need to override it; instead, implement appropriate :meth:`do_\\*` methods."
+"need to override it; instead, implement appropriate :meth:`!do_\\*` methods."
 msgstr ""
 
 #: ../Doc/library/http.server.rst:195
 msgid ""
-"This method will parse and dispatch the request to the appropriate :meth:"
-"`do_\\*` method.  You should never need to override it."
+"This method will parse and dispatch the request to the appropriate :meth:`!"
+"do_\\*` method.  You should never need to override it."
 msgstr ""
 
 #: ../Doc/library/http.server.rst:200
@@ -262,8 +261,8 @@ msgid ""
 "attribute holds the default values for *message* and *explain* that will be "
 "used if no value is provided; for unknown codes the default value for both "
 "is the string ``???``. The body will be empty if the method is HEAD or the "
-"response code is one of the following: ``1xx``, ``204 No Content``, ``205 "
-"Reset Content``, ``304 Not Modified``."
+"response code is one of the following: :samp:`1{xx}`, ``204 No Content``, "
+"``205 Reset Content``, ``304 Not Modified``."
 msgstr ""
 
 #: ../Doc/library/http.server.rst:223
@@ -388,7 +387,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/http.server.rst:331
-msgid "The *directory* parameter."
+msgid "Added the *directory* parameter."
 msgstr ""
 
 #: ../Doc/library/http.server.rst:334
@@ -497,20 +496,27 @@ msgid ""
 "the current directory::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:418
+#: ../Doc/library/http.server.rst:417
+msgid ""
+":class:`SimpleHTTPRequestHandler` can also be subclassed to enhance "
+"behavior, such as using different index file names by overriding the class "
+"attribute :attr:`index_pages`."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:423
 msgid ""
 ":mod:`http.server` can also be invoked directly using the :option:`-m` "
 "switch of the interpreter.  Similar to the previous example, this serves "
 "files relative to the current directory::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:424
+#: ../Doc/library/http.server.rst:429
 msgid ""
 "The server listens to port 8000 by default. The default can be overridden by "
 "passing the desired port number as an argument::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:429
+#: ../Doc/library/http.server.rst:434
 msgid ""
 "By default, the server binds itself to all interfaces.  The option ``-b/--"
 "bind`` specifies a specific address to which it should bind. Both IPv4 and "
@@ -518,51 +524,51 @@ msgid ""
 "server to bind to localhost only::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:436
-msgid "``--bind`` argument was introduced."
+#: ../Doc/library/http.server.rst:441
+msgid "Added the ``--bind`` option."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:439
-msgid "``--bind`` argument enhanced to support IPv6"
+#: ../Doc/library/http.server.rst:444
+msgid "Support IPv6 in the ``--bind`` option."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:442
+#: ../Doc/library/http.server.rst:447
 msgid ""
 "By default, the server uses the current directory. The option ``-d/--"
 "directory`` specifies a directory to which it should serve the files. For "
 "example, the following command uses a specific directory::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:448
-msgid "``--directory`` argument was introduced."
+#: ../Doc/library/http.server.rst:453
+msgid "Added the ``--directory`` option."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:451
+#: ../Doc/library/http.server.rst:456
 msgid ""
 "By default, the server is conformant to HTTP/1.0. The option ``-p/--"
 "protocol`` specifies the HTTP version to which the server is conformant. For "
 "example, the following command runs an HTTP/1.1 conformant server::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:457
-msgid "``--protocol`` argument was introduced."
+#: ../Doc/library/http.server.rst:462
+msgid "Added the ``--protocol`` option."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:462
+#: ../Doc/library/http.server.rst:467
 msgid ""
 "This class is used to serve either files or output of CGI scripts from the "
 "current directory and below. Note that mapping HTTP hierarchic structure to "
 "local directory structure is exactly as in :class:`SimpleHTTPRequestHandler`."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:468
+#: ../Doc/library/http.server.rst:473
 msgid ""
 "CGI scripts run by the :class:`CGIHTTPRequestHandler` class cannot execute "
 "redirects (HTTP code 302), because code 200 (script output follows) is sent "
 "prior to execution of the CGI script.  This pre-empts the status code."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:473
+#: ../Doc/library/http.server.rst:478
 msgid ""
 "The class will however, run the CGI script, instead of serving it as a file, "
 "if it guesses it to be a CGI script.  Only directory-based CGI are used --- "
@@ -570,53 +576,120 @@ msgid ""
 "denoting CGI scripts."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:478
+#: ../Doc/library/http.server.rst:483
 msgid ""
 "The :func:`do_GET` and :func:`do_HEAD` functions are modified to run CGI "
 "scripts and serve the output, instead of serving files, if the request leads "
 "to somewhere below the ``cgi_directories`` path."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:482
+#: ../Doc/library/http.server.rst:487
 msgid "The :class:`CGIHTTPRequestHandler` defines the following data member:"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:486
+#: ../Doc/library/http.server.rst:491
 msgid ""
 "This defaults to ``['/cgi-bin', '/htbin']`` and describes directories to "
 "treat as containing CGI scripts."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:489
+#: ../Doc/library/http.server.rst:494
 msgid "The :class:`CGIHTTPRequestHandler` defines the following method:"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:493
+#: ../Doc/library/http.server.rst:498
 msgid ""
 "This method serves the ``'POST'`` request type, only allowed for CGI "
 "scripts.  Error 501, \"Can only POST to CGI scripts\", is output when trying "
 "to POST to a non-CGI url."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:497
+#: ../Doc/library/http.server.rst:502
 msgid ""
 "Note that CGI scripts will be run with UID of user nobody, for security "
 "reasons.  Problems with the CGI script will be translated to error 403."
 msgstr ""
 
-#: ../Doc/library/http.server.rst:500
+#: ../Doc/library/http.server.rst:507
+msgid ""
+":class:`CGIHTTPRequestHandler` is being removed in 3.15.  CGI has not been "
+"considered a good way to do things for well over a decade. This code has "
+"been unmaintained for a while now and sees very little practical use. "
+"Retaining it could lead to further :ref:`security considerations <http."
+"server-security>`."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:513
 msgid ""
 ":class:`CGIHTTPRequestHandler` can be enabled in the command line by passing "
 "the ``--cgi`` option::"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:508
+#: ../Doc/library/http.server.rst:520
+msgid ""
+":mod:`http.server` command line ``--cgi`` support is being removed because :"
+"class:`CGIHTTPRequestHandler` is being removed."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:525
+msgid ""
+":class:`CGIHTTPRequestHandler` and the ``--cgi`` command line option are not "
+"intended for use by untrusted clients and may be vulnerable to exploitation. "
+"Always use within a secure environment."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:532
 msgid "Security Considerations"
 msgstr ""
 
-#: ../Doc/library/http.server.rst:512
+#: ../Doc/library/http.server.rst:536
 msgid ""
 ":class:`SimpleHTTPRequestHandler` will follow symbolic links when handling "
 "requests, this makes it possible for files outside of the specified "
 "directory to be served."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:540
+msgid ""
+"Earlier versions of Python did not scrub control characters from the log "
+"messages emitted to stderr from ``python -m http.server`` or the default :"
+"class:`BaseHTTPRequestHandler` ``.log_message`` implementation. This could "
+"allow remote clients connecting to your server to send nefarious control "
+"codes to your terminal."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:546
+msgid "Control characters are scrubbed in stderr logs."
+msgstr ""
+
+#: ../Doc/library/http.server.rst:9
+msgid "WWW"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:9
+msgid "server"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:9
+msgid "HTTP"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:9
+msgid "protocol"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:9
+msgid "URL"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:9
+msgid "httpd"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:534
+msgid "http.server"
+msgstr ""
+
+#: ../Doc/library/http.server.rst:534
+msgid "security"
 msgstr ""

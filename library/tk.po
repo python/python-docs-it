@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,10 @@ msgid ""
 "Tk/Tcl has long been an integral part of Python.  It provides a robust and "
 "platform independent windowing toolkit, that is available to Python "
 "programmers using the :mod:`tkinter` package, and its extension, the :mod:"
-"`tkinter.tix` and the :mod:`tkinter.ttk` modules."
+"`tkinter.ttk` module."
 msgstr ""
 
-#: ../Doc/library/tk.rst:18
+#: ../Doc/library/tk.rst:17
 msgid ""
 "The :mod:`tkinter` package is a thin object-oriented layer on top of Tcl/Tk. "
 "To use :mod:`tkinter`, you don't need to write Tcl code, but you will need "
@@ -38,7 +38,7 @@ msgid ""
 "classes."
 msgstr ""
 
-#: ../Doc/library/tk.rst:24
+#: ../Doc/library/tk.rst:23
 msgid ""
 ":mod:`tkinter`'s chief virtues are that it is fast, and that it usually "
 "comes bundled with Python. Although its standard documentation is weak, good "
@@ -48,4 +48,20 @@ msgid ""
 "GUI libraries that you could be interested in. The Python wiki lists several "
 "alternative `GUI frameworks and tools <https://wiki.python.org/moin/"
 "GuiProgramming>`_."
+msgstr ""
+
+#: ../Doc/library/tk.rst:7
+msgid "GUI"
+msgstr ""
+
+#: ../Doc/library/tk.rst:7
+msgid "Graphical User Interface"
+msgstr ""
+
+#: ../Doc/library/tk.rst:7
+msgid "Tkinter"
+msgstr ""
+
+#: ../Doc/library/tk.rst:7
+msgid "Tk"
 msgstr ""

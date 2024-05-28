@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/tomllib.rst:2
-msgid ":mod:`tomllib` --- Parse TOML files"
+msgid ":mod:`!tomllib` --- Parse TOML files"
 msgstr ""
 
 #: ../Doc/library/tomllib.rst:12
@@ -34,18 +34,16 @@ msgstr ""
 
 #: ../Doc/library/tomllib.rst:22
 msgid ""
-"The `Tomli-W package <https://pypi.org/project/tomli-w/>`__ is a TOML writer "
-"that can be used in conjunction with this module, providing a write API "
-"familiar to users of the standard library :mod:`marshal` and :mod:`pickle` "
-"modules."
+"The :pypi:`Tomli-W package <tomli-w>` is a TOML writer that can be used in "
+"conjunction with this module, providing a write API familiar to users of the "
+"standard library :mod:`marshal` and :mod:`pickle` modules."
 msgstr ""
 
 #: ../Doc/library/tomllib.rst:29
 msgid ""
-"The `TOML Kit package <https://pypi.org/project/tomlkit/>`__ is a style-"
-"preserving TOML library with both read and write capability. It is a "
-"recommended replacement for this module for editing already existing TOML "
-"files."
+"The :pypi:`TOML Kit package <tomlkit>` is a style-preserving TOML library "
+"with both read and write capability. It is a recommended replacement for "
+"this module for editing already existing TOML files."
 msgstr ""
 
 #: ../Doc/library/tomllib.rst:35
@@ -112,10 +110,11 @@ msgid "Python"
 msgstr ""
 
 #: ../Doc/library/tomllib.rst:98
-msgid "table"
+msgid "TOML document"
 msgstr ""
 
-#: ../Doc/library/tomllib.rst:98
+#: ../Doc/library/tomllib.rst:98 ../Doc/library/tomllib.rst:118
+#: ../Doc/library/tomllib.rst:120
 msgid "dict"
 msgstr ""
 
@@ -191,4 +190,20 @@ msgstr ""
 
 #: ../Doc/library/tomllib.rst:116
 msgid "list"
+msgstr ""
+
+#: ../Doc/library/tomllib.rst:118
+msgid "table"
+msgstr ""
+
+#: ../Doc/library/tomllib.rst:120
+msgid "inline table"
+msgstr ""
+
+#: ../Doc/library/tomllib.rst:122
+msgid "array of tables"
+msgstr ""
+
+#: ../Doc/library/tomllib.rst:122
+msgid "list of dicts"
 msgstr ""

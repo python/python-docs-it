@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/shelve.rst:2
-msgid ":mod:`shelve` --- Python object persistence"
+msgid ":mod:`!shelve` --- Python object persistence"
 msgstr ""
 
 #: ../Doc/library/shelve.rst:7
@@ -47,9 +47,9 @@ msgstr ""
 
 #: ../Doc/library/shelve.rst:28
 msgid ""
-"By default, pickles created with :data:`pickle.DEFAULT_PROTOCOL` are used to "
-"serialize values.  The version of the pickle protocol can be specified with "
-"the *protocol* parameter."
+"By default, pickles created with :const:`pickle.DEFAULT_PROTOCOL` are used "
+"to serialize values.  The version of the pickle protocol can be specified "
+"with the *protocol* parameter."
 msgstr ""
 
 #: ../Doc/library/shelve.rst:32
@@ -67,9 +67,9 @@ msgid ""
 "mutated)."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:44 ../Doc/library/shelve.rst:145
+#: ../Doc/library/shelve.rst:44 ../Doc/library/shelve.rst:148
 msgid ""
-":data:`pickle.DEFAULT_PROTOCOL` is now used as the default pickle protocol."
+":const:`pickle.DEFAULT_PROTOCOL` is now used as the default pickle protocol."
 msgstr ""
 
 #: ../Doc/library/shelve.rst:48
@@ -118,9 +118,9 @@ msgstr ""
 
 #: ../Doc/library/shelve.rst:89
 msgid ""
-"`Persistent dictionary recipe <https://code.activestate.com/recipes/576642/"
-">`_ with widely supported storage formats and having the speed of native "
-"dictionaries."
+"`Persistent dictionary recipe <https://code.activestate.com/recipes/576642-"
+"persistent-dict-with-multiple-standard-file-format/>`_ with widely supported "
+"storage formats and having the speed of native dictionaries."
 msgstr ""
 
 #: ../Doc/library/shelve.rst:95
@@ -148,21 +148,27 @@ msgid ""
 "implementation used."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:119
+#: ../Doc/library/shelve.rst:116
+msgid ""
+"On macOS :mod:`dbm.ndbm` can silently corrupt the database file on updates, "
+"which can cause hard crashes when trying to read from the database."
+msgstr ""
+
+#: ../Doc/library/shelve.rst:122
 msgid ""
 "A subclass of :class:`collections.abc.MutableMapping` which stores pickled "
 "values in the *dict* object."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:122
+#: ../Doc/library/shelve.rst:125
 msgid ""
-"By default, pickles created with :data:`pickle.DEFAULT_PROTOCOL` are used to "
-"serialize values.  The version of the pickle protocol can be specified with "
-"the *protocol* parameter.  See the :mod:`pickle` documentation for a "
+"By default, pickles created with :const:`pickle.DEFAULT_PROTOCOL` are used "
+"to serialize values.  The version of the pickle protocol can be specified "
+"with the *protocol* parameter.  See the :mod:`pickle` documentation for a "
 "discussion of the pickle protocols."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:127
+#: ../Doc/library/shelve.rst:130
 msgid ""
 "If the *writeback* parameter is ``True``, the object will hold a cache of "
 "all entries accessed and write them back to the *dict* at sync and close "
@@ -170,42 +176,42 @@ msgid ""
 "much more memory and make sync and close take a long time."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:132
+#: ../Doc/library/shelve.rst:135
 msgid ""
 "The *keyencoding* parameter is the encoding used to encode keys before they "
 "are used with the underlying dict."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:135
+#: ../Doc/library/shelve.rst:138
 msgid ""
 "A :class:`Shelf` object can also be used as a context manager, in which case "
 "it will be automatically closed when the :keyword:`with` block ends."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:138
+#: ../Doc/library/shelve.rst:141
 msgid ""
 "Added the *keyencoding* parameter; previously, keys were always encoded in "
 "UTF-8."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:142
+#: ../Doc/library/shelve.rst:145
 msgid "Added context manager support."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:152
+#: ../Doc/library/shelve.rst:155
 msgid ""
-"A subclass of :class:`Shelf` which exposes :meth:`first`, :meth:`!next`, :"
-"meth:`previous`, :meth:`last` and :meth:`set_location` which are available "
-"in the third-party :mod:`bsddb` module from `pybsddb <https://www.jcea.es/"
-"programacion/pybsddb.htm>`_ but not in other database modules.  The *dict* "
-"object passed to the constructor must support those methods.  This is "
-"generally accomplished by calling one of :func:`bsddb.hashopen`, :func:"
-"`bsddb.btopen` or :func:`bsddb.rnopen`.  The optional *protocol*, "
+"A subclass of :class:`Shelf` which exposes :meth:`!first`, :meth:`!next`, :"
+"meth:`!previous`, :meth:`!last` and :meth:`!set_location` methods. These are "
+"available in the third-party :mod:`!bsddb` module from `pybsddb <https://www."
+"jcea.es/programacion/pybsddb.htm>`_ but not in other database modules.  The "
+"*dict* object passed to the constructor must support those methods.  This is "
+"generally accomplished by calling one of :func:`!bsddb.hashopen`, :func:`!"
+"bsddb.btopen` or :func:`!bsddb.rnopen`.  The optional *protocol*, "
 "*writeback*, and *keyencoding* parameters have the same interpretation as "
 "for the :class:`Shelf` class."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:165
+#: ../Doc/library/shelve.rst:169
 msgid ""
 "A subclass of :class:`Shelf` which accepts a *filename* instead of a dict-"
 "like object.  The underlying file will be opened using :func:`dbm.open`.  By "
@@ -215,28 +221,44 @@ msgid ""
 "same interpretation as for the :class:`Shelf` class."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:176
+#: ../Doc/library/shelve.rst:180
 msgid "Example"
 msgstr ""
 
-#: ../Doc/library/shelve.rst:178
+#: ../Doc/library/shelve.rst:182
 msgid ""
 "To summarize the interface (``key`` is a string, ``data`` is an arbitrary "
 "object)::"
 msgstr ""
 
-#: ../Doc/library/shelve.rst:215
+#: ../Doc/library/shelve.rst:218
 msgid "Module :mod:`dbm`"
 msgstr ""
 
-#: ../Doc/library/shelve.rst:215
+#: ../Doc/library/shelve.rst:219
 msgid "Generic interface to ``dbm``-style databases."
 msgstr ""
 
-#: ../Doc/library/shelve.rst:217
+#: ../Doc/library/shelve.rst:221
 msgid "Module :mod:`pickle`"
 msgstr ""
 
-#: ../Doc/library/shelve.rst:218
+#: ../Doc/library/shelve.rst:222
 msgid "Object serialization used by :mod:`shelve`."
+msgstr ""
+
+#: ../Doc/library/shelve.rst:9 ../Doc/library/shelve.rst:97
+msgid "module"
+msgstr ""
+
+#: ../Doc/library/shelve.rst:9
+msgid "pickle"
+msgstr ""
+
+#: ../Doc/library/shelve.rst:97
+msgid "dbm.ndbm"
+msgstr ""
+
+#: ../Doc/library/shelve.rst:97
+msgid "dbm.gnu"
 msgstr ""

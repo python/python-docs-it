@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,24 +115,23 @@ msgstr ""
 
 #: ../Doc/reference/lexical_analysis.rst:99
 msgid ""
-"If no encoding declaration is found, the default encoding is UTF-8.  In "
-"addition, if the first bytes of the file are the UTF-8 byte-order mark "
-"(``b'\\xef\\xbb\\xbf'``), the declared file encoding is UTF-8 (this is "
-"supported, among others, by Microsoft's :program:`notepad`)."
+"If no encoding declaration is found, the default encoding is UTF-8.  If the "
+"implicit or explicit encoding of a file is UTF-8, an initial UTF-8 byte-"
+"order mark (b'\\xef\\xbb\\xbf') is ignored rather than being a syntax error."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:104
+#: ../Doc/reference/lexical_analysis.rst:103
 msgid ""
 "If an encoding is declared, the encoding name must be recognized by Python "
 "(see :ref:`standard-encodings`). The encoding is used for all lexical "
 "analysis, including string literals, comments and identifiers."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:113
+#: ../Doc/reference/lexical_analysis.rst:112
 msgid "Explicit line joining"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:117
+#: ../Doc/reference/lexical_analysis.rst:116
 msgid ""
 "Two or more physical lines may be joined into logical lines using backslash "
 "characters (``\\``), as follows: when a physical line ends in a backslash "
@@ -141,7 +140,7 @@ msgid ""
 "following end-of-line character.  For example::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:128
+#: ../Doc/reference/lexical_analysis.rst:127
 msgid ""
 "A line ending in a backslash cannot carry a comment.  A backslash does not "
 "continue a comment.  A backslash does not continue a token except for string "
@@ -150,17 +149,17 @@ msgid ""
 "line outside a string literal."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:138
+#: ../Doc/reference/lexical_analysis.rst:137
 msgid "Implicit line joining"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:140
+#: ../Doc/reference/lexical_analysis.rst:139
 msgid ""
 "Expressions in parentheses, square brackets or curly braces can be split "
 "over more than one physical line without using backslashes. For example::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:148
+#: ../Doc/reference/lexical_analysis.rst:147
 msgid ""
 "Implicitly continued lines can carry comments.  The indentation of the "
 "continuation lines is not important.  Blank continuation lines are allowed. "
@@ -169,11 +168,11 @@ msgid ""
 "that case they cannot carry comments."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:158
+#: ../Doc/reference/lexical_analysis.rst:157
 msgid "Blank lines"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:162
+#: ../Doc/reference/lexical_analysis.rst:161
 msgid ""
 "A logical line that contains only spaces, tabs, formfeeds and possibly a "
 "comment, is ignored (i.e., no NEWLINE token is generated).  During "
@@ -184,18 +183,18 @@ msgid ""
 "statement."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:173
+#: ../Doc/reference/lexical_analysis.rst:172
 msgid "Indentation"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:177
+#: ../Doc/reference/lexical_analysis.rst:176
 msgid ""
 "Leading whitespace (spaces and tabs) at the beginning of a logical line is "
 "used to compute the indentation level of the line, which in turn is used to "
 "determine the grouping of statements."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:181
+#: ../Doc/reference/lexical_analysis.rst:180
 msgid ""
 "Tabs are replaced (from left to right) by one to eight spaces such that the "
 "total number of characters up to and including the replacement is a multiple "
@@ -206,14 +205,14 @@ msgid ""
 "the indentation."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:189
+#: ../Doc/reference/lexical_analysis.rst:188
 msgid ""
 "Indentation is rejected as inconsistent if a source file mixes tabs and "
 "spaces in a way that makes the meaning dependent on the worth of a tab in "
 "spaces; a :exc:`TabError` is raised in that case."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:193
+#: ../Doc/reference/lexical_analysis.rst:192
 msgid ""
 "**Cross-platform compatibility note:** because of the nature of text editors "
 "on non-UNIX platforms, it is unwise to use a mixture of spaces and tabs for "
@@ -221,7 +220,7 @@ msgid ""
 "different platforms may explicitly limit the maximum indentation level."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:198
+#: ../Doc/reference/lexical_analysis.rst:197
 msgid ""
 "A formfeed character may be present at the start of the line; it will be "
 "ignored for the indentation calculations above.  Formfeed characters "
@@ -229,13 +228,13 @@ msgid ""
 "instance, they may reset the space count to zero)."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:205
+#: ../Doc/reference/lexical_analysis.rst:204
 msgid ""
 "The indentation levels of consecutive lines are used to generate INDENT and "
 "DEDENT tokens, using a stack, as follows."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:208
+#: ../Doc/reference/lexical_analysis.rst:207
 msgid ""
 "Before the first line of the file is read, a single zero is pushed on the "
 "stack; this will never be popped off again.  The numbers pushed on the stack "
@@ -249,28 +248,28 @@ msgid ""
 "number remaining on the stack that is larger than zero."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:219
+#: ../Doc/reference/lexical_analysis.rst:218
 msgid ""
 "Here is an example of a correctly (though confusingly) indented piece of "
 "Python code::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:234
+#: ../Doc/reference/lexical_analysis.rst:233
 msgid "The following example shows various indentation errors::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:244
+#: ../Doc/reference/lexical_analysis.rst:243
 msgid ""
 "(Actually, the first three errors are detected by the parser; only the last "
 "error is found by the lexical analyzer --- the indentation of ``return r`` "
 "does not match a level popped off the stack.)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:252
+#: ../Doc/reference/lexical_analysis.rst:251
 msgid "Whitespace between tokens"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:254
+#: ../Doc/reference/lexical_analysis.rst:253
 msgid ""
 "Except at the beginning of a logical line or in string literals, the "
 "whitespace characters space, tab and formfeed can be used interchangeably to "
@@ -279,11 +278,11 @@ msgid ""
 "is one token, but a b is two tokens)."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:264
+#: ../Doc/reference/lexical_analysis.rst:263
 msgid "Other tokens"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:266
+#: ../Doc/reference/lexical_analysis.rst:265
 msgid ""
 "Besides NEWLINE, INDENT and DEDENT, the following categories of tokens "
 "exist: *identifiers*, *keywords*, *literals*, *operators*, and *delimiters*. "
@@ -293,24 +292,24 @@ msgid ""
 "from left to right."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:276
+#: ../Doc/reference/lexical_analysis.rst:275
 msgid "Identifiers and keywords"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:280
+#: ../Doc/reference/lexical_analysis.rst:279
 msgid ""
 "Identifiers (also referred to as *names*) are described by the following "
 "lexical definitions."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:283
+#: ../Doc/reference/lexical_analysis.rst:282
 msgid ""
 "The syntax of identifiers in Python is based on the Unicode standard annex "
 "UAX-31, with elaboration and changes as defined below; see also :pep:`3131` "
 "for further details."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:287
+#: ../Doc/reference/lexical_analysis.rst:286
 msgid ""
 "Within the ASCII range (U+0001..U+007F), the valid characters for "
 "identifiers are the same as in Python 2.x: the uppercase and lowercase "
@@ -318,7 +317,7 @@ msgid ""
 "character, the digits ``0`` through ``9``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:292
+#: ../Doc/reference/lexical_analysis.rst:291
 msgid ""
 "Python 3.0 introduces additional characters from outside the ASCII range "
 "(see :pep:`3131`).  For these characters, the classification uses the "
@@ -326,168 +325,177 @@ msgid ""
 "`unicodedata` module."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:296
+#: ../Doc/reference/lexical_analysis.rst:295
 msgid "Identifiers are unlimited in length.  Case is significant."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:305
+#: ../Doc/reference/lexical_analysis.rst:304
 msgid "The Unicode category codes mentioned above stand for:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:307
+#: ../Doc/reference/lexical_analysis.rst:306
 msgid "*Lu* - uppercase letters"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:308
+#: ../Doc/reference/lexical_analysis.rst:307
 msgid "*Ll* - lowercase letters"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:309
+#: ../Doc/reference/lexical_analysis.rst:308
 msgid "*Lt* - titlecase letters"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:310
+#: ../Doc/reference/lexical_analysis.rst:309
 msgid "*Lm* - modifier letters"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:311
+#: ../Doc/reference/lexical_analysis.rst:310
 msgid "*Lo* - other letters"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:312
+#: ../Doc/reference/lexical_analysis.rst:311
 msgid "*Nl* - letter numbers"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:313
+#: ../Doc/reference/lexical_analysis.rst:312
 msgid "*Mn* - nonspacing marks"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:314
+#: ../Doc/reference/lexical_analysis.rst:313
 msgid "*Mc* - spacing combining marks"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:315
+#: ../Doc/reference/lexical_analysis.rst:314
 msgid "*Nd* - decimal numbers"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:316
+#: ../Doc/reference/lexical_analysis.rst:315
 msgid "*Pc* - connector punctuations"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:317
+#: ../Doc/reference/lexical_analysis.rst:316
 msgid ""
 "*Other_ID_Start* - explicit list of characters in `PropList.txt <https://www."
-"unicode.org/Public/14.0.0/ucd/PropList.txt>`_ to support backwards "
+"unicode.org/Public/15.1.0/ucd/PropList.txt>`_ to support backwards "
 "compatibility"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:320
+#: ../Doc/reference/lexical_analysis.rst:319
 msgid "*Other_ID_Continue* - likewise"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:322
+#: ../Doc/reference/lexical_analysis.rst:321
 msgid ""
 "All identifiers are converted into the normal form NFKC while parsing; "
 "comparison of identifiers is based on NFKC."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:325
+#: ../Doc/reference/lexical_analysis.rst:324
 msgid ""
 "A non-normative HTML file listing all valid identifier characters for "
-"Unicode 14.0.0 can be found at https://www.unicode.org/Public/14.0.0/ucd/"
+"Unicode 15.1.0 can be found at https://www.unicode.org/Public/15.1.0/ucd/"
 "DerivedCoreProperties.txt"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:333
+#: ../Doc/reference/lexical_analysis.rst:332
 msgid "Keywords"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:339
+#: ../Doc/reference/lexical_analysis.rst:338
 msgid ""
 "The following identifiers are used as reserved words, or *keywords* of the "
 "language, and cannot be used as ordinary identifiers.  They must be spelled "
 "exactly as written here:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:357
+#: ../Doc/reference/lexical_analysis.rst:356
 msgid "Soft Keywords"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:363
+#: ../Doc/reference/lexical_analysis.rst:362
 msgid ""
 "Some identifiers are only reserved under specific contexts. These are known "
-"as *soft keywords*.  The identifiers ``match``, ``case`` and ``_`` can "
-"syntactically act as keywords in contexts related to the pattern matching "
-"statement, but this distinction is done at the parser level, not when "
-"tokenizing."
+"as *soft keywords*.  The identifiers ``match``, ``case``, ``type`` and ``_`` "
+"can syntactically act as keywords in certain contexts, but this distinction "
+"is done at the parser level, not when tokenizing."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:369
+#: ../Doc/reference/lexical_analysis.rst:367
 msgid ""
-"As soft keywords, their use with pattern matching is possible while still "
-"preserving compatibility with existing code that uses ``match``, ``case`` "
-"and ``_`` as identifier names."
+"As soft keywords, their use in the grammar is possible while still "
+"preserving compatibility with existing code that uses these names as "
+"identifier names."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:380
+#: ../Doc/reference/lexical_analysis.rst:371
+msgid ""
+"``match``, ``case``, and ``_`` are used in the :keyword:`match` statement. "
+"``type`` is used in the :keyword:`type` statement."
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:374
+msgid "``type`` is now a soft keyword."
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:383
 msgid "Reserved classes of identifiers"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:382
+#: ../Doc/reference/lexical_analysis.rst:385
 msgid ""
 "Certain classes of identifiers (besides keywords) have special meanings.  "
 "These classes are identified by the patterns of leading and trailing "
 "underscore characters:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:387
+#: ../Doc/reference/lexical_analysis.rst:389
 msgid "``_*``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:387
+#: ../Doc/reference/lexical_analysis.rst:390
 msgid "Not imported by ``from module import *``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:408
+#: ../Doc/reference/lexical_analysis.rst:392
 msgid "``_``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:390
+#: ../Doc/reference/lexical_analysis.rst:393
 msgid ""
 "In a ``case`` pattern within a :keyword:`match` statement, ``_`` is a :ref:"
 "`soft keyword <soft-keywords>` that denotes a :ref:`wildcard <wildcard-"
 "patterns>`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:394
+#: ../Doc/reference/lexical_analysis.rst:397
 msgid ""
 "Separately, the interactive interpreter makes the result of the last "
 "evaluation available in the variable ``_``. (It is stored in the :mod:"
 "`builtins` module, alongside built-in functions like ``print``.)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:399
+#: ../Doc/reference/lexical_analysis.rst:402
 msgid ""
 "Elsewhere, ``_`` is a regular identifier. It is often used to name "
 "\"special\" items, but it is not special to Python itself."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:404
+#: ../Doc/reference/lexical_analysis.rst:407
 msgid ""
 "The name ``_`` is often used in conjunction with internationalization; refer "
 "to the documentation for the :mod:`gettext` module for more information on "
 "this convention."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:408
+#: ../Doc/reference/lexical_analysis.rst:411
 msgid "It is also commonly used for unused variables."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:416
+#: ../Doc/reference/lexical_analysis.rst:413
 msgid "``__*__``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:411
+#: ../Doc/reference/lexical_analysis.rst:414
 msgid ""
 "System-defined names, informally known as \"dunder\" names. These names are "
 "defined by the interpreter and its implementation (including the standard "
@@ -497,11 +505,11 @@ msgid ""
 "explicitly documented use, is subject to breakage without warning."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:423
+#: ../Doc/reference/lexical_analysis.rst:421
 msgid "``__*``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:419
+#: ../Doc/reference/lexical_analysis.rst:422
 msgid ""
 "Class-private names.  Names in this category, when used within the context "
 "of a class definition, are re-written to use a mangled form to help avoid "
@@ -509,23 +517,23 @@ msgid ""
 "section :ref:`atom-identifiers`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:428
+#: ../Doc/reference/lexical_analysis.rst:431
 msgid "Literals"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:432
+#: ../Doc/reference/lexical_analysis.rst:435
 msgid "Literals are notations for constant values of some built-in types."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:443
+#: ../Doc/reference/lexical_analysis.rst:446
 msgid "String and Bytes literals"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:445
+#: ../Doc/reference/lexical_analysis.rst:448
 msgid "String literals are described by the following lexical definitions:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:470
+#: ../Doc/reference/lexical_analysis.rst:473
 msgid ""
 "One syntactic restriction not indicated by these productions is that "
 "whitespace is not allowed between the :token:`~python-grammar:stringprefix` "
@@ -535,17 +543,20 @@ msgid ""
 "`encodings`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:480
+#: ../Doc/reference/lexical_analysis.rst:483
 msgid ""
 "In plain English: Both types of literals can be enclosed in matching single "
 "quotes (``'``) or double quotes (``\"``).  They can also be enclosed in "
 "matching groups of three single or double quotes (these are generally "
-"referred to as *triple-quoted strings*).  The backslash (``\\``) character "
-"is used to escape characters that otherwise have a special meaning, such as "
-"newline, backslash itself, or the quote character."
+"referred to as *triple-quoted strings*). The backslash (``\\``) character is "
+"used to give special meaning to otherwise ordinary characters like ``n``, "
+"which means 'newline' when escaped (``\\n``). It can also be used to escape "
+"characters that otherwise have a special meaning, such as newline, backslash "
+"itself, or the quote character. See :ref:`escape sequences <escape-"
+"sequences>` below for examples."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:491
+#: ../Doc/reference/lexical_analysis.rst:496
 msgid ""
 "Bytes literals are always prefixed with ``'b'`` or ``'B'``; they produce an "
 "instance of the :class:`bytes` type instead of the :class:`str` type.  They "
@@ -553,7 +564,7 @@ msgid ""
 "greater must be expressed with escapes."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:500
+#: ../Doc/reference/lexical_analysis.rst:505
 msgid ""
 "Both string and bytes literals may optionally be prefixed with a letter "
 "``'r'`` or ``'R'``; such strings are called :dfn:`raw strings` and treat "
@@ -563,20 +574,20 @@ msgid ""
 "3.x's the ``'ur'`` syntax is not supported."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:507
+#: ../Doc/reference/lexical_analysis.rst:512
 msgid ""
 "The ``'rb'`` prefix of raw bytes literals has been added as a synonym of "
 "``'br'``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:511
+#: ../Doc/reference/lexical_analysis.rst:516
 msgid ""
 "Support for the unicode legacy literal (``u'value'``) was reintroduced to "
 "simplify the maintenance of dual Python 2.x and 3.x codebases. See :pep:"
 "`414` for more information."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:520
+#: ../Doc/reference/lexical_analysis.rst:524
 msgid ""
 "A string literal with ``'f'`` or ``'F'`` in its prefix is a :dfn:`formatted "
 "string literal`; see :ref:`f-strings`.  The ``'f'`` may be combined with "
@@ -584,7 +595,7 @@ msgid ""
 "are possible, but formatted bytes literals are not."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:525
+#: ../Doc/reference/lexical_analysis.rst:529
 msgid ""
 "In triple-quoted literals, unescaped newlines and quotes are allowed (and "
 "are retained), except that three unescaped quotes in a row terminate the "
@@ -592,236 +603,246 @@ msgid ""
 "either ``'`` or ``\"``.)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:544
+#: ../Doc/reference/lexical_analysis.rst:552
+msgid "Escape sequences"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:554
 msgid ""
 "Unless an ``'r'`` or ``'R'`` prefix is present, escape sequences in string "
 "and bytes literals are interpreted according to rules similar to those used "
 "by Standard C.  The recognized escape sequences are:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:549
-#: ../Doc/reference/lexical_analysis.rst:582
+#: ../Doc/reference/lexical_analysis.rst:559
+#: ../Doc/reference/lexical_analysis.rst:592
 msgid "Escape Sequence"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:549
-#: ../Doc/reference/lexical_analysis.rst:582
+#: ../Doc/reference/lexical_analysis.rst:559
+#: ../Doc/reference/lexical_analysis.rst:592
 msgid "Meaning"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:549
-#: ../Doc/reference/lexical_analysis.rst:582
+#: ../Doc/reference/lexical_analysis.rst:559
+#: ../Doc/reference/lexical_analysis.rst:592
 msgid "Notes"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:551
+#: ../Doc/reference/lexical_analysis.rst:561
 msgid "``\\``\\ <newline>"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:551
+#: ../Doc/reference/lexical_analysis.rst:561
 msgid "Backslash and newline ignored"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:551
+#: ../Doc/reference/lexical_analysis.rst:561
 msgid "\\(1)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:553
+#: ../Doc/reference/lexical_analysis.rst:563
 msgid "``\\\\``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:553
+#: ../Doc/reference/lexical_analysis.rst:563
 msgid "Backslash (``\\``)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:555
+#: ../Doc/reference/lexical_analysis.rst:565
 msgid "``\\'``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:555
+#: ../Doc/reference/lexical_analysis.rst:565
 msgid "Single quote (``'``)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:557
+#: ../Doc/reference/lexical_analysis.rst:567
 msgid "``\\\"``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:557
+#: ../Doc/reference/lexical_analysis.rst:567
 msgid "Double quote (``\"``)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:559
+#: ../Doc/reference/lexical_analysis.rst:569
 msgid "``\\a``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:559
+#: ../Doc/reference/lexical_analysis.rst:569
 msgid "ASCII Bell (BEL)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:561
+#: ../Doc/reference/lexical_analysis.rst:571
 msgid "``\\b``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:561
+#: ../Doc/reference/lexical_analysis.rst:571
 msgid "ASCII Backspace (BS)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:563
+#: ../Doc/reference/lexical_analysis.rst:573
 msgid "``\\f``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:563
+#: ../Doc/reference/lexical_analysis.rst:573
 msgid "ASCII Formfeed (FF)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:565
+#: ../Doc/reference/lexical_analysis.rst:575
 msgid "``\\n``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:565
+#: ../Doc/reference/lexical_analysis.rst:575
 msgid "ASCII Linefeed (LF)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:567
+#: ../Doc/reference/lexical_analysis.rst:577
 msgid "``\\r``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:567
+#: ../Doc/reference/lexical_analysis.rst:577
 msgid "ASCII Carriage Return (CR)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:569
+#: ../Doc/reference/lexical_analysis.rst:579
 msgid "``\\t``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:569
+#: ../Doc/reference/lexical_analysis.rst:579
 msgid "ASCII Horizontal Tab (TAB)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:571
+#: ../Doc/reference/lexical_analysis.rst:581
 msgid "``\\v``"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:571
+#: ../Doc/reference/lexical_analysis.rst:581
 msgid "ASCII Vertical Tab (VT)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:573
-msgid "``\\ooo``"
+#: ../Doc/reference/lexical_analysis.rst:583
+msgid ":samp:`\\\\\\\\{ooo}`"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:573
+#: ../Doc/reference/lexical_analysis.rst:583
 msgid "Character with octal value *ooo*"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:573
+#: ../Doc/reference/lexical_analysis.rst:583
 msgid "(2,4)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:576
-msgid "``\\xhh``"
+#: ../Doc/reference/lexical_analysis.rst:586
+msgid ":samp:`\\\\x{hh}`"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:576
+#: ../Doc/reference/lexical_analysis.rst:586
 msgid "Character with hex value *hh*"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:576
+#: ../Doc/reference/lexical_analysis.rst:586
 msgid "(3,4)"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:579
+#: ../Doc/reference/lexical_analysis.rst:589
 msgid "Escape sequences only recognized in string literals are:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:584
-msgid "``\\N{name}``"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:584
-msgid "Character named *name* in the Unicode database"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:584
-msgid "\\(5)"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:587
-msgid "``\\uxxxx``"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:587
-msgid "Character with 16-bit hex value *xxxx*"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:587
-msgid "\\(6)"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:590
-msgid "``\\Uxxxxxxxx``"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:590
-msgid "Character with 32-bit hex value *xxxxxxxx*"
-msgstr ""
-
-#: ../Doc/reference/lexical_analysis.rst:590
-msgid "\\(7)"
+#: ../Doc/reference/lexical_analysis.rst:594
+msgid ":samp:`\\\\N\\\\{{name}\\\\}`"
 msgstr ""
 
 #: ../Doc/reference/lexical_analysis.rst:594
-msgid "Notes:"
+msgid "Character named *name* in the Unicode database"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:594
+msgid "\\(5)"
 msgstr ""
 
 #: ../Doc/reference/lexical_analysis.rst:597
+msgid ":samp:`\\\\u{xxxx}`"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:597
+msgid "Character with 16-bit hex value *xxxx*"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:597
+msgid "\\(6)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:600
+msgid ":samp:`\\\\U{xxxxxxxx}`"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:600
+msgid "Character with 32-bit hex value *xxxxxxxx*"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:600
+msgid "\\(7)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:604
+msgid "Notes:"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:607
 msgid "A backslash can be added at the end of a line to ignore the newline::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:603
+#: ../Doc/reference/lexical_analysis.rst:613
 msgid ""
 "The same result can be achieved using :ref:`triple-quoted strings "
 "<strings>`, or parentheses and :ref:`string literal concatenation <string-"
 "concatenation>`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:608
+#: ../Doc/reference/lexical_analysis.rst:618
 msgid "As in Standard C, up to three octal digits are accepted."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:610
+#: ../Doc/reference/lexical_analysis.rst:620
 msgid ""
 "Octal escapes with value larger than ``0o377`` produce a :exc:"
-"`DeprecationWarning`. In a future Python version they will be a :exc:"
-"`SyntaxWarning` and eventually a :exc:`SyntaxError`."
+"`DeprecationWarning`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:616
+#: ../Doc/reference/lexical_analysis.rst:624
+msgid ""
+"Octal escapes with value larger than ``0o377`` produce a :exc:"
+"`SyntaxWarning`. In a future Python version they will be eventually a :exc:"
+"`SyntaxError`."
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:630
 msgid "Unlike in Standard C, exactly two hex digits are required."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:619
+#: ../Doc/reference/lexical_analysis.rst:633
 msgid ""
 "In a bytes literal, hexadecimal and octal escapes denote the byte with the "
 "given value. In a string literal, these escapes denote a Unicode character "
 "with the given value."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:624
+#: ../Doc/reference/lexical_analysis.rst:638
 msgid "Support for name aliases [#]_ has been added."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:628
+#: ../Doc/reference/lexical_analysis.rst:642
 msgid "Exactly four hex digits are required."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:631
+#: ../Doc/reference/lexical_analysis.rst:645
 msgid ""
 "Any Unicode character can be encoded this way.  Exactly eight hex digits are "
 "required."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:637
+#: ../Doc/reference/lexical_analysis.rst:651
 msgid ""
 "Unlike Standard C, all unrecognized escape sequences are left in the string "
 "unchanged, i.e., *the backslash is left in the result*.  (This behavior is "
@@ -831,14 +852,17 @@ msgid ""
 "category of unrecognized escapes for bytes literals."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:644
-msgid ""
-"Unrecognized escape sequences produce a :exc:`DeprecationWarning`.  In a "
-"future Python version they will be a :exc:`SyntaxWarning` and eventually a :"
-"exc:`SyntaxError`."
+#: ../Doc/reference/lexical_analysis.rst:658
+msgid "Unrecognized escape sequences produce a :exc:`DeprecationWarning`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:649
+#: ../Doc/reference/lexical_analysis.rst:661
+msgid ""
+"Unrecognized escape sequences produce a :exc:`SyntaxWarning`. In a future "
+"Python version they will be eventually a :exc:`SyntaxError`."
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:665
 msgid ""
 "Even in a raw literal, quotes can be escaped with a backslash, but the "
 "backslash remains in the result; for example, ``r\"\\\"\"`` is a valid "
@@ -851,11 +875,11 @@ msgid ""
 "continuation."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:662
+#: ../Doc/reference/lexical_analysis.rst:678
 msgid "String literal concatenation"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:664
+#: ../Doc/reference/lexical_analysis.rst:680
 msgid ""
 "Multiple adjacent string or bytes literals (delimited by whitespace), "
 "possibly using different quoting conventions, are allowed, and their meaning "
@@ -865,7 +889,7 @@ msgid ""
 "lines, or even to add comments to parts of strings, for example::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:675
+#: ../Doc/reference/lexical_analysis.rst:691
 msgid ""
 "Note that this feature is defined at the syntactical level, but implemented "
 "at compile time.  The '+' operator must be used to concatenate string "
@@ -875,11 +899,11 @@ msgid ""
 "with plain string literals."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:696
-msgid "Formatted string literals"
+#: ../Doc/reference/lexical_analysis.rst:714
+msgid "f-strings"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:700
+#: ../Doc/reference/lexical_analysis.rst:718
 msgid ""
 "A :dfn:`formatted string literal` or :dfn:`f-string` is a string literal "
 "that is prefixed with ``'f'`` or ``'F'``.  These strings may contain "
@@ -888,14 +912,14 @@ msgid ""
 "are really expressions evaluated at run time."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:706
+#: ../Doc/reference/lexical_analysis.rst:724
 msgid ""
 "Escape sequences are decoded like in ordinary string literals (except when a "
 "literal is also marked as a raw string).  After decoding, the grammar for "
 "the contents of the string is:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:720
+#: ../Doc/reference/lexical_analysis.rst:738
 msgid ""
 "The parts of the string outside curly braces are treated literally, except "
 "that any doubled curly braces ``'{{'`` or ``'}}'`` are replaced with the "
@@ -908,25 +932,34 @@ msgid ""
 "replacement field ends with a closing curly bracket ``'}'``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:730
+#: ../Doc/reference/lexical_analysis.rst:748
 msgid ""
 "Expressions in formatted string literals are treated like regular Python "
 "expressions surrounded by parentheses, with a few exceptions. An empty "
 "expression is not allowed, and both :keyword:`lambda`  and assignment "
-"expressions ``:=`` must be surrounded by explicit parentheses. Replacement "
-"expressions can contain line breaks (e.g. in triple-quoted strings), but "
-"they cannot contain comments.  Each expression is evaluated in the context "
-"where the formatted string literal appears, in order from left to right."
+"expressions ``:=`` must be surrounded by explicit parentheses. Each "
+"expression is evaluated in the context where the formatted string literal "
+"appears, in order from left to right.  Replacement expressions can contain "
+"newlines in both single-quoted and triple-quoted f-strings and they can "
+"contain comments.  Everything that comes after a ``#`` inside a replacement "
+"field is a comment (even closing braces and quotes). In that case, "
+"replacement fields must be closed in a different line."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:739
+#: ../Doc/reference/lexical_analysis.rst:765
 msgid ""
 "Prior to Python 3.7, an :keyword:`await` expression and comprehensions "
 "containing an :keyword:`async for` clause were illegal in the expressions in "
 "formatted string literals due to a problem with the implementation."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:744
+#: ../Doc/reference/lexical_analysis.rst:770
+msgid ""
+"Prior to Python 3.12, comments were not allowed inside f-string replacement "
+"fields."
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:774
 msgid ""
 "When the equal sign ``'='`` is provided, the output will have the expression "
 "text, the ``'='`` and the evaluated value. Spaces after the opening brace "
@@ -937,27 +970,27 @@ msgid ""
 "r'`` is declared."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:752
+#: ../Doc/reference/lexical_analysis.rst:782
 msgid "The equal sign ``'='``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:755
+#: ../Doc/reference/lexical_analysis.rst:785
 msgid ""
 "If a conversion is specified, the result of evaluating the expression is "
 "converted before formatting.  Conversion ``'!s'`` calls :func:`str` on the "
 "result, ``'!r'`` calls :func:`repr`, and ``'!a'`` calls :func:`ascii`."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:759
+#: ../Doc/reference/lexical_analysis.rst:789
 msgid ""
 "The result is then formatted using the :func:`format` protocol.  The format "
-"specifier is passed to the :meth:`__format__` method of the expression or "
-"conversion result.  An empty string is passed when the format specifier is "
-"omitted.  The formatted result is then included in the final value of the "
-"whole string."
+"specifier is passed to the :meth:`~object.__format__` method of the "
+"expression or conversion result.  An empty string is passed when the format "
+"specifier is omitted.  The formatted result is then included in the final "
+"value of the whole string."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:765
+#: ../Doc/reference/lexical_analysis.rst:795
 msgid ""
 "Top-level format specifiers may include nested replacement fields. These "
 "nested fields may include their own conversion fields and :ref:`format "
@@ -966,111 +999,117 @@ msgid ""
 "as that used by the :meth:`str.format` method."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:771
+#: ../Doc/reference/lexical_analysis.rst:801
 msgid ""
 "Formatted string literals may be concatenated, but replacement fields cannot "
 "be split across literals."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:774
+#: ../Doc/reference/lexical_analysis.rst:804
 msgid "Some examples of formatted string literals::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:806
+#: ../Doc/reference/lexical_analysis.rst:836
 msgid ""
-"A consequence of sharing the same syntax as regular string literals is that "
-"characters in the replacement fields must not conflict with the quoting used "
-"in the outer formatted string literal::"
+"Reusing the outer f-string quoting type inside a replacement field is "
+"permitted::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:813
+#: ../Doc/reference/lexical_analysis.rst:843
 msgid ""
-"Backslashes are not allowed in format expressions and will raise an error::"
+"Prior to Python 3.12, reuse of the same quoting type of the outer f-string "
+"inside a replacement field was not possible."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:818
+#: ../Doc/reference/lexical_analysis.rst:847
 msgid ""
-"To include a value in which a backslash escape is required, create a "
-"temporary variable."
+"Backslashes are also allowed in replacement fields and are evaluated the "
+"same way as in any other context::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:825
+#: ../Doc/reference/lexical_analysis.rst:857
+msgid ""
+"Prior to Python 3.12, backslashes were not permitted inside an f-string "
+"replacement field."
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:861
 msgid ""
 "Formatted string literals cannot be used as docstrings, even if they do not "
 "include expressions."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:836
+#: ../Doc/reference/lexical_analysis.rst:872
 msgid ""
 "See also :pep:`498` for the proposal that added formatted string literals, "
 "and :meth:`str.format`, which uses a related format string mechanism."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:843
+#: ../Doc/reference/lexical_analysis.rst:879
 msgid "Numeric literals"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:849
+#: ../Doc/reference/lexical_analysis.rst:885
 msgid ""
 "There are three types of numeric literals: integers, floating point numbers, "
 "and imaginary numbers.  There are no complex literals (complex numbers can "
 "be formed by adding a real number and an imaginary number)."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:853
+#: ../Doc/reference/lexical_analysis.rst:889
 msgid ""
 "Note that numeric literals do not include a sign; a phrase like ``-1`` is "
 "actually an expression composed of the unary operator '``-``' and the "
 "literal ``1``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:867
+#: ../Doc/reference/lexical_analysis.rst:903
 msgid "Integer literals"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:869
+#: ../Doc/reference/lexical_analysis.rst:905
 msgid "Integer literals are described by the following lexical definitions:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:883
+#: ../Doc/reference/lexical_analysis.rst:919
 msgid ""
 "There is no limit for the length of integer literals apart from what can be "
 "stored in available memory."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:886
+#: ../Doc/reference/lexical_analysis.rst:922
 msgid ""
 "Underscores are ignored for determining the numeric value of the literal.  "
 "They can be used to group digits for enhanced readability.  One underscore "
 "can occur between digits, and after base specifiers like ``0x``."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:890
+#: ../Doc/reference/lexical_analysis.rst:926
 msgid ""
 "Note that leading zeros in a non-zero decimal number are not allowed. This "
 "is for disambiguation with C-style octal literals, which Python used before "
 "version 3.0."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:894
+#: ../Doc/reference/lexical_analysis.rst:930
 msgid "Some examples of integer literals::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:900
-#: ../Doc/reference/lexical_analysis.rst:932
+#: ../Doc/reference/lexical_analysis.rst:936
+#: ../Doc/reference/lexical_analysis.rst:968
 msgid "Underscores are now allowed for grouping purposes in literals."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:911
+#: ../Doc/reference/lexical_analysis.rst:947
 msgid "Floating point literals"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:913
+#: ../Doc/reference/lexical_analysis.rst:949
 msgid ""
 "Floating point literals are described by the following lexical definitions:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:923
+#: ../Doc/reference/lexical_analysis.rst:959
 msgid ""
 "Note that the integer and exponent parts are always interpreted using radix "
 "10. For example, ``077e010`` is legal, and denotes the same number as "
@@ -1079,19 +1118,19 @@ msgid ""
 "grouping."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:928
+#: ../Doc/reference/lexical_analysis.rst:964
 msgid "Some examples of floating point literals::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:941
+#: ../Doc/reference/lexical_analysis.rst:977
 msgid "Imaginary literals"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:943
+#: ../Doc/reference/lexical_analysis.rst:979
 msgid "Imaginary literals are described by the following lexical definitions:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:948
+#: ../Doc/reference/lexical_analysis.rst:984
 msgid ""
 "An imaginary literal yields a complex number with a real part of 0.0.  "
 "Complex numbers are represented as a pair of floating point numbers and have "
@@ -1100,23 +1139,23 @@ msgid ""
 "Some examples of imaginary literals::"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:960
+#: ../Doc/reference/lexical_analysis.rst:996
 msgid "Operators"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:964
+#: ../Doc/reference/lexical_analysis.rst:1000
 msgid "The following tokens are operators:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:977
+#: ../Doc/reference/lexical_analysis.rst:1013
 msgid "Delimiters"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:981
+#: ../Doc/reference/lexical_analysis.rst:1017
 msgid "The following tokens serve as delimiters in the grammar:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:990
+#: ../Doc/reference/lexical_analysis.rst:1026
 msgid ""
 "The period can also occur in floating-point and imaginary literals.  A "
 "sequence of three periods has a special meaning as an ellipsis literal. The "
@@ -1124,22 +1163,446 @@ msgid ""
 "as delimiters, but also perform an operation."
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:995
+#: ../Doc/reference/lexical_analysis.rst:1031
 msgid ""
 "The following printing ASCII characters have special meaning as part of "
 "other tokens or are otherwise significant to the lexical analyzer:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:1002
+#: ../Doc/reference/lexical_analysis.rst:1038
 msgid ""
 "The following printing ASCII characters are not used in Python.  Their "
 "occurrence outside string literals and comments is an unconditional error:"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:1011
+#: ../Doc/reference/lexical_analysis.rst:1047
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/reference/lexical_analysis.rst:1012
-msgid "https://www.unicode.org/Public/11.0.0/ucd/NameAliases.txt"
+#: ../Doc/reference/lexical_analysis.rst:1048
+msgid "https://www.unicode.org/Public/15.1.0/ucd/NameAliases.txt"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:8
+msgid "lexical analysis"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:8
+msgid "parser"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:8
+msgid "token"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:25
+msgid "line structure"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:35
+msgid "logical line"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:35
+#: ../Doc/reference/lexical_analysis.rst:114
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "physical line"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:35
+#: ../Doc/reference/lexical_analysis.rst:114
+msgid "line joining"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:35
+msgid "NEWLINE token"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:67
+msgid "comment"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:67
+msgid "hash character"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:67
+#: ../Doc/reference/lexical_analysis.rst:81
+msgid "# (hash)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:81
+msgid "source character set"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:81
+msgid "encoding declarations (source file)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:81
+msgid "source encoding declaration"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:114
+msgid "line continuation"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:114
+msgid "backslash character"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:159
+msgid "blank line"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:174
+msgid "indentation"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:174
+msgid "leading whitespace"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:174
+msgid "space"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:174
+msgid "tab"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:174
+msgid "grouping"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:174
+msgid "statement grouping"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:202
+msgid "INDENT token"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:202
+msgid "DEDENT token"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:277
+msgid "identifier"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:277
+msgid "name"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:334
+#: ../Doc/reference/lexical_analysis.rst:358
+msgid "keyword"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:334
+msgid "reserved word"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:358
+msgid "soft keyword"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:377
+msgid "_, identifiers"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:377
+msgid "__, identifiers"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:433
+msgid "literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:433
+msgid "constant"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+#: ../Doc/reference/lexical_analysis.rst:479
+msgid "string literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+#: ../Doc/reference/lexical_analysis.rst:492
+msgid "bytes literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+msgid "ASCII"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+msgid "' (single quote)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+msgid "\" (double quote)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+msgid "u'"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:438
+msgid "u\""
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:479
+msgid "triple-quoted string"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:479
+msgid "Unicode Consortium"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:479
+msgid "raw string"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:479
+msgid "\"\"\""
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:479
+msgid "'''"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:492
+msgid "b'"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:492
+msgid "b\""
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:501
+msgid "r'"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:501
+msgid "raw string literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:501
+msgid "r\""
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:520
+msgid "f'"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:520
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "formatted string literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:520
+msgid "f\""
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "escape sequence"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "Standard C"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "C"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\ (backslash)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\\\"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\a"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\b"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\f"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\n"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\r"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\t"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\v"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\x"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\N"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\u"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:533
+msgid "\\U"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:649
+msgid "unrecognized escape sequence"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "interpolated string literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "string"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "formatted literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "interpolated literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "f-string"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "fstring"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "{} (curly brackets)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "in formatted string literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "! (exclamation)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid ": (colon)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "= (equals)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:698
+msgid "for help in debugging using string literals"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "number"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "numeric literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+#: ../Doc/reference/lexical_analysis.rst:894
+msgid "integer literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "floating point literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "hexadecimal literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "octal literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "binary literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "decimal literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "imaginary literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:881
+msgid "complex literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:894
+msgid "0b"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:894
+msgid "0o"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:894
+msgid "0x"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:894
+#: ../Doc/reference/lexical_analysis.rst:940
+msgid "_ (underscore)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:894
+#: ../Doc/reference/lexical_analysis.rst:940
+#: ../Doc/reference/lexical_analysis.rst:972
+msgid "in numeric literal"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:940
+msgid ". (dot)"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:940
+msgid "e"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:972
+msgid "j"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:998
+msgid "operators"
+msgstr ""
+
+#: ../Doc/reference/lexical_analysis.rst:1015
+msgid "delimiters"
 msgstr ""

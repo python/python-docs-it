@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/xml.sax.handler.rst:2
-msgid ":mod:`xml.sax.handler` --- Base classes for SAX handlers"
+msgid ":mod:`!xml.sax.handler` --- Base classes for SAX handlers"
 msgstr ""
 
 #: ../Doc/library/xml.sax.handler.rst:10
@@ -530,9 +530,9 @@ msgid ""
 "your :class:`~xml.sax.xmlreader.XMLReader`, the parser will call the methods "
 "in your object to report all warnings and errors. There are three levels of "
 "errors available: warnings, (possibly) recoverable errors, and unrecoverable "
-"errors.  All methods take a :exc:`SAXParseException` as the only parameter.  "
-"Errors and warnings may be converted to an exception by raising the passed-"
-"in exception object."
+"errors.  All methods take a :exc:`~xml.sax.SAXParseException` as the only "
+"parameter.  Errors and warnings may be converted to an exception by raising "
+"the passed-in exception object."
 msgstr ""
 
 #: ../Doc/library/xml.sax.handler.rst:403

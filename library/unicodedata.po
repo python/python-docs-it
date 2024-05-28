@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/unicodedata.rst:2
-msgid ":mod:`unicodedata` --- Unicode Database"
+msgid ":mod:`!unicodedata` --- Unicode Database"
 msgstr ""
 
 #: ../Doc/library/unicodedata.rst:18
 msgid ""
 "This module provides access to the Unicode Character Database (UCD) which "
 "defines character properties for all Unicode characters. The data contained "
-"in this database is compiled from the `UCD version 14.0.0 <https://www."
-"unicode.org/Public/14.0.0/ucd>`_."
+"in this database is compiled from the `UCD version 15.1.0 <https://www."
+"unicode.org/Public/15.1.0/ucd>`_."
 msgstr ""
 
 #: ../Doc/library/unicodedata.rst:23
@@ -187,9 +187,21 @@ msgid "Footnotes"
 msgstr ""
 
 #: ../Doc/library/unicodedata.rst:178
-msgid "https://www.unicode.org/Public/14.0.0/ucd/NameAliases.txt"
+msgid "https://www.unicode.org/Public/15.1.0/ucd/NameAliases.txt"
 msgstr ""
 
 #: ../Doc/library/unicodedata.rst:180
-msgid "https://www.unicode.org/Public/14.0.0/ucd/NamedSequences.txt"
+msgid "https://www.unicode.org/Public/15.1.0/ucd/NamedSequences.txt"
+msgstr ""
+
+#: ../Doc/library/unicodedata.rst:11
+msgid "Unicode"
+msgstr ""
+
+#: ../Doc/library/unicodedata.rst:11
+msgid "character"
+msgstr ""
+
+#: ../Doc/library/unicodedata.rst:11
+msgid "database"
 msgstr ""

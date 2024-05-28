@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,8 +91,8 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:57
 msgid ""
-"See `the PSF license page <https://www.python.org/psf/license/>`_ to find "
-"further explanations and a link to the full text of the license."
+"See `the license page <https://docs.python.org/3/license.html>`_ to find "
+"further explanations and the full text of the PSF License."
 msgstr ""
 
 #: ../Doc/faq/general.rst:60
@@ -188,44 +188,40 @@ msgid ""
 "packages of interest to you."
 msgstr ""
 
-#: ../Doc/faq/general.rst:126
+#: ../Doc/faq/general.rst:128
 msgid "How does the Python version numbering scheme work?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:128
+#: ../Doc/faq/general.rst:130
 msgid "Python versions are numbered \"A.B.C\" or \"A.B\":"
 msgstr ""
 
-#: ../Doc/faq/general.rst:130
+#: ../Doc/faq/general.rst:132
 msgid ""
 "*A* is the major version number -- it is only incremented for really major "
 "changes in the language."
 msgstr ""
 
-#: ../Doc/faq/general.rst:132
+#: ../Doc/faq/general.rst:134
 msgid ""
 "*B* is the minor version number -- it is incremented for less earth-"
 "shattering changes."
 msgstr ""
 
-#: ../Doc/faq/general.rst:134
+#: ../Doc/faq/general.rst:136
 msgid ""
 "*C* is the micro version number -- it is incremented for each bugfix release."
 msgstr ""
 
-#: ../Doc/faq/general.rst:136
-msgid "See :pep:`6` for more information about bugfix releases."
-msgstr ""
-
 #: ../Doc/faq/general.rst:138
 msgid ""
-"Not all releases are bugfix releases.  In the run-up to a new major release, "
-"a series of development releases are made, denoted as alpha, beta, or "
-"release candidate.  Alphas are early releases in which interfaces aren't yet "
-"finalized; it's not unexpected to see an interface change between two alpha "
-"releases. Betas are more stable, preserving existing interfaces but possibly "
-"adding new modules, and release candidates are frozen, making no changes "
-"except as needed to fix critical bugs."
+"Not all releases are bugfix releases.  In the run-up to a new feature "
+"release, a series of development releases are made, denoted as alpha, beta, "
+"or release candidate.  Alphas are early releases in which interfaces aren't "
+"yet finalized; it's not unexpected to see an interface change between two "
+"alpha releases. Betas are more stable, preserving existing interfaces but "
+"possibly adding new modules, and release candidates are frozen, making no "
+"changes except as needed to fix critical bugs."
 msgstr ""
 
 #: ../Doc/faq/general.rst:146
@@ -263,22 +259,25 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:160
 msgid ""
+"See the `Developer's Guide <https://devguide.python.org/developer-workflow/"
+"development-cycle/>`__ for more information about the development cycle, "
+"and :pep:`387` to learn more about Python's backward compatibility policy.  "
 "See also the documentation for :data:`sys.version`, :data:`sys.hexversion`, "
 "and :data:`sys.version_info`."
 msgstr ""
 
-#: ../Doc/faq/general.rst:165
+#: ../Doc/faq/general.rst:169
 msgid "How do I obtain a copy of the Python source?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:167
+#: ../Doc/faq/general.rst:171
 msgid ""
 "The latest Python source distribution is always available from python.org, "
 "at https://www.python.org/downloads/.  The latest development sources can be "
 "obtained at https://github.com/python/cpython/."
 msgstr ""
 
-#: ../Doc/faq/general.rst:171
+#: ../Doc/faq/general.rst:175
 msgid ""
 "The source distribution is a gzipped tar file containing the complete C "
 "source, Sphinx-formatted documentation, Python library modules, example "
@@ -286,25 +285,25 @@ msgid ""
 "source will compile and run out of the box on most UNIX platforms."
 msgstr ""
 
-#: ../Doc/faq/general.rst:176
+#: ../Doc/faq/general.rst:180
 msgid ""
 "Consult the `Getting Started section of the Python Developer's Guide "
 "<https://devguide.python.org/setup/>`__ for more information on getting the "
 "source code and compiling it."
 msgstr ""
 
-#: ../Doc/faq/general.rst:182
+#: ../Doc/faq/general.rst:186
 msgid "How do I get documentation on Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:186
+#: ../Doc/faq/general.rst:188
 msgid ""
 "The standard documentation for the current stable version of Python is "
 "available at https://docs.python.org/3/.  PDF, plain text, and downloadable "
 "HTML versions are also available at https://docs.python.org/3/download.html."
 msgstr ""
 
-#: ../Doc/faq/general.rst:190
+#: ../Doc/faq/general.rst:192
 msgid ""
 "The documentation is written in reStructuredText and processed by `the "
 "Sphinx documentation tool <https://www.sphinx-doc.org/>`__.  The "
@@ -312,28 +311,28 @@ msgid ""
 "distribution."
 msgstr ""
 
-#: ../Doc/faq/general.rst:196
+#: ../Doc/faq/general.rst:198
 msgid "I've never programmed before. Is there a Python tutorial?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:198
+#: ../Doc/faq/general.rst:200
 msgid ""
 "There are numerous tutorials and books available.  The standard "
 "documentation includes :ref:`tutorial-index`."
 msgstr ""
 
-#: ../Doc/faq/general.rst:201
+#: ../Doc/faq/general.rst:203
 msgid ""
 "Consult `the Beginner's Guide <https://wiki.python.org/moin/"
 "BeginnersGuide>`_ to find information for beginning Python programmers, "
 "including lists of tutorials."
 msgstr ""
 
-#: ../Doc/faq/general.rst:206
+#: ../Doc/faq/general.rst:208
 msgid "Is there a newsgroup or mailing list devoted to Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:208
+#: ../Doc/faq/general.rst:210
 msgid ""
 "There is a newsgroup, :newsgroup:`comp.lang.python`, and a mailing list, "
 "`python-list <https://mail.python.org/mailman/listinfo/python-list>`_.  The "
@@ -343,25 +342,25 @@ msgid ""
 "Usenet readers are often more able to cope with this volume."
 msgstr ""
 
-#: ../Doc/faq/general.rst:215
+#: ../Doc/faq/general.rst:217
 msgid ""
 "Announcements of new software releases and events can be found in comp.lang."
 "python.announce, a low-traffic moderated list that receives about five "
 "postings per day.  It's available as `the python-announce mailing list "
-"<https://mail.python.org/mailman/listinfo/python-announce-list>`_."
+"<https://mail.python.org/mailman3/lists/python-announce-list.python.org/>`_."
 msgstr ""
 
-#: ../Doc/faq/general.rst:220
+#: ../Doc/faq/general.rst:222
 msgid ""
 "More info about other mailing lists and newsgroups can be found at https://"
 "www.python.org/community/lists/."
 msgstr ""
 
-#: ../Doc/faq/general.rst:225
+#: ../Doc/faq/general.rst:227
 msgid "How do I get a beta test version of Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:227
+#: ../Doc/faq/general.rst:229
 msgid ""
 "Alpha and beta releases are available from https://www.python.org/"
 "downloads/.  All releases are announced on the comp.lang.python and comp."
@@ -369,81 +368,81 @@ msgid ""
 "python.org/; an RSS feed of news is available."
 msgstr ""
 
-#: ../Doc/faq/general.rst:232
+#: ../Doc/faq/general.rst:234
 msgid ""
 "You can also access the development version of Python through Git.  See `The "
 "Python Developer's Guide <https://devguide.python.org/>`_ for details."
 msgstr ""
 
-#: ../Doc/faq/general.rst:237
+#: ../Doc/faq/general.rst:239
 msgid "How do I submit bug reports and patches for Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:239
+#: ../Doc/faq/general.rst:241
 msgid ""
 "To report a bug or submit a patch, use the issue tracker at https://github."
 "com/python/cpython/issues."
 msgstr ""
 
-#: ../Doc/faq/general.rst:242
+#: ../Doc/faq/general.rst:244
 msgid ""
 "For more information on how Python is developed, consult `the Python "
 "Developer's Guide <https://devguide.python.org/>`_."
 msgstr ""
 
-#: ../Doc/faq/general.rst:247
+#: ../Doc/faq/general.rst:249
 msgid "Are there any published articles about Python that I can reference?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:249
+#: ../Doc/faq/general.rst:251
 msgid "It's probably best to cite your favorite book about Python."
 msgstr ""
 
-#: ../Doc/faq/general.rst:251
+#: ../Doc/faq/general.rst:253
 msgid ""
-"The very first article about Python was written in 1991 and is now quite "
-"outdated."
+"The `very first article <https://ir.cwi.nl/pub/18204>`_ about Python was "
+"written in 1991 and is now quite outdated."
 msgstr ""
 
-#: ../Doc/faq/general.rst:254
+#: ../Doc/faq/general.rst:256
 msgid ""
 "Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers "
 "Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 "
 "(December 1991), Amsterdam, pp 283--303."
 msgstr ""
 
-#: ../Doc/faq/general.rst:260
+#: ../Doc/faq/general.rst:262
 msgid "Are there any books on Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:262
+#: ../Doc/faq/general.rst:264
 msgid ""
 "Yes, there are many, and more are being published.  See the python.org wiki "
 "at https://wiki.python.org/moin/PythonBooks for a list."
 msgstr ""
 
-#: ../Doc/faq/general.rst:265
+#: ../Doc/faq/general.rst:267
 msgid ""
 "You can also search online bookstores for \"Python\" and filter out the "
 "Monty Python references; or perhaps search for \"Python\" and \"language\"."
 msgstr ""
 
-#: ../Doc/faq/general.rst:270
+#: ../Doc/faq/general.rst:272
 msgid "Where in the world is www.python.org located?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:272
+#: ../Doc/faq/general.rst:274
 msgid ""
 "The Python project's infrastructure is located all over the world and is "
 "managed by the Python Infrastructure Team. Details `here <https://infra.psf."
 "io>`__."
 msgstr ""
 
-#: ../Doc/faq/general.rst:277
+#: ../Doc/faq/general.rst:279
 msgid "Why is it called Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:279
+#: ../Doc/faq/general.rst:281
 msgid ""
 "When he began implementing Python, Guido van Rossum was also reading the "
 "published scripts from `\"Monty Python's Flying Circus\" <https://en."
@@ -452,40 +451,40 @@ msgid ""
 "mysterious, so he decided to call the language Python."
 msgstr ""
 
-#: ../Doc/faq/general.rst:287
+#: ../Doc/faq/general.rst:289
 msgid "Do I have to like \"Monty Python's Flying Circus\"?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:289
+#: ../Doc/faq/general.rst:291
 msgid "No, but it helps.  :)"
 msgstr ""
 
-#: ../Doc/faq/general.rst:293
+#: ../Doc/faq/general.rst:295
 msgid "Python in the real world"
 msgstr ""
 
-#: ../Doc/faq/general.rst:296
+#: ../Doc/faq/general.rst:298
 msgid "How stable is Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:298
+#: ../Doc/faq/general.rst:300
 msgid ""
 "Very stable.  New, stable releases have been coming out roughly every 6 to "
 "18 months since 1991, and this seems likely to continue.  As of version 3.9, "
-"Python will have a major new release every 12 months (:pep:`602`)."
+"Python will have a new feature release every 12 months (:pep:`602`)."
 msgstr ""
 
-#: ../Doc/faq/general.rst:302
+#: ../Doc/faq/general.rst:304
 msgid ""
-"The developers issue \"bugfix\" releases of older versions, so the stability "
-"of existing releases gradually improves.  Bugfix releases, indicated by a "
-"third component of the version number (e.g. 3.5.3, 3.6.2), are managed for "
+"The developers issue bugfix releases of older versions, so the stability of "
+"existing releases gradually improves.  Bugfix releases, indicated by a third "
+"component of the version number (e.g. 3.5.3, 3.6.2), are managed for "
 "stability; only fixes for known problems are included in a bugfix release, "
 "and it's guaranteed that interfaces will remain the same throughout a series "
 "of bugfix releases."
 msgstr ""
 
-#: ../Doc/faq/general.rst:309
+#: ../Doc/faq/general.rst:311
 msgid ""
 "The latest stable releases can always be found on the `Python download page "
 "<https://www.python.org/downloads/>`_.  There are two production-ready "
@@ -494,34 +493,34 @@ msgid ""
 "`it is not maintained anymore <https://peps.python.org/pep-0373/>`_."
 msgstr ""
 
-#: ../Doc/faq/general.rst:316
+#: ../Doc/faq/general.rst:318
 msgid "How many people are using Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:318
+#: ../Doc/faq/general.rst:320
 msgid ""
 "There are probably millions of users, though it's difficult to obtain an "
 "exact count."
 msgstr ""
 
-#: ../Doc/faq/general.rst:321
+#: ../Doc/faq/general.rst:323
 msgid ""
 "Python is available for free download, so there are no sales figures, and "
 "it's available from many different sites and packaged with many Linux "
 "distributions, so download statistics don't tell the whole story either."
 msgstr ""
 
-#: ../Doc/faq/general.rst:325
+#: ../Doc/faq/general.rst:327
 msgid ""
 "The comp.lang.python newsgroup is very active, but not all Python users post "
 "to the group or even read it."
 msgstr ""
 
-#: ../Doc/faq/general.rst:330
+#: ../Doc/faq/general.rst:332
 msgid "Have any significant projects been done in Python?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:332
+#: ../Doc/faq/general.rst:334
 msgid ""
 "See https://www.python.org/about/success for a list of projects that use "
 "Python. Consulting the proceedings for `past Python conferences <https://www."
@@ -529,7 +528,7 @@ msgid ""
 "different companies and organizations."
 msgstr ""
 
-#: ../Doc/faq/general.rst:337
+#: ../Doc/faq/general.rst:339
 msgid ""
 "High-profile Python projects include `the Mailman mailing list manager "
 "<https://www.list.org>`_ and `the Zope application server <https://www.zope."
@@ -539,11 +538,11 @@ msgid ""
 "include Google, Yahoo, and Lucasfilm Ltd."
 msgstr ""
 
-#: ../Doc/faq/general.rst:346
+#: ../Doc/faq/general.rst:348
 msgid "What new developments are expected for Python in the future?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:348
+#: ../Doc/faq/general.rst:350
 msgid ""
 "See https://peps.python.org/ for the Python Enhancement Proposals (PEPs). "
 "PEPs are design documents describing a suggested new feature for Python, "
@@ -552,17 +551,17 @@ msgid ""
 "been publicly released yet."
 msgstr ""
 
-#: ../Doc/faq/general.rst:354
+#: ../Doc/faq/general.rst:356
 msgid ""
 "New development is discussed on `the python-dev mailing list <https://mail."
-"python.org/mailman/listinfo/python-dev/>`_."
-msgstr ""
-
-#: ../Doc/faq/general.rst:359
-msgid "Is it reasonable to propose incompatible changes to Python?"
+"python.org/mailman3/lists/python-dev.python.org/>`_."
 msgstr ""
 
 #: ../Doc/faq/general.rst:361
+msgid "Is it reasonable to propose incompatible changes to Python?"
+msgstr ""
+
+#: ../Doc/faq/general.rst:363
 msgid ""
 "In general, no.  There are already millions of lines of Python code around "
 "the world, so any change in the language that invalidates more than a very "
@@ -572,22 +571,22 @@ msgid ""
 "to invalidate them all at a single stroke."
 msgstr ""
 
-#: ../Doc/faq/general.rst:368
+#: ../Doc/faq/general.rst:370
 msgid ""
 "Providing a gradual upgrade path is necessary if a feature has to be "
 "changed. :pep:`5` describes the procedure followed for introducing backward-"
 "incompatible changes while minimizing disruption for users."
 msgstr ""
 
-#: ../Doc/faq/general.rst:374
+#: ../Doc/faq/general.rst:376
 msgid "Is Python a good language for beginning programmers?"
 msgstr ""
 
-#: ../Doc/faq/general.rst:376
+#: ../Doc/faq/general.rst:378
 msgid "Yes."
 msgstr ""
 
-#: ../Doc/faq/general.rst:378
+#: ../Doc/faq/general.rst:380
 msgid ""
 "It is still common to start students with a procedural and statically typed "
 "language such as Pascal, C, or a subset of C++ or Java.  Students may be "
@@ -600,7 +599,7 @@ msgid ""
 "with user-defined objects in their very first course."
 msgstr ""
 
-#: ../Doc/faq/general.rst:388
+#: ../Doc/faq/general.rst:390
 msgid ""
 "For a student who has never programmed before, using a statically typed "
 "language seems unnatural.  It presents additional complexity that the "
@@ -612,7 +611,7 @@ msgid ""
 "course."
 msgstr ""
 
-#: ../Doc/faq/general.rst:396
+#: ../Doc/faq/general.rst:398
 msgid ""
 "Many other aspects of Python make it a good first language.  Like Java, "
 "Python has a large standard library so that students can be assigned "
@@ -625,7 +624,7 @@ msgid ""
 "helpful in extending the students' reach."
 msgstr ""
 
-#: ../Doc/faq/general.rst:405
+#: ../Doc/faq/general.rst:407
 msgid ""
 "Python's interactive interpreter enables students to test language features "
 "while they're programming.  They can keep a window with the interpreter "
@@ -633,13 +632,13 @@ msgid ""
 "can't remember the methods for a list, they can do something like this::"
 msgstr ""
 
-#: ../Doc/faq/general.rst:434
+#: ../Doc/faq/general.rst:436
 msgid ""
 "With the interpreter, documentation is never far from the student as they "
 "are programming."
 msgstr ""
 
-#: ../Doc/faq/general.rst:437
+#: ../Doc/faq/general.rst:439
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
 "Python that is written in Python using Tkinter. Emacs users will be happy to "
@@ -650,7 +649,7 @@ msgid ""
 "Python editing environments."
 msgstr ""
 
-#: ../Doc/faq/general.rst:445
+#: ../Doc/faq/general.rst:447
 msgid ""
 "If you want to discuss Python's use in education, you may be interested in "
 "joining `the edu-sig mailing list <https://www.python.org/community/sigs/"

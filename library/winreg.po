@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/winreg.rst:2
-msgid ":mod:`winreg` --- Windows registry access"
+msgid ":mod:`!winreg` --- Windows registry access"
 msgstr ""
 
 #: ../Doc/library/winreg.rst:12
@@ -355,8 +355,8 @@ msgstr ""
 
 #: ../Doc/library/winreg.rst:290
 msgid ""
-"A call to :func:`LoadKey` fails if the calling process does not have the :"
-"const:`SE_RESTORE_PRIVILEGE` privilege.  Note that privileges are different "
+"A call to :func:`LoadKey` fails if the calling process does not have the :c:"
+"data:`!SE_RESTORE_PRIVILEGE` privilege.  Note that privileges are different "
 "from permissions -- see the `RegLoadKey documentation <https://msdn."
 "microsoft.com/en-us/library/ms724889%28v=VS.85%29.aspx>`__ for more details."
 msgstr ""
@@ -502,7 +502,7 @@ msgstr ""
 msgid ""
 "If *key* represents a key on a remote computer, the path described by "
 "*file_name* is relative to the remote computer. The caller of this method "
-"must possess the :const:`SeBackupPrivilege` security privilege.  Note that "
+"must possess the **SeBackupPrivilege** security privilege.  Note that "
 "privileges are different than permissions -- see the `Conflicts Between User "
 "Rights and Permissions documentation <https://msdn.microsoft.com/en-us/"
 "library/ms724878%28v=VS.85%29.aspx>`__ for more details."
@@ -656,7 +656,7 @@ msgstr ""
 
 #: ../Doc/library/winreg.rst:539
 msgid ""
-"The following constants are defined for use in many :mod:`_winreg` functions."
+"The following constants are defined for use in many :mod:`winreg` functions."
 msgstr ""
 
 #: ../Doc/library/winreg.rst:544
@@ -885,7 +885,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/winreg.rst:748
-msgid "Handle objects provide semantics for :meth:`__bool__` -- thus ::"
+msgid ""
+"Handle objects provide semantics for :meth:`~object.__bool__` -- thus ::"
 msgstr ""
 
 #: ../Doc/library/winreg.rst:753
@@ -951,4 +952,12 @@ msgstr ""
 #: ../Doc/library/winreg.rst:797
 msgid ""
 "will automatically close *key* when control leaves the :keyword:`with` block."
+msgstr ""
+
+#: ../Doc/library/winreg.rst:242
+msgid "% (percent)"
+msgstr ""
+
+#: ../Doc/library/winreg.rst:242
+msgid "environment variables expansion (Windows)"
 msgstr ""

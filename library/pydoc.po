@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/pydoc.rst:2
-msgid ":mod:`pydoc` --- Documentation generator and online help system"
+msgid ":mod:`!pydoc` --- Documentation generator and online help system"
 msgstr ""
 
 #: ../Doc/library/pydoc.rst:10
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../Doc/library/pydoc.rst:19
 msgid ""
-"The :mod:`pydoc` module automatically generates documentation from Python "
+"The :mod:`!pydoc` module automatically generates documentation from Python "
 "modules.  The documentation can be presented as pages of text on the "
 "console, served to a web browser, or saved to HTML files."
 msgstr ""
@@ -35,9 +35,9 @@ msgstr ""
 #: ../Doc/library/pydoc.rst:23
 msgid ""
 "For modules, classes, functions and methods, the displayed documentation is "
-"derived from the docstring (i.e. the :attr:`__doc__` attribute) of the "
+"derived from the docstring (i.e. the :attr:`!__doc__` attribute) of the "
 "object, and recursively of its documentable members.  If there is no "
-"docstring, :mod:`pydoc` tries to obtain a description from the block of "
+"docstring, :mod:`!pydoc` tries to obtain a description from the block of "
 "comment lines just above the definition of the class, function or method in "
 "the source file, or at the top of the module (see :func:`inspect."
 "getcomments`)."
@@ -46,7 +46,7 @@ msgstr ""
 #: ../Doc/library/pydoc.rst:30
 msgid ""
 "The built-in function :func:`help` invokes the online help system in the "
-"interactive interpreter, which uses :mod:`pydoc` to generate its "
+"interactive interpreter, which uses :mod:`!pydoc` to generate its "
 "documentation as text on the console.  The same text documentation can also "
 "be viewed from outside the Python interpreter by running :program:`pydoc` as "
 "a script at the operating system's command prompt. For example, running ::"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../Doc/library/pydoc.rst:49
 msgid ""
-"In order to find objects and their documentation, :mod:`pydoc` imports the "
+"In order to find objects and their documentation, :mod:`!pydoc` imports the "
 "module(s) to be documented.  Therefore, any code on module level will be "
 "executed on that occasion.  Use an ``if __name__ == '__main__':`` guard to "
 "only execute code when a file is invoked as a script and not just imported."
@@ -98,27 +98,27 @@ msgstr ""
 msgid ""
 "You can also use :program:`pydoc` to start an HTTP server on the local "
 "machine that will serve documentation to visiting web browsers.  :program:"
-"`pydoc -p 1234` will start a HTTP server on port 1234, allowing you to "
-"browse the documentation at ``http://localhost:1234/`` in your preferred web "
-"browser. Specifying ``0`` as the port number will select an arbitrary unused "
-"port."
+"`python -m pydoc -p 1234` will start a HTTP server on port 1234, allowing "
+"you to browse the documentation at ``http://localhost:1234/`` in your "
+"preferred web browser. Specifying ``0`` as the port number will select an "
+"arbitrary unused port."
 msgstr ""
 
 #: ../Doc/library/pydoc.rst:73
 msgid ""
-":program:`pydoc -n <hostname>` will start the server listening at the given "
-"hostname.  By default the hostname is 'localhost' but if you want the server "
-"to be reached from other machines, you may want to change the host name that "
-"the server responds to.  During development this is especially useful if you "
-"want to run pydoc from within a container."
+":program:`python -m pydoc -n <hostname>` will start the server listening at "
+"the given hostname.  By default the hostname is 'localhost' but if you want "
+"the server to be reached from other machines, you may want to change the "
+"host name that the server responds to.  During development this is "
+"especially useful if you want to run pydoc from within a container."
 msgstr ""
 
 #: ../Doc/library/pydoc.rst:79
 msgid ""
-":program:`pydoc -b` will start the server and additionally open a web "
-"browser to a module index page.  Each served page has a navigation bar at "
-"the top where you can *Get* help on an individual item, *Search* all modules "
-"with a keyword in their synopsis line, and go to the *Module index*, "
+":program:`python -m pydoc -b` will start the server and additionally open a "
+"web browser to a module index page.  Each served page has a navigation bar "
+"at the top where you can *Get* help on an individual item, *Search* all "
+"modules with a keyword in their synopsis line, and go to the *Module index*, "
 "*Topics* and *Keywords* pages."
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "Module docs for core modules are assumed to reside in ``https://docs.python."
 "org/X.Y/library/`` where ``X`` and ``Y`` are the major and minor version "
 "numbers of the Python interpreter.  This can be overridden by setting the :"
-"envvar:`PYTHONDOCS` environment variable to a different URL or to a local "
+"envvar:`!PYTHONDOCS` environment variable to a different URL or to a local "
 "directory containing the Library Reference Manual pages."
 msgstr ""
 
@@ -149,10 +149,26 @@ msgstr ""
 
 #: ../Doc/library/pydoc.rst:103
 msgid ""
-":mod:`pydoc` now uses :func:`inspect.signature` rather than :func:`inspect."
+":mod:`!pydoc` now uses :func:`inspect.signature` rather than :func:`inspect."
 "getfullargspec` to extract signature information from callables."
 msgstr ""
 
 #: ../Doc/library/pydoc.rst:108
 msgid "Added the ``-n`` option."
+msgstr ""
+
+#: ../Doc/library/pydoc.rst:12
+msgid "documentation"
+msgstr ""
+
+#: ../Doc/library/pydoc.rst:12
+msgid "generation"
+msgstr ""
+
+#: ../Doc/library/pydoc.rst:12
+msgid "online"
+msgstr ""
+
+#: ../Doc/library/pydoc.rst:12
+msgid "help"
 msgstr ""

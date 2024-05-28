@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/stat.rst:2
-msgid ":mod:`stat` --- Interpreting :func:`~os.stat` results"
+msgid ":mod:`!stat` --- Interpreting :func:`~os.stat` results"
 msgstr ""
 
 #: ../Doc/library/stat.rst:10
@@ -29,8 +29,8 @@ msgstr ""
 msgid ""
 "The :mod:`stat` module defines constants and functions for interpreting the "
 "results of :func:`os.stat`, :func:`os.fstat` and :func:`os.lstat` (if they "
-"exist).  For complete details about the :c:func:`stat`, :c:func:`fstat` and :"
-"c:func:`lstat` calls, consult the documentation for your system."
+"exist).  For complete details about the :c:func:`stat`, :c:func:`!fstat` "
+"and :c:func:`!lstat` calls, consult the documentation for your system."
 msgstr ""
 
 #: ../Doc/library/stat.rst:19
@@ -99,12 +99,12 @@ msgstr ""
 #: ../Doc/library/stat.rst:91
 msgid ""
 "Return the portion of the file's mode that describes the file type (used by "
-"the :func:`S_IS\\*` functions above)."
+"the :func:`!S_IS\\*` functions above)."
 msgstr ""
 
 #: ../Doc/library/stat.rst:94
 msgid ""
-"Normally, you would use the :func:`os.path.is\\*` functions for testing the "
+"Normally, you would use the :func:`!os.path.is\\*` functions for testing the "
 "type of a file; the functions here are useful when you are doing multiple "
 "tests of the same file and wish to avoid the overhead of the :c:func:`stat` "
 "system call for each test.  These are also useful when checking for "
@@ -351,48 +351,88 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/stat.rst:355
+msgid "All user settable flags."
+msgstr ""
+
+#: ../Doc/library/stat.rst:361
 msgid "Do not dump the file."
 msgstr ""
 
-#: ../Doc/library/stat.rst:359 ../Doc/library/stat.rst:387
+#: ../Doc/library/stat.rst:365 ../Doc/library/stat.rst:427
 msgid "The file may not be changed."
 msgstr ""
 
-#: ../Doc/library/stat.rst:363 ../Doc/library/stat.rst:391
+#: ../Doc/library/stat.rst:369 ../Doc/library/stat.rst:431
 msgid "The file may only be appended to."
 msgstr ""
 
-#: ../Doc/library/stat.rst:367
+#: ../Doc/library/stat.rst:373
 msgid "The directory is opaque when viewed through a union stack."
 msgstr ""
 
-#: ../Doc/library/stat.rst:371 ../Doc/library/stat.rst:395
+#: ../Doc/library/stat.rst:377 ../Doc/library/stat.rst:441
 msgid "The file may not be renamed or deleted."
 msgstr ""
 
-#: ../Doc/library/stat.rst:375
+#: ../Doc/library/stat.rst:381
 msgid "The file is stored compressed (macOS 10.6+)."
 msgstr ""
 
-#: ../Doc/library/stat.rst:379
+#: ../Doc/library/stat.rst:385
+msgid "Used for handling document IDs (macOS)"
+msgstr ""
+
+#: ../Doc/library/stat.rst:391
+msgid "The file needs an entitlement for reading or writing (macOS 10.13+)"
+msgstr ""
+
+#: ../Doc/library/stat.rst:397
 msgid "The file should not be displayed in a GUI (macOS 10.5+)."
 msgstr ""
 
-#: ../Doc/library/stat.rst:383
+#: ../Doc/library/stat.rst:401
+msgid "All super-user changeable flags"
+msgstr ""
+
+#: ../Doc/library/stat.rst:407
+msgid "All super-user supported flags"
+msgstr ""
+
+#: ../Doc/library/stat.rst:409 ../Doc/library/stat.rst:417
+msgid ":ref:`Availability <availability>`: macOS"
+msgstr ""
+
+#: ../Doc/library/stat.rst:415
+msgid "All super-user read-only synthetic flags"
+msgstr ""
+
+#: ../Doc/library/stat.rst:423
 msgid "The file may be archived."
 msgstr ""
 
-#: ../Doc/library/stat.rst:399
+#: ../Doc/library/stat.rst:435
+msgid "The file needs an entitlement to write to (macOS 10.13+)"
+msgstr ""
+
+#: ../Doc/library/stat.rst:445
 msgid "The file is a snapshot file."
 msgstr ""
 
-#: ../Doc/library/stat.rst:401
+#: ../Doc/library/stat.rst:449
+msgid "The file is a firmlink (macOS 10.15+)"
+msgstr ""
+
+#: ../Doc/library/stat.rst:455
+msgid "The file is a dataless object (macOS 10.15+)"
+msgstr ""
+
+#: ../Doc/library/stat.rst:459
 msgid ""
 "See the \\*BSD or macOS systems man page :manpage:`chflags(2)` for more "
 "information."
 msgstr ""
 
-#: ../Doc/library/stat.rst:403
+#: ../Doc/library/stat.rst:461
 msgid ""
 "On Windows, the following file attribute constants are available for use "
 "when testing bits in the ``st_file_attributes`` member returned by :func:`os."
@@ -401,7 +441,7 @@ msgid ""
 "these constants."
 msgstr ""
 
-#: ../Doc/library/stat.rst:429
+#: ../Doc/library/stat.rst:487
 msgid ""
 "On Windows, the following constants are available for comparing against the "
 "``st_reparse_tag`` member returned by :func:`os.lstat`. These are well-known "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/syslog.rst:2
-msgid ":mod:`syslog` --- Unix syslog library routines"
+msgid ":mod:`!syslog` --- Unix syslog library routines"
 msgstr ""
 
 #: ../Doc/library/syslog.rst:10
@@ -29,21 +29,14 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/syslog.rst:14
+msgid ":ref:`Availability <availability>`: Unix, not WASI, not iOS."
+msgstr ""
+
+#: ../Doc/library/syslog.rst:16
 msgid ""
 "This module wraps the system ``syslog`` family of routines.  A pure Python "
 "library that can speak to a syslog server is available in the :mod:`logging."
-"handlers` module as :class:`SysLogHandler`."
-msgstr ""
-
-#: ../Doc/includes/wasm-notavail.rst:None
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../Doc/includes/wasm-notavail.rst:5
-msgid ""
-"This module does not work or is not available on WebAssembly platforms "
-"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
-"more information."
+"handlers` module as :class:`~logging.handlers.SysLogHandler`."
 msgstr ""
 
 #: ../Doc/library/syslog.rst:20
@@ -66,7 +59,7 @@ msgid ""
 "func:`openlog` will be called with no arguments."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:45
+#: ../Doc/library/syslog.rst:36
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.syslog`` with arguments "
 "``priority``, ``message``."
@@ -79,14 +72,23 @@ msgid ""
 "syslog implementation to call ``openlog()``."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:46
+#: ../Doc/library/syslog.rst:43
+msgid ""
+"This function is restricted in subinterpreters. (Only code that runs in "
+"multiple interpreters is affected and the restriction is not relevant for "
+"most users.) :func:`openlog` must be called in the main interpreter before :"
+"func:`syslog` may be used in a subinterpreter.  Otherwise it will raise :exc:"
+"`RuntimeError`."
+msgstr ""
+
+#: ../Doc/library/syslog.rst:53
 msgid ""
 "Logging options of subsequent :func:`syslog` calls can be set by calling :"
 "func:`openlog`.  :func:`syslog` will call :func:`openlog` with no arguments "
 "if the log is not currently open."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:50
+#: ../Doc/library/syslog.rst:57
 msgid ""
 "The optional *ident* keyword argument is a string which is prepended to "
 "every message, and defaults to ``sys.argv[0]`` with leading path components "
@@ -96,24 +98,32 @@ msgid ""
 "for messages which do not have a facility explicitly encoded."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:66
+#: ../Doc/library/syslog.rst:64
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.openlog`` with arguments "
 "``ident``, ``logoption``, ``facility``."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:59
+#: ../Doc/library/syslog.rst:66
 msgid ""
 "In previous versions, keyword arguments were not allowed, and *ident* was "
 "required."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:66
+#: ../Doc/library/syslog.rst:70 ../Doc/library/syslog.rst:89
+msgid ""
+"This function is restricted in subinterpreters. (Only code that runs in "
+"multiple interpreters is affected and the restriction is not relevant for "
+"most users.) This may only be called in the main interpreter. It will raise :"
+"exc:`RuntimeError` if called in a subinterpreter."
+msgstr ""
+
+#: ../Doc/library/syslog.rst:80
 msgid ""
 "Reset the syslog module values and call the system library ``closelog()``."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:68
+#: ../Doc/library/syslog.rst:82
 msgid ""
 "This causes the module to behave as it does when initially imported.  For "
 "example, :func:`openlog` will be called on the first :func:`syslog` call "
@@ -121,13 +131,13 @@ msgid ""
 "`openlog` parameters are reset to defaults."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:82
+#: ../Doc/library/syslog.rst:87
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.closelog`` with no "
 "arguments."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:78
+#: ../Doc/library/syslog.rst:99
 msgid ""
 "Set the priority mask to *maskpri* and return the previous mask value.  "
 "Calls to :func:`syslog` with a priority level not set in *maskpri* are "
@@ -137,63 +147,52 @@ msgid ""
 "and including *pri*."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:94
+#: ../Doc/library/syslog.rst:106
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.setlogmask`` with "
 "argument ``maskpri``."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:87
+#: ../Doc/library/syslog.rst:108
 msgid "The module defines the following constants:"
 msgstr ""
 
-#: ../Doc/library/syslog.rst:92
-msgid "Priority levels (high to low):"
+#: ../Doc/library/syslog.rst:120
+msgid "Priority levels (high to low)."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:90
+#: ../Doc/library/syslog.rst:149
 msgid ""
-":const:`LOG_EMERG`, :const:`LOG_ALERT`, :const:`LOG_CRIT`, :const:"
-"`LOG_ERR`, :const:`LOG_WARNING`, :const:`LOG_NOTICE`, :const:`LOG_INFO`, :"
-"const:`LOG_DEBUG`."
+"Facilities, depending on availability in ``<syslog.h>`` for :const:"
+"`LOG_AUTHPRIV`, :const:`LOG_FTP`, :const:`LOG_NETINFO`, :const:"
+"`LOG_REMOTEAUTH`, :const:`LOG_INSTALL` and :const:`LOG_RAS`."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:99
-msgid "Facilities:"
-msgstr ""
-
-#: ../Doc/library/syslog.rst:95
+#: ../Doc/library/syslog.rst:153
 msgid ""
-":const:`LOG_KERN`, :const:`LOG_USER`, :const:`LOG_MAIL`, :const:"
-"`LOG_DAEMON`, :const:`LOG_AUTH`, :const:`LOG_LPR`, :const:`LOG_NEWS`, :const:"
-"`LOG_UUCP`, :const:`LOG_CRON`, :const:`LOG_SYSLOG`, :const:`LOG_LOCAL0` to :"
-"const:`LOG_LOCAL7`, and, if defined in ``<syslog.h>``, :const:`LOG_AUTHPRIV`."
+"Added :const:`LOG_FTP`, :const:`LOG_NETINFO`, :const:`LOG_REMOTEAUTH`, :"
+"const:`LOG_INSTALL`, :const:`LOG_RAS`, and :const:`LOG_LAUNCHD`."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:105
-msgid "Log options:"
-msgstr ""
-
-#: ../Doc/library/syslog.rst:102
+#: ../Doc/library/syslog.rst:164
 msgid ""
-":const:`LOG_PID`, :const:`LOG_CONS`, :const:`LOG_NDELAY`, and, if defined in "
-"``<syslog.h>``, :const:`LOG_ODELAY`, :const:`LOG_NOWAIT`, and :const:"
-"`LOG_PERROR`."
+"Log options, depending on availability in ``<syslog.h>`` for :const:"
+"`LOG_ODELAY`, :const:`LOG_NOWAIT` and :const:`LOG_PERROR`."
 msgstr ""
 
-#: ../Doc/library/syslog.rst:108
+#: ../Doc/library/syslog.rst:169
 msgid "Examples"
 msgstr ""
 
-#: ../Doc/library/syslog.rst:111
+#: ../Doc/library/syslog.rst:172
 msgid "Simple example"
 msgstr ""
 
-#: ../Doc/library/syslog.rst:113
+#: ../Doc/library/syslog.rst:174
 msgid "A simple set of examples::"
 msgstr ""
 
-#: ../Doc/library/syslog.rst:121
+#: ../Doc/library/syslog.rst:182
 msgid ""
 "An example of setting some log options, these would include the process ID "
 "in logged messages, and write the messages to the destination facility used "

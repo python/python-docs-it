@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/netrc.rst:3
-msgid ":mod:`netrc` --- netrc file processing"
+#: ../Doc/library/netrc.rst:2
+msgid ":mod:`!netrc` --- netrc file processing"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:11
+#: ../Doc/library/netrc.rst:10
 msgid "**Source code:** :source:`Lib/netrc.py`"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:15
+#: ../Doc/library/netrc.rst:14
 msgid ""
 "The :class:`~netrc.netrc` class parses and encapsulates the netrc file "
 "format used by the Unix :program:`ftp` program and other FTP clients."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:21
+#: ../Doc/library/netrc.rst:20
 msgid ""
 "A :class:`~netrc.netrc` instance or subclass instance encapsulates data "
 "from  a netrc file.  The initialization argument, if present, specifies the "
@@ -48,17 +48,17 @@ msgid ""
 "file:`.netrc`."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:35
+#: ../Doc/library/netrc.rst:34
 msgid "Added the POSIX permission check."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:37
+#: ../Doc/library/netrc.rst:36
 msgid ""
 ":func:`os.path.expanduser` is used to find the location of the :file:`."
 "netrc` file when *file* is not passed as argument."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:41
+#: ../Doc/library/netrc.rst:40
 msgid ""
 ":class:`netrc` try UTF-8 encoding before using locale specific encoding. The "
 "entry in the netrc file no longer needs to contain all tokens.  The missing "
@@ -68,24 +68,34 @@ msgid ""
 "check."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:52
+#: ../Doc/library/netrc.rst:51
 msgid ""
 "Exception raised by the :class:`~netrc.netrc` class when syntactical errors "
 "are encountered in source text.  Instances of this exception provide three "
-"interesting attributes:  :attr:`msg` is a textual explanation of the error, :"
-"attr:`filename` is the name of the source file, and :attr:`lineno` gives the "
-"line number on which the error was found."
+"interesting attributes:"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:62
+#: ../Doc/library/netrc.rst:57
+msgid "Textual explanation of the error."
+msgstr ""
+
+#: ../Doc/library/netrc.rst:61
+msgid "The name of the source file."
+msgstr ""
+
+#: ../Doc/library/netrc.rst:65
+msgid "The line number on which the error was found."
+msgstr ""
+
+#: ../Doc/library/netrc.rst:71
 msgid "netrc Objects"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:64
+#: ../Doc/library/netrc.rst:73
 msgid "A :class:`~netrc.netrc` instance has the following methods:"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:69
+#: ../Doc/library/netrc.rst:78
 msgid ""
 "Return a 3-tuple ``(login, account, password)`` of authenticators for "
 "*host*. If the netrc file did not contain an entry for the given host, "
@@ -93,22 +103,22 @@ msgid ""
 "host nor default entry is available, return ``None``."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:77
+#: ../Doc/library/netrc.rst:86
 msgid ""
 "Dump the class data as a string in the format of a netrc file. (This "
 "discards comments and may reorder the entries.)"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:80
+#: ../Doc/library/netrc.rst:89
 msgid "Instances of :class:`~netrc.netrc` have public instance variables:"
 msgstr ""
 
-#: ../Doc/library/netrc.rst:85
+#: ../Doc/library/netrc.rst:94
 msgid ""
 "Dictionary mapping host names to ``(login, account, password)`` tuples.  The "
 "'default' entry, if any, is represented as a pseudo-host by that name."
 msgstr ""
 
-#: ../Doc/library/netrc.rst:91
+#: ../Doc/library/netrc.rst:100
 msgid "Dictionary mapping macro names to string lists."
 msgstr ""

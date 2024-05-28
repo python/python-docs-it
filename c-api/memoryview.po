@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,20 +36,28 @@ msgid ""
 "the discretion of the exporter."
 msgstr ""
 
-#: ../Doc/c-api/memoryview.rst:25
+#: ../Doc/c-api/memoryview.rst:26
+msgid "Flag to request a readonly buffer."
+msgstr ""
+
+#: ../Doc/c-api/memoryview.rst:31
+msgid "Flag to request a writable buffer."
+msgstr ""
+
+#: ../Doc/c-api/memoryview.rst:36
 msgid ""
 "Create a memoryview object using *mem* as the underlying buffer. *flags* can "
 "be one of :c:macro:`PyBUF_READ` or :c:macro:`PyBUF_WRITE`."
 msgstr ""
 
-#: ../Doc/c-api/memoryview.rst:32
+#: ../Doc/c-api/memoryview.rst:43
 msgid ""
 "Create a memoryview object wrapping the given buffer structure *view*. For "
 "simple byte buffers, :c:func:`PyMemoryView_FromMemory` is the preferred "
 "function."
 msgstr ""
 
-#: ../Doc/c-api/memoryview.rst:38
+#: ../Doc/c-api/memoryview.rst:49
 msgid ""
 "Create a memoryview object to a :term:`contiguous` chunk of memory (in "
 "either 'C' or 'F'ortran *order*) from an object that defines the buffer "
@@ -58,24 +66,37 @@ msgid ""
 "new bytes object."
 msgstr ""
 
-#: ../Doc/c-api/memoryview.rst:47
+#: ../Doc/c-api/memoryview.rst:55
+msgid ""
+"*buffertype* can be one of :c:macro:`PyBUF_READ` or :c:macro:`PyBUF_WRITE`."
+msgstr ""
+
+#: ../Doc/c-api/memoryview.rst:60
 msgid ""
 "Return true if the object *obj* is a memoryview object.  It is not currently "
 "allowed to create subclasses of :class:`memoryview`.  This function always "
 "succeeds."
 msgstr ""
 
-#: ../Doc/c-api/memoryview.rst:54
+#: ../Doc/c-api/memoryview.rst:67
 msgid ""
 "Return a pointer to the memoryview's private copy of the exporter's buffer. "
 "*mview* **must** be a memoryview instance; this macro doesn't check its "
 "type, you must do it yourself or you will risk crashes."
 msgstr ""
 
-#: ../Doc/c-api/memoryview.rst:60
+#: ../Doc/c-api/memoryview.rst:73
 msgid ""
 "Return either a pointer to the exporting object that the memoryview is based "
 "on or ``NULL`` if the memoryview has been created by one of the functions :c:"
 "func:`PyMemoryView_FromMemory` or :c:func:`PyMemoryView_FromBuffer`. *mview* "
 "**must** be a memoryview instance."
+msgstr ""
+
+#: ../Doc/c-api/memoryview.rst:5
+msgid "object"
+msgstr ""
+
+#: ../Doc/c-api/memoryview.rst:5
+msgid "memoryview"
 msgstr ""

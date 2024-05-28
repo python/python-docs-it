@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr ""
 #: ../Doc/library/asyncio-platforms.rst:38
 msgid ""
 ":meth:`loop.create_unix_connection` and :meth:`loop.create_unix_server` are "
-"not supported. The :data:`socket.AF_UNIX` socket family is specific to Unix."
+"not supported. The :const:`socket.AF_UNIX` socket family is specific to Unix."
 msgstr ""
 
 #: ../Doc/library/asyncio-platforms.rst:42

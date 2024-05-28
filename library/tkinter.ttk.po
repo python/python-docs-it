@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/tkinter.ttk.rst:2
-msgid ":mod:`tkinter.ttk` --- Tk themed widgets"
+msgid ":mod:`!tkinter.ttk` --- Tk themed widgets"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:9
@@ -81,7 +81,7 @@ msgid ""
 "styling effects."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:60
+#: ../Doc/library/tkinter.ttk.rst:59
 msgid ""
 "`Converting existing applications to use Tile widgets <https://tktable."
 "sourceforge.net/tile/doc/converting.txt>`_"
@@ -143,7 +143,7 @@ msgid "Standard Options"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:105
-msgid "All the :mod:`ttk` Widgets accepts the following options:"
+msgid "All the :mod:`ttk` Widgets accept the following options:"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:110 ../Doc/library/tkinter.ttk.rst:145
@@ -1504,19 +1504,20 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:987 ../Doc/library/tkinter.ttk.rst:1042
+#: ../Doc/library/tkinter.ttk.rst:1578
 msgid "The valid options/values are:"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:989
-msgid "id"
+msgid "*id*"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:990
 msgid "Returns the column name. This is a read-only option."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:992
-msgid "anchor: One of the standard Tk anchor values."
+#: ../Doc/library/tkinter.ttk.rst:991
+msgid "*anchor*: One of the standard Tk anchor values."
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:992
@@ -1525,8 +1526,8 @@ msgid ""
 "cell."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:996
-msgid "minwidth: width"
+#: ../Doc/library/tkinter.ttk.rst:994
+msgid "*minwidth*: width"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:995
@@ -1536,8 +1537,8 @@ msgid ""
 "resized or the user drags a column."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:999
-msgid "stretch: ``True``/``False``"
+#: ../Doc/library/tkinter.ttk.rst:998
+msgid "*stretch*: ``True``/``False``"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:999
@@ -1546,8 +1547,8 @@ msgid ""
 "resized."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1002
-msgid "width: width"
+#: ../Doc/library/tkinter.ttk.rst:1001
+msgid "*width*: width"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1002
@@ -1602,7 +1603,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1044
-msgid "text: text"
+msgid "*text*: text"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1045
@@ -1610,15 +1611,15 @@ msgid "The text to display in the column heading."
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1046
-msgid "image: imageName"
+msgid "*image*: imageName"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1047
 msgid "Specifies an image to display to the right of the column heading."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1049
-msgid "anchor: anchor"
+#: ../Doc/library/tkinter.ttk.rst:1048
+msgid "*anchor*: anchor"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1049
@@ -1627,8 +1628,8 @@ msgid ""
 "anchor values."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1052
-msgid "command: callback"
+#: ../Doc/library/tkinter.ttk.rst:1051
+msgid "*command*: callback"
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1052
@@ -1733,7 +1734,7 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1121
-msgid "See `Item Options`_ for the list of available points."
+msgid "See `Item Options`_ for the list of available options."
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1126
@@ -1976,7 +1977,7 @@ msgstr ""
 msgid ""
 "Create a new element in the current theme, of the given *etype* which is "
 "expected to be either \"image\", \"from\" or \"vsapi\". The latter is only "
-"available in Tk 8.6a for Windows XP and Vista and is not described here."
+"available in Tk 8.6 on Windows."
 msgstr ""
 
 #: ../Doc/library/tkinter.ttk.rst:1397
@@ -1986,7 +1987,7 @@ msgid ""
 "following options:"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1403
+#: ../Doc/library/tkinter.ttk.rst:1401
 msgid "border=padding"
 msgstr ""
 
@@ -1996,7 +1997,7 @@ msgid ""
 "and bottom borders, respectively."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1407
+#: ../Doc/library/tkinter.ttk.rst:1405 ../Doc/library/tkinter.ttk.rst:1479
 msgid "height=height"
 msgstr ""
 
@@ -2006,7 +2007,7 @@ msgid ""
 "image's height is used as a default."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1411
+#: ../Doc/library/tkinter.ttk.rst:1409 ../Doc/library/tkinter.ttk.rst:1453
 msgid "padding=padding"
 msgstr ""
 
@@ -2016,7 +2017,7 @@ msgid ""
 "specified."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1415
+#: ../Doc/library/tkinter.ttk.rst:1413
 msgid "sticky=spec"
 msgstr ""
 
@@ -2026,7 +2027,7 @@ msgid ""
 "zero or more characters \"n\", \"s\", \"w\", or \"e\"."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1419
+#: ../Doc/library/tkinter.ttk.rst:1417 ../Doc/library/tkinter.ttk.rst:1471
 msgid "width=width"
 msgstr ""
 
@@ -2036,7 +2037,12 @@ msgid ""
 "image's width is used as a default."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1421
+#: ../Doc/library/tkinter.ttk.rst:1421 ../Doc/library/tkinter.ttk.rst:1438
+#: ../Doc/library/tkinter.ttk.rst:1483
+msgid "Example::"
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1431
 msgid ""
 "If \"from\" is used as the value of *etype*, :meth:`element_create` will "
 "clone an existing element. *args* is expected to contain a themename, from "
@@ -2045,19 +2051,69 @@ msgid ""
 "used. *kw* is discarded."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1431
+#: ../Doc/library/tkinter.ttk.rst:1443
+msgid ""
+"If \"vsapi\" is used as the value of *etype*, :meth:`element_create` will "
+"create a new element in the current theme whose visual appearance is drawn "
+"using the Microsoft Visual Styles API which is responsible for the themed "
+"styles on Windows XP and Vista. *args* is expected to contain the Visual "
+"Styles class and part as given in the Microsoft documentation followed by an "
+"optional sequence of tuples of ttk states and the corresponding Visual "
+"Styles API state value. *kw* may have the following options:"
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1454
+msgid ""
+"Specify the element's interior padding. *padding* is a list of up to four "
+"integers specifying the left, top, right and bottom padding quantities "
+"respectively. If fewer than four elements are specified, bottom defaults to "
+"top, right defaults to left, and top defaults to left. In other words, a "
+"list of three numbers specify the left, vertical, and right padding; a list "
+"of two numbers specify the horizontal and the vertical padding; a single "
+"number specifies the same padding all the way around the widget. This option "
+"may not be mixed with any other options."
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1465
+msgid "margins=padding"
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1466
+msgid ""
+"Specifies the elements exterior padding. *padding* is a list of up to four "
+"integers specifying the left, top, right and bottom padding quantities "
+"respectively. This option may not be mixed with any other options."
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1472
+msgid ""
+"Specifies the width for the element. If this option is set then the Visual "
+"Styles API will not be queried for the recommended size or the part. If this "
+"option is set then *height* should also be set. The *width* and *height* "
+"options cannot be mixed with the *padding* or *margins* options."
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1480
+msgid "Specifies the height of the element. See the comments for *width*."
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1498
+msgid "Added support of the \"vsapi\" element factory."
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:1503
 msgid "Returns the list of elements defined in the current theme."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1436
+#: ../Doc/library/tkinter.ttk.rst:1508
 msgid "Returns the list of *elementname*'s options."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1441
+#: ../Doc/library/tkinter.ttk.rst:1513
 msgid "Create a new theme."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1443
+#: ../Doc/library/tkinter.ttk.rst:1515
 msgid ""
 "It is an error if *themename* already exists. If *parent* is specified, the "
 "new theme will inherit styles, elements and layouts from the parent theme. "
@@ -2065,13 +2121,13 @@ msgid ""
 "for :meth:`theme_settings`."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1451
+#: ../Doc/library/tkinter.ttk.rst:1523
 msgid ""
 "Temporarily sets the current theme to *themename*, apply specified "
 "*settings* and then restore the previous theme."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1454
+#: ../Doc/library/tkinter.ttk.rst:1526
 msgid ""
 "Each key in *settings* is a style and each value may contain the keys "
 "'configure', 'map', 'layout' and 'element create' and they are expected to "
@@ -2080,69 +2136,73 @@ msgid ""
 "respectively."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1460
+#: ../Doc/library/tkinter.ttk.rst:1532
 msgid "As an example, let's change the Combobox for the default theme a bit::"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1488
+#: ../Doc/library/tkinter.ttk.rst:1560
 msgid "Returns a list of all known themes."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1493
+#: ../Doc/library/tkinter.ttk.rst:1565
 msgid ""
 "If *themename* is not given, returns the theme in use.  Otherwise, sets the "
 "current theme to *themename*, refreshes all widgets and emits a "
 "<<ThemeChanged>> event."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1499
+#: ../Doc/library/tkinter.ttk.rst:1571
 msgid "Layouts"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1501
+#: ../Doc/library/tkinter.ttk.rst:1573
 msgid ""
 "A layout can be just ``None``, if it takes no options, or a dict of options "
 "specifying how to arrange the element. The layout mechanism uses a "
 "simplified version of the pack geometry manager: given an initial cavity, "
-"each element is allocated a parcel. Valid options/values are:"
+"each element is allocated a parcel."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1510
-msgid "side: whichside"
+#: ../Doc/library/tkinter.ttk.rst:1580
+msgid "*side*: whichside"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1508
+#: ../Doc/library/tkinter.ttk.rst:1581
 msgid ""
 "Specifies which side of the cavity to place the element; one of top, right, "
 "bottom or left. If omitted, the element occupies the entire cavity."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1513
-msgid "sticky: nswe"
+#: ../Doc/library/tkinter.ttk.rst:1585
+msgid "*sticky*: nswe"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1513
+#: ../Doc/library/tkinter.ttk.rst:1586
 msgid "Specifies where the element is placed inside its allocated parcel."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1518
-msgid "unit: 0 or 1"
+#: ../Doc/library/tkinter.ttk.rst:1588
+msgid "*unit*: 0 or 1"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1516
+#: ../Doc/library/tkinter.ttk.rst:1589
 msgid ""
 "If set to 1, causes the element and all of its descendants to be treated as "
 "a single element for the purposes of :meth:`Widget.identify` et al. It's "
 "used for things like scrollbar thumbs with grips."
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1523
-msgid "children: [sublayout... ]"
+#: ../Doc/library/tkinter.ttk.rst:1593
+msgid "*children*: [sublayout... ]"
 msgstr ""
 
-#: ../Doc/library/tkinter.ttk.rst:1521
+#: ../Doc/library/tkinter.ttk.rst:1594
 msgid ""
 "Specifies a list of elements to place inside the element. Each element is a "
 "tuple (or other sequence type) where the first item is the layout name, and "
 "the other is a `Layout`_."
+msgstr ""
+
+#: ../Doc/library/tkinter.ttk.rst:11
+msgid "ttk"
 msgstr ""

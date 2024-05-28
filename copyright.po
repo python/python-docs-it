@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: 2023-01-06 12:13+0100\n"
 "Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
 "Language-Team: \n"
@@ -27,7 +27,8 @@ msgid "Python and this documentation is:"
 msgstr "Python e questa documentazione sono protetti da:"
 
 #: ../Doc/copyright.rst:7
-msgid "Copyright © 2001-2022 Python Software Foundation. All rights reserved."
+#, fuzzy
+msgid "Copyright © 2001-2024 Python Software Foundation. All rights reserved."
 msgstr ""
 "Copyright © 2001-2022 Python Software Foundation. Tutti i diritti riservati."
 

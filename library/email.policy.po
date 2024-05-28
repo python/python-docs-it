@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/email.policy.rst:2
-msgid ":mod:`email.policy`: Policy Objects"
+msgid ":mod:`!email.policy`: Policy Objects"
 msgstr ""
 
 #: ../Doc/library/email.policy.rst:12
@@ -121,7 +121,7 @@ msgid ""
 "system:"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:113
+#: ../Doc/library/email.policy.rst:114
 msgid ""
 "Here we are telling :class:`~email.generator.BytesGenerator` to use the RFC "
 "correct line separator characters when creating the binary string to feed "
@@ -129,7 +129,7 @@ msgid ""
 "line separators."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:118
+#: ../Doc/library/email.policy.rst:119
 msgid ""
 "Some email package methods accept a *policy* keyword argument, allowing the "
 "policy to be overridden for that method.  For example, the following code "
@@ -138,20 +138,20 @@ msgid ""
 "line separators for the platform on which it is running::"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:129
+#: ../Doc/library/email.policy.rst:130
 msgid ""
 "Policy objects can also be combined using the addition operator, producing a "
 "policy object whose settings are a combination of the non-default values of "
 "the summed objects::"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:137
+#: ../Doc/library/email.policy.rst:138
 msgid ""
 "This operation is not commutative; that is, the order in which the objects "
 "are added matters.  To illustrate::"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:152
+#: ../Doc/library/email.policy.rst:153
 msgid ""
 "This is the :term:`abstract base class` for all policy classes.  It provides "
 "default implementations for a couple of trivial methods, as well as the "
@@ -159,7 +159,7 @@ msgid ""
 "the constructor semantics."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:157
+#: ../Doc/library/email.policy.rst:158
 msgid ""
 "The constructor of a policy class can be passed various keyword arguments. "
 "The arguments that may be specified are any non-method properties on this "
@@ -168,48 +168,48 @@ msgid ""
 "corresponding attribute."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:163
+#: ../Doc/library/email.policy.rst:164
 msgid ""
 "This class defines the following properties, and thus values for the "
 "following may be passed in the constructor of any policy class:"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:169
+#: ../Doc/library/email.policy.rst:170
 msgid ""
 "The maximum length of any line in the serialized output, not counting the "
 "end of line character(s).  Default is 78, per :rfc:`5322`.  A value of ``0`` "
 "or :const:`None` indicates that no line wrapping should be done at all."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:177
+#: ../Doc/library/email.policy.rst:178
 msgid ""
 "The string to be used to terminate lines in serialized output.  The default "
 "is ``\\n`` because that's the internal end-of-line discipline used by "
 "Python, though ``\\r\\n`` is required by the RFCs."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:184
+#: ../Doc/library/email.policy.rst:185
 msgid ""
 "Controls the type of Content Transfer Encodings that may be or are required "
 "to be used.  The possible values are:"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:190
+#: ../Doc/library/email.policy.rst:191
 msgid "``7bit``"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:190
+#: ../Doc/library/email.policy.rst:191
 msgid ""
 "all data must be \"7 bit clean\" (ASCII-only).  This means that where "
 "necessary data will be encoded using either quoted-printable or base64 "
 "encoding."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:194
+#: ../Doc/library/email.policy.rst:195
 msgid "``8bit``"
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:194
+#: ../Doc/library/email.policy.rst:195
 msgid ""
 "data is not constrained to be 7 bit clean.  Data in headers is still "
 "required to be ASCII-only and so will be encoded (see :meth:`fold_binary` "
@@ -217,7 +217,7 @@ msgid ""
 "the ``8bit`` CTE."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:200
+#: ../Doc/library/email.policy.rst:201
 msgid ""
 "A ``cte_type`` value of ``8bit`` only works with ``BytesGenerator``, not "
 "``Generator``, because strings cannot contain binary data.  If a "
@@ -225,22 +225,18 @@ msgid ""
 "it will act as if ``cte_type`` is ``7bit``."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:208
+#: ../Doc/library/email.policy.rst:209
 msgid ""
 "If :const:`True`, any defects encountered will be raised as errors.  If :"
 "const:`False` (the default), defects will be passed to the :meth:"
 "`register_defect` method."
 msgstr ""
 
-#: ../Doc/library/email.policy.rst:215
+#: ../Doc/library/email.policy.rst:216
 msgid ""
 "If :const:`True`, lines starting with *\"From \"* in the body are escaped by "
 "putting a ``>`` in front of them. This parameter is used when the message is "
 "being serialized by a generator. Default: :const:`False`."
-msgstr ""
-
-#: ../Doc/library/email.policy.rst:220
-msgid "The *mangle_from_* parameter."
 msgstr ""
 
 #: ../Doc/library/email.policy.rst:226

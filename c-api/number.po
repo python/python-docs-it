@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,4 +298,30 @@ msgid ""
 "Returns ``1`` if *o* is an index integer (has the ``nb_index`` slot of the "
 "``tp_as_number`` structure filled in), and ``0`` otherwise. This function "
 "always succeeds."
+msgstr ""
+
+#: ../Doc/c-api/number.rst:67 ../Doc/c-api/number.rst:75
+#: ../Doc/c-api/number.rst:97 ../Doc/c-api/number.rst:195
+#: ../Doc/c-api/number.rst:241 ../Doc/c-api/number.rst:249
+msgid "built-in function"
+msgstr ""
+
+#: ../Doc/c-api/number.rst:67
+msgid "divmod"
+msgstr ""
+
+#: ../Doc/c-api/number.rst:75 ../Doc/c-api/number.rst:195
+msgid "pow"
+msgstr ""
+
+#: ../Doc/c-api/number.rst:97
+msgid "abs"
+msgstr ""
+
+#: ../Doc/c-api/number.rst:241
+msgid "int"
+msgstr ""
+
+#: ../Doc/c-api/number.rst:249
+msgid "float"
 msgstr ""

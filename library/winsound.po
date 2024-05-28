@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/winsound.rst:2
-msgid ":mod:`winsound` --- Sound-playing interface for Windows"
+msgid ":mod:`!winsound` --- Sound-playing interface for Windows"
 msgstr ""
 
 #: ../Doc/library/winsound.rst:13
@@ -39,9 +39,9 @@ msgstr ""
 
 #: ../Doc/library/winsound.rst:27
 msgid ""
-"Call the underlying :c:func:`PlaySound` function from the Platform API.  The "
-"*sound* parameter may be a filename, a system sound alias, audio data as a :"
-"term:`bytes-like object`, or ``None``.  Its interpretation depends on the "
+"Call the underlying :c:func:`!PlaySound` function from the Platform API.  "
+"The *sound* parameter may be a filename, a system sound alias, audio data as "
+"a :term:`bytes-like object`, or ``None``.  Its interpretation depends on the "
 "value of *flags*, which can be a bitwise ORed combination of the constants "
 "described below. If the *sound* parameter is ``None``, any currently playing "
 "waveform sound is stopped. If the system indicates an error, :exc:"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../Doc/library/winsound.rst:38
 msgid ""
-"Call the underlying :c:func:`MessageBeep` function from the Platform API.  "
+"Call the underlying :c:func:`!MessageBeep` function from the Platform API.  "
 "This plays a sound as specified in the registry.  The *type* argument "
 "specifies which sound to play; possible values are ``-1``, "
 "``MB_ICONASTERISK``, ``MB_ICONEXCLAMATION``, ``MB_ICONHAND``, "

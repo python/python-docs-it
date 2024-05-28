@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Larry Hastings"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:None
+#: ../Doc/howto/annotations.rst:-1
 msgid "Abstract"
 msgstr ""
 
@@ -91,18 +91,26 @@ msgid ""
 "three arguments, for example ``getattr(o, '__annotations__', None)``."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:62
+#: ../Doc/howto/annotations.rst:60
+msgid ""
+"Before Python 3.10, accessing ``__annotations__`` on a class that defines no "
+"annotations but that has a parent class with annotations would return the "
+"parent's ``__annotations__``. In Python 3.10 and newer, the child class's "
+"annotations will be an empty dict instead."
+msgstr ""
+
+#: ../Doc/howto/annotations.rst:68
 msgid "Accessing The Annotations Dict Of An Object In Python 3.9 And Older"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:64
+#: ../Doc/howto/annotations.rst:70
 msgid ""
 "In Python 3.9 and older, accessing the annotations dict of an object is much "
 "more complicated than in newer versions. The problem is a design flaw in "
 "these older versions of Python, specifically to do with class annotations."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:69
+#: ../Doc/howto/annotations.rst:75
 msgid ""
 "Best practice for accessing the annotations dict of other objects--"
 "functions, other callables, and modules--is the same as best practice for "
@@ -111,7 +119,7 @@ msgid ""
 "``__annotations__`` attribute."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:76
+#: ../Doc/howto/annotations.rst:82
 msgid ""
 "Unfortunately, this isn't best practice for classes.  The problem is that, "
 "since ``__annotations__`` is optional on classes, and because classes can "
@@ -120,11 +128,11 @@ msgid ""
 "annotations dict of a *base class.* As an example::"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:92
+#: ../Doc/howto/annotations.rst:98
 msgid "This will print the annotations dict from ``Base``, not ``Derived``."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:95
+#: ../Doc/howto/annotations.rst:101
 msgid ""
 "Your code will have to have a separate code path if the object you're "
 "examining is a class (``isinstance(o, type)``). In that case, best practice "
@@ -134,32 +142,32 @@ msgid ""
 "practice is to call the ``get`` method on the class dict."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:103
+#: ../Doc/howto/annotations.rst:109
 msgid ""
 "To put it all together, here is some sample code that safely accesses the "
 "``__annotations__`` attribute on an arbitrary object in Python 3.9 and "
 "before::"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:112
+#: ../Doc/howto/annotations.rst:118
 msgid ""
 "After running this code, ``ann`` should be either a dictionary or ``None``.  "
 "You're encouraged to double-check the type of ``ann`` using :func:"
 "`isinstance` before further examination."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:117
+#: ../Doc/howto/annotations.rst:123
 msgid ""
 "Note that some exotic or malformed type objects may not have a ``__dict__`` "
 "attribute, so for extra safety you may also wish to use :func:`getattr` to "
 "access ``__dict__``."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:123
+#: ../Doc/howto/annotations.rst:129
 msgid "Manually Un-Stringizing Stringized Annotations"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:125
+#: ../Doc/howto/annotations.rst:131
 msgid ""
 "In situations where some annotations may be \"stringized\", and you wish to "
 "evaluate those strings to produce the Python values they represent, it "
@@ -167,7 +175,7 @@ msgid ""
 "you."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:131
+#: ../Doc/howto/annotations.rst:137
 msgid ""
 "If you're using Python 3.9 or older, or if for some reason you can't use :"
 "func:`inspect.get_annotations`, you'll need to duplicate its logic.  You're "
@@ -175,26 +183,26 @@ msgid ""
 "in the current Python version and follow a similar approach."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:137
+#: ../Doc/howto/annotations.rst:143
 msgid ""
 "In a nutshell, if you wish to evaluate a stringized annotation on an "
 "arbitrary object ``o``:"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:140
+#: ../Doc/howto/annotations.rst:146
 msgid ""
 "If ``o`` is a module, use ``o.__dict__`` as the ``globals`` when calling :"
 "func:`eval`."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:142
+#: ../Doc/howto/annotations.rst:148
 msgid ""
 "If ``o`` is a class, use ``sys.modules[o.__module__].__dict__`` as the "
 "``globals``, and ``dict(vars(o))`` as the ``locals``, when calling :func:"
 "`eval`."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:145
+#: ../Doc/howto/annotations.rst:151
 msgid ""
 "If ``o`` is a wrapped callable using :func:`functools.update_wrapper`, :func:"
 "`functools.wraps`, or :func:`functools.partial`, iteratively unwrap it by "
@@ -202,13 +210,13 @@ msgid ""
 "have found the root unwrapped function."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:149
+#: ../Doc/howto/annotations.rst:155
 msgid ""
-"If ``o`` is a callable (but not a class), use ``o.__globals__`` as the "
-"globals when calling :func:`eval`."
+"If ``o`` is a callable (but not a class), use :attr:`o.__globals__ <function."
+"__globals__>` as the globals when calling :func:`eval`."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:152
+#: ../Doc/howto/annotations.rst:159
 msgid ""
 "However, not all string values used as annotations can be successfully "
 "turned into Python values by :func:`eval`. String values could theoretically "
@@ -217,19 +225,19 @@ msgid ""
 "be evaluated.  For example:"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:159
+#: ../Doc/howto/annotations.rst:166
 msgid ""
 ":pep:`604` union types using ``|``, before support for this was added to "
 "Python 3.10."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:161
+#: ../Doc/howto/annotations.rst:168
 msgid ""
 "Definitions that aren't needed at runtime, only imported when :const:`typing."
 "TYPE_CHECKING` is true."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:164
+#: ../Doc/howto/annotations.rst:171
 msgid ""
 "If :func:`eval` attempts to evaluate such values, it will fail and raise an "
 "exception.  So, when designing a library API that works with annotations, "
@@ -237,43 +245,43 @@ msgid ""
 "requested to by the caller."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:172
+#: ../Doc/howto/annotations.rst:179
 msgid "Best Practices For ``__annotations__`` In Any Python Version"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:174
+#: ../Doc/howto/annotations.rst:181
 msgid ""
 "You should avoid assigning to the ``__annotations__`` member of objects "
 "directly.  Let Python manage setting ``__annotations__``."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:177
+#: ../Doc/howto/annotations.rst:184
 msgid ""
 "If you do assign directly to the ``__annotations__`` member of an object, "
 "you should always set it to a ``dict`` object."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:180
+#: ../Doc/howto/annotations.rst:187
 msgid ""
 "If you directly access the ``__annotations__`` member of an object, you "
 "should ensure that it's a dictionary before attempting to examine its "
 "contents."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:184
+#: ../Doc/howto/annotations.rst:191
 msgid "You should avoid modifying ``__annotations__`` dicts."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:186
+#: ../Doc/howto/annotations.rst:193
 msgid ""
 "You should avoid deleting the ``__annotations__`` attribute of an object."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:191
+#: ../Doc/howto/annotations.rst:198
 msgid "``__annotations__`` Quirks"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:193
+#: ../Doc/howto/annotations.rst:200
 msgid ""
 "In all versions of Python 3, function objects lazy-create an annotations "
 "dict if no annotations are defined on that object.  You can delete the "
@@ -285,13 +293,13 @@ msgid ""
 "guaranteed to always throw an ``AttributeError``."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:203
+#: ../Doc/howto/annotations.rst:210
 msgid ""
 "Everything in the above paragraph also applies to class and module objects "
 "in Python 3.10 and newer."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:206
+#: ../Doc/howto/annotations.rst:213
 msgid ""
 "In all versions of Python 3, you can set ``__annotations__`` on a function "
 "object to ``None``.  However, subsequently accessing the annotations on that "
@@ -302,7 +310,7 @@ msgid ""
 "set."
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:214
+#: ../Doc/howto/annotations.rst:221
 msgid ""
 "If Python stringizes your annotations for you (using ``from __future__ "
 "import annotations``), and you specify a string as an annotation, the string "
@@ -310,7 +318,7 @@ msgid ""
 "example::"
 msgstr ""
 
-#: ../Doc/howto/annotations.rst:225
+#: ../Doc/howto/annotations.rst:232
 msgid ""
 "This prints ``{'a': \"'str'\"}``.  This shouldn't really be considered a "
 "\"quirk\"; it's mentioned here simply because it might be surprising."

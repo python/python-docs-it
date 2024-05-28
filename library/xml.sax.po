@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/xml.sax.rst:2
-msgid ":mod:`xml.sax` --- Support for SAX2 parsers"
+msgid ":mod:`!xml.sax` --- Support for SAX2 parsers"
 msgstr ""
 
 #: ../Doc/library/xml.sax.rst:11
@@ -172,7 +172,7 @@ msgid ""
 "applications and extensions may use this class for similar purposes."
 msgstr ""
 
-#: ../Doc/library/xml.sax.rst:148
+#: ../Doc/library/xml.sax.rst:145
 msgid "`SAX: The Simple API for XML <http://www.saxproject.org/>`_"
 msgstr ""
 
@@ -183,7 +183,7 @@ msgid ""
 "and historical information are also available."
 msgstr ""
 
-#: ../Doc/library/xml.sax.rst:151
+#: ../Doc/library/xml.sax.rst:150
 msgid "Module :mod:`xml.sax.handler`"
 msgstr ""
 
@@ -191,7 +191,7 @@ msgstr ""
 msgid "Definitions of the interfaces for application-provided objects."
 msgstr ""
 
-#: ../Doc/library/xml.sax.rst:154
+#: ../Doc/library/xml.sax.rst:153
 msgid "Module :mod:`xml.sax.saxutils`"
 msgstr ""
 

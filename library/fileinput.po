@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/fileinput.rst:2
-msgid ":mod:`fileinput` --- Iterate over lines from multiple input streams"
+msgid ":mod:`!fileinput` --- Iterate over lines from multiple input streams"
 msgstr ""
 
 #: ../Doc/library/fileinput.rst:10
@@ -230,7 +230,7 @@ msgstr ""
 
 #: ../Doc/library/fileinput.rst:179
 msgid ""
-"The ``'rU'`` and ``'U'`` modes and the :meth:`__getitem__` method have been "
+"The ``'rU'`` and ``'U'`` modes and the :meth:`!__getitem__` method have been "
 "removed."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/http.cookiejar.rst:2
-msgid ":mod:`http.cookiejar` --- Cookie handling for HTTP clients"
+msgid ":mod:`!http.cookiejar` --- Cookie handling for HTTP clients"
 msgstr ""
 
 #: ../Doc/library/http.cookiejar.rst:10
@@ -68,7 +68,8 @@ msgstr ""
 
 #: ../Doc/library/http.cookiejar.rst:46
 msgid ""
-"LoadError was made a subclass of :exc:`OSError` instead of :exc:`IOError`."
+":exc:`LoadError` used to be a subtype of :exc:`IOError`, which is now an "
+"alias of :exc:`OSError`."
 msgstr ""
 
 #: ../Doc/library/http.cookiejar.rst:51
@@ -150,7 +151,7 @@ msgid ""
 "class:`CookieJar` instance."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:120
+#: ../Doc/library/http.cookiejar.rst:119
 msgid "Module :mod:`urllib.request`"
 msgstr ""
 
@@ -158,7 +159,7 @@ msgstr ""
 msgid "URL opening with automatic cookie handling."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:125
+#: ../Doc/library/http.cookiejar.rst:122
 msgid "Module :mod:`http.cookies`"
 msgstr ""
 
@@ -168,7 +169,7 @@ msgid ""
 "`http.cookiejar` and :mod:`http.cookies` modules do not depend on each other."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:131
+#: ../Doc/library/http.cookiejar.rst:127
 msgid "https://curl.se/rfc/cookie_spec.html"
 msgstr ""
 
@@ -180,7 +181,7 @@ msgid ""
 "resemblance to the one sketched out in ``cookie_spec.html``."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:134
+#: ../Doc/library/http.cookiejar.rst:133
 msgid ":rfc:`2109` - HTTP State Management Mechanism"
 msgstr ""
 
@@ -188,7 +189,7 @@ msgstr ""
 msgid "Obsoleted by :rfc:`2965`. Uses :mailheader:`Set-Cookie` with version=1."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:138
+#: ../Doc/library/http.cookiejar.rst:136
 msgid ":rfc:`2965` - HTTP State Management Mechanism"
 msgstr ""
 
@@ -198,7 +199,7 @@ msgid ""
 "in place of :mailheader:`Set-Cookie`.  Not widely used."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:141
+#: ../Doc/library/http.cookiejar.rst:140
 msgid "http://kristol.org/cookie/errata.html"
 msgstr ""
 
@@ -822,36 +823,40 @@ msgid ""
 msgstr ""
 
 #: ../Doc/library/http.cookiejar.rst:654
-msgid "Cookie path (a string, eg. ``'/acme/rocket_launchers'``)."
+msgid "Cookie domain (a string)."
 msgstr ""
 
 #: ../Doc/library/http.cookiejar.rst:659
-msgid "``True`` if cookie should only be returned over a secure connection."
+msgid "Cookie path (a string, eg. ``'/acme/rocket_launchers'``)."
 msgstr ""
 
 #: ../Doc/library/http.cookiejar.rst:664
+msgid "``True`` if cookie should only be returned over a secure connection."
+msgstr ""
+
+#: ../Doc/library/http.cookiejar.rst:669
 msgid ""
 "Integer expiry date in seconds since epoch, or :const:`None`.  See also the :"
 "meth:`is_expired` method."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:670
+#: ../Doc/library/http.cookiejar.rst:675
 msgid "``True`` if this is a session cookie."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:675
+#: ../Doc/library/http.cookiejar.rst:680
 msgid ""
 "String comment from the server explaining the function of this cookie, or :"
 "const:`None`."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:681
+#: ../Doc/library/http.cookiejar.rst:686
 msgid ""
 "URL linking to a comment from the server explaining the function of this "
 "cookie, or :const:`None`."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:687
+#: ../Doc/library/http.cookiejar.rst:692
 msgid ""
 "``True`` if this cookie was received as an :rfc:`2109` cookie (ie. the "
 "cookie arrived in a :mailheader:`Set-Cookie` header, and the value of the "
@@ -860,70 +865,70 @@ msgid ""
 "cookies, in which case :attr:`version` is 0."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:696
+#: ../Doc/library/http.cookiejar.rst:701
 msgid ""
 "``True`` if a port or set of ports was explicitly specified by the server "
 "(in the :mailheader:`Set-Cookie` / :mailheader:`Set-Cookie2` header)."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:702
+#: ../Doc/library/http.cookiejar.rst:707
 msgid "``True`` if a domain was explicitly specified by the server."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:707
+#: ../Doc/library/http.cookiejar.rst:712
 msgid ""
 "``True`` if the domain explicitly specified by the server began with a dot "
 "(``'.'``)."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:710
+#: ../Doc/library/http.cookiejar.rst:715
 msgid ""
 "Cookies may have additional non-standard cookie-attributes.  These may be "
 "accessed using the following methods:"
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:716
+#: ../Doc/library/http.cookiejar.rst:721
 msgid "Return ``True`` if cookie has the named cookie-attribute."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:721
+#: ../Doc/library/http.cookiejar.rst:726
 msgid ""
 "If cookie has the named cookie-attribute, return its value. Otherwise, "
 "return *default*."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:727
+#: ../Doc/library/http.cookiejar.rst:732
 msgid "Set the value of the named cookie-attribute."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:729
+#: ../Doc/library/http.cookiejar.rst:734
 msgid "The :class:`Cookie` class also defines the following method:"
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:734
+#: ../Doc/library/http.cookiejar.rst:739
 msgid ""
 "``True`` if cookie has passed the time at which the server requested it "
 "should expire.  If *now* is given (in seconds since the epoch), return "
 "whether the cookie has expired at the specified time."
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:740
+#: ../Doc/library/http.cookiejar.rst:745
 msgid "Examples"
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:742
+#: ../Doc/library/http.cookiejar.rst:747
 msgid ""
 "The first example shows the most common usage of :mod:`http.cookiejar`::"
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:749
+#: ../Doc/library/http.cookiejar.rst:754
 msgid ""
 "This example illustrates how to open a URL using your Netscape, Mozilla, or "
 "Lynx cookies (assumes Unix/Netscape convention for location of the cookies "
 "file)::"
 msgstr ""
 
-#: ../Doc/library/http.cookiejar.rst:758
+#: ../Doc/library/http.cookiejar.rst:763
 msgid ""
 "The next example illustrates the use of :class:`DefaultCookiePolicy`. Turn "
 "on :rfc:`2965` cookies, be more strict about domains when setting and "

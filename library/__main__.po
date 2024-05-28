@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 00:29+0100\n"
+"POT-Creation-Date: 2024-05-28 23:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Doc/library/__main__.rst:2
-msgid ":mod:`__main__` --- Top-level code environment"
+msgid ":mod:`!__main__` --- Top-level code environment"
 msgstr ""
 
 #: ../Doc/library/__main__.rst:10
@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../Doc/library/__main__.rst:127
 msgid ""
-"Putting as few statements as possible in the block below ``if __name___ == "
+"Putting as few statements as possible in the block below ``if __name__ == "
 "'__main__'`` can improve code clarity and correctness. Most often, a "
 "function named ``main`` encapsulates the program's primary behavior::"
 msgstr ""
@@ -195,8 +195,8 @@ msgstr ""
 #: ../Doc/library/__main__.rst:180
 msgid ""
 "By proactively following this convention ourselves, our module will have the "
-"same behavior when run directly (i.e. ``python3 echo.py``) as it will have "
-"if we later package it as a console script entry-point in a pip-installable "
+"same behavior when run directly (i.e. ``python echo.py``) as it will have if "
+"we later package it as a console script entry-point in a pip-installable "
 "package."
 msgstr ""
 
@@ -253,10 +253,10 @@ msgstr ""
 
 #: ../Doc/library/__main__.rst:241
 msgid ""
-"The contents of ``__main__.py`` typically isn't fenced with ``if __name__ == "
-"'__main__'`` blocks.  Instead, those files are kept short, functions to "
-"execute from other modules.  Those other modules can then be easily unit-"
-"tested and are properly reusable."
+"The content of ``__main__.py`` typically isn't fenced with an ``if __name__ "
+"== '__main__'`` block.  Instead, those files are kept short and import "
+"functions to execute from other modules.  Those other modules can then be "
+"easily unit-tested and are properly reusable."
 msgstr ""
 
 #: ../Doc/library/__main__.rst:246
@@ -277,7 +277,7 @@ msgstr ""
 msgid ""
 "See :mod:`venv` for an example of a package with a minimal ``__main__.py`` "
 "in the standard library. It doesn't contain a ``if __name__ == '__main__'`` "
-"block. You can invoke it with ``python3 -m venv [directory]``."
+"block. You can invoke it with ``python -m venv [directory]``."
 msgstr ""
 
 #: ../Doc/library/__main__.rst:264
@@ -335,12 +335,12 @@ msgstr ""
 
 #: ../Doc/library/__main__.rst:339
 msgid ""
-"Python inserts an empty ``__main__`` module in :attr:`sys.modules` at "
+"Python inserts an empty ``__main__`` module in :data:`sys.modules` at "
 "interpreter startup, and populates it by running top-level code. In our "
 "example this is the ``start`` module which runs line by line and imports "
 "``namely``. In turn, ``namely`` imports ``__main__`` (which is really "
 "``start``). That's an import cycle! Fortunately, since the partially "
-"populated ``__main__`` module is present in :attr:`sys.modules`, Python "
+"populated ``__main__`` module is present in :data:`sys.modules`, Python "
 "passes that to ``namely``. See :ref:`Special considerations for __main__ "
 "<import-dunder-main>` in the import system's reference for details on how "
 "this works."
