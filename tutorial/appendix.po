@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../Doc/tutorial/appendix.rst:5
 msgid "Appendix"
-msgstr ""
+msgstr "Appendice"
 
 #: ../Doc/tutorial/appendix.rst:11
 msgid "Interactive Mode"
-msgstr ""
+msgstr "Modalità Interattiva"
 
 #: ../Doc/tutorial/appendix.rst:13
 msgid ""
@@ -31,6 +31,8 @@ msgid ""
 "interpreter is supported on all platforms with minimal line control "
 "capabilities."
 msgstr ""
+"Ci sono due varianti del :term:`REPL` interattivo. L'interprete di base classico "
+"è supportato su tutte le piattaforme con capacità minime di controllo di riga."
 
 #: ../Doc/tutorial/appendix.rst:17
 msgid ""
@@ -44,22 +46,35 @@ msgid ""
 "`F3` enters \"paste mode\", which makes pasting larger blocks of code "
 "easier. Press :kbd:`F3` to return to the regular prompt."
 msgstr ""
+"Nei sistemi Unix-like (ad esempio Linux o macOS) con supporto a :mod:`curses` e :mod:"
+"`readline`, di default viene utilizzata una nuova shell interattiva. Questa supporta "
+"il colore, la modifica multilinea, la navigazione nella cronologia e la modalità incolla. "
+"Per disabilitare il colore, vedere :ref:`using-on-controlling-color` per i dettagli. "
+"I tasti funzione forniscono alcune funzionalità aggiuntive. :kbd:`F1` apre il browser di "
+"aiuto interattivo :mod:`pydoc`. :kbd:`F2` consente di navigare nella cronologia della "
+"riga di comando senza output né i prompt :term:`>>>` e :term:`...`. :kbd:`F3` attiva la "
+"\"modalità incolla\", che permette di incollare blocchi di codice più grandi in modo semplice. Premere "
+":kbd:`F3` per tornare al prompt normale."
 
 #: ../Doc/tutorial/appendix.rst:28
 msgid ""
 "When using the new interactive shell, exit the shell by typing :kbd:`exit` "
 "or :kbd:`quit`. Adding call parentheses after those commands is not required."
 msgstr ""
+"Quando si utilizza la nuova shell interattiva, si può uscire dalla shell digitando :kbd:`exit` "
+"o :kbd:`quit`. Non è necessario aggiungere le parentesi di chiamata dopo questi comandi."
 
 #: ../Doc/tutorial/appendix.rst:32
 msgid ""
 "If the new interactive shell is not desired, it can be disabled via the :"
 "envvar:`PYTHON_BASIC_REPL` environment variable."
 msgstr ""
+"Se non si vuole usare la nuova shell interattiva, questa può essere disabilitata tramite la variabile "
+"di ambiente :envvar:`PYTHON_BASIC_REPL`."
 
 #: ../Doc/tutorial/appendix.rst:38
 msgid "Error Handling"
-msgstr ""
+msgstr "Gestione degli Errori"
 
 #: ../Doc/tutorial/appendix.rst:40
 msgid ""
