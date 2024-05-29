@@ -17,21 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/html.entities.rst:2
+#: library/html.entities.rst:2
 msgid ":mod:`!html.entities` --- Definitions of HTML general entities"
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:9
+#: library/html.entities.rst:9
 msgid "**Source code:** :source:`Lib/html/entities.py`"
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:13
+#: library/html.entities.rst:13
 msgid ""
 "This module defines four dictionaries, :data:`html5`, :data:"
 "`name2codepoint`, :data:`codepoint2name`, and :data:`entitydefs`."
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:19
+#: library/html.entities.rst:19
 msgid ""
 "A dictionary that maps HTML5 named character references [#]_ to the "
 "equivalent Unicode character(s), e.g. ``html5['gt;'] == '>'``. Note that the "
@@ -41,25 +41,25 @@ msgid ""
 "unescape`."
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:31
+#: library/html.entities.rst:31
 msgid ""
 "A dictionary mapping XHTML 1.0 entity definitions to their replacement text "
 "in ISO Latin-1."
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:37
+#: library/html.entities.rst:37
 msgid "A dictionary that maps HTML4 entity names to the Unicode code points."
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:42
+#: library/html.entities.rst:42
 msgid "A dictionary that maps Unicode code points to HTML4 entity names."
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:46
+#: library/html.entities.rst:46
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/library/html.entities.rst:47
+#: library/html.entities.rst:47
 msgid ""
 "See https://html.spec.whatwg.org/multipage/named-characters.html#named-"
 "character-references"

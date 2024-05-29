@@ -17,22 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/webbrowser.rst:2
+#: library/webbrowser.rst:2
 msgid ":mod:`!webbrowser` --- Convenient web-browser controller"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:10
+#: library/webbrowser.rst:10
 msgid "**Source code:** :source:`Lib/webbrowser.py`"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:14
+#: library/webbrowser.rst:14
 msgid ""
 "The :mod:`webbrowser` module provides a high-level interface to allow "
 "displaying web-based documents to users. Under most circumstances, simply "
 "calling the :func:`.open` function from this module will do the right thing."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:18
+#: library/webbrowser.rst:18
 msgid ""
 "Under Unix, graphical browsers are preferred under X11, but text-mode "
 "browsers will be used if graphical browsers are not available or an X11 "
@@ -40,7 +40,7 @@ msgid ""
 "process will block until the user exits the browser."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:23
+#: library/webbrowser.rst:23
 msgid ""
 "If the environment variable :envvar:`BROWSER` exists, it is interpreted as "
 "the :data:`os.pathsep`-separated list of browsers to try ahead of the "
@@ -50,7 +50,7 @@ msgid ""
 "``%s``, it is simply interpreted as the name of the browser to launch. [1]_"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:30
+#: library/webbrowser.rst:30
 msgid ""
 "For non-Unix platforms, or when a remote browser is available on Unix, the "
 "controlling process will not wait for the user to finish with the browser, "
@@ -59,7 +59,7 @@ msgid ""
 "launch a new browser and wait."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:36
+#: library/webbrowser.rst:36
 msgid ""
 "On iOS, the :envvar:`BROWSER` environment variable, as well as any arguments "
 "controlling autoraise, browser preference, and new tab/window creation will "
@@ -69,49 +69,49 @@ msgid ""
 "module. If :mod:`ctypes` isn't available, calls to :func:`.open` will fail."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:43
+#: library/webbrowser.rst:43
 msgid ""
 "The script :program:`webbrowser` can be used as a command-line interface for "
 "the module. It accepts a URL as the argument. It accepts the following "
 "optional parameters:"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:47
+#: library/webbrowser.rst:47
 msgid ""
 "``-n``/``--new-window`` opens the URL in a new browser window, if possible."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:48
+#: library/webbrowser.rst:48
 msgid "``-t``/``--new-tab`` opens the URL in a new browser page (\"tab\")."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:50
+#: library/webbrowser.rst:50
 msgid "The options are, naturally, mutually exclusive.  Usage example::"
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:3
+#: includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:5
+#: includes/wasm-notavail.rst:5
 msgid ""
 "This module does not work or is not available on WebAssembly. See :ref:`wasm-"
 "availability` for more information."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:56
+#: library/webbrowser.rst:56
 msgid "The following exception is defined:"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:61
+#: library/webbrowser.rst:61
 msgid "Exception raised when a browser control error occurs."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:63
+#: library/webbrowser.rst:63
 msgid "The following functions are defined:"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:68
+#: library/webbrowser.rst:68
 msgid ""
 "Display *url* using the default browser. If *new* is 0, the *url* is opened "
 "in the same browser window if possible.  If *new* is 1, a new browser window "
@@ -121,39 +121,39 @@ msgid ""
 "the setting of this variable)."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:75
+#: library/webbrowser.rst:75
 msgid ""
 "Note that on some platforms, trying to open a filename using this function, "
 "may work and start the operating system's associated program.  However, this "
 "is neither supported nor portable."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:89
+#: library/webbrowser.rst:89
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``webbrowser.open`` with argument "
 "``url``."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:84
+#: library/webbrowser.rst:84
 msgid ""
 "Open *url* in a new window of the default browser, if possible, otherwise, "
 "open *url* in the only browser window."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:89
+#: library/webbrowser.rst:89
 msgid ""
 "Open *url* in a new page (\"tab\") of the default browser, if possible, "
 "otherwise equivalent to :func:`open_new`."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:95
+#: library/webbrowser.rst:95
 msgid ""
 "Return a controller object for the browser type *using*.  If *using* is "
 "``None``, return a controller for a default browser appropriate to the "
 "caller's environment."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:102
+#: library/webbrowser.rst:102
 msgid ""
 "Register the browser type *name*.  Once a browser type is registered, the :"
 "func:`get` function can return a controller for that browser type.  If "
@@ -162,7 +162,7 @@ msgid ""
 "provided, *constructor* will never be called, and may be ``None``."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:108
+#: library/webbrowser.rst:108
 msgid ""
 "Setting *preferred* to ``True`` makes this browser a preferred result for a :"
 "func:`get` call with no argument.  Otherwise, this entry point is only "
@@ -171,192 +171,190 @@ msgid ""
 "declare."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:114
+#: library/webbrowser.rst:114
 msgid "*preferred* keyword-only parameter was added."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:117
+#: library/webbrowser.rst:117
 msgid ""
 "A number of browser types are predefined.  This table gives the type names "
 "that may be passed to the :func:`get` function and the corresponding "
 "instantiations for the controller classes, all defined in this module."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:122
+#: library/webbrowser.rst:122
 msgid "Type Name"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:122
+#: library/webbrowser.rst:122
 msgid "Class Name"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:122
+#: library/webbrowser.rst:122
 msgid "Notes"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:124
+#: library/webbrowser.rst:124
 msgid "``'mozilla'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:124 ../Doc/library/webbrowser.rst:126
+#: library/webbrowser.rst:126
 msgid "``Mozilla('mozilla')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:126
+#: library/webbrowser.rst:126
 msgid "``'firefox'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:128
+#: library/webbrowser.rst:128
 msgid "``'epiphany'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:128
+#: library/webbrowser.rst:128
 msgid "``Epiphany('epiphany')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:130
+#: library/webbrowser.rst:130
 msgid "``'kfmclient'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:130 ../Doc/library/webbrowser.rst:132
-#: ../Doc/library/webbrowser.rst:134
+#: library/webbrowser.rst:132 library/webbrowser.rst:134
 msgid "``Konqueror()``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:130 ../Doc/library/webbrowser.rst:132
-#: ../Doc/library/webbrowser.rst:134
+#: library/webbrowser.rst:132 library/webbrowser.rst:134
 msgid "\\(1)"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:132
+#: library/webbrowser.rst:132
 msgid "``'konqueror'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:134
+#: library/webbrowser.rst:134
 msgid "``'kfm'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:136
+#: library/webbrowser.rst:136
 msgid "``'opera'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:136
+#: library/webbrowser.rst:136
 msgid "``Opera()``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:138
+#: library/webbrowser.rst:138
 msgid "``'links'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:138
+#: library/webbrowser.rst:138
 msgid "``GenericBrowser('links')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:140
+#: library/webbrowser.rst:140
 msgid "``'elinks'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:140
+#: library/webbrowser.rst:140
 msgid "``Elinks('elinks')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:142
+#: library/webbrowser.rst:142
 msgid "``'lynx'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:142
+#: library/webbrowser.rst:142
 msgid "``GenericBrowser('lynx')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:144
+#: library/webbrowser.rst:144
 msgid "``'w3m'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:144
+#: library/webbrowser.rst:144
 msgid "``GenericBrowser('w3m')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:146
+#: library/webbrowser.rst:146
 msgid "``'windows-default'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:146
+#: library/webbrowser.rst:146
 msgid "``WindowsDefault``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:146
+#: library/webbrowser.rst:146
 msgid "\\(2)"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:148
+#: library/webbrowser.rst:148
 msgid "``'macosx'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:148
+#: library/webbrowser.rst:148
 msgid "``MacOSXOSAScript('default')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:148 ../Doc/library/webbrowser.rst:150
+#: library/webbrowser.rst:150
 msgid "\\(3)"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:150
+#: library/webbrowser.rst:150
 msgid "``'safari'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:150
+#: library/webbrowser.rst:150
 msgid "``MacOSXOSAScript('safari')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:152
+#: library/webbrowser.rst:152
 msgid "``'google-chrome'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:152
+#: library/webbrowser.rst:152
 msgid "``Chrome('google-chrome')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:154
+#: library/webbrowser.rst:154
 msgid "``'chrome'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:154
+#: library/webbrowser.rst:154
 msgid "``Chrome('chrome')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:156
+#: library/webbrowser.rst:156
 msgid "``'chromium'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:156
+#: library/webbrowser.rst:156
 msgid "``Chromium('chromium')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:158
+#: library/webbrowser.rst:158
 msgid "``'chromium-browser'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:158
+#: library/webbrowser.rst:158
 msgid "``Chromium('chromium-browser')``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:160
+#: library/webbrowser.rst:160
 msgid "``'iosbrowser'``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:160
+#: library/webbrowser.rst:160
 msgid "``IOSBrowser``"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:160
+#: library/webbrowser.rst:160
 msgid "\\(4)"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:163
+#: library/webbrowser.rst:163
 msgid "Notes:"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:166
+#: library/webbrowser.rst:166
 msgid ""
 "\"Konqueror\" is the file manager for the KDE desktop environment for Unix, "
 "and only makes sense to use if KDE is running.  Some way of reliably "
@@ -366,83 +364,83 @@ msgid ""
 "best strategy for running Konqueror."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:173
+#: library/webbrowser.rst:173
 msgid "Only on Windows platforms."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:176
+#: library/webbrowser.rst:176
 msgid "Only on macOS."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:179
+#: library/webbrowser.rst:179
 msgid "Only on iOS."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:181
+#: library/webbrowser.rst:181
 msgid ""
 "A new :class:`!MacOSXOSAScript` class has been added and is used on Mac "
 "instead of the previous :class:`!MacOSX` class. This adds support for "
 "opening browsers not currently set as the OS default."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:186
+#: library/webbrowser.rst:186
 msgid "Support for Chrome/Chromium has been added."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:189
+#: library/webbrowser.rst:189
 msgid ""
 "Support for several obsolete browsers has been removed. Removed browsers "
 "include Grail, Mosaic, Netscape, Galeon, Skipstone, Iceape, and Firefox "
 "versions 35 and below."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:194
+#: library/webbrowser.rst:194
 msgid "Support for iOS has been added."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:197
+#: library/webbrowser.rst:197
 msgid "Here are some simple examples::"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:211
+#: library/webbrowser.rst:211
 msgid "Browser Controller Objects"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:213
+#: library/webbrowser.rst:213
 msgid ""
 "Browser controllers provide these methods which parallel three of the module-"
 "level convenience functions:"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:219
+#: library/webbrowser.rst:219
 msgid "System-dependent name for the browser."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:224
+#: library/webbrowser.rst:224
 msgid ""
 "Display *url* using the browser handled by this controller. If *new* is 1, a "
 "new browser window is opened if possible. If *new* is 2, a new browser page "
 "(\"tab\") is opened if possible."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:231
+#: library/webbrowser.rst:231
 msgid ""
 "Open *url* in a new window of the browser handled by this controller, if "
 "possible, otherwise, open *url* in the only browser window.  Alias :func:"
 "`open_new`."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:238
+#: library/webbrowser.rst:238
 msgid ""
 "Open *url* in a new page (\"tab\") of the browser handled by this "
 "controller, if possible, otherwise equivalent to :func:`open_new`."
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:243
+#: library/webbrowser.rst:243
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/library/webbrowser.rst:244
+#: library/webbrowser.rst:244
 msgid ""
 "Executables named here without a full path will be searched in the "
 "directories given in the :envvar:`PATH` environment variable."

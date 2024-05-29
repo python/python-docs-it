@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/weakref.rst:6
+#: c-api/weakref.rst:6
 msgid "Weak Reference Objects"
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:8
+#: c-api/weakref.rst:8
 msgid ""
 "Python supports *weak references* as first-class objects.  There are two "
 "specific object types which directly implement weak references.  The first "
@@ -29,24 +29,24 @@ msgid ""
 "original object as much as it can."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:16
+#: c-api/weakref.rst:16
 msgid ""
 "Return non-zero if *ob* is either a reference or proxy object.  This "
 "function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:22
+#: c-api/weakref.rst:22
 msgid ""
 "Return non-zero if *ob* is a reference object.  This function always "
 "succeeds."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:27
+#: c-api/weakref.rst:27
 msgid ""
 "Return non-zero if *ob* is a proxy object.  This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:32
+#: c-api/weakref.rst:32
 msgid ""
 "Return a weak reference object for the object *ob*.  This will always return "
 "a new reference, but is not guaranteed to create a new object; an existing "
@@ -58,7 +58,7 @@ msgid ""
 "``NULL``, this will return ``NULL`` and raise :exc:`TypeError`."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:44
+#: c-api/weakref.rst:44
 msgid ""
 "Return a weak reference proxy object for the object *ob*.  This will always "
 "return a new reference, but is not guaranteed to create a new object; an "
@@ -70,33 +70,33 @@ msgid ""
 "``None``, or ``NULL``, this will return ``NULL`` and raise :exc:`TypeError`."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:56
+#: c-api/weakref.rst:56
 msgid ""
 "Get a :term:`strong reference` to the referenced object from a weak "
 "reference, *ref*, into *\\*pobj*."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:59
+#: c-api/weakref.rst:59
 msgid ""
 "On success, set *\\*pobj* to a new :term:`strong reference` to the "
 "referenced object and return 1."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:61
+#: c-api/weakref.rst:61
 msgid "If the reference is dead, set *\\*pobj* to ``NULL`` and return 0."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:62
+#: c-api/weakref.rst:62
 msgid "On error, raise an exception and return -1."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:69
+#: c-api/weakref.rst:69
 msgid ""
 "Return a :term:`borrowed reference` to the referenced object from a weak "
 "reference, *ref*.  If the referent is no longer live, returns ``Py_None``."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:74
+#: c-api/weakref.rst:74
 msgid ""
 "This function returns a :term:`borrowed reference` to the referenced object. "
 "This means that you should always call :c:func:`Py_INCREF` on the object "
@@ -104,21 +104,21 @@ msgid ""
 "reference."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:80 ../Doc/c-api/weakref.rst:88
+#: c-api/weakref.rst:88
 msgid "Use :c:func:`PyWeakref_GetRef` instead."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:85
+#: c-api/weakref.rst:85
 msgid "Similar to :c:func:`PyWeakref_GetObject`, but does no error checking."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:93
+#: c-api/weakref.rst:93
 msgid ""
 "This function is called by the :c:member:`~PyTypeObject.tp_dealloc` handler "
 "to clear weak references."
 msgstr ""
 
-#: ../Doc/c-api/weakref.rst:96
+#: c-api/weakref.rst:96
 msgid ""
 "This iterates through the weak references for *object* and calls callbacks "
 "for those references which have one. It returns when all callbacks have been "

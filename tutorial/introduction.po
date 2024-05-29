@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ../Doc/tutorial/introduction.rst:5
+#: tutorial/introduction.rst:5
 msgid "An Informal Introduction to Python"
 msgstr "Un'introduzione informale a Python"
 
-#: ../Doc/tutorial/introduction.rst:7
+#: tutorial/introduction.rst:7
 msgid ""
 "In the following examples, input and output are distinguished by the "
 "presence or absence of prompts (:term:`>>>` and :term:`...`): to repeat the "
@@ -39,7 +39,7 @@ msgstr ""
 "digitare una riga vuota; questo viene utilizzato per terminare un comando a "
 "più righe."
 
-#: ../Doc/tutorial/introduction.rst:16
+#: tutorial/introduction.rst:16
 msgid ""
 "You can toggle the display of prompts and output by clicking on ``>>>`` in "
 "the upper-right corner of an example box.  If you hide the prompts and "
@@ -47,7 +47,7 @@ msgid ""
 "into your interpreter."
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:23
+#: tutorial/introduction.rst:23
 msgid ""
 "Many of the examples in this manual, even those entered at the interactive "
 "prompt, include comments.  Comments in Python start with the hash character, "
@@ -66,15 +66,15 @@ msgstr ""
 "chiarire il codice e non sono interpretati da Python, possono essere omessi "
 "quando si scrivono gli esempi."
 
-#: ../Doc/tutorial/introduction.rst:31
+#: tutorial/introduction.rst:31
 msgid "Some examples::"
 msgstr "Alcuni esempi::"
 
-#: ../Doc/tutorial/introduction.rst:42
+#: tutorial/introduction.rst:42
 msgid "Using Python as a Calculator"
 msgstr "Usare Python come calcolatrice"
 
-#: ../Doc/tutorial/introduction.rst:44
+#: tutorial/introduction.rst:44
 msgid ""
 "Let's try some simple Python commands.  Start the interpreter and wait for "
 "the primary prompt, ``>>>``.  (It shouldn't take long.)"
@@ -82,11 +82,11 @@ msgstr ""
 "Proviamo con alcuni semplici comandi di Python.  Avviare l'interprete e "
 "attendere il prompt primario, ``>>>```.  Non dovrebbe volerci molto."
 
-#: ../Doc/tutorial/introduction.rst:51
+#: tutorial/introduction.rst:51
 msgid "Numbers"
 msgstr "Numeri"
 
-#: ../Doc/tutorial/introduction.rst:53
+#: tutorial/introduction.rst:53
 #, fuzzy
 msgid ""
 "The interpreter acts as a simple calculator: you can type an expression at "
@@ -100,7 +100,7 @@ msgstr ""
 "maggior parte degli altri linguaggi (per esempio, Pascal o C); le parentesi "
 "(``()``) possono essere utilizzate per il raggruppamento. Per esempio::"
 
-#: ../Doc/tutorial/introduction.rst:68
+#: tutorial/introduction.rst:68
 msgid ""
 "The integer numbers (e.g. ``2``, ``4``, ``20``) have type :class:`int`, the "
 "ones with a fractional part (e.g. ``5.0``, ``1.6``) have type :class:"
@@ -110,7 +110,7 @@ msgstr ""
 "in virgola mobile (es. ``5.0``, ``1.6``) hanno tipo :class:`float`.  "
 "Torneremo a parlare ancora dei tipi numerici più avanti nel tutorial."
 
-#: ../Doc/tutorial/introduction.rst:72
+#: tutorial/introduction.rst:72
 #, fuzzy
 msgid ""
 "Division (``/``) always returns a float.  To do :term:`floor division` and "
@@ -122,7 +122,7 @@ msgstr ""
 "decimale) si può usare l'operatore ``//``; per calcolare il resto si può "
 "usare ``%``::"
 
-#: ../Doc/tutorial/introduction.rst:86
+#: tutorial/introduction.rst:86
 msgid ""
 "With Python, it is possible to use the ``**`` operator to calculate powers "
 "[#]_::"
@@ -130,7 +130,7 @@ msgstr ""
 "Con Python, è possibile utilizzare l'operatore ``**`` per calcolare le "
 "potenze [#]_::"
 
-#: ../Doc/tutorial/introduction.rst:93
+#: tutorial/introduction.rst:93
 msgid ""
 "The equal sign (``=``) is used to assign a value to a variable. Afterwards, "
 "no result is displayed before the next interactive prompt::"
@@ -139,7 +139,7 @@ msgstr ""
 "Successivamente, nessun risultato viene visualizzato prima della successiva "
 "richiesta::"
 
-#: ../Doc/tutorial/introduction.rst:101
+#: tutorial/introduction.rst:101
 msgid ""
 "If a variable is not \"defined\" (assigned a value), trying to use it will "
 "give you an error::"
@@ -147,7 +147,7 @@ msgstr ""
 "Se una variabile non è stata ”definita\" (a cui è stato assegnato un "
 "valore), usarla vi darà un errore::"
 
-#: ../Doc/tutorial/introduction.rst:109
+#: tutorial/introduction.rst:109
 msgid ""
 "There is full support for floating point; operators with mixed type operands "
 "convert the integer operand to floating point::"
@@ -155,7 +155,7 @@ msgstr ""
 "C'è pieno supporto per i numeri in virgola mobile; gli operatori con "
 "operandi di tipo misto convertono l'intero in un numero in virgola mobile::"
 
-#: ../Doc/tutorial/introduction.rst:115
+#: tutorial/introduction.rst:115
 msgid ""
 "In interactive mode, the last printed expression is assigned to the variable "
 "``_``.  This means that when you are using Python as a desk calculator, it "
@@ -166,7 +166,7 @@ msgstr ""
 "calcolatrice da tavolo, è un po' più facile continuare i calcoli, ad "
 "esempio::"
 
-#: ../Doc/tutorial/introduction.rst:128
+#: tutorial/introduction.rst:128
 msgid ""
 "This variable should be treated as read-only by the user.  Don't explicitly "
 "assign a value to it --- you would create an independent local variable with "
@@ -177,7 +177,7 @@ msgstr ""
 "variabile locale indipendente con lo stesso nome, mascherando così la "
 "variabile *built-in* e il suo comportamento magico."
 
-#: ../Doc/tutorial/introduction.rst:132
+#: tutorial/introduction.rst:132
 msgid ""
 "In addition to :class:`int` and :class:`float`, Python supports other types "
 "of numbers, such as :class:`~decimal.Decimal` and :class:`~fractions."
@@ -191,11 +191,11 @@ msgstr ""
 "usa il suffisso ``j`` o ``J`` per indicare la parte immaginaria (es. "
 "``3+5j``)."
 
-#: ../Doc/tutorial/introduction.rst:142
+#: tutorial/introduction.rst:142
 msgid "Text"
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:144
+#: tutorial/introduction.rst:144
 msgid ""
 "Python can manipulate text (represented by type :class:`str`, so-called "
 "\"strings\") as well as numbers.  This includes characters \"``!``\", words "
@@ -204,13 +204,13 @@ msgid ""
 "quotes (``\"...\"``) with the same result [#]_."
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:157
+#: tutorial/introduction.rst:157
 msgid ""
 "To quote a quote, we need to \"escape\" it, by preceding it with ``\\``. "
 "Alternatively, we can use the other type of quotation marks::"
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:171
+#: tutorial/introduction.rst:171
 msgid ""
 "In the Python shell, the string definition and output string can look "
 "different.  The :func:`print` function produces a more readable output, by "
@@ -218,7 +218,7 @@ msgid ""
 "characters::"
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:182
+#: tutorial/introduction.rst:182
 msgid ""
 "If you don't want characters prefaced by ``\\`` to be interpreted as special "
 "characters, you can use *raw strings* by adding an ``r`` before the first "
@@ -228,14 +228,14 @@ msgstr ""
 "come caratteri speciali, è possibile utilizzare le cosiddette *raw strings* "
 "aggiungendo un ``r`` prima del primo apice::"
 
-#: ../Doc/tutorial/introduction.rst:192
+#: tutorial/introduction.rst:192
 msgid ""
 "There is one subtle aspect to raw strings: a raw string may not end in an "
 "odd number of ``\\`` characters; see :ref:`the FAQ entry <faq-programming-"
 "raw-string-backslash>` for more information and workarounds."
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:197
+#: tutorial/introduction.rst:197
 msgid ""
 "String literals can span multiple lines.  One way is using triple-quotes: "
 "``\"\"\"...\"\"\"`` or ``'''...'''``.  End of lines are automatically "
@@ -248,7 +248,7 @@ msgstr ""
 "stringa, ma è possibile evitare che ciò avvenga aggiungendo un ``\\`` alla "
 "fine della linea.  Il seguente esempio::"
 
-#: ../Doc/tutorial/introduction.rst:208
+#: tutorial/introduction.rst:208
 msgid ""
 "produces the following output (note that the initial newline is not "
 "included):"
@@ -256,7 +256,7 @@ msgstr ""
 "produce il seguente output (si noti che la nuova linea iniziale non è "
 "inclusa):"
 
-#: ../Doc/tutorial/introduction.rst:216
+#: tutorial/introduction.rst:216
 msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
@@ -264,7 +264,7 @@ msgstr ""
 "Le stringhe possono essere concatenate (incollate insieme) con l'operatore "
 "``+`` e ripetute con ``*``::"
 
-#: ../Doc/tutorial/introduction.rst:223
+#: tutorial/introduction.rst:223
 msgid ""
 "Two or more *string literals* (i.e. the ones enclosed between quotes) next "
 "to each other are automatically concatenated. ::"
@@ -272,26 +272,26 @@ msgstr ""
 "Due o più *letterali di tipo stringa* (cioè quelli racchiusi tra virgolette) "
 "posizionati uno accanto all'altro sono automaticamente concatenati. ::"
 
-#: ../Doc/tutorial/introduction.rst:229
+#: tutorial/introduction.rst:229
 msgid ""
 "This feature is particularly useful when you want to break long strings::"
 msgstr ""
 "Questa funzione è particolarmente utile quando si vogliono separare stringhe "
 "lunghe::"
 
-#: ../Doc/tutorial/introduction.rst:236
+#: tutorial/introduction.rst:236
 msgid ""
 "This only works with two literals though, not with variables or expressions::"
 msgstr ""
 "Questo funziona solo con due letterali, ma non con variabili o *expression*::"
 
-#: ../Doc/tutorial/introduction.rst:250
+#: tutorial/introduction.rst:250
 msgid ""
 "If you want to concatenate variables or a variable and a literal, use ``+``::"
 msgstr ""
 "Se volete concatenare variabili o una variabile e un letterale, usate ``+``::"
 
-#: ../Doc/tutorial/introduction.rst:255
+#: tutorial/introduction.rst:255
 msgid ""
 "Strings can be *indexed* (subscripted), with the first character having "
 "index 0. There is no separate character type; a character is simply a string "
@@ -301,18 +301,18 @@ msgstr ""
 "carattere ha indice 0. Non esiste un tipo carattere specifico; un carattere "
 "è semplicemente una stringa di dimensione uno::"
 
-#: ../Doc/tutorial/introduction.rst:265
+#: tutorial/introduction.rst:265
 msgid ""
 "Indices may also be negative numbers, to start counting from the right::"
 msgstr ""
 "Gli indici possono anche essere numeri negativi, per iniziare a contare da "
 "destra::"
 
-#: ../Doc/tutorial/introduction.rst:274
+#: tutorial/introduction.rst:274
 msgid "Note that since -0 is the same as 0, negative indices start from -1."
 msgstr "N.B. Poiché -0 è uguale a 0, gli indici negativi partono da -1."
 
-#: ../Doc/tutorial/introduction.rst:276
+#: tutorial/introduction.rst:276
 #, fuzzy
 msgid ""
 "In addition to indexing, *slicing* is also supported.  While indexing is "
@@ -323,7 +323,7 @@ msgstr ""
 "l'indicizzazione è usata per ottenere i singoli caratteri, lo *slicing* "
 "permette di ottenere una sottostringa::"
 
-#: ../Doc/tutorial/introduction.rst:284
+#: tutorial/introduction.rst:284
 msgid ""
 "Slice indices have useful defaults; an omitted first index defaults to zero, "
 "an omitted second index defaults to the size of the string being sliced. ::"
@@ -332,7 +332,7 @@ msgstr ""
 "omesso è zero, un secondo indice omesso è uguale alla dimensione della "
 "stringa che si sta tagliando:"
 
-#: ../Doc/tutorial/introduction.rst:294
+#: tutorial/introduction.rst:294
 msgid ""
 "Note how the start is always included, and the end always excluded.  This "
 "makes sure that ``s[:i] + s[i:]`` is always equal to ``s``::"
@@ -340,7 +340,7 @@ msgstr ""
 "Si noti come l'inizio sia sempre incluso, e la fine sempre esclusa.  Questo "
 "fa sì che ``s[:i] + s[i:]`` è sempre uguale a ``s``::"
 
-#: ../Doc/tutorial/introduction.rst:302
+#: tutorial/introduction.rst:302
 msgid ""
 "One way to remember how slices work is to think of the indices as pointing "
 "*between* characters, with the left edge of the first character numbered 0. "
@@ -352,7 +352,7 @@ msgstr ""
 "carattere numerato 0. Poi il bordo destro dell'ultimo carattere di una "
 "stringa di caratteri *n* ha l'indice *n*, per esempio::"
 
-#: ../Doc/tutorial/introduction.rst:313
+#: tutorial/introduction.rst:313
 msgid ""
 "The first row of numbers gives the position of the indices 0...6 in the "
 "string; the second row gives the corresponding negative indices. The slice "
@@ -364,7 +364,7 @@ msgstr ""
 "costituita da tutti i caratteri tra i bordi contrassegnati rispettivamente "
 "con *i* e *j*."
 
-#: ../Doc/tutorial/introduction.rst:318
+#: tutorial/introduction.rst:318
 msgid ""
 "For non-negative indices, the length of a slice is the difference of the "
 "indices, if both are within bounds.  For example, the length of "
@@ -374,12 +374,12 @@ msgstr ""
 "indici, se entrambi sono entro i limiti.  Per esempio, la lunghezza di "
 "``word[1:3]`` è 2."
 
-#: ../Doc/tutorial/introduction.rst:322
+#: tutorial/introduction.rst:322
 msgid "Attempting to use an index that is too large will result in an error::"
 msgstr ""
 "Il tentativo di utilizzare un indice troppo grande comporta un errore::"
 
-#: ../Doc/tutorial/introduction.rst:329
+#: tutorial/introduction.rst:329
 msgid ""
 "However, out of range slice indexes are handled gracefully when used for "
 "slicing::"
@@ -388,7 +388,7 @@ msgstr ""
 "lunghezza della stringa) sono gestiti a modo quando vengono utilizzati per "
 "l'affettamento::"
 
-#: ../Doc/tutorial/introduction.rst:337
+#: tutorial/introduction.rst:337
 msgid ""
 "Python strings cannot be changed --- they are :term:`immutable`. Therefore, "
 "assigning to an indexed position in the string results in an error::"
@@ -397,20 +397,20 @@ msgstr ""
 "Pertanto, l'assegnazione di una posizione indicizzata nella stringa comporta "
 "un errore::"
 
-#: ../Doc/tutorial/introduction.rst:349
+#: tutorial/introduction.rst:349
 msgid "If you need a different string, you should create a new one::"
 msgstr "Se avete bisogno di una stringa diversa, dovreste crearne una nuova::"
 
-#: ../Doc/tutorial/introduction.rst:356
+#: tutorial/introduction.rst:356
 msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr ""
 "La funzione integrata :func:`len` restituisce la lunghezza di una stringa::"
 
-#: ../Doc/tutorial/introduction.rst:365
+#: tutorial/introduction.rst:365
 msgid ":ref:`textseq`"
 msgstr ":ref:`textseq`"
 
-#: ../Doc/tutorial/introduction.rst:366
+#: tutorial/introduction.rst:366
 msgid ""
 "Strings are examples of *sequence types*, and support the common operations "
 "supported by such types."
@@ -418,11 +418,11 @@ msgstr ""
 "Le stringhe sono esempi di *tipi di sequenze*, e supportano le operazioni "
 "comuni supportate da questi tipi di dato."
 
-#: ../Doc/tutorial/introduction.rst:369
+#: tutorial/introduction.rst:369
 msgid ":ref:`string-methods`"
 msgstr ":ref:`string-methods`"
 
-#: ../Doc/tutorial/introduction.rst:370
+#: tutorial/introduction.rst:370
 msgid ""
 "Strings support a large number of methods for basic transformations and "
 "searching."
@@ -430,28 +430,28 @@ msgstr ""
 "Un gran numero di metodi per le trasformazioni di base e la ricerca sono "
 "supportati dalle stringhe."
 
-#: ../Doc/tutorial/introduction.rst:373
+#: tutorial/introduction.rst:373
 msgid ":ref:`f-strings`"
 msgstr ":ref:`f-strings`"
 
-#: ../Doc/tutorial/introduction.rst:374
+#: tutorial/introduction.rst:374
 msgid "String literals that have embedded expressions."
 msgstr "Stringhe con *expression* incorporate."
 
-#: ../Doc/tutorial/introduction.rst:376
+#: tutorial/introduction.rst:376
 msgid ":ref:`formatstrings`"
 msgstr ":ref:`formatstrings`"
 
-#: ../Doc/tutorial/introduction.rst:377
+#: tutorial/introduction.rst:377
 msgid "Information about string formatting with :meth:`str.format`."
 msgstr ""
 "Informazioni sulla formattazione delle stringhe con :meth:`str.format`."
 
-#: ../Doc/tutorial/introduction.rst:379
+#: tutorial/introduction.rst:379
 msgid ":ref:`old-string-formatting`"
 msgstr ":ref:`old-string-formatting`"
 
-#: ../Doc/tutorial/introduction.rst:380
+#: tutorial/introduction.rst:380
 msgid ""
 "The old formatting operations invoked when strings are the left operand of "
 "the ``%`` operator are described in more detail here."
@@ -459,11 +459,11 @@ msgstr ""
 "Il vecchio metodo di formattazione, quello che prevede un template a "
 "sinistra dell'operatore ``%`` è descritto più dettagliatamente qui."
 
-#: ../Doc/tutorial/introduction.rst:387
+#: tutorial/introduction.rst:387
 msgid "Lists"
 msgstr "Liste"
 
-#: ../Doc/tutorial/introduction.rst:389
+#: tutorial/introduction.rst:389
 msgid ""
 "Python knows a number of *compound* data types, used to group together other "
 "values.  The most versatile is the *list*, which can be written as a list of "
@@ -476,7 +476,7 @@ msgstr ""
 "parentesi quadre.  Gli elenchi possono contenere elementi di tipo diverso, "
 "ma di solito gli elementi hanno tutti lo stesso tipo. ::"
 
-#: ../Doc/tutorial/introduction.rst:398
+#: tutorial/introduction.rst:398
 #, fuzzy
 msgid ""
 "Like strings (and all other built-in :term:`sequence` types), lists can be "
@@ -485,11 +485,11 @@ msgstr ""
 "Come le stringhe (e tutti gli altri tipi built-in :term:`sequence`), le "
 "liste possono essere indicizzate e tagliate::"
 
-#: ../Doc/tutorial/introduction.rst:408
+#: tutorial/introduction.rst:408
 msgid "Lists also support operations like concatenation::"
 msgstr "Gli elenchi supportano anche operazioni come la concatenazione::"
 
-#: ../Doc/tutorial/introduction.rst:413
+#: tutorial/introduction.rst:413
 msgid ""
 "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
 "type, i.e. it is possible to change their content::"
@@ -497,7 +497,7 @@ msgstr ""
 "A differenza delle stringhe, che sono :term:`immutable`, le liste sono di "
 "tipo :term:`mutable`, cioè è possibile modificarne il contenuto::"
 
-#: ../Doc/tutorial/introduction.rst:423
+#: tutorial/introduction.rst:423
 #, fuzzy
 msgid ""
 "You can also add new items at the end of the list, by using the :meth:`!list."
@@ -506,7 +506,7 @@ msgstr ""
 "Potete anche aggiungere nuovi elementi alla fine della lista, usando il "
 "*metodo* :meth:`~list.append` (vedremo di più riguardo i metodi più avanti)::"
 
-#: ../Doc/tutorial/introduction.rst:431
+#: tutorial/introduction.rst:431
 msgid ""
 "Simple assignment in Python never copies data. When you assign a list to a "
 "variable, the variable refers to the *existing list*. Any changes you make "
@@ -514,7 +514,7 @@ msgid ""
 "that refer to it.::"
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:444
+#: tutorial/introduction.rst:444
 #, fuzzy
 msgid ""
 "All slice operations return a new list containing the requested elements.  "
@@ -525,7 +525,7 @@ msgstr ""
 "elementi richiesti.  Ciò significa che la seguente sezione restituisce una "
 "nuova copia (*shallow*) della lista::"
 
-#: ../Doc/tutorial/introduction.rst:455
+#: tutorial/introduction.rst:455
 msgid ""
 "Assignment to slices is also possible, and this can even change the size of "
 "the list or clear it entirely::"
@@ -533,11 +533,11 @@ msgstr ""
 "L'assegnazione a uno slice è anche possibile, per cambiare anche la "
 "dimensione della lista o cancellarne gli elementi completamente::"
 
-#: ../Doc/tutorial/introduction.rst:474
+#: tutorial/introduction.rst:474
 msgid "The built-in function :func:`len` also applies to lists::"
 msgstr "La funzione :func:`len` si applica anche alle liste::"
 
-#: ../Doc/tutorial/introduction.rst:480
+#: tutorial/introduction.rst:480
 msgid ""
 "It is possible to nest lists (create lists containing other lists), for "
 "example::"
@@ -545,11 +545,11 @@ msgstr ""
 "E' possibile nidificare liste (creare liste contenenti altre liste), ad "
 "esempio::"
 
-#: ../Doc/tutorial/introduction.rst:496
+#: tutorial/introduction.rst:496
 msgid "First Steps Towards Programming"
 msgstr "Primi passi di programmazione"
 
-#: ../Doc/tutorial/introduction.rst:498
+#: tutorial/introduction.rst:498
 #, fuzzy
 msgid ""
 "Of course, we can use Python for more complicated tasks than adding two and "
@@ -562,11 +562,11 @@ msgstr ""
 "della  `Successione di Fibonacci <https://it.wikipedia.org/wiki/"
 "Successione_di_Fibonacci>`_ come segue::"
 
-#: ../Doc/tutorial/introduction.rst:518
+#: tutorial/introduction.rst:518
 msgid "This example introduces several new features."
 msgstr "Questo esempio introduce diverse nuove funzionalità."
 
-#: ../Doc/tutorial/introduction.rst:520
+#: tutorial/introduction.rst:520
 msgid ""
 "The first line contains a *multiple assignment*: the variables ``a`` and "
 "``b`` simultaneously get the new values 0 and 1.  On the last line this is "
@@ -580,7 +580,7 @@ msgstr ""
 "valutate prima di una qualsiasi delle assegnazioni.  Le espressioni del lato "
 "destro sono valutate da sinistra a destra."
 
-#: ../Doc/tutorial/introduction.rst:526
+#: tutorial/introduction.rst:526
 msgid ""
 "The :keyword:`while` loop executes as long as the condition (here: ``a < "
 "10``) remains true.  In Python, like in C, any non-zero integer value is "
@@ -601,7 +601,7 @@ msgstr ""
 "``==`` (uguale a), ``<=`` (minore o uguale a), ``>=`` (maggiore o uguale a) "
 "e ``!=`` (diverso da)."
 
-#: ../Doc/tutorial/introduction.rst:535
+#: tutorial/introduction.rst:535
 msgid ""
 "The *body* of the loop is *indented*: indentation is Python's way of "
 "grouping statements.  At the interactive prompt, you have to type a tab or "
@@ -622,7 +622,7 @@ msgstr ""
 "si è digitata l'ultima riga).  Si noti che ogni riga all'interno di un "
 "blocco di base deve essere rientrata della stessa quantità."
 
-#: ../Doc/tutorial/introduction.rst:544
+#: tutorial/introduction.rst:544
 msgid ""
 "The :func:`print` function writes the value of the argument(s) it is given. "
 "It differs from just writing the expression you want to write (as we did "
@@ -639,7 +639,7 @@ msgstr ""
 "viene inserito uno spazio tra gli elementi, in modo da poter formattare bene "
 "le cose, in questo modo::"
 
-#: ../Doc/tutorial/introduction.rst:555
+#: tutorial/introduction.rst:555
 msgid ""
 "The keyword argument *end* can be used to avoid the newline after the "
 "output, or end the output with a different string::"
@@ -647,11 +647,11 @@ msgstr ""
 "L'argomento *end* può essere usato per evitare la nuova linea dopo l'output, "
 "o terminare l'output con una stringa diversa::"
 
-#: ../Doc/tutorial/introduction.rst:567
+#: tutorial/introduction.rst:567
 msgid "Footnotes"
 msgstr "Note"
 
-#: ../Doc/tutorial/introduction.rst:568
+#: tutorial/introduction.rst:568
 msgid ""
 "Since ``**`` has higher precedence than ``-``, ``-3**2`` will be interpreted "
 "as ``-(3**2)`` and thus result in ``-9``.  To avoid this and get ``9``, you "
@@ -661,7 +661,7 @@ msgstr ""
 "interpretato come ``-(3**2)`` e quindi risulterà in ``-9``.  Per evitare "
 "questo e ottenere ``9``, è possibile utilizzare ``(-3)**2``."
 
-#: ../Doc/tutorial/introduction.rst:572
+#: tutorial/introduction.rst:572
 msgid ""
 "Unlike other languages, special characters such as ``\\n`` have the same "
 "meaning with both single (``'...'``) and double (``\"...\"``) quotes. The "
@@ -674,11 +674,11 @@ msgstr ""
 "singoli non c’è bisogno di aggiungere il carattere di escaping prima del "
 "``\"`` (ma bisogna inserirlo prima di un ``\\'``) e viceversa."
 
-#: ../Doc/tutorial/introduction.rst:21
+#: tutorial/introduction.rst:21
 msgid "# (hash)"
 msgstr ""
 
-#: ../Doc/tutorial/introduction.rst:21
+#: tutorial/introduction.rst:21
 msgid "comment"
 msgstr ""
 

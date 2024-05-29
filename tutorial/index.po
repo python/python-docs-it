@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ../Doc/tutorial/index.rst:5
+#: tutorial/index.rst:5
 msgid "The Python Tutorial"
 msgstr "Tutorial su Python"
 
-#: ../Doc/tutorial/index.rst:7
+#: tutorial/index.rst:7
 msgid ""
 "Python is an easy to learn, powerful programming language. It has efficient "
 "high-level data structures and a simple but effective approach to object-"
@@ -38,7 +38,7 @@ msgstr ""
 "sviluppo di applicazioni in molte aree per la maggior parte delle "
 "piattaforme."
 
-#: ../Doc/tutorial/index.rst:13
+#: tutorial/index.rst:13
 #, fuzzy
 msgid ""
 "The Python interpreter and the extensive standard library are freely "
@@ -54,7 +54,7 @@ msgstr ""
 "moduli, programmi e strumenti Python di terze parti gratuiti e "
 "documentazione aggiuntiva."
 
-#: ../Doc/tutorial/index.rst:19
+#: tutorial/index.rst:19
 msgid ""
 "The Python interpreter is easily extended with new functions and data types "
 "implemented in C or C++ (or other languages callable from C). Python is also "
@@ -65,7 +65,7 @@ msgstr ""
 "è adatto anche come linguaggio di estensione per applicazioni "
 "personalizzabili."
 
-#: ../Doc/tutorial/index.rst:23
+#: tutorial/index.rst:23
 msgid ""
 "This tutorial introduces the reader informally to the basic concepts and "
 "features of the Python language and system. It helps to have a Python "
@@ -77,7 +77,7 @@ msgstr ""
 "interprete Python a portata di mano per un'esperienza pratica, ma tutti gli "
 "esempi sono autonomi, così il tutorial può essere letto anche off-line."
 
-#: ../Doc/tutorial/index.rst:28
+#: tutorial/index.rst:28
 msgid ""
 "For a description of standard objects and modules, see :ref:`library-"
 "index`. :ref:`reference-index` gives a more formal definition of the "
@@ -90,7 +90,7 @@ msgstr ""
 "`extending-index` e :ref:`c-api-index`. Ci sono anche diversi libri che "
 "coprono Python in profondità."
 
-#: ../Doc/tutorial/index.rst:33
+#: tutorial/index.rst:33
 msgid ""
 "This tutorial does not attempt to be comprehensive and cover every single "
 "feature, or even every commonly used feature. Instead, it introduces many of "
@@ -107,6 +107,6 @@ msgstr ""
 "saperne di più sui vari moduli della libreria Python, i quali sono descritti "
 "in :ref:`library-index`."
 
-#: ../Doc/tutorial/index.rst:40
+#: tutorial/index.rst:40
 msgid "The :ref:`glossary` is also worth going through."
 msgstr "Anche il :ref:`glossary` vale la pena di essere sfogliato."

@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/cell.rst:6
+#: c-api/cell.rst:6
 msgid "Cell Objects"
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:8
+#: c-api/cell.rst:8
 msgid ""
 "\"Cell\" objects are used to implement variables referenced by multiple "
 "scopes. For each such variable, a cell object is created to store the value; "
@@ -33,37 +33,37 @@ msgid ""
 "referenced when accessed. Cell objects are not likely to be useful elsewhere."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:20
+#: c-api/cell.rst:20
 msgid "The C structure used for cell objects."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:25
+#: c-api/cell.rst:25
 msgid "The type object corresponding to cell objects."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:30
+#: c-api/cell.rst:30
 msgid ""
 "Return true if *ob* is a cell object; *ob* must not be ``NULL``.  This "
 "function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:36
+#: c-api/cell.rst:36
 msgid ""
 "Create and return a new cell object containing the value *ob*. The parameter "
 "may be ``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:42
+#: c-api/cell.rst:42
 msgid "Return the contents of the cell *cell*."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:47
+#: c-api/cell.rst:47
 msgid ""
 "Return the contents of the cell *cell*, but without checking that *cell* is "
 "non-``NULL`` and a cell object."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:53
+#: c-api/cell.rst:53
 msgid ""
 "Set the contents of the cell object *cell* to *value*.  This releases the "
 "reference to any current content of the cell. *value* may be ``NULL``.  "
@@ -71,7 +71,7 @@ msgid ""
 "returned.  On success, ``0`` will be returned."
 msgstr ""
 
-#: ../Doc/c-api/cell.rst:61
+#: c-api/cell.rst:61
 msgid ""
 "Sets the value of the cell object *cell* to *value*.  No reference counts "
 "are adjusted, and no checks are made for safety; *cell* must be non-``NULL`` "

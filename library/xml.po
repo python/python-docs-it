@@ -17,27 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/xml.rst:4
+#: library/xml.rst:4
 msgid "XML Processing Modules"
 msgstr ""
 
-#: ../Doc/library/xml.rst:12
+#: library/xml.rst:12
 msgid "**Source code:** :source:`Lib/xml/`"
 msgstr ""
 
-#: ../Doc/library/xml.rst:16
+#: library/xml.rst:16
 msgid ""
 "Python's interfaces for processing XML are grouped in the ``xml`` package."
 msgstr ""
 
-#: ../Doc/library/xml.rst:20
+#: library/xml.rst:20
 msgid ""
 "The XML modules are not secure against erroneous or maliciously constructed "
 "data.  If you need to parse untrusted or unauthenticated data see the :ref:"
 "`xml-vulnerabilities` and :ref:`defusedxml-package` sections."
 msgstr ""
 
-#: ../Doc/library/xml.rst:25
+#: library/xml.rst:25
 msgid ""
 "It is important to note that modules in the :mod:`xml` package require that "
 "there be at least one SAX-compliant XML parser available. The Expat parser "
@@ -45,47 +45,47 @@ msgid ""
 "be available."
 msgstr ""
 
-#: ../Doc/library/xml.rst:30
+#: library/xml.rst:30
 msgid ""
 "The documentation for the :mod:`xml.dom` and :mod:`xml.sax` packages are the "
 "definition of the Python bindings for the DOM and SAX interfaces."
 msgstr ""
 
-#: ../Doc/library/xml.rst:33
+#: library/xml.rst:33
 msgid "The XML handling submodules are:"
 msgstr ""
 
-#: ../Doc/library/xml.rst:35
+#: library/xml.rst:35
 msgid ""
 ":mod:`xml.etree.ElementTree`: the ElementTree API, a simple and lightweight "
 "XML processor"
 msgstr ""
 
-#: ../Doc/library/xml.rst:40
+#: library/xml.rst:40
 msgid ":mod:`xml.dom`: the DOM API definition"
 msgstr ""
 
-#: ../Doc/library/xml.rst:41
+#: library/xml.rst:41
 msgid ":mod:`xml.dom.minidom`: a minimal DOM implementation"
 msgstr ""
 
-#: ../Doc/library/xml.rst:42
+#: library/xml.rst:42
 msgid ":mod:`xml.dom.pulldom`: support for building partial DOM trees"
 msgstr ""
 
-#: ../Doc/library/xml.rst:46
+#: library/xml.rst:46
 msgid ":mod:`xml.sax`: SAX2 base classes and convenience functions"
 msgstr ""
 
-#: ../Doc/library/xml.rst:47
+#: library/xml.rst:47
 msgid ":mod:`xml.parsers.expat`: the Expat parser binding"
 msgstr ""
 
-#: ../Doc/library/xml.rst:53
+#: library/xml.rst:53
 msgid "XML vulnerabilities"
 msgstr ""
 
-#: ../Doc/library/xml.rst:55
+#: library/xml.rst:55
 msgid ""
 "The XML processing modules are not secure against maliciously constructed "
 "data. An attacker can abuse XML features to carry out denial of service "
@@ -93,93 +93,93 @@ msgid ""
 "or circumvent firewalls."
 msgstr ""
 
-#: ../Doc/library/xml.rst:60
+#: library/xml.rst:60
 msgid ""
 "The following table gives an overview of the known attacks and whether the "
 "various modules are vulnerable to them."
 msgstr ""
 
-#: ../Doc/library/xml.rst:64
+#: library/xml.rst:64
 msgid "kind"
 msgstr ""
 
-#: ../Doc/library/xml.rst:64
+#: library/xml.rst:64
 msgid "sax"
 msgstr ""
 
-#: ../Doc/library/xml.rst:64
+#: library/xml.rst:64
 msgid "etree"
 msgstr ""
 
-#: ../Doc/library/xml.rst:64
+#: library/xml.rst:64
 msgid "minidom"
 msgstr ""
 
-#: ../Doc/library/xml.rst:64
+#: library/xml.rst:64
 msgid "pulldom"
 msgstr ""
 
-#: ../Doc/library/xml.rst:64
+#: library/xml.rst:64
 msgid "xmlrpc"
 msgstr ""
 
-#: ../Doc/library/xml.rst:66
+#: library/xml.rst:66
 msgid "billion laughs"
 msgstr ""
 
-#: ../Doc/library/xml.rst:66 ../Doc/library/xml.rst:67
+#: library/xml.rst:67
 msgid "**Vulnerable** (1)"
 msgstr ""
 
-#: ../Doc/library/xml.rst:67
+#: library/xml.rst:67
 msgid "quadratic blowup"
 msgstr ""
 
-#: ../Doc/library/xml.rst:68 ../Doc/library/xml.rst:106
+#: library/xml.rst:106
 msgid "external entity expansion"
 msgstr ""
 
-#: ../Doc/library/xml.rst:68 ../Doc/library/xml.rst:69
+#: library/xml.rst:69
 msgid "Safe (5)"
 msgstr ""
 
-#: ../Doc/library/xml.rst:68
+#: library/xml.rst:68
 msgid "Safe (2)"
 msgstr ""
 
-#: ../Doc/library/xml.rst:68
+#: library/xml.rst:68
 msgid "Safe (3)"
 msgstr ""
 
-#: ../Doc/library/xml.rst:68
+#: library/xml.rst:68
 msgid "Safe (4)"
 msgstr ""
 
-#: ../Doc/library/xml.rst:69 ../Doc/library/xml.rst:111
+#: library/xml.rst:111
 msgid "`DTD`_ retrieval"
 msgstr ""
 
-#: ../Doc/library/xml.rst:69 ../Doc/library/xml.rst:70
+#: library/xml.rst:70
 msgid "Safe"
 msgstr ""
 
-#: ../Doc/library/xml.rst:70 ../Doc/library/xml.rst:116
+#: library/xml.rst:116
 msgid "decompression bomb"
 msgstr ""
 
-#: ../Doc/library/xml.rst:70
+#: library/xml.rst:70
 msgid "**Vulnerable**"
 msgstr ""
 
-#: ../Doc/library/xml.rst:71 ../Doc/library/xml.rst:123
+#: library/xml.rst:123
 msgid "large tokens"
 msgstr ""
 
-#: ../Doc/library/xml.rst:71
+#: library/xml.rst:71
 msgid "**Vulnerable** (6)"
 msgstr ""
 
-#: ../Doc/library/xml.rst:74
+#: library/xml.rst:74
 msgid ""
 "Expat 2.4.1 and newer is not vulnerable to the \"billion laughs\" and "
 "\"quadratic blowup\" vulnerabilities. Items still listed as vulnerable due "
@@ -187,29 +187,29 @@ msgid ""
 "EXPAT_VERSION`."
 msgstr ""
 
-#: ../Doc/library/xml.rst:78
+#: library/xml.rst:78
 msgid ""
 ":mod:`xml.etree.ElementTree` doesn't expand external entities and raises a :"
 "exc:`~xml.etree.ElementTree.ParseError` when an entity occurs."
 msgstr ""
 
-#: ../Doc/library/xml.rst:80
+#: library/xml.rst:80
 msgid ""
 ":mod:`xml.dom.minidom` doesn't expand external entities and simply returns "
 "the unexpanded entity verbatim."
 msgstr ""
 
-#: ../Doc/library/xml.rst:82
+#: library/xml.rst:82
 msgid ":mod:`xmlrpc.client` doesn't expand external entities and omits them."
 msgstr ""
 
-#: ../Doc/library/xml.rst:83
+#: library/xml.rst:83
 msgid ""
 "Since Python 3.7.1, external general entities are no longer processed by "
 "default."
 msgstr ""
 
-#: ../Doc/library/xml.rst:85
+#: library/xml.rst:85
 msgid ""
 "Expat 2.6.0 and newer is not vulnerable to denial of service through "
 "quadratic runtime caused by parsing large tokens. Items still listed as "
@@ -217,11 +217,11 @@ msgid ""
 "const:`!pyexpat.EXPAT_VERSION`."
 msgstr ""
 
-#: ../Doc/library/xml.rst:92
+#: library/xml.rst:92
 msgid "billion laughs / exponential entity expansion"
 msgstr ""
 
-#: ../Doc/library/xml.rst:93
+#: library/xml.rst:93
 msgid ""
 "The `Billion Laughs`_ attack -- also known as exponential entity expansion "
 "-- uses multiple levels of nested entities. Each entity refers to another "
@@ -230,11 +230,11 @@ msgid ""
 "consumes lots of memory and CPU time."
 msgstr ""
 
-#: ../Doc/library/xml.rst:99
+#: library/xml.rst:99
 msgid "quadratic blowup entity expansion"
 msgstr ""
 
-#: ../Doc/library/xml.rst:100
+#: library/xml.rst:100
 msgid ""
 "A quadratic blowup attack is similar to a `Billion Laughs`_ attack; it "
 "abuses entity expansion, too. Instead of nested entities it repeats one "
@@ -243,21 +243,21 @@ msgid ""
 "countermeasures that forbid deeply nested entities."
 msgstr ""
 
-#: ../Doc/library/xml.rst:107
+#: library/xml.rst:107
 msgid ""
 "Entity declarations can contain more than just text for replacement. They "
 "can also point to external resources or local files. The XML parser accesses "
 "the resource and embeds the content into the XML document."
 msgstr ""
 
-#: ../Doc/library/xml.rst:112
+#: library/xml.rst:112
 msgid ""
 "Some XML libraries like Python's :mod:`xml.dom.pulldom` retrieve document "
 "type definitions from remote or local locations. The feature has similar "
 "implications as the external entity expansion issue."
 msgstr ""
 
-#: ../Doc/library/xml.rst:117
+#: library/xml.rst:117
 msgid ""
 "Decompression bombs (aka `ZIP bomb`_) apply to all XML libraries that can "
 "parse compressed XML streams such as gzipped HTTP streams or LZMA-compressed "
@@ -265,7 +265,7 @@ msgid ""
 "magnitudes or more."
 msgstr ""
 
-#: ../Doc/library/xml.rst:124
+#: library/xml.rst:124
 msgid ""
 "Expat needs to re-parse unfinished tokens; without the protection introduced "
 "in Expat 2.6.0, this can lead to quadratic runtime that can be used to cause "
@@ -273,17 +273,17 @@ msgid ""
 "`2023-52425`."
 msgstr ""
 
-#: ../Doc/library/xml.rst:129
+#: library/xml.rst:129
 msgid ""
 "The documentation for :pypi:`defusedxml` on PyPI has further information "
 "about all known attack vectors with examples and references."
 msgstr ""
 
-#: ../Doc/library/xml.rst:135
+#: library/xml.rst:135
 msgid "The :mod:`!defusedxml` Package"
 msgstr ""
 
-#: ../Doc/library/xml.rst:137
+#: library/xml.rst:137
 msgid ""
 ":pypi:`defusedxml` is a pure Python package with modified subclasses of all "
 "stdlib XML parsers that prevent any potentially malicious operation. Use of "

@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/itertools.rst:2
+#: library/itertools.rst:2
 msgid ""
 ":mod:`!itertools` --- Functions creating iterators for efficient looping"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:20
+#: library/itertools.rst:20
 msgid ""
 "This module implements a number of :term:`iterator` building blocks inspired "
 "by constructs from APL, Haskell, and SML.  Each has been recast in a form "
 "suitable for Python."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:24
+#: library/itertools.rst:24
 msgid ""
 "The module standardizes a core set of fast, memory efficient tools that are "
 "useful by themselves or in combination.  Together, they form an \"iterator "
@@ -37,14 +37,14 @@ msgid ""
 "efficiently in pure Python."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:29
+#: library/itertools.rst:29
 msgid ""
 "For instance, SML provides a tabulation tool: ``tabulate(f)`` which produces "
 "a sequence ``f(0), f(1), ...``.  The same effect can be achieved in Python "
 "by combining :func:`map` and :func:`count` to form ``map(f, count())``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:33
+#: library/itertools.rst:33
 msgid ""
 "These tools and their built-in counterparts also work well with the high-"
 "speed functions in the :mod:`operator` module.  For example, the "
@@ -53,400 +53,394 @@ msgid ""
 "strict=True)))``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:39
+#: library/itertools.rst:39
 msgid "**Infinite iterators:**"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:42 ../Doc/library/itertools.rst:52
-#: ../Doc/library/itertools.rst:73
+#: library/itertools.rst:52 library/itertools.rst:73
 msgid "Iterator"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:42 ../Doc/library/itertools.rst:52
-#: ../Doc/library/itertools.rst:73
+#: library/itertools.rst:52 library/itertools.rst:73
 msgid "Arguments"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:42 ../Doc/library/itertools.rst:52
-#: ../Doc/library/itertools.rst:73 ../Doc/library/itertools.rst:82
+#: library/itertools.rst:52 library/itertools.rst:82
 msgid "Results"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:42 ../Doc/library/itertools.rst:52
+#: library/itertools.rst:52
 msgid "Example"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:44
+#: library/itertools.rst:44
 msgid ":func:`count`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:44
+#: library/itertools.rst:44
 msgid "[start[, step]]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:44
+#: library/itertools.rst:44
 msgid "start, start+step, start+2*step, ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:44
+#: library/itertools.rst:44
 msgid "``count(10) → 10 11 12 13 14 ...``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:45
+#: library/itertools.rst:45
 msgid ":func:`cycle`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:45
+#: library/itertools.rst:45
 msgid "p"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:45
+#: library/itertools.rst:45
 msgid "p0, p1, ... plast, p0, p1, ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:45
+#: library/itertools.rst:45
 msgid "``cycle('ABCD') → A B C D A B C D ...``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:46
+#: library/itertools.rst:46
 msgid ":func:`repeat`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:46
+#: library/itertools.rst:46
 msgid "elem [,n]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:46
+#: library/itertools.rst:46
 msgid "elem, elem, elem, ... endlessly or up to n times"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:46
+#: library/itertools.rst:46
 msgid "``repeat(10, 3) → 10 10 10``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:49
+#: library/itertools.rst:49
 msgid "**Iterators terminating on the shortest input sequence:**"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:54
+#: library/itertools.rst:54
 msgid ":func:`accumulate`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:54
+#: library/itertools.rst:54
 msgid "p [,func]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:54
+#: library/itertools.rst:54
 msgid "p0, p0+p1, p0+p1+p2, ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:54
+#: library/itertools.rst:54
 msgid "``accumulate([1,2,3,4,5]) → 1 3 6 10 15``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:55
+#: library/itertools.rst:55
 msgid ":func:`batched`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:55
+#: library/itertools.rst:55
 msgid "p, n"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:55
+#: library/itertools.rst:55
 msgid "(p0, p1, ..., p_n-1), ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:55
+#: library/itertools.rst:55
 msgid "``batched('ABCDEFG', n=3) → ABC DEF G``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:56
+#: library/itertools.rst:56
 msgid ":func:`chain`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:56 ../Doc/library/itertools.rst:67
+#: library/itertools.rst:67
 msgid "p, q, ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:56 ../Doc/library/itertools.rst:57
+#: library/itertools.rst:57
 msgid "p0, p1, ... plast, q0, q1, ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:56
+#: library/itertools.rst:56
 msgid "``chain('ABC', 'DEF') → A B C D E F``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:57
+#: library/itertools.rst:57
 msgid ":func:`chain.from_iterable`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:57 ../Doc/library/itertools.rst:63
+#: library/itertools.rst:63
 msgid "iterable"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:57
+#: library/itertools.rst:57
 msgid "``chain.from_iterable(['ABC', 'DEF']) → A B C D E F``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:58
+#: library/itertools.rst:58
 msgid ":func:`compress`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:58
+#: library/itertools.rst:58
 msgid "data, selectors"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:58
+#: library/itertools.rst:58
 msgid "(d[0] if s[0]), (d[1] if s[1]), ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:58
+#: library/itertools.rst:58
 msgid "``compress('ABCDEF', [1,0,1,0,1,1]) → A C E F``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:59
+#: library/itertools.rst:59
 msgid ":func:`dropwhile`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:59 ../Doc/library/itertools.rst:60
-#: ../Doc/library/itertools.rst:65
+#: library/itertools.rst:60 library/itertools.rst:65
 msgid "predicate, seq"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:59
+#: library/itertools.rst:59
 msgid "seq[n], seq[n+1], starting when predicate fails"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:59
+#: library/itertools.rst:59
 msgid "``dropwhile(lambda x: x<5, [1,4,6,3,8]) → 6 3 8``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:60
+#: library/itertools.rst:60
 msgid ":func:`filterfalse`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:60
+#: library/itertools.rst:60
 msgid "elements of seq where predicate(elem) fails"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:60
+#: library/itertools.rst:60
 msgid "``filterfalse(lambda x: x<5, [1,4,6,3,8]) → 6 8``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:61
+#: library/itertools.rst:61
 msgid ":func:`groupby`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:61
+#: library/itertools.rst:61
 msgid "iterable[, key]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:61
+#: library/itertools.rst:61
 msgid "sub-iterators grouped by value of key(v)"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:62
+#: library/itertools.rst:62
 msgid ":func:`islice`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:62
+#: library/itertools.rst:62
 msgid "seq, [start,] stop [, step]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:62
+#: library/itertools.rst:62
 msgid "elements from seq[start:stop:step]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:62
+#: library/itertools.rst:62
 msgid "``islice('ABCDEFG', 2, None) → C D E F G``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:63
+#: library/itertools.rst:63
 msgid ":func:`pairwise`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:63
+#: library/itertools.rst:63
 msgid "(p[0], p[1]), (p[1], p[2])"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:63
+#: library/itertools.rst:63
 msgid "``pairwise('ABCDEFG') → AB BC CD DE EF FG``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:64
+#: library/itertools.rst:64
 msgid ":func:`starmap`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:64
+#: library/itertools.rst:64
 msgid "func, seq"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:64
+#: library/itertools.rst:64
 msgid "func(\\*seq[0]), func(\\*seq[1]), ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:64
+#: library/itertools.rst:64
 msgid "``starmap(pow, [(2,5), (3,2), (10,3)]) → 32 9 1000``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:65
+#: library/itertools.rst:65
 msgid ":func:`takewhile`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:65
+#: library/itertools.rst:65
 msgid "seq[0], seq[1], until predicate fails"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:65
+#: library/itertools.rst:65
 msgid "``takewhile(lambda x: x<5, [1,4,6,3,8]) → 1 4``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:66
+#: library/itertools.rst:66
 msgid ":func:`tee`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:66
+#: library/itertools.rst:66
 msgid "it, n"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:66
+#: library/itertools.rst:66
 msgid "it1, it2, ... itn  splits one iterator into n"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:67
+#: library/itertools.rst:67
 msgid ":func:`zip_longest`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:67
+#: library/itertools.rst:67
 msgid "(p[0], q[0]), (p[1], q[1]), ..."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:67
+#: library/itertools.rst:67
 msgid "``zip_longest('ABCD', 'xy', fillvalue='-') → Ax By C- D-``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:70
+#: library/itertools.rst:70
 msgid "**Combinatoric iterators:**"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:75
+#: library/itertools.rst:75
 msgid ":func:`product`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:75
+#: library/itertools.rst:75
 msgid "p, q, ... [repeat=1]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:75
+#: library/itertools.rst:75
 msgid "cartesian product, equivalent to a nested for-loop"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:76
+#: library/itertools.rst:76
 msgid ":func:`permutations`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:76
+#: library/itertools.rst:76
 msgid "p[, r]"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:76
+#: library/itertools.rst:76
 msgid "r-length tuples, all possible orderings, no repeated elements"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:77
+#: library/itertools.rst:77
 msgid ":func:`combinations`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:77 ../Doc/library/itertools.rst:78
+#: library/itertools.rst:78
 msgid "p, r"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:77
+#: library/itertools.rst:77
 msgid "r-length tuples, in sorted order, no repeated elements"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:78
+#: library/itertools.rst:78
 msgid ":func:`combinations_with_replacement`"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:78
+#: library/itertools.rst:78
 msgid "r-length tuples, in sorted order, with repeated elements"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:82
+#: library/itertools.rst:82
 msgid "Examples"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:84
+#: library/itertools.rst:84
 msgid "``product('ABCD', repeat=2)``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:84
+#: library/itertools.rst:84
 msgid "``AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:85
+#: library/itertools.rst:85
 msgid "``permutations('ABCD', 2)``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:85
+#: library/itertools.rst:85
 msgid "``AB AC AD BA BC BD CA CB CD DA DB DC``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:86
+#: library/itertools.rst:86
 msgid "``combinations('ABCD', 2)``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:86
+#: library/itertools.rst:86
 msgid "``AB AC AD BC BD CD``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:87
+#: library/itertools.rst:87
 msgid "``combinations_with_replacement('ABCD', 2)``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:87
+#: library/itertools.rst:87
 msgid "``AA AB AC AD BB BC BD CC CD DD``"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:94
+#: library/itertools.rst:94
 msgid "Itertool Functions"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:96
+#: library/itertools.rst:96
 msgid ""
 "The following module functions all construct and return iterators. Some "
 "provide streams of infinite length, so they should only be accessed by "
 "functions or loops that truncate the stream."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:103
+#: library/itertools.rst:103
 msgid ""
 "Make an iterator that returns accumulated sums or accumulated results from "
 "other binary functions."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:106
+#: library/itertools.rst:106
 msgid ""
 "The *function* defaults to addition.  The *function* should accept two "
 "arguments, an accumulated total and a value from the *iterable*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:109
+#: library/itertools.rst:109
 msgid ""
 "If an *initial* value is provided, the accumulation will start with that "
 "value and the output will have one more element than the input iterable."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:113 ../Doc/library/itertools.rst:185
-#: ../Doc/library/itertools.rst:244 ../Doc/library/itertools.rst:287
-#: ../Doc/library/itertools.rst:484 ../Doc/library/itertools.rst:515
-#: ../Doc/library/itertools.rst:550 ../Doc/library/itertools.rst:623
-#: ../Doc/library/itertools.rst:684 ../Doc/library/itertools.rst:726
+#: library/itertools.rst:185 library/itertools.rst:287
+#: library/itertools.rst:515 library/itertools.rst:623
+#: library/itertools.rst:726
 msgid "Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:134
+#: library/itertools.rst:134
 msgid ""
 "The *function* argument can be set to :func:`min` for a running minimum, :"
 "func:`max` for a running maximum, or :func:`operator.mul` for a running "
@@ -455,33 +449,33 @@ msgid ""
 "payments:"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:153
+#: library/itertools.rst:153
 msgid ""
 "See :func:`functools.reduce` for a similar function that returns only the "
 "final accumulated value."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:158
+#: library/itertools.rst:158
 msgid "Added the optional *function* parameter."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:161
+#: library/itertools.rst:161
 msgid "Added the optional *initial* parameter."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:167
+#: library/itertools.rst:167
 msgid ""
 "Batch data from the *iterable* into tuples of length *n*. The last batch may "
 "be shorter than *n*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:170
+#: library/itertools.rst:170
 msgid ""
 "If *strict* is true, will raise a :exc:`ValueError` if the final batch is "
 "shorter than *n*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:173
+#: library/itertools.rst:173
 msgid ""
 "Loops over the input iterable and accumulates data into tuples up to size "
 "*n*.  The input is consumed lazily, just enough to fill a batch. The result "
@@ -489,11 +483,11 @@ msgid ""
 "exhausted:"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:199
+#: library/itertools.rst:199
 msgid "Added the *strict* option."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:205
+#: library/itertools.rst:205
 msgid ""
 "Make an iterator that returns elements from the first iterable until it is "
 "exhausted, then proceeds to the next iterable, until all of the iterables "
@@ -501,17 +495,17 @@ msgid ""
 "sequence. Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:218
+#: library/itertools.rst:218
 msgid ""
 "Alternate constructor for :func:`chain`.  Gets chained inputs from a single "
 "iterable argument that is evaluated lazily.  Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:229
+#: library/itertools.rst:229
 msgid "Return *r* length subsequences of elements from the input *iterable*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:231
+#: library/itertools.rst:231
 msgid ""
 "The output is a subsequence of :func:`product` keeping only entries that are "
 "subsequences of the *iterable*.  The length of the output is given by :func:"
@@ -519,27 +513,27 @@ msgid ""
 "when ``r > n``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:236
+#: library/itertools.rst:236
 msgid ""
 "The combination tuples are emitted in lexicographic order according to the "
 "order of the input *iterable*. If the input *iterable* is sorted, the output "
 "tuples will be produced in sorted order."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:240
+#: library/itertools.rst:240
 msgid ""
 "Elements are treated as unique based on their position, not on their value.  "
 "If the input elements are unique, there will be no repeated values within "
 "each combination."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:271
+#: library/itertools.rst:271
 msgid ""
 "Return *r* length subsequences of elements from the input *iterable* "
 "allowing individual elements to be repeated more than once."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:274
+#: library/itertools.rst:274
 msgid ""
 "The output is a subsequence of :func:`product` that keeps only entries that "
 "are subsequences (with possible repeated elements) of the *iterable*.  The "
@@ -547,79 +541,79 @@ msgid ""
 "> 0``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:279
+#: library/itertools.rst:279
 msgid ""
 "The combination tuples are emitted in lexicographic order according to the "
 "order of the input *iterable*. if the input *iterable* is sorted, the output "
 "tuples will be produced in sorted order."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:283
+#: library/itertools.rst:283
 msgid ""
 "Elements are treated as unique based on their position, not on their value.  "
 "If the input elements are unique, the generated combinations will also be "
 "unique."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:313
+#: library/itertools.rst:313
 msgid ""
 "Make an iterator that returns elements from *data* where the corresponding "
 "element in *selectors* is true.  Stops when either the *data* or *selectors* "
 "iterables have been exhausted.  Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:327
+#: library/itertools.rst:327
 msgid ""
 "Make an iterator that returns evenly spaced values beginning with *start*. "
 "Can be used with :func:`map` to generate consecutive data points or with :"
 "func:`zip` to add sequence numbers.  Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:340
+#: library/itertools.rst:340
 msgid ""
 "When counting with floating point numbers, better accuracy can sometimes be "
 "achieved by substituting multiplicative code such as: ``(start + step * i "
 "for i in count())``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:344
+#: library/itertools.rst:344
 msgid "Added *step* argument and allowed non-integer arguments."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:350
+#: library/itertools.rst:350
 msgid ""
 "Make an iterator returning elements from the *iterable* and saving a copy of "
 "each.  When the iterable is exhausted, return elements from the saved copy.  "
 "Repeats indefinitely.  Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:364
+#: library/itertools.rst:364
 msgid ""
 "This itertool may require significant auxiliary storage (depending on the "
 "length of the iterable)."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:370
+#: library/itertools.rst:370
 msgid ""
 "Make an iterator that drops elements from the *iterable* while the "
 "*predicate* is true and afterwards returns every element.  Roughly "
 "equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:386
+#: library/itertools.rst:386
 msgid ""
 "Note this does not produce *any* output until the predicate first becomes "
 "false, so this itertool may have a lengthy start-up time."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:392
+#: library/itertools.rst:392
 msgid ""
 "Make an iterator that filters elements from the *iterable* returning only "
 "those for which the *predicate* returns a false value.  If *predicate* is "
 "``None``, returns the items that are false.  Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:408
+#: library/itertools.rst:408
 msgid ""
 "Make an iterator that returns consecutive keys and groups from the "
 "*iterable*. The *key* is a function computing a key value for each element.  "
@@ -628,7 +622,7 @@ msgid ""
 "sorted on the same key function."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:414
+#: library/itertools.rst:414
 msgid ""
 "The operation of :func:`groupby` is similar to the ``uniq`` filter in Unix.  "
 "It generates a break or new group every time the value of the key function "
@@ -637,7 +631,7 @@ msgid ""
 "aggregates common elements regardless of their input order."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:420
+#: library/itertools.rst:420
 msgid ""
 "The returned group is itself an iterator that shares the underlying iterable "
 "with :func:`groupby`.  Because the source is shared, when the :func:"
@@ -645,60 +639,60 @@ msgid ""
 "if that data is needed later, it should be stored as a list::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:432
+#: library/itertools.rst:432
 msgid ":func:`groupby` is roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:470
+#: library/itertools.rst:470
 msgid ""
 "Make an iterator that returns selected elements from the iterable. Works "
 "like sequence slicing but does not support negative values for *start*, "
 "*stop*, or *step*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:474
+#: library/itertools.rst:474
 msgid ""
 "If *start* is zero or ``None``, iteration starts at zero.  Otherwise, "
 "elements from the iterable are skipped until *start* is reached."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:477
+#: library/itertools.rst:477
 msgid ""
 "If *stop* is ``None``, iteration continues until the iterator is exhausted, "
 "if at all.  Otherwise, it stops at the specified position."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:480
+#: library/itertools.rst:480
 msgid ""
 "If *step* is ``None``, the step defaults to one.  Elements are returned "
 "consecutively unless *step* is set higher than one which results in items "
 "being skipped."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:509
+#: library/itertools.rst:509
 msgid "Return successive overlapping pairs taken from the input *iterable*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:511
+#: library/itertools.rst:511
 msgid ""
 "The number of 2-tuples in the output iterator will be one fewer than the "
 "number of inputs.  It will be empty if the input iterable has fewer than two "
 "values."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:530
+#: library/itertools.rst:530
 msgid ""
 "Return successive *r* length `permutations of elements <https://www."
 "britannica.com/science/permutation>`_ from the *iterable*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:533
+#: library/itertools.rst:533
 msgid ""
 "If *r* is not specified or is ``None``, then *r* defaults to the length of "
 "the *iterable* and all possible full-length permutations are generated."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:537
+#: library/itertools.rst:537
 msgid ""
 "The output is a subsequence of :func:`product` where entries with repeated "
 "elements have been filtered out.  The length of the output is given by :func:"
@@ -706,32 +700,32 @@ msgid ""
 "``r > n``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:542
+#: library/itertools.rst:542
 msgid ""
 "The permutation tuples are emitted in lexicographic order according to the "
 "order of the input *iterable*.  If the input *iterable* is sorted, the "
 "output tuples will be produced in sorted order."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:546
+#: library/itertools.rst:546
 msgid ""
 "Elements are treated as unique based on their position, not on their value.  "
 "If the input elements are unique, there will be no repeated values within a "
 "permutation."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:583
+#: library/itertools.rst:583
 msgid "Cartesian product of input iterables."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:585
+#: library/itertools.rst:585
 msgid ""
 "Roughly equivalent to nested for-loops in a generator expression. For "
 "example, ``product(A, B)`` returns the same as ``((x,y) for x in A for y in "
 "B)``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:588
+#: library/itertools.rst:588
 msgid ""
 "The nested loops cycle like an odometer with the rightmost element advancing "
 "on every iteration.  This pattern creates a lexicographic ordering so that "
@@ -739,59 +733,59 @@ msgid ""
 "sorted order."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:593
+#: library/itertools.rst:593
 msgid ""
 "To compute the product of an iterable with itself, specify the number of "
 "repetitions with the optional *repeat* keyword argument.  For example, "
 "``product(A, repeat=4)`` means the same as ``product(A, A, A, A)``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:597
+#: library/itertools.rst:597
 msgid ""
 "This function is roughly equivalent to the following code, except that the "
 "actual implementation does not build up intermediate results in memory::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:613
+#: library/itertools.rst:613
 msgid ""
 "Before :func:`product` runs, it completely consumes the input iterables, "
 "keeping pools of values in memory to generate the products.  Accordingly, it "
 "is only useful with finite inputs."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:620
+#: library/itertools.rst:620
 msgid ""
 "Make an iterator that returns *object* over and over again. Runs "
 "indefinitely unless the *times* argument is specified."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:634
+#: library/itertools.rst:634
 msgid ""
 "A common use for *repeat* is to supply a stream of constant values to *map* "
 "or *zip*:"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:645
+#: library/itertools.rst:645
 msgid ""
 "Make an iterator that computes the *function* using arguments obtained from "
 "the *iterable*.  Used instead of :func:`map` when argument parameters have "
 "already been \"pre-zipped\" into tuples."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:649
+#: library/itertools.rst:649
 msgid ""
 "The difference between :func:`map` and :func:`starmap` parallels the "
 "distinction between ``function(a,b)`` and ``function(*c)``. Roughly "
 "equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:661
+#: library/itertools.rst:661
 msgid ""
 "Make an iterator that returns elements from the *iterable* as long as the "
 "*predicate* is true.  Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:671
+#: library/itertools.rst:671
 msgid ""
 "Note, the element that first fails the predicate condition is consumed from "
 "the input iterator and there is no way to access it. This could be an issue "
@@ -801,25 +795,25 @@ msgid ""
 "readthedocs.io/en/stable/api.html#more_itertools.before_and_after>`_ instead."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:682
+#: library/itertools.rst:682
 msgid "Return *n* independent iterators from a single iterable."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:702
+#: library/itertools.rst:702
 msgid ""
 "Once a :func:`tee` has been created, the original *iterable* should not be "
 "used anywhere else; otherwise, the *iterable* could get advanced without the "
 "tee objects being informed."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:706
+#: library/itertools.rst:706
 msgid ""
 "``tee`` iterators are not threadsafe. A :exc:`RuntimeError` may be raised "
 "when simultaneously using iterators returned by the same :func:`tee` call, "
 "even if the original *iterable* is threadsafe."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:710
+#: library/itertools.rst:710
 msgid ""
 "This itertool may require significant auxiliary storage (depending on how "
 "much temporary data needs to be stored). In general, if one iterator uses "
@@ -827,38 +821,38 @@ msgid ""
 "func:`list` instead of :func:`tee`."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:718
+#: library/itertools.rst:718
 msgid "Make an iterator that aggregates elements from each of the *iterables*."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:721
+#: library/itertools.rst:721
 msgid ""
 "If the iterables are of uneven length, missing values are filled-in with "
 "*fillvalue*.  If not specified, *fillvalue* defaults to ``None``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:724
+#: library/itertools.rst:724
 msgid "Iteration continues until the longest iterable is exhausted."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:750
+#: library/itertools.rst:750
 msgid ""
 "If one of the iterables is potentially infinite, then the :func:"
 "`zip_longest` function should be wrapped with something that limits the "
 "number of calls (for example :func:`islice` or :func:`takewhile`)."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:758
+#: library/itertools.rst:758
 msgid "Itertools Recipes"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:760
+#: library/itertools.rst:760
 msgid ""
 "This section shows recipes for creating an extended toolset using the "
 "existing itertools as building blocks."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:763
+#: library/itertools.rst:763
 msgid ""
 "The primary purpose of the itertools recipes is educational.  The recipes "
 "show various ways of thinking about individual tools — for example, that "
@@ -870,7 +864,7 @@ msgid ""
 "``map()``, ``filter()``, ``reversed()``, and ``enumerate()``."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:772
+#: library/itertools.rst:772
 msgid ""
 "A secondary purpose of the recipes is to serve as an incubator.  The "
 "``accumulate()``, ``compress()``, and ``pairwise()`` itertools started out "
@@ -878,13 +872,13 @@ msgid ""
 "``sieve()`` recipes are being tested to see whether they prove their worth."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:777
+#: library/itertools.rst:777
 msgid ""
 "Substantially all of these recipes and many, many others can be installed "
 "from the :pypi:`more-itertools` project found on the Python Package Index::"
 msgstr ""
 
-#: ../Doc/library/itertools.rst:783
+#: library/itertools.rst:783
 msgid ""
 "Many of the recipes offer the same high performance as the underlying "
 "toolset. Superior memory performance is kept by processing elements one at a "
@@ -896,6 +890,6 @@ msgid ""
 "overhead."
 msgstr ""
 
-#: ../Doc/library/itertools.rst:959
+#: library/itertools.rst:959
 msgid "The following recipes have a more mathematical flavor:"
 msgstr ""

@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/i18n.rst:5
+#: library/i18n.rst:5
 msgid "Internationalization"
 msgstr ""
 
-#: ../Doc/library/i18n.rst:7
+#: library/i18n.rst:7
 msgid ""
 "The modules described in this chapter help you write software that is "
 "independent of language and locale by providing mechanisms for selecting a "
@@ -29,6 +29,6 @@ msgid ""
 "local conventions."
 msgstr ""
 
-#: ../Doc/library/i18n.rst:12
+#: library/i18n.rst:12
 msgid "The list of modules described in this chapter is:"
 msgstr ""

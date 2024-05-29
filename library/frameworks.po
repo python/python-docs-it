@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/frameworks.rst:5
+#: library/frameworks.rst:5
 msgid "Program Frameworks"
 msgstr ""
 
-#: ../Doc/library/frameworks.rst:7
+#: library/frameworks.rst:7
 msgid ""
 "The modules described in this chapter are frameworks that will largely "
 "dictate the structure of your program.  Currently the modules described  "
 "here are all oriented toward writing command-line interfaces."
 msgstr ""
 
-#: ../Doc/library/frameworks.rst:11
+#: library/frameworks.rst:11
 msgid "The full list of modules described in this chapter is:"
 msgstr ""

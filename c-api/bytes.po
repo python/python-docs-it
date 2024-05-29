@@ -17,53 +17,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/bytes.rst:6
+#: c-api/bytes.rst:6
 msgid "Bytes Objects"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:8
+#: c-api/bytes.rst:8
 msgid ""
 "These functions raise :exc:`TypeError` when expecting a bytes parameter and "
 "called with a non-bytes parameter."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:16
+#: c-api/bytes.rst:16
 msgid "This subtype of :c:type:`PyObject` represents a Python bytes object."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:21
+#: c-api/bytes.rst:21
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python bytes type; it "
 "is the same object as :class:`bytes` in the Python layer."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:27
+#: c-api/bytes.rst:27
 msgid ""
 "Return true if the object *o* is a bytes object or an instance of a subtype "
 "of the bytes type.  This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:33
+#: c-api/bytes.rst:33
 msgid ""
 "Return true if the object *o* is a bytes object, but not an instance of a "
 "subtype of the bytes type.  This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:39
+#: c-api/bytes.rst:39
 msgid ""
 "Return a new bytes object with a copy of the string *v* as value on success, "
 "and ``NULL`` on failure.  The parameter *v* must not be ``NULL``; it will "
 "not be checked."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:46
+#: c-api/bytes.rst:46
 msgid ""
 "Return a new bytes object with a copy of the string *v* as value and length "
 "*len* on success, and ``NULL`` on failure.  If *v* is ``NULL``, the contents "
 "of the bytes object are uninitialized."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:53
+#: c-api/bytes.rst:53
 msgid ""
 "Take a C :c:func:`printf`\\ -style *format* string and a variable number of "
 "arguments, calculate the size of the resulting Python bytes object and "
@@ -73,187 +73,186 @@ msgid ""
 "allowed:"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:65
+#: c-api/bytes.rst:65
 msgid "Format Characters"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:65
+#: c-api/bytes.rst:65
 msgid "Type"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:65
+#: c-api/bytes.rst:65
 msgid "Comment"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:67
+#: c-api/bytes.rst:67
 msgid "``%%``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:67
+#: c-api/bytes.rst:67
 msgid "*n/a*"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:67
+#: c-api/bytes.rst:67
 msgid "The literal % character."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:69
+#: c-api/bytes.rst:69
 msgid "``%c``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:69 ../Doc/c-api/bytes.rst:72
-#: ../Doc/c-api/bytes.rst:90 ../Doc/c-api/bytes.rst:93
+#: c-api/bytes.rst:72 c-api/bytes.rst:93
 msgid "int"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:69
+#: c-api/bytes.rst:69
 msgid "A single byte, represented as a C int."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:72
+#: c-api/bytes.rst:72
 msgid "``%d``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:72
+#: c-api/bytes.rst:72
 msgid "Equivalent to ``printf(\"%d\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:75
+#: c-api/bytes.rst:75
 msgid "``%u``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:75
+#: c-api/bytes.rst:75
 msgid "unsigned int"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:75
+#: c-api/bytes.rst:75
 msgid "Equivalent to ``printf(\"%u\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:78
+#: c-api/bytes.rst:78
 msgid "``%ld``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:78
+#: c-api/bytes.rst:78
 msgid "long"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:78
+#: c-api/bytes.rst:78
 msgid "Equivalent to ``printf(\"%ld\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:81
+#: c-api/bytes.rst:81
 msgid "``%lu``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:81
+#: c-api/bytes.rst:81
 msgid "unsigned long"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:81
+#: c-api/bytes.rst:81
 msgid "Equivalent to ``printf(\"%lu\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:84
+#: c-api/bytes.rst:84
 msgid "``%zd``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:84
+#: c-api/bytes.rst:84
 msgid ":c:type:`\\ Py_ssize_t`"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:84
+#: c-api/bytes.rst:84
 msgid "Equivalent to ``printf(\"%zd\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:87
+#: c-api/bytes.rst:87
 msgid "``%zu``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:87
+#: c-api/bytes.rst:87
 msgid "size_t"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:87
+#: c-api/bytes.rst:87
 msgid "Equivalent to ``printf(\"%zu\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:90
+#: c-api/bytes.rst:90
 msgid "``%i``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:90
+#: c-api/bytes.rst:90
 msgid "Equivalent to ``printf(\"%i\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:93
+#: c-api/bytes.rst:93
 msgid "``%x``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:93
+#: c-api/bytes.rst:93
 msgid "Equivalent to ``printf(\"%x\")``. [1]_"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:96
+#: c-api/bytes.rst:96
 msgid "``%s``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:96
+#: c-api/bytes.rst:96
 msgid "const char\\*"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:96
+#: c-api/bytes.rst:96
 msgid "A null-terminated C character array."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:99
+#: c-api/bytes.rst:99
 msgid "``%p``"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:99
+#: c-api/bytes.rst:99
 msgid "const void\\*"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:99
+#: c-api/bytes.rst:99
 msgid ""
 "The hex representation of a C pointer. Mostly equivalent to "
 "``printf(\"%p\")`` except that it is guaranteed to start with the literal "
 "``0x`` regardless of what the platform's ``printf`` yields."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:108
+#: c-api/bytes.rst:108
 msgid ""
 "An unrecognized format character causes all the rest of the format string to "
 "be copied as-is to the result object, and any extra arguments discarded."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:111
+#: c-api/bytes.rst:111
 msgid ""
 "For integer specifiers (d, u, ld, lu, zd, zu, i, x): the 0-conversion flag "
 "has effect even when a precision is given."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:117
+#: c-api/bytes.rst:117
 msgid ""
 "Identical to :c:func:`PyBytes_FromFormat` except that it takes exactly two "
 "arguments."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:123
+#: c-api/bytes.rst:123
 msgid ""
 "Return the bytes representation of object *o* that implements the buffer "
 "protocol."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:129
+#: c-api/bytes.rst:129
 msgid "Return the length of the bytes in bytes object *o*."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:134
+#: c-api/bytes.rst:134
 msgid "Similar to :c:func:`PyBytes_Size`, but without error checking."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:139
+#: c-api/bytes.rst:139
 msgid ""
 "Return a pointer to the contents of *o*.  The pointer refers to the internal "
 "buffer of *o*, which consists of ``len(o) + 1`` bytes.  The last byte in the "
@@ -264,24 +263,24 @@ msgid ""
 "`PyBytes_AsString` returns ``NULL`` and raises :exc:`TypeError`."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:151
+#: c-api/bytes.rst:151
 msgid "Similar to :c:func:`PyBytes_AsString`, but without error checking."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:156
+#: c-api/bytes.rst:156
 msgid ""
 "Return the null-terminated contents of the object *obj* through the output "
 "variables *buffer* and *length*. Returns ``0`` on success."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:160
+#: c-api/bytes.rst:160
 msgid ""
 "If *length* is ``NULL``, the bytes object may not contain embedded null "
 "bytes; if it does, the function returns ``-1`` and a :exc:`ValueError` is "
 "raised."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:164
+#: c-api/bytes.rst:164
 msgid ""
 "The buffer refers to an internal buffer of *obj*, which includes an "
 "additional null byte at the end (not counted in *length*).  The data must "
@@ -291,13 +290,13 @@ msgid ""
 "returns ``-1`` and raises :exc:`TypeError`."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:171
+#: c-api/bytes.rst:171
 msgid ""
 "Previously, :exc:`TypeError` was raised when embedded null bytes were "
 "encountered in the bytes object."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:178
+#: c-api/bytes.rst:178
 msgid ""
 "Create a new bytes object in *\\*bytes* containing the contents of *newpart* "
 "appended to *bytes*; the caller will own the new reference.  The reference "
@@ -306,14 +305,14 @@ msgid ""
 "of *\\*bytes* will be set to ``NULL``; the appropriate exception will be set."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:187
+#: c-api/bytes.rst:187
 msgid ""
 "Create a new bytes object in *\\*bytes* containing the contents of *newpart* "
 "appended to *bytes*.  This version releases the :term:`strong reference` to "
 "*newpart* (i.e. decrements its reference count)."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:194
+#: c-api/bytes.rst:194
 msgid ""
 "Resize a bytes object. *newsize* will be the new length of the bytes object. "
 "You can think of it as creating a new bytes object and destroying the old "
@@ -325,10 +324,10 @@ msgid ""
 "``NULL``, :exc:`MemoryError` is set, and ``-1`` is returned."
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:11
+#: c-api/bytes.rst:11
 msgid "object"
 msgstr ""
 
-#: ../Doc/c-api/bytes.rst:11
+#: c-api/bytes.rst:11
 msgid "bytes"
 msgstr ""

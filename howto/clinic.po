@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/howto/clinic.rst:8
+#: howto/clinic.rst:8
 msgid "Argument Clinic How-To"
 msgstr ""
 
-#: ../Doc/howto/clinic.rst:13
+#: howto/clinic.rst:13
 msgid ""
 "The Argument Clinic How-TO has been moved to the `Python Developer's Guide "
 "<https://devguide.python.org/development-tools/clinic/>`__."

@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/extending/windows.rst:8
+#: extending/windows.rst:8
 msgid "Building C and C++ Extensions on Windows"
 msgstr ""
 
-#: ../Doc/extending/windows.rst:10
+#: extending/windows.rst:10
 msgid ""
 "This chapter briefly explains how to create a Windows extension module for "
 "Python using Microsoft Visual C++, and follows with more detailed background "
@@ -31,7 +31,7 @@ msgid ""
 "on both Unix and Windows."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:17
+#: extending/windows.rst:17
 msgid ""
 "Module authors are encouraged to use the distutils approach for building "
 "extension modules, instead of the one described in this section. You will "
@@ -39,7 +39,7 @@ msgid ""
 "Visual C++."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:24
+#: extending/windows.rst:24
 msgid ""
 "This chapter mentions a number of filenames that include an encoded Python "
 "version number.  These filenames are represented with the version number "
@@ -49,11 +49,11 @@ msgid ""
 "actually be ``22``."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:34
+#: extending/windows.rst:34
 msgid "A Cookbook Approach"
 msgstr ""
 
-#: ../Doc/extending/windows.rst:36
+#: extending/windows.rst:36
 msgid ""
 "There are two approaches to building extension modules on Windows, just as "
 "there are on Unix: use the ``setuptools`` package to control the build "
@@ -65,18 +65,18 @@ msgid ""
 "library module."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:48
+#: extending/windows.rst:48
 msgid "Differences Between Unix and Windows"
 msgstr ""
 
-#: ../Doc/extending/windows.rst:53
+#: extending/windows.rst:53
 msgid ""
 "Unix and Windows use completely different paradigms for run-time loading of "
 "code.  Before you try to build a module that can be dynamically loaded, be "
 "aware of how your system works."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:57
+#: extending/windows.rst:57
 msgid ""
 "In Unix, a shared object (:file:`.so`) file contains code to be used by the "
 "program, and also the names of functions and data that it expects to find in "
@@ -86,7 +86,7 @@ msgid ""
 "memory. This is basically a link operation."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:64
+#: extending/windows.rst:64
 msgid ""
 "In Windows, a dynamic-link library (:file:`.dll`) file has no dangling "
 "references.  Instead, an access to functions or data goes through a lookup "
@@ -96,7 +96,7 @@ msgid ""
 "data."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:70
+#: extending/windows.rst:70
 msgid ""
 "In Unix, there is only one type of library file (:file:`.a`) which contains "
 "code from several object files (:file:`.o`).  During the link step to create "
@@ -106,7 +106,7 @@ msgid ""
 "that object file."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:76
+#: extending/windows.rst:76
 msgid ""
 "In Windows, there are two types of library, a static library and an import "
 "library (both called :file:`.lib`).  A static library is like a Unix :file:`."
@@ -120,7 +120,7 @@ msgid ""
 "application or DLL."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:86
+#: extending/windows.rst:86
 msgid ""
 "Suppose you are building two dynamic-load modules, B and C, which should "
 "share another block of code A.  On Unix, you would *not* pass :file:`A.a` to "
@@ -131,7 +131,7 @@ msgid ""
 "just contains information which will be used at runtime to access A's code."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:94
+#: extending/windows.rst:94
 msgid ""
 "In Windows, using an import library is sort of like using ``import spam``; "
 "it gives you access to spam's names, but does not create a separate copy.  "
@@ -139,24 +139,24 @@ msgid ""
 "create a separate copy."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:103
+#: extending/windows.rst:103
 msgid "Using DLLs in Practice"
 msgstr ""
 
-#: ../Doc/extending/windows.rst:108
+#: extending/windows.rst:108
 msgid ""
 "Windows Python is built in Microsoft Visual C++; using other compilers may "
 "or may not work.  The rest of this section is MSVC++ specific."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:111
+#: extending/windows.rst:111
 msgid ""
 "When creating DLLs in Windows, you must pass :file:`pythonXY.lib` to the "
 "linker. To build two DLLs, spam and ni (which uses C functions found in "
 "spam), you could use these commands::"
 msgstr ""
 
-#: ../Doc/extending/windows.rst:118
+#: extending/windows.rst:118
 msgid ""
 "The first command created three files: :file:`spam.obj`, :file:`spam.dll` "
 "and :file:`spam.lib`.  :file:`Spam.dll` does not contain any Python "
@@ -164,14 +164,14 @@ msgid ""
 "the Python code thanks to :file:`pythonXY.lib`."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:123
+#: extending/windows.rst:123
 msgid ""
 "The second command created :file:`ni.dll` (and :file:`.obj` and :file:`."
 "lib`), which knows how to find the necessary functions from spam, and also "
 "from the Python executable."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:127
+#: extending/windows.rst:127
 msgid ""
 "Not every identifier is exported to the lookup table.  If you want any other "
 "modules (including Python) to be able to see your identifiers, you have to "
@@ -179,7 +179,7 @@ msgid ""
 "initspam(void)`` or ``PyObject _declspec(dllexport) *NiGetSpamData(void)``."
 msgstr ""
 
-#: ../Doc/extending/windows.rst:132
+#: extending/windows.rst:132
 msgid ""
 "Developer Studio will throw in a lot of import libraries that you do not "
 "really need, adding about 100K to your executable.  To get rid of them, use "

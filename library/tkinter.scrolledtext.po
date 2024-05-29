@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/tkinter.scrolledtext.rst:2
+#: library/tkinter.scrolledtext.rst:2
 msgid ":mod:`!tkinter.scrolledtext` --- Scrolled Text Widget"
 msgstr ""
 
-#: ../Doc/library/tkinter.scrolledtext.rst:10
+#: library/tkinter.scrolledtext.rst:10
 msgid "**Source code:** :source:`Lib/tkinter/scrolledtext.py`"
 msgstr ""
 
-#: ../Doc/library/tkinter.scrolledtext.rst:14
+#: library/tkinter.scrolledtext.rst:14
 msgid ""
 "The :mod:`tkinter.scrolledtext` module provides a class of the same name "
 "which implements a basic text widget which has a vertical scroll bar "
@@ -33,7 +33,7 @@ msgid ""
 "is a lot easier than setting up a text widget and scroll bar directly."
 msgstr ""
 
-#: ../Doc/library/tkinter.scrolledtext.rst:19
+#: library/tkinter.scrolledtext.rst:19
 msgid ""
 "The text widget and scrollbar are packed together in a :class:`Frame`, and "
 "the methods of the :class:`Grid` and :class:`Pack` geometry managers are "
@@ -42,16 +42,16 @@ msgid ""
 "management behavior."
 msgstr ""
 
-#: ../Doc/library/tkinter.scrolledtext.rst:24
+#: library/tkinter.scrolledtext.rst:24
 msgid ""
 "Should more specific control be necessary, the following attributes are "
 "available:"
 msgstr ""
 
-#: ../Doc/library/tkinter.scrolledtext.rst:32
+#: library/tkinter.scrolledtext.rst:32
 msgid "The frame which surrounds the text and scroll bar widgets."
 msgstr ""
 
-#: ../Doc/library/tkinter.scrolledtext.rst:37
+#: library/tkinter.scrolledtext.rst:37
 msgid "The scroll bar widget."
 msgstr ""

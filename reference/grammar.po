@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/reference/grammar.rst:4
+#: reference/grammar.rst:4
 msgid "Full Grammar specification"
 msgstr ""
 
-#: ../Doc/reference/grammar.rst:6
+#: reference/grammar.rst:6
 msgid ""
 "This is the full Python grammar, derived directly from the grammar used to "
 "generate the CPython parser (see :source:`Grammar/python.gram`). The version "
 "here omits details related to code generation and error recovery."
 msgstr ""
 
-#: ../Doc/reference/grammar.rst:11
+#: reference/grammar.rst:11
 msgid ""
 "The notation is a mixture of `EBNF <https://en.wikipedia.org/wiki/"
 "Extended_Backus%E2%80%93Naur_form>`_ and `PEG <https://en.wikipedia.org/wiki/"

@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/reference/executionmodel.rst:6
+#: reference/executionmodel.rst:6
 msgid "Execution model"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:15
+#: reference/executionmodel.rst:15
 msgid "Structure of a program"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:19
+#: reference/executionmodel.rst:19
 msgid ""
 "A Python program is constructed from code blocks. A :dfn:`block` is a piece "
 "of Python program text that is executed as a unit. The following are blocks: "
@@ -39,100 +39,100 @@ msgid ""
 "built-in functions :func:`eval` and :func:`exec` is a code block."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:33
+#: reference/executionmodel.rst:33
 msgid ""
 "A code block is executed in an :dfn:`execution frame`.  A frame contains "
 "some administrative information (used for debugging) and determines where "
 "and how execution continues after the code block's execution has completed."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:40
+#: reference/executionmodel.rst:40
 msgid "Naming and binding"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:49
+#: reference/executionmodel.rst:49
 msgid "Binding of names"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:55
+#: reference/executionmodel.rst:55
 msgid ""
 ":dfn:`Names` refer to objects.  Names are introduced by name binding "
 "operations."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:59
+#: reference/executionmodel.rst:59
 msgid "The following constructs bind names:"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:61
+#: reference/executionmodel.rst:61
 msgid "formal parameters to functions,"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:62
+#: reference/executionmodel.rst:62
 msgid "class definitions,"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:63
+#: reference/executionmodel.rst:63
 msgid "function definitions,"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:64
+#: reference/executionmodel.rst:64
 msgid "assignment expressions,"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:65
+#: reference/executionmodel.rst:65
 msgid ""
 ":ref:`targets <assignment>` that are identifiers if occurring in an "
 "assignment:"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:68
+#: reference/executionmodel.rst:68
 msgid ":keyword:`for` loop header,"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:69
+#: reference/executionmodel.rst:69
 msgid ""
 "after :keyword:`!as` in a :keyword:`with` statement, :keyword:`except` "
 "clause, :keyword:`except* <except_star>` clause, or in the as-pattern in "
 "structural pattern matching,"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:71
+#: reference/executionmodel.rst:71
 msgid "in a capture pattern in structural pattern matching"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:73
+#: reference/executionmodel.rst:73
 msgid ":keyword:`import` statements."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:74
+#: reference/executionmodel.rst:74
 msgid ":keyword:`type` statements."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:75
+#: reference/executionmodel.rst:75
 msgid ":ref:`type parameter lists <type-params>`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:77
+#: reference/executionmodel.rst:77
 msgid ""
 "The :keyword:`!import` statement of the form ``from ... import *`` binds all "
 "names defined in the imported module, except those beginning with an "
 "underscore. This form may only be used at the module level."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:81
+#: reference/executionmodel.rst:81
 msgid ""
 "A target occurring in a :keyword:`del` statement is also considered bound "
 "for this purpose (though the actual semantics are to unbind the name)."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:84
+#: reference/executionmodel.rst:84
 msgid ""
 "Each assignment or import statement occurs within a block defined by a class "
 "or function definition or at the module level (the top-level code block)."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:89
+#: reference/executionmodel.rst:89
 msgid ""
 "If a name is bound in a block, it is a local variable of that block, unless "
 "declared as :keyword:`nonlocal` or :keyword:`global`.  If a name is bound at "
@@ -141,17 +141,17 @@ msgid ""
 "not defined there, it is a :dfn:`free variable`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:95
+#: reference/executionmodel.rst:95
 msgid ""
 "Each occurrence of a name in the program text refers to the :dfn:`binding` "
 "of that name established by the following name resolution rules."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:101
+#: reference/executionmodel.rst:101
 msgid "Resolution of names"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:105
+#: reference/executionmodel.rst:105
 msgid ""
 "A :dfn:`scope` defines the visibility of a name within a block.  If a local "
 "variable is defined in a block, its scope includes that block.  If the "
@@ -160,14 +160,14 @@ msgid ""
 "different binding for the name."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:113
+#: reference/executionmodel.rst:113
 msgid ""
 "When a name is used in a code block, it is resolved using the nearest "
 "enclosing scope.  The set of all such scopes visible to a code block is "
 "called the block's :dfn:`environment`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:121
+#: reference/executionmodel.rst:121
 msgid ""
 "When a name is not found at all, a :exc:`NameError` exception is raised. If "
 "the current scope is a function scope, and the name refers to a local "
@@ -176,7 +176,7 @@ msgid ""
 "`UnboundLocalError` is a subclass of :exc:`NameError`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:127
+#: reference/executionmodel.rst:127
 msgid ""
 "If a name binding operation occurs anywhere within a code block, all uses of "
 "the name within the block are treated as references to the current block.  "
@@ -188,7 +188,7 @@ msgid ""
 "UnboundLocalError <faq-unboundlocalerror>` for examples."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:136
+#: reference/executionmodel.rst:136
 msgid ""
 "If the :keyword:`global` statement occurs within a block, all uses of the "
 "names specified in the statement refer to the bindings of those names in the "
@@ -201,7 +201,7 @@ msgid ""
 "namespace. The global statement must precede all uses of the listed names."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:146
+#: reference/executionmodel.rst:146
 msgid ""
 "The :keyword:`global` statement has the same scope as a name binding "
 "operation in the same block.  If the nearest enclosing scope for a free "
@@ -209,7 +209,7 @@ msgid ""
 "global."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:152
+#: reference/executionmodel.rst:152
 msgid ""
 "The :keyword:`nonlocal` statement causes corresponding names to refer to "
 "previously bound variables in the nearest enclosing function scope. :exc:"
@@ -218,13 +218,13 @@ msgid ""
 "rebound with the :keyword:`!nonlocal` statement."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:160
+#: reference/executionmodel.rst:160
 msgid ""
 "The namespace for a module is automatically created the first time a module "
 "is imported.  The main module for a script is always called :mod:`__main__`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:163
+#: reference/executionmodel.rst:163
 msgid ""
 "Class definition blocks and arguments to :func:`exec` and :func:`eval` are "
 "special in the context of name resolution. A class definition is an "
@@ -239,15 +239,15 @@ msgid ""
 "the following will fail::"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:180
+#: reference/executionmodel.rst:180
 msgid "However, the following will succeed::"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:191
+#: reference/executionmodel.rst:191
 msgid "Annotation scopes"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:193
+#: reference/executionmodel.rst:193
 msgid ""
 ":ref:`Type parameter lists <type-params>` and :keyword:`type` statements "
 "introduce *annotation scopes*, which behave mostly like function scopes, but "
@@ -256,44 +256,44 @@ msgid ""
 "annotation scopes in Python 3.13 when :pep:`649` is implemented."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:199
+#: reference/executionmodel.rst:199
 msgid "Annotation scopes are used in the following contexts:"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:201
+#: reference/executionmodel.rst:201
 msgid ""
 "Type parameter lists for :ref:`generic type aliases <generic-type-aliases>`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:202
+#: reference/executionmodel.rst:202
 msgid ""
 "Type parameter lists for :ref:`generic functions <generic-functions>`. A "
 "generic function's annotations are executed within the annotation scope, but "
 "its defaults and decorators are not."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:205
+#: reference/executionmodel.rst:205
 msgid ""
 "Type parameter lists for :ref:`generic classes <generic-classes>`. A generic "
 "class's base classes and keyword arguments are executed within the "
 "annotation scope, but its decorators are not."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:208
+#: reference/executionmodel.rst:208
 msgid ""
 "The bounds, constraints, and default values for type parameters (:ref:"
 "`lazily evaluated <lazy-evaluation>`)."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:210
+#: reference/executionmodel.rst:210
 msgid "The value of type aliases (:ref:`lazily evaluated <lazy-evaluation>`)."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:212
+#: reference/executionmodel.rst:212
 msgid "Annotation scopes differ from function scopes in the following ways:"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:214
+#: reference/executionmodel.rst:214
 msgid ""
 "Annotation scopes have access to their enclosing class namespace. If an "
 "annotation scope is immediately within a class scope, or within another "
@@ -304,7 +304,7 @@ msgid ""
 "class scope."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:220
+#: reference/executionmodel.rst:220
 msgid ""
 "Expressions in annotation scopes cannot contain :keyword:`yield`, ``yield "
 "from``, :keyword:`await`, or :token:`:= <python-grammar:"
@@ -312,7 +312,7 @@ msgid ""
 "scopes contained within the annotation scope.)"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:224
+#: reference/executionmodel.rst:224
 msgid ""
 "Names defined in annotation scopes cannot be rebound with :keyword:"
 "`nonlocal` statements in inner scopes. This includes only type parameters, "
@@ -320,7 +320,7 @@ msgid ""
 "introduce new names."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:227
+#: reference/executionmodel.rst:227
 msgid ""
 "While annotation scopes have an internal name, that name is not reflected in "
 "the :term:`__qualname__ <qualified name>` of objects defined within the "
@@ -328,21 +328,21 @@ msgid ""
 "object were defined in the enclosing scope."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:232
+#: reference/executionmodel.rst:232
 msgid "Annotation scopes were introduced in Python 3.12 as part of :pep:`695`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:235
+#: reference/executionmodel.rst:235
 msgid ""
 "Annotation scopes are also used for type parameter defaults, as introduced "
 "by :pep:`696`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:242
+#: reference/executionmodel.rst:242
 msgid "Lazy evaluation"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:244
+#: reference/executionmodel.rst:244
 msgid ""
 "The values of type aliases created through the :keyword:`type` statement are "
 "*lazily evaluated*. The same applies to the bounds, constraints, and default "
@@ -352,35 +352,35 @@ msgid ""
 "is necessary to resolve an attribute access."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:251
+#: reference/executionmodel.rst:251
 msgid "Example:"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:267
+#: reference/executionmodel.rst:267
 msgid ""
 "Here the exception is raised only when the ``__value__`` attribute of the "
 "type alias or the ``__bound__`` attribute of the type variable is accessed."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:271
+#: reference/executionmodel.rst:271
 msgid ""
 "This behavior is primarily useful for references to types that have not yet "
 "been defined when the type alias or type variable is created. For example, "
 "lazy evaluation enables creation of mutually recursive type aliases::"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:281
+#: reference/executionmodel.rst:281
 msgid ""
 "Lazily evaluated values are evaluated in :ref:`annotation scope <annotation-"
 "scopes>`, which means that names that appear inside the lazily evaluated "
 "value are looked up as if they were used in the immediately enclosing scope."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:290
+#: reference/executionmodel.rst:290
 msgid "Builtins and restricted execution"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:296
+#: reference/executionmodel.rst:296
 msgid ""
 "Users should not touch ``__builtins__``; it is strictly an implementation "
 "detail.  Users wanting to override values in the builtins namespace should :"
@@ -388,7 +388,7 @@ msgid ""
 "appropriately."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:301
+#: reference/executionmodel.rst:301
 msgid ""
 "The builtins namespace associated with the execution of a code block is "
 "actually found by looking up the name ``__builtins__`` in its global "
@@ -399,17 +399,17 @@ msgid ""
 "`builtins` module itself."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:313
+#: reference/executionmodel.rst:313
 msgid "Interaction with dynamic features"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:315
+#: reference/executionmodel.rst:315
 msgid ""
 "Name resolution of free variables occurs at runtime, not at compile time. "
 "This means that the following code will print 42::"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:326
+#: reference/executionmodel.rst:326
 msgid ""
 "The :func:`eval` and :func:`exec` functions do not have access to the full "
 "environment for resolving names.  Names may be resolved in the local and "
@@ -420,11 +420,11 @@ msgid ""
 "for both."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:337
+#: reference/executionmodel.rst:337
 msgid "Exceptions"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:348
+#: reference/executionmodel.rst:348
 msgid ""
 "Exceptions are a means of breaking out of the normal flow of control of a "
 "code block in order to handle errors or other exceptional conditions.  An "
@@ -433,7 +433,7 @@ msgid ""
 "or indirectly invoked the code block where the error occurred."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:354
+#: reference/executionmodel.rst:354
 msgid ""
 "The Python interpreter raises an exception when it detects a run-time error "
 "(such as division by zero).  A Python program can also explicitly raise an "
@@ -444,7 +444,7 @@ msgid ""
 "exception occurred or not in the preceding code."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:364
+#: reference/executionmodel.rst:364
 msgid ""
 "Python uses the \"termination\" model of error handling: an exception "
 "handler can find out what happened and continue execution at an outer level, "
@@ -452,7 +452,7 @@ msgid ""
 "(except by re-entering the offending piece of code from the top)."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:371
+#: reference/executionmodel.rst:371
 msgid ""
 "When an exception is not handled at all, the interpreter terminates "
 "execution of the program, or returns to its interactive main loop.  In "
@@ -460,7 +460,7 @@ msgid ""
 "`SystemExit`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:375
+#: reference/executionmodel.rst:375
 msgid ""
 "Exceptions are identified by class instances.  The :keyword:`except` clause "
 "is selected depending on the class of the instance: it must reference the "
@@ -469,7 +469,7 @@ msgid ""
 "additional information about the exceptional condition."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:383
+#: reference/executionmodel.rst:383
 msgid ""
 "Exception messages are not part of the Python API.  Their contents may "
 "change from one version of Python to the next without warning and should not "
@@ -477,128 +477,126 @@ msgid ""
 "interpreter."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:387
+#: reference/executionmodel.rst:387
 msgid ""
 "See also the description of the :keyword:`try` statement in section :ref:"
 "`try` and :keyword:`raise` statement in section :ref:`raise`."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:392
+#: reference/executionmodel.rst:392
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:393
+#: reference/executionmodel.rst:393
 msgid ""
 "This limitation occurs because the code that is executed by these operations "
 "is not available at the time the module is compiled."
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:8
+#: reference/executionmodel.rst:8
 msgid "execution model"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:8
+#: reference/executionmodel.rst:8
 msgid "code"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:8 ../Doc/reference/executionmodel.rst:17
+#: reference/executionmodel.rst:17
 msgid "block"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:31
-#: ../Doc/reference/executionmodel.rst:292
+#: reference/executionmodel.rst:31 reference/executionmodel.rst:292
 msgid "execution"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:31
+#: reference/executionmodel.rst:31
 msgid "frame"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:42
+#: reference/executionmodel.rst:42
 msgid "namespace"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:42
-#: ../Doc/reference/executionmodel.rst:103
+#: reference/executionmodel.rst:42 reference/executionmodel.rst:103
 msgid "scope"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:51
+#: reference/executionmodel.rst:51
 msgid "name"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:51
+#: reference/executionmodel.rst:51
 msgid "binding"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:57
+#: reference/executionmodel.rst:57
 msgid "from"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:57
+#: reference/executionmodel.rst:57
 msgid "import statement"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:87
+#: reference/executionmodel.rst:87
 msgid "free"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:87
+#: reference/executionmodel.rst:87
 msgid "variable"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:111
+#: reference/executionmodel.rst:111
 msgid "environment"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:117
+#: reference/executionmodel.rst:117
 msgid "NameError (built-in exception)"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:117
+#: reference/executionmodel.rst:117
 msgid "UnboundLocalError"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:158
+#: reference/executionmodel.rst:158
 msgid "module"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:158
+#: reference/executionmodel.rst:158
 msgid "__main__"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:292
+#: reference/executionmodel.rst:292
 msgid "restricted"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:339
+#: reference/executionmodel.rst:339
 msgid "exception"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:341
+#: reference/executionmodel.rst:341
 msgid "raise an exception"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:341
+#: reference/executionmodel.rst:341
 msgid "handle an exception"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:341
+#: reference/executionmodel.rst:341
 msgid "exception handler"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:341
+#: reference/executionmodel.rst:341
 msgid "errors"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:341
+#: reference/executionmodel.rst:341
 msgid "error handling"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:362
+#: reference/executionmodel.rst:362
 msgid "termination model"
 msgstr ""
 
-#: ../Doc/reference/executionmodel.rst:369
+#: reference/executionmodel.rst:369
 msgid "SystemExit (built-in exception)"
 msgstr ""

@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/html.rst:2
+#: library/html.rst:2
 msgid ":mod:`!html` --- HyperText Markup Language support"
 msgstr ""
 
-#: ../Doc/library/html.rst:7
+#: library/html.rst:7
 msgid "**Source code:** :source:`Lib/html/__init__.py`"
 msgstr ""
 
-#: ../Doc/library/html.rst:11
+#: library/html.rst:11
 msgid "This module defines utilities to manipulate HTML."
 msgstr ""
 
-#: ../Doc/library/html.rst:15
+#: library/html.rst:15
 msgid ""
 "Convert the characters ``&``, ``<`` and ``>`` in string *s* to HTML-safe "
 "sequences.  Use this if you need to display text that might contain such "
@@ -38,7 +38,7 @@ msgid ""
 "HTML attribute value delimited by quotes, as in ``<a href=\"...\">``."
 msgstr ""
 
-#: ../Doc/library/html.rst:26
+#: library/html.rst:26
 msgid ""
 "Convert all named and numeric character references (e.g. ``&gt;``, ``&#62;"
 "``, ``&#x3e;``) in the string *s* to the corresponding Unicode characters.  "
@@ -47,14 +47,14 @@ msgid ""
 "character references <html.entities.html5>`."
 msgstr ""
 
-#: ../Doc/library/html.rst:36
+#: library/html.rst:36
 msgid "Submodules in the ``html`` package are:"
 msgstr ""
 
-#: ../Doc/library/html.rst:38
+#: library/html.rst:38
 msgid ":mod:`html.parser` -- HTML/XHTML parser with lenient parsing mode"
 msgstr ""
 
-#: ../Doc/library/html.rst:39
+#: library/html.rst:39
 msgid ":mod:`html.entities` -- HTML entity definitions"
 msgstr ""

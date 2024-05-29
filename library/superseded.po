@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/superseded.rst:5
+#: library/superseded.rst:5
 msgid "Superseded Modules"
 msgstr ""
 
-#: ../Doc/library/superseded.rst:7
+#: library/superseded.rst:7
 msgid ""
 "The modules described in this chapter are deprecated or :term:`soft "
 "deprecated` and only kept for backwards compatibility. They have been "

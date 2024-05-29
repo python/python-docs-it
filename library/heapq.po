@@ -17,28 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/heapq.rst:2
+#: library/heapq.rst:2
 msgid ":mod:`!heapq` --- Heap queue algorithm"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:12
+#: library/heapq.rst:12
 msgid "**Source code:** :source:`Lib/heapq.py`"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:16
+#: library/heapq.rst:16
 msgid ""
 "This module provides an implementation of the heap queue algorithm, also "
 "known as the priority queue algorithm."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:19
+#: library/heapq.rst:19
 msgid ""
 "Heaps are binary trees for which every parent node has a value less than or "
 "equal to any of its children.  We refer to this condition as the heap "
 "invariant."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:22
+#: library/heapq.rst:22
 msgid ""
 "This implementation uses arrays for which ``heap[k] <= heap[2*k+1]`` and "
 "``heap[k] <= heap[2*k+2]`` for all *k*, counting elements from zero.  For "
@@ -47,7 +47,7 @@ msgid ""
 "is always the root, ``heap[0]``."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:28
+#: library/heapq.rst:28
 msgid ""
 "The API below differs from textbook heap algorithms in two aspects: (a) We "
 "use zero-based indexing.  This makes the relationship between the index for "
@@ -58,53 +58,53 @@ msgid ""
 "sorting)."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:35
+#: library/heapq.rst:35
 msgid ""
 "These two make it possible to view the heap as a regular Python list without "
 "surprises: ``heap[0]`` is the smallest item, and ``heap.sort()`` maintains "
 "the heap invariant!"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:39
+#: library/heapq.rst:39
 msgid ""
 "To create a heap, use a list initialized to ``[]``, or you can transform a "
 "populated list into a heap via function :func:`heapify`."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:42
+#: library/heapq.rst:42
 msgid "The following functions are provided:"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:47
+#: library/heapq.rst:47
 msgid "Push the value *item* onto the *heap*, maintaining the heap invariant."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:52
+#: library/heapq.rst:52
 msgid ""
 "Pop and return the smallest item from the *heap*, maintaining the heap "
 "invariant.  If the heap is empty, :exc:`IndexError` is raised.  To access "
 "the smallest item without popping it, use ``heap[0]``."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:59
+#: library/heapq.rst:59
 msgid ""
 "Push *item* on the heap, then pop and return the smallest item from the "
 "*heap*.  The combined action runs more efficiently than :func:`heappush` "
 "followed by a separate call to :func:`heappop`."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:66
+#: library/heapq.rst:66
 msgid "Transform list *x* into a heap, in-place, in linear time."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:71
+#: library/heapq.rst:71
 msgid ""
 "Pop and return the smallest item from the *heap*, and also push the new "
 "*item*. The heap size doesn't change. If the heap is empty, :exc:"
 "`IndexError` is raised."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:74
+#: library/heapq.rst:74
 msgid ""
 "This one step operation is more efficient than a :func:`heappop` followed "
 "by :func:`heappush` and can be more appropriate when using a fixed-size "
@@ -112,7 +112,7 @@ msgid ""
 "replaces it with *item*."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:79
+#: library/heapq.rst:79
 msgid ""
 "The value returned may be larger than the *item* added.  If that isn't "
 "desired, consider using :func:`heappushpop` instead.  Its push/pop "
@@ -120,37 +120,37 @@ msgid ""
 "on the heap."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:85
+#: library/heapq.rst:85
 msgid "The module also offers three general purpose functions based on heaps."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:90
+#: library/heapq.rst:90
 msgid ""
 "Merge multiple sorted inputs into a single sorted output (for example, merge "
 "timestamped entries from multiple log files).  Returns an :term:`iterator` "
 "over the sorted values."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:94
+#: library/heapq.rst:94
 msgid ""
 "Similar to ``sorted(itertools.chain(*iterables))`` but returns an iterable, "
 "does not pull the data into memory all at once, and assumes that each of the "
 "input streams is already sorted (smallest to largest)."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:98
+#: library/heapq.rst:98
 msgid ""
 "Has two optional arguments which must be specified as keyword arguments."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:100
+#: library/heapq.rst:100
 msgid ""
 "*key* specifies a :term:`key function` of one argument that is used to "
 "extract a comparison key from each input element.  The default value is "
 "``None`` (compare the elements directly)."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:104
+#: library/heapq.rst:104
 msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the input elements "
 "are merged as if each comparison were reversed. To achieve behavior similar "
@@ -158,11 +158,11 @@ msgid ""
 "be sorted from largest to smallest."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:109
+#: library/heapq.rst:109
 msgid "Added the optional *key* and *reverse* parameters."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:115
+#: library/heapq.rst:115
 msgid ""
 "Return a list with the *n* largest elements from the dataset defined by "
 "*iterable*.  *key*, if provided, specifies a function of one argument that "
@@ -171,7 +171,7 @@ msgid ""
 "reverse=True)[:n]``."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:124
+#: library/heapq.rst:124
 msgid ""
 "Return a list with the *n* smallest elements from the dataset defined by "
 "*iterable*.  *key*, if provided, specifies a function of one argument that "
@@ -180,7 +180,7 @@ msgid ""
 "n]``."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:130
+#: library/heapq.rst:130
 msgid ""
 "The latter two functions perform best for smaller values of *n*.  For larger "
 "values, it is more efficient to use the :func:`sorted` function.  Also, when "
@@ -189,64 +189,64 @@ msgid ""
 "turning the iterable into an actual heap."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:138
+#: library/heapq.rst:138
 msgid "Basic Examples"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:140
+#: library/heapq.rst:140
 msgid ""
 "A `heapsort <https://en.wikipedia.org/wiki/Heapsort>`_ can be implemented by "
 "pushing all values onto a heap and then popping off the smallest values one "
 "at a time::"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:153
+#: library/heapq.rst:153
 msgid ""
 "This is similar to ``sorted(iterable)``, but unlike :func:`sorted`, this "
 "implementation is not stable."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:156
+#: library/heapq.rst:156
 msgid ""
 "Heap elements can be tuples.  This is useful for assigning comparison values "
 "(such as task priorities) alongside the main record being tracked::"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:169
+#: library/heapq.rst:169
 msgid "Priority Queue Implementation Notes"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:171
+#: library/heapq.rst:171
 msgid ""
 "A `priority queue <https://en.wikipedia.org/wiki/Priority_queue>`_ is common "
 "use for a heap, and it presents several implementation challenges:"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:174
+#: library/heapq.rst:174
 msgid ""
 "Sort stability:  how do you get two tasks with equal priorities to be "
 "returned in the order they were originally added?"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:177
+#: library/heapq.rst:177
 msgid ""
 "Tuple comparison breaks for (priority, task) pairs if the priorities are "
 "equal and the tasks do not have a default comparison order."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:180
+#: library/heapq.rst:180
 msgid ""
 "If the priority of a task changes, how do you move it to a new position in "
 "the heap?"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:183
+#: library/heapq.rst:183
 msgid ""
 "Or if a pending task needs to be deleted, how do you find it and remove it "
 "from the queue?"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:186
+#: library/heapq.rst:186
 msgid ""
 "A solution to the first two challenges is to store entries as 3-element list "
 "including the priority, an entry count, and the task.  The entry count "
@@ -255,32 +255,32 @@ msgid ""
 "same, the tuple comparison will never attempt to directly compare two tasks."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:192
+#: library/heapq.rst:192
 msgid ""
 "Another solution to the problem of non-comparable tasks is to create a "
 "wrapper class that ignores the task item and only compares the priority "
 "field::"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:203
+#: library/heapq.rst:203
 msgid ""
 "The remaining challenges revolve around finding a pending task and making "
 "changes to its priority or removing it entirely.  Finding a task can be done "
 "with a dictionary pointing to an entry in the queue."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:207
+#: library/heapq.rst:207
 msgid ""
 "Removing the entry or changing its priority is more difficult because it "
 "would break the heap structure invariants.  So, a possible solution is to "
 "mark the entry as removed and add a new entry with the revised priority::"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:241
+#: library/heapq.rst:241
 msgid "Theory"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:243
+#: library/heapq.rst:243
 msgid ""
 "Heaps are arrays for which ``a[k] <= a[2*k+1]`` and ``a[k] <= a[2*k+2]`` for "
 "all *k*, counting elements from 0.  For the sake of comparison, non-existing "
@@ -288,13 +288,13 @@ msgid ""
 "is that ``a[0]`` is always its smallest element."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:248
+#: library/heapq.rst:248
 msgid ""
 "The strange invariant above is meant to be an efficient memory "
 "representation for a tournament.  The numbers below are *k*, not ``a[k]``::"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:261
+#: library/heapq.rst:261
 msgid ""
 "In the tree above, each cell *k* is topping ``2*k+1`` and ``2*k+2``. In a "
 "usual binary tournament we see in sports, each cell is the winner over the "
@@ -307,7 +307,7 @@ msgid ""
 "over the two topped cells."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:270
+#: library/heapq.rst:270
 msgid ""
 "If this heap invariant is protected at all time, index 0 is clearly the "
 "overall winner.  The simplest algorithmic way to remove it and find the "
@@ -318,7 +318,7 @@ msgid ""
 "items, you get an *O*\\ (*n* log *n*) sort."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:277
+#: library/heapq.rst:277
 msgid ""
 "A nice feature of this sort is that you can efficiently insert new items "
 "while the sort is going on, provided that the inserted items are not "
@@ -330,7 +330,7 @@ msgid ""
 "implementing schedulers (this is what I used for my MIDI sequencer :-)."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:286
+#: library/heapq.rst:286
 msgid ""
 "Various structures for implementing schedulers have been extensively "
 "studied, and heaps are good for this, as they are reasonably speedy, the "
@@ -339,7 +339,7 @@ msgid ""
 "efficient overall, yet the worst cases might be terrible."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:292
+#: library/heapq.rst:292
 msgid ""
 "Heaps are also very useful in big disk sorts.  You most probably all know "
 "that a big sort implies producing \"runs\" (which are pre-sorted sequences, "
@@ -353,7 +353,7 @@ msgid ""
 "input fuzzily ordered."
 msgstr ""
 
-#: ../Doc/library/heapq.rst:302
+#: library/heapq.rst:302
 msgid ""
 "Moreover, if you output the 0'th item on disk and get an input which may not "
 "fit in the current tournament (because the value \"wins\" over the last "
@@ -364,17 +364,17 @@ msgid ""
 "switch heaps and start a new run.  Clever and quite effective!"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:310
+#: library/heapq.rst:310
 msgid ""
 "In a word, heaps are useful memory structures to know.  I use them in a few "
 "applications, and I think it is good to keep a 'heap' module around. :-)"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:314
+#: library/heapq.rst:314
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/library/heapq.rst:315
+#: library/heapq.rst:315
 msgid ""
 "The disk balancing algorithms which are current, nowadays, are more annoying "
 "than clever, and this is a consequence of the seeking capabilities of the "

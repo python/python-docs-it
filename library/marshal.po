@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/marshal.rst:2
+#: library/marshal.rst:2
 msgid ":mod:`!marshal` --- Internal Python object serialization"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:10
+#: library/marshal.rst:10
 msgid ""
 "This module contains functions that can read and write Python values in a "
 "binary format.  The format is specific to Python, but independent of machine "
@@ -31,7 +31,7 @@ msgid ""
 "it rarely does). [#]_"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:21
+#: library/marshal.rst:21
 msgid ""
 "This is not a general \"persistence\" module.  For general persistence and "
 "transfer of Python objects through RPC calls, see the modules :mod:`pickle` "
@@ -47,14 +47,14 @@ msgid ""
 "supports a substantially wider range of objects than marshal."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:37
+#: library/marshal.rst:37
 msgid ""
 "The :mod:`marshal` module is not intended to be secure against erroneous or "
 "maliciously constructed data.  Never unmarshal data received from an "
 "untrusted or unauthenticated source."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:43
+#: library/marshal.rst:43
 msgid ""
 "Not all Python object types are supported; in general, only objects whose "
 "value is independent from a particular invocation of Python can be written "
@@ -69,23 +69,23 @@ msgid ""
 "dictionaries cannot be written (see below)."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:56
+#: library/marshal.rst:56
 msgid ""
 "There are functions that read/write files as well as functions operating on "
 "bytes-like objects."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:59
+#: library/marshal.rst:59
 msgid "The module defines these functions:"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:64
+#: library/marshal.rst:64
 msgid ""
 "Write the value on the open file.  The value must be a supported type.  The "
 "file must be a writeable :term:`binary file`."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:67
+#: library/marshal.rst:67
 msgid ""
 "If the value has (or contains an object that has) an unsupported type, a :"
 "exc:`ValueError` exception is raised --- but garbage data will also be "
@@ -94,24 +94,23 @@ msgid ""
 "*allow_code* is true."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:72
+#: library/marshal.rst:72
 msgid ""
 "The *version* argument indicates the data format that ``dump`` should use "
 "(see below)."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:75 ../Doc/library/marshal.rst:115
+#: library/marshal.rst:115
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.dumps`` with arguments "
 "``value``, ``version``."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:77 ../Doc/library/marshal.rst:101
-#: ../Doc/library/marshal.rst:117 ../Doc/library/marshal.rst:135
+#: library/marshal.rst:101 library/marshal.rst:135
 msgid "Added the *allow_code* parameter."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:83
+#: library/marshal.rst:83
 msgid ""
 "Read one value from the open file and return it.  If no valid value is read "
 "(e.g. because the data has a different Python version's incompatible marshal "
@@ -120,25 +119,25 @@ msgid ""
 "The file must be a readable :term:`binary file`."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:89
+#: library/marshal.rst:89
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.load`` with no "
 "arguments."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:93
+#: library/marshal.rst:93
 msgid ""
 "If an object containing an unsupported type was marshalled with :func:"
 "`dump`, :func:`load` will substitute ``None`` for the unmarshallable type."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:98
+#: library/marshal.rst:98
 msgid ""
 "This call used to raise a ``code.__new__`` audit event for each code object. "
 "Now it raises a single ``marshal.load`` event for the entire load operation."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:107
+#: library/marshal.rst:107
 msgid ""
 "Return the bytes object that would be written to a file by ``dump(value, "
 "file)``.  The value must be a supported type.  Raise a :exc:`ValueError` "
@@ -147,13 +146,13 @@ msgid ""
 "is true."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:112
+#: library/marshal.rst:112
 msgid ""
 "The *version* argument indicates the data format that ``dumps`` should use "
 "(see below)."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:123
+#: library/marshal.rst:123
 msgid ""
 "Convert the :term:`bytes-like object` to a value.  If no valid value is "
 "found, raise :exc:`EOFError`, :exc:`ValueError` or :exc:`TypeError`. :ref:"
@@ -161,23 +160,23 @@ msgid ""
 "Extra bytes in the input are ignored."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:128
+#: library/marshal.rst:128
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.loads`` with argument "
 "``bytes``."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:132
+#: library/marshal.rst:132
 msgid ""
 "This call used to raise a ``code.__new__`` audit event for each code object. "
 "Now it raises a single ``marshal.loads`` event for the entire load operation."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:139
+#: library/marshal.rst:139
 msgid "In addition, the following constants are defined:"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:143
+#: library/marshal.rst:143
 msgid ""
 "Indicates the format that the module uses. Version 0 is the historical "
 "format, version 1 shares interned strings and version 2 uses a binary format "
@@ -185,11 +184,11 @@ msgid ""
 "recursion. The current version is 4."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:151
+#: library/marshal.rst:151
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:152
+#: library/marshal.rst:152
 msgid ""
 "The name of this module stems from a bit of terminology used by the "
 "designers of Modula-3 (amongst others), who use the term \"marshalling\" for "
@@ -198,26 +197,26 @@ msgid ""
 "RPC buffer for instance) and \"unmarshalling\" for the reverse process."
 msgstr ""
 
-#: ../Doc/library/marshal.rst:17
+#: library/marshal.rst:17
 msgid "module"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:17
+#: library/marshal.rst:17
 msgid "pickle"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:17
+#: library/marshal.rst:17
 msgid "shelve"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:41
+#: library/marshal.rst:41
 msgid "object"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:41
+#: library/marshal.rst:41
 msgid "code"
 msgstr ""
 
-#: ../Doc/library/marshal.rst:41
+#: library/marshal.rst:41
 msgid "code object"
 msgstr ""

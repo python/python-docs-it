@@ -17,27 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/xmlrpc.rst:2
+#: library/xmlrpc.rst:2
 msgid ":mod:`!xmlrpc` --- XMLRPC server and client modules"
 msgstr ""
 
-#: ../Doc/library/xmlrpc.rst:4
+#: library/xmlrpc.rst:4
 msgid ""
 "XML-RPC is a Remote Procedure Call method that uses XML passed via HTTP as a "
 "transport.  With it, a client can call methods with parameters on a remote "
 "server (the server is named by a URI) and get back structured data."
 msgstr ""
 
-#: ../Doc/library/xmlrpc.rst:8
+#: library/xmlrpc.rst:8
 msgid ""
 "``xmlrpc`` is a package that collects server and client modules implementing "
 "XML-RPC.  The modules are:"
 msgstr ""
 
-#: ../Doc/library/xmlrpc.rst:11
+#: library/xmlrpc.rst:11
 msgid ":mod:`xmlrpc.client`"
 msgstr ""
 
-#: ../Doc/library/xmlrpc.rst:12
+#: library/xmlrpc.rst:12
 msgid ":mod:`xmlrpc.server`"
 msgstr ""

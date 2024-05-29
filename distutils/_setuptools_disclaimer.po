@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/distutils/_setuptools_disclaimer.rst:3
+#: distutils/_setuptools_disclaimer.rst:3
 msgid ""
 "This document is being retained solely until the ``setuptools`` "
 "documentation at https://setuptools.readthedocs.io/en/latest/setuptools.html "

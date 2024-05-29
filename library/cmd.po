@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/cmd.rst:2
+#: library/cmd.rst:2
 msgid ":mod:`!cmd` --- Support for line-oriented command interpreters"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:9
+#: library/cmd.rst:9
 msgid "**Source code:** :source:`Lib/cmd.py`"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:13
+#: library/cmd.rst:13
 msgid ""
 "The :class:`Cmd` class provides a simple framework for writing line-oriented "
 "command interpreters.  These are often useful for test harnesses, "
@@ -33,7 +33,7 @@ msgid ""
 "sophisticated interface."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:20
+#: library/cmd.rst:20
 msgid ""
 "A :class:`Cmd` instance or subclass instance is a line-oriented interpreter "
 "framework.  There is no good reason to instantiate :class:`Cmd` itself; "
@@ -42,7 +42,7 @@ msgid ""
 "methods."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:25
+#: library/cmd.rst:25
 msgid ""
 "The optional argument *completekey* is the :mod:`readline` name of a "
 "completion key; it defaults to :kbd:`Tab`. If *completekey* is not :const:"
@@ -50,7 +50,7 @@ msgid ""
 "automatically."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:29
+#: library/cmd.rst:29
 msgid ""
 "The default, ``'tab'``, is treated specially, so that it refers to the :kbd:"
 "`Tab` key on every :data:`readline.backend`. Specifically, if :data:"
@@ -59,7 +59,7 @@ msgid ""
 "work with a specific backend."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:36
+#: library/cmd.rst:36
 msgid ""
 "The optional arguments *stdin* and *stdout* specify the  input and output "
 "file objects that the Cmd instance or subclass  instance will use for input "
@@ -67,39 +67,39 @@ msgid ""
 "data:`sys.stdout`."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:41
+#: library/cmd.rst:41
 msgid ""
 "If you want a given *stdin* to be used, make sure to set the instance's :"
 "attr:`use_rawinput` attribute to ``False``, otherwise *stdin* will be "
 "ignored."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:45
+#: library/cmd.rst:45
 msgid "``completekey='tab'`` is replaced by ``'^I'`` for ``editline``."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:52
+#: library/cmd.rst:52
 msgid "Cmd Objects"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:54
+#: library/cmd.rst:54
 msgid "A :class:`Cmd` instance has the following methods:"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:59
+#: library/cmd.rst:59
 msgid ""
 "Repeatedly issue a prompt, accept input, parse an initial prefix off the "
 "received input, and dispatch to action methods, passing them the remainder "
 "of the line as argument."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:63
+#: library/cmd.rst:63
 msgid ""
 "The optional argument is a banner or intro string to be issued before the "
 "first prompt (this overrides the :attr:`intro` class attribute)."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:66
+#: library/cmd.rst:66
 msgid ""
 "If the :mod:`readline` module is loaded, input will automatically inherit :"
 "program:`bash`\\ -like history-list editing (e.g. :kbd:`Control-P` scrolls "
@@ -108,11 +108,11 @@ msgid ""
 "B` moves the cursor to the left non-destructively, etc.)."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:72
+#: library/cmd.rst:72
 msgid "An end-of-file on input is passed back as the string ``'EOF'``."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:78
+#: library/cmd.rst:78
 msgid ""
 "An interpreter instance will recognize a command name ``foo`` if and only if "
 "it has a method :meth:`!do_foo`.  As a special case, a line beginning with "
@@ -121,14 +121,14 @@ msgid ""
 "dispatched to the method :meth:`!do_shell` (if such a method is defined)."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:84
+#: library/cmd.rst:84
 msgid ""
 "This method will return when the :meth:`postcmd` method returns a true "
 "value. The *stop* argument to :meth:`postcmd` is the return value from the "
 "command's corresponding :meth:`!do_\\*` method."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:88
+#: library/cmd.rst:88
 msgid ""
 "If completion is enabled, completing commands will be done automatically, "
 "and completing of commands args is done by calling :meth:`!complete_foo` "
@@ -140,7 +140,7 @@ msgid ""
 "the argument is in."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:99
+#: library/cmd.rst:99
 msgid ""
 "All subclasses of :class:`Cmd` inherit a predefined :meth:`!do_help`.  This "
 "method, called with an argument ``'bar'``, invokes the corresponding method :"
@@ -151,7 +151,7 @@ msgid ""
 "undocumented commands."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:110
+#: library/cmd.rst:110
 msgid ""
 "Interpret the argument as though it had been typed in response to the "
 "prompt. This may be overridden, but should not normally need to be; see the :"
@@ -162,32 +162,32 @@ msgid ""
 "return value from the :meth:`default` method is returned."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:121
+#: library/cmd.rst:121
 msgid ""
 "Method called when an empty line is entered in response to the prompt. If "
 "this method is not overridden, it repeats the last nonempty command entered."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:127
+#: library/cmd.rst:127
 msgid ""
 "Method called on an input line when the command prefix is not recognized. If "
 "this method is not overridden, it prints an error message and returns."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:133
+#: library/cmd.rst:133
 msgid ""
 "Method called to complete an input line when no command-specific :meth:`!"
 "complete_\\*` method is available.  By default, it returns an empty list."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:139
+#: library/cmd.rst:139
 msgid ""
 "Method called to display a list of strings as a compact set of columns. Each "
 "column is only as wide as necessary. Columns are separated by two spaces for "
 "readability."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:146
+#: library/cmd.rst:146
 msgid ""
 "Hook method executed just before the command line *line* is interpreted, but "
 "after the input prompt is generated and issued.  This method is a stub in :"
@@ -197,7 +197,7 @@ msgid ""
 "*line* unchanged."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:156
+#: library/cmd.rst:156
 msgid ""
 "Hook method executed just after a command dispatch is finished.  This method "
 "is a stub in :class:`Cmd`; it exists to be overridden by subclasses.  *line* "
@@ -208,74 +208,74 @@ msgid ""
 "corresponds to *stop*; returning false will cause interpretation to continue."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:167
+#: library/cmd.rst:167
 msgid ""
 "Hook method executed once when :meth:`cmdloop` is called.  This method is a "
 "stub in :class:`Cmd`; it exists to be overridden by subclasses."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:173
+#: library/cmd.rst:173
 msgid ""
 "Hook method executed once when :meth:`cmdloop` is about to return. This "
 "method is a stub in :class:`Cmd`; it exists to be overridden by subclasses."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:177
+#: library/cmd.rst:177
 msgid ""
 "Instances of :class:`Cmd` subclasses have some public instance variables:"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:181
+#: library/cmd.rst:181
 msgid "The prompt issued to solicit input."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:186
+#: library/cmd.rst:186
 msgid "The string of characters accepted for the command prefix."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:191
+#: library/cmd.rst:191
 msgid "The last nonempty command prefix seen."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:196
+#: library/cmd.rst:196
 msgid ""
 "A list of queued input lines.  The cmdqueue list is checked in :meth:"
 "`cmdloop` when new input is needed; if it is nonempty, its elements will be "
 "processed in order, as if entered at the prompt."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:203
+#: library/cmd.rst:203
 msgid ""
 "A string to issue as an intro or banner.  May be overridden by giving the :"
 "meth:`cmdloop` method an argument."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:209
+#: library/cmd.rst:209
 msgid ""
 "The header to issue if the help output has a section for documented commands."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:214
+#: library/cmd.rst:214
 msgid ""
 "The header to issue if the help output has a section for miscellaneous  help "
 "topics (that is, there are :meth:`!help_\\*` methods without corresponding :"
 "meth:`!do_\\*` methods)."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:221
+#: library/cmd.rst:221
 msgid ""
 "The header to issue if the help output has a section for undocumented  "
 "commands (that is, there are :meth:`!do_\\*` methods without corresponding :"
 "meth:`!help_\\*` methods)."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:228
+#: library/cmd.rst:228
 msgid ""
 "The character used to draw separator lines under the help-message headers.  "
 "If empty, no ruler line is drawn.  It defaults to ``'='``."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:234
+#: library/cmd.rst:234
 msgid ""
 "A flag, defaulting to true.  If true, :meth:`cmdloop` uses :func:`input` to "
 "display a prompt and read the next command; if false, :data:`sys.stdout."
@@ -285,23 +285,23 @@ msgid ""
 "editing  and command-history keystrokes.)"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:244
+#: library/cmd.rst:244
 msgid "Cmd Example"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:248
+#: library/cmd.rst:248
 msgid ""
 "The :mod:`cmd` module is mainly useful for building custom shells that let a "
 "user work with a program interactively."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:251
+#: library/cmd.rst:251
 msgid ""
 "This section presents a simple example of how to build a shell around a few "
 "of the commands in the :mod:`turtle` module."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:254
+#: library/cmd.rst:254
 msgid ""
 "Basic turtle commands such as :meth:`~turtle.forward` are added to a :class:"
 "`Cmd` subclass with method named :meth:`!do_forward`.  The argument is "
@@ -309,7 +309,7 @@ msgid ""
 "used in the help utility provided by the shell."
 msgstr ""
 
-#: ../Doc/library/cmd.rst:259
+#: library/cmd.rst:259
 msgid ""
 "The example also includes a basic record and playback facility implemented "
 "with the :meth:`~Cmd.precmd` method which is responsible for converting the "
@@ -318,21 +318,21 @@ msgid ""
 "attr:`~Cmd.cmdqueue` for immediate playback::"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:340
+#: library/cmd.rst:340
 msgid ""
 "Here is a sample session with the turtle shell showing the help functions, "
 "using blank lines to repeat commands, and the simple record and playback "
 "facility:"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:74
+#: library/cmd.rst:74
 msgid "? (question mark)"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:74
+#: library/cmd.rst:74
 msgid "in a command interpreter"
 msgstr ""
 
-#: ../Doc/library/cmd.rst:74
+#: library/cmd.rst:74
 msgid "! (exclamation)"
 msgstr ""

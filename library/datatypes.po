@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/datatypes.rst:5
+#: library/datatypes.rst:5
 msgid "Data Types"
 msgstr ""
 
-#: ../Doc/library/datatypes.rst:7
+#: library/datatypes.rst:7
 msgid ""
 "The modules described in this chapter provide a variety of specialized data "
 "types such as dates and times, fixed-type arrays, heap queues, double-ended "
 "queues, and enumerations."
 msgstr ""
 
-#: ../Doc/library/datatypes.rst:11
+#: library/datatypes.rst:11
 msgid ""
 "Python also provides some built-in data types, in particular, :class:"
 "`dict`, :class:`list`, :class:`set` and :class:`frozenset`, and :class:"
@@ -36,6 +36,6 @@ msgid ""
 "class:`bytes` and :class:`bytearray` classes are used to hold binary data."
 msgstr ""
 
-#: ../Doc/library/datatypes.rst:17
+#: library/datatypes.rst:17
 msgid "The following modules are documented in this chapter:"
 msgstr ""

@@ -17,27 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/__main__.rst:2
+#: library/__main__.rst:2
 msgid ":mod:`!__main__` --- Top-level code environment"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:10
+#: library/__main__.rst:10
 msgid ""
 "In Python, the special name ``__main__`` is used for two important "
 "constructs:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:12
+#: library/__main__.rst:12
 msgid ""
 "the name of the top-level environment of the program, which can be checked "
 "using the ``__name__ == '__main__'`` expression; and"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:14
+#: library/__main__.rst:14
 msgid "the ``__main__.py`` file in Python packages."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:16
+#: library/__main__.rst:16
 msgid ""
 "Both of these mechanisms are related to Python modules; how users interact "
 "with them and how they interact with each other.  They are explained in "
@@ -45,34 +45,34 @@ msgid ""
 "ref:`tut-modules` for an introduction."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:25
+#: library/__main__.rst:25
 msgid "``__name__ == '__main__'``"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:27
+#: library/__main__.rst:27
 msgid ""
 "When a Python module or package is imported, ``__name__`` is set to the "
 "module's name.  Usually, this is the name of the Python file itself without "
 "the ``.py`` extension::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:35
+#: library/__main__.rst:35
 msgid ""
 "If the file is part of a package, ``__name__`` will also include the parent "
 "package's path::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:42
+#: library/__main__.rst:42
 msgid ""
 "However, if the module is executed in the top-level code environment, its "
 "``__name__`` is set to the string ``'__main__'``."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:46
+#: library/__main__.rst:46
 msgid "What is the \"top-level code environment\"?"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:48
+#: library/__main__.rst:48
 msgid ""
 "``__main__`` is the name of the environment where top-level code is run. "
 "\"Top-level code\" is the first user-specified Python module that starts "
@@ -81,40 +81,40 @@ msgid ""
 "the application."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:53
+#: library/__main__.rst:53
 msgid "The top-level code environment can be:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:55
+#: library/__main__.rst:55
 msgid "the scope of an interactive prompt::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:60
+#: library/__main__.rst:60
 msgid "the Python module passed to the Python interpreter as a file argument:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:67
+#: library/__main__.rst:67
 msgid ""
 "the Python module or package passed to the Python interpreter with the :"
 "option:`-m` argument:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:75
+#: library/__main__.rst:75
 msgid "Python code read by the Python interpreter from standard input:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:86
+#: library/__main__.rst:86
 msgid ""
 "Python code passed to the Python interpreter with the :option:`-c` argument:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:97
+#: library/__main__.rst:97
 msgid ""
 "In each of these situations, the top-level module's ``__name__`` is set to "
 "``'__main__'``."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:100
+#: library/__main__.rst:100
 msgid ""
 "As a result, a module can discover whether or not it is running in the top-"
 "level environment by checking its own ``__name__``, which allows a common "
@@ -122,17 +122,17 @@ msgid ""
 "from an import statement::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:111
+#: library/__main__.rst:111
 msgid ""
 "For a more detailed look at how ``__name__`` is set in all situations, see "
 "the tutorial section :ref:`tut-modules`."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:116 ../Doc/library/__main__.rst:239
+#: library/__main__.rst:239
 msgid "Idiomatic Usage"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:118
+#: library/__main__.rst:118
 msgid ""
 "Some modules contain code that is intended for script use only, like parsing "
 "command-line arguments or fetching data from standard input.  If a module "
@@ -140,21 +140,21 @@ msgid ""
 "the script code would unintentionally execute as well."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:123
+#: library/__main__.rst:123
 msgid ""
 "This is where using the ``if __name__ == '__main__'`` code block comes in "
 "handy. Code within this block won't run unless the module is executed in the "
 "top-level environment."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:127
+#: library/__main__.rst:127
 msgid ""
 "Putting as few statements as possible in the block below ``if __name__ == "
 "'__main__'`` can improve code clarity and correctness. Most often, a "
 "function named ``main`` encapsulates the program's primary behavior::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:151
+#: library/__main__.rst:151
 msgid ""
 "Note that if the module didn't encapsulate code inside the ``main`` function "
 "but instead put it directly within the ``if __name__ == '__main__'`` block, "
@@ -164,7 +164,7 @@ msgid ""
 "this problem."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:158
+#: library/__main__.rst:158
 msgid ""
 "Using a ``main`` function has the added benefit of the ``echo`` function "
 "itself being isolated and importable elsewhere. When ``echo.py`` is "
@@ -172,11 +172,11 @@ msgid ""
 "of them will be called, because ``__name__ != '__main__'``."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:165
+#: library/__main__.rst:165
 msgid "Packaging Considerations"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:167
+#: library/__main__.rst:167
 msgid ""
 "``main`` functions are often used to create command-line tools by specifying "
 "them as entry points for console scripts.  When this is done, `pip <https://"
@@ -184,7 +184,7 @@ msgid ""
 "return value of ``main`` is passed into :func:`sys.exit`. For example::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:175
+#: library/__main__.rst:175
 msgid ""
 "Since the call to ``main`` is wrapped in :func:`sys.exit`, the expectation "
 "is that your function will return some value acceptable as an input to :func:"
@@ -192,7 +192,7 @@ msgid ""
 "if your function does not have a return statement)."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:180
+#: library/__main__.rst:180
 msgid ""
 "By proactively following this convention ourselves, our module will have the "
 "same behavior when run directly (i.e. ``python echo.py``) as it will have if "
@@ -200,7 +200,7 @@ msgid ""
 "package."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:185
+#: library/__main__.rst:185
 msgid ""
 "In particular, be careful about returning strings from your ``main`` "
 "function. :func:`sys.exit` will interpret a string argument as a failure "
@@ -210,18 +210,18 @@ msgid ""
 "convention."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:193
+#: library/__main__.rst:193
 msgid ""
 "`Python Packaging User Guide <https://packaging.python.org/>`_ contains a "
 "collection of tutorials and references on how to distribute and install "
 "Python packages with modern tools."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:199
+#: library/__main__.rst:199
 msgid "``__main__.py`` in Python Packages"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:201
+#: library/__main__.rst:201
 msgid ""
 "If you are not familiar with Python packages, see section :ref:`tut-"
 "packages` of the tutorial.  Most commonly, the ``__main__.py`` file is used "
@@ -229,13 +229,13 @@ msgid ""
 "hypothetical package, \"bandclass\":"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:213
+#: library/__main__.rst:213
 msgid ""
 "``__main__.py`` will be executed when the package itself is invoked directly "
 "from the command line using the :option:`-m` flag. For example:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:220
+#: library/__main__.rst:220
 msgid ""
 "This command will cause ``__main__.py`` to run. How you utilize this "
 "mechanism will depend on the nature of the package you are writing, but in "
@@ -243,7 +243,7 @@ msgid ""
 "for students::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:233
+#: library/__main__.rst:233
 msgid ""
 "Note that ``from .student import search_students`` is an example of a "
 "relative import.  This import style can be used when referencing modules "
@@ -251,7 +251,7 @@ msgid ""
 "the :ref:`tut-modules` section of the tutorial."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:241
+#: library/__main__.rst:241
 msgid ""
 "The content of ``__main__.py`` typically isn't fenced with an ``if __name__ "
 "== '__main__'`` block.  Instead, those files are kept short and import "
@@ -259,45 +259,45 @@ msgid ""
 "easily unit-tested and are properly reusable."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:246
+#: library/__main__.rst:246
 msgid ""
 "If used, an ``if __name__ == '__main__'`` block will still work as expected "
 "for a ``__main__.py`` file within a package, because its ``__name__`` "
 "attribute will include the package's path if imported::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:254
+#: library/__main__.rst:254
 msgid ""
 "This won't work for ``__main__.py`` files in the root directory of a .zip "
 "file though.  Hence, for consistency, minimal ``__main__.py`` like the :mod:"
 "`venv` one mentioned below are preferred."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:260
+#: library/__main__.rst:260
 msgid ""
 "See :mod:`venv` for an example of a package with a minimal ``__main__.py`` "
 "in the standard library. It doesn't contain a ``if __name__ == '__main__'`` "
 "block. You can invoke it with ``python -m venv [directory]``."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:264
+#: library/__main__.rst:264
 msgid ""
 "See :mod:`runpy` for more details on the :option:`-m` flag to the "
 "interpreter executable."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:267
+#: library/__main__.rst:267
 msgid ""
 "See :mod:`zipapp` for how to run applications packaged as *.zip* files. In "
 "this case Python looks for a ``__main__.py`` file in the root directory of "
 "the archive."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:274
+#: library/__main__.rst:274
 msgid "``import __main__``"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:276
+#: library/__main__.rst:276
 msgid ""
 "Regardless of which module a Python program was started with, other modules "
 "running within that same program can import the top-level environment's "
@@ -306,26 +306,26 @@ msgid ""
 "received the special name ``'__main__'``."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:282
+#: library/__main__.rst:282
 msgid "Here is an example module that consumes the ``__main__`` namespace::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:300
+#: library/__main__.rst:300
 msgid "Example usage of this module could be as follows::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:319
+#: library/__main__.rst:319
 msgid "Now, if we started our program, the result would look like this:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:326
+#: library/__main__.rst:326
 msgid ""
 "The exit code of the program would be 1, indicating an error. Uncommenting "
 "the line with ``my_name = \"Dinsdale\"`` fixes the program and now it exits "
 "with status code 0, indicating success:"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:335
+#: library/__main__.rst:335
 msgid ""
 "Note that importing ``__main__`` doesn't cause any issues with "
 "unintentionally running top-level code meant for script use which is put in "
@@ -333,7 +333,7 @@ msgid ""
 "this work?"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:339
+#: library/__main__.rst:339
 msgid ""
 "Python inserts an empty ``__main__`` module in :data:`sys.modules` at "
 "interpreter startup, and populates it by running top-level code. In our "
@@ -346,19 +346,19 @@ msgid ""
 "this works."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:348
+#: library/__main__.rst:348
 msgid ""
 "The Python REPL is another example of a \"top-level environment\", so "
 "anything defined in the REPL becomes part of the ``__main__`` scope::"
 msgstr ""
 
-#: ../Doc/library/__main__.rst:364
+#: library/__main__.rst:364
 msgid ""
 "Note that in this case the ``__main__`` scope doesn't contain a ``__file__`` "
 "attribute as it's interactive."
 msgstr ""
 
-#: ../Doc/library/__main__.rst:367
+#: library/__main__.rst:367
 msgid ""
 "The ``__main__`` scope is used in the implementation of :mod:`pdb` and :mod:"
 "`rlcompleter`."

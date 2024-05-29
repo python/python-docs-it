@@ -17,27 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/howto/ipaddress.rst:9
+#: howto/ipaddress.rst:9
 msgid "An introduction to the ipaddress module"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:0
+#: howto/ipaddress.rst:0
 msgid "author"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:11
+#: howto/ipaddress.rst:11
 msgid "Peter Moody"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:12
+#: howto/ipaddress.rst:12
 msgid "Nick Coghlan"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:-1
+#: howto/ipaddress.rst:-1
 msgid "Overview"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:16
+#: howto/ipaddress.rst:16
 msgid ""
 "This document aims to provide a gentle introduction to the :mod:`ipaddress` "
 "module. It is aimed primarily at users that aren't already familiar with IP "
@@ -46,22 +46,22 @@ msgid ""
 "concepts."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:24
+#: howto/ipaddress.rst:24
 msgid "Creating Address/Network/Interface objects"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:26
+#: howto/ipaddress.rst:26
 msgid ""
 "Since :mod:`ipaddress` is a module for inspecting and manipulating IP "
 "addresses, the first thing you'll want to do is create some objects.  You "
 "can use :mod:`ipaddress` to create objects from strings and integers."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:32
+#: howto/ipaddress.rst:32
 msgid "A Note on IP Versions"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:34
+#: howto/ipaddress.rst:34
 msgid ""
 "For readers that aren't particularly familiar with IP addressing, it's "
 "important to know that the Internet Protocol (IP) is currently in the "
@@ -72,7 +72,7 @@ msgid ""
 "internet."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:41
+#: howto/ipaddress.rst:41
 msgid ""
 "Explaining the details of the differences between the two versions of the "
 "protocol is beyond the scope of this introduction, but readers need to at "
@@ -80,11 +80,11 @@ msgid ""
 "necessary to force the use of one version or the other."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:48
+#: howto/ipaddress.rst:48
 msgid "IP Host Addresses"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:50
+#: howto/ipaddress.rst:50
 msgid ""
 "Addresses, often referred to as \"host addresses\" are the most basic unit "
 "when working with IP addressing. The simplest way to create addresses is to "
@@ -93,24 +93,24 @@ msgid ""
 "value:"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:61
+#: howto/ipaddress.rst:61
 msgid ""
 "Addresses can also be created directly from integers. Values that will fit "
 "within 32 bits are assumed to be IPv4 addresses::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:69
+#: howto/ipaddress.rst:69
 msgid ""
 "To force the use of IPv4 or IPv6 addresses, the relevant classes can be "
 "invoked directly. This is particularly useful to force creation of IPv6 "
 "addresses for small integers::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:82
+#: howto/ipaddress.rst:82
 msgid "Defining Networks"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:84
+#: howto/ipaddress.rst:84
 msgid ""
 "Host addresses are usually grouped together into IP networks, so :mod:"
 "`ipaddress` provides a way to create, inspect and manipulate network "
@@ -122,13 +122,13 @@ msgid ""
 "defines the expected value of those bits."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:93
+#: howto/ipaddress.rst:93
 msgid ""
 "As for addresses, a factory function is provided that determines the correct "
 "IP version automatically::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:101
+#: howto/ipaddress.rst:101
 msgid ""
 "Network objects cannot have any host bits set.  The practical effect of this "
 "is that ``192.0.2.1/24`` does not describe a network.  Such definitions are "
@@ -137,7 +137,7 @@ msgid ""
 "network and are described further in the next section."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:107
+#: howto/ipaddress.rst:107
 msgid ""
 "By default, attempting to create a network object with host bits set will "
 "result in :exc:`ValueError` being raised. To request that the additional "
@@ -145,7 +145,7 @@ msgid ""
 "the constructor::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:119
+#: howto/ipaddress.rst:119
 msgid ""
 "While the string form offers significantly more flexibility, networks can "
 "also be defined with integers, just like host addresses. In this case, the "
@@ -153,17 +153,17 @@ msgid ""
 "integer, so the network prefix includes the entire network address::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:129
+#: howto/ipaddress.rst:129
 msgid ""
 "As with addresses, creation of a particular kind of network can be forced by "
 "calling the class constructor directly instead of using the factory function."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:135
+#: howto/ipaddress.rst:135
 msgid "Host Interfaces"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:137
+#: howto/ipaddress.rst:137
 msgid ""
 "As mentioned just above, if you need to describe an address on a particular "
 "network, neither the address nor the network classes are sufficient. "
@@ -176,50 +176,50 @@ msgid ""
 "to being a network address."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:152
+#: howto/ipaddress.rst:152
 msgid ""
 "Integer inputs are accepted (as with networks), and use of a particular IP "
 "version can be forced by calling the relevant constructor directly."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:157
+#: howto/ipaddress.rst:157
 msgid "Inspecting Address/Network/Interface Objects"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:159
+#: howto/ipaddress.rst:159
 msgid ""
 "You've gone to the trouble of creating an IPv(4|6)(Address|Network|"
 "Interface) object, so you probably want to get information about it.  :mod:"
 "`ipaddress` tries to make doing this easy and intuitive."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:163
+#: howto/ipaddress.rst:163
 msgid "Extracting the IP version::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:172
+#: howto/ipaddress.rst:172
 msgid "Obtaining the network from an interface::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:181
+#: howto/ipaddress.rst:181
 msgid "Finding out how many individual addresses are in a network::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:190
+#: howto/ipaddress.rst:190
 msgid "Iterating through the \"usable\" addresses on a network::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:205
+#: howto/ipaddress.rst:205
 msgid ""
 "Obtaining the netmask (i.e. set bits corresponding to the network prefix) or "
 "the hostmask (any bits that are not part of the netmask):"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:220
+#: howto/ipaddress.rst:220
 msgid "Exploding or compressing the address::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:231
+#: howto/ipaddress.rst:231
 msgid ""
 "While IPv4 doesn't support explosion or compression, the associated objects "
 "still provide the relevant properties so that version neutral code can "
@@ -227,58 +227,58 @@ msgid ""
 "addresses while still correctly handling IPv4 addresses."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:238
+#: howto/ipaddress.rst:238
 msgid "Networks as lists of Addresses"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:240
+#: howto/ipaddress.rst:240
 msgid ""
 "It's sometimes useful to treat networks as lists.  This means it is possible "
 "to index them like this::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:253
+#: howto/ipaddress.rst:253
 msgid ""
 "It also means that network objects lend themselves to using the list "
 "membership test syntax like this::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:259
+#: howto/ipaddress.rst:259
 msgid "Containment testing is done efficiently based on the network prefix::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:269
+#: howto/ipaddress.rst:269
 msgid "Comparisons"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:271
+#: howto/ipaddress.rst:271
 msgid ""
 ":mod:`ipaddress` provides some simple, hopefully intuitive ways to compare "
 "objects, where it makes sense::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:277
+#: howto/ipaddress.rst:277
 msgid ""
 "A :exc:`TypeError` exception is raised if you try to compare objects of "
 "different versions or different types."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:282
+#: howto/ipaddress.rst:282
 msgid "Using IP Addresses with other modules"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:284
+#: howto/ipaddress.rst:284
 msgid ""
 "Other modules that use IP addresses (such as :mod:`socket`) usually won't "
 "accept objects from this module directly. Instead, they must be coerced to "
 "an integer or string that the other module will accept::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:296
+#: howto/ipaddress.rst:296
 msgid "Getting more detail when instance creation fails"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:298
+#: howto/ipaddress.rst:298
 msgid ""
 "When creating address/network/interface objects using the version-agnostic "
 "factory functions, any errors will be reported as :exc:`ValueError` with a "
@@ -288,7 +288,7 @@ msgid ""
 "IPv6 in order to provide more detail on why it has been rejected."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:305
+#: howto/ipaddress.rst:305
 msgid ""
 "To support use cases where it is useful to have access to this additional "
 "detail, the individual class constructors actually raise the :exc:"
@@ -297,13 +297,13 @@ msgid ""
 "definition failed to parse correctly."
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:311
+#: howto/ipaddress.rst:311
 msgid ""
 "The error messages are significantly more detailed when using the class "
 "constructors directly. For example::"
 msgstr ""
 
-#: ../Doc/howto/ipaddress.rst:332
+#: howto/ipaddress.rst:332
 msgid ""
 "However, both of the module specific exceptions have :exc:`ValueError` as "
 "their parent class, so if you're not concerned with the particular type of "

@@ -17,36 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/keyword.rst:2
+#: library/keyword.rst:2
 msgid ":mod:`!keyword` --- Testing for Python keywords"
 msgstr ""
 
-#: ../Doc/library/keyword.rst:7
+#: library/keyword.rst:7
 msgid "**Source code:** :source:`Lib/keyword.py`"
 msgstr ""
 
-#: ../Doc/library/keyword.rst:11
+#: library/keyword.rst:11
 msgid ""
 "This module allows a Python program to determine if a string is a :ref:"
 "`keyword <keywords>` or :ref:`soft keyword <soft-keywords>`."
 msgstr ""
 
-#: ../Doc/library/keyword.rst:17
+#: library/keyword.rst:17
 msgid "Return ``True`` if *s* is a Python :ref:`keyword <keywords>`."
 msgstr ""
 
-#: ../Doc/library/keyword.rst:22
+#: library/keyword.rst:22
 msgid ""
 "Sequence containing all the :ref:`keywords <keywords>` defined for the "
 "interpreter.  If any keywords are defined to only be active when particular :"
 "mod:`__future__` statements are in effect, these will be included as well."
 msgstr ""
 
-#: ../Doc/library/keyword.rst:29
+#: library/keyword.rst:29
 msgid "Return ``True`` if *s* is a Python :ref:`soft keyword <soft-keywords>`."
 msgstr ""
 
-#: ../Doc/library/keyword.rst:36
+#: library/keyword.rst:36
 msgid ""
 "Sequence containing all the :ref:`soft keywords <soft-keywords>` defined for "
 "the interpreter.  If any soft keywords are defined to only be active when "

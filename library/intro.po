@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/intro.rst:5
+#: library/intro.rst:5
 msgid "Introduction"
 msgstr ""
 
-#: ../Doc/library/intro.rst:7
+#: library/intro.rst:7
 msgid "The \"Python library\" contains several different kinds of components."
 msgstr ""
 
-#: ../Doc/library/intro.rst:9
+#: library/intro.rst:9
 msgid ""
 "It contains data types that would normally be considered part of the "
 "\"core\" of a language, such as numbers and lists.  For these types, the "
@@ -35,7 +35,7 @@ msgid ""
 "the spelling and priorities of operators.)"
 msgstr ""
 
-#: ../Doc/library/intro.rst:15
+#: library/intro.rst:15
 msgid ""
 "The library also contains built-in functions and exceptions --- objects that "
 "can be used by all Python code without the need of an :keyword:`import` "
@@ -43,7 +43,7 @@ msgid ""
 "essential for the core semantics and are only described here."
 msgstr ""
 
-#: ../Doc/library/intro.rst:20
+#: library/intro.rst:20
 msgid ""
 "The bulk of the library, however, consists of a collection of modules. There "
 "are many ways to dissect this collection.  Some modules are written in C and "
@@ -59,14 +59,14 @@ msgid ""
 "when Python was compiled and installed."
 msgstr ""
 
-#: ../Doc/library/intro.rst:32
+#: library/intro.rst:32
 msgid ""
 "This manual is organized \"from the inside out:\" it first describes the "
 "built-in functions, data types and exceptions, and finally the modules, "
 "grouped in chapters of related modules."
 msgstr ""
 
-#: ../Doc/library/intro.rst:36
+#: library/intro.rst:36
 msgid ""
 "This means that if you start reading this manual from the start, and skip to "
 "the next chapter when you get bored, you will get a reasonable overview of "
@@ -81,28 +81,28 @@ msgid ""
 "familiarity with this material."
 msgstr ""
 
-#: ../Doc/library/intro.rst:48
+#: library/intro.rst:48
 msgid "Let the show begin!"
 msgstr ""
 
-#: ../Doc/library/intro.rst:54
+#: library/intro.rst:54
 msgid "Notes on availability"
 msgstr ""
 
-#: ../Doc/library/intro.rst:56
+#: library/intro.rst:56
 msgid ""
 "An \"Availability: Unix\" note means that this function is commonly found on "
 "Unix systems.  It does not make any claims about its existence on a specific "
 "operating system."
 msgstr ""
 
-#: ../Doc/library/intro.rst:60
+#: library/intro.rst:60
 msgid ""
 "If not separately noted, all functions that claim \"Availability: Unix\" are "
 "supported on macOS and iOS, both of which build on a Unix core."
 msgstr ""
 
-#: ../Doc/library/intro.rst:63
+#: library/intro.rst:63
 msgid ""
 "If an availability note contains both a minimum Kernel version and a minimum "
 "libc version, then both conditions must hold. For example a feature with "
@@ -110,11 +110,11 @@ msgid ""
 "3.17 or newer and glibc 2.27 or newer."
 msgstr ""
 
-#: ../Doc/library/intro.rst:71
+#: library/intro.rst:71
 msgid "WebAssembly platforms"
 msgstr ""
 
-#: ../Doc/library/intro.rst:73
+#: library/intro.rst:73
 msgid ""
 "The `WebAssembly`_ platforms ``wasm32-emscripten`` (`Emscripten`_) and "
 "``wasm32-wasi`` (`WASI`_) provide a subset of POSIX APIs. WebAssembly "
@@ -128,7 +128,7 @@ msgid ""
 "loop."
 msgstr ""
 
-#: ../Doc/library/intro.rst:83
+#: library/intro.rst:83
 msgid ""
 "The properties and behavior of Python on WebAssembly platforms depend on the "
 "`Emscripten`_-SDK or `WASI`_-SDK version, WASM runtimes (browser, NodeJS, "
@@ -137,7 +137,7 @@ msgid ""
 "the future."
 msgstr ""
 
-#: ../Doc/library/intro.rst:89
+#: library/intro.rst:89
 msgid ""
 "For Python in the browser, users should consider `Pyodide`_ or `PyScript`_. "
 "PyScript is built on top of Pyodide, which itself is built on top of CPython "
@@ -146,7 +146,7 @@ msgid ""
 "``XMLHttpRequest`` and ``Fetch`` APIs."
 msgstr ""
 
-#: ../Doc/library/intro.rst:95
+#: library/intro.rst:95
 msgid ""
 "Process-related APIs are not available or always fail with an error. That "
 "includes APIs that spawn new processes (:func:`~os.fork`, :func:`~os."
@@ -155,7 +155,7 @@ msgid ""
 "importable but does not work."
 msgstr ""
 
-#: ../Doc/library/intro.rst:101
+#: library/intro.rst:101
 msgid ""
 "The :mod:`socket` module is available, but is limited and behaves "
 "differently from other platforms. On Emscripten, sockets are always non-"
@@ -165,24 +165,24 @@ msgid ""
 "file descriptor."
 msgstr ""
 
-#: ../Doc/library/intro.rst:108
+#: library/intro.rst:108
 msgid ""
 "Some functions are stubs that either don't do anything and always return "
 "hardcoded values."
 msgstr ""
 
-#: ../Doc/library/intro.rst:111
+#: library/intro.rst:111
 msgid ""
 "Functions related to file descriptors, file permissions, file ownership, and "
 "links are limited and don't support some operations. For example, WASI does "
 "not permit symlinks with absolute file names."
 msgstr ""
 
-#: ../Doc/library/intro.rst:126
+#: library/intro.rst:126
 msgid "iOS"
 msgstr ""
 
-#: ../Doc/library/intro.rst:128
+#: library/intro.rst:128
 msgid ""
 "iOS is, in most respects, a POSIX operating system. File I/O, socket "
 "handling, and threading all behave as they would on any POSIX operating "
@@ -190,7 +190,7 @@ msgid ""
 "POSIX systems."
 msgstr ""
 
-#: ../Doc/library/intro.rst:132
+#: library/intro.rst:132
 msgid ""
 "iOS can only use Python in \"embedded\" mode. There is no Python REPL, and "
 "no ability to execute binaries that are part of the normal Python developer "
@@ -200,7 +200,7 @@ msgid ""
 "<using-ios>` for more details."
 msgstr ""
 
-#: ../Doc/library/intro.rst:139
+#: library/intro.rst:139
 msgid ""
 "An iOS app cannot use any form of subprocessing, background processing, or "
 "inter-process communication. If an iOS app attempts to create a subprocess, "
@@ -210,14 +210,14 @@ msgid ""
 "specific APIs that exist for this purpose."
 msgstr ""
 
-#: ../Doc/library/intro.rst:146
+#: library/intro.rst:146
 msgid ""
 "iOS apps have limited access to modify system resources (such as the system "
 "clock). These resources will often be *readable*, but attempts to modify "
 "those resources will usually fail."
 msgstr ""
 
-#: ../Doc/library/intro.rst:150
+#: library/intro.rst:150
 msgid ""
 "iOS apps have a limited concept of console input and output. ``stdout`` and "
 "``stderr`` *exist*, and content written to ``stdout`` and ``stderr`` will be "
@@ -227,14 +227,14 @@ msgid ""
 "``stdout`` or ``stderr``."
 msgstr ""
 
-#: ../Doc/library/intro.rst:157
+#: library/intro.rst:157
 msgid ""
 "iOS apps have no concept of  ``stdin`` at all. While iOS apps can have a "
 "keyboard, this is a software feature, not something that is attached to "
 "``stdin``."
 msgstr ""
 
-#: ../Doc/library/intro.rst:161
+#: library/intro.rst:161
 msgid ""
 "As a result, Python library that involve console manipulation (such as :mod:"
 "`curses` and :mod:`readline`) are not available on iOS."

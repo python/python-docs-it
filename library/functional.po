@@ -17,16 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/functional.rst:3
+#: library/functional.rst:3
 msgid "Functional Programming Modules"
 msgstr ""
 
-#: ../Doc/library/functional.rst:5
+#: library/functional.rst:5
 msgid ""
 "The modules described in this chapter provide functions and classes that "
 "support a functional programming style, and general operations on callables."
 msgstr ""
 
-#: ../Doc/library/functional.rst:8
+#: library/functional.rst:8
 msgid "The following modules are documented in this chapter:"
 msgstr ""

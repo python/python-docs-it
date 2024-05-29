@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/abstract.rst:7
+#: c-api/abstract.rst:7
 msgid "Abstract Objects Layer"
 msgstr ""
 
-#: ../Doc/c-api/abstract.rst:9
+#: c-api/abstract.rst:9
 msgid ""
 "The functions in this chapter interact with Python objects regardless of "
 "their type, or with wide classes of object types (e.g. all numerical types, "
@@ -29,7 +29,7 @@ msgid ""
 "apply, they will raise a Python exception."
 msgstr ""
 
-#: ../Doc/c-api/abstract.rst:14
+#: c-api/abstract.rst:14
 msgid ""
 "It is not possible to use these functions on objects that are not properly "
 "initialized, such as a list object that has been created by :c:func:"

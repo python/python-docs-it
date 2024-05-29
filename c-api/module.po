@@ -17,29 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/module.rst:6
+#: c-api/module.rst:6
 msgid "Module Objects"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:15
+#: c-api/module.rst:15
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python module type.  "
 "This is exposed to Python programs as ``types.ModuleType``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:21
+#: c-api/module.rst:21
 msgid ""
 "Return true if *p* is a module object, or a subtype of a module object. This "
 "function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:27
+#: c-api/module.rst:27
 msgid ""
 "Return true if *p* is a module object, but not a subtype of :c:data:"
 "`PyModule_Type`.  This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:40
+#: c-api/module.rst:40
 msgid ""
 "Return a new module object with the :attr:`__name__` attribute set to "
 "*name*. The module's :attr:`__name__`, :attr:`__doc__`, :attr:`__package__`, "
@@ -48,17 +48,17 @@ msgid ""
 "`__file__` attribute."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:48
+#: c-api/module.rst:48
 msgid ":attr:`__package__` and :attr:`__loader__` are set to ``None``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:54
+#: c-api/module.rst:54
 msgid ""
 "Similar to :c:func:`PyModule_NewObject`, but the name is a UTF-8 encoded "
 "string instead of a Unicode object."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:62
+#: c-api/module.rst:62
 msgid ""
 "Return the dictionary object that implements *module*'s namespace; this "
 "object is the same as the :attr:`~object.__dict__` attribute of the module "
@@ -66,40 +66,40 @@ msgid ""
 "object), :exc:`SystemError` is raised and ``NULL`` is returned."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:67
+#: c-api/module.rst:67
 msgid ""
 "It is recommended extensions use other ``PyModule_*`` and ``PyObject_*`` "
 "functions rather than directly manipulate a module's :attr:`~object."
 "__dict__`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:78
+#: c-api/module.rst:78
 msgid ""
 "Return *module*'s :attr:`__name__` value.  If the module does not provide "
 "one, or if it is not a string, :exc:`SystemError` is raised and ``NULL`` is "
 "returned."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:86
+#: c-api/module.rst:86
 msgid ""
 "Similar to :c:func:`PyModule_GetNameObject` but return the name encoded to "
 "``'utf-8'``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:91
+#: c-api/module.rst:91
 msgid ""
 "Return the \"state\" of the module, that is, a pointer to the block of "
 "memory allocated at module creation time, or ``NULL``.  See :c:member:"
 "`PyModuleDef.m_size`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:98
+#: c-api/module.rst:98
 msgid ""
 "Return a pointer to the :c:type:`PyModuleDef` struct from which the module "
 "was created, or ``NULL`` if the module wasn't created from a definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:108
+#: c-api/module.rst:108
 msgid ""
 "Return the name of the file from which *module* was loaded using *module*'s :"
 "attr:`__file__` attribute.  If this is not defined, or if it is not a "
@@ -107,23 +107,23 @@ msgid ""
 "return a reference to a Unicode object."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:118
+#: c-api/module.rst:118
 msgid ""
 "Similar to :c:func:`PyModule_GetFilenameObject` but return the filename "
 "encoded to 'utf-8'."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:121
+#: c-api/module.rst:121
 msgid ""
 ":c:func:`PyModule_GetFilename` raises :exc:`UnicodeEncodeError` on "
 "unencodable filenames, use :c:func:`PyModule_GetFilenameObject` instead."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:129
+#: c-api/module.rst:129
 msgid "Initializing C modules"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:131
+#: c-api/module.rst:131
 msgid ""
 "Modules objects are usually created from extension modules (shared libraries "
 "which export an initialization function), or compiled-in modules (where the "
@@ -131,55 +131,55 @@ msgid ""
 "See :ref:`building` or :ref:`extending-with-embedding` for details."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:136
+#: c-api/module.rst:136
 msgid ""
 "The initialization function can either pass a module definition instance to :"
 "c:func:`PyModule_Create`, and return the resulting module object, or request "
 "\"multi-phase initialization\" by returning the definition struct itself."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:142
+#: c-api/module.rst:142
 msgid ""
 "The module definition struct, which holds all information needed to create a "
 "module object. There is usually only one statically initialized variable of "
 "this type for each module."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:148
+#: c-api/module.rst:148
 msgid "Always initialize this member to :c:macro:`PyModuleDef_HEAD_INIT`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:152
+#: c-api/module.rst:152
 msgid "Name for the new module."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:156
+#: c-api/module.rst:156
 msgid ""
 "Docstring for the module; usually a docstring variable created with :c:macro:"
 "`PyDoc_STRVAR` is used."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:161
+#: c-api/module.rst:161
 msgid ""
 "Module state may be kept in a per-module memory area that can be retrieved "
 "with :c:func:`PyModule_GetState`, rather than in static globals. This makes "
 "modules safe for use in multiple sub-interpreters."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:165
+#: c-api/module.rst:165
 msgid ""
 "This memory area is allocated based on *m_size* on module creation, and "
 "freed when the module object is deallocated, after the :c:member:"
 "`~PyModuleDef.m_free` function has been called, if present."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:169
+#: c-api/module.rst:169
 msgid ""
 "Setting ``m_size`` to ``-1`` means that the module does not support sub-"
 "interpreters, because it has global state."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:172
+#: c-api/module.rst:172
 msgid ""
 "Setting it to a non-negative value means that the module can be re-"
 "initialized and specifies the additional amount of memory it requires for "
@@ -187,37 +187,36 @@ msgid ""
 "initialization."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:177
+#: c-api/module.rst:177
 msgid "See :PEP:`3121` for more details."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:181
+#: c-api/module.rst:181
 msgid ""
 "A pointer to a table of module-level functions, described by :c:type:"
 "`PyMethodDef` values.  Can be ``NULL`` if no functions are present."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:186
+#: c-api/module.rst:186
 msgid ""
 "An array of slot definitions for multi-phase initialization, terminated by a "
 "``{0, NULL}`` entry. When using single-phase initialization, *m_slots* must "
 "be ``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:192
+#: c-api/module.rst:192
 msgid ""
 "Prior to version 3.5, this member was always set to ``NULL``, and was "
 "defined as:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:199
+#: c-api/module.rst:199
 msgid ""
 "A traversal function to call during GC traversal of the module object, or "
 "``NULL`` if not needed."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:202 ../Doc/c-api/module.rst:217
-#: ../Doc/c-api/module.rst:238
+#: c-api/module.rst:217 c-api/module.rst:238
 msgid ""
 "This function is not called if the module state was requested but is not "
 "allocated yet. This is the case immediately after the module is created and "
@@ -227,18 +226,17 @@ msgid ""
 "`PyModule_GetState`) is ``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:209 ../Doc/c-api/module.rst:230
-#: ../Doc/c-api/module.rst:245
+#: c-api/module.rst:230 c-api/module.rst:245
 msgid "No longer called before the module state is allocated."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:214
+#: c-api/module.rst:214
 msgid ""
 "A clear function to call during GC clearing of the module object, or "
 "``NULL`` if not needed."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:224
+#: c-api/module.rst:224
 msgid ""
 "Like :c:member:`PyTypeObject.tp_clear`, this function is not *always* called "
 "before a module is deallocated. For example, when reference counting is "
@@ -247,55 +245,55 @@ msgid ""
 "directly."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:235
+#: c-api/module.rst:235
 msgid ""
 "A function to call during deallocation of the module object, or ``NULL`` if "
 "not needed."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:249
+#: c-api/module.rst:249
 msgid "Single-phase initialization"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:251
+#: c-api/module.rst:251
 msgid ""
 "The module initialization function may create and return the module object "
 "directly. This is referred to as \"single-phase initialization\", and uses "
 "one of the following two module creation functions:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:257
+#: c-api/module.rst:257
 msgid ""
 "Create a new module object, given the definition in *def*.  This behaves "
 "like :c:func:`PyModule_Create2` with *module_api_version* set to :c:macro:"
 "`PYTHON_API_VERSION`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:264
+#: c-api/module.rst:264
 msgid ""
 "Create a new module object, given the definition in *def*, assuming the API "
 "version *module_api_version*.  If that version does not match the version of "
 "the running interpreter, a :exc:`RuntimeWarning` is emitted."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:270
+#: c-api/module.rst:270
 msgid ""
 "Most uses of this function should be using :c:func:`PyModule_Create` "
 "instead; only use this if you are sure you need it."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:273
+#: c-api/module.rst:273
 msgid ""
 "Before it is returned from in the initialization function, the resulting "
 "module object is typically populated using functions like :c:func:"
 "`PyModule_AddObjectRef`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:279
+#: c-api/module.rst:279
 msgid "Multi-phase initialization"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:281
+#: c-api/module.rst:281
 msgid ""
 "An alternate way to specify extensions is to request \"multi-phase "
 "initialization\". Extension modules created this way behave more like Python "
@@ -305,7 +303,7 @@ msgid ""
 "__init__` methods of classes."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:288
+#: c-api/module.rst:288
 msgid ""
 "Unlike modules created using single-phase initialization, these modules are "
 "not singletons: if the *sys.modules* entry is removed and the module is re-"
@@ -318,14 +316,14 @@ msgid ""
 "__dict__` or individual classes created with :c:func:`PyType_FromSpec`)."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:298
+#: c-api/module.rst:298
 msgid ""
 "All modules created using multi-phase initialization are expected to "
 "support :ref:`sub-interpreters <sub-interpreter-support>`. Making sure "
 "multiple modules are independent is typically enough to achieve this."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:302
+#: c-api/module.rst:302
 msgid ""
 "To request multi-phase initialization, the initialization function "
 "(PyInit_modulename) returns a :c:type:`PyModuleDef` instance with non-empty :"
@@ -333,65 +331,65 @@ msgid ""
 "instance must be initialized with the following function:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:309
+#: c-api/module.rst:309
 msgid ""
 "Ensures a module definition is a properly initialized Python object that "
 "correctly reports its type and reference count."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:312
+#: c-api/module.rst:312
 msgid "Returns *def* cast to ``PyObject*``, or ``NULL`` if an error occurred."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:316
+#: c-api/module.rst:316
 msgid ""
 "The *m_slots* member of the module definition must point to an array of "
 "``PyModuleDef_Slot`` structures:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:323
+#: c-api/module.rst:323
 msgid "A slot ID, chosen from the available values explained below."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:327
+#: c-api/module.rst:327
 msgid "Value of the slot, whose meaning depends on the slot ID."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:331
+#: c-api/module.rst:331
 msgid "The *m_slots* array must be terminated by a slot with id 0."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:333
+#: c-api/module.rst:333
 msgid "The available slot types are:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:337
+#: c-api/module.rst:337
 msgid ""
 "Specifies a function that is called to create the module object itself. The "
 "*value* pointer of this slot must point to a function of the signature:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:343
+#: c-api/module.rst:343
 msgid ""
 "The function receives a :py:class:`~importlib.machinery.ModuleSpec` "
 "instance, as defined in :PEP:`451`, and the module definition. It should "
 "return a new module object, or set an error and return ``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:348
+#: c-api/module.rst:348
 msgid ""
 "This function should be kept minimal. In particular, it should not call "
 "arbitrary Python code, as trying to import the same module again may result "
 "in an infinite loop."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:352
+#: c-api/module.rst:352
 msgid ""
 "Multiple ``Py_mod_create`` slots may not be specified in one module "
 "definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:355
+#: c-api/module.rst:355
 msgid ""
 "If ``Py_mod_create`` is not specified, the import machinery will create a "
 "normal module object using :c:func:`PyModule_New`. The name is taken from "
@@ -400,7 +398,7 @@ msgid ""
 "through symlinks, all while sharing a single module definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:361
+#: c-api/module.rst:361
 msgid ""
 "There is no requirement for the returned object to be an instance of :c:type:"
 "`PyModule_Type`. Any type can be used, as long as it supports setting and "
@@ -410,7 +408,7 @@ msgid ""
 "``Py_mod_create``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:370
+#: c-api/module.rst:370
 msgid ""
 "Specifies a function that is called to *execute* the module. This is "
 "equivalent to executing the code of a Python module: typically, this "
@@ -418,61 +416,61 @@ msgid ""
 "function is:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:378
+#: c-api/module.rst:378
 msgid ""
 "If multiple ``Py_mod_exec`` slots are specified, they are processed in the "
 "order they appear in the *m_slots* array."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:383 ../Doc/c-api/module.rst:416
+#: c-api/module.rst:416
 msgid "Specifies one of the following values:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:389
+#: c-api/module.rst:389
 msgid "The module does not support being imported in subinterpreters."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:393
+#: c-api/module.rst:393
 msgid ""
 "The module supports being imported in subinterpreters, but only when they "
 "share the main interpreter's GIL. (See :ref:`isolating-extensions-howto`.)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:399
+#: c-api/module.rst:399
 msgid ""
 "The module supports being imported in subinterpreters, even when they have "
 "their own GIL. (See :ref:`isolating-extensions-howto`.)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:403
+#: c-api/module.rst:403
 msgid ""
 "This slot determines whether or not importing this module in a "
 "subinterpreter will fail."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:406
+#: c-api/module.rst:406
 msgid ""
 "Multiple ``Py_mod_multiple_interpreters`` slots may not be specified in one "
 "module definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:409
+#: c-api/module.rst:409
 msgid ""
 "If ``Py_mod_multiple_interpreters`` is not specified, the import machinery "
 "defaults to ``Py_MOD_MULTIPLE_INTERPRETERS_NOT_SUPPORTED``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:420
+#: c-api/module.rst:420
 msgid ""
 "The module depends on the presence of the global interpreter lock (GIL), and "
 "may access global state without synchronization."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:425
+#: c-api/module.rst:425
 msgid "The module is safe to run without an active GIL."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:427
+#: c-api/module.rst:427
 msgid ""
 "This slot is ignored by Python builds not configured with :option:`--disable-"
 "gil`.  Otherwise, it determines whether or not importing this module will "
@@ -480,26 +478,26 @@ msgid ""
 "for more detail."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:432
+#: c-api/module.rst:432
 msgid ""
 "Multiple ``Py_mod_gil`` slots may not be specified in one module definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:434
+#: c-api/module.rst:434
 msgid ""
 "If ``Py_mod_gil`` is not specified, the import machinery defaults to "
 "``Py_MOD_GIL_USED``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:439
+#: c-api/module.rst:439
 msgid "See :PEP:`489` for more details on multi-phase initialization."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:442
+#: c-api/module.rst:442
 msgid "Low-level module creation functions"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:444
+#: c-api/module.rst:444
 msgid ""
 "The following functions are called under the hood when using multi-phase "
 "initialization. They can be used directly, for example when creating module "
@@ -507,14 +505,14 @@ msgid ""
 "``PyModule_ExecDef`` must be called to fully initialize a module."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:451
+#: c-api/module.rst:451
 msgid ""
 "Create a new module object, given the definition in *def* and the ModuleSpec "
 "*spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` with "
 "*module_api_version* set to :c:macro:`PYTHON_API_VERSION`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:459
+#: c-api/module.rst:459
 msgid ""
 "Create a new module object, given the definition in *def* and the ModuleSpec "
 "*spec*, assuming the API version *module_api_version*. If that version does "
@@ -522,24 +520,24 @@ msgid ""
 "emitted."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:466
+#: c-api/module.rst:466
 msgid ""
 "Most uses of this function should be using :c:func:`PyModule_FromDefAndSpec` "
 "instead; only use this if you are sure you need it."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:473
+#: c-api/module.rst:473
 msgid "Process any execution slots (:c:data:`Py_mod_exec`) given in *def*."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:479
+#: c-api/module.rst:479
 msgid ""
 "Set the docstring for *module* to *docstring*. This function is called "
 "automatically when creating a module from ``PyModuleDef``, using either "
 "``PyModule_Create`` or ``PyModule_FromDefAndSpec``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:488
+#: c-api/module.rst:488
 msgid ""
 "Add the functions from the ``NULL`` terminated *functions* array to "
 "*module*. Refer to the :c:type:`PyMethodDef` documentation for details on "
@@ -551,11 +549,11 @@ msgid ""
 "``PyModule_FromDefAndSpec``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:500
+#: c-api/module.rst:500
 msgid "Support functions"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:502
+#: c-api/module.rst:502
 msgid ""
 "The module initialization function (if using single phase initialization) or "
 "a function called from a module execution slot (if using multi-phase "
@@ -563,41 +561,40 @@ msgid ""
 "module state:"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:509
+#: c-api/module.rst:509
 msgid ""
 "Add an object to *module* as *name*.  This is a convenience function which "
 "can be used from the module's initialization function."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:512
+#: c-api/module.rst:512
 msgid ""
 "On success, return ``0``. On error, raise an exception and return ``-1``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:514
+#: c-api/module.rst:514
 msgid ""
 "Return ``NULL`` if *value* is ``NULL``. It must be called with an exception "
 "raised in this case."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:517 ../Doc/c-api/module.rst:556
-#: ../Doc/c-api/module.rst:583
+#: c-api/module.rst:556 c-api/module.rst:583
 msgid "Example usage::"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:531
+#: c-api/module.rst:531
 msgid ""
 "The example can also be written without checking explicitly if *obj* is "
 "``NULL``::"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:543
+#: c-api/module.rst:543
 msgid ""
 "Note that ``Py_XDECREF()`` should be used instead of ``Py_DECREF()`` in this "
 "case, since *obj* can be ``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:551
+#: c-api/module.rst:551
 msgid ""
 "Similar to :c:func:`PyModule_AddObjectRef`, but \"steals\" a reference to "
 "*value*. It can be called with a result of function that returns a new "
@@ -605,50 +602,50 @@ msgid ""
 "variable."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:567
+#: c-api/module.rst:567
 msgid ""
 "Similar to :c:func:`PyModule_AddObjectRef`, but steals a reference to "
 "*value* on success (if it returns ``0``)."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:570
+#: c-api/module.rst:570
 msgid ""
 "The new :c:func:`PyModule_Add` or :c:func:`PyModule_AddObjectRef` functions "
 "are recommended, since it is easy to introduce reference leaks by misusing "
 "the :c:func:`PyModule_AddObject` function."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:577
+#: c-api/module.rst:577
 msgid ""
 "Unlike other functions that steal references, ``PyModule_AddObject()`` only "
 "releases the reference to *value* **on success**."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:580
+#: c-api/module.rst:580
 msgid ""
 "This means that its return value must be checked, and calling code must :c:"
 "func:`Py_XDECREF` *value* manually on error."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:598
+#: c-api/module.rst:598
 msgid ":c:func:`PyModule_AddObject` is :term:`soft deprecated`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:603
+#: c-api/module.rst:603
 msgid ""
 "Add an integer constant to *module* as *name*.  This convenience function "
 "can be used from the module's initialization function. Return ``-1`` on "
 "error, ``0`` on success."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:610
+#: c-api/module.rst:610
 msgid ""
 "Add a string constant to *module* as *name*.  This convenience function can "
 "be used from the module's initialization function.  The string *value* must "
 "be ``NULL``-terminated.  Return ``-1`` on error, ``0`` on success."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:617
+#: c-api/module.rst:617
 msgid ""
 "Add an int constant to *module*. The name and the value are taken from "
 "*macro*. For example ``PyModule_AddIntMacro(module, AF_INET)`` adds the int "
@@ -656,11 +653,11 @@ msgid ""
 "error, ``0`` on success."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:625
+#: c-api/module.rst:625
 msgid "Add a string constant to *module*."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:629
+#: c-api/module.rst:629
 msgid ""
 "Add a type object to *module*. The type object is finalized by calling "
 "internally :c:func:`PyType_Ready`. The name of the type object is taken from "
@@ -668,7 +665,7 @@ msgid ""
 "``-1`` on error, ``0`` on success."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:639
+#: c-api/module.rst:639
 msgid ""
 "Indicate that *module* does or does not support running without the global "
 "interpreter lock (GIL), using one of the values from :c:macro:`Py_mod_gil`. "
@@ -679,25 +676,25 @@ msgid ""
 "Return ``-1`` on error, ``0`` on success."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:652
+#: c-api/module.rst:652
 msgid "Module lookup"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:654
+#: c-api/module.rst:654
 msgid ""
 "Single-phase initialization creates singleton modules that can be looked up "
 "in the context of the current interpreter. This allows the module object to "
 "be retrieved later with only a reference to the module definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:658
+#: c-api/module.rst:658
 msgid ""
 "These functions will not work on modules created using multi-phase "
 "initialization, since multiple such modules can be created from a single "
 "definition."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:663
+#: c-api/module.rst:663
 msgid ""
 "Returns the module object that was created from *def* for the current "
 "interpreter. This method requires that the module object has been attached "
@@ -706,18 +703,18 @@ msgid ""
 "to the interpreter state yet, it returns ``NULL``."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:670
+#: c-api/module.rst:670
 msgid ""
 "Attaches the module object passed to the function to the interpreter state. "
 "This allows the module object to be accessible via :c:func:"
 "`PyState_FindModule`."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:673
+#: c-api/module.rst:673
 msgid "Only effective on modules created using single-phase initialization."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:675
+#: c-api/module.rst:675
 msgid ""
 "Python calls ``PyState_AddModule`` automatically after importing a module, "
 "so it is unnecessary (but harmless) to call it from module initialization "
@@ -728,56 +725,56 @@ msgid ""
 "state updates)."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:683 ../Doc/c-api/module.rst:694
+#: c-api/module.rst:694
 msgid "The caller must hold the GIL."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:685
+#: c-api/module.rst:685
 msgid "Return 0 on success or -1 on failure."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:691
+#: c-api/module.rst:691
 msgid ""
 "Removes the module object created from *def* from the interpreter state. "
 "Return 0 on success or -1 on failure."
 msgstr ""
 
-#: ../Doc/c-api/module.rst:8
+#: c-api/module.rst:8
 msgid "object"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:8
+#: c-api/module.rst:8
 msgid "module"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:13
+#: c-api/module.rst:13
 msgid "ModuleType (in module types)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:33 ../Doc/c-api/module.rst:74
+#: c-api/module.rst:74
 msgid "__name__ (module attribute)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:33
+#: c-api/module.rst:33
 msgid "__doc__ (module attribute)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:33 ../Doc/c-api/module.rst:104
+#: c-api/module.rst:104
 msgid "__file__ (module attribute)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:33
+#: c-api/module.rst:33
 msgid "__package__ (module attribute)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:33
+#: c-api/module.rst:33
 msgid "__loader__ (module attribute)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:60
+#: c-api/module.rst:60
 msgid "__dict__ (module attribute)"
 msgstr ""
 
-#: ../Doc/c-api/module.rst:74 ../Doc/c-api/module.rst:104
+#: c-api/module.rst:104
 msgid "SystemError (built-in exception)"
 msgstr ""

@@ -17,89 +17,89 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/security_warnings.rst:6
+#: library/security_warnings.rst:6
 msgid "Security Considerations"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:8
+#: library/security_warnings.rst:8
 msgid "The following modules have specific security considerations:"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:10
+#: library/security_warnings.rst:10
 msgid ""
 ":mod:`base64`: :ref:`base64 security considerations <base64-security>` in :"
 "rfc:`4648`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:12
+#: library/security_warnings.rst:12
 msgid ""
 ":mod:`hashlib`: :ref:`all constructors take a \"usedforsecurity\" keyword-"
 "only argument disabling known insecure and blocked algorithms <hashlib-"
 "usedforsecurity>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:15
+#: library/security_warnings.rst:15
 msgid ""
 ":mod:`http.server` is not suitable for production use, only implementing "
 "basic security checks. See the :ref:`security considerations <http.server-"
 "security>`."
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:17
+#: library/security_warnings.rst:17
 msgid ""
 ":mod:`logging`: :ref:`Logging configuration uses eval() <logging-eval-"
 "security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:19
+#: library/security_warnings.rst:19
 msgid ""
 ":mod:`multiprocessing`: :ref:`Connection.recv() uses pickle <multiprocessing-"
 "recv-pickle-security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:21
+#: library/security_warnings.rst:21
 msgid ":mod:`pickle`: :ref:`Restricting globals in pickle <pickle-restrict>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:22
+#: library/security_warnings.rst:22
 msgid ""
 ":mod:`random` shouldn't be used for security purposes, use :mod:`secrets` "
 "instead"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:24
+#: library/security_warnings.rst:24
 msgid ""
 ":mod:`shelve`: :ref:`shelve is based on pickle and thus unsuitable for "
 "dealing with untrusted sources <shelve-security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:26
+#: library/security_warnings.rst:26
 msgid ":mod:`ssl`: :ref:`SSL/TLS security considerations <ssl-security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:27
+#: library/security_warnings.rst:27
 msgid ""
 ":mod:`subprocess`: :ref:`Subprocess security considerations <subprocess-"
 "security>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:29
+#: library/security_warnings.rst:29
 msgid ""
 ":mod:`tempfile`: :ref:`mktemp is deprecated due to vulnerability to race "
 "conditions <tempfile-mktemp-deprecated>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:31
+#: library/security_warnings.rst:31
 msgid ":mod:`xml`: :ref:`XML vulnerabilities <xml-vulnerabilities>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:32
+#: library/security_warnings.rst:32
 msgid ""
 ":mod:`zipfile`: :ref:`maliciously prepared .zip files can cause disk volume "
 "exhaustion <zipfile-resources-limitations>`"
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:35
+#: library/security_warnings.rst:35
 msgid ""
 "The :option:`-I` command line option can be used to run Python in isolated "
 "mode. When it cannot be used, the :option:`-P` option or the :envvar:"
@@ -108,6 +108,6 @@ msgid ""
 "the script's directory or an empty string."
 msgstr ""
 
-#: ../Doc/library/security_warnings.rst:3
+#: library/security_warnings.rst:3
 msgid "security considerations"
 msgstr ""

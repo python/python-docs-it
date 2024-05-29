@@ -17,106 +17,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/audit_events.rst:6
+#: library/audit_events.rst:6
 msgid "Audit events table"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:8
+#: library/audit_events.rst:8
 msgid ""
 "This table contains all events raised by :func:`sys.audit` or :c:func:"
 "`PySys_Audit` calls throughout the CPython runtime and the standard "
 "library.  These calls were added in 3.8 or later (see :pep:`578`)."
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:12
+#: library/audit_events.rst:12
 msgid ""
 "See :func:`sys.addaudithook` and :c:func:`PySys_AddAuditHook` for "
 "information on handling these events."
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:17
+#: library/audit_events.rst:17
 msgid ""
 "This table is generated from the CPython documentation, and may not "
 "represent events raised by other implementations. See your runtime specific "
 "documentation for actual events raised."
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:23
+#: library/audit_events.rst:23
 msgid ""
 "The following events are raised internally and do not correspond to any "
 "public API of CPython:"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:27
+#: library/audit_events.rst:27
 msgid "Audit event"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:27
+#: library/audit_events.rst:27
 msgid "Arguments"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:29
+#: library/audit_events.rst:29
 msgid "_winapi.CreateFile"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:29
+#: library/audit_events.rst:29
 msgid ""
 "``file_name``, ``desired_access``, ``share_mode``, ``creation_disposition``, "
 "``flags_and_attributes``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:33
+#: library/audit_events.rst:33
 msgid "_winapi.CreateJunction"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:33
+#: library/audit_events.rst:33
 msgid "``src_path``, ``dst_path``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:35
+#: library/audit_events.rst:35
 msgid "_winapi.CreateNamedPipe"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:35
+#: library/audit_events.rst:35
 msgid "``name``, ``open_mode``, ``pipe_mode``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:37
+#: library/audit_events.rst:37
 msgid "_winapi.CreatePipe"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:39
+#: library/audit_events.rst:39
 msgid "_winapi.CreateProcess"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:39
+#: library/audit_events.rst:39
 msgid "``application_name``, ``command_line``, ``current_directory``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:42
+#: library/audit_events.rst:42
 msgid "_winapi.OpenProcess"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:42
+#: library/audit_events.rst:42
 msgid "``process_id``, ``desired_access``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:44
+#: library/audit_events.rst:44
 msgid "_winapi.TerminateProcess"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:44
+#: library/audit_events.rst:44
 msgid "``handle``, ``exit_code``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:46
+#: library/audit_events.rst:46
 msgid "ctypes.PyObj_FromPtr"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:46
+#: library/audit_events.rst:46
 msgid "``obj``"
 msgstr ""
 
-#: ../Doc/library/audit_events.rst:3
+#: library/audit_events.rst:3
 msgid "audit events"
 msgstr ""

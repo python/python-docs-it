@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/none.rst:6
+#: c-api/none.rst:6
 msgid "The ``None`` Object"
 msgstr ""
 
-#: ../Doc/c-api/none.rst:10
+#: c-api/none.rst:10
 msgid ""
 "Note that the :c:type:`PyTypeObject` for ``None`` is not directly exposed in "
 "the Python/C API.  Since ``None`` is a singleton, testing for object "
@@ -29,24 +29,24 @@ msgid ""
 "PyNone_Check` function for the same reason."
 msgstr ""
 
-#: ../Doc/c-api/none.rst:18
+#: c-api/none.rst:18
 msgid ""
 "The Python ``None`` object, denoting lack of value.  This object has no "
 "methods and is :term:`immortal`."
 msgstr ""
 
-#: ../Doc/c-api/none.rst:21
+#: c-api/none.rst:21
 msgid ":c:data:`Py_None` is :term:`immortal`."
 msgstr ""
 
-#: ../Doc/c-api/none.rst:26
+#: c-api/none.rst:26
 msgid "Return :c:data:`Py_None` from a function."
 msgstr ""
 
-#: ../Doc/c-api/none.rst:8
+#: c-api/none.rst:8
 msgid "object"
 msgstr ""
 
-#: ../Doc/c-api/none.rst:8
+#: c-api/none.rst:8
 msgid "None"
 msgstr ""

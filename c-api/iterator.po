@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/iterator.rst:6
+#: c-api/iterator.rst:6
 msgid "Iterator Objects"
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:8
+#: c-api/iterator.rst:8
 msgid ""
 "Python provides two general-purpose iterator objects.  The first, a sequence "
 "iterator, works with an arbitrary sequence supporting the :meth:`~object."
@@ -30,39 +30,39 @@ msgid ""
 "iteration when the sentinel value is returned."
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:17
+#: c-api/iterator.rst:17
 msgid ""
 "Type object for iterator objects returned by :c:func:`PySeqIter_New` and the "
 "one-argument form of the :func:`iter` built-in function for built-in "
 "sequence types."
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:24
+#: c-api/iterator.rst:24
 msgid ""
 "Return true if the type of *op* is :c:data:`PySeqIter_Type`.  This function "
 "always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:30
+#: c-api/iterator.rst:30
 msgid ""
 "Return an iterator that works with a general sequence object, *seq*.  The "
 "iteration ends when the sequence raises :exc:`IndexError` for the "
 "subscripting operation."
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:37
+#: c-api/iterator.rst:37
 msgid ""
 "Type object for iterator objects returned by :c:func:`PyCallIter_New` and "
 "the two-argument form of the :func:`iter` built-in function."
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:43
+#: c-api/iterator.rst:43
 msgid ""
 "Return true if the type of *op* is :c:data:`PyCallIter_Type`.  This function "
 "always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/iterator.rst:49
+#: c-api/iterator.rst:49
 msgid ""
 "Return a new iterator.  The first parameter, *callable*, can be any Python "
 "callable object that can be called with no parameters; each call to it "

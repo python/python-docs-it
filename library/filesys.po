@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/filesys.rst:5
+#: library/filesys.rst:5
 msgid "File and Directory Access"
 msgstr ""
 
-#: ../Doc/library/filesys.rst:7
+#: library/filesys.rst:7
 msgid ""
 "The modules described in this chapter deal with disk files and directories.  "
 "For example, there are modules for reading the properties of files, "
@@ -29,30 +29,30 @@ msgid ""
 "full list of modules in this chapter is:"
 msgstr ""
 
-#: ../Doc/library/filesys.rst:29
+#: library/filesys.rst:29
 msgid "Module :mod:`os`"
 msgstr ""
 
-#: ../Doc/library/filesys.rst:30
+#: library/filesys.rst:30
 msgid ""
 "Operating system interfaces, including functions to work with files at a "
 "lower level than Python :term:`file objects <file object>`."
 msgstr ""
 
-#: ../Doc/library/filesys.rst:33
+#: library/filesys.rst:33
 msgid "Module :mod:`io`"
 msgstr ""
 
-#: ../Doc/library/filesys.rst:34
+#: library/filesys.rst:34
 msgid ""
 "Python's built-in I/O library, including both abstract classes and some "
 "concrete classes such as file I/O."
 msgstr ""
 
-#: ../Doc/library/filesys.rst:37
+#: library/filesys.rst:37
 msgid "Built-in function :func:`open`"
 msgstr ""
 
-#: ../Doc/library/filesys.rst:38
+#: library/filesys.rst:38
 msgid "The standard way to open files for reading and writing with Python."
 msgstr ""

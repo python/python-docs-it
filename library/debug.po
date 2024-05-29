@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/debug.rst:3
+#: library/debug.rst:3
 msgid "Debugging and Profiling"
 msgstr ""
 
-#: ../Doc/library/debug.rst:5
+#: library/debug.rst:5
 msgid ""
 "These libraries help you with Python development: the debugger enables you "
 "to step through code, analyze stack frames and set breakpoints etc., and the "

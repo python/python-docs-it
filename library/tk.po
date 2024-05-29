@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/tk.rst:5
+#: library/tk.rst:5
 msgid "Graphical User Interfaces with Tk"
 msgstr ""
 
-#: ../Doc/library/tk.rst:13
+#: library/tk.rst:13
 msgid ""
 "Tk/Tcl has long been an integral part of Python.  It provides a robust and "
 "platform independent windowing toolkit, that is available to Python "
@@ -29,7 +29,7 @@ msgid ""
 "`tkinter.ttk` module."
 msgstr ""
 
-#: ../Doc/library/tk.rst:17
+#: library/tk.rst:17
 msgid ""
 "The :mod:`tkinter` package is a thin object-oriented layer on top of Tcl/Tk. "
 "To use :mod:`tkinter`, you don't need to write Tcl code, but you will need "
@@ -38,7 +38,7 @@ msgid ""
 "classes."
 msgstr ""
 
-#: ../Doc/library/tk.rst:23
+#: library/tk.rst:23
 msgid ""
 ":mod:`tkinter`'s chief virtues are that it is fast, and that it usually "
 "comes bundled with Python. Although its standard documentation is weak, good "
@@ -50,18 +50,18 @@ msgid ""
 "GuiProgramming>`_."
 msgstr ""
 
-#: ../Doc/library/tk.rst:7
+#: library/tk.rst:7
 msgid "GUI"
 msgstr ""
 
-#: ../Doc/library/tk.rst:7
+#: library/tk.rst:7
 msgid "Graphical User Interface"
 msgstr ""
 
-#: ../Doc/library/tk.rst:7
+#: library/tk.rst:7
 msgid "Tkinter"
 msgstr ""
 
-#: ../Doc/library/tk.rst:7
+#: library/tk.rst:7
 msgid "Tk"
 msgstr ""

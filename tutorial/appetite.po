@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ../Doc/tutorial/appetite.rst:5
+#: tutorial/appetite.rst:5
 msgid "Whetting Your Appetite"
 msgstr "Stuzzichiamo il tuo appetito"
 
-#: ../Doc/tutorial/appetite.rst:7
+#: tutorial/appetite.rst:7
 msgid ""
 "If you do much work on computers, eventually you find that there's some task "
 "you'd like to automate.  For example, you may wish to perform a search-and-"
@@ -37,7 +37,7 @@ msgstr ""
 "Magari vi piacerebbe scrivere un piccolo database personalizzato, o "
 "un'applicazione GUI specializzata, o un semplice gioco."
 
-#: ../Doc/tutorial/appetite.rst:13
+#: tutorial/appetite.rst:13
 msgid ""
 "If you're a professional software developer, you may have to work with "
 "several C/C++/Java libraries but find the usual write/compile/test/re-"
@@ -55,11 +55,11 @@ msgstr ""
 "programmazione, e non volete progettare e implementare un linguaggio "
 "completamente nuovo per la vostra applicazione."
 
-#: ../Doc/tutorial/appetite.rst:20
+#: tutorial/appetite.rst:20
 msgid "Python is just the language for you."
 msgstr "Python è il linguaggio che fa per te."
 
-#: ../Doc/tutorial/appetite.rst:22
+#: tutorial/appetite.rst:22
 #, fuzzy
 msgid ""
 "You could write a Unix shell script or Windows batch files for some of these "
@@ -78,7 +78,7 @@ msgstr ""
 "disponibile su Windows, Mac OS X e Unix, e vi aiuterà a svolgere il lavoro "
 "più rapidamente."
 
-#: ../Doc/tutorial/appetite.rst:29
+#: tutorial/appetite.rst:29
 msgid ""
 "Python is simple to use, but it is a real programming language, offering "
 "much more structure and support for large programs than shell scripts or "
@@ -99,7 +99,7 @@ msgstr ""
 "grande di Awk o anche di Perl, ma molte cose sono almeno altrettanto facili "
 "in Python come in quei linguaggi."
 
-#: ../Doc/tutorial/appetite.rst:37
+#: tutorial/appetite.rst:37
 msgid ""
 "Python allows you to split your program into modules that can be reused in "
 "other Python programs.  It comes with a large collection of standard modules "
@@ -116,7 +116,7 @@ msgstr ""
 "di sistema, socket e persino strumenti per lo sviluppo di interfacce "
 "grafiche utente come Tk."
 
-#: ../Doc/tutorial/appetite.rst:44
+#: tutorial/appetite.rst:44
 msgid ""
 "Python is an interpreted language, which can save you considerable time "
 "during program development because no compilation and linking is necessary.  "
@@ -133,7 +133,7 @@ msgstr ""
 "sviluppo del programma dal basso verso l'alto. È anche una pratica "
 "calcolatrice da tavolo."
 
-#: ../Doc/tutorial/appetite.rst:50
+#: tutorial/appetite.rst:50
 msgid ""
 "Python enables programs to be written compactly and readably.  Programs "
 "written in Python are typically much shorter than equivalent C,  C++, or "
@@ -143,7 +143,7 @@ msgstr ""
 "programmi scritti in Python sono in genere molto più brevi dei programmi "
 "equivalenti in C, C+++ o Java, per diversi motivi:"
 
-#: ../Doc/tutorial/appetite.rst:54
+#: tutorial/appetite.rst:54
 msgid ""
 "the high-level data types allow you to express complex operations in a "
 "single statement;"
@@ -151,7 +151,7 @@ msgstr ""
 "i tipi di dati di alto livello consentono di esprimere operazioni complesse "
 "in un'unica dichiarazione;"
 
-#: ../Doc/tutorial/appetite.rst:57
+#: tutorial/appetite.rst:57
 msgid ""
 "statement grouping is done by indentation instead of beginning and ending "
 "brackets;"
@@ -159,11 +159,11 @@ msgstr ""
 "il raggruppamento delle istruzioni è fatto usando l’indentazione invece che "
 "per parentesi iniziali e finali;"
 
-#: ../Doc/tutorial/appetite.rst:60
+#: tutorial/appetite.rst:60
 msgid "no variable or argument declarations are necessary."
 msgstr "non sono necessarie dichiarazioni di variabili o argomenti."
 
-#: ../Doc/tutorial/appetite.rst:62
+#: tutorial/appetite.rst:62
 msgid ""
 "Python is *extensible*: if you know how to program in C it is easy to add a "
 "new built-in function or module to the interpreter, either to perform "
@@ -182,7 +182,7 @@ msgstr ""
 "un'applicazione scritta in C e usarlo come un’estensione o come linguaggio "
 "per impartire comandi a quell'applicazione."
 
-#: ../Doc/tutorial/appetite.rst:70
+#: tutorial/appetite.rst:70
 msgid ""
 "By the way, the language is named after the BBC show \"Monty Python's Flying "
 "Circus\" and has nothing to do with reptiles.  Making references to Monty "
@@ -193,7 +193,7 @@ msgstr ""
 "agli schetch Monty Python nella documentazione non solo è permesso, ma è "
 "incoraggiato!"
 
-#: ../Doc/tutorial/appetite.rst:74
+#: tutorial/appetite.rst:74
 msgid ""
 "Now that you are all excited about Python, you'll want to examine it in some "
 "more detail.  Since the best way to learn a language is to use it, the "
@@ -203,7 +203,7 @@ msgstr ""
 "dettaglio.  Poiché il modo migliore per imparare un linguaggio è usarlo, il "
 "tutorial vi invita a giocare con l'interprete Python mentre lo leggete."
 
-#: ../Doc/tutorial/appetite.rst:78
+#: tutorial/appetite.rst:78
 msgid ""
 "In the next chapter, the mechanics of using the interpreter are explained.  "
 "This is rather mundane information, but essential for trying out the "
@@ -213,7 +213,7 @@ msgstr ""
 "dell'interprete.  Si tratta di informazioni piuttosto banali, ma essenziali "
 "per provare gli esempi mostrati in seguito."
 
-#: ../Doc/tutorial/appetite.rst:82
+#: tutorial/appetite.rst:82
 msgid ""
 "The rest of the tutorial introduces various features of the Python language "
 "and system through examples, beginning with simple expressions, statements "

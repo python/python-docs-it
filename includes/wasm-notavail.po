@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/includes/wasm-notavail.rst:None
+#: includes/wasm-notavail.rst:None
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
-#: ../Doc/includes/wasm-notavail.rst:5
+#: includes/wasm-notavail.rst:5
 msgid ""
 "This module does not work or is not available on WebAssembly platforms "
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "

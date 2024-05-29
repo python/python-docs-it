@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/extending/index.rst:5
+#: extending/index.rst:5
 msgid "Extending and Embedding the Python Interpreter"
 msgstr ""
 
-#: ../Doc/extending/index.rst:7
+#: extending/index.rst:7
 msgid ""
 "This document describes how to write modules in C or C++ to extend the "
 "Python interpreter with new modules.  Those modules can not only define new "
@@ -32,7 +32,7 @@ msgid ""
 "the interpreter, if the underlying operating system supports this feature."
 msgstr ""
 
-#: ../Doc/extending/index.rst:15
+#: extending/index.rst:15
 msgid ""
 "This document assumes basic knowledge about Python.  For an informal "
 "introduction to the language, see :ref:`tutorial-index`.  :ref:`reference-"
@@ -41,17 +41,17 @@ msgid ""
 "and written in Python) that give the language its wide application range."
 msgstr ""
 
-#: ../Doc/extending/index.rst:21
+#: extending/index.rst:21
 msgid ""
 "For a detailed description of the whole Python/C API, see the separate :ref:"
 "`c-api-index`."
 msgstr ""
 
-#: ../Doc/extending/index.rst:26
+#: extending/index.rst:26
 msgid "Recommended third party tools"
 msgstr ""
 
-#: ../Doc/extending/index.rst:28
+#: extending/index.rst:28
 msgid ""
 "This guide only covers the basic tools for creating extensions provided as "
 "part of this version of CPython. Third party tools like `Cython <https://"
@@ -60,24 +60,24 @@ msgid ""
 "more sophisticated approaches to creating C and C++ extensions for Python."
 msgstr ""
 
-#: ../Doc/extending/index.rst:37
+#: extending/index.rst:37
 msgid ""
 "`Python Packaging User Guide: Binary Extensions <https://packaging.python."
 "org/guides/packaging-binary-extensions/>`_"
 msgstr ""
 
-#: ../Doc/extending/index.rst:38
+#: extending/index.rst:38
 msgid ""
 "The Python Packaging User Guide not only covers several available tools that "
 "simplify the creation of binary extensions, but also discusses the various "
 "reasons why creating an extension module may be desirable in the first place."
 msgstr ""
 
-#: ../Doc/extending/index.rst:45
+#: extending/index.rst:45
 msgid "Creating extensions without third party tools"
 msgstr ""
 
-#: ../Doc/extending/index.rst:47
+#: extending/index.rst:47
 msgid ""
 "This section of the guide covers creating C and C++ extensions without "
 "assistance from third party tools. It is intended primarily for creators of "
@@ -85,11 +85,11 @@ msgid ""
 "extensions."
 msgstr ""
 
-#: ../Doc/extending/index.rst:63
+#: extending/index.rst:63
 msgid "Embedding the CPython runtime in a larger application"
 msgstr ""
 
-#: ../Doc/extending/index.rst:65
+#: extending/index.rst:65
 msgid ""
 "Sometimes, rather than creating an extension that runs inside the Python "
 "interpreter as the main application, it is desirable to instead embed the "

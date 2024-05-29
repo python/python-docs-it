@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/math.rst:2
+#: library/math.rst:2
 msgid ":mod:`!math` --- Mathematical functions"
 msgstr ""
 
-#: ../Doc/library/math.rst:13
+#: library/math.rst:13
 msgid ""
 "This module provides access to the mathematical functions defined by the C "
 "standard."
 msgstr ""
 
-#: ../Doc/library/math.rst:16
+#: library/math.rst:16
 msgid ""
 "These functions cannot be used with complex numbers; use the functions of "
 "the same name from the :mod:`cmath` module if you require support for "
@@ -39,76 +39,76 @@ msgid ""
 "can determine how and why it was generated in the first place."
 msgstr ""
 
-#: ../Doc/library/math.rst:25
+#: library/math.rst:25
 msgid ""
 "The following functions are provided by this module.  Except when explicitly "
 "noted otherwise, all return values are floats."
 msgstr ""
 
-#: ../Doc/library/math.rst:30
+#: library/math.rst:30
 msgid "Number-theoretic and representation functions"
 msgstr ""
 
-#: ../Doc/library/math.rst:34
+#: library/math.rst:34
 msgid ""
 "Return the ceiling of *x*, the smallest integer greater than or equal to "
 "*x*. If *x* is not a float, delegates to :meth:`x.__ceil__ <object."
 "__ceil__>`, which should return an :class:`~numbers.Integral` value."
 msgstr ""
 
-#: ../Doc/library/math.rst:41
+#: library/math.rst:41
 msgid ""
 "Return the number of ways to choose *k* items from *n* items without "
 "repetition and without order."
 msgstr ""
 
-#: ../Doc/library/math.rst:44
+#: library/math.rst:44
 msgid ""
 "Evaluates to ``n! / (k! * (n - k)!)`` when ``k <= n`` and evaluates to zero "
 "when ``k > n``."
 msgstr ""
 
-#: ../Doc/library/math.rst:47
+#: library/math.rst:47
 msgid ""
 "Also called the binomial coefficient because it is equivalent to the "
 "coefficient of k-th term in polynomial expansion of ``(1 + x)ⁿ``."
 msgstr ""
 
-#: ../Doc/library/math.rst:51 ../Doc/library/math.rst:274
+#: library/math.rst:274
 msgid ""
 "Raises :exc:`TypeError` if either of the arguments are not integers. Raises :"
 "exc:`ValueError` if either of the arguments are negative."
 msgstr ""
 
-#: ../Doc/library/math.rst:59
+#: library/math.rst:59
 msgid ""
 "Return a float with the magnitude (absolute value) of *x* but the sign of "
 "*y*.  On platforms that support signed zeros, ``copysign(1.0, -0.0)`` "
 "returns *-1.0*."
 msgstr ""
 
-#: ../Doc/library/math.rst:66
+#: library/math.rst:66
 msgid "Return the absolute value of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:71
+#: library/math.rst:71
 msgid ""
 "Return *n* factorial as an integer.  Raises :exc:`ValueError` if *n* is not "
 "integral or is negative."
 msgstr ""
 
-#: ../Doc/library/math.rst:74
+#: library/math.rst:74
 msgid "Floats with integral values (like ``5.0``) are no longer accepted."
 msgstr ""
 
-#: ../Doc/library/math.rst:80
+#: library/math.rst:80
 msgid ""
 "Return the floor of *x*, the largest integer less than or equal to *x*.  If "
 "*x* is not a float, delegates to :meth:`x.__floor__ <object.__floor__>`, "
 "which should return an :class:`~numbers.Integral` value."
 msgstr ""
 
-#: ../Doc/library/math.rst:87
+#: library/math.rst:87
 msgid ""
 "Fused multiply-add operation. Return ``(x * y) + z``, computed as though "
 "with infinite precision and range followed by a single round to the "
@@ -116,7 +116,7 @@ msgid ""
 "direct expression ``(x * y) + z``."
 msgstr ""
 
-#: ../Doc/library/math.rst:92
+#: library/math.rst:92
 msgid ""
 "This function follows the specification of the fusedMultiplyAdd operation "
 "described in the IEEE 754 standard. The standard leaves one case "
@@ -125,7 +125,7 @@ msgid ""
 "not raise any exception."
 msgstr ""
 
-#: ../Doc/library/math.rst:103
+#: library/math.rst:103
 msgid ""
 "Return ``fmod(x, y)``, as defined by the platform C library. Note that the "
 "Python expression ``x % y`` may not return the same result.  The intent of "
@@ -141,7 +141,7 @@ msgid ""
 "preferred when working with integers."
 msgstr ""
 
-#: ../Doc/library/math.rst:118
+#: library/math.rst:118
 msgid ""
 "Return the mantissa and exponent of *x* as the pair ``(m, e)``.  *m* is a "
 "float and *e* is an integer such that ``x == m * 2**e`` exactly. If *x* is "
@@ -149,13 +149,13 @@ msgid ""
 "to \"pick apart\" the internal representation of a float in a portable way."
 msgstr ""
 
-#: ../Doc/library/math.rst:126
+#: library/math.rst:126
 msgid ""
 "Return an accurate floating point sum of values in the iterable.  Avoids "
 "loss of precision by tracking multiple intermediate partial sums."
 msgstr ""
 
-#: ../Doc/library/math.rst:129
+#: library/math.rst:129
 msgid ""
 "The algorithm's accuracy depends on IEEE-754 arithmetic guarantees and the "
 "typical case where the rounding mode is half-even.  On some non-Windows "
@@ -164,7 +164,7 @@ msgid ""
 "least significant bit."
 msgstr ""
 
-#: ../Doc/library/math.rst:135
+#: library/math.rst:135
 msgid ""
 "For further discussion and two alternative approaches, see the `ASPN "
 "cookbook recipes for accurate floating point summation <https://code."
@@ -172,7 +172,7 @@ msgid ""
 "full-p/>`_\\."
 msgstr ""
 
-#: ../Doc/library/math.rst:142
+#: library/math.rst:142
 msgid ""
 "Return the greatest common divisor of the specified integer arguments. If "
 "any of the arguments is nonzero, then the returned value is the largest "
@@ -181,25 +181,25 @@ msgid ""
 "``0``."
 msgstr ""
 
-#: ../Doc/library/math.rst:150
+#: library/math.rst:150
 msgid ""
 "Added support for an arbitrary number of arguments. Formerly, only two "
 "arguments were supported."
 msgstr ""
 
-#: ../Doc/library/math.rst:157
+#: library/math.rst:157
 msgid ""
 "Return ``True`` if the values *a* and *b* are close to each other and "
 "``False`` otherwise."
 msgstr ""
 
-#: ../Doc/library/math.rst:160
+#: library/math.rst:160
 msgid ""
 "Whether or not two values are considered close is determined according to "
 "given absolute and relative tolerances."
 msgstr ""
 
-#: ../Doc/library/math.rst:163
+#: library/math.rst:163
 msgid ""
 "*rel_tol* is the relative tolerance -- it is the maximum allowed difference "
 "between *a* and *b*, relative to the larger absolute value of *a* or *b*. "
@@ -208,19 +208,19 @@ msgid ""
 "within about 9 decimal digits.  *rel_tol* must be greater than zero."
 msgstr ""
 
-#: ../Doc/library/math.rst:169
+#: library/math.rst:169
 msgid ""
 "*abs_tol* is the minimum absolute tolerance -- useful for comparisons near "
 "zero. *abs_tol* must be at least zero."
 msgstr ""
 
-#: ../Doc/library/math.rst:172
+#: library/math.rst:172
 msgid ""
 "If no errors occur, the result will be: ``abs(a-b) <= max(rel_tol * "
 "max(abs(a), abs(b)), abs_tol)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:175
+#: library/math.rst:175
 msgid ""
 "The IEEE 754 special values of ``NaN``, ``inf``, and ``-inf`` will be "
 "handled according to IEEE rules.  Specifically, ``NaN`` is not considered "
@@ -228,35 +228,35 @@ msgid ""
 "considered close to themselves."
 msgstr ""
 
-#: ../Doc/library/math.rst:184
+#: library/math.rst:184
 msgid ":pep:`485` -- A function for testing approximate equality"
 msgstr ""
 
-#: ../Doc/library/math.rst:189
+#: library/math.rst:189
 msgid ""
 "Return ``True`` if *x* is neither an infinity nor a NaN, and ``False`` "
 "otherwise.  (Note that ``0.0`` *is* considered finite.)"
 msgstr ""
 
-#: ../Doc/library/math.rst:197
+#: library/math.rst:197
 msgid ""
 "Return ``True`` if *x* is a positive or negative infinity, and ``False`` "
 "otherwise."
 msgstr ""
 
-#: ../Doc/library/math.rst:203
+#: library/math.rst:203
 msgid ""
 "Return ``True`` if *x* is a NaN (not a number), and ``False`` otherwise."
 msgstr ""
 
-#: ../Doc/library/math.rst:208
+#: library/math.rst:208
 msgid ""
 "Return the integer square root of the nonnegative integer *n*. This is the "
 "floor of the exact square root of *n*, or equivalently the greatest integer "
 "*a* such that *a*\\ ² |nbsp| ≤ |nbsp| *n*."
 msgstr ""
 
-#: ../Doc/library/math.rst:212
+#: library/math.rst:212
 msgid ""
 "For some applications, it may be more convenient to have the least integer "
 "*a* such that *n* |nbsp| ≤ |nbsp| *a*\\ ², or in other words the ceiling of "
@@ -264,7 +264,7 @@ msgid ""
 "``a = 1 + isqrt(n - 1)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:222
+#: library/math.rst:222
 msgid ""
 "Return the least common multiple of the specified integer arguments. If all "
 "arguments are nonzero, then the returned value is the smallest positive "
@@ -273,86 +273,86 @@ msgid ""
 "``1``."
 msgstr ""
 
-#: ../Doc/library/math.rst:233
+#: library/math.rst:233
 msgid ""
 "Return ``x * (2**i)``.  This is essentially the inverse of function :func:"
 "`frexp`."
 msgstr ""
 
-#: ../Doc/library/math.rst:239
+#: library/math.rst:239
 msgid ""
 "Return the fractional and integer parts of *x*.  Both results carry the sign "
 "of *x* and are floats."
 msgstr ""
 
-#: ../Doc/library/math.rst:245
+#: library/math.rst:245
 msgid "Return the floating-point value *steps* steps after *x* towards *y*."
 msgstr ""
 
-#: ../Doc/library/math.rst:247
+#: library/math.rst:247
 msgid "If *x* is equal to *y*, return *y*, unless *steps* is zero."
 msgstr ""
 
-#: ../Doc/library/math.rst:249
+#: library/math.rst:249
 msgid "Examples:"
 msgstr ""
 
-#: ../Doc/library/math.rst:251
+#: library/math.rst:251
 msgid "``math.nextafter(x, math.inf)`` goes up: towards positive infinity."
 msgstr ""
 
-#: ../Doc/library/math.rst:252
+#: library/math.rst:252
 msgid "``math.nextafter(x, -math.inf)`` goes down: towards minus infinity."
 msgstr ""
 
-#: ../Doc/library/math.rst:253
+#: library/math.rst:253
 msgid "``math.nextafter(x, 0.0)`` goes towards zero."
 msgstr ""
 
-#: ../Doc/library/math.rst:254
+#: library/math.rst:254
 msgid "``math.nextafter(x, math.copysign(math.inf, x))`` goes away from zero."
 msgstr ""
 
-#: ../Doc/library/math.rst:256
+#: library/math.rst:256
 msgid "See also :func:`math.ulp`."
 msgstr ""
 
-#: ../Doc/library/math.rst:260
+#: library/math.rst:260
 msgid "Added the *steps* argument."
 msgstr ""
 
-#: ../Doc/library/math.rst:265
+#: library/math.rst:265
 msgid ""
 "Return the number of ways to choose *k* items from *n* items without "
 "repetition and with order."
 msgstr ""
 
-#: ../Doc/library/math.rst:268
+#: library/math.rst:268
 msgid ""
 "Evaluates to ``n! / (n - k)!`` when ``k <= n`` and evaluates to zero when "
 "``k > n``."
 msgstr ""
 
-#: ../Doc/library/math.rst:271
+#: library/math.rst:271
 msgid ""
 "If *k* is not specified or is ``None``, then *k* defaults to *n* and the "
 "function returns ``n!``."
 msgstr ""
 
-#: ../Doc/library/math.rst:282
+#: library/math.rst:282
 msgid ""
 "Calculate the product of all the elements in the input *iterable*. The "
 "default *start* value for the product is ``1``."
 msgstr ""
 
-#: ../Doc/library/math.rst:285
+#: library/math.rst:285
 msgid ""
 "When the iterable is empty, return the start value.  This function is "
 "intended specifically for use with numeric values and may reject non-numeric "
 "types."
 msgstr ""
 
-#: ../Doc/library/math.rst:294
+#: library/math.rst:294
 msgid ""
 "Return the IEEE 754-style remainder of *x* with respect to *y*.  For finite "
 "*x* and finite nonzero *y*, this is the difference ``x - n*y``, where ``n`` "
@@ -362,7 +362,7 @@ msgid ""
 "thus always satisfies ``abs(r) <= 0.5 * abs(y)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:301
+#: library/math.rst:301
 msgid ""
 "Special cases follow IEEE 754: in particular, ``remainder(x, math.inf)`` is "
 "*x* for any finite *x*, and ``remainder(x, 0)`` and ``remainder(math.inf, "
@@ -370,31 +370,31 @@ msgid ""
 "remainder operation is zero, that zero will have the same sign as *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:307
+#: library/math.rst:307
 msgid ""
 "On platforms using IEEE 754 binary floating-point, the result of this "
 "operation is always exactly representable: no rounding error is introduced."
 msgstr ""
 
-#: ../Doc/library/math.rst:315
+#: library/math.rst:315
 msgid "Return the sum of products of values from two iterables *p* and *q*."
 msgstr ""
 
-#: ../Doc/library/math.rst:317
+#: library/math.rst:317
 msgid "Raises :exc:`ValueError` if the inputs do not have the same length."
 msgstr ""
 
-#: ../Doc/library/math.rst:319 ../Doc/library/math.rst:514
+#: library/math.rst:514
 msgid "Roughly equivalent to::"
 msgstr ""
 
-#: ../Doc/library/math.rst:323
+#: library/math.rst:323
 msgid ""
 "For float and mixed int/float inputs, the intermediate products and sums are "
 "computed with extended precision."
 msgstr ""
 
-#: ../Doc/library/math.rst:331
+#: library/math.rst:331
 msgid ""
 "Return *x* with the fractional part removed, leaving the integer part.  This "
 "rounds toward 0: ``trunc()`` is equivalent to :func:`floor` for positive "
@@ -403,54 +403,54 @@ msgid ""
 "class:`~numbers.Integral` value."
 msgstr ""
 
-#: ../Doc/library/math.rst:339
+#: library/math.rst:339
 msgid "Return the value of the least significant bit of the float *x*:"
 msgstr ""
 
-#: ../Doc/library/math.rst:341
+#: library/math.rst:341
 msgid "If *x* is a NaN (not a number), return *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:342
+#: library/math.rst:342
 msgid "If *x* is negative, return ``ulp(-x)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:343
+#: library/math.rst:343
 msgid "If *x* is a positive infinity, return *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:344
+#: library/math.rst:344
 msgid ""
 "If *x* is equal to zero, return the smallest positive *denormalized* "
 "representable float (smaller than the minimum positive *normalized* float, :"
 "data:`sys.float_info.min <sys.float_info>`)."
 msgstr ""
 
-#: ../Doc/library/math.rst:347
+#: library/math.rst:347
 msgid ""
 "If *x* is equal to the largest positive representable float, return the "
 "value of the least significant bit of *x*, such that the first float smaller "
 "than *x* is ``x - ulp(x)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:350
+#: library/math.rst:350
 msgid ""
 "Otherwise (*x* is a positive finite number), return the value of the least "
 "significant bit of *x*, such that the first float bigger than *x* is ``x + "
 "ulp(x)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:354
+#: library/math.rst:354
 msgid "ULP stands for \"Unit in the Last Place\"."
 msgstr ""
 
-#: ../Doc/library/math.rst:356
+#: library/math.rst:356
 msgid ""
 "See also :func:`math.nextafter` and :data:`sys.float_info.epsilon <sys."
 "float_info>`."
 msgstr ""
 
-#: ../Doc/library/math.rst:362
+#: library/math.rst:362
 msgid ""
 "Note that :func:`frexp` and :func:`modf` have a different call/return "
 "pattern than their C equivalents: they take a single argument and return a "
@@ -458,7 +458,7 @@ msgid ""
 "'output parameter' (there is no such thing in Python)."
 msgstr ""
 
-#: ../Doc/library/math.rst:367
+#: library/math.rst:367
 msgid ""
 "For the :func:`ceil`, :func:`floor`, and :func:`modf` functions, note that "
 "*all* floating-point numbers of sufficiently large magnitude are exact "
@@ -467,26 +467,26 @@ msgid ""
 "``abs(x) >= 2**52`` necessarily has no fractional bits."
 msgstr ""
 
-#: ../Doc/library/math.rst:375
+#: library/math.rst:375
 msgid "Power and logarithmic functions"
 msgstr ""
 
-#: ../Doc/library/math.rst:379
+#: library/math.rst:379
 msgid "Return the cube root of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:386
+#: library/math.rst:386
 msgid ""
 "Return *e* raised to the power *x*, where *e* = 2.718281... is the base of "
 "natural logarithms.  This is usually more accurate than ``math.e ** x`` or "
 "``pow(math.e, x)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:393
+#: library/math.rst:393
 msgid "Return *2* raised to the power *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:400
+#: library/math.rst:400
 msgid ""
 "Return *e* raised to the power *x*, minus 1.  Here *e* is the base of "
 "natural logarithms.  For small floats *x*, the subtraction in ``exp(x) - 1`` "
@@ -495,41 +495,41 @@ msgid ""
 "compute this quantity to full precision:"
 msgstr ""
 
-#: ../Doc/library/math.rst:417
+#: library/math.rst:417
 msgid "With one argument, return the natural logarithm of *x* (to base *e*)."
 msgstr ""
 
-#: ../Doc/library/math.rst:419
+#: library/math.rst:419
 msgid ""
 "With two arguments, return the logarithm of *x* to the given *base*, "
 "calculated as ``log(x)/log(base)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:425
+#: library/math.rst:425
 msgid ""
 "Return the natural logarithm of *1+x* (base *e*). The result is calculated "
 "in a way which is accurate for *x* near zero."
 msgstr ""
 
-#: ../Doc/library/math.rst:431
+#: library/math.rst:431
 msgid ""
 "Return the base-2 logarithm of *x*. This is usually more accurate than "
 "``log(x, 2)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:438
+#: library/math.rst:438
 msgid ""
 ":meth:`int.bit_length` returns the number of bits necessary to represent an "
 "integer in binary, excluding the sign and leading zeros."
 msgstr ""
 
-#: ../Doc/library/math.rst:444
+#: library/math.rst:444
 msgid ""
 "Return the base-10 logarithm of *x*.  This is usually more accurate than "
 "``log(x, 10)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:450
+#: library/math.rst:450
 msgid ""
 "Return ``x`` raised to the power ``y``.  Exceptional cases follow the IEEE "
 "754 standard as far as possible.  In particular, ``pow(1.0, x)`` and "
@@ -538,47 +538,47 @@ msgid ""
 "integer then ``pow(x, y)`` is undefined, and raises :exc:`ValueError`."
 msgstr ""
 
-#: ../Doc/library/math.rst:457
+#: library/math.rst:457
 msgid ""
 "Unlike the built-in ``**`` operator, :func:`math.pow` converts both its "
 "arguments to type :class:`float`.  Use ``**`` or the built-in :func:`pow` "
 "function for computing exact integer powers."
 msgstr ""
 
-#: ../Doc/library/math.rst:461
+#: library/math.rst:461
 msgid ""
 "The special cases ``pow(0.0, -inf)`` and ``pow(-0.0, -inf)`` were changed to "
 "return ``inf`` instead of raising :exc:`ValueError`, for consistency with "
 "IEEE 754."
 msgstr ""
 
-#: ../Doc/library/math.rst:469
+#: library/math.rst:469
 msgid "Return the square root of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:473
+#: library/math.rst:473
 msgid "Trigonometric functions"
 msgstr ""
 
-#: ../Doc/library/math.rst:477
+#: library/math.rst:477
 msgid ""
 "Return the arc cosine of *x*, in radians. The result is between ``0`` and "
 "``pi``."
 msgstr ""
 
-#: ../Doc/library/math.rst:483
+#: library/math.rst:483
 msgid ""
 "Return the arc sine of *x*, in radians. The result is between ``-pi/2`` and "
 "``pi/2``."
 msgstr ""
 
-#: ../Doc/library/math.rst:489
+#: library/math.rst:489
 msgid ""
 "Return the arc tangent of *x*, in radians. The result is between ``-pi/2`` "
 "and ``pi/2``."
 msgstr ""
 
-#: ../Doc/library/math.rst:495
+#: library/math.rst:495
 msgid ""
 "Return ``atan(y / x)``, in radians. The result is between ``-pi`` and "
 "``pi``. The vector in the plane from the origin to point ``(x, y)`` makes "
@@ -588,117 +588,117 @@ msgid ""
 "``pi/4``, but ``atan2(-1, -1)`` is ``-3*pi/4``."
 msgstr ""
 
-#: ../Doc/library/math.rst:505
+#: library/math.rst:505
 msgid "Return the cosine of *x* radians."
 msgstr ""
 
-#: ../Doc/library/math.rst:510
+#: library/math.rst:510
 msgid ""
 "Return the Euclidean distance between two points *p* and *q*, each given as "
 "a sequence (or iterable) of coordinates.  The two points must have the same "
 "dimension."
 msgstr ""
 
-#: ../Doc/library/math.rst:523
+#: library/math.rst:523
 msgid ""
 "Return the Euclidean norm, ``sqrt(sum(x**2 for x in coordinates))``. This is "
 "the length of the vector from the origin to the point given by the "
 "coordinates."
 msgstr ""
 
-#: ../Doc/library/math.rst:527
+#: library/math.rst:527
 msgid ""
 "For a two dimensional point ``(x, y)``, this is equivalent to computing the "
 "hypotenuse of a right triangle using the Pythagorean theorem, ``sqrt(x*x + "
 "y*y)``."
 msgstr ""
 
-#: ../Doc/library/math.rst:531
+#: library/math.rst:531
 msgid ""
 "Added support for n-dimensional points. Formerly, only the two dimensional "
 "case was supported."
 msgstr ""
 
-#: ../Doc/library/math.rst:535
+#: library/math.rst:535
 msgid ""
 "Improved the algorithm's accuracy so that the maximum error is under 1 ulp "
 "(unit in the last place).  More typically, the result is almost always "
 "correctly rounded to within 1/2 ulp."
 msgstr ""
 
-#: ../Doc/library/math.rst:543
+#: library/math.rst:543
 msgid "Return the sine of *x* radians."
 msgstr ""
 
-#: ../Doc/library/math.rst:548
+#: library/math.rst:548
 msgid "Return the tangent of *x* radians."
 msgstr ""
 
-#: ../Doc/library/math.rst:552
+#: library/math.rst:552
 msgid "Angular conversion"
 msgstr ""
 
-#: ../Doc/library/math.rst:556
+#: library/math.rst:556
 msgid "Convert angle *x* from radians to degrees."
 msgstr ""
 
-#: ../Doc/library/math.rst:561
+#: library/math.rst:561
 msgid "Convert angle *x* from degrees to radians."
 msgstr ""
 
-#: ../Doc/library/math.rst:565
+#: library/math.rst:565
 msgid "Hyperbolic functions"
 msgstr ""
 
-#: ../Doc/library/math.rst:567
+#: library/math.rst:567
 msgid ""
 "`Hyperbolic functions <https://en.wikipedia.org/wiki/Hyperbolic_functions>`_ "
 "are analogs of trigonometric functions that are based on hyperbolas instead "
 "of circles."
 msgstr ""
 
-#: ../Doc/library/math.rst:573
+#: library/math.rst:573
 msgid "Return the inverse hyperbolic cosine of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:578
+#: library/math.rst:578
 msgid "Return the inverse hyperbolic sine of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:583
+#: library/math.rst:583
 msgid "Return the inverse hyperbolic tangent of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:588
+#: library/math.rst:588
 msgid "Return the hyperbolic cosine of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:593
+#: library/math.rst:593
 msgid "Return the hyperbolic sine of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:598
+#: library/math.rst:598
 msgid "Return the hyperbolic tangent of *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:602
+#: library/math.rst:602
 msgid "Special functions"
 msgstr ""
 
-#: ../Doc/library/math.rst:606
+#: library/math.rst:606
 msgid ""
 "Return the `error function <https://en.wikipedia.org/wiki/Error_function>`_ "
 "at *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:609
+#: library/math.rst:609
 msgid ""
 "The :func:`erf` function can be used to compute traditional statistical "
 "functions such as the `cumulative standard normal distribution <https://en."
 "wikipedia.org/wiki/Cumulative_distribution_function>`_::"
 msgstr ""
 
-#: ../Doc/library/math.rst:622
+#: library/math.rst:622
 msgid ""
 "Return the complementary error function at *x*.  The `complementary error "
 "function <https://en.wikipedia.org/wiki/Error_function>`_ is defined as "
@@ -707,31 +707,31 @@ msgid ""
 "Loss_of_significance>`_\\."
 msgstr ""
 
-#: ../Doc/library/math.rst:633
+#: library/math.rst:633
 msgid ""
 "Return the `Gamma function <https://en.wikipedia.org/wiki/Gamma_function>`_ "
 "at *x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:641
+#: library/math.rst:641
 msgid ""
 "Return the natural logarithm of the absolute value of the Gamma function at "
 "*x*."
 msgstr ""
 
-#: ../Doc/library/math.rst:648
+#: library/math.rst:648
 msgid "Constants"
 msgstr ""
 
-#: ../Doc/library/math.rst:652
+#: library/math.rst:652
 msgid "The mathematical constant *π* = 3.141592..., to available precision."
 msgstr ""
 
-#: ../Doc/library/math.rst:657
+#: library/math.rst:657
 msgid "The mathematical constant *e* = 2.718281..., to available precision."
 msgstr ""
 
-#: ../Doc/library/math.rst:662
+#: library/math.rst:662
 msgid ""
 "The mathematical constant *τ* = 6.283185..., to available precision. Tau is "
 "a circle constant equal to 2\\ *π*, the ratio of a circle's circumference to "
@@ -740,13 +740,13 @@ msgid ""
 "celebrating `Tau day <https://tauday.com/>`_ by eating twice as much pie!"
 msgstr ""
 
-#: ../Doc/library/math.rst:673
+#: library/math.rst:673
 msgid ""
 "A floating-point positive infinity.  (For negative infinity, use ``-math."
 "inf``.)  Equivalent to the output of ``float('inf')``."
 msgstr ""
 
-#: ../Doc/library/math.rst:681
+#: library/math.rst:681
 msgid ""
 "A floating-point \"not a number\" (NaN) value. Equivalent to the output of "
 "``float('nan')``. Due to the requirements of the `IEEE-754 standard <https://"
@@ -756,11 +756,11 @@ msgid ""
 "NaNs instead of ``is`` or ``==``. Example:"
 msgstr ""
 
-#: ../Doc/library/math.rst:701
+#: library/math.rst:701
 msgid "It is now always available."
 msgstr ""
 
-#: ../Doc/library/math.rst:707
+#: library/math.rst:707
 msgid ""
 "The :mod:`math` module consists mostly of thin wrappers around the platform "
 "C math library functions.  Behavior in exceptional cases follows Annex F of "
@@ -775,17 +775,17 @@ msgid ""
 "``hypot(float('nan'), float('inf'))``."
 msgstr ""
 
-#: ../Doc/library/math.rst:719
+#: library/math.rst:719
 msgid ""
 "Note that Python makes no effort to distinguish signaling NaNs from quiet "
 "NaNs, and behavior for signaling NaNs remains unspecified. Typical behavior "
 "is to treat all NaNs as though they were quiet."
 msgstr ""
 
-#: ../Doc/library/math.rst:726
+#: library/math.rst:726
 msgid "Module :mod:`cmath`"
 msgstr ""
 
-#: ../Doc/library/math.rst:727
+#: library/math.rst:727
 msgid "Complex number versions of many of these functions."
 msgstr ""

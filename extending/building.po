@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/extending/building.rst:7
+#: extending/building.rst:7
 msgid "Building C and C++ Extensions"
 msgstr ""
 
-#: ../Doc/extending/building.rst:9
+#: extending/building.rst:9
 msgid ""
 "A C extension for CPython is a shared library (e.g. a ``.so`` file on Linux, "
 "``.pyd`` on Windows), which exports an *initialization function*."
 msgstr ""
 
-#: ../Doc/extending/building.rst:12
+#: extending/building.rst:12
 msgid ""
 "To be importable, the shared library must be available on :envvar:"
 "`PYTHONPATH`, and must be named after the module name, with an appropriate "
@@ -35,17 +35,17 @@ msgid ""
 "automatically."
 msgstr ""
 
-#: ../Doc/extending/building.rst:16
+#: extending/building.rst:16
 msgid "The initialization function has the signature:"
 msgstr ""
 
-#: ../Doc/extending/building.rst:20
+#: extending/building.rst:20
 msgid ""
 "It returns either a fully initialized module, or a :c:type:`PyModuleDef` "
 "instance. See :ref:`initializing-modules` for details."
 msgstr ""
 
-#: ../Doc/extending/building.rst:25
+#: extending/building.rst:25
 msgid ""
 "For modules with ASCII-only names, the function must be named "
 "``PyInit_<modulename>``, with ``<modulename>`` replaced by the name of the "
@@ -55,7 +55,7 @@ msgid ""
 "*punycode* encoding with hyphens replaced by underscores. In Python::"
 msgstr ""
 
-#: ../Doc/extending/building.rst:39
+#: extending/building.rst:39
 msgid ""
 "It is possible to export multiple modules from a single shared library by "
 "defining multiple initialization functions. However, importing them requires "
@@ -64,11 +64,11 @@ msgid ""
 "in one library\"* section in :pep:`489` for details."
 msgstr ""
 
-#: ../Doc/extending/building.rst:52
+#: extending/building.rst:52
 msgid "Building C and C++ Extensions with setuptools"
 msgstr ""
 
-#: ../Doc/extending/building.rst:54
+#: extending/building.rst:54
 msgid ""
 "Python 3.12 and newer no longer come with distutils. Please refer to the "
 "``setuptools`` documentation at https://setuptools.readthedocs.io/en/latest/"

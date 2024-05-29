@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/internet.rst:5
+#: library/internet.rst:5
 msgid "Internet Protocols and Support"
 msgstr ""
 
-#: ../Doc/library/internet.rst:14
+#: library/internet.rst:14
 msgid ""
 "The modules described in this chapter implement internet protocols and  "
 "support for related technology.  They are all implemented in Python. Most of "
@@ -30,22 +30,22 @@ msgid ""
 "an overview:"
 msgstr ""
 
-#: ../Doc/library/internet.rst:7
+#: library/internet.rst:7
 msgid "WWW"
 msgstr ""
 
-#: ../Doc/library/internet.rst:7
+#: library/internet.rst:7
 msgid "Internet"
 msgstr ""
 
-#: ../Doc/library/internet.rst:7
+#: library/internet.rst:7
 msgid "World Wide Web"
 msgstr ""
 
-#: ../Doc/library/internet.rst:12
+#: library/internet.rst:12
 msgid "module"
 msgstr ""
 
-#: ../Doc/library/internet.rst:12
+#: library/internet.rst:12
 msgid "socket"
 msgstr ""

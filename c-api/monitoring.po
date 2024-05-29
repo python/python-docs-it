@@ -17,26 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/monitoring.rst:6
+#: c-api/monitoring.rst:6
 msgid "Monitorong C API"
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:8
+#: c-api/monitoring.rst:8
 msgid "Added in version 3.13."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:10
+#: c-api/monitoring.rst:10
 msgid ""
 "An extension may need to interact with the event monitoring system. "
 "Subscribing to events and registering callbacks can be done via the Python "
 "API exposed in :mod:`sys.monitoring`."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:15
+#: c-api/monitoring.rst:15
 msgid "Generating Execution Events"
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:17
+#: c-api/monitoring.rst:17
 msgid ""
 "The functions below make it possible for an extension to fire monitoring "
 "events as it emulates the execution of Python code. Each of these functions "
@@ -49,119 +49,119 @@ msgid ""
 "CodeType` or of a type that emulates it."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:27
+#: c-api/monitoring.rst:27
 msgid ""
 "The VM disables tracing when firing an event, so there is no need for user "
 "code to do that."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:30
+#: c-api/monitoring.rst:30
 msgid ""
 "Monitoring functions should not be called with an exception set, except "
 "those listed below as working with the current exception."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:35
+#: c-api/monitoring.rst:35
 msgid ""
 "Representation of the state of an event type. It is allocated by the user "
 "while its contents are maintained by the monitoring API functions described "
 "below."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:39
+#: c-api/monitoring.rst:39
 msgid ""
 "All of the functions below return 0 on success and -1 (with an exception "
 "set) on error."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:41
+#: c-api/monitoring.rst:41
 msgid "See :mod:`sys.monitoring` for descriptions of the events."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:45
+#: c-api/monitoring.rst:45
 msgid "Fire a ``PY_START`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:50
+#: c-api/monitoring.rst:50
 msgid "Fire a ``PY_RESUME`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:55
+#: c-api/monitoring.rst:55
 msgid "Fire a ``PY_RETURN`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:60
+#: c-api/monitoring.rst:60
 msgid "Fire a ``PY_YIELD`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:65
+#: c-api/monitoring.rst:65
 msgid "Fire a ``CALL`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:70
+#: c-api/monitoring.rst:70
 msgid "Fire a ``LINE`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:75
+#: c-api/monitoring.rst:75
 msgid "Fire a ``JUMP`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:80
+#: c-api/monitoring.rst:80
 msgid "Fire a ``BRANCH`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:85
+#: c-api/monitoring.rst:85
 msgid "Fire a ``C_RETURN`` event."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:90
+#: c-api/monitoring.rst:90
 msgid ""
 "Fire a ``PY_THROW`` event with the current exception (as returned by :c:func:"
 "`PyErr_GetRaisedException`)."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:96
+#: c-api/monitoring.rst:96
 msgid ""
 "Fire a ``RAISE`` event with the current exception (as returned by :c:func:"
 "`PyErr_GetRaisedException`)."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:102
+#: c-api/monitoring.rst:102
 msgid ""
 "Fire a ``C_RAISE`` event with the current exception (as returned by :c:func:"
 "`PyErr_GetRaisedException`)."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:108
+#: c-api/monitoring.rst:108
 msgid ""
 "Fire a ``RERAISE`` event with the current exception (as returned by :c:func:"
 "`PyErr_GetRaisedException`)."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:114
+#: c-api/monitoring.rst:114
 msgid ""
 "Fire an ``EXCEPTION_HANDLED`` event with the current exception (as returned "
 "by :c:func:`PyErr_GetRaisedException`)."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:120
+#: c-api/monitoring.rst:120
 msgid ""
 "Fire a ``PY_UNWIND`` event with the current exception (as returned by :c:"
 "func:`PyErr_GetRaisedException`)."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:126
+#: c-api/monitoring.rst:126
 msgid ""
 "Fire a ``STOP_ITERATION`` event. If ``value`` is an instance of :exc:"
 "`StopIteration`, it is used. Otherwise, a new :exc:`StopIteration` instance "
 "is created with ``value`` as its argument."
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:131
+#: c-api/monitoring.rst:131
 msgid "Managing the Monitoring State"
 msgstr ""
 
-#: ../Doc/c-api/monitoring.rst:133
+#: c-api/monitoring.rst:133
 msgid ""
 "Monitoring states can be managed with the help of monitoring scopes. A scope "
 "would typically correspond to a python function."

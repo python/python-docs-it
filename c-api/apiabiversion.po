@@ -17,167 +17,167 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/apiabiversion.rst:7
+#: c-api/apiabiversion.rst:7
 msgid "API and ABI Versioning"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:9
+#: c-api/apiabiversion.rst:9
 msgid ""
 "CPython exposes its version number in the following macros. Note that these "
 "correspond to the version code is **built** with, not necessarily the "
 "version used at **run time**."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:13
+#: c-api/apiabiversion.rst:13
 msgid ""
 "See :ref:`stable` for a discussion of API and ABI stability across versions."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:17
+#: c-api/apiabiversion.rst:17
 msgid "The ``3`` in ``3.4.1a2``."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:21
+#: c-api/apiabiversion.rst:21
 msgid "The ``4`` in ``3.4.1a2``."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:25
+#: c-api/apiabiversion.rst:25
 msgid "The ``1`` in ``3.4.1a2``."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:29
+#: c-api/apiabiversion.rst:29
 msgid ""
 "The ``a`` in ``3.4.1a2``. This can be ``0xA`` for alpha, ``0xB`` for beta, "
 "``0xC`` for release candidate or ``0xF`` for final."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:35
+#: c-api/apiabiversion.rst:35
 msgid "The ``2`` in ``3.4.1a2``. Zero for final releases."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:39
+#: c-api/apiabiversion.rst:39
 msgid "The Python version number encoded in a single integer."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:41
+#: c-api/apiabiversion.rst:41
 msgid ""
 "The underlying version information can be found by treating it as a 32 bit "
 "number in the following manner:"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:45
+#: c-api/apiabiversion.rst:45
 msgid "Bytes"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:45
+#: c-api/apiabiversion.rst:45
 msgid "Bits (big endian order)"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:45
+#: c-api/apiabiversion.rst:45
 msgid "Meaning"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:45
+#: c-api/apiabiversion.rst:45
 msgid "Value for ``3.4.1a2``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:47
+#: c-api/apiabiversion.rst:47
 msgid "1"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:47
+#: c-api/apiabiversion.rst:47
 msgid "1-8"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:47
+#: c-api/apiabiversion.rst:47
 msgid "``PY_MAJOR_VERSION``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:47
+#: c-api/apiabiversion.rst:47
 msgid "``0x03``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:49
+#: c-api/apiabiversion.rst:49
 msgid "2"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:49
+#: c-api/apiabiversion.rst:49
 msgid "9-16"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:49
+#: c-api/apiabiversion.rst:49
 msgid "``PY_MINOR_VERSION``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:49
+#: c-api/apiabiversion.rst:49
 msgid "``0x04``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:51
+#: c-api/apiabiversion.rst:51
 msgid "3"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:51
+#: c-api/apiabiversion.rst:51
 msgid "17-24"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:51
+#: c-api/apiabiversion.rst:51
 msgid "``PY_MICRO_VERSION``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:51
+#: c-api/apiabiversion.rst:51
 msgid "``0x01``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:53
+#: c-api/apiabiversion.rst:53
 msgid "4"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:53
+#: c-api/apiabiversion.rst:53
 msgid "25-28"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:53
+#: c-api/apiabiversion.rst:53
 msgid "``PY_RELEASE_LEVEL``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:53
+#: c-api/apiabiversion.rst:53
 msgid "``0xA``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:55
+#: c-api/apiabiversion.rst:55
 msgid "29-32"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:55
+#: c-api/apiabiversion.rst:55
 msgid "``PY_RELEASE_SERIAL``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:55
+#: c-api/apiabiversion.rst:55
 msgid "``0x2``"
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:58
+#: c-api/apiabiversion.rst:58
 msgid ""
 "Thus ``3.4.1a2`` is hexversion ``0x030401a2`` and ``3.10.0`` is hexversion "
 "``0x030a00f0``."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:61
+#: c-api/apiabiversion.rst:61
 msgid "Use this for numeric comparisons, e.g. ``#if PY_VERSION_HEX >= ...``."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:63
+#: c-api/apiabiversion.rst:63
 msgid "This version is also available via the symbol :c:var:`Py_Version`."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:67
+#: c-api/apiabiversion.rst:67
 msgid ""
 "The Python runtime version number encoded in a single constant integer, with "
 "the same format as the :c:macro:`PY_VERSION_HEX` macro. This contains the "
 "Python version used at run time."
 msgstr ""
 
-#: ../Doc/c-api/apiabiversion.rst:73
+#: c-api/apiabiversion.rst:73
 msgid "All the given macros are defined in :source:`Include/patchlevel.h`."
 msgstr ""

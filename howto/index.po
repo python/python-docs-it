@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/howto/index.rst:3
+#: howto/index.rst:3
 msgid "Python HOWTOs"
 msgstr ""
 
-#: ../Doc/howto/index.rst:5
+#: howto/index.rst:5
 msgid ""
 "Python HOWTOs are documents that cover a single, specific topic, and attempt "
 "to cover it fairly completely. Modelled on the Linux Documentation Project's "
@@ -29,6 +29,6 @@ msgid ""
 "that's more detailed than the Python Library Reference."
 msgstr ""
 
-#: ../Doc/howto/index.rst:11
+#: howto/index.rst:11
 msgid "Currently, the HOWTOs are:"
 msgstr ""

@@ -17,37 +17,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/tuple.rst:6
+#: c-api/tuple.rst:6
 msgid "Tuple Objects"
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:13
+#: c-api/tuple.rst:13
 msgid "This subtype of :c:type:`PyObject` represents a Python tuple object."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:18
+#: c-api/tuple.rst:18
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python tuple type; it "
 "is the same object as :class:`tuple` in the Python layer."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:24
+#: c-api/tuple.rst:24
 msgid ""
 "Return true if *p* is a tuple object or an instance of a subtype of the "
 "tuple type.  This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:30
+#: c-api/tuple.rst:30
 msgid ""
 "Return true if *p* is a tuple object, but not an instance of a subtype of "
 "the tuple type.  This function always succeeds."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:36
+#: c-api/tuple.rst:36
 msgid "Return a new tuple object of size *len*, or ``NULL`` on failure."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:41
+#: c-api/tuple.rst:41
 msgid ""
 "Return a new tuple object of size *n*, or ``NULL`` on failure. The tuple "
 "values are initialized to the subsequent *n* C arguments pointing to Python "
@@ -55,24 +55,24 @@ msgid ""
 "``Py_BuildValue(\"(OO)\", a, b)``."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:48
+#: c-api/tuple.rst:48
 msgid "Take a pointer to a tuple object, and return the size of that tuple."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:53
+#: c-api/tuple.rst:53
 msgid ""
 "Return the size of the tuple *p*, which must be non-``NULL`` and point to a "
 "tuple; no error checking is performed."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:59
+#: c-api/tuple.rst:59
 msgid ""
 "Return the object at position *pos* in the tuple pointed to by *p*.  If "
 "*pos* is negative or out of bounds, return ``NULL`` and set an :exc:"
 "`IndexError` exception."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:62
+#: c-api/tuple.rst:62
 msgid ""
 "The returned reference is borrowed from the tuple *p* (that is: it is only "
 "valid as long as you hold a reference to *p*). To get a :term:`strong "
@@ -80,51 +80,50 @@ msgid ""
 "func:`PySequence_GetItem`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:71
+#: c-api/tuple.rst:71
 msgid "Like :c:func:`PyTuple_GetItem`, but does no checking of its arguments."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:76
+#: c-api/tuple.rst:76
 msgid ""
 "Return the slice of the tuple pointed to by *p* between *low* and *high*, or "
 "``NULL`` on failure.  This is the equivalent of the Python expression "
 "``p[low:high]``.  Indexing from the end of the tuple is not supported."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:83
+#: c-api/tuple.rst:83
 msgid ""
 "Insert a reference to object *o* at position *pos* of the tuple pointed to "
 "by *p*.  Return ``0`` on success.  If *pos* is out of bounds, return ``-1`` "
 "and set an :exc:`IndexError` exception."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:89
+#: c-api/tuple.rst:89
 msgid ""
 "This function \"steals\" a reference to *o* and discards a reference to an "
 "item already in the tuple at the affected position."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:95
+#: c-api/tuple.rst:95
 msgid ""
 "Like :c:func:`PyTuple_SetItem`, but does no error checking, and should "
 "*only* be used to fill in brand new tuples."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:98 ../Doc/c-api/tuple.rst:209
-#: ../Doc/c-api/tuple.rst:227
+#: c-api/tuple.rst:209 c-api/tuple.rst:227
 msgid ""
 "Bounds checking is performed as an assertion if Python is built in :ref:"
 "`debug mode <debug-build>` or :option:`with assertions <--with-assertions>`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:103
+#: c-api/tuple.rst:103
 msgid ""
 "This function \"steals\" a reference to *o*, and, unlike :c:func:"
 "`PyTuple_SetItem`, does *not* discard a reference to any item that is being "
 "replaced; any reference in the tuple at position *pos* will be leaked."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:111
+#: c-api/tuple.rst:111
 msgid ""
 "Can be used to resize a tuple.  *newsize* will be the new length of the "
 "tuple. Because tuples are *supposed* to be immutable, this should only be "
@@ -139,11 +138,11 @@ msgid ""
 "`SystemError`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:126
+#: c-api/tuple.rst:126
 msgid "Struct Sequence Objects"
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:128
+#: c-api/tuple.rst:128
 msgid ""
 "Struct sequence objects are the C equivalent of :func:`~collections."
 "namedtuple` objects, i.e. a sequence whose items can also be accessed "
@@ -151,44 +150,44 @@ msgid ""
 "specific struct sequence type."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:135
+#: c-api/tuple.rst:135
 msgid ""
 "Create a new struct sequence type from the data in *desc*, described below. "
 "Instances of the resulting type can be created with :c:func:"
 "`PyStructSequence_New`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:141
+#: c-api/tuple.rst:141
 msgid "Initializes a struct sequence type *type* from *desc* in place."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:146
+#: c-api/tuple.rst:146
 msgid ""
 "The same as ``PyStructSequence_InitType``, but returns ``0`` on success and "
 "``-1`` on failure."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:154
+#: c-api/tuple.rst:154
 msgid "Contains the meta information of a struct sequence type to create."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:158
+#: c-api/tuple.rst:158
 msgid "Name of the struct sequence type."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:162
+#: c-api/tuple.rst:162
 msgid "Pointer to docstring for the type or ``NULL`` to omit."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:166
+#: c-api/tuple.rst:166
 msgid "Pointer to ``NULL``-terminated array with field names of the new type."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:170
+#: c-api/tuple.rst:170
 msgid "Number of fields visible to the Python side (if used as tuple)."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:175
+#: c-api/tuple.rst:175
 msgid ""
 "Describes a field of a struct sequence. As a struct sequence is modeled as a "
 "tuple, all fields are typed as :c:expr:`PyObject*`.  The index in the :c:"
@@ -197,66 +196,66 @@ msgid ""
 "described."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:183
+#: c-api/tuple.rst:183
 msgid ""
 "Name for the field or ``NULL`` to end the list of named fields, set to :c:"
 "data:`PyStructSequence_UnnamedField` to leave unnamed."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:188
+#: c-api/tuple.rst:188
 msgid "Field docstring or ``NULL`` to omit."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:193
+#: c-api/tuple.rst:193
 msgid "Special value for a field name to leave it unnamed."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:195
+#: c-api/tuple.rst:195
 msgid "The type was changed from ``char *``."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:201
+#: c-api/tuple.rst:201
 msgid ""
 "Creates an instance of *type*, which must have been created with :c:func:"
 "`PyStructSequence_NewType`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:207
+#: c-api/tuple.rst:207
 msgid ""
 "Return the object at position *pos* in the struct sequence pointed to by *p*."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:215
+#: c-api/tuple.rst:215
 msgid "Alias to :c:func:`PyStructSequence_GetItem`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:217
+#: c-api/tuple.rst:217
 msgid "Now implemented as an alias to :c:func:`PyStructSequence_GetItem`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:223
+#: c-api/tuple.rst:223
 msgid ""
 "Sets the field at index *pos* of the struct sequence *p* to value *o*.  "
 "Like :c:func:`PyTuple_SET_ITEM`, this should only be used to fill in brand "
 "new instances."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:232
+#: c-api/tuple.rst:232
 msgid "This function \"steals\" a reference to *o*."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:237
+#: c-api/tuple.rst:237
 msgid "Alias to :c:func:`PyStructSequence_SetItem`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:239
+#: c-api/tuple.rst:239
 msgid "Now implemented as an alias to :c:func:`PyStructSequence_SetItem`."
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:8
+#: c-api/tuple.rst:8
 msgid "object"
 msgstr ""
 
-#: ../Doc/c-api/tuple.rst:8
+#: c-api/tuple.rst:8
 msgid "tuple"
 msgstr ""

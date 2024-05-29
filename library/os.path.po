@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/os.path.rst:2
+#: library/os.path.rst:2
 msgid ":mod:`!os.path` --- Common pathname manipulations"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:7
+#: library/os.path.rst:7
 msgid ""
 "**Source code:** :source:`Lib/genericpath.py`, :source:`Lib/posixpath.py` "
 "(for POSIX) and :source:`Lib/ntpath.py` (for Windows)."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:14
+#: library/os.path.rst:14
 msgid ""
 "This module implements some useful functions on pathnames. To read or write "
 "files see :func:`open`, and for accessing the filesystem see the :mod:`os` "
@@ -35,7 +35,7 @@ msgid ""
 "object implementing the :class:`os.PathLike` protocol."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:19
+#: library/os.path.rst:19
 msgid ""
 "Unlike a Unix shell, Python does not do any *automatic* path expansions. "
 "Functions such as :func:`expanduser` and :func:`expandvars` can be invoked "
@@ -43,18 +43,18 @@ msgid ""
 "the :mod:`glob` module.)"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:26
+#: library/os.path.rst:26
 msgid "The :mod:`pathlib` module offers high-level path objects."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:31
+#: library/os.path.rst:31
 msgid ""
 "All of these functions accept either only bytes or only string objects as "
 "their parameters.  The result is an object of the same type, if a path or "
 "file name is returned."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:37
+#: library/os.path.rst:37
 msgid ""
 "Since different operating systems have different path name conventions, "
 "there are several versions of this module in the standard library.  The :mod:"
@@ -65,15 +65,15 @@ msgid ""
 "same interface:"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:45
+#: library/os.path.rst:45
 msgid ":mod:`posixpath` for UNIX-style paths"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:46
+#: library/os.path.rst:46
 msgid ":mod:`ntpath` for Windows paths"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:51
+#: library/os.path.rst:51
 msgid ""
 ":func:`exists`, :func:`lexists`, :func:`isdir`, :func:`isfile`, :func:"
 "`islink`, and :func:`ismount` now return ``False`` instead of raising an "
@@ -81,30 +81,22 @@ msgid ""
 "OS level."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:59
+#: library/os.path.rst:59
 msgid ""
 "Return a normalized absolutized version of the pathname *path*. On most "
 "platforms, this is equivalent to calling the function :func:`normpath` as "
 "follows: ``normpath(join(os.getcwd(), path))``."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:63 ../Doc/library/os.path.rst:76
-#: ../Doc/library/os.path.rst:117 ../Doc/library/os.path.rst:126
-#: ../Doc/library/os.path.rst:142 ../Doc/library/os.path.rst:152
-#: ../Doc/library/os.path.rst:178 ../Doc/library/os.path.rst:198
-#: ../Doc/library/os.path.rst:215 ../Doc/library/os.path.rst:227
-#: ../Doc/library/os.path.rst:236 ../Doc/library/os.path.rst:246
-#: ../Doc/library/os.path.rst:260 ../Doc/library/os.path.rst:270
-#: ../Doc/library/os.path.rst:289 ../Doc/library/os.path.rst:308
-#: ../Doc/library/os.path.rst:380 ../Doc/library/os.path.rst:400
-#: ../Doc/library/os.path.rst:423 ../Doc/library/os.path.rst:443
-#: ../Doc/library/os.path.rst:459 ../Doc/library/os.path.rst:470
-#: ../Doc/library/os.path.rst:484 ../Doc/library/os.path.rst:500
-#: ../Doc/library/os.path.rst:525 ../Doc/library/os.path.rst:589
+#: library/os.path.rst:76 library/os.path.rst:126 library/os.path.rst:152
+#: library/os.path.rst:198 library/os.path.rst:227 library/os.path.rst:246
+#: library/os.path.rst:270 library/os.path.rst:308 library/os.path.rst:400
+#: library/os.path.rst:443 library/os.path.rst:470 library/os.path.rst:500
+#: library/os.path.rst:589
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:69
+#: library/os.path.rst:69
 msgid ""
 "Return the base name of pathname *path*.  This is the second element of the "
 "pair returned by passing *path* to the function :func:`split`.  Note that "
@@ -113,7 +105,7 @@ msgid ""
 "the :func:`basename` function returns an empty string (``''``)."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:82
+#: library/os.path.rst:82
 msgid ""
 "Return the longest common sub-path of each pathname in the iterable "
 "*paths*.  Raise :exc:`ValueError` if *paths* contain both absolute and "
@@ -121,34 +113,34 @@ msgid ""
 "empty.  Unlike :func:`commonprefix`, this returns a valid path."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:90
+#: library/os.path.rst:90
 msgid "Accepts a sequence of :term:`path-like objects <path-like object>`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:93
+#: library/os.path.rst:93
 msgid "Any iterable can now be passed, rather than just sequences."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:99
+#: library/os.path.rst:99
 msgid ""
 "Return the longest path prefix (taken character-by-character) that is a "
 "prefix of all paths in  *list*.  If *list* is empty, return the empty string "
 "(``''``)."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:105
+#: library/os.path.rst:105
 msgid ""
 "This function may return invalid paths because it works a character at a "
 "time.  To obtain a valid path, see :func:`commonpath`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:123
+#: library/os.path.rst:123
 msgid ""
 "Return the directory name of pathname *path*.  This is the first element of "
 "the pair returned by passing *path* to the function :func:`split`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:132
+#: library/os.path.rst:132
 msgid ""
 "Return ``True`` if *path* refers to an existing path or an open file "
 "descriptor.  Returns ``False`` for broken symbolic links.  On some "
@@ -157,26 +149,26 @@ msgid ""
 "physically exists."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:138
+#: library/os.path.rst:138
 msgid ""
 "*path* can now be an integer: ``True`` is returned if it is an  open file "
 "descriptor, ``False`` otherwise."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:148
+#: library/os.path.rst:148
 msgid ""
 "Return ``True`` if *path* refers to an existing path, including broken "
 "symbolic links.   Equivalent to :func:`exists` on platforms lacking :func:"
 "`os.lstat`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:160
+#: library/os.path.rst:160
 msgid ""
 "On Unix and Windows, return the argument with an initial component of ``~`` "
 "or ``~user`` replaced by that *user*'s home directory."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:165
+#: library/os.path.rst:165
 msgid ""
 "On Unix, an initial ``~`` is replaced by the environment variable :envvar:"
 "`HOME` if it is set; otherwise the current user's home directory is looked "
@@ -184,7 +176,7 @@ msgid ""
 "initial ``~user`` is looked up directly in the password directory."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:170
+#: library/os.path.rst:170
 msgid ""
 "On Windows, :envvar:`USERPROFILE` will be used if set, otherwise a "
 "combination of :envvar:`HOMEPATH` and :envvar:`HOMEDRIVE` will be used.  An "
@@ -193,17 +185,17 @@ msgid ""
 "replacing it if so."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:175
+#: library/os.path.rst:175
 msgid ""
 "If the expansion fails or if the path does not begin with a tilde, the path "
 "is returned unchanged."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:181
+#: library/os.path.rst:181
 msgid "No longer uses :envvar:`HOME` on Windows."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:190
+#: library/os.path.rst:190
 msgid ""
 "Return the argument with environment variables expanded.  Substrings of the "
 "form ``$name`` or ``${name}`` are replaced by the value of environment "
@@ -211,13 +203,13 @@ msgid ""
 "variables are left unchanged."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:195
+#: library/os.path.rst:195
 msgid ""
 "On Windows, ``%name%`` expansions are supported in addition to ``$name`` and "
 "``${name}``."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:204
+#: library/os.path.rst:204
 msgid ""
 "Return the time of last access of *path*.  The return value is a floating "
 "point number giving the number of seconds since the epoch (see the  :mod:"
@@ -225,7 +217,7 @@ msgid ""
 "inaccessible."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:211
+#: library/os.path.rst:211
 msgid ""
 "Return the time of last modification of *path*.  The return value is a "
 "floating point number giving the number of seconds since the epoch (see "
@@ -233,7 +225,7 @@ msgid ""
 "is inaccessible."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:221
+#: library/os.path.rst:221
 msgid ""
 "Return the system's ctime which, on some systems (like Unix) is the time of "
 "the last metadata change, and, on others (like Windows), is the creation "
@@ -242,54 +234,54 @@ msgid ""
 "file does not exist or is inaccessible."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:233
+#: library/os.path.rst:233
 msgid ""
 "Return the size, in bytes, of *path*.  Raise :exc:`OSError` if the file does "
 "not exist or is inaccessible."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:242
+#: library/os.path.rst:242
 msgid ""
 "Return ``True`` if *path* is an absolute pathname.  On Unix, that means it "
 "begins with a slash, on Windows that it begins with two (back)slashes, or a "
 "drive letter, colon, and (back)slash together."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:249
+#: library/os.path.rst:249
 msgid ""
 "On Windows, returns ``False`` if the given path starts with exactly one "
 "(back)slash."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:256
+#: library/os.path.rst:256
 msgid ""
 "Return ``True`` if *path* is an :func:`existing <exists>` regular file. This "
 "follows symbolic links, so both :func:`islink` and :func:`isfile` can be "
 "true for the same path."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:266
+#: library/os.path.rst:266
 msgid ""
 "Return ``True`` if *path* is an :func:`existing <exists>` directory.  This "
 "follows symbolic links, so both :func:`islink` and :func:`isdir` can be true "
 "for the same path."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:276
+#: library/os.path.rst:276
 msgid ""
 "Return ``True`` if *path* refers to an :func:`existing <lexists>` directory "
 "entry that is a junction.  Always return ``False`` if junctions are not "
 "supported on the current platform."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:285
+#: library/os.path.rst:285
 msgid ""
 "Return ``True`` if *path* refers to an :func:`existing <exists>` directory "
 "entry that is a symbolic link.  Always ``False`` if symbolic links are not "
 "supported by the Python runtime."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:295
+#: library/os.path.rst:295
 msgid ""
 "Return ``True`` if pathname *path* is a :dfn:`mount point`: a point in a "
 "file system where a different file system has been mounted.  On POSIX, the "
@@ -302,11 +294,11 @@ msgid ""
 "called to see if it is different from the input path."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:305
+#: library/os.path.rst:305
 msgid "Added support for detecting non-root mount points on Windows."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:314
+#: library/os.path.rst:314
 msgid ""
 "Return ``True`` if pathname *path* is located on a Windows Dev Drive. A Dev "
 "Drive is optimized for developer scenarios, and offers faster performance "
@@ -315,7 +307,7 @@ msgid ""
 "operations."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:320
+#: library/os.path.rst:320
 msgid ""
 "May raise an error for an invalid path, for example, one without a "
 "recognizable drive, but returns ``False`` on platforms that do not support "
@@ -323,17 +315,17 @@ msgid ""
 "windows/dev-drive/>`_ for information on enabling and creating Dev Drives."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:327
+#: library/os.path.rst:327
 msgid ""
 "The function is now available on all platforms, and will always return "
 "``False`` on those that have no support for Dev Drives"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:333
+#: library/os.path.rst:333
 msgid "Return ``True`` if *path* is a reserved pathname on the current system."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:335
+#: library/os.path.rst:335
 msgid ""
 "On Windows, reserved filenames include those that end with a space or dot; "
 "those that contain colons (i.e. file streams such as \"name:stream\"), "
@@ -342,7 +334,7 @@ msgid ""
 "\", \"AUX\", \"PRN\", \"COM1\", and \"LPT1\"."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:343
+#: library/os.path.rst:343
 msgid ""
 "This function approximates rules for reserved paths on most Windows systems. "
 "These rules change over time in various Windows releases. This function may "
@@ -350,11 +342,11 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:348
+#: library/os.path.rst:348
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:355
+#: library/os.path.rst:355
 msgid ""
 "Join one or more path segments intelligently.  The return value is the "
 "concatenation of *path* and all members of *\\*paths*, with exactly one "
@@ -365,7 +357,7 @@ msgid ""
 "and joining continues from the absolute path segment."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:363
+#: library/os.path.rst:363
 msgid ""
 "On Windows, the drive is not reset when a rooted path segment (e.g., "
 "``r'\\foo'``) is encountered. If a segment is on a different drive or is an "
@@ -375,18 +367,18 @@ msgid ""
 "on drive :file:`C:` (:file:`c:foo`), not :file:`c:\\\\foo`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:370
+#: library/os.path.rst:370
 msgid "Accepts a :term:`path-like object` for *path* and *paths*."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:376
+#: library/os.path.rst:376
 msgid ""
 "Normalize the case of a pathname.  On Windows, convert all characters in the "
 "pathname to lowercase, and also convert forward slashes to backward slashes. "
 "On other operating systems, return the path unchanged."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:386
+#: library/os.path.rst:386
 msgid ""
 "Normalize a pathname by collapsing redundant separators and up-level "
 "references so that ``A//B``, ``A/B/``, ``A/./B`` and ``A/foo/../B`` all "
@@ -395,7 +387,7 @@ msgid ""
 "backward slashes. To normalize case, use :func:`normcase`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:393
+#: library/os.path.rst:393
 msgid ""
 "On POSIX systems, in accordance with `IEEE Std 1003.1 2013 Edition; 4.13 "
 "Pathname Resolution <https://pubs.opengroup.org/onlinepubs/9699919799/"
@@ -405,7 +397,7 @@ msgid ""
 "leading characters shall be treated as a single character."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:406
+#: library/os.path.rst:406
 msgid ""
 "Return the canonical path of the specified filename, eliminating any "
 "symbolic links encountered in the path (if they are supported by the "
@@ -414,35 +406,35 @@ msgid ""
 "Files``."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:411
+#: library/os.path.rst:411
 msgid ""
 "If a path doesn't exist or a symlink loop is encountered, and *strict* is "
 "``True``, :exc:`OSError` is raised. If *strict* is ``False`` these errors "
 "are ignored, and so the result might be missing or otherwise inaccessible."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:416
+#: library/os.path.rst:416
 msgid ""
 "This function emulates the operating system's procedure for making a path "
 "canonical, which differs slightly between Windows and UNIX with respect to "
 "how links and subsequent path components interact."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:420
+#: library/os.path.rst:420
 msgid ""
 "Operating system APIs make paths canonical as needed, so it's not normally "
 "necessary to call this function."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:426
+#: library/os.path.rst:426
 msgid "Symbolic links and junctions are now resolved on Windows."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:429
+#: library/os.path.rst:429
 msgid "The *strict* parameter was added."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:435
+#: library/os.path.rst:435
 msgid ""
 "Return a relative filepath to *path* either from the current directory or "
 "from an optional *start* directory.  This is a path computation:  the "
@@ -451,33 +443,32 @@ msgid ""
 "are on different drives."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:441
+#: library/os.path.rst:441
 msgid "*start* defaults to :data:`os.curdir`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:449
+#: library/os.path.rst:449
 msgid ""
 "Return ``True`` if both pathname arguments refer to the same file or "
 "directory. This is determined by the device number and i-node number and "
 "raises an exception if an :func:`os.stat` call on either pathname fails."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:453 ../Doc/library/os.path.rst:467
-#: ../Doc/library/os.path.rst:481
+#: library/os.path.rst:467 library/os.path.rst:481
 msgid "Added Windows support."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:456
+#: library/os.path.rst:456
 msgid "Windows now uses the same implementation as all other platforms."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:465
+#: library/os.path.rst:465
 msgid ""
 "Return ``True`` if the file descriptors *fp1* and *fp2* refer to the same "
 "file."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:476
+#: library/os.path.rst:476
 msgid ""
 "Return ``True`` if the stat tuples *stat1* and *stat2* refer to the same "
 "file. These structures may have been returned by :func:`os.fstat`, :func:`os."
@@ -485,7 +476,7 @@ msgid ""
 "comparison used by :func:`samefile` and :func:`sameopenfile`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:490
+#: library/os.path.rst:490
 msgid ""
 "Split the pathname *path* into a pair, ``(head, tail)`` where *tail* is the "
 "last pathname component and *head* is everything leading up to that.  The "
@@ -498,7 +489,7 @@ msgid ""
 "and :func:`basename`."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:506
+#: library/os.path.rst:506
 msgid ""
 "Split the pathname *path* into a pair ``(drive, tail)`` where *drive* is "
 "either a mount point or the empty string.  On systems which do not use drive "
@@ -506,23 +497,23 @@ msgid ""
 "``drive + tail`` will be the same as *path*."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:511
+#: library/os.path.rst:511
 msgid ""
 "On Windows, splits a pathname into drive/UNC sharepoint and relative path."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:513
+#: library/os.path.rst:513
 msgid ""
 "If the path contains a drive letter, drive will contain everything up to and "
 "including the colon::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:519
+#: library/os.path.rst:519
 msgid ""
 "If the path contains a UNC path, drive will contain the host name and share::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:531
+#: library/os.path.rst:531
 msgid ""
 "Split the pathname *path* into a 3-item tuple ``(drive, root, tail)`` where "
 "*drive* is a device name or mount point, *root* is a string of separators "
@@ -531,7 +522,7 @@ msgid ""
 "same as *path*."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:537
+#: library/os.path.rst:537
 msgid ""
 "On POSIX systems, *drive* is always empty. The *root* may be empty (if "
 "*path* is relative), a single forward slash (if *path* is absolute), or two "
@@ -540,78 +531,78 @@ msgid ""
 "basedefs/V1_chap04.html#tag_04_13>`_.) For example::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:550
+#: library/os.path.rst:550
 msgid ""
 "On Windows, *drive* may be empty, a drive-letter name, a UNC share, or a "
 "device name. The *root* may be empty, a forward slash, or a backward slash. "
 "For example::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:564
+#: library/os.path.rst:564
 msgid ""
 "Split the pathname *path* into a pair ``(root, ext)``  such that ``root + "
 "ext == path``, and the extension, *ext*, is empty or begins with a period "
 "and contains at most one period."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:568
+#: library/os.path.rst:568
 msgid "If the path contains no extension, *ext* will be ``''``::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:573
+#: library/os.path.rst:573
 msgid ""
 "If the path contains an extension, then *ext* will be set to this extension, "
 "including the leading period. Note that previous periods will be ignored::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:581
+#: library/os.path.rst:581
 msgid ""
 "Leading periods of the last component of the path are considered to be part "
 "of the root::"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:595
+#: library/os.path.rst:595
 msgid ""
 "``True`` if arbitrary Unicode strings can be used as file names (within "
 "limitations imposed by the file system)."
 msgstr ""
 
-#: ../Doc/library/os.path.rst:10
+#: library/os.path.rst:10
 msgid "path"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:10
+#: library/os.path.rst:10
 msgid "operations"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:156
+#: library/os.path.rst:156
 msgid "~ (tilde)"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:156
+#: library/os.path.rst:156
 msgid "home directory expansion"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:163
+#: library/os.path.rst:163
 msgid "module"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:163
+#: library/os.path.rst:163
 msgid "pwd"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:184
+#: library/os.path.rst:184
 msgid "$ (dollar)"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:184
+#: library/os.path.rst:184
 msgid "environment variables expansion"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:184
+#: library/os.path.rst:184
 msgid "% (percent)"
 msgstr ""
 
-#: ../Doc/library/os.path.rst:184
+#: library/os.path.rst:184
 msgid "environment variables expansion (Windows)"
 msgstr ""

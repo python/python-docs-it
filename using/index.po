@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/using/index.rst:5
+#: using/index.rst:5
 msgid "Python Setup and Usage"
 msgstr ""
 
-#: ../Doc/using/index.rst:8
+#: using/index.rst:8
 msgid ""
 "This part of the documentation is devoted to general information on the "
 "setup of the Python environment on different platforms, the invocation of "

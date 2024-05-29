@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/index.rst:5
+#: library/index.rst:5
 msgid "The Python Standard Library"
 msgstr ""
 
-#: ../Doc/library/index.rst:7
+#: library/index.rst:7
 msgid ""
 "While :ref:`reference-index` describes the exact syntax and semantics of the "
 "Python language, this library reference manual describes the standard "
@@ -29,7 +29,7 @@ msgid ""
 "optional components that are commonly included in Python distributions."
 msgstr ""
 
-#: ../Doc/library/index.rst:13
+#: library/index.rst:13
 msgid ""
 "Python's standard library is very extensive, offering a wide range of "
 "facilities as indicated by the long table of contents listed below. The "
@@ -42,7 +42,7 @@ msgid ""
 "platform-neutral APIs."
 msgstr ""
 
-#: ../Doc/library/index.rst:23
+#: library/index.rst:23
 msgid ""
 "The Python installers for the Windows platform usually include the entire "
 "standard library and often also include many additional components. For Unix-"
@@ -51,7 +51,7 @@ msgid ""
 "the operating system to obtain some or all of the optional components."
 msgstr ""
 
-#: ../Doc/library/index.rst:30
+#: library/index.rst:30
 msgid ""
 "In addition to the standard library, there is an active collection of "
 "hundreds of thousands of components (from individual programs and modules to "

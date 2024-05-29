@@ -18,6 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ../Doc/contents.rst:3
+#: contents.rst:3
 msgid "Python Documentation contents"
 msgstr "Contenuto della documentazione Python"

@@ -17,24 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/tutorial/appendix.rst:5
+#: tutorial/appendix.rst:5
 msgid "Appendix"
 msgstr "Appendice"
 
-#: ../Doc/tutorial/appendix.rst:11
+#: tutorial/appendix.rst:11
 msgid "Interactive Mode"
 msgstr "Modalità Interattiva"
 
-#: ../Doc/tutorial/appendix.rst:13
+#: tutorial/appendix.rst:13
 msgid ""
 "There are two variants of the interactive :term:`REPL`.  The classic basic "
 "interpreter is supported on all platforms with minimal line control "
 "capabilities."
 msgstr ""
-"Ci sono due varianti del :term:`REPL` interattivo. L'interprete di base classico "
-"è supportato su tutte le piattaforme con capacità minime di controllo di riga."
+"Ci sono due varianti del :term:`REPL` interattivo. L'interprete di base "
+"classico è supportato su tutte le piattaforme con capacità minime di "
+"controllo di riga."
 
-#: ../Doc/tutorial/appendix.rst:17
+#: tutorial/appendix.rst:17
 msgid ""
 "On Unix-like systems (e.g. Linux or macOS) with :mod:`curses` and :mod:"
 "`readline` support, a new interactive shell is used by default. This one "
@@ -46,37 +47,40 @@ msgid ""
 "`F3` enters \"paste mode\", which makes pasting larger blocks of code "
 "easier. Press :kbd:`F3` to return to the regular prompt."
 msgstr ""
-"Nei sistemi Unix-like (ad esempio Linux o macOS) con supporto a :mod:`curses` e :mod:"
-"`readline`, di default viene utilizzata una nuova shell interattiva. Questa supporta "
-"il colore, la modifica multilinea, la navigazione nella cronologia e la modalità incolla. "
-"Per disabilitare il colore, vedere :ref:`using-on-controlling-color` per i dettagli. "
-"I tasti funzione forniscono alcune funzionalità aggiuntive. :kbd:`F1` apre il browser di "
-"aiuto interattivo :mod:`pydoc`. :kbd:`F2` consente di navigare nella cronologia della "
-"riga di comando senza output né i prompt :term:`>>>` e :term:`...`. :kbd:`F3` attiva la "
-"\"modalità incolla\", che permette di incollare blocchi di codice più grandi in modo semplice. Premere "
-":kbd:`F3` per tornare al prompt normale."
+"Nei sistemi Unix-like (ad esempio Linux o macOS) con supporto a :mod:"
+"`curses` e :mod:`readline`, di default viene utilizzata una nuova shell "
+"interattiva. Questa supporta il colore, la modifica multilinea, la "
+"navigazione nella cronologia e la modalità incolla. Per disabilitare il "
+"colore, vedere :ref:`using-on-controlling-color` per i dettagli. I tasti "
+"funzione forniscono alcune funzionalità aggiuntive. :kbd:`F1` apre il "
+"browser di aiuto interattivo :mod:`pydoc`. :kbd:`F2` consente di navigare "
+"nella cronologia della riga di comando senza output né i prompt :term:`>>>` "
+"e :term:`...`. :kbd:`F3` attiva la \"modalità incolla\", che permette di "
+"incollare blocchi di codice più grandi in modo semplice. Premere :kbd:`F3` "
+"per tornare al prompt normale."
 
-#: ../Doc/tutorial/appendix.rst:28
+#: tutorial/appendix.rst:28
 msgid ""
 "When using the new interactive shell, exit the shell by typing :kbd:`exit` "
 "or :kbd:`quit`. Adding call parentheses after those commands is not required."
 msgstr ""
-"Quando si utilizza la nuova shell interattiva, si può uscire dalla shell digitando :kbd:`exit` "
-"o :kbd:`quit`. Non è necessario aggiungere le parentesi di chiamata dopo questi comandi."
+"Quando si utilizza la nuova shell interattiva, si può uscire dalla shell "
+"digitando :kbd:`exit` o :kbd:`quit`. Non è necessario aggiungere le "
+"parentesi di chiamata dopo questi comandi."
 
-#: ../Doc/tutorial/appendix.rst:32
+#: tutorial/appendix.rst:32
 msgid ""
 "If the new interactive shell is not desired, it can be disabled via the :"
 "envvar:`PYTHON_BASIC_REPL` environment variable."
 msgstr ""
-"Se non si vuole usare la nuova shell interattiva, questa può essere disabilitata tramite la variabile "
-"di ambiente :envvar:`PYTHON_BASIC_REPL`."
+"Se non si vuole usare la nuova shell interattiva, questa può essere "
+"disabilitata tramite la variabile di ambiente :envvar:`PYTHON_BASIC_REPL`."
 
-#: ../Doc/tutorial/appendix.rst:38
+#: tutorial/appendix.rst:38
 msgid "Error Handling"
 msgstr "Gestione degli Errori"
 
-#: ../Doc/tutorial/appendix.rst:40
+#: tutorial/appendix.rst:40
 msgid ""
 "When an error occurs, the interpreter prints an error message and a stack "
 "trace. In interactive mode, it then returns to the primary prompt; when "
@@ -89,7 +93,7 @@ msgid ""
 "output from executed commands is written to standard output."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:50
+#: tutorial/appendix.rst:50
 msgid ""
 "Typing the interrupt character (usually :kbd:`Control-C` or :kbd:`Delete`) "
 "to the primary or secondary prompt cancels the input and returns to the "
@@ -98,17 +102,17 @@ msgid ""
 "`try` statement."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:60
+#: tutorial/appendix.rst:60
 msgid "Executable Python Scripts"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:62
+#: tutorial/appendix.rst:62
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:67
+#: tutorial/appendix.rst:67
 msgid ""
 "(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
 "beginning of the script and giving the file an executable mode.  The ``#!`` "
@@ -118,13 +122,13 @@ msgid ""
 "``'#'``, is used to start a comment in Python."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:74
+#: tutorial/appendix.rst:74
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:81
+#: tutorial/appendix.rst:81
 msgid ""
 "On Windows systems, there is no notion of an \"executable mode\".  The "
 "Python installer automatically associates ``.py`` files with ``python.exe`` "
@@ -133,11 +137,11 @@ msgid ""
 "normally appears is suppressed."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:91
+#: tutorial/appendix.rst:91
 msgid "The Interactive Startup File"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:93
+#: tutorial/appendix.rst:93
 msgid ""
 "When you use Python interactively, it is frequently handy to have some "
 "standard commands executed every time the interpreter is started.  You can "
@@ -146,7 +150,7 @@ msgid ""
 "the :file:`.profile` feature of the Unix shells."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:99
+#: tutorial/appendix.rst:99
 msgid ""
 "This file is only read in interactive sessions, not when Python reads "
 "commands from a script, and not when :file:`/dev/tty` is given as the "
@@ -157,7 +161,7 @@ msgid ""
 "``sys.ps1`` and ``sys.ps2`` in this file."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:107
+#: tutorial/appendix.rst:107
 msgid ""
 "If you want to read an additional start-up file from the current directory, "
 "you can program this in the global start-up file using code like ``if os."
@@ -166,11 +170,11 @@ msgid ""
 "script::"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:124
+#: tutorial/appendix.rst:124
 msgid "The Customization Modules"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:126
+#: tutorial/appendix.rst:126
 msgid ""
 "Python provides two hooks to let you customize it: :index:`sitecustomize` "
 "and :index:`usercustomize`.  To see how it works, you need first to find the "
@@ -178,7 +182,7 @@ msgid ""
 "code::"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:134
+#: tutorial/appendix.rst:134
 msgid ""
 "Now you can create a file named :file:`usercustomize.py` in that directory "
 "and put anything you want in it.  It will affect every invocation of Python, "
@@ -186,7 +190,7 @@ msgid ""
 "import."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:138
+#: tutorial/appendix.rst:138
 msgid ""
 ":index:`sitecustomize` works in the same way, but is typically created by an "
 "administrator of the computer in the global site-packages directory, and is "
@@ -194,10 +198,10 @@ msgid ""
 "`site` module for more details."
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:145
+#: tutorial/appendix.rst:145
 msgid "Footnotes"
 msgstr ""
 
-#: ../Doc/tutorial/appendix.rst:146
+#: tutorial/appendix.rst:146
 msgid "A problem with the GNU Readline package may prevent this."
 msgstr ""

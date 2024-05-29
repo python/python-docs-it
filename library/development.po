@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/development.rst:5
+#: library/development.rst:5
 msgid "Development Tools"
 msgstr ""
 
-#: ../Doc/library/development.rst:7
+#: library/development.rst:7
 msgid ""
 "The modules described in this chapter help you write software.  For example, "
 "the :mod:`pydoc` module takes a module and generates documentation based on "
@@ -30,6 +30,6 @@ msgid ""
 "and verify that the expected output is produced."
 msgstr ""
 
-#: ../Doc/library/development.rst:13
+#: library/development.rst:13
 msgid "The list of modules described in this chapter is:"
 msgstr ""

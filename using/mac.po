@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/using/mac.rst:6
+#: using/mac.rst:6
 msgid "Using Python on a Mac"
 msgstr ""
 
-#: ../Doc/using/mac.rst:0
+#: using/mac.rst:0
 msgid "Author"
 msgstr ""
 
-#: ../Doc/using/mac.rst:8
+#: using/mac.rst:8
 msgid "Bob Savage <bobsavage@mac.com>"
 msgstr ""
 
-#: ../Doc/using/mac.rst:11
+#: using/mac.rst:11
 msgid ""
 "Python on a Mac running macOS is in principle very similar to Python on any "
 "other Unix platform, but there are a number of additional features such as "
@@ -37,11 +37,11 @@ msgid ""
 "are worth pointing out."
 msgstr ""
 
-#: ../Doc/using/mac.rst:21
+#: using/mac.rst:21
 msgid "Getting and Installing Python"
 msgstr ""
 
-#: ../Doc/using/mac.rst:23
+#: using/mac.rst:23
 msgid ""
 "macOS used to come with Python 2.7 pre-installed between versions 10.8 and "
 "`12.3 <https://developer.apple.com/documentation/macos-release-notes/"
@@ -52,11 +52,11 @@ msgid ""
 "available there."
 msgstr ""
 
-#: ../Doc/using/mac.rst:30
+#: using/mac.rst:30
 msgid "What you get after installing is a number of things:"
 msgstr ""
 
-#: ../Doc/using/mac.rst:32
+#: using/mac.rst:32
 msgid ""
 "A |python_version_literal| folder in your :file:`Applications` folder. In "
 "here you find IDLE, the development environment that is a standard part of "
@@ -64,7 +64,7 @@ msgid ""
 "double-clicking Python scripts from the Finder."
 msgstr ""
 
-#: ../Doc/using/mac.rst:37
+#: using/mac.rst:37
 msgid ""
 "A framework :file:`/Library/Frameworks/Python.framework`, which includes the "
 "Python executable and libraries. The installer adds this location to your "
@@ -72,7 +72,7 @@ msgid ""
 "symlink to the Python executable is placed in :file:`/usr/local/bin/`."
 msgstr ""
 
-#: ../Doc/using/mac.rst:44
+#: using/mac.rst:44
 msgid ""
 "On macOS 10.8-12.3, the Apple-provided build of Python is installed in :file:"
 "`/System/Library/Frameworks/Python.framework` and :file:`/usr/bin/python`, "
@@ -84,31 +84,31 @@ msgid ""
 "want to do."
 msgstr ""
 
-#: ../Doc/using/mac.rst:52
+#: using/mac.rst:52
 msgid ""
 "IDLE includes a Help menu that allows you to access Python documentation. If "
 "you are completely new to Python you should start reading the tutorial "
 "introduction in that document."
 msgstr ""
 
-#: ../Doc/using/mac.rst:56
+#: using/mac.rst:56
 msgid ""
 "If you are familiar with Python on other Unix platforms you should read the "
 "section on running Python scripts from the Unix shell."
 msgstr ""
 
-#: ../Doc/using/mac.rst:61
+#: using/mac.rst:61
 msgid "How to run a Python script"
 msgstr ""
 
-#: ../Doc/using/mac.rst:63
+#: using/mac.rst:63
 msgid ""
 "Your best way to get started with Python on macOS is through the IDLE "
 "integrated development environment; see section :ref:`ide` and use the Help "
 "menu when the IDE is running."
 msgstr ""
 
-#: ../Doc/using/mac.rst:67
+#: using/mac.rst:67
 msgid ""
 "If you want to run Python scripts from the Terminal window command line or "
 "from the Finder you first need an editor to create your script. macOS comes "
@@ -120,21 +120,21 @@ msgid ""
 "org) and :program:`Aquamacs` (https://aquamacs.org)."
 msgstr ""
 
-#: ../Doc/using/mac.rst:77
+#: using/mac.rst:77
 msgid ""
 "To run your script from the Terminal window you must make sure that :file:`/"
 "usr/local/bin` is in your shell search path."
 msgstr ""
 
-#: ../Doc/using/mac.rst:80
+#: using/mac.rst:80
 msgid "To run your script from the Finder you have two options:"
 msgstr ""
 
-#: ../Doc/using/mac.rst:82
+#: using/mac.rst:82
 msgid "Drag it to :program:`Python Launcher`."
 msgstr ""
 
-#: ../Doc/using/mac.rst:84
+#: using/mac.rst:84
 msgid ""
 "Select :program:`Python Launcher` as the default application to open your "
 "script (or any ``.py`` script) through the finder Info window and double-"
@@ -143,11 +143,11 @@ msgid ""
 "invocation, or use its Preferences menu to change things globally."
 msgstr ""
 
-#: ../Doc/using/mac.rst:94
+#: using/mac.rst:94
 msgid "Running scripts with a GUI"
 msgstr ""
 
-#: ../Doc/using/mac.rst:96
+#: using/mac.rst:96
 msgid ""
 "With older versions of Python, there is one macOS quirk that you need to be "
 "aware of: programs that talk to the Aqua window manager (in other words, "
@@ -155,16 +155,16 @@ msgid ""
 "`pythonw` instead of :program:`python` to start such scripts."
 msgstr ""
 
-#: ../Doc/using/mac.rst:101
+#: using/mac.rst:101
 msgid ""
 "With Python 3.9, you can use either :program:`python` or :program:`pythonw`."
 msgstr ""
 
-#: ../Doc/using/mac.rst:105
+#: using/mac.rst:105
 msgid "Configuration"
 msgstr ""
 
-#: ../Doc/using/mac.rst:107
+#: using/mac.rst:107
 msgid ""
 "Python on macOS honors all standard Unix environment variables such as :"
 "envvar:`PYTHONPATH`, but setting these variables for programs started from "
@@ -174,49 +174,49 @@ msgid ""
 "apple.com/library/archive/qa/qa1067/_index.html>`__ for details."
 msgstr ""
 
-#: ../Doc/using/mac.rst:115
+#: using/mac.rst:115
 msgid ""
 "For more information on installation Python packages, see section :ref:`mac-"
 "package-manager`."
 msgstr ""
 
-#: ../Doc/using/mac.rst:122
+#: using/mac.rst:122
 msgid "The IDE"
 msgstr ""
 
-#: ../Doc/using/mac.rst:124
+#: using/mac.rst:124
 msgid ""
 "Python ships with the standard IDLE development environment. A good "
 "introduction to using IDLE can be found at https://www.hashcollision.org/hkn/"
 "python/idle_intro/index.html."
 msgstr ""
 
-#: ../Doc/using/mac.rst:132
+#: using/mac.rst:132
 msgid "Installing Additional Python Packages"
 msgstr ""
 
-#: ../Doc/using/mac.rst:134
+#: using/mac.rst:134
 msgid "This section has moved to the `Python Packaging User Guide`_."
 msgstr ""
 
-#: ../Doc/using/mac.rst:142
+#: using/mac.rst:142
 msgid "GUI Programming"
 msgstr ""
 
-#: ../Doc/using/mac.rst:144
+#: using/mac.rst:144
 msgid ""
 "There are several options for building GUI applications on the Mac with "
 "Python."
 msgstr ""
 
-#: ../Doc/using/mac.rst:146
+#: using/mac.rst:146
 msgid ""
 "*PyObjC* is a Python binding to Apple's Objective-C/Cocoa framework, which "
 "is the foundation of most modern Mac development. Information on PyObjC is "
 "available from :pypi:`pyobjc`."
 msgstr ""
 
-#: ../Doc/using/mac.rst:150
+#: using/mac.rst:150
 msgid ""
 "The standard Python GUI toolkit is :mod:`tkinter`, based on the cross-"
 "platform Tk toolkit (https://www.tcl.tk). An Aqua-native version of Tk is "
@@ -224,57 +224,57 @@ msgid ""
 "installed from https://www.activestate.com; it can also be built from source."
 msgstr ""
 
-#: ../Doc/using/mac.rst:155
+#: using/mac.rst:155
 msgid "A number of alternative macOS GUI toolkits are available:"
 msgstr ""
 
-#: ../Doc/using/mac.rst:157
+#: using/mac.rst:157
 msgid ""
 "`PySide <https://www.qt.io/qt-for-python>`__: Official Python bindings to "
 "the `Qt GUI toolkit <https://qt.io>`__."
 msgstr ""
 
-#: ../Doc/using/mac.rst:160
+#: using/mac.rst:160
 msgid ""
 "`PyQt <https://riverbankcomputing.com/software/pyqt/intro>`__: Alternative "
 "Python bindings to Qt."
 msgstr ""
 
-#: ../Doc/using/mac.rst:163
+#: using/mac.rst:163
 msgid ""
 "`Kivy <https://kivy.org>`__: A cross-platform GUI toolkit that supports "
 "desktop and mobile platforms."
 msgstr ""
 
-#: ../Doc/using/mac.rst:166
+#: using/mac.rst:166
 msgid ""
 "`Toga <https://toga.readthedocs.io>`__: Part of the `BeeWare Project "
 "<https://beeware.org>`__; supports desktop, mobile, web and console apps."
 msgstr ""
 
-#: ../Doc/using/mac.rst:169
+#: using/mac.rst:169
 msgid ""
 "`wxPython <https://www.wxpython.org>`__: A cross-platform toolkit that "
 "supports desktop operating systems."
 msgstr ""
 
-#: ../Doc/using/mac.rst:175
+#: using/mac.rst:175
 msgid "Distributing Python Applications"
 msgstr ""
 
-#: ../Doc/using/mac.rst:177
+#: using/mac.rst:177
 msgid ""
 "A range of tools exist for converting your Python code into a standalone "
 "distributable application:"
 msgstr ""
 
-#: ../Doc/using/mac.rst:180
+#: using/mac.rst:180
 msgid ""
 ":pypi:`py2app`: Supports creating macOS ``.app`` bundles from a Python "
 "project."
 msgstr ""
 
-#: ../Doc/using/mac.rst:183
+#: using/mac.rst:183
 msgid ""
 "`Briefcase <https://briefcase.readthedocs.io>`__: Part of the `BeeWare "
 "Project <https://beeware.org>`__; a cross-platform packaging tool that "
@@ -282,30 +282,30 @@ msgid ""
 "and notarization."
 msgstr ""
 
-#: ../Doc/using/mac.rst:188
+#: using/mac.rst:188
 msgid ""
 "`PyInstaller <https://pyinstaller.org/>`__: A cross-platform packaging tool "
 "that creates a single file or folder as a distributable artifact."
 msgstr ""
 
-#: ../Doc/using/mac.rst:192
+#: using/mac.rst:192
 msgid "Other Resources"
 msgstr ""
 
-#: ../Doc/using/mac.rst:194
+#: using/mac.rst:194
 msgid ""
 "The Pythonmac-SIG mailing list is an excellent support resource for Python "
 "users and developers on the Mac:"
 msgstr ""
 
-#: ../Doc/using/mac.rst:197
+#: using/mac.rst:197
 msgid "https://www.python.org/community/sigs/current/pythonmac-sig/"
 msgstr ""
 
-#: ../Doc/using/mac.rst:199
+#: using/mac.rst:199
 msgid "Another useful resource is the MacPython wiki:"
 msgstr ""
 
-#: ../Doc/using/mac.rst:201
+#: using/mac.rst:201
 msgid "https://wiki.python.org/moin/MacPython"
 msgstr ""

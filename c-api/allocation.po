@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/c-api/allocation.rst:6
+#: c-api/allocation.rst:6
 msgid "Allocating Objects on the Heap"
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:17
+#: c-api/allocation.rst:17
 msgid ""
 "Initialize a newly allocated object *op* with its type and initial "
 "reference.  Returns the initialized object.  If *type* indicates that the "
@@ -30,13 +30,13 @@ msgid ""
 "affected."
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:26
+#: c-api/allocation.rst:26
 msgid ""
 "This does everything :c:func:`PyObject_Init` does, and also initializes the "
 "length information for a variable-size object."
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:32
+#: c-api/allocation.rst:32
 msgid ""
 "Allocate a new Python object using the C structure type *TYPE* and the "
 "Python type object *typeobj* (``PyTypeObject*``). Fields not defined by the "
@@ -46,7 +46,7 @@ msgid ""
 "tp_basicsize` field of the type object."
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:43
+#: c-api/allocation.rst:43
 msgid ""
 "Allocate a new Python object using the C structure type *TYPE* and the "
 "Python type object *typeobj* (``PyTypeObject*``). Fields not defined by the "
@@ -59,7 +59,7 @@ msgid ""
 "management efficiency."
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:57
+#: c-api/allocation.rst:57
 msgid ""
 "Releases memory allocated to an object using :c:macro:`PyObject_New` or :c:"
 "macro:`PyObject_NewVar`.  This is normally called from the :c:member:"
@@ -68,17 +68,17 @@ msgid ""
 "no longer a valid Python object."
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:66
+#: c-api/allocation.rst:66
 msgid ""
 "Object which is visible in Python as ``None``.  This should only be accessed "
 "using the :c:macro:`Py_None` macro, which evaluates to a pointer to this "
 "object."
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:73
+#: c-api/allocation.rst:73
 msgid ":c:func:`PyModule_Create`"
 msgstr ""
 
-#: ../Doc/c-api/allocation.rst:74
+#: c-api/allocation.rst:74
 msgid "To allocate and create extension modules."
 msgstr ""

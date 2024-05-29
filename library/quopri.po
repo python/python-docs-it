@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/quopri.rst:2
+#: library/quopri.rst:2
 msgid ":mod:`!quopri` --- Encode and decode MIME quoted-printable data"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:7
+#: library/quopri.rst:7
 msgid "**Source code:** :source:`Lib/quopri.py`"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:15
+#: library/quopri.rst:15
 msgid ""
 "This module performs quoted-printable transport encoding and decoding, as "
 "defined in :rfc:`1521`: \"MIME (Multipurpose Internet Mail Extensions) Part "
@@ -36,7 +36,7 @@ msgid ""
 "characters, as when sending a graphics file."
 msgstr ""
 
-#: ../Doc/library/quopri.rst:25
+#: library/quopri.rst:25
 msgid ""
 "Decode the contents of the *input* file and write the resulting decoded "
 "binary data to the *output* file. *input* and *output* must be :term:`binary "
@@ -46,7 +46,7 @@ msgid ""
 "Mail Extensions) Part Two: Message Header Extensions for Non-ASCII Text\"."
 msgstr ""
 
-#: ../Doc/library/quopri.rst:35
+#: library/quopri.rst:35
 msgid ""
 "Encode the contents of the *input* file and write the resulting quoted-"
 "printable data to the *output* file. *input* and *output* must be :term:"
@@ -58,39 +58,39 @@ msgid ""
 "underscores as per :rfc:`1522`."
 msgstr ""
 
-#: ../Doc/library/quopri.rst:48
+#: library/quopri.rst:48
 msgid ""
 "Like :func:`decode`, except that it accepts a source :class:`bytes` and "
 "returns the corresponding decoded :class:`bytes`."
 msgstr ""
 
-#: ../Doc/library/quopri.rst:54
+#: library/quopri.rst:54
 msgid ""
 "Like :func:`encode`, except that it accepts a source :class:`bytes` and "
 "returns the corresponding encoded :class:`bytes`. By default, it sends a "
 "``False`` value to *quotetabs* parameter of the :func:`encode` function."
 msgstr ""
 
-#: ../Doc/library/quopri.rst:62
+#: library/quopri.rst:62
 msgid "Module :mod:`base64`"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:63
+#: library/quopri.rst:63
 msgid "Encode and decode MIME base64 data"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:9
+#: library/quopri.rst:9
 msgid "quoted-printable"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:9
+#: library/quopri.rst:9
 msgid "encoding"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:9
+#: library/quopri.rst:9
 msgid "MIME"
 msgstr ""
 
-#: ../Doc/library/quopri.rst:9
+#: library/quopri.rst:9
 msgid "quoted-printable encoding"
 msgstr ""

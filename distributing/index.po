@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/distributing/index.rst:10
+#: distributing/index.rst:10
 msgid "Distributing Python Modules"
 msgstr ""
 
-#: ../Doc/distributing/index.rst:14
+#: distributing/index.rst:14
 msgid ""
 "Information and guidance on distributing Python modules and packages has "
 "been moved to the `Python Packaging User Guide`_, and the tutorial on "

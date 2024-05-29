@@ -17,23 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Doc/library/ipc.rst:5
+#: library/ipc.rst:5
 msgid "Networking and Interprocess Communication"
 msgstr ""
 
-#: ../Doc/library/ipc.rst:7
+#: library/ipc.rst:7
 msgid ""
 "The modules described in this chapter provide mechanisms for networking and "
 "inter-processes communication."
 msgstr ""
 
-#: ../Doc/library/ipc.rst:10
+#: library/ipc.rst:10
 msgid ""
 "Some modules only work for two processes that are on the same machine, e.g. :"
 "mod:`signal` and :mod:`mmap`.  Other modules support networking protocols "
 "that two or more processes can use to communicate across machines."
 msgstr ""
 
-#: ../Doc/library/ipc.rst:14
+#: library/ipc.rst:14
 msgid "The list of modules described in this chapter is:"
 msgstr ""
