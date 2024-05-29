@@ -28,7 +28,7 @@ CPYTHON_PATH := ../cpython/
 LANGUAGE := it
 BRANCH := 3.13
 
-EXCLUDED := whatsnew/ c-api/
+EXCLUDED := 
 
 # Internal variables
 
@@ -62,7 +62,7 @@ all: ensure_prerequisites
 	mkdir -p locales/$(LANGUAGE)/LC_MESSAGES/
 	$(CP_CMD) -u --parents *.po */*.po locales/$(LANGUAGE)/LC_MESSAGES/
 	$(MAKE) -C $(CPYTHON_PATH)/Doc/     \
-	  SPHINXOPTS='-qW -j$(JOBS)         \
+	  SPHINXOPTS='-q -j$(JOBS)         \
 	  -D locale_dirs=$(abspath locales) \
 	  -D language=$(LANGUAGE)           \
 	  -D gettext_compact=0           \
