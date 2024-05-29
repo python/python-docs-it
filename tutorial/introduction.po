@@ -46,6 +46,10 @@ msgid ""
 "output for an example, then you can easily copy and paste the input lines "
 "into your interpreter."
 msgstr ""
+"Puoi attivare o disattivare la visualizzazione dei prompt e dell'output facendo clic su ``>>>`` "
+"nell'angolo in alto a destra di un riquadro di esempio. Se nascondi i prompt e "
+"l'output di un esempio, potrai copiare e incollare facilmente le righe di input "
+"nel tuo interprete."
 
 #: tutorial/introduction.rst:23
 msgid ""
@@ -80,14 +84,13 @@ msgid ""
 "the primary prompt, ``>>>``.  (It shouldn't take long.)"
 msgstr ""
 "Proviamo con alcuni semplici comandi di Python.  Avviare l'interprete e "
-"attendere il prompt primario, ``>>>```.  Non dovrebbe volerci molto."
+"attendere il prompt primario, ``>>>```.  (Non dovrebbe volerci molto.)"
 
 #: tutorial/introduction.rst:51
 msgid "Numbers"
 msgstr "Numeri"
 
 #: tutorial/introduction.rst:53
-#, fuzzy
 msgid ""
 "The interpreter acts as a simple calculator: you can type an expression at "
 "it and it will write the value.  Expression syntax is straightforward: the "
@@ -111,7 +114,6 @@ msgstr ""
 "Torneremo a parlare ancora dei tipi numerici più avanti nel tutorial."
 
 #: tutorial/introduction.rst:72
-#, fuzzy
 msgid ""
 "Division (``/``) always returns a float.  To do :term:`floor division` and "
 "get an integer result you can use the ``//`` operator; to calculate the "
@@ -193,7 +195,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:142
 msgid "Text"
-msgstr ""
+msgstr "Testo"
 
 #: tutorial/introduction.rst:144
 msgid ""
@@ -203,12 +205,19 @@ msgid ""
 "\"``Yay! :)``\". They can be enclosed in single quotes (``'...'``) or double "
 "quotes (``\"...\"``) with the same result [#]_."
 msgstr ""
+"Python può manipolare testo (rappresentato dal tipo :class:`str`, le cosiddette "
+"\"stringhe\") così come numeri. Questo include caratteri \"``!``\", parole "
+"\"``rabbit``\", nomi \"``Paris``\", frasi \"``Got your back.``\", ecc. "
+"\"``Yay! :)``\". Possono essere racchiusi tra virgolette singole (``'...'``) o "
+"virgolette doppie (``\"...\"``) con lo stesso risultato [#]_."
 
 #: tutorial/introduction.rst:157
 msgid ""
 "To quote a quote, we need to \"escape\" it, by preceding it with ``\\``. "
 "Alternatively, we can use the other type of quotation marks::"
 msgstr ""
+"racchiudere una virgoletta dello stesso tipo, dobbiamo farne l'\"escape\", precedendola con ``\\``. "
+"In alternativa, possiamo usare l'altro tipo di virgolette::"
 
 #: tutorial/introduction.rst:171
 msgid ""
@@ -217,6 +226,9 @@ msgid ""
 "omitting the enclosing quotes and by printing escaped and special "
 "characters::"
 msgstr ""
+"Nella shell di Python, la definizione di una stringa e la stringa di output possono apparire "
+"differenti. La funzione :func:`print` produce un output più leggibile, "
+"omettendo le virgolette di chiusura e stampando i caratteri escapati e speciali::"
 
 #: tutorial/introduction.rst:182
 msgid ""
@@ -234,6 +246,9 @@ msgid ""
 "odd number of ``\\`` characters; see :ref:`the FAQ entry <faq-programming-"
 "raw-string-backslash>` for more information and workarounds."
 msgstr ""
+"C'è un aspetto sottile nelle stringhe raw: una stringa raw non può terminare con "
+"un numero dispari di caratteri ``\\``; vedi :ref:`la voce FAQ <faq-programming-"
+"raw-string-backslash>` per ulteriori informazioni e soluzioni."
 
 #: tutorial/introduction.rst:197
 msgid ""
@@ -313,7 +328,6 @@ msgid "Note that since -0 is the same as 0, negative indices start from -1."
 msgstr "N.B. Poiché -0 è uguale a 0, gli indici negativi partono da -1."
 
 #: tutorial/introduction.rst:276
-#, fuzzy
 msgid ""
 "In addition to indexing, *slicing* is also supported.  While indexing is "
 "used to obtain individual characters, *slicing* allows you to obtain a "
@@ -477,7 +491,6 @@ msgstr ""
 "ma di solito gli elementi hanno tutti lo stesso tipo. ::"
 
 #: tutorial/introduction.rst:398
-#, fuzzy
 msgid ""
 "Like strings (and all other built-in :term:`sequence` types), lists can be "
 "indexed and sliced::"
@@ -498,13 +511,12 @@ msgstr ""
 "tipo :term:`mutable`, cioè è possibile modificarne il contenuto::"
 
 #: tutorial/introduction.rst:423
-#, fuzzy
 msgid ""
 "You can also add new items at the end of the list, by using the :meth:`!list."
 "append` *method* (we will see more about methods later)::"
 msgstr ""
-"Potete anche aggiungere nuovi elementi alla fine della lista, usando il "
-"*metodo* :meth:`~list.append` (vedremo di più riguardo i metodi più avanti)::"
+"Potete anche aggiungere nuovi elementi alla fine della lista, usando il *metodo* :meth:`!list.append`"
+"(vedremo di più riguardo i metodi più avanti)::"
 
 #: tutorial/introduction.rst:431
 msgid ""
@@ -513,9 +525,12 @@ msgid ""
 "to the list through one variable will be seen through all other variables "
 "that refer to it.::"
 msgstr ""
+"L'assegnazione semplice in Python non copia mai i dati. Quando assegni una lista a una "
+"variabile, la variabile si riferisce alla *lista esistente*. Qualsiasi modifica apportata "
+"alla lista tramite una variabile sarà visibile attraverso tutte le altre variabili "
+"che si riferiscono ad essa.::"
 
 #: tutorial/introduction.rst:444
-#, fuzzy
 msgid ""
 "All slice operations return a new list containing the requested elements.  "
 "This means that the following slice returns a :ref:`shallow copy "
@@ -523,7 +538,7 @@ msgid ""
 msgstr ""
 "Tutte le operazioni di taglio restituiscono una nuova lista contenente gli "
 "elementi richiesti.  Ciò significa che la seguente sezione restituisce una "
-"nuova copia (*shallow*) della lista::"
+"nuova :ref:`shallow copy <shallow_vs_deep_copy>` della list::"
 
 #: tutorial/introduction.rst:455
 msgid ""
@@ -550,7 +565,6 @@ msgid "First Steps Towards Programming"
 msgstr "Primi passi di programmazione"
 
 #: tutorial/introduction.rst:498
-#, fuzzy
 msgid ""
 "Of course, we can use Python for more complicated tasks than adding two and "
 "two together.  For instance, we can write an initial sub-sequence of the "
@@ -676,11 +690,11 @@ msgstr ""
 
 #: tutorial/introduction.rst:21
 msgid "# (hash)"
-msgstr ""
+msgstr "# (hash)"
 
 #: tutorial/introduction.rst:21
 msgid "comment"
-msgstr ""
+msgstr "commento"
 
 #~ msgid "Strings"
 #~ msgstr "Stringa"

@@ -39,7 +39,6 @@ msgstr ""
 "piattaforme."
 
 #: tutorial/index.rst:13
-#, fuzzy
 msgid ""
 "The Python interpreter and the extensive standard library are freely "
 "available in source or binary form for all major platforms from the Python "
