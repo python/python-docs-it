@@ -268,17 +268,19 @@ msgstr ""
 
 #: tutorial/controlflow.rst:231
 msgid ":keyword:`!pass` Statements"
-msgstr ""
+msgstr "Istruzioni :keyword:`!pass`"
 
 #: tutorial/controlflow.rst:233
 msgid ""
 "The :keyword:`pass` statement does nothing. It can be used when a statement "
 "is required syntactically but the program requires no action. For example::"
 msgstr ""
+"L'istruzione :keyword:`pass` non fa nulla. Può essere utilizzata quando è richiesta "
+"un'istruzione sintatticamente, ma il programma non richiede alcuna azione. Per esempio::"
 
 #: tutorial/controlflow.rst:240
 msgid "This is commonly used for creating minimal classes::"
-msgstr ""
+msgstr "Questo è comunemente usato per creare classi minime::"
 
 #: tutorial/controlflow.rst:246
 msgid ""
@@ -287,10 +289,14 @@ msgid ""
 "to keep thinking at a more abstract level.  The :keyword:`!pass` is silently "
 "ignored::"
 msgstr ""
+"Un altro posto in cui :keyword:`pass` può essere usato è come segnaposto per il "
+"corpo di una funzione o condizionale quando si sta lavorando su nuovo codice, "
+"permettendo di continuare a pensare a un livello più astratto. L'istruzione :keyword:`!pass` viene ignorata "
+"silenziosamente::"
 
 #: tutorial/controlflow.rst:258
 msgid ":keyword:`!match` Statements"
-msgstr ""
+msgstr "Istruzioni :keyword:`!match`"
 
 #: tutorial/controlflow.rst:260
 msgid ""
@@ -302,28 +308,41 @@ msgid ""
 "also extract components (sequence elements or object attributes) from the "
 "value into variables."
 msgstr ""
+"Un'istruzione :keyword:`match` prende un'espressione e confronta il suo valore con "
+"schemi successivi forniti come uno o più blocchi case. Questo è superficialmente "
+"simile a un'istruzione switch in C, Java o JavaScript (e molti altri "
+"linguaggi), ma è più simile al pattern matching in linguaggi come Rust "
+"o Haskell. Solo il primo schema che corrisponde viene eseguito e può "
+"anche estrarre componenti (elementi di sequenze o attributi di oggetti) dal "
+"valore in variabili."
 
 #: tutorial/controlflow.rst:268
 msgid ""
 "The simplest form compares a subject value against one or more literals::"
 msgstr ""
+"La forma più semplice confronta un valore con uno o più letterali::"
 
 #: tutorial/controlflow.rst:281
 msgid ""
 "Note the last block: the \"variable name\" ``_`` acts as a *wildcard* and "
 "never fails to match. If no case matches, none of the branches is executed."
 msgstr ""
+"Nota l'ultimo blocco: il \"nome della variabile\" ``_`` funge da *wildcard* e "
+"non fallisce mai. Se nessun case corrisponde, nessuno dei rami viene eseguito."
 
 #: tutorial/controlflow.rst:284
 msgid ""
 "You can combine several literals in a single pattern using ``|`` (\"or\")::"
 msgstr ""
+"Puoi combinare diversi letterali in un singolo schema usando ``|`` (\"or\")::"
 
 #: tutorial/controlflow.rst:289
 msgid ""
 "Patterns can look like unpacking assignments, and can be used to bind "
 "variables::"
 msgstr ""
+"Gli schemi possono sembrare assegnazioni di decomposizione e possono essere utilizzati "
+"per associare variabili::"
 
 #: tutorial/controlflow.rst:305
 msgid ""
