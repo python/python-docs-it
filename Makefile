@@ -28,7 +28,14 @@ CPYTHON_PATH := ../cpython/
 LANGUAGE := it
 BRANCH := 3.13
 
-EXCLUDED := 
+EXCLUDED := \
+	whatsnew/ \
+	c-api/ \
+	distutils/ \
+	install/ \
+	library/ 
+
+SPHINXERRORHANDLING = 
 
 # Internal variables
 
@@ -69,6 +76,7 @@ all: ensure_prerequisites
 	  -D latex_engine=xelatex           \
 	  -D latex_elements.inputenc=       \
 	  -D latex_elements.fontenc='       \
+	  SPHINXERRORHANDLING=$(SPHINXERRORHANDLING) \
 	  $(MODE)
 	git -C $(CPYTHON_PATH) checkout -
 	@echo "Build success, open file://$(abspath $(CPYTHON_PATH))/Doc/build/html/index.html or run 'make serve' to see them."

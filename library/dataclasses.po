@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-28 23:36+0200\n"
+"POT-Creation-Date: 2024-05-30 08:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -539,8 +539,8 @@ msgstr ""
 
 #: library/dataclasses.rst:464
 msgid ""
-"Return ``True`` if its parameter is a dataclass or an instance of one, "
-"otherwise return ``False``."
+"Return ``True`` if its parameter is a dataclass (including subclasses of a "
+"dataclass) or an instance of one, otherwise return ``False``."
 msgstr ""
 
 #: library/dataclasses.rst:467

@@ -3,39 +3,44 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-28 23:36+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"PO-Revision-Date: 2024-05-30 09:19+0200\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: tutorial/controlflow.rst:5
 msgid "More Control Flow Tools"
-msgstr ""
+msgstr "Altri Strumenti di Controllo del Flusso"
 
 #: tutorial/controlflow.rst:7
 msgid ""
 "As well as the :keyword:`while` statement just introduced, Python uses a few "
 "more that we will encounter in this chapter."
 msgstr ""
+"Oltre all'istruzione :keyword:`while` appena introdotta, Python ne utilizza altre "
+"che incontreremo in questo capitolo."
 
 #: tutorial/controlflow.rst:14
 msgid ":keyword:`!if` Statements"
-msgstr ""
+msgstr "Istruzioni :keyword:`!if`"
 
 #: tutorial/controlflow.rst:16
 msgid ""
 "Perhaps the most well-known statement type is the :keyword:`if` statement.  "
 "For example::"
 msgstr ""
+"Forse il tipo di istruzione più conosciuto è l'istruzione :keyword:`if`.  "
+"Ad esempio::"
 
 #: tutorial/controlflow.rst:33
 msgid ""
