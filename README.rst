@@ -1,10 +1,6 @@
 Translation of the Python Documentation — it
 ============================================
 
-.. image:: https://travis-ci.org/python/python-docs-it.svg?branch=3.7
-  :target: https://travis-ci.org/python/python-docs-it
-
-
 Documentation Contribution Agreement
 ------------------------------------
 
