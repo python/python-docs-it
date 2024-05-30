@@ -208,30 +208,39 @@ msgid ""
 "In a :keyword:`for` loop, the :keyword:`!else` clause is executed after the "
 "loop reaches its final iteration."
 msgstr ""
+"In un ciclo :keyword:`for`, la clausola :keyword:`!else` viene eseguita dopo che "
+"il ciclo ha raggiunto la sua iterazione finale."
 
 #: tutorial/controlflow.rst:174
 msgid ""
 "In a :keyword:`while` loop, it's executed after the loop's condition becomes "
 "false."
 msgstr ""
+"In un ciclo :keyword:`while`, viene eseguita dopo che la condizione del ciclo "
+"diventa falsa."
 
 #: tutorial/controlflow.rst:176
 msgid ""
 "In either kind of loop, the :keyword:`!else` clause is **not** executed if "
 "the loop was terminated by a :keyword:`break`."
 msgstr ""
+"In entrambi i tipi di ciclo, la clausola :keyword:`!else` **non** viene eseguita se "
+"il ciclo è stato terminato da un :keyword:`break`."
 
 #: tutorial/controlflow.rst:179
 msgid ""
 "This is exemplified in the following :keyword:`!for` loop, which searches "
 "for prime numbers::"
 msgstr ""
+"Questo è esemplificato nel seguente ciclo :keyword:`!for`, che cerca numeri primi::"
 
 #: tutorial/controlflow.rst:200
 msgid ""
 "(Yes, this is the correct code.  Look closely: the ``else`` clause belongs "
 "to the :keyword:`for` loop, **not** the :keyword:`if` statement.)"
 msgstr ""
+"(Sì, questo codice è corretto. Guarda attentamente: la clausola ``else`` appartiene "
+"al ciclo :keyword:`for`, **non** all'istruzione :keyword:`if`.)"
 
 #: tutorial/controlflow.rst:203
 msgid ""
@@ -242,12 +251,20 @@ msgid ""
 "``break`` occurs. For more on the :keyword:`!try` statement and exceptions, "
 "see :ref:`tut-handling`."
 msgstr ""
+"Quando viene utilizzata con un ciclo, la clausola ``else`` ha più in comune con la "
+"clausola ``else`` di un'istruzione :keyword:`try` rispetto a quella delle istruzioni :"
+"keyword:`if`: la clausola ``else`` di un'istruzione :keyword:`try` viene eseguita "
+"quando non si verifica alcuna eccezione, e la clausola ``else`` di un ciclo viene eseguita "
+"quando non si verifica alcun ``break``. Per ulteriori informazioni sull'istruzione :"
+"keyword:`!try` e sulle eccezioni, consulta :ref:`tut-handling`."
 
 #: tutorial/controlflow.rst:210
 msgid ""
 "The :keyword:`continue` statement, also borrowed from C, continues with the "
 "next iteration of the loop::"
 msgstr ""
+"L'istruzione :keyword:`continue`, presa in prestito dal C, continua con la "
+"prossima iterazione del ciclo::"
 
 #: tutorial/controlflow.rst:231
 msgid ":keyword:`!pass` Statements"
