@@ -27,16 +27,15 @@ msgid "Invoking the Interpreter"
 msgstr "Invocazione dell'interprete"
 
 #: tutorial/interpreter.rst:13
-#, fuzzy
 msgid ""
 "The Python interpreter is usually installed as |"
 "usr_local_bin_python_x_dot_y_literal| on those machines where it is "
 "available; putting :file:`/usr/local/bin` in your Unix shell's search path "
 "makes it possible to start it by typing the command:"
 msgstr ""
-"L'interprete Python è solitamente installato come :file:`/usr/local/bin/"
-"python3.7` su quelle macchine dove è disponibile; aggiungere :file:`/usr/usr/"
-"local/bin` al path di ricerca della vostra shell Unix rende possibile "
+"L'interprete Python è solitamente installato come |"
+"usr_local_bin_python_x_dot_y_literal| su quelle macchine dove è disponibile; "
+"aggiungere :file:`/usr/local/bin` al path di ricerca della vostra shell Unix rende possibile "
 "avviarlo digitando il comando:"
 
 #: tutorial/interpreter.rst:21
@@ -74,7 +73,6 @@ msgstr ""
 "``quit()``."
 
 #: tutorial/interpreter.rst:36
-#, fuzzy
 msgid ""
 "The interpreter's line-editing features include interactive editing, history "
 "substitution and code completion on systems that support the `GNU Readline "
@@ -87,14 +85,15 @@ msgid ""
 "backspace to remove characters from the current line."
 msgstr ""
 "Le funzioni di editing di linea dell'interprete includono l'editing "
-"interattivo, la sostituzione della storia e il completamento del codice su "
-"sistemi che supportano la lettura in linea.  Forse il controllo più veloce "
+"interattivo, la sostituzione della *history* e il completamento del codice su "
+"sistemi che supportano la libreria `GNU Readline "
+"<https://tiswww.case.edu/php/chet/readline/rltop.html>`_.  Forse il controllo più veloce "
 "per vedere se la modifica da riga di comando è supportata è digitando :kbd:"
 "`Control-P` al primo prompt di Python che si ottiene.  Se emette un segnale "
 "acustico, si ha una modifica da riga di comando; vedere Appendix :ref:`tut-"
 "interacting` per un'introduzione alle combinazioni di tasti.  Se non vi "
 "sembra accada nulla, o se vedete la stringa ``^P``, la modifica a riga di "
-"comando non è disponibile; potrai usare solo il backspace per rimuovere i "
+"comando non è disponibile; potrai usare solo il *backspace* per rimuovere i "
 "caratteri dalla riga corrente."
 
 #: tutorial/interpreter.rst:46
@@ -111,7 +110,6 @@ msgstr ""
 "da quel file."
 
 #: tutorial/interpreter.rst:51
-#, fuzzy
 msgid ""
 "A second way of starting the interpreter is ``python -c command [arg] ...``, "
 "which executes the statement(s) in *command*, analogous to the shell's :"

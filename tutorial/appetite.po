@@ -60,7 +60,6 @@ msgid "Python is just the language for you."
 msgstr "Python è il linguaggio che fa per te."
 
 #: tutorial/appetite.rst:22
-#, fuzzy
 msgid ""
 "You could write a Unix shell script or Windows batch files for some of these "
 "tasks, but shell scripts are best at moving around files and changing text "
