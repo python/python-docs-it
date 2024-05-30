@@ -21,7 +21,7 @@
 # from which we generated our po files.  We use it here so when we
 # test build, we're building with the .rst files that generated our
 # .po files.
-CPYTHON_CURRENT_COMMIT := 7a9534f595ccd9f2bdea5ceeecb837a82e44c620
+CPYTHON_CURRENT_COMMIT := 083bf3ad1795604ee833d1595f2a536b9cd57419
 
 CPYTHON_PATH := ../cpython/
 
@@ -35,7 +35,7 @@ EXCLUDED := \
 	install/ \
 	library/ 
 
-SPHINXERRORHANDLING = 
+SPHINXERRORHANDLING = # -W
 
 # Internal variables
 
