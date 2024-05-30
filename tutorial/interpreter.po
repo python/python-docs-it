@@ -59,6 +59,11 @@ msgid ""
 "can use the :file:`py` command. See :ref:`setting-envvars` for other ways to "
 "launch Python."
 msgstr ""
+"Sulle macchine Windows dove hai installato Python dallo :ref:`Microsoft "
+"Store <windows-store>`, il comando |python_x_dot_y_literal| sarà "
+"disponibile. Se hai installato il :ref:`py.exe launcher <launcher>`, puoi "
+"utilizzare il comando :file:`py`. Consulta :ref:`setting-envvars` per altri modi di "
+"avviare Python."
 
 #: tutorial/interpreter.rst:31
 msgid ""
