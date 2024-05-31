@@ -3,27 +3,28 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-30 08:10+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-05-30 09:19+0200\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
-msgstr ""
+msgstr "Ambienti Virtuali e Pacchetti"
 
 #: tutorial/venv.rst:9
 msgid "Introduction"
-msgstr ""
+msgstr "Introduzione"
 
 #: tutorial/venv.rst:11
 msgid ""
@@ -33,15 +34,27 @@ msgid ""
 "bug has been fixed or the application may be written using an obsolete "
 "version of the library's interface."
 msgstr ""
+"Le applicazioni Python spesso utilizzano pacchetti e moduli che non fanno "
+"parte della libreria standard. Le applicazioni a volte necessitano una "
+"versione specifica di una libreria, perché l'applicazione potrebbe "
+"richiedere che un bug particolare sia stato risolto o l'applicazione "
+"potrebbe essere stata scritta utilizzando una versione obsoleta "
+"dell'interfaccia della libreria."
 
 #: tutorial/venv.rst:17
 msgid ""
 "This means it may not be possible for one Python installation to meet the "
 "requirements of every application.  If application A needs version 1.0 of a "
-"particular module but application B needs version 2.0, then the requirements "
-"are in conflict and installing either version 1.0 or 2.0 will leave one "
+"particular module but application B needs version 2.0, then the requirements"
+" are in conflict and installing either version 1.0 or 2.0 will leave one "
 "application unable to run."
 msgstr ""
+"Questo significa che potrebbe non essere possibile per una singola "
+"installazione di Python soddisfare i requisiti di ogni applicazione. Se "
+"l'applicazione A necessita della versione 1.0 di un particolare modulo ma "
+"l'applicazione B necessita della versione 2.0, allora i requisiti sono in "
+"conflitto e l'installazione della versione 1.0 o 2.0 lascerà una delle "
+"applicazioni impossibilitata a funzionare."
 
 #: tutorial/venv.rst:23
 msgid ""
@@ -49,6 +62,10 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
+"La soluzione a questo problema è creare un :term:`virtual environment`, un "
+"albero di directory auto-contenuto che contiene un'installazione di Python "
+"per una particolare versione di Python, più un numero di pacchetti "
+"aggiuntivi."
 
 #: tutorial/venv.rst:27
 msgid ""
@@ -59,18 +76,30 @@ msgid ""
 "application B requires a library be upgraded to version 3.0, this will not "
 "affect application A's environment."
 msgstr ""
+"Differenti applicazioni possono quindi utilizzare differenti ambienti "
+"virtuali. Per risolvere l'esempio precedente di requisiti in conflitto, "
+"l'applicazione A può avere il suo proprio ambiente virtuale con la versione "
+"1.0 installata mentre l'applicazione B ha un altro ambiente virtuale con la "
+"versione 2.0. Se l'applicazione B richiede che una libreria venga aggiornata"
+" alla versione 3.0, questo non influenzerà l'ambiente dell'applicazione A."
 
 #: tutorial/venv.rst:36
 msgid "Creating Virtual Environments"
-msgstr ""
+msgstr "Creazione di Ambienti Virtuali"
 
 #: tutorial/venv.rst:38
 msgid ""
-"The module used to create and manage virtual environments is called :mod:"
-"`venv`.  :mod:`venv` will install the Python version from which the command "
-"was run (as reported by the :option:`--version` option). For instance, "
-"executing the command with ``python3.12`` will install version 3.12."
+"The module used to create and manage virtual environments is called "
+":mod:`venv`.  :mod:`venv` will install the Python version from which the "
+"command was run (as reported by the :option:`--version` option). For "
+"instance, executing the command with ``python3.12`` will install version "
+"3.12."
 msgstr ""
+"Il modulo utilizzato per creare e gestire ambienti virtuali si chiama "
+":mod:`venv`. :mod:`venv` installerà la versione di Python dalla quale il "
+"comando è stato eseguito (come riportato dall'opzione :option:`--version`). "
+"Per esempio, eseguendo il comando con ``python3.12`` verrà installata la "
+"versione 3.12."
 
 #: tutorial/venv.rst:44
 msgid ""
@@ -78,6 +107,9 @@ msgid ""
 "place it, and run the :mod:`venv` module as a script with the directory "
 "path::"
 msgstr ""
+"Per creare un ambiente virtuale, decidi una directory dove vuoi posizionarlo"
+" ed esegui il modulo :mod:`venv` come script con il percorso della "
+"directory::"
 
 #: tutorial/venv.rst:49
 msgid ""
@@ -85,6 +117,9 @@ msgid ""
 "also create directories inside it containing a copy of the Python "
 "interpreter and various supporting files."
 msgstr ""
+"Questo creerà la directory ``tutorial-env`` se non esiste, e creerà anche "
+"directory all'interno contenenti una copia dell'interprete Python e vari "
+"file di supporto."
 
 #: tutorial/venv.rst:53
 msgid ""
@@ -94,18 +129,23 @@ msgid ""
 "prevents clashing with ``.env`` environment variable definition files that "
 "some tooling supports."
 msgstr ""
+"Una posizione comune per una directory di ambiente virtuale è ``.venv``. "
+"Questo nome mantiene la directory generalmente nascosta nella tua shell e "
+"quindi fuori mano, dando anche un nome che spiega il motivo dell'esistenza "
+"della directory. Previene anche conflitti con file di definizione di "
+"variabili d'ambiente ``.env`` che alcuni strumenti supportano."
 
 #: tutorial/venv.rst:59
 msgid "Once you've created a virtual environment, you may activate it."
-msgstr ""
+msgstr "Una volta creato un ambiente virtuale, puoi attivarlo."
 
 #: tutorial/venv.rst:61
 msgid "On Windows, run::"
-msgstr ""
+msgstr "Su Windows, esegui::"
 
 #: tutorial/venv.rst:65
 msgid "On Unix or MacOS, run::"
-msgstr ""
+msgstr "Su Unix o MacOS, esegui::"
 
 #: tutorial/venv.rst:69
 msgid ""
@@ -113,6 +153,9 @@ msgid ""
 "or :program:`fish` shells, there are alternate ``activate.csh`` and "
 "``activate.fish`` scripts you should use instead.)"
 msgstr ""
+"(Questo script è scritto per la shell bash. Se utilizzi le shell "
+":program:`csh` o :program:`fish`, ci sono script alternativi "
+"``activate.csh`` e ``activate.fish`` che dovresti utilizzare.)"
 
 #: tutorial/venv.rst:74
 msgid ""
@@ -121,70 +164,94 @@ msgid ""
 "running ``python`` will get you that particular version and installation of "
 "Python. For example:"
 msgstr ""
+"Attivare l'ambiente virtuale cambierà il prompt della tua shell per mostrare"
+" quale ambiente virtuale stai utilizzando, e modificherà l'ambiente in modo "
+"che eseguire ``python`` ti fornirà quella versione e installazione "
+"particolare di Python. Per esempio:"
 
 #: tutorial/venv.rst:91
 msgid "To deactivate a virtual environment, type::"
-msgstr ""
+msgstr "Per disattivare un ambiente virtuale, scrivi::"
 
 #: tutorial/venv.rst:95
 msgid "into the terminal."
-msgstr ""
+msgstr "nel terminale."
 
 #: tutorial/venv.rst:98
 msgid "Managing Packages with pip"
-msgstr ""
+msgstr "Gestione dei Pacchetti con pip"
 
 #: tutorial/venv.rst:100
 msgid ""
-"You can install, upgrade, and remove packages using a program called :"
-"program:`pip`.  By default ``pip`` will install packages from the `Python "
-"Package Index <https://pypi.org>`_.  You can browse the Python Package Index "
-"by going to it in your web browser."
+"You can install, upgrade, and remove packages using a program called "
+":program:`pip`.  By default ``pip`` will install packages from the `Python "
+"Package Index <https://pypi.org>`_.  You can browse the Python Package Index"
+" by going to it in your web browser."
 msgstr ""
+"Puoi installare, aggiornare e rimuovere pacchetti utilizzando un programma "
+"chiamato :program:`pip`. Per impostazione predefinita ``pip`` installerà "
+"pacchetti dal `Python Package Index <https://pypi.org>`_. Puoi sfogliare il "
+"Python Package Index andando sul sito web con il tuo browser."
 
 #: tutorial/venv.rst:105
 msgid ""
-"``pip`` has a number of subcommands: \"install\", \"uninstall\", \"freeze\", "
-"etc.  (Consult the :ref:`installing-index` guide for complete documentation "
-"for ``pip``.)"
+"``pip`` has a number of subcommands: \"install\", \"uninstall\", \"freeze\","
+" etc.  (Consult the :ref:`installing-index` guide for complete documentation"
+" for ``pip``.)"
 msgstr ""
+"``pip`` ha un certo numero di sottocomandi: \"install\", \"uninstall\", "
+"\"freeze\", etc. (Consulta la guida :ref:`installing-index` per la "
+"documentazione completa su ``pip``.)"
 
 #: tutorial/venv.rst:109
 msgid ""
 "You can install the latest version of a package by specifying a package's "
 "name:"
 msgstr ""
+"Puoi installare l'ultima versione di un pacchetto specificando il nome del "
+"pacchetto:"
 
 #: tutorial/venv.rst:120
 msgid ""
 "You can also install a specific version of a package by giving the package "
 "name  followed by ``==`` and the version number:"
 msgstr ""
+"Puoi anche installare una versione specifica di un pacchetto fornendo il "
+"nome del pacchetto seguito da ``==`` e dal numero di versione:"
 
 #: tutorial/venv.rst:131
 msgid ""
 "If you re-run this command, ``pip`` will notice that the requested version "
 "is already installed and do nothing.  You can supply a different version "
-"number to get that version, or you can run ``python -m pip install --"
-"upgrade`` to upgrade the package to the latest version:"
+"number to get that version, or you can run ``python -m pip install "
+"--upgrade`` to upgrade the package to the latest version:"
 msgstr ""
+"Se esegui nuovamente questo comando, ``pip`` noterà che la versione "
+"richiesta è già installata e non farà nulla. Puoi fornire un numero di "
+"versione diverso per ottenere quella versione, oppure puoi eseguire ``python"
+" -m pip install --upgrade`` per aggiornare il pacchetto all'ultima versione:"
 
 #: tutorial/venv.rst:146
 msgid ""
 "``python -m pip uninstall`` followed by one or more package names will "
 "remove the packages from the virtual environment."
 msgstr ""
+"``python -m pip uninstall`` seguito da uno o più nomi di pacchetti rimuoverà"
+" i pacchetti dall'ambiente virtuale."
 
 #: tutorial/venv.rst:149
 msgid ""
 "``python -m pip show`` will display information about a particular package:"
 msgstr ""
+"``python -m pip show`` mostrerà informazioni su un particolare pacchetto:"
 
 #: tutorial/venv.rst:166
 msgid ""
 "``python -m pip list`` will display all of the packages installed in the "
 "virtual environment:"
 msgstr ""
+"``python -m pip list`` mostrerà tutti i pacchetti installati nell'ambiente "
+"virtuale:"
 
 #: tutorial/venv.rst:178
 msgid ""
@@ -193,13 +260,20 @@ msgid ""
 "expects. A common convention is to put this list in a ``requirements.txt`` "
 "file:"
 msgstr ""
+"``python -m pip freeze`` produrrà una lista simile dei pacchetti installati,"
+" ma l'output utilizza il formato che ``python -m pip install`` si aspetta. "
+"Una convenzione comune è mettere questa lista in un file "
+"``requirements.txt``:"
 
 #: tutorial/venv.rst:190
 msgid ""
 "The ``requirements.txt`` can then be committed to version control and "
-"shipped as part of an application.  Users can then install all the necessary "
-"packages with ``install -r``:"
+"shipped as part of an application.  Users can then install all the necessary"
+" packages with ``install -r``:"
 msgstr ""
+"Il ``requirements.txt`` può poi essere committato nel controllo di versione "
+"e distribuito come parte di un'applicazione. Gli utenti possono poi "
+"installare tutti i pacchetti necessari con ``install -r``:"
 
 #: tutorial/venv.rst:207
 msgid ""
@@ -208,3 +282,7 @@ msgid ""
 "want to make it available on the Python Package Index, consult the `Python "
 "packaging user guide`_."
 msgstr ""
+"``pip`` ha molte altre opzioni. Consulta la guida :ref:`installing-index` "
+"per la documentazione completa su ``pip``. Quando hai scritto un pacchetto e"
+" vuoi renderlo disponibile su Python Package Index, consulta la `guida "
+"dell'utente al packaging di Python`_."
