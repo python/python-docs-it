@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
@@ -1235,7 +1234,11 @@ msgid ""
 ":attr:`m.__self__ <method.__self__>` is the instance object with the method "
 ":meth:`!m`, and :attr:`m.__func__ <method.__func__>` is the :ref:`function "
 "object <user-defined-funcs>` corresponding to the method."
-msgstr "Gli :ref"
+msgstr ""
+"Gli :ref:`oggetti metodo d'istanza <instance-methods>` hanno anch'essi "
+"attributi: :attr:`m.__self__ <method.__self__>` è l'oggetto istanza con il "
+"metodo :meth:`!m`, e :attr:`m.__func__ <method.__func__>` è l':ref:`oggetto "
+"funzione <user-defined-funcs>` corrispondente al metodo."
 
 #: tutorial/classes.rst:781
 msgid "Iterators"
