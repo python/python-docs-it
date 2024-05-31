@@ -431,6 +431,9 @@ msgid ""
 "meaning and actually match arbitrary sequences.  An important exception is "
 "that they don't match iterators or strings."
 msgstr ""
+"Come le assegnazioni di decomposizione, gli schemi di tuple e liste hanno esattamente lo stesso "
+"significato e corrispondono effettivamente a sequenze arbitrarie. Un'importante eccezione è "
+"che non corrispondano a iteratori o stringhe."
 
 #: tutorial/controlflow.rst:389
 msgid ""
@@ -439,6 +442,10 @@ msgid ""
 "also be ``_``, so ``(x, y, *_)`` matches a sequence of at least two items "
 "without binding the remaining items."
 msgstr ""
+"Le sequenze di schemi supportano l'unpacking esteso: ``[x, y, *rest]`` e ``(x, y, "
+"*rest)`` funzionano in modo simile alle assegnazioni di decomposizione. Il nome dopo ``*`` "
+"può anche essere ``_``, quindi ``(x, y, *_)`` corrisponde a una sequenza di almeno due elementi "
+"senza la necessità di associare gli elementi rimanenti."
 
 #: tutorial/controlflow.rst:394
 msgid ""
@@ -447,44 +454,58 @@ msgid ""
 "sequence patterns, extra keys are ignored.  An unpacking like ``**rest`` is "
 "also supported.  (But ``**_`` would be redundant, so it is not allowed.)"
 msgstr ""
+"Schemi di mapping: ``{\"bandwidth\": b, \"latency\": l}`` cattura i valori "
+"``\"bandwidth\"`` e ``\"latency\"`` da un dizionario. A differenza degli schemi di sequenza, "
+"le chiavi aggiuntive vengono ignorate. È supportato anche un unpacking come ``**rest``. "
+"(Ma ``**_`` sarebbe ridondante, quindi non è possibile utilizzarlo.)"
 
 #: tutorial/controlflow.rst:399
 msgid "Subpatterns may be captured using the ``as`` keyword::"
-msgstr ""
+msgstr "I sotto-schemi possono essere catturati utilizzando la parola chiave ``as``::"
 
 #: tutorial/controlflow.rst:403
 msgid ""
 "will capture the second element of the input as ``p2`` (as long as the input "
 "is a sequence of two points)"
 msgstr ""
+"acquisirà il secondo elemento dell'input come ``p2`` (a patto che l'input "
+"sia una sequenza di due punti)"
 
 #: tutorial/controlflow.rst:406
 msgid ""
 "Most literals are compared by equality, however the singletons ``True``, "
 "``False`` and ``None`` are compared by identity."
 msgstr ""
+"La maggior parte dei letterali sono confrontati per uguaglianza, tuttavia i *singleton* "
+"``True``, ``False`` e ``None`` sono confrontati per identità."
 
 #: tutorial/controlflow.rst:409
 msgid ""
 "Patterns may use named constants.  These must be dotted names to prevent "
 "them from being interpreted as capture variable::"
 msgstr ""
+"Gli schemi possono utilizzare costanti nominate. Queste devono essere nomi puntati "
+"per impedire che vengano interpretati come variabili di cattura::"
 
 #: tutorial/controlflow.rst:428
 msgid ""
 "For a more detailed explanation and additional examples, you can look into :"
 "pep:`636` which is written in a tutorial format."
 msgstr ""
+"Per una spiegazione più dettagliata e ulteriori esempi, puoi consultare :"
+"pep:`636` che è scritta in un formato simile a un tutorial."
 
 #: tutorial/controlflow.rst:434
 msgid "Defining Functions"
-msgstr ""
+msgstr "Definizione di Funzioni"
 
 #: tutorial/controlflow.rst:436
 msgid ""
 "We can create a function that writes the Fibonacci series to an arbitrary "
 "boundary::"
 msgstr ""
+"Possiamo creare una funzione che scrive la serie di Fibonacci fino a un limite "
+"arbitrario::"
 
 #: tutorial/controlflow.rst:456
 msgid ""
@@ -493,6 +514,10 @@ msgid ""
 "parameters. The statements that form the body of the function start at the "
 "next line, and must be indented."
 msgstr ""
+"La parola chiave :keyword:`def` introduce una *definizione* di funzione. Deve essere "
+"seguita dal nome della funzione e dall'elenco tra parentesi dei parametri formali. "
+"Le istruzioni che formano il corpo della funzione iniziano alla riga successiva, "
+"e devono essere indentate."
 
 #: tutorial/controlflow.rst:461
 msgid ""
@@ -504,6 +529,13 @@ msgid ""
 "through code; it's good practice to include docstrings in code that you "
 "write, so make a habit of it."
 msgstr ""
+"La prima istruzione del corpo della funzione può opzionalmente essere una stringa "
+"letterale; questa stringa letterale è la stringa di documentazione della funzione, o :dfn:"
+"`docstring`. (Maggiori informazioni sulle docstring possono essere trovate nella sezione :ref:`tut-"
+"docstrings`.) Ci sono strumenti che utilizzano le docstring per produrre automaticamente "
+"documentazione online o stampata, o per consentire all'utente di navigare interattivamente "
+"attraverso il codice; è una buona pratica includere le docstring nel codice che scrivi, "
+"quindi prendilo come abitudine."
 
 #: tutorial/controlflow.rst:468
 msgid ""
@@ -518,6 +550,16 @@ msgid ""
 "for variables of enclosing functions, named in a :keyword:`nonlocal` "
 "statement), although they may be referenced."
 msgstr ""
+"L'*esecuzione* di una funzione introduce una nuova tabella dei simboli utilizzata per "
+"le variabili locali della funzione. Più precisamente, tutte le assegnazioni di variabili "
+"in una funzione memorizzano il valore nella tabella dei simboli locali; mentre i riferimenti "
+"alle variabili cercano prima nella tabella dei simboli locali, poi nelle tabelle dei simboli "
+"locali delle funzioni circostanti, poi nella tabella dei simboli globali, e infine nella tabella "
+"dei nomi incorporati. Pertanto, le variabili globali e le variabili delle funzioni circostanti "
+"non possono essere direttamente assegnate un valore all'interno di una funzione (a meno che, "
+"per le variabili globali, siano nominate in un'istruzione :keyword:`global`, o, "
+"per le variabili delle funzioni circostanti, siano nominate in un'istruzione :keyword:`nonlocal`), "
+"anche se possono essere referenziate."
 
 #: tutorial/controlflow.rst:479
 msgid ""
@@ -528,6 +570,12 @@ msgid ""
 "another function, or calls itself recursively, a new local symbol table is "
 "created for that call."
 msgstr ""
+"I parametri effettivi (argomenti) di una chiamata di funzione vengono introdotti nella "
+"tabella dei simboli locali della funzione chiamata quando viene chiamata; quindi, gli argomenti "
+"sono passati utilizzando il *passaggio per valore* (dove il *valore* è sempre un *riferimento* "
+"all'oggetto, non il valore dell'oggetto). [#]_ Quando una funzione chiama "
+"un'altra funzione, o si chiama ricorsivamente, viene creata una nuova tabella dei simboli locali "
+"per quella chiamata."
 
 #: tutorial/controlflow.rst:486
 msgid ""
@@ -536,6 +584,10 @@ msgid ""
 "to by that name as a user-defined function.  Other names can also point to "
 "that same function object and can also be used to access the function::"
 msgstr ""
+"Una definizione di funzione associa il nome della funzione all'oggetto funzione "
+"nella tabella dei simboli corrente. L'interprete riconosce l'oggetto puntato da quel "
+"nome come una funzione definita dall'utente. Altri nomi possono anche puntare a "
+"quello stesso oggetto funzione e possono anche essere utilizzati per accedere alla funzione::"
 
 #: tutorial/controlflow.rst:497
 msgid ""
@@ -547,16 +599,25 @@ msgid ""
 "the only value written. You can see it if you really want to using :func:"
 "`print`::"
 msgstr ""
+"Provenendo da altri linguaggi, potresti obiettare che ``fib`` non è una funzione "
+"ma una procedura poiché non restituisce un valore. Infatti, anche le funzioni "
+"senza un'istruzione :keyword:`return` restituiscono un valore, sebbene piuttosto "
+"noioso. Questo valore si chiama ``None`` (è un nome riservato del linguaggio). Scrivere "
+"il valore ``None`` è normalmente soppresso dall'interprete se sarebbe l'unico valore "
+"scritto. Puoi vederlo se lo desideri davvero utilizzando :func:`print`::"
+
 
 #: tutorial/controlflow.rst:508
 msgid ""
 "It is simple to write a function that returns a list of the numbers of the "
 "Fibonacci series, instead of printing it::"
 msgstr ""
+"È semplice scrivere una funzione che restituisce una lista dei numeri della "
+"serie di Fibonacci, invece di stamparla::"
 
 #: tutorial/controlflow.rst:524
 msgid "This example, as usual, demonstrates some new Python features:"
-msgstr ""
+msgstr "Questo esempio, come al solito, dimostra alcune nuove funzionalità di Python:"
 
 #: tutorial/controlflow.rst:526
 msgid ""
@@ -564,6 +625,9 @@ msgid ""
 "keyword:`!return` without an expression argument returns ``None``. Falling "
 "off the end of a function also returns ``None``."
 msgstr ""
+"L'istruzione :keyword:`return` restituisce un valore da una funzione. :"
+"keyword:`!return` senza un argomento espressione restituisce ``None``. Anche uscire "
+"dalla fine di una funzione restituisce ``None``."
 
 #: tutorial/controlflow.rst:530
 msgid ""
@@ -579,20 +643,32 @@ msgid ""
 "this example it is equivalent to ``result = result + [a]``, but more "
 "efficient."
 msgstr ""
+"L'istruzione ``result.append(a)`` chiama un *metodo* dell'oggetto lista "
+"``result``. Un metodo è una funzione che 'appartiene' a un oggetto e si chiama "
+"``obj.methodname``, dove ``obj`` è un qualche oggetto (questo può essere un'espressione), "
+"e ``methodname`` è il nome di un metodo definito dal tipo dell'oggetto. Diversi tipi "
+"definiscono metodi diversi. Metodi di tipi diversi possono avere lo stesso nome "
+"senza causare ambiguità. (È possibile definire i propri tipi di oggetto e metodi, "
+"utilizzando *classi*, vedi :ref:`tut-classes`) Il metodo :meth:`!append` mostrato "
+"nell'esempio è definito per gli oggetti lista; aggiunge un nuovo elemento alla fine "
+"della lista. In questo esempio è equivalente a ``result = result + [a]``, ma più "
+"efficiente."
 
 #: tutorial/controlflow.rst:545
 msgid "More on Defining Functions"
-msgstr ""
+msgstr "Ulteriori informazioni sulla Definizione di Funzioni"
 
 #: tutorial/controlflow.rst:547
 msgid ""
 "It is also possible to define functions with a variable number of arguments. "
 "There are three forms, which can be combined."
 msgstr ""
+"È anche possibile definire funzioni con un numero variabile di argomenti. "
+"Esistono tre forme, che possono essere combinate."
 
 #: tutorial/controlflow.rst:554
 msgid "Default Argument Values"
-msgstr ""
+msgstr "Valori predefiniti degli argomenti"
 
 #: tutorial/controlflow.rst:556
 msgid ""
@@ -600,43 +676,55 @@ msgid ""
 "arguments. This creates a function that can be called with fewer arguments "
 "than it is defined to allow.  For example::"
 msgstr ""
+"La forma più utile è specificare un valore predefinito per uno o più "
+"argomenti. Questo crea una funzione che può essere chiamata con meno argomenti "
+"di quelli che è definita per consentire. Ad esempio::"
 
 #: tutorial/controlflow.rst:572
 msgid "This function can be called in several ways:"
-msgstr ""
+msgstr "Questa funzione può essere chiamata in diversi modi:"
 
 #: tutorial/controlflow.rst:574
 msgid ""
 "giving only the mandatory argument: ``ask_ok('Do you really want to quit?')``"
 msgstr ""
+"dando solo l'argomento obbligatorio: ``ask_ok('Vuoi davvero uscire?')``"
 
 #: tutorial/controlflow.rst:576
 msgid ""
 "giving one of the optional arguments: ``ask_ok('OK to overwrite the file?', "
 "2)``"
 msgstr ""
+"dando uno degli argomenti opzionali: ``ask_ok('OK sovrascrivere il file?', "
+"2)``"
 
 #: tutorial/controlflow.rst:578
 msgid ""
 "or even giving all arguments: ``ask_ok('OK to overwrite the file?', 2, 'Come "
 "on, only yes or no!')``"
 msgstr ""
+"o addirittura dando tutti gli argomenti: ``ask_ok('OK sovrascrivere il file?', 2, 'Dai "
+"su, solo sì o no!')``"
 
 #: tutorial/controlflow.rst:581
 msgid ""
 "This example also introduces the :keyword:`in` keyword. This tests whether "
 "or not a sequence contains a certain value."
 msgstr ""
+"Questo esempio introduce anche la parola chiave :keyword:`in`. Questo testa se "
+"una sequenza contiene o meno un certo valore."
 
 #: tutorial/controlflow.rst:584
 msgid ""
 "The default values are evaluated at the point of function definition in the "
 "*defining* scope, so that ::"
 msgstr ""
+"I valori predefiniti vengono valutati nel punto di definizione della funzione "
+"nello *scope* di definizione, in modo che ::"
 
 #: tutorial/controlflow.rst:595
 msgid "will print ``5``."
-msgstr ""
+msgstr "stamperà ``5``."
 
 #: tutorial/controlflow.rst:597
 msgid ""
@@ -645,20 +733,26 @@ msgid ""
 "dictionary, or instances of most classes.  For example, the following "
 "function accumulates the arguments passed to it on subsequent calls::"
 msgstr ""
+"**Avvertenza importante:** Il valore predefinito viene valutato solo una volta. "
+"Questo fa la differenza quando il valore predefinito è un oggetto mutabile come una lista, "
+"un dizionario, o istanze della maggior parte delle classi. Ad esempio, la seguente "
+"funzione accumula gli argomenti passati ad essa nelle chiamate successive::"
 
 #: tutorial/controlflow.rst:610
 msgid "This will print ::"
-msgstr ""
+msgstr "Questo stamperà ::"
 
 #: tutorial/controlflow.rst:616
 msgid ""
 "If you don't want the default to be shared between subsequent calls, you can "
 "write the function like this instead::"
 msgstr ""
+"Se non vuoi che il valore predefinito sia condiviso tra le chiamate successive, "
+"puoi scrivere la funzione in questo modo::"
 
 #: tutorial/controlflow.rst:629
 msgid "Keyword Arguments"
-msgstr ""
+msgstr "Argomenti chiave-valore"
 
 #: tutorial/controlflow.rst:631
 msgid ""
@@ -666,6 +760,9 @@ msgid ""
 "argument>` of the form ``kwarg=value``.  For instance, the following "
 "function::"
 msgstr ""
+"Le funzioni possono anche essere chiamate utilizzando :term:`argomenti chiave-valore <keyword "
+"argument>` della forma ``kwarg=value``. Ad esempio, la seguente "
+"funzione::"
 
 #: tutorial/controlflow.rst:640
 msgid ""
@@ -673,10 +770,13 @@ msgid ""
 "(``state``, ``action``, and ``type``).  This function can be called in any "
 "of the following ways::"
 msgstr ""
+"accetta un argomento obbligatorio (``voltage``) e tre argomenti opzionali "
+"(``state``, ``action``, e ``type``). Questa funzione può essere chiamata in uno "
+"dei seguenti modi::"
 
 #: tutorial/controlflow.rst:651
 msgid "but all the following calls would be invalid::"
-msgstr ""
+msgstr "ma tutte le chiamate seguenti non sarebbero valide::"
 
 #: tutorial/controlflow.rst:658
 msgid ""
@@ -688,6 +788,13 @@ msgid ""
 "may receive a value more than once. Here's an example that fails due to this "
 "restriction::"
 msgstr ""
+"In una chiamata di funzione, gli argomenti chiave-valore devono seguire gli "
+"argomenti posizionali. Tutti gli argomenti chiave passati devono corrispondere a uno "
+"degli argomenti accettati dalla funzione (ad esempio, ``actor`` non è un argomento "
+"valido per la funzione ``parrot``), e il loro ordine non è importante. Questo include "
+"anche gli argomenti non opzionali (ad esempio, ``parrot(voltage=1000)`` è valido). Nessun "
+"argomento può ricevere un valore più di una volta. Ecco un esempio che fallisce a causa di questa "
+"restrizione::"
 
 #: tutorial/controlflow.rst:674
 msgid ""
@@ -699,24 +806,33 @@ msgid ""
 "positional arguments beyond the formal parameter list.  (``*name`` must "
 "occur before ``**name``.) For example, if we define a function like this::"
 msgstr ""
+"Quando è presente un parametro formale finale della forma ``**name``, riceve "
+"un dizionario (vedi :ref:`typesmapping`) contenente tutti gli argomenti chiave "
+"tranne quelli corrispondenti a un parametro formale. Questo può essere combinato "
+"con un parametro formale della forma ``*name`` (descritto nella prossima "
+"sottosezione) che riceve una :ref:`tupla <tut-tuples>` contenente gli "
+"argomenti posizionali oltre all'elenco dei parametri formali. (``*name`` deve "
+"occorrere prima di ``**name``.) Ad esempio, se definiamo una funzione in questo modo::"
 
 #: tutorial/controlflow.rst:691
 msgid "It could be called like this::"
-msgstr ""
+msgstr "Potrebbe essere chiamato in questo modo::"
 
 #: tutorial/controlflow.rst:699
 msgid "and of course it would print:"
-msgstr ""
+msgstr "e naturalmente stamperà:"
 
 #: tutorial/controlflow.rst:712
 msgid ""
 "Note that the order in which the keyword arguments are printed is guaranteed "
 "to match the order in which they were provided in the function call."
 msgstr ""
+"Nota che l'ordine in cui gli argomenti chiave-valore vengono stampati è garantito "
+"corrispondere all'ordine in cui sono stati forniti nella chiamata della funzione."
 
 #: tutorial/controlflow.rst:716
 msgid "Special parameters"
-msgstr ""
+msgstr "Parametri speciali"
 
 #: tutorial/controlflow.rst:718
 msgid ""
@@ -726,10 +842,15 @@ msgid ""
 "at the function definition to determine if items are passed by position, by "
 "position or keyword, or by keyword."
 msgstr ""
+"Per impostazione predefinita, gli argomenti possono essere passati a una funzione Python "
+"sia per posizione che esplicitamente per chiave. Per leggibilità e prestazioni, ha senso "
+"limitare il modo in cui gli argomenti possono essere passati in modo che uno sviluppatore "
+"debba solo guardare la definizione della funzione per determinare se gli elementi sono "
+"passati per posizione, per posizione o per chiave, o per chiave."
 
 #: tutorial/controlflow.rst:724
 msgid "A function definition may look like:"
-msgstr ""
+msgstr "Ecco come potrebbe essere la definizione di una funzione:"
 
 #: tutorial/controlflow.rst:735
 msgid ""
@@ -738,20 +859,26 @@ msgid ""
 "only, positional-or-keyword, and keyword-only. Keyword parameters are also "
 "referred to as named parameters."
 msgstr ""
+"dove ``/`` e ``*`` sono opzionali. Se utilizzati, questi simboli indicano il tipo "
+"di parametro in base a come gli argomenti possono essere passati alla funzione: "
+"solo per posizione, per posizione o per chiave, e solo per chiave. I parametri "
+"chiave-valore sono anche chiamati parametri nominali."
 
 #: tutorial/controlflow.rst:742
 msgid "Positional-or-Keyword Arguments"
-msgstr ""
+msgstr "Argomenti Posizionali o per Chiave"
 
 #: tutorial/controlflow.rst:744
 msgid ""
 "If ``/`` and ``*`` are not present in the function definition, arguments may "
 "be passed to a function by position or by keyword."
 msgstr ""
+"Se ``/`` e ``*`` non sono presenti nella definizione della funzione, gli argomenti "
+"possono essere passati a una funzione per posizione o per chiave."
 
 #: tutorial/controlflow.rst:749
 msgid "Positional-Only Parameters"
-msgstr ""
+msgstr "Parametri Solo per Posizione"
 
 #: tutorial/controlflow.rst:751
 msgid ""
@@ -763,16 +890,24 @@ msgid ""
 "parameters. If there is no ``/`` in the function definition, there are no "
 "positional-only parameters."
 msgstr ""
+"Guardando questo in modo più dettagliato, è possibile contrassegnare certi "
+"parametri come *solo per posizione*. Se lo sono, l'ordine dei "
+"parametri è importante, e i parametri non possono essere passati per chiave. "
+"I parametri solo per posizione sono posizionati prima di un ``/`` (barra "
+"obliqua). Il ``/`` è utilizzato per separare logicamente i parametri "
+"posizionali dal resto dei parametri. Se non c'è un ``/`` nella definizione della "
+"funzione, non ci sono parametri posizionali."
 
 #: tutorial/controlflow.rst:759
 msgid ""
 "Parameters following the ``/`` may be *positional-or-keyword* or *keyword-"
 "only*."
 msgstr ""
+"I parametri che seguono il ``/`` possono essere *posizionali o per chiave* o *solo per chiave*."
 
 #: tutorial/controlflow.rst:763
 msgid "Keyword-Only Arguments"
-msgstr ""
+msgstr "Argomenti Solo per Chiave"
 
 #: tutorial/controlflow.rst:765
 msgid ""
@@ -780,16 +915,21 @@ msgid ""
 "passed by keyword argument, place an ``*`` in the arguments list just before "
 "the first *keyword-only* parameter."
 msgstr ""
+"Per contrassegnare i parametri come *solo per chiave*, indicando che i parametri "
+"devono essere passati per argomento chiave, posiziona un ``*`` nell'elenco degli "
+"argomenti subito prima del primo parametro *solo per chiave*."
 
 #: tutorial/controlflow.rst:771
 msgid "Function Examples"
-msgstr ""
+msgstr "Esempi di Funzioni"
 
 #: tutorial/controlflow.rst:773
 msgid ""
 "Consider the following example function definitions paying close attention "
 "to the markers ``/`` and ``*``::"
 msgstr ""
+"Considera le seguenti definizioni di funzioni di esempio prestando particolare attenzione "
+"ai marcatori ``/`` e ``*``::"
 
 #: tutorial/controlflow.rst:789
 msgid ""
@@ -797,24 +937,32 @@ msgid ""
 "places no restrictions on the calling convention and arguments may be passed "
 "by position or keyword::"
 msgstr ""
+"Nella prima definizione di funzione, ``standard_arg``, la forma più familiare, "
+"non pone restrizioni sulla convenzione di chiamata e gli argomenti possono essere "
+"passati per posizione o per chiave::"
 
 #: tutorial/controlflow.rst:799
 msgid ""
 "The second function ``pos_only_arg`` is restricted to only use positional "
 "parameters as there is a ``/`` in the function definition::"
 msgstr ""
+"La seconda funzione ``pos_only_arg`` è limitata a utilizzare solo parametri "
+"posizionali poiché c'è un ``/`` nella definizione della funzione::"
 
 #: tutorial/controlflow.rst:810
 msgid ""
 "The third function ``kwd_only_args`` only allows keyword arguments as "
 "indicated by a ``*`` in the function definition::"
 msgstr ""
+"La terza funzione ``kwd_only_args`` consente solo argomenti chiave-valore come "
+"indicato da un ``*`` nella definizione della funzione::"
 
 #: tutorial/controlflow.rst:821
 msgid ""
 "And the last uses all three calling conventions in the same function "
 "definition::"
 msgstr ""
+"E l'ultimo utilizza tutte e tre le convenzioni di chiamata nella stessa definizione di funzione::"
 
 #: tutorial/controlflow.rst:841
 msgid ""
@@ -822,12 +970,16 @@ msgid ""
 "between the positional argument ``name``  and ``**kwds`` which has ``name`` "
 "as a key::"
 msgstr ""
+"Infine, considera questa definizione di funzione che ha un potenziale conflitto "
+"tra l'argomento posizionale ``name`` e ``**kwds`` che ha ``name`` come chiave::"
 
 #: tutorial/controlflow.rst:846
 msgid ""
 "There is no possible call that will make it return ``True`` as the keyword "
 "``'name'`` will always bind to the first parameter. For example::"
 msgstr ""
+"Non esiste una chiamata possibile che lo farà restituire ``True`` poiché la chiave "
+"``'name'`` si legherà sempre al primo parametro. Ad esempio::"
 
 #: tutorial/controlflow.rst:855
 msgid ""
@@ -835,26 +987,31 @@ msgid ""
 "``name`` as a positional argument and ``'name'`` as a key in the keyword "
 "arguments::"
 msgstr ""
+"Ma utilizzando ``/`` (argomenti solo per posizione), è possibile poiché consente "
+"``name`` come argomento posizionale e ``'name'`` come chiave negli argomenti chiave-valore::"
 
 #: tutorial/controlflow.rst:863
 msgid ""
 "In other words, the names of positional-only parameters can be used in "
 "``**kwds`` without ambiguity."
 msgstr ""
+"In altre parole, i nomi dei parametri solo per posizione possono essere utilizzati in "
+"``**kwds`` senza ambiguità."
 
 #: tutorial/controlflow.rst:868
 msgid "Recap"
-msgstr ""
+msgstr "Riepilogo"
 
 #: tutorial/controlflow.rst:870
 msgid ""
 "The use case will determine which parameters to use in the function "
 "definition::"
 msgstr ""
+"Il caso d'uso determinerà quali parametri utilizzare nella definizione della funzione::"
 
 #: tutorial/controlflow.rst:874
 msgid "As guidance:"
-msgstr ""
+msgstr "Come guida:"
 
 #: tutorial/controlflow.rst:876
 msgid ""
@@ -864,6 +1021,10 @@ msgid ""
 "is called or if you need to take some positional parameters and arbitrary "
 "keywords."
 msgstr ""
+"Usa solo argomenti per posizione se vuoi che il nome dei parametri non sia "
+"disponibile per l'utente. Questo è utile quando i nomi dei parametri non hanno "
+"un vero significato, se vuoi imporre l'ordine degli argomenti quando la funzione "
+"viene chiamata o se devi prendere alcuni parametri posizionali e argomenti chiave arbitrari."
 
 #: tutorial/controlflow.rst:881
 msgid ""
@@ -871,16 +1032,21 @@ msgid ""
 "understandable by being explicit with names or you want to prevent users "
 "relying on the position of the argument being passed."
 msgstr ""
+"Usa solo argomenti per chiave quando i nomi hanno significato e la definizione della funzione "
+"è più comprensibile essendo esplicita con i nomi o vuoi impedire agli utenti di fare affidamento "
+"sulla posizione dell'argomento passato."
 
 #: tutorial/controlflow.rst:884
 msgid ""
 "For an API, use positional-only to prevent breaking API changes if the "
 "parameter's name is modified in the future."
 msgstr ""
+"Per un'API, usa solo per posizione per evitare rotture delle modifiche API se il "
+"nome del parametro viene modificato in futuro."
 
 #: tutorial/controlflow.rst:890
 msgid "Arbitrary Argument Lists"
-msgstr ""
+msgstr "Liste di Argomenti Arbitrarie"
 
 #: tutorial/controlflow.rst:895
 msgid ""
@@ -889,6 +1055,10 @@ msgid ""
 "wrapped up in a tuple (see :ref:`tut-tuples`).  Before the variable number "
 "of arguments, zero or more normal arguments may occur. ::"
 msgstr ""
+"Infine, l'opzione meno utilizzata è specificare che una funzione può essere "
+"chiamata con un numero arbitrario di argomenti. Questi argomenti saranno "
+"racchiusi in una tupla (vedi :ref:`tut-tuples`). Prima del numero variabile "
+"di argomenti, possono verificarsi zero o più argomenti normali. ::"
 
 #: tutorial/controlflow.rst:904
 msgid ""
@@ -898,10 +1068,15 @@ msgid ""
 "``*args`` parameter are 'keyword-only' arguments, meaning that they can only "
 "be used as keywords rather than positional arguments. ::"
 msgstr ""
+"Normalmente, questi argomenti *variadici* saranno gli ultimi nell'elenco dei "
+"parametri formali, perché raccolgono tutti gli argomenti di input rimanenti "
+"che vengono passati alla funzione. Qualsiasi parametro formale che si verifica "
+"dopo il parametro ``*args`` sono argomenti 'solo per chiave', il che significa "
+"che possono essere utilizzati solo come argomenti chiave piuttosto che argomenti posizionali. ::"
 
 #: tutorial/controlflow.rst:921
 msgid "Unpacking Argument Lists"
-msgstr ""
+msgstr "Spacchettamento delle Liste di Argomenti"
 
 #: tutorial/controlflow.rst:923
 msgid ""
@@ -912,16 +1087,23 @@ msgid ""
 "separately, write the function call with the  ``*``\\ -operator to unpack "
 "the arguments out of a list or tuple::"
 msgstr ""
+"La situazione inversa si verifica quando gli argomenti sono già in una lista o "
+"tupla ma devono essere spacchettati per una chiamata di funzione che richiede "
+"argomenti posizionali separati. Ad esempio, la funzione built-in :func:`range` "
+"si aspetta argomenti *start* e *stop* separati. Se non sono disponibili separatamente, "
+"scrivi la chiamata di funzione con l'operatore ``*``\\ per spacchettare gli argomenti "
+"da una lista o tupla::"
 
 #: tutorial/controlflow.rst:939
 msgid ""
 "In the same fashion, dictionaries can deliver keyword arguments with the "
 "``**``\\ -operator::"
 msgstr ""
+"Nello stesso modo, i dizionari possono fornire argomenti chiave-valore con l'operatore ``**``\\::"
 
 #: tutorial/controlflow.rst:955
 msgid "Lambda Expressions"
-msgstr ""
+msgstr "Espressioni Lambda"
 
 #: tutorial/controlflow.rst:957
 msgid ""
@@ -933,22 +1115,32 @@ msgid ""
 "definitions, lambda functions can reference variables from the containing "
 "scope::"
 msgstr ""
+"Piccole funzioni anonime possono essere create con la parola chiave :keyword:`lambda`. "
+"Questa funzione restituisce la somma dei suoi due argomenti: ``lambda a, b: a+b``. "
+"Le funzioni lambda possono essere utilizzate ovunque siano richiesti oggetti funzione. "
+"Sono sintatticamente limitate a una singola espressione. Semanticamente, sono solo "
+"zucchero sintattico per una normale definizione di funzione. Come le definizioni di "
+"funzione nidificate, le funzioni lambda possono fare riferimento a variabili dallo "
+"scope contenente::"
 
 #: tutorial/controlflow.rst:974
 msgid ""
 "The above example uses a lambda expression to return a function.  Another "
 "use is to pass a small function as an argument::"
 msgstr ""
+"Nell'esempio precedente viene utilizzata un'espressione lambda per restituire una funzione. "
+"Un altro uso è passare una piccola funzione come argomento::"
 
 #: tutorial/controlflow.rst:986
 msgid "Documentation Strings"
-msgstr ""
+msgstr "Stringhe di Documentazione"
 
 #: tutorial/controlflow.rst:993
 msgid ""
 "Here are some conventions about the content and formatting of documentation "
 "strings."
 msgstr ""
+"Ecco alcune convenzioni sul contenuto e la formattazione delle stringhe di documentazione."
 
 #: tutorial/controlflow.rst:996
 msgid ""
@@ -958,6 +1150,11 @@ msgid ""
 "to be a verb describing a function's operation).  This line should begin "
 "with a capital letter and end with a period."
 msgstr ""
+"La prima riga dovrebbe essere sempre un breve e conciso riassunto dello scopo "
+"dell'oggetto. Per brevità, non dovrebbe esplicitamente indicare il nome o il "
+"tipo dell'oggetto, poiché questi sono disponibili in altri modi (tranne se il "
+"nome è un verbo che descrive l'operazione di una funzione). Questa riga dovrebbe "
+"iniziare con una lettera maiuscola e terminare con un punto."
 
 #: tutorial/controlflow.rst:1002
 msgid ""
@@ -966,6 +1163,10 @@ msgid ""
 "The following lines should be one or more paragraphs describing the object's "
 "calling conventions, its side effects, etc."
 msgstr ""
+"Se ci sono più righe nella stringa di documentazione, la seconda riga dovrebbe "
+"essere vuota, separando visivamente il riassunto dal resto della descrizione. "
+"Le righe seguenti dovrebbero essere uno o più paragrafi che descrivono le convenzioni "
+"di chiamata dell'oggetto, i suoi effetti collaterali, ecc."
 
 #: tutorial/controlflow.rst:1007
 msgid ""
@@ -981,14 +1182,25 @@ msgid ""
 "they occur all their leading whitespace should be stripped.  Equivalence of "
 "whitespace should be tested after expansion of tabs (to 8 spaces, normally)."
 msgstr ""
+"Il parser di Python non rimuove l'indentazione dalle stringhe letterali multilinea "
+"in Python, quindi gli strumenti che elaborano la documentazione devono rimuovere "
+"l'indentazione se desiderato. Questo viene fatto utilizzando la seguente convenzione. "
+"La prima riga non vuota *dopo* la prima riga della stringa determina la quantità di "
+"indentazione per l'intera stringa di documentazione. (Non possiamo usare la prima "
+"riga poiché è generalmente adiacente alle virgolette di apertura della stringa quindi "
+"la sua indentazione non è evidente nella stringa letterale.) Lo spazio bianco \"equivalente\" "
+"a questa indentazione viene quindi rimosso dall'inizio di tutte le righe della stringa. "
+"Le righe che sono indentate di meno non dovrebbero verificarsi, ma se si verificano tutto "
+"il loro spazio bianco iniziale dovrebbe essere rimosso. L'equivalenza dello spazio bianco "
+"dovrebbe essere testata dopo l'espansione delle tabulazioni (a 8 spazi, normalmente)."
 
 #: tutorial/controlflow.rst:1019
 msgid "Here is an example of a multi-line docstring::"
-msgstr ""
+msgstr "Di seguito è riportato un esempio di una stringa di documentazione multilinea::"
 
 #: tutorial/controlflow.rst:1037
 msgid "Function Annotations"
-msgstr ""
+msgstr "Annotationi delle Funzioni"
 
 #: tutorial/controlflow.rst:1045
 msgid ""
@@ -996,6 +1208,9 @@ msgid ""
 "information about the types used by user-defined functions (see :pep:`3107` "
 "and :pep:`484` for more information)."
 msgstr ""
+":ref:`Le annotationi delle funzioni <function>` sono informazioni di metadati completamente "
+"opzionali sui tipi utilizzati dalle funzioni definite dall'utente (vedi :pep:`3107` "
+"e :pep:`484` per ulteriori informazioni)."
 
 #: tutorial/controlflow.rst:1049
 msgid ""
@@ -1008,10 +1223,18 @@ msgid ""
 "denoting the end of the :keyword:`def` statement.  The following example has "
 "a required argument, an optional argument, and the return value annotated::"
 msgstr ""
+":term:`Le annotazioni <function annotation>` sono memorizzate nell'attributo :attr:`!"
+"__annotations__` della funzione come un dizionario e non hanno alcun effetto su "
+"qualsiasi altra parte della funzione. Le annotazioni dei parametri sono definite "
+"da due punti dopo il nome del parametro, seguito da un'espressione che valuta il "
+"valore dell'annotazione. Le annotazioni di ritorno sono definite da una freccia ``->``, "
+"seguita da un'espressione, tra l'elenco dei parametri e i due punti che indicano la fine "
+"della dichiarazione :keyword:`def`. L'esempio seguente ha un argomento obbligatorio, "
+"un argomento opzionale, e il valore di ritorno annotato::"
 
 #: tutorial/controlflow.rst:1071
 msgid "Intermezzo: Coding Style"
-msgstr ""
+msgstr "Intermezzo: Stile di Codifica"
 
 #: tutorial/controlflow.rst:1076
 msgid ""
@@ -1021,6 +1244,11 @@ msgid ""
 "others. Making it easy for others to read your code is always a good idea, "
 "and adopting a nice coding style helps tremendously for that."
 msgstr ""
+"Ora che stai per scrivere pezzi di Python più lunghi e complessi, è un buon momento "
+"per parlare dello *stile di codifica*. La maggior parte dei linguaggi può essere "
+"scritta (o più concisamente, *formattata*) in stili diversi; alcuni sono più leggibili "
+"di altri. Rendere facile per gli altri leggere il tuo codice è sempre una buona idea, "
+"e adottare uno stile di codifica piacevole aiuta enormemente."
 
 #: tutorial/controlflow.rst:1082
 msgid ""
@@ -1029,10 +1257,14 @@ msgid ""
 "Python developer should read it at some point; here are the most important "
 "points extracted for you:"
 msgstr ""
+"Per Python, la :pep:`8` è la guida di stile a cui aderiscono la maggior parte "
+"dei progetti; promuove uno stile di codifica molto leggibile e piacevole alla vista. "
+"Ogni sviluppatore Python dovrebbe leggerla prima o poi; ecco i punti più "
+"importanti estratti per te:"
 
 #: tutorial/controlflow.rst:1087
 msgid "Use 4-space indentation, and no tabs."
-msgstr ""
+msgstr "Usa l'indentazione a 4 spazi, e niente tabulazioni."
 
 #: tutorial/controlflow.rst:1089
 msgid ""
@@ -1040,36 +1272,45 @@ msgid ""
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
 "confusion, and are best left out."
 msgstr ""
+"4 spazi sono un buon compromesso tra una piccola indentazione (permette una maggiore "
+"profondità di nidificazione) e una grande indentazione (più facile da leggere). "
+"Le tabulazioni introducono confusione, ed è preferibile non usarle."
 
 #: tutorial/controlflow.rst:1093
 msgid "Wrap lines so that they don't exceed 79 characters."
-msgstr ""
+msgstr "Manda a capo le righe in modo che non superino i 79 caratteri."
 
 #: tutorial/controlflow.rst:1095
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
 msgstr ""
+"Questo aiuta gli utenti con schermi piccoli e rende possibile avere diversi "
+"file di codice affiancati su schermi più grandi."
 
 #: tutorial/controlflow.rst:1098
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
 msgstr ""
+"Usa righe vuote per separare funzioni e classi, e blocchi di codice più grandi "
+"all'interno delle funzioni."
 
 #: tutorial/controlflow.rst:1101
 msgid "When possible, put comments on a line of their own."
-msgstr ""
+msgstr "Quando possibile, metti i commenti su una riga a parte."
 
 #: tutorial/controlflow.rst:1103
 msgid "Use docstrings."
-msgstr ""
+msgstr "Usa le stringhe di documentazione."
 
 #: tutorial/controlflow.rst:1105
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr ""
+"Usa spazi attorno agli operatori e dopo le virgole, ma non direttamente all'interno "
+"dei costrutti tra parentesi: ``a = f(1, 2) + g(3, 4)``."
 
 #: tutorial/controlflow.rst:1108
 msgid ""
@@ -1078,6 +1319,10 @@ msgid ""
 "functions and methods.  Always use ``self`` as the name for the first method "
 "argument (see :ref:`tut-firstclasses` for more on classes and methods)."
 msgstr ""
+"Nomina le tue classi e funzioni in modo coerente; la convenzione è utilizzare "
+"``UpperCamelCase`` per le classi e ``lowercase_with_underscores`` per le funzioni "
+"e i metodi. Usa sempre ``self`` come nome per il primo argomento del metodo (vedi "
+":ref:`tut-firstclasses` per ulteriori informazioni su classi e metodi)."
 
 #: tutorial/controlflow.rst:1113
 msgid ""
@@ -1085,6 +1330,9 @@ msgid ""
 "environments.  Python's default, UTF-8, or even plain ASCII work best in any "
 "case."
 msgstr ""
+"Non utilizzare codifiche complesse se il tuo codice è destinato ad essere utilizzato "
+"in ambienti internazionali. Il predefinito di Python, UTF-8, o anche il semplice ASCII "
+"funzionano meglio in ogni caso."
 
 #: tutorial/controlflow.rst:1117
 msgid ""
@@ -1092,10 +1340,13 @@ msgid ""
 "slightest chance people speaking a different language will read or maintain "
 "the code."
 msgstr ""
+"Allo stesso modo, non utilizzare caratteri non-ASCII negli identificatori se c'è "
+"solo la minima possibilità che persone che parlano una lingua diversa leggano o "
+"mantengano il codice."
 
 #: tutorial/controlflow.rst:1123
 msgid "Footnotes"
-msgstr ""
+msgstr "Note a piè di pagina"
 
 #: tutorial/controlflow.rst:1124
 msgid ""
@@ -1103,63 +1354,66 @@ msgid ""
 "a mutable object is passed, the caller will see any changes the callee makes "
 "to it (items inserted into a list)."
 msgstr ""
+"In realtà, *chiamata per riferimento all'oggetto* sarebbe una descrizione migliore, "
+"poiché se viene passato un oggetto mutabile, il chiamante vedrà qualsiasi modifica "
+"che il chiamato fa ad esso (elementi inseriti in una lista)."
 
 #: tutorial/controlflow.rst:48
 msgid "statement"
-msgstr ""
+msgstr "definizione"
 
 #: tutorial/controlflow.rst:48
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: tutorial/controlflow.rst:988
 msgid "documentation strings"
-msgstr ""
+msgstr "stringhe di documentazione"
 
 #: tutorial/controlflow.rst:988
 msgid "docstrings"
-msgstr ""
+msgstr "docstrings"
 
 #: tutorial/controlflow.rst:988
 msgid "strings, documentation"
-msgstr ""
+msgstr "stringhe, documentazione"
 
 #: tutorial/controlflow.rst:892
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (asterisco)"
 
 #: tutorial/controlflow.rst:936
 msgid "in function calls"
-msgstr ""
+msgstr "nelle chiamate di funzione"
 
 #: tutorial/controlflow.rst:936
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: tutorial/controlflow.rst:1040
 msgid "function"
-msgstr ""
+msgstr "funzione"
 
 #: tutorial/controlflow.rst:1040
 msgid "annotations"
-msgstr ""
+msgstr "annotazioni"
 
 #: tutorial/controlflow.rst:1040
 msgid "->"
-msgstr ""
+msgstr "->"
 
 #: tutorial/controlflow.rst:1040
 msgid "function annotations"
-msgstr ""
+msgstr "annotazioni delle funzioni"
 
 #: tutorial/controlflow.rst:1040
 msgid ": (colon)"
-msgstr ""
+msgstr ": (due punti)"
 
 #: tutorial/controlflow.rst:1074
 msgid "coding"
-msgstr ""
+msgstr "codifica"
 
 #: tutorial/controlflow.rst:1074
 msgid "style"
-msgstr ""
+msgstr "stile"
