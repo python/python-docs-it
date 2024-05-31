@@ -353,6 +353,12 @@ msgid ""
 "which makes it conceptually similar to the unpacking assignment ``(x, y) = "
 "point``."
 msgstr ""
+"Studialo attentamente! Il primo schema ha due letterali, e può essere "
+"pensato come un'estensione dello schema letterale mostrato sopra. Ma i successivi "
+"due schemi combinano un letterale e una variabile, e la variabile *associa* un "
+"valore dal soggetto (``point``). Il quarto schema cattura due valori, "
+"che lo rende concettualmente simile all'assegnazione con *unpacking* ``(x, y) = "
+"point``."
 
 #: tutorial/controlflow.rst:312
 msgid ""
@@ -360,6 +366,9 @@ msgid ""
 "followed by an argument list resembling a constructor, but with the ability "
 "to capture attributes into variables::"
 msgstr ""
+"Se stai utilizzando classi per strutturare i tuoi dati, puoi usare il nome della classe "
+"seguito da un elenco di argomenti che assomiglia a un costruttore, ma con la capacità "
+"di catturare attributi in variabili::"
 
 #: tutorial/controlflow.rst:334
 msgid ""
@@ -370,6 +379,11 @@ msgid ""
 "\"y\"), the following patterns are all equivalent (and all bind the ``y`` "
 "attribute to the ``var`` variable)::"
 msgstr ""
+"Puoi utilizzare parametri posizionali con alcune classi integrate che forniscono un "
+"ordinamento per i loro attributi (ad esempio le dataclassi). Puoi anche definire una "
+"posizione specifica per gli attributi negli schemi impostando l'attributo speciale "
+"``__match_args__`` nelle tue classi. Se è impostato su (\"x\", \"y\"), gli schemi seguenti "
+"sono tutti equivalenti (e tutti associano l'attributo ``y`` alla variabile ``var``)::"
 
 #: tutorial/controlflow.rst:345
 msgid ""
@@ -381,12 +395,21 @@ msgid ""
 "(recognized by the \"(...)\" next to them like ``Point`` above) are never "
 "assigned to."
 msgstr ""
+"Un modo consigliato per leggere gli schemi è considerarli come una forma estesa di "
+"quello che metteresti a sinistra di un'assegnazione, per capire quali "
+"variabili verrebbero impostate su cosa. Solo i nomi autonomi (come ``var`` "
+"qui sopra) vengono assegnati da un'istruzione di match. I nomi puntati (come ``foo."
+"bar``), i nomi degli attributi (il ``x=`` e ``y=`` qui sopra) o i nomi delle classi "
+"(riconosciuti dalle \"(...)\" accanto a loro come ``Point`` qui sopra) non vengono "
+"mai assegnati."
 
 #: tutorial/controlflow.rst:352
 msgid ""
 "Patterns can be arbitrarily nested.  For example, if we have a short list of "
 "Points, with ``__match_args__`` added, we could match it like this::"
 msgstr ""
+"Gli schemi possono essere arbitrariamente nidificati. Ad esempio, se abbiamo una "
+"breve lista di Punti, con ``__match_args__`` aggiunto, potremmo abbinarla così::"
 
 #: tutorial/controlflow.rst:373
 msgid ""
@@ -394,10 +417,13 @@ msgid ""
 "guard is false, ``match`` goes on to try the next case block.  Note that "
 "value capture happens before the guard is evaluated::"
 msgstr ""
+"Possiamo aggiungere una clausola ``if`` a uno schema, nota come \"guardia\". Se la "
+"guardia è falsa, ``match`` passa a provare il blocco case successivo. Nota che "
+"la cattura del valore avviene prima che la guardia venga valutata::"
 
 #: tutorial/controlflow.rst:383
 msgid "Several other key features of this statement:"
-msgstr ""
+msgstr "Altre caratteristiche chiave di questa istruzione:"
 
 #: tutorial/controlflow.rst:385
 msgid ""

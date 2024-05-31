@@ -41,109 +41,100 @@ msgstr ""
 "Deprecato dalla versione {deprecated}, sarà rimosso nella versione {removed}."
 
 #: tools/templates/dummy.html:8
-#, fuzzy
 msgid "Deprecated since version {deprecated}, removed in version {removed}"
-msgstr ""
-"Deprecato dalla versione {deprecated}, sarà rimosso nella versione {removed}."
+msgstr "Deprecato dalla versione {deprecated}, rimosso nella versione {removed}."
 
 #: tools/templates/dummy.html:12
 msgid "Part of the"
-msgstr ""
+msgstr "Parte del"
 
 #: tools/templates/dummy.html:13
 msgid "Limited API"
-msgstr ""
+msgstr "API Limitata"
 
 #: tools/templates/dummy.html:14
 msgid "Stable ABI"
-msgstr ""
+msgstr "ABI Stabile"
 
 #: tools/templates/dummy.html:15
 msgid "(as an opaque struct)"
-msgstr ""
+msgstr "(come una struttura opaca)"
 
 #: tools/templates/dummy.html:16
 msgid "(including all members)"
-msgstr ""
+msgstr "(inclusi tutti i membri)"
 
 #: tools/templates/dummy.html:17
-#, fuzzy
 msgid "since version %s"
-msgstr "Tutte le versioni"
+msgstr "dalla versione %s"
 
 #: tools/templates/dummy.html:18
 msgid "(Only some members are part of the stable ABI.)"
-msgstr ""
+msgstr "(Solo alcuni membri fanno parte dell'ABI stabile.)"
 
 #: tools/templates/dummy.html:19
-#, fuzzy
 msgid "This is"
 msgstr "Questa pagina"
 
 #: tools/templates/dummy.html:20
 msgid "Unstable API"
-msgstr ""
+msgstr "API Instabile"
 
 #: tools/templates/dummy.html:21
 msgid ". It may change without warning in minor releases."
-msgstr ""
+msgstr ". Potrebbe cambiare senza preavviso nelle release minori."
 
 #: tools/templates/dummy.html:22
 msgid "Return value: Always NULL."
-msgstr ""
+msgstr "Valore di ritorno: Sempre NULL."
 
 #: tools/templates/dummy.html:23
 msgid "Return value: New reference."
-msgstr ""
+msgstr "Valore di ritorno: Nuovo riferimento."
 
 #: tools/templates/dummy.html:24
 msgid "Return value: Borrowed reference."
-msgstr ""
+msgstr "Valore di ritorno: Riferimento preso in prestito."
 
 #: tools/templates/dummy.html:28
-#, fuzzy
 msgid "in development"
-msgstr "Python 3.8 (in sviluppo)"
+msgstr "in sviluppo"
 
 #: tools/templates/dummy.html:29
 msgid "pre-release"
-msgstr ""
+msgstr "pre-release"
 
 #: tools/templates/dummy.html:30
 msgid "stable"
-msgstr ""
+msgstr "stabile"
 
 #: tools/templates/dummy.html:31
-#, fuzzy
 msgid "security-fixes"
-msgstr "Python 3.6 (correzioni di sicurezza)"
+msgstr "correzioni di sicurezza"
 
 #: tools/templates/dummy.html:32
 msgid "EOL"
-msgstr ""
+msgstr "EOL"
 
 #: tools/templates/indexcontent.html:8
-#, fuzzy
 msgid "Welcome! This is the official documentation for Python %(release)s."
 msgstr "Benvenuti! Questa è la documentazione di Python %(release)s."
 
 #: tools/templates/indexcontent.html:10
-#, fuzzy
 msgid "Documentation sections:"
-msgstr "Documentazione"
+msgstr "Sezioni della documentazione:"
 
 #: tools/templates/indexcontent.html:13
 msgid "What's new in Python %(version)s?"
 msgstr "Cosa c'è di nuovo in Python %(version)s?"
 
 #: tools/templates/indexcontent.html:14
-#, fuzzy
 msgid ""
 "Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python "
 "2.0</a>"
 msgstr ""
 "o <a href=\"%(whatsnew_index)s\">tutti i documenti \"Cosa c'è di nuovo\"</a> "
-"dalla versione 2.0"
+"dalla versione 2.0 di Python"
 
 #: tools/templates/indexcontent.html:15
 msgid "Tutorial"
@@ -151,35 +142,31 @@ msgstr "Tutorial"
 
 #: tools/templates/indexcontent.html:16
 msgid "Start here: a tour of Python's syntax and features"
-msgstr ""
+msgstr "Inizia da qui: un tour della sintassi e delle funzionalità di Python"
 
 #: tools/templates/indexcontent.html:17
-#, fuzzy
 msgid "Library reference"
-msgstr "Riferimenti della Libreria"
+msgstr "Riferimenti alla libreria"
 
 #: tools/templates/indexcontent.html:18
 msgid "Standard library and builtins"
-msgstr ""
+msgstr "Libreria standard e funzioni integrate"
 
 #: tools/templates/indexcontent.html:19
-#, fuzzy
 msgid "Language reference"
 msgstr "Guida al Linguaggio"
 
 #: tools/templates/indexcontent.html:20
-#, fuzzy
 msgid "Syntax and language elements"
-msgstr "descrive la sintassi e gli elementi del linguaggio"
+msgstr "Sintassi ed elementi del linguaggio"
 
 #: tools/templates/indexcontent.html:21
-#, fuzzy
 msgid "Python setup and usage"
 msgstr "Installazione e utilizzo di Python"
 
 #: tools/templates/indexcontent.html:22
 msgid "How to install, configure, and use Python"
-msgstr ""
+msgstr "Come installare, configurare e utilizzare Python"
 
 #: tools/templates/indexcontent.html:23
 msgid "Python HOWTOs"
@@ -187,77 +174,67 @@ msgstr "HOWTO Python"
 
 #: tools/templates/indexcontent.html:24
 msgid "In-depth topic manuals"
-msgstr ""
+msgstr "Manuali di argomenti approfonditi"
 
 #: tools/templates/indexcontent.html:26
-#, fuzzy
 msgid "Installing Python modules"
 msgstr "Installazione dei moduli Python"
 
 #: tools/templates/indexcontent.html:27
 msgid "Third-party modules and PyPI.org"
-msgstr ""
+msgstr "PyPI.org e moduli di terze parti"
 
 #: tools/templates/indexcontent.html:28
-#, fuzzy
 msgid "Distributing Python modules"
 msgstr "Distribuzione dei moduli Python"
 
 #: tools/templates/indexcontent.html:29
-#, fuzzy
 msgid "Publishing modules for use by other people"
-msgstr "pubblicazione di moduli per l'installazione da terzi"
+msgstr "Pubblicazione di moduli per l'uso da parte di altre persone"
 
 #: tools/templates/indexcontent.html:30
-#, fuzzy
 msgid "Extending and embedding"
-msgstr "Estensione e integrazione"
+msgstr "Estendere ed integrare"
 
 #: tools/templates/indexcontent.html:31
-#, fuzzy
 msgid "For C/C++ programmers"
-msgstr "tutorial per programmatori C/C++"
+msgstr "Tutorial per programmatori C/C++"
 
 #: tools/templates/indexcontent.html:32
-#, fuzzy
 msgid "Python's C API"
-msgstr "API Python/C"
+msgstr "L'API C di Python"
 
 #: tools/templates/indexcontent.html:33
 msgid "C API reference"
-msgstr ""
+msgstr "Riferimento all'API C"
 
 #: tools/templates/indexcontent.html:34
 msgid "FAQs"
-msgstr "FAQ"
+msgstr "Le FAQ"
 
 #: tools/templates/indexcontent.html:35
-#, fuzzy
 msgid "Frequently asked questions (with answers!)"
-msgstr "domande frequenti (con risposte!)"
+msgstr "Domande frequenti (con risposte!)"
 
 #: tools/templates/indexcontent.html:39
 msgid "Indices, glossary, and search:"
-msgstr ""
+msgstr "Indici, glossario e ricerca:"
 
 #: tools/templates/indexcontent.html:42
-#, fuzzy
 msgid "Global module index"
 msgstr "Indice globale dei moduli"
 
 #: tools/templates/indexcontent.html:43
 msgid "All modules and libraries"
-msgstr ""
+msgstr "Tutti i moduli e le librerie"
 
 #: tools/templates/indexcontent.html:44
-#, fuzzy
 msgid "General index"
 msgstr "Indice generale"
 
 #: tools/templates/indexcontent.html:45
-#, fuzzy
 msgid "All functions, classes, and terms"
-msgstr "tutte le funzioni, le classi, i termini"
+msgstr "Tutte le funzioni, le classi, i termini"
 
 #: tools/templates/indexcontent.html:46
 msgid "Glossary"
@@ -265,49 +242,41 @@ msgstr "Glossario"
 
 #: tools/templates/indexcontent.html:47
 msgid "Terms explained"
-msgstr ""
+msgstr "Spiegazione dei termini"
 
 #: tools/templates/indexcontent.html:49
 msgid "Search page"
 msgstr "Pagina di Ricerca"
 
 #: tools/templates/indexcontent.html:50
-#, fuzzy
 msgid "Search this documentation"
-msgstr "cerca in questa documentazione"
+msgstr "Cerca in questa documentazione"
 
 #: tools/templates/indexcontent.html:51
-#, fuzzy
 msgid "Complete table of contents"
-msgstr "Indice completo"
+msgstr "Tabella dei contenuti completa"
 
 #: tools/templates/indexcontent.html:52
-#, fuzzy
 msgid "Lists all sections and subsections"
-msgstr "elenca tutte le sezioni e sottosezioni"
+msgstr "Elenca tutte le sezioni e sottosezioni"
 
 #: tools/templates/indexcontent.html:56
-#, fuzzy
 msgid "Project information:"
-msgstr "Meta-informazioni:"
+msgstr "Informazioni sul progetto:"
 
 #: tools/templates/indexcontent.html:59
-#, fuzzy
 msgid "Reporting issues"
 msgstr "Segnalazione di *bug*"
 
 #: tools/templates/indexcontent.html:60
-#, fuzzy
 msgid "Contributing to Docs"
-msgstr "Distribuzione dei moduli Python"
+msgstr "Contribuire alla documentazione"
 
 #: tools/templates/indexcontent.html:61
-#, fuzzy
 msgid "Download the documentation"
-msgstr "Scarica questi documenti"
+msgstr "Scarica questa documentazione"
 
 #: tools/templates/indexcontent.html:63
-#, fuzzy
 msgid "History and license of Python"
 msgstr "Storia e licenza di Python"
 
@@ -333,12 +302,11 @@ msgstr "Documenti per versione"
 
 #: tools/templates/indexsidebar.html:5
 msgid "Stable"
-msgstr ""
+msgstr "Stabile"
 
 #: tools/templates/indexsidebar.html:6
-#, fuzzy
 msgid "In development"
-msgstr "Python 3.8 (in sviluppo)"
+msgstr "In sviluppo"
 
 #: tools/templates/indexsidebar.html:7
 msgid "All versions"
@@ -366,18 +334,19 @@ msgstr "Interventi audio/video"
 
 #: tools/templates/indexsidebar.html:17
 msgid "Python Developer’s Guide"
-msgstr ""
+msgstr "Guida per sviluppatori Python"
 
 #: tools/templates/layout.html:6
 msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
 "    You should upgrade, and read the"
 msgstr ""
+"Questo documento è per una vecchia versione di Python che non è più supportata.\n"
+"    Dovresti aggiornare e leggere"
 
 #: tools/templates/layout.html:8
-#, fuzzy
 msgid "Python documentation for the current stable release"
-msgstr "Benvenuti! Questa è la documentazione di Python %(release)s."
+msgstr "Documentazione di Python per l'attuale versione stabile"
 
 #: tools/templates/layout.html:14
 msgid ""
@@ -385,11 +354,13 @@ msgid ""
 "%(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
+"Questa è una anteprima di distribuzione creata da una <a href=\"%(repository_url)s/pull/"
+"%(pr_id)s\">richiesta di pull</a>.\n"
+"  Per una la documentazione autorevole, vedi"
 
 #: tools/templates/layout.html:16
-#, fuzzy
 msgid "the current stable release"
-msgstr "Benvenuti! Questa è la documentazione di Python %(release)s."
+msgstr "l'attuale versione stabile"
 
 #~ msgid "Parts of the documentation:"
 #~ msgstr "Parti della documentazione:"
