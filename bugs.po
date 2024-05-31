@@ -64,6 +64,8 @@ msgid ""
 "You can also open a discussion item on our `Documentation Discourse forum "
 "<https://discuss.python.org/c/documentation/26>`_."
 msgstr ""
+"È possibile anche aprire un argomento di discussione sul nostro `forum "
+"Discourse sulla documentazione <https://discuss.python.org/c/documentation/26>`_."
 
 #: bugs.rst:25
 msgid ""
@@ -71,6 +73,9 @@ msgid ""
 "documentation, please submit a bug report on the `python-doc-theme bug "
 "tracker <https://github.com/python/python-docs-theme>`_."
 msgstr ""
+"Se dovessi trovare un errore nel tema (HTML / CSS / JavaScript) della "
+"documentazione, ti preghiamo di inviare una segnalazione su `python-doc-"
+"theme bug tracker <https://github.com/python/python-docs-theme>`_."
 
 #: bugs.rst:29
 msgid ""
@@ -99,36 +104,42 @@ msgstr ""
 
 #: bugs.rst:39
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
-msgstr ""
+msgstr "`Issue Tracking <https://devguide.python.org/tracker/>`_"
 
 #: bugs.rst:40
 msgid ""
 "Overview of the process involved in reporting an improvement on the tracker."
-msgstr ""
+msgstr "Panoramica del processo coinvolto nella segnalazione di un miglioramento sul tracker."
 
 #: bugs.rst:42
 msgid ""
 "`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
 msgstr ""
+"`Aiutare con la Documentazione <https://devguide.python.org/docquality/#helping-"
+"with-documentation>`_"
 
 #: bugs.rst:43
 msgid ""
 "Comprehensive guide for individuals that are interested in contributing to "
 "Python documentation."
 msgstr ""
+"Guida completa per le persone interessate a contribuire alla documentazione di Python."
 
 #: bugs.rst:45
 msgid ""
 "`Documentation Translations <https://devguide.python.org/documentation/"
 "translating/>`_"
 msgstr ""
+"`Traduzioni della Documentazione <https://devguide.python.org/documentation/"
+"translating/>`_"
 
 #: bugs.rst:46
 msgid ""
 "A list of GitHub pages for documentation translation and their primary "
 "contacts."
 msgstr ""
+"Un elenco delle pagine GitHub per la traduzione della documentazione e i loro contatti principali."
 
 #: bugs.rst:52
 msgid "Using the Python issue tracker"
@@ -183,13 +194,15 @@ msgstr ""
 
 #: bugs.rst:74
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
-msgstr ""
+msgstr "Il form di invio ha due campi, \"Titolo\" e \"Commento\"."
 
 #: bugs.rst:76
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
 msgstr ""
+"Per il campo \"Titolo\", inserisci una *molto* breve descrizione del problema; "
+"meno di dieci parole è considerato buono."
 
 #: bugs.rst:79
 msgid ""
