@@ -9,17 +9,19 @@ msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-30 08:10+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-05-30 14:38+0200\n"
+"Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: tutorial/whatnow.rst:5
 msgid "What Now?"
-msgstr ""
+msgstr "E adesso?"
 
 #: tutorial/whatnow.rst:7
 msgid ""
@@ -27,16 +29,22 @@ msgid ""
 "--- you should be eager to apply Python to solving your real-world problems. "
 "Where should you go to learn more?"
 msgstr ""
+"Probabilmente la lettura di questo tutorial ha rafforzato il tuo interesse "
+"nell'usare Python --- dovresti essere desideroso di applicare Python alla "
+"risoluzione dei tuoi problemi reali. Dove dovresti andare per imparare di "
+"più?"
 
 #: tutorial/whatnow.rst:11
 msgid ""
 "This tutorial is part of Python's documentation set.   Some other documents "
 "in the set are:"
 msgstr ""
+"Questo tutorial fa parte della documentazione di Python. Altri documenti "
+"disponibili sono:"
 
 #: tutorial/whatnow.rst:14
 msgid ":ref:`library-index`:"
-msgstr ""
+msgstr ":ref:`library-index`:"
 
 #: tutorial/whatnow.rst:16
 msgid ""
@@ -48,12 +56,21 @@ msgid ""
 "other tasks. Skimming through the Library Reference will give you an idea of "
 "what's available."
 msgstr ""
+"Dovresti sfogliare questo manuale, che fornisce materiale di riferimento "
+"completo (anche se conciso) sui tipi, le funzioni e i moduli nella libreria "
+"standard. La distribuzione standard di Python include *molto* codice "
+"aggiuntivo. Ci sono moduli per leggere caselle di posta Unix, recuperare "
+"documenti via HTTP, generare numeri casuali, analizzare opzioni da riga di "
+"comando, comprimere dati e molte altre attività. Sfogliare il Reference "
+"della libreria ti darà un'idea di ciò che è disponibile."
 
 #: tutorial/whatnow.rst:24
 msgid ""
 ":ref:`installing-index` explains how to install additional modules written "
 "by other Python users."
 msgstr ""
+":ref:`installing-index` spiega come installare moduli aggiuntivi scritti da "
+"altri utenti Python."
 
 #: tutorial/whatnow.rst:27
 msgid ""
@@ -61,20 +78,25 @@ msgid ""
 "semantics.  It's heavy reading, but is useful as a complete guide to the "
 "language itself."
 msgstr ""
+":ref:`reference-index`: Una spiegazione dettagliata della sintassi e della "
+"semantica di Python. È una lettura impegnativa, ma è utile come guida "
+"completa al linguaggio stesso."
 
 #: tutorial/whatnow.rst:31
 msgid "More Python resources:"
-msgstr ""
+msgstr "Ulteriori risorse Python:"
 
 #: tutorial/whatnow.rst:33
 msgid ""
 "https://www.python.org:  The major Python web site.  It contains code, "
 "documentation, and pointers to Python-related pages around the web."
 msgstr ""
+"https://www.python.org: Il principale sito web di Python. Contiene codice, "
+"documentazione e collegamenti a pagine relative a Python in tutto il web."
 
 #: tutorial/whatnow.rst:36
 msgid "https://docs.python.org:  Fast access to Python's  documentation."
-msgstr ""
+msgstr "https://docs.python.org: Accesso rapido alla documentazione di Python."
 
 #: tutorial/whatnow.rst:38
 msgid ""
@@ -83,6 +105,10 @@ msgid ""
 "available for download.  Once you begin releasing code, you can register it "
 "here so that others can find it."
 msgstr ""
+"https://pypi.org: L'Indice dei pacchetti Python, precedentemente anche "
+"soprannominato il Cheese Shop [#]_, è un indice di moduli Python creati dagli "
+"utenti che sono disponibili per il download. Una volta che inizi a rilasciare "
+"codice, puoi registrarlo qui in modo che altri possano trovarlo."
 
 #: tutorial/whatnow.rst:43
 msgid ""
@@ -91,12 +117,18 @@ msgid ""
 "Particularly notable contributions are collected in a book also titled "
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
+"https://code.activestate.com/recipes/langs/python/: Il Python Cookbook è una "
+"vasta raccolta di esempi di codice, moduli più grandi e script utili. "
+"Contributi particolarmente notevoli sono raccolti in un libro intitolato "
+"Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 
 #: tutorial/whatnow.rst:48
 msgid ""
 "https://pyvideo.org collects links to Python-related videos from conferences "
 "and user-group meetings."
 msgstr ""
+"https://pyvideo.org raccoglie collegamenti a video relativi a Python da "
+"conferenze e riunioni di gruppi di utenti."
 
 #: tutorial/whatnow.rst:51
 msgid ""
@@ -105,6 +137,10 @@ msgid ""
 "as linear algebra, Fourier transforms, non-linear solvers, random number "
 "distributions, statistical analysis and the like."
 msgstr ""
+"https://scipy.org: Il progetto Scientific Python include moduli "
+"per calcoli e manipolazioni di array veloci e una serie di pacchetti per "
+"attività come l'algebra lineare, le trasformate di Fourier, i risolutori non "
+"lineari, le distribuzioni di numeri casuali, l'analisi statistica e simili."
 
 #: tutorial/whatnow.rst:56
 msgid ""
@@ -116,6 +152,13 @@ msgid ""
 "new features, and announcing new modules. Mailing list archives are "
 "available at https://mail.python.org/pipermail/."
 msgstr ""
+"Per domande e segnalazioni di problemi relativi a Python, puoi inviare un "
+"messaggio al newsgroup :newsgroup:`comp.lang.python`, o inviarli alla mailing "
+"list all'indirizzo python-list@python.org. Il newsgroup e la mailing list sono dei"
+"*gateway*, quindi i messaggi inviati a uno saranno automaticamente inoltrati "
+"all'altro. Ci sono centinaia di messaggi al giorno, che pongono (e rispondono) "
+"domande, suggeriscono nuove funzionalità e annunciano nuovi moduli. Gli "
+"archivi della mailing list sono disponibili su https://mail.python.org/pipermail/."
 
 #: tutorial/whatnow.rst:64
 msgid ""
@@ -124,13 +167,19 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+"Prima di inviare un messaggio, assicurati di controllare l'elenco delle :ref:`Domande "
+"più frequenti <faq-index>` (chiamato anche FAQ). La FAQ risponde a molte delle "
+"domande che vengono poste di nuovo e di nuovo, e potrebbe già contenere la "
+"soluzione per il tuo problema."
 
 #: tutorial/whatnow.rst:70
 msgid "Footnotes"
-msgstr ""
+msgstr "Note a piè di pagina"
 
 #: tutorial/whatnow.rst:71
 msgid ""
 "\"Cheese Shop\" is a Monty Python's sketch: a customer enters a cheese shop, "
 "but whatever cheese he asks for, the clerk says it's missing."
 msgstr ""
+"\"Cheese Shop\" è uno sketch dei Monty Python: un cliente entra in un negozio "
+"di formaggi, ma qualunque formaggio chieda, il commesso dice che è finito."
