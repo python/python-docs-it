@@ -2741,15 +2741,14 @@ msgstr ""
 "``\"ss\"``."
 
 #: library/stdtypes.rst:1643
-#, fuzzy
 msgid ""
 "The casefolding algorithm is `described in section 3.13 'Default Case "
 "Folding' of the Unicode Standard <https://www.unicode.org/versions/"
 "Unicode15.0.0/ch03.pdf>`__."
 msgstr ""
-"L'algoritmo di normalizzazione in minuscolo è `descritto nella sezione 3.13 "
-"'Default Case Folding' dello Standard Unicode <https://www.unicode.org/"
-"versions/Unicode15.1.0/ch03.pdf>`__."
+"L'algoritmo di casefolding è `descritto nella sezione 3.13 'Default Case "
+"Folding' dello Standard Unicode <https://www.unicode.org/versions/"
+"Unicode15.0.0/ch03.pdf>`__."
 
 #: library/stdtypes.rst:1652
 msgid ""
@@ -2975,7 +2974,6 @@ msgstr ""
 "isdecimal()``, ``c.isdigit()``, o ``c.isnumeric()``."
 
 #: library/stdtypes.rst:1803
-#, fuzzy
 msgid ""
 "Return ``True`` if all characters in the string are alphabetic and there is "
 "at least one character, ``False`` otherwise.  Alphabetic characters are "
@@ -2986,14 +2984,14 @@ msgid ""
 "of the Unicode Standard <https://www.unicode.org/versions/Unicode15.0.0/ch04."
 "pdf>`_."
 msgstr ""
-"Restituisce ``True`` se tutti i caratteri della stringa sono alfabetici e "
+"Restituisce ``True`` se tutti i caratteri nella stringa sono alfabetici e "
 "c'è almeno un carattere, ``False`` altrimenti. I caratteri alfabetici sono "
-"quei caratteri definiti nel database dei caratteri Unicode come \"Letter\", "
-"cioè quelli con la proprietà della categoria generale essere uno tra \"Lm\", "
-"\"Lt\", \"Lu\", \"Ll\", o \"Lo\". Si noti che questo è diverso dalla "
-"`proprietà alfabetica definita nella sezione 4.10 'Lettere, Alfabetico, e "
-"Ideografico' dello Standard Unicode <https://www.unicode.org/versions/"
-"Unicode15.1.0/ch04.pdf>`_."
+"quelli definiti nel database dei caratteri Unicode come \"Letter\", cioè "
+"quelli con proprietà di categoria generale essendo una di \"Lm\", \"Lt\", "
+"\"Lu\", \"Ll\", o \"Lo\". Nota che questo è diverso dalla `proprietà "
+"Alfabetica definita nella sezione 4.10 'Letters, Alphabetic, and "
+"Ideographic' dello Standard Unicode <https://www.unicode.org/versions/"
+"Unicode15.0.0/ch04.pdf>`_."
 
 #: library/stdtypes.rst:1814
 msgid ""
@@ -3171,15 +3169,14 @@ msgstr ""
 "[4]_ convertiti in minuscolo."
 
 #: library/stdtypes.rst:1943
-#, fuzzy
 msgid ""
 "The lowercasing algorithm used is `described in section 3.13 'Default Case "
 "Folding' of the Unicode Standard <https://www.unicode.org/versions/"
 "Unicode15.0.0/ch03.pdf>`__."
 msgstr ""
-"L'algoritmo di conversione in minuscolo utilizzato è `descritto nella "
-"sezione 3.13 'Default Case Folding' dello Standard Unicode <https://www."
-"unicode.org/versions/Unicode15.1.0/ch03.pdf>`__."
+"L'algoritmo di conversione in minuscolo usato è `descritto nella sezione "
+"3.13 'Default Case Folding' dello Standard Unicode <https://www.unicode.org/"
+"versions/Unicode15.0.0/ch03.pdf>`__."
 
 #: library/stdtypes.rst:1950
 msgid ""
@@ -3268,15 +3265,14 @@ msgstr ""
 "della stringa originale::"
 
 #: library/stdtypes.rst:2022
-#, fuzzy
 msgid ""
 "Return a copy of the string with all occurrences of substring *old* replaced "
 "by *new*.  If the optional argument *count* is given, only the first *count* "
 "occurrences are replaced."
 msgstr ""
-"Restituisce una copia della sequenza con tutte le occorrenze della "
-"sottosequenza *old* sostituite da *new*. Se viene specificato l'argomento "
-"opzionale *count*, vengono sostituite solo le prime *count* occorrenze."
+"Restituisce una copia della stringa con tutte le occorrenze della "
+"sottostringa *old* sostituite da *new*. Se viene fornito l'argomento "
+"opzionale *count*, solo le prime *count* occorrenze vengono sostituite."
 
 #: library/stdtypes.rst:2029
 msgid ""
@@ -3683,7 +3679,6 @@ msgstr ""
 "esempio \"Lt\" (Lettera, titolo)."
 
 #: library/stdtypes.rst:2289
-#, fuzzy
 msgid ""
 "The uppercasing algorithm used is `described in section 3.13 'Default Case "
 "Folding' of the Unicode Standard <https://www.unicode.org/versions/"
@@ -3691,7 +3686,7 @@ msgid ""
 msgstr ""
 "L'algoritmo di conversione in maiuscolo usato è `descritto nella sezione "
 "3.13 'Default Case Folding' dello Standard Unicode <https://www.unicode.org/"
-"versions/Unicode15.1.0/ch03.pdf>`__."
+"versions/Unicode15.0.0/ch03.pdf>`__."
 
 #: library/stdtypes.rst:2296
 msgid ""
@@ -3729,7 +3724,6 @@ msgstr ""
 "propri compromessi e vantaggi di semplicità, flessibilità e/o estensibilità."
 
 #: library/stdtypes.rst:2335
-#, fuzzy
 msgid ""
 "String objects have one unique built-in operation: the ``%`` operator "
 "(modulo). This is also known as the string *formatting* or *interpolation* "
@@ -3738,12 +3732,12 @@ msgid ""
 "elements of *values*. The effect is similar to using the :c:func:`sprintf` "
 "in the C language."
 msgstr ""
-"Gli oggetti stringa hanno un'operazione integrata unica: l'operatore ``%`` "
-"(modulo). Questo è anche noto come operatore di *formattazione* o "
-"*interpolazione* della stringa. Data ``format % values`` (dove *format* è "
-"una stringa), le specifiche di conversione ``%`` in *format* sono sostituite "
-"con uno o più elementi di *values*. L'effetto è simile all'uso della "
-"funzione :c:func:`sprintf` nel linguaggio C. Per esempio:"
+"Gli oggetti stringa hanno un'unica operazione built-in: l'operatore ``%`` "
+"(modulo). Questo è anche conosciuto come operatore di *formattazione* o "
+"*interpolazione* delle stringhe. Dato ``format % values`` (dove *format* è "
+"una stringa), le specifiche di conversione ``%`` in *format* vengono "
+"sostituite con zero o più elementi di *values*. L'effetto è simile all'uso "
+"della :c:func:`sprintf` nel linguaggio C."
 
 #: library/stdtypes.rst:2341
 msgid ""
