@@ -57,39 +57,35 @@ msgstr ""
 "Python e scrittore di gran parte del contenuto;"
 
 #: about.rst:24
-#, fuzzy
 msgid ""
 "the `Docutils <https://docutils.sourceforge.io/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
 msgstr ""
-"il progetto `Docutils <http://docutils.sourceforge.net/>`_ per la creazione "
-"di reStructuredText e della suite Docutils;"
+"il progetto `Docutils <https://docutils.sourceforge.io/>`_ per la creazione "
+"di reStructuredText e la suite Docutils;"
 
 #: about.rst:26
-#, fuzzy
 msgid ""
 "Fredrik Lundh for his Alternative Python Reference project from which Sphinx "
 "got many good ideas."
 msgstr ""
-"Fredrik Lundh per il suo progetto `Alternative Python Reference <http://"
-"effbot.org/zone/pyref.htm>`_ da cui Sphinx ha preso in prestito molte buone "
-"idee."
+"Fredrik Lundh per il suo progetto Alternative Python Reference da cui Sphinx "
+"ha tratto molte buone idee."
 
 #: about.rst:31
 msgid "Contributors to the Python Documentation"
 msgstr "Volontari che hanno contribuito alla documentazione di Python"
 
 #: about.rst:33
-#, fuzzy
 msgid ""
 "Many people have contributed to the Python language, the Python standard "
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
-"Molte persone hanno contribuito a scrivere il linguaggio Python, la libreria "
-"standard di Python e la documentazione di Python.  Per conoscere un elenco "
-"parziale dei volontari è possibile visitare la pagina :source:`Misc/ACKS`, "
-"presente nel codice sorgente della distribuzione Python."
+"Molte persone hanno contribuito al linguaggio Python, alla libreria standard "
+"di Python e alla documentazione di Python. Vedi :source:`Misc/ACKS` nella "
+"distribuzione del codice sorgente di Python per un elenco parziale dei "
+"contributori."
 
 #: about.rst:37
 msgid ""
