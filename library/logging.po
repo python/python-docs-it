@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -448,22 +448,23 @@ msgstr ""
 msgid "The *stacklevel* parameter was added."
 msgstr ""
 
-#: library/logging.rst:355
-msgid ""
-"Remove the undocumented ``warn()`` method which was an alias to the :meth:"
-"`warning` method."
-msgstr ""
-
-#: library/logging.rst:362
+#: library/logging.rst:358
 msgid ""
 "Logs a message with level :const:`INFO` on this logger. The arguments are "
 "interpreted as for :meth:`debug`."
 msgstr ""
 
-#: library/logging.rst:368
+#: library/logging.rst:364
 msgid ""
 "Logs a message with level :const:`WARNING` on this logger. The arguments are "
 "interpreted as for :meth:`debug`."
+msgstr ""
+
+#: library/logging.rst:367
+msgid ""
+"There is an obsolete method ``warn`` which is functionally identical to "
+"``warning``. As ``warn`` is deprecated, please do not use it - use "
+"``warning`` instead."
 msgstr ""
 
 #: library/logging.rst:373
@@ -1190,11 +1191,11 @@ msgstr ""
 msgid "Attribute name"
 msgstr ""
 
-#: library/logging.rst:1371
+#: library/logging.rst:1354
 msgid "Format"
 msgstr ""
 
-#: library/logging.rst:1371
+#: library/logging.rst:1354
 msgid "Description"
 msgstr ""
 
@@ -1239,7 +1240,7 @@ msgstr ""
 #: library/logging.rst:1005
 msgid ""
 "Time when the :class:`LogRecord` was created (as returned by :func:`time."
-"time_ns` / 1e9)."
+"time`)."
 msgstr ""
 
 #: library/logging.rst:1008
@@ -1499,14 +1500,10 @@ msgstr ""
 #: library/logging.rst:1084
 msgid ""
 "Returns an instance of :class:`LoggerAdapter` initialized with an "
-"underlying :class:`Logger` instance, a dict-like object (*extra*), and a "
-"boolean (*merge_extra*) indicating whether or not the *extra* argument of "
-"individual log calls should be merged with the :class:`LoggerAdapter` extra. "
-"The default behavior is to ignore the *extra* argument of individual log "
-"calls and only use the one of the :class:`LoggerAdapter` instance"
+"underlying :class:`Logger` instance and a dict-like object."
 msgstr ""
 
-#: library/logging.rst:1093
+#: library/logging.rst:1089
 msgid ""
 "Modifies the message and/or keyword arguments passed to a logging call in "
 "order to insert contextual information. This implementation takes the object "
@@ -1515,15 +1512,15 @@ msgid ""
 "(possibly modified) versions of the arguments passed in."
 msgstr ""
 
-#: library/logging.rst:1101
+#: library/logging.rst:1097
 msgid "Delegates to the underlying :attr:`!manager`` on *logger*."
 msgstr ""
 
-#: library/logging.rst:1105
+#: library/logging.rst:1101
 msgid "Delegates to the underlying :meth:`!_log`` method on *logger*."
 msgstr ""
 
-#: library/logging.rst:1107
+#: library/logging.rst:1103
 msgid ""
 "In addition to the above, :class:`LoggerAdapter` supports the following "
 "methods of :class:`Logger`: :meth:`~Logger.debug`, :meth:`~Logger.info`, :"
@@ -1535,34 +1532,24 @@ msgid ""
 "interchangeably."
 msgstr ""
 
-#: library/logging.rst:1118
+#: library/logging.rst:1114
 msgid ""
 "The :meth:`~Logger.isEnabledFor`, :meth:`~Logger.getEffectiveLevel`, :meth:"
 "`~Logger.setLevel` and :meth:`~Logger.hasHandlers` methods were added to :"
 "class:`LoggerAdapter`.  These methods delegate to the underlying logger."
 msgstr ""
 
-#: library/logging.rst:1124
+#: library/logging.rst:1120
 msgid ""
 "Attribute :attr:`!manager` and method :meth:`!_log` were added, which "
 "delegate to the underlying logger and allow adapters to be nested."
 msgstr ""
 
-#: library/logging.rst:1129
-msgid ""
-"Remove the undocumented :meth:`!warn`` method which was an alias to the :"
-"meth:`!warning` method."
-msgstr ""
-
-#: library/logging.rst:1134
-msgid "The *merge_extra* argument was added."
-msgstr ""
-
-#: library/logging.rst:1138
+#: library/logging.rst:1125
 msgid "Thread Safety"
 msgstr ""
 
-#: library/logging.rst:1140
+#: library/logging.rst:1127
 msgid ""
 "The logging module is intended to be thread-safe without any special work "
 "needing to be done by its clients. It achieves this though using threading "
@@ -1571,7 +1558,7 @@ msgid ""
 "O."
 msgstr ""
 
-#: library/logging.rst:1145
+#: library/logging.rst:1132
 msgid ""
 "If you are implementing asynchronous signal handlers using the :mod:`signal` "
 "module, you may not be able to use logging from within such handlers. This "
@@ -1579,17 +1566,17 @@ msgid ""
 "always re-entrant, and so cannot be invoked from such signal handlers."
 msgstr ""
 
-#: library/logging.rst:1152
+#: library/logging.rst:1139
 msgid "Module-Level Functions"
 msgstr ""
 
-#: library/logging.rst:1154
+#: library/logging.rst:1141
 msgid ""
 "In addition to the classes described above, there are a number of module-"
 "level functions."
 msgstr ""
 
-#: library/logging.rst:1160
+#: library/logging.rst:1147
 msgid ""
 "Return a logger with the specified name or, if name is ``None``, return the "
 "root logger of the hierarchy. If specified, the name is typically a dot-"
@@ -1599,14 +1586,14 @@ msgid ""
 "for not doing that, as mentioned in :ref:`logger`."
 msgstr ""
 
-#: library/logging.rst:1167
+#: library/logging.rst:1154
 msgid ""
 "All calls to this function with a given name return the same logger "
 "instance. This means that logger instances never need to be passed between "
 "different parts of an application."
 msgstr ""
 
-#: library/logging.rst:1174
+#: library/logging.rst:1161
 msgid ""
 "Return either the standard :class:`Logger` class, or the last class passed "
 "to :func:`setLoggerClass`. This function may be called from within a new "
@@ -1615,37 +1602,37 @@ msgid ""
 "example::"
 msgstr ""
 
-#: library/logging.rst:1185
+#: library/logging.rst:1172
 msgid "Return a callable which is used to create a :class:`LogRecord`."
 msgstr ""
 
-#: library/logging.rst:1187
+#: library/logging.rst:1174
 msgid ""
 "This function has been provided, along with :func:`setLogRecordFactory`, to "
 "allow developers more control over how the :class:`LogRecord` representing a "
 "logging event is constructed."
 msgstr ""
 
-#: library/logging.rst:1192
+#: library/logging.rst:1179
 msgid ""
 "See :func:`setLogRecordFactory` for more information about the how the "
 "factory is called."
 msgstr ""
 
-#: library/logging.rst:1197
+#: library/logging.rst:1184
 msgid ""
 "This is a convenience function that calls :meth:`Logger.debug`, on the root "
 "logger. The handling of the arguments is in every way identical to what is "
 "described in that method."
 msgstr ""
 
-#: library/logging.rst:1201
+#: library/logging.rst:1188
 msgid ""
 "The only difference is that if the root logger has no handlers, then :func:"
 "`basicConfig` is called, prior to calling ``debug`` on the root logger."
 msgstr ""
 
-#: library/logging.rst:1204
+#: library/logging.rst:1191
 msgid ""
 "For very short scripts or quick demonstrations of ``logging`` facilities, "
 "``debug`` and the other module-level functions may be convenient. However, "
@@ -1655,44 +1642,38 @@ msgid ""
 "described at the beginnning of this documentation."
 msgstr ""
 
-#: library/logging.rst:1214
+#: library/logging.rst:1201
 msgid ""
 "Logs a message with level :const:`INFO` on the root logger. The arguments "
 "and behavior are otherwise the same as for :func:`debug`."
 msgstr ""
 
-#: library/logging.rst:1220
+#: library/logging.rst:1207
 msgid ""
 "Logs a message with level :const:`WARNING` on the root logger. The arguments "
 "and behavior are otherwise the same as for :func:`debug`."
 msgstr ""
 
-#: library/logging.rst:1223
+#: library/logging.rst:1210
 msgid ""
 "There is an obsolete function ``warn`` which is functionally identical to "
 "``warning``. As ``warn`` is deprecated, please do not use it - use "
 "``warning`` instead."
 msgstr ""
 
-#: library/logging.rst:1227
-msgid ""
-"Remove the undocumented ``warn()`` function which was an alias to the :func:"
-"`warning` function."
-msgstr ""
-
-#: library/logging.rst:1234
+#: library/logging.rst:1217
 msgid ""
 "Logs a message with level :const:`ERROR` on the root logger. The arguments "
 "and behavior are otherwise the same as for :func:`debug`."
 msgstr ""
 
-#: library/logging.rst:1240
+#: library/logging.rst:1223
 msgid ""
 "Logs a message with level :const:`CRITICAL` on the root logger. The "
 "arguments and behavior are otherwise the same as for :func:`debug`."
 msgstr ""
 
-#: library/logging.rst:1246
+#: library/logging.rst:1229
 msgid ""
 "Logs a message with level :const:`ERROR` on the root logger. The arguments "
 "and behavior are otherwise the same as for :func:`debug`. Exception info is "
@@ -1700,13 +1681,13 @@ msgid ""
 "exception handler."
 msgstr ""
 
-#: library/logging.rst:1252
+#: library/logging.rst:1235
 msgid ""
 "Logs a message with level *level* on the root logger. The arguments and "
 "behavior are otherwise the same as for :func:`debug`."
 msgstr ""
 
-#: library/logging.rst:1257
+#: library/logging.rst:1240
 msgid ""
 "Provides an overriding level *level* for all loggers which takes precedence "
 "over the logger's own level. When the need arises to temporarily throttle "
@@ -1720,7 +1701,7 @@ msgid ""
 "individual loggers."
 msgstr ""
 
-#: library/logging.rst:1268
+#: library/logging.rst:1251
 msgid ""
 "Note that if you have defined any custom logging level higher than "
 "``CRITICAL`` (this is not recommended), you won't be able to rely on the "
@@ -1728,13 +1709,13 @@ msgid ""
 "a suitable value."
 msgstr ""
 
-#: library/logging.rst:1273
+#: library/logging.rst:1256
 msgid ""
 "The *level* parameter was defaulted to level ``CRITICAL``. See :issue:"
 "`28524` for more information about this change."
 msgstr ""
 
-#: library/logging.rst:1279
+#: library/logging.rst:1262
 msgid ""
 "Associates level *level* with text *levelName* in an internal dictionary, "
 "which is used to map numeric levels to a textual representation, for example "
@@ -1744,24 +1725,24 @@ msgid ""
 "and they should increase in increasing order of severity."
 msgstr ""
 
-#: library/logging.rst:1286
+#: library/logging.rst:1269
 msgid ""
 "If you are thinking of defining your own levels, please see the section on :"
 "ref:`custom-levels`."
 msgstr ""
 
-#: library/logging.rst:1291
+#: library/logging.rst:1274
 msgid ""
 "Returns a mapping from level names to their corresponding logging levels. "
 "For example, the string \"CRITICAL\" maps to :const:`CRITICAL`. The returned "
 "mapping is copied from an internal mapping on each call to this function."
 msgstr ""
 
-#: library/logging.rst:1299
+#: library/logging.rst:1282
 msgid "Returns the textual or numeric representation of logging level *level*."
 msgstr ""
 
-#: library/logging.rst:1301
+#: library/logging.rst:1284
 msgid ""
 "If *level* is one of the predefined levels :const:`CRITICAL`, :const:"
 "`ERROR`, :const:`WARNING`, :const:`INFO` or :const:`DEBUG` then you get the "
@@ -1771,20 +1752,20 @@ msgid ""
 "the corresponding string representation is returned."
 msgstr ""
 
-#: library/logging.rst:1308
+#: library/logging.rst:1291
 msgid ""
 "The *level* parameter also accepts a string representation of the level such "
 "as 'INFO'. In such cases, this functions returns the corresponding numeric "
 "value of the level."
 msgstr ""
 
-#: library/logging.rst:1312
+#: library/logging.rst:1295
 msgid ""
 "If no matching numeric or string value is passed in, the string 'Level %s' % "
 "level is returned."
 msgstr ""
 
-#: library/logging.rst:1315
+#: library/logging.rst:1298
 msgid ""
 "Levels are internally integers (as they need to be compared in the logging "
 "logic). This function is used to convert between an integer level and the "
@@ -1793,7 +1774,7 @@ msgid ""
 "vice versa."
 msgstr ""
 
-#: library/logging.rst:1321
+#: library/logging.rst:1304
 msgid ""
 "In Python versions earlier than 3.4, this function could also be passed a "
 "text level, and would return the corresponding numeric value of the level. "
@@ -1801,17 +1782,17 @@ msgid ""
 "Python 3.4, but reinstated in 3.4.2 due to retain backward compatibility."
 msgstr ""
 
-#: library/logging.rst:1329
+#: library/logging.rst:1312
 msgid ""
 "Returns a handler with the specified *name*, or ``None`` if there is no "
 "handler with that name."
 msgstr ""
 
-#: library/logging.rst:1336
+#: library/logging.rst:1319
 msgid "Returns an immutable set of all known handler names."
 msgstr ""
 
-#: library/logging.rst:1342
+#: library/logging.rst:1325
 msgid ""
 "Creates and returns a new :class:`LogRecord` instance whose attributes are "
 "defined by *attrdict*. This function is useful for taking a pickled :class:"
@@ -1819,7 +1800,7 @@ msgid ""
 "as a :class:`LogRecord` instance at the receiving end."
 msgstr ""
 
-#: library/logging.rst:1350
+#: library/logging.rst:1333
 msgid ""
 "Does basic configuration for the logging system by creating a :class:"
 "`StreamHandler` with a default :class:`Formatter` and adding it to the root "
@@ -1828,13 +1809,13 @@ msgid ""
 "no handlers are defined for the root logger."
 msgstr ""
 
-#: library/logging.rst:1356
+#: library/logging.rst:1339
 msgid ""
 "This function does nothing if the root logger already has handlers "
 "configured, unless the keyword argument *force* is set to ``True``."
 msgstr ""
 
-#: library/logging.rst:1359
+#: library/logging.rst:1342
 msgid ""
 "This function should be called from the main thread before other threads are "
 "started. In versions of Python prior to 2.7.1 and 3.2, if this function is "
@@ -1843,54 +1824,54 @@ msgid ""
 "unexpected results such as messages being duplicated in the log."
 msgstr ""
 
-#: library/logging.rst:1366
+#: library/logging.rst:1349
 msgid "The following keyword arguments are supported."
 msgstr ""
 
-#: library/logging.rst:1373
+#: library/logging.rst:1356
 msgid "*filename*"
 msgstr ""
 
-#: library/logging.rst:1373
+#: library/logging.rst:1356
 msgid ""
 "Specifies that a :class:`FileHandler` be created, using the specified "
 "filename, rather than a :class:`StreamHandler`."
 msgstr ""
 
-#: library/logging.rst:1377
+#: library/logging.rst:1360
 msgid "*filemode*"
 msgstr ""
 
-#: library/logging.rst:1377
+#: library/logging.rst:1360
 msgid ""
 "If *filename* is specified, open the file in this :ref:`mode <filemodes>`. "
 "Defaults to ``'a'``."
 msgstr ""
 
-#: library/logging.rst:1381
+#: library/logging.rst:1364
 msgid "*format*"
 msgstr ""
 
-#: library/logging.rst:1381
+#: library/logging.rst:1364
 msgid ""
 "Use the specified format string for the handler. Defaults to attributes "
 "``levelname``, ``name`` and ``message`` separated by colons."
 msgstr ""
 
-#: library/logging.rst:1386
+#: library/logging.rst:1369
 msgid "*datefmt*"
 msgstr ""
 
-#: library/logging.rst:1386
+#: library/logging.rst:1369
 msgid ""
 "Use the specified date/time format, as accepted by :func:`time.strftime`."
 msgstr ""
 
-#: library/logging.rst:1389
+#: library/logging.rst:1372
 msgid "*style*"
 msgstr ""
 
-#: library/logging.rst:1389
+#: library/logging.rst:1372
 msgid ""
 "If *format* is specified, use this style for the format string. One of "
 "``'%'``, ``'{'`` or ``'$'`` for :ref:`printf-style <old-string-"
@@ -1898,30 +1879,30 @@ msgid ""
 "Defaults to ``'%'``."
 msgstr ""
 
-#: library/logging.rst:1397
+#: library/logging.rst:1380
 msgid "*level*"
 msgstr ""
 
-#: library/logging.rst:1397
+#: library/logging.rst:1380
 msgid "Set the root logger level to the specified :ref:`level <levels>`."
 msgstr ""
 
-#: library/logging.rst:1400
+#: library/logging.rst:1383
 msgid "*stream*"
 msgstr ""
 
-#: library/logging.rst:1400
+#: library/logging.rst:1383
 msgid ""
 "Use the specified stream to initialize the :class:`StreamHandler`. Note that "
 "this argument is incompatible with *filename* - if both are present, a "
 "``ValueError`` is raised."
 msgstr ""
 
-#: library/logging.rst:1406
+#: library/logging.rst:1389
 msgid "*handlers*"
 msgstr ""
 
-#: library/logging.rst:1406
+#: library/logging.rst:1389
 msgid ""
 "If specified, this should be an iterable of already created handlers to add "
 "to the root logger. Any handlers which don't already have a formatter set "
@@ -1930,33 +1911,33 @@ msgid ""
 "present, a ``ValueError`` is raised."
 msgstr ""
 
-#: library/logging.rst:1415
+#: library/logging.rst:1398
 msgid "*force*"
 msgstr ""
 
-#: library/logging.rst:1415
+#: library/logging.rst:1398
 msgid ""
 "If this keyword argument is specified as true, any existing handlers "
 "attached to the root logger are removed and closed, before carrying out the "
 "configuration as specified by the other arguments."
 msgstr ""
 
-#: library/logging.rst:1421
+#: library/logging.rst:1404
 msgid "*encoding*"
 msgstr ""
 
-#: library/logging.rst:1421
+#: library/logging.rst:1404
 msgid ""
 "If this keyword argument is specified along with *filename*, its value is "
 "used when the :class:`FileHandler` is created, and thus used when opening "
 "the output file."
 msgstr ""
 
-#: library/logging.rst:1426
+#: library/logging.rst:1409
 msgid "*errors*"
 msgstr ""
 
-#: library/logging.rst:1426
+#: library/logging.rst:1409
 msgid ""
 "If this keyword argument is specified along with *filename*, its value is "
 "used when the :class:`FileHandler` is created, and thus used when opening "
@@ -1965,39 +1946,39 @@ msgid ""
 "`open`, which means that it will be treated the same as passing 'errors'."
 msgstr ""
 
-#: library/logging.rst:1437
+#: library/logging.rst:1420
 msgid "The *style* argument was added."
 msgstr ""
 
-#: library/logging.rst:1440
+#: library/logging.rst:1423
 msgid ""
 "The *handlers* argument was added. Additional checks were added to catch "
 "situations where incompatible arguments are specified (e.g. *handlers* "
 "together with *stream* or *filename*, or *stream* together with *filename*)."
 msgstr ""
 
-#: library/logging.rst:1446
+#: library/logging.rst:1429
 msgid "The *force* argument was added."
 msgstr ""
 
-#: library/logging.rst:1449
+#: library/logging.rst:1432
 msgid "The *encoding* and *errors* arguments were added."
 msgstr ""
 
-#: library/logging.rst:1454
+#: library/logging.rst:1437
 msgid ""
 "Informs the logging system to perform an orderly shutdown by flushing and "
 "closing all handlers. This should be called at application exit and no "
 "further use of the logging system should be made after this call."
 msgstr ""
 
-#: library/logging.rst:1458
+#: library/logging.rst:1441
 msgid ""
 "When the logging module is imported, it registers this function as an exit "
 "handler (see :mod:`atexit`), so normally there's no need to do that manually."
 msgstr ""
 
-#: library/logging.rst:1465
+#: library/logging.rst:1448
 msgid ""
 "Tells the logging system to use the class *klass* when instantiating a "
 "logger. The class should define :meth:`!__init__` such that only a name "
@@ -2009,32 +1990,32 @@ msgid ""
 "loggers."
 msgstr ""
 
-#: library/logging.rst:1476
+#: library/logging.rst:1459
 msgid "Set a callable which is used to create a :class:`LogRecord`."
 msgstr ""
 
-#: library/logging.rst:1478
+#: library/logging.rst:1461
 msgid "The factory callable to be used to instantiate a log record."
 msgstr ""
 
-#: library/logging.rst:1480
+#: library/logging.rst:1463
 msgid ""
 "This function has been provided, along with :func:`getLogRecordFactory`, to "
 "allow developers more control over how the :class:`LogRecord` representing a "
 "logging event is constructed."
 msgstr ""
 
-#: library/logging.rst:1485
+#: library/logging.rst:1468
 msgid "The factory has the following signature:"
 msgstr ""
 
-#: library/logging.rst:1487
+#: library/logging.rst:1470
 msgid ""
 "``factory(name, level, fn, lno, msg, args, exc_info, func=None, sinfo=None, "
 "**kwargs)``"
 msgstr ""
 
-#: library/logging.rst:1489
+#: library/logging.rst:1472
 msgid "The logger name."
 msgstr ""
 
@@ -2042,7 +2023,7 @@ msgstr ""
 msgid "level"
 msgstr ""
 
-#: library/logging.rst:1490
+#: library/logging.rst:1473
 msgid "The logging level (numeric)."
 msgstr ""
 
@@ -2050,7 +2031,7 @@ msgstr ""
 msgid "fn"
 msgstr ""
 
-#: library/logging.rst:1491
+#: library/logging.rst:1474
 msgid "The full pathname of the file where the logging call was made."
 msgstr ""
 
@@ -2058,19 +2039,19 @@ msgstr ""
 msgid "lno"
 msgstr ""
 
-#: library/logging.rst:1492
+#: library/logging.rst:1475
 msgid "The line number in the file where the logging call was made."
 msgstr ""
 
-#: library/logging.rst:1493
+#: library/logging.rst:1476
 msgid "The logging message."
 msgstr ""
 
-#: library/logging.rst:1494
+#: library/logging.rst:1477
 msgid "The arguments for the logging message."
 msgstr ""
 
-#: library/logging.rst:1495
+#: library/logging.rst:1478
 msgid "An exception tuple, or ``None``."
 msgstr ""
 
@@ -2078,7 +2059,7 @@ msgstr ""
 msgid "func"
 msgstr ""
 
-#: library/logging.rst:1496
+#: library/logging.rst:1479
 msgid "The name of the function or method which invoked the logging call."
 msgstr ""
 
@@ -2086,7 +2067,7 @@ msgstr ""
 msgid "sinfo"
 msgstr ""
 
-#: library/logging.rst:1498
+#: library/logging.rst:1481
 msgid ""
 "A stack traceback such as is provided by :func:`traceback.print_stack`, "
 "showing the call hierarchy."
@@ -2096,15 +2077,15 @@ msgstr ""
 msgid "kwargs"
 msgstr ""
 
-#: library/logging.rst:1500
+#: library/logging.rst:1483
 msgid "Additional keyword arguments."
 msgstr ""
 
-#: library/logging.rst:1504
+#: library/logging.rst:1487
 msgid "Module-Level Attributes"
 msgstr ""
 
-#: library/logging.rst:1508
+#: library/logging.rst:1491
 msgid ""
 "A \"handler of last resort\" is available through this attribute. This is a :"
 "class:`StreamHandler` writing to ``sys.stderr`` with a level of ``WARNING``, "
@@ -2115,15 +2096,15 @@ msgid ""
 "reason, ``lastResort`` can be set to ``None``."
 msgstr ""
 
-#: library/logging.rst:1520
+#: library/logging.rst:1503
 msgid "Used to see if exceptions during handling should be propagated."
 msgstr ""
 
-#: library/logging.rst:1522
+#: library/logging.rst:1505
 msgid "Default: ``True``."
 msgstr ""
 
-#: library/logging.rst:1524
+#: library/logging.rst:1507
 msgid ""
 "If :data:`raiseExceptions` is ``False``, exceptions get silently ignored. "
 "This is what is mostly wanted for a logging system - most users will not "
@@ -2131,22 +2112,22 @@ msgid ""
 "application errors."
 msgstr ""
 
-#: library/logging.rst:1531
+#: library/logging.rst:1514
 msgid "Integration with the warnings module"
 msgstr ""
 
-#: library/logging.rst:1533
+#: library/logging.rst:1516
 msgid ""
 "The :func:`captureWarnings` function can be used to integrate :mod:`logging` "
 "with the :mod:`warnings` module."
 msgstr ""
 
-#: library/logging.rst:1538
+#: library/logging.rst:1521
 msgid ""
 "This function is used to turn the capture of warnings by logging on and off."
 msgstr ""
 
-#: library/logging.rst:1541
+#: library/logging.rst:1524
 msgid ""
 "If *capture* is ``True``, warnings issued by the :mod:`warnings` module will "
 "be redirected to the logging system. Specifically, a warning will be "
@@ -2155,46 +2136,46 @@ msgid ""
 "`WARNING`."
 msgstr ""
 
-#: library/logging.rst:1546
+#: library/logging.rst:1529
 msgid ""
 "If *capture* is ``False``, the redirection of warnings to the logging system "
 "will stop, and warnings will be redirected to their original destinations (i."
 "e. those in effect before ``captureWarnings(True)`` was called)."
 msgstr ""
 
-#: library/logging.rst:1553
+#: library/logging.rst:1536
 msgid "Module :mod:`logging.config`"
 msgstr ""
 
-#: library/logging.rst:1554
+#: library/logging.rst:1537
 msgid "Configuration API for the logging module."
 msgstr ""
 
-#: library/logging.rst:1556
+#: library/logging.rst:1539
 msgid "Module :mod:`logging.handlers`"
 msgstr ""
 
-#: library/logging.rst:1557
+#: library/logging.rst:1540
 msgid "Useful handlers included with the logging module."
 msgstr ""
 
-#: library/logging.rst:1559
+#: library/logging.rst:1542
 msgid ":pep:`282` - A Logging System"
 msgstr ""
 
-#: library/logging.rst:1560
+#: library/logging.rst:1543
 msgid ""
 "The proposal which described this feature for inclusion in the Python "
 "standard library."
 msgstr ""
 
-#: library/logging.rst:1563
+#: library/logging.rst:1546
 msgid ""
 "`Original Python logging package <https://old.red-dove.com/python_logging."
 "html>`_"
 msgstr ""
 
-#: library/logging.rst:1564
+#: library/logging.rst:1547
 msgid ""
 "This is the original source for the :mod:`logging` package.  The version of "
 "the package available from this site is suitable for use with Python 1.5.2, "

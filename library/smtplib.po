@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,13 +34,14 @@ msgid ""
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not WASI."
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
-"availability` for more information."
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
 msgstr ""
 
 #: library/smtplib.rst:26
@@ -76,7 +77,7 @@ msgid ""
 "keyword:`!with` statement exits.  E.g.::"
 msgstr ""
 
-#: library/smtplib.rst:69
+#: library/smtplib.rst:70
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``smtplib.send`` with arguments "
 "``self``, ``data``."
@@ -308,7 +309,7 @@ msgid ""
 "connection response."
 msgstr ""
 
-#: library/smtplib.rst:263
+#: library/smtplib.rst:264
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``smtplib.connect`` with "
 "arguments ``self``, ``host``, ``port``."

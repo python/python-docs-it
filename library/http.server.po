@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,13 +36,14 @@ msgid ""
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not WASI."
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
-"availability` for more information."
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
 msgstr ""
 
 #: library/http.server.rst:27
@@ -610,46 +611,31 @@ msgid ""
 "reasons.  Problems with the CGI script will be translated to error 403."
 msgstr ""
 
-#: library/http.server.rst:507
-msgid ""
-":class:`CGIHTTPRequestHandler` is being removed in 3.15.  CGI has not been "
-"considered a good way to do things for well over a decade. This code has "
-"been unmaintained for a while now and sees very little practical use. "
-"Retaining it could lead to further :ref:`security considerations <http."
-"server-security>`."
-msgstr ""
-
-#: library/http.server.rst:513
+#: library/http.server.rst:505
 msgid ""
 ":class:`CGIHTTPRequestHandler` can be enabled in the command line by passing "
 "the ``--cgi`` option::"
 msgstr ""
 
-#: library/http.server.rst:520
-msgid ""
-":mod:`http.server` command line ``--cgi`` support is being removed because :"
-"class:`CGIHTTPRequestHandler` is being removed."
-msgstr ""
-
-#: library/http.server.rst:525
+#: library/http.server.rst:512
 msgid ""
 ":class:`CGIHTTPRequestHandler` and the ``--cgi`` command line option are not "
 "intended for use by untrusted clients and may be vulnerable to exploitation. "
 "Always use within a secure environment."
 msgstr ""
 
-#: library/http.server.rst:532
+#: library/http.server.rst:519
 msgid "Security Considerations"
 msgstr ""
 
-#: library/http.server.rst:536
+#: library/http.server.rst:523
 msgid ""
 ":class:`SimpleHTTPRequestHandler` will follow symbolic links when handling "
 "requests, this makes it possible for files outside of the specified "
 "directory to be served."
 msgstr ""
 
-#: library/http.server.rst:540
+#: library/http.server.rst:527
 msgid ""
 "Earlier versions of Python did not scrub control characters from the log "
 "messages emitted to stderr from ``python -m http.server`` or the default :"
@@ -658,7 +644,7 @@ msgid ""
 "codes to your terminal."
 msgstr ""
 
-#: library/http.server.rst:546
+#: library/http.server.rst:533
 msgid "Control characters are scrubbed in stderr logs."
 msgstr ""
 
@@ -686,10 +672,10 @@ msgstr ""
 msgid "httpd"
 msgstr ""
 
-#: library/http.server.rst:534
+#: library/http.server.rst:521
 msgid "http.server"
 msgstr ""
 
-#: library/http.server.rst:534
+#: library/http.server.rst:521
 msgid "security"
 msgstr ""

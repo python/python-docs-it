@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #: library/grp.rst:13
-msgid ":ref:`Availability <availability>`: Unix, not WASI, not iOS."
+msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
 msgstr ""
 
 #: library/grp.rst:15
@@ -140,4 +140,12 @@ msgstr ""
 
 #: library/grp.rst:65
 msgid "An interface to the user database, similar to this."
+msgstr ""
+
+#: library/grp.rst:67
+msgid "Module :mod:`spwd`"
+msgstr ""
+
+#: library/grp.rst:68
+msgid "An interface to the shadow password database, similar to this."
 msgstr ""

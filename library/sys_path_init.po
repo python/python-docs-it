@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,13 +171,14 @@ msgid ""
 "If Python is embedded within another application :c:func:"
 "`Py_InitializeFromConfig` and the :c:type:`PyConfig` structure can be used "
 "to initialize Python. The path specific details are described at :ref:`init-"
-"path-config`."
-msgstr ""
-
-#: library/sys_path_init.rst:106
-msgid ":ref:`windows_finding_modules` for detailed Windows notes."
+"path-config`. Alternatively the older :c:func:`Py_SetPath` can be used to "
+"bypass the initialization of the module search path."
 msgstr ""
 
 #: library/sys_path_init.rst:107
+msgid ":ref:`windows_finding_modules` for detailed Windows notes."
+msgstr ""
+
+#: library/sys_path_init.rst:108
 msgid ":ref:`using-on-unix` for Unix details."
 msgstr ""

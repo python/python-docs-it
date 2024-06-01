@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,77 +154,73 @@ msgid ":mod:`quopri`"
 msgstr ""
 
 #: library/cmdline.rst:39
-msgid ":ref:`random <random-cli>`"
-msgstr ""
-
-#: library/cmdline.rst:40
 msgid ":mod:`runpy`"
 msgstr ""
 
-#: library/cmdline.rst:41
+#: library/cmdline.rst:40
 msgid ":ref:`site <site-commandline>`"
 msgstr ""
 
-#: library/cmdline.rst:42
+#: library/cmdline.rst:41
 msgid ":ref:`sqlite3 <sqlite3-cli>`"
 msgstr ""
 
-#: library/cmdline.rst:43
+#: library/cmdline.rst:42
 msgid ":ref:`sysconfig <sysconfig-cli>`"
 msgstr ""
 
-#: library/cmdline.rst:44
+#: library/cmdline.rst:43
 msgid ":mod:`tabnanny`"
 msgstr ""
 
-#: library/cmdline.rst:45
+#: library/cmdline.rst:44
 msgid ":ref:`tarfile <tarfile-commandline>`"
 msgstr ""
 
-#: library/cmdline.rst:46
+#: library/cmdline.rst:45
 msgid ":mod:`!this`"
 msgstr ""
 
-#: library/cmdline.rst:47
+#: library/cmdline.rst:46
 msgid ":ref:`timeit <timeit-command-line-interface>`"
 msgstr ""
 
-#: library/cmdline.rst:48
+#: library/cmdline.rst:47
 msgid ":ref:`tokenize <tokenize-cli>`"
 msgstr ""
 
-#: library/cmdline.rst:49
+#: library/cmdline.rst:48
 msgid ":ref:`trace <trace-cli>`"
 msgstr ""
 
-#: library/cmdline.rst:50
+#: library/cmdline.rst:49
 msgid ":mod:`turtledemo`"
 msgstr ""
 
-#: library/cmdline.rst:51
+#: library/cmdline.rst:50
 msgid ":ref:`unittest <unittest-command-line-interface>`"
 msgstr ""
 
-#: library/cmdline.rst:52
+#: library/cmdline.rst:51
 msgid ":ref:`uuid <uuid-cli>`"
 msgstr ""
 
-#: library/cmdline.rst:53
+#: library/cmdline.rst:52
 msgid ":mod:`venv`"
 msgstr ""
 
-#: library/cmdline.rst:54
+#: library/cmdline.rst:53
 msgid ":mod:`webbrowser`"
 msgstr ""
 
-#: library/cmdline.rst:55
+#: library/cmdline.rst:54
 msgid ":ref:`zipapp <zipapp-command-line-interface>`"
 msgstr ""
 
-#: library/cmdline.rst:56
+#: library/cmdline.rst:55
 msgid ":ref:`zipfile <zipfile-commandline>`"
 msgstr ""
 
-#: library/cmdline.rst:58
+#: library/cmdline.rst:57
 msgid "See also the :ref:`Python command-line interface <using-on-general>`."
 msgstr ""

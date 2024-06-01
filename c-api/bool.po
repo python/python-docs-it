@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,22 +43,22 @@ msgstr ""
 
 #: c-api/bool.rst:28
 msgid ""
-"The Python ``False`` object.  This object has no methods and is :term:"
-"`immortal`."
+"The Python ``False`` object.  This object has no methods and is `immortal "
+"<https://peps.python.org/pep-0683/>`_."
 msgstr ""
 
 #: c-api/bool.rst:31
-msgid ":c:data:`Py_False` is :term:`immortal`."
+msgid ":c:data:`Py_False` is immortal."
 msgstr ""
 
 #: c-api/bool.rst:37
 msgid ""
-"The Python ``True`` object.  This object has no methods and is :term:"
-"`immortal`."
+"The Python ``True`` object.  This object has no methods and is `immortal "
+"<https://peps.python.org/pep-0683/>`_."
 msgstr ""
 
 #: c-api/bool.rst:40
-msgid ":c:data:`Py_True` is :term:`immortal`."
+msgid ":c:data:`Py_True` is immortal."
 msgstr ""
 
 #: c-api/bool.rst:46

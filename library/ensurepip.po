@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,16 +65,15 @@ msgstr ""
 msgid "The original rationale and specification for this module."
 msgstr ""
 
-#: includes/wasm-ios-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not WASI, not iOS."
+#: includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
-#: includes/wasm-ios-notavail.rst:5
+#: includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms, or "
-"on iOS. See :ref:`wasm-availability` for more information on WASM "
-"availability; see :ref:`iOS-availability` for more information on iOS "
-"availability."
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
 msgstr ""
 
 #: library/ensurepip.rst:44
@@ -208,7 +207,7 @@ msgid ""
 "bootstrapping operation."
 msgstr ""
 
-#: library/ensurepip.rst:137
+#: library/ensurepip.rst:136
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ensurepip.bootstrap`` with "
 "argument ``root``."

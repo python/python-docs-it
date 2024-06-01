@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,14 +148,10 @@ msgstr ""
 #: library/_thread.rst:123
 msgid ""
 ":ref:`Availability <availability>`: Windows, FreeBSD, Linux, macOS, OpenBSD, "
-"NetBSD, AIX, DragonFlyBSD, GNU/kFreeBSD."
+"NetBSD, AIX, DragonFlyBSD."
 msgstr ""
 
-#: library/_thread.rst:127
-msgid "Added support for GNU/kFreeBSD."
-msgstr ""
-
-#: library/_thread.rst:133
+#: library/_thread.rst:130
 msgid ""
 "Return the thread stack size used when creating new threads.  The optional "
 "*size* argument specifies the stack size to be used for subsequently created "
@@ -174,26 +170,26 @@ msgid ""
 "information)."
 msgstr ""
 
-#: library/_thread.rst:148
+#: library/_thread.rst:145
 msgid ":ref:`Availability <availability>`: Windows, pthreads."
 msgstr ""
 
-#: library/_thread.rst:150
+#: library/_thread.rst:147
 msgid "Unix platforms with POSIX threads support."
 msgstr ""
 
-#: library/_thread.rst:155
+#: library/_thread.rst:152
 msgid ""
 "The maximum value allowed for the *timeout* parameter of :meth:`Lock.acquire "
 "<threading.Lock.acquire>`. Specifying a timeout greater than this value will "
 "raise an :exc:`OverflowError`."
 msgstr ""
 
-#: library/_thread.rst:162
+#: library/_thread.rst:159
 msgid "Lock objects have the following methods:"
 msgstr ""
 
-#: library/_thread.rst:167
+#: library/_thread.rst:164
 msgid ""
 "Without any optional argument, this method acquires the lock "
 "unconditionally, if necessary waiting until it is released by another thread "
@@ -201,7 +197,7 @@ msgid ""
 "existence)."
 msgstr ""
 
-#: library/_thread.rst:171
+#: library/_thread.rst:168
 msgid ""
 "If the *blocking* argument is present, the action depends on its value: if "
 "it is false, the lock is only acquired if it can be acquired immediately "
@@ -209,7 +205,7 @@ msgid ""
 "as above."
 msgstr ""
 
-#: library/_thread.rst:176
+#: library/_thread.rst:173
 msgid ""
 "If the floating-point *timeout* argument is present and positive, it "
 "specifies the maximum wait time in seconds before returning.  A negative "
@@ -217,70 +213,70 @@ msgid ""
 "*timeout* if *blocking* is false."
 msgstr ""
 
-#: library/_thread.rst:181
+#: library/_thread.rst:178
 msgid ""
 "The return value is ``True`` if the lock is acquired successfully, ``False`` "
 "if not."
 msgstr ""
 
-#: library/_thread.rst:184
+#: library/_thread.rst:181
 msgid "The *timeout* parameter is new."
 msgstr ""
 
-#: library/_thread.rst:187
+#: library/_thread.rst:184
 msgid "Lock acquires can now be interrupted by signals on POSIX."
 msgstr ""
 
-#: library/_thread.rst:193
+#: library/_thread.rst:190
 msgid ""
 "Releases the lock.  The lock must have been acquired earlier, but not "
 "necessarily by the same thread."
 msgstr ""
 
-#: library/_thread.rst:199
+#: library/_thread.rst:196
 msgid ""
 "Return the status of the lock: ``True`` if it has been acquired by some "
 "thread, ``False`` if not."
 msgstr ""
 
-#: library/_thread.rst:202
+#: library/_thread.rst:199
 msgid ""
 "In addition to these methods, lock objects can also be used via the :keyword:"
 "`with` statement, e.g.::"
 msgstr ""
 
-#: library/_thread.rst:212
+#: library/_thread.rst:209
 msgid "**Caveats:**"
 msgstr ""
 
-#: library/_thread.rst:216
+#: library/_thread.rst:213
 msgid ""
 "Threads interact strangely with interrupts: the :exc:`KeyboardInterrupt` "
 "exception will be received by an arbitrary thread.  (When the :mod:`signal` "
 "module is available, interrupts always go to the main thread.)"
 msgstr ""
 
-#: library/_thread.rst:220
+#: library/_thread.rst:217
 msgid ""
 "Calling :func:`sys.exit` or raising the :exc:`SystemExit` exception is "
 "equivalent to calling :func:`_thread.exit`."
 msgstr ""
 
-#: library/_thread.rst:223
+#: library/_thread.rst:220
 msgid ""
 "It is not possible to interrupt the :meth:`~threading.Lock.acquire` method "
 "on a lock --- the :exc:`KeyboardInterrupt` exception will happen after the "
 "lock has been acquired."
 msgstr ""
 
-#: library/_thread.rst:227
+#: library/_thread.rst:224
 msgid ""
 "When the main thread exits, it is system defined whether the other threads "
 "survive.  On most systems, they are killed without executing :keyword:"
 "`try` ... :keyword:`finally` clauses or executing object destructors."
 msgstr ""
 
-#: library/_thread.rst:232
+#: library/_thread.rst:229
 msgid ""
 "When the main thread exits, it does not do any of its usual cleanup (except "
 "that :keyword:`try` ... :keyword:`finally` clauses are honored), and the "
@@ -315,10 +311,10 @@ msgstr ""
 msgid "POSIX"
 msgstr ""
 
-#: library/_thread.rst:214
+#: library/_thread.rst:211
 msgid "module"
 msgstr ""
 
-#: library/_thread.rst:214
+#: library/_thread.rst:211
 msgid "signal"
 msgstr ""

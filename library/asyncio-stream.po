@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid "Removed the *loop* parameter."
 msgstr ""
 
 #: library/asyncio-stream.rst:128 library/asyncio-stream.rst:190
-#: library/asyncio-stream.rst:383
+#: library/asyncio-stream.rst:372
 msgid "Added the *ssl_shutdown_timeout* parameter."
 msgstr ""
 
@@ -273,91 +273,79 @@ msgid ""
 "portion of the separator."
 msgstr ""
 
-#: library/asyncio-stream.rst:263
-msgid ""
-"The *separator* may also be a tuple of separators. In this case the return "
-"value will be the shortest possible that has any separator as the suffix. "
-"For the purposes of :exc:`LimitOverrunError`, the shortest possible "
-"separator is considered to be the one that matched."
-msgstr ""
-
-#: library/asyncio-stream.rst:273
-msgid "The *separator* parameter may now be a :class:`tuple` of separators."
-msgstr ""
-
-#: library/asyncio-stream.rst:278
+#: library/asyncio-stream.rst:267
 msgid "Return ``True`` if the buffer is empty and :meth:`feed_eof` was called."
 msgstr ""
 
-#: library/asyncio-stream.rst:283
+#: library/asyncio-stream.rst:272
 msgid "StreamWriter"
 msgstr ""
 
-#: library/asyncio-stream.rst:287
+#: library/asyncio-stream.rst:276
 msgid ""
 "Represents a writer object that provides APIs to write data to the IO stream."
 msgstr ""
 
-#: library/asyncio-stream.rst:290
+#: library/asyncio-stream.rst:279
 msgid ""
 "It is not recommended to instantiate *StreamWriter* objects directly; use :"
 "func:`open_connection` and :func:`start_server` instead."
 msgstr ""
 
-#: library/asyncio-stream.rst:296
+#: library/asyncio-stream.rst:285
 msgid ""
 "The method attempts to write the *data* to the underlying socket "
 "immediately. If that fails, the data is queued in an internal write buffer "
 "until it can be sent."
 msgstr ""
 
-#: library/asyncio-stream.rst:312
+#: library/asyncio-stream.rst:301
 msgid "The method should be used along with the ``drain()`` method::"
 msgstr ""
 
-#: library/asyncio-stream.rst:307
+#: library/asyncio-stream.rst:296
 msgid ""
 "The method writes a list (or any iterable) of bytes to the underlying socket "
 "immediately. If that fails, the data is queued in an internal write buffer "
 "until it can be sent."
 msgstr ""
 
-#: library/asyncio-stream.rst:319
+#: library/asyncio-stream.rst:308
 msgid "The method closes the stream and the underlying socket."
 msgstr ""
 
-#: library/asyncio-stream.rst:321
+#: library/asyncio-stream.rst:310
 msgid ""
 "The method should be used, though not mandatory, along with the "
 "``wait_closed()`` method::"
 msgstr ""
 
-#: library/asyncio-stream.rst:329
+#: library/asyncio-stream.rst:318
 msgid ""
 "Return ``True`` if the underlying transport supports the :meth:`write_eof` "
 "method, ``False`` otherwise."
 msgstr ""
 
-#: library/asyncio-stream.rst:334
+#: library/asyncio-stream.rst:323
 msgid ""
 "Close the write end of the stream after the buffered write data is flushed."
 msgstr ""
 
-#: library/asyncio-stream.rst:339
+#: library/asyncio-stream.rst:328
 msgid "Return the underlying asyncio transport."
 msgstr ""
 
-#: library/asyncio-stream.rst:343
+#: library/asyncio-stream.rst:332
 msgid ""
 "Access optional transport information; see :meth:`BaseTransport."
 "get_extra_info` for details."
 msgstr ""
 
-#: library/asyncio-stream.rst:348
+#: library/asyncio-stream.rst:337
 msgid "Wait until it is appropriate to resume writing to the stream. Example::"
 msgstr ""
 
-#: library/asyncio-stream.rst:354
+#: library/asyncio-stream.rst:343
 msgid ""
 "This is a flow control method that interacts with the underlying IO write "
 "buffer.  When the size of the buffer reaches the high watermark, *drain()* "
@@ -366,123 +354,123 @@ msgid ""
 "`drain` returns immediately."
 msgstr ""
 
-#: library/asyncio-stream.rst:364
+#: library/asyncio-stream.rst:353
 msgid "Upgrade an existing stream-based connection to TLS."
 msgstr ""
 
-#: library/asyncio-stream.rst:366
+#: library/asyncio-stream.rst:355
 msgid "Parameters:"
 msgstr ""
 
-#: library/asyncio-stream.rst:368
+#: library/asyncio-stream.rst:357
 msgid "*sslcontext*: a configured instance of :class:`~ssl.SSLContext`."
 msgstr ""
 
-#: library/asyncio-stream.rst:370
+#: library/asyncio-stream.rst:359
 msgid ""
 "*server_hostname*: sets or overrides the host name that the target server's "
 "certificate will be matched against."
 msgstr ""
 
-#: library/asyncio-stream.rst:373
+#: library/asyncio-stream.rst:362
 msgid ""
 "*ssl_handshake_timeout* is the time in seconds to wait for the TLS handshake "
 "to complete before aborting the connection.  ``60.0`` seconds if ``None`` "
 "(default)."
 msgstr ""
 
-#: library/asyncio-stream.rst:377
+#: library/asyncio-stream.rst:366
 msgid ""
 "*ssl_shutdown_timeout* is the time in seconds to wait for the SSL shutdown "
 "to complete before aborting the connection. ``30.0`` seconds if ``None`` "
 "(default)."
 msgstr ""
 
-#: library/asyncio-stream.rst:389
+#: library/asyncio-stream.rst:378
 msgid ""
 "Return ``True`` if the stream is closed or in the process of being closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:396
+#: library/asyncio-stream.rst:385
 msgid "Wait until the stream is closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:398
+#: library/asyncio-stream.rst:387
 msgid ""
 "Should be called after :meth:`close` to wait until the underlying connection "
 "is closed, ensuring that all data has been flushed before e.g. exiting the "
 "program."
 msgstr ""
 
-#: library/asyncio-stream.rst:406
+#: library/asyncio-stream.rst:395
 msgid "Examples"
 msgstr ""
 
-#: library/asyncio-stream.rst:411
+#: library/asyncio-stream.rst:400
 msgid "TCP echo client using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:413
+#: library/asyncio-stream.rst:402
 msgid "TCP echo client using the :func:`asyncio.open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:437
+#: library/asyncio-stream.rst:426
 msgid ""
 "The :ref:`TCP echo client protocol "
 "<asyncio_example_tcp_echo_client_protocol>` example uses the low-level :meth:"
 "`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:444
+#: library/asyncio-stream.rst:433
 msgid "TCP echo server using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:446
+#: library/asyncio-stream.rst:435
 msgid "TCP echo server using the :func:`asyncio.start_server` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:480
+#: library/asyncio-stream.rst:469
 msgid ""
 "The :ref:`TCP echo server protocol "
 "<asyncio_example_tcp_echo_server_protocol>` example uses the :meth:`loop."
 "create_server` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:485
+#: library/asyncio-stream.rst:474
 msgid "Get HTTP headers"
 msgstr ""
 
-#: library/asyncio-stream.rst:487
+#: library/asyncio-stream.rst:476
 msgid ""
 "Simple example querying HTTP headers of the URL passed on the command line::"
 msgstr ""
 
-#: library/asyncio-stream.rst:526
+#: library/asyncio-stream.rst:515
 msgid "Usage::"
 msgstr ""
 
-#: library/asyncio-stream.rst:530
+#: library/asyncio-stream.rst:519
 msgid "or with HTTPS::"
 msgstr ""
 
-#: library/asyncio-stream.rst:538
+#: library/asyncio-stream.rst:527
 msgid "Register an open socket to wait for data using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:540
+#: library/asyncio-stream.rst:529
 msgid ""
 "Coroutine waiting until a socket receives data using the :func:"
 "`open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:575
+#: library/asyncio-stream.rst:564
 msgid ""
 "The :ref:`register an open socket to wait for data using a protocol "
 "<asyncio_example_create_connection>` example uses a low-level protocol and "
 "the :meth:`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:579
+#: library/asyncio-stream.rst:568
 msgid ""
 "The :ref:`watch a file descriptor for read events "
 "<asyncio_example_watch_fd>` example uses the low-level :meth:`loop."

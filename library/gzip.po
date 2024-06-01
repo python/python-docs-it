@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Added support for the ``'x'``, ``'xb'`` and ``'xt'`` modes."
 msgstr ""
 
-#: library/gzip.rst:175
+#: library/gzip.rst:171
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
 
@@ -167,18 +167,13 @@ msgstr ""
 
 #: library/gzip.rst:103
 msgid ""
-"The optional *mtime* argument is the timestamp requested by gzip. The time "
-"is in Unix format, i.e., seconds since 00:00:00 UTC, January 1, 1970. If "
-"*mtime* is omitted or ``None``, the current time is used. Use *mtime* = 0 to "
-"generate a compressed stream that does not depend on creation time."
+"The *mtime* argument is an optional numeric timestamp to be written to the "
+"last modification time field in the stream when compressing.  It should only "
+"be provided in compression mode.  If omitted or ``None``, the current time "
+"is used.  See the :attr:`mtime` attribute for more details."
 msgstr ""
 
 #: library/gzip.rst:108
-msgid ""
-"See below for the :attr:`mtime` attribute that is set when decompressing."
-msgstr ""
-
-#: library/gzip.rst:110
 msgid ""
 "Calling a :class:`GzipFile` object's :meth:`!close` method does not close "
 "*fileobj*, since you might wish to append more material after the compressed "
@@ -187,77 +182,83 @@ msgid ""
 "class:`io.BytesIO` object's :meth:`~io.BytesIO.getvalue` method."
 msgstr ""
 
-#: library/gzip.rst:116
+#: library/gzip.rst:114
 msgid ""
 ":class:`GzipFile` supports the :class:`io.BufferedIOBase` interface, "
 "including iteration and the :keyword:`with` statement.  Only the :meth:`~io."
 "IOBase.truncate` method isn't implemented."
 msgstr ""
 
-#: library/gzip.rst:120
+#: library/gzip.rst:118
 msgid ":class:`GzipFile` also provides the following method and attribute:"
 msgstr ""
 
-#: library/gzip.rst:124
+#: library/gzip.rst:122
 msgid ""
 "Read *n* uncompressed bytes without advancing the file position. At most one "
 "single read on the compressed stream is done to satisfy the call.  The "
 "number of bytes returned may be more or less than requested."
 msgstr ""
 
-#: library/gzip.rst:129
+#: library/gzip.rst:127
 msgid ""
 "While calling :meth:`peek` does not change the file position of the :class:"
 "`GzipFile`, it may change the position of the underlying file object (e.g. "
 "if the :class:`GzipFile` was constructed with the *fileobj* parameter)."
 msgstr ""
 
-#: library/gzip.rst:138
-msgid "``'rb'`` for reading and ``'wb'`` for writing."
+#: library/gzip.rst:136
+msgid ""
+"When decompressing, the value of the last modification time field in the "
+"most recently read header may be read from this attribute, as an integer.  "
+"The initial value before reading any headers is ``None``."
 msgstr ""
 
 #: library/gzip.rst:140
-msgid "In previous versions it was an integer ``1`` or ``2``."
-msgstr ""
-
-#: library/gzip.rst:145
 msgid ""
-"When decompressing, this attribute is set to the last timestamp in the most "
-"recently read header.  It is an integer, holding the number of seconds since "
-"the Unix epoch (00:00:00 UTC, January 1, 1970). The initial value before "
-"reading any headers is ``None``."
+"All :program:`gzip` compressed streams are required to contain this "
+"timestamp field.  Some programs, such as :program:`gunzip`\\ , make use of "
+"the timestamp.  The format is the same as the return value of :func:`time."
+"time` and the :attr:`~os.stat_result.st_mtime` attribute of the object "
+"returned by :func:`os.stat`."
 msgstr ""
 
-#: library/gzip.rst:152
+#: library/gzip.rst:148
 msgid ""
 "The path to the gzip file on disk, as a :class:`str` or :class:`bytes`. "
 "Equivalent to the output of :func:`os.fspath` on the original input path, "
 "with no other normalization, resolution or expansion."
 msgstr ""
 
-#: library/gzip.rst:156
+#: library/gzip.rst:152
 msgid ""
 "Support for the :keyword:`with` statement was added, along with the *mtime* "
 "constructor argument and :attr:`mtime` attribute."
 msgstr ""
 
-#: library/gzip.rst:160
+#: library/gzip.rst:156
 msgid "Support for zero-padded and unseekable files was added."
 msgstr ""
 
-#: library/gzip.rst:163
+#: library/gzip.rst:159
 msgid "The :meth:`io.BufferedIOBase.read1` method is now implemented."
 msgstr ""
 
-#: library/gzip.rst:166
+#: library/gzip.rst:162
 msgid "Added support for the ``'x'`` and ``'xb'`` modes."
 msgstr ""
 
-#: library/gzip.rst:169
+#: library/gzip.rst:165
 msgid ""
 "Added support for writing arbitrary :term:`bytes-like objects <bytes-like "
 "object>`. The :meth:`~io.BufferedIOBase.read` method now accepts an argument "
 "of ``None``."
+msgstr ""
+
+#: library/gzip.rst:174
+msgid ""
+"Remove the ``filename`` attribute, use the :attr:`~GzipFile.name` attribute "
+"instead."
 msgstr ""
 
 #: library/gzip.rst:178
@@ -266,13 +267,7 @@ msgid ""
 "is deprecated."
 msgstr ""
 
-#: library/gzip.rst:182
-msgid ""
-"Remove the ``filename`` attribute, use the :attr:`~GzipFile.name` attribute "
-"instead."
-msgstr ""
-
-#: library/gzip.rst:189
+#: library/gzip.rst:185
 msgid ""
 "Compress the *data*, returning a :class:`bytes` object containing the "
 "compressed data.  *compresslevel* and *mtime* have the same meaning as in "
@@ -281,18 +276,18 @@ msgid ""
 "The zlib function is faster."
 msgstr ""
 
-#: library/gzip.rst:196
+#: library/gzip.rst:192
 msgid "Added the *mtime* parameter for reproducible output."
 msgstr ""
 
-#: library/gzip.rst:198
+#: library/gzip.rst:194
 msgid ""
 "Speed is improved by compressing all data at once instead of in a streamed "
 "fashion. Calls with *mtime* set to ``0`` are delegated to :func:`zlib."
 "compress` for better speed."
 msgstr ""
 
-#: library/gzip.rst:205
+#: library/gzip.rst:201
 msgid ""
 "Decompress the *data*, returning a :class:`bytes` object containing the "
 "uncompressed data. This function is capable of decompressing multi-member "
@@ -301,82 +296,82 @@ msgid ""
 "*wbits* set to 31 is faster."
 msgstr ""
 
-#: library/gzip.rst:212
+#: library/gzip.rst:208
 msgid ""
 "Speed is improved by decompressing members at once in memory instead of in a "
 "streamed fashion."
 msgstr ""
 
-#: library/gzip.rst:219
+#: library/gzip.rst:215
 msgid "Examples of usage"
 msgstr ""
 
-#: library/gzip.rst:221
+#: library/gzip.rst:217
 msgid "Example of how to read a compressed file::"
 msgstr ""
 
-#: library/gzip.rst:227
+#: library/gzip.rst:223
 msgid "Example of how to create a compressed GZIP file::"
 msgstr ""
 
-#: library/gzip.rst:234
+#: library/gzip.rst:230
 msgid "Example of how to GZIP compress an existing file::"
 msgstr ""
 
-#: library/gzip.rst:242
+#: library/gzip.rst:238
 msgid "Example of how to GZIP compress a binary string::"
 msgstr ""
 
-#: library/gzip.rst:250
+#: library/gzip.rst:246
 msgid "Module :mod:`zlib`"
 msgstr ""
 
-#: library/gzip.rst:251
+#: library/gzip.rst:247
 msgid ""
 "The basic data compression module needed to support the :program:`gzip` file "
 "format."
 msgstr ""
 
-#: library/gzip.rst:260
+#: library/gzip.rst:256
 msgid "Command Line Interface"
 msgstr ""
 
-#: library/gzip.rst:262
+#: library/gzip.rst:258
 msgid ""
 "The :mod:`gzip` module provides a simple command line interface to compress "
 "or decompress files."
 msgstr ""
 
-#: library/gzip.rst:265
+#: library/gzip.rst:261
 msgid "Once executed the :mod:`gzip` module keeps the input file(s)."
 msgstr ""
 
-#: library/gzip.rst:269
+#: library/gzip.rst:265
 msgid ""
 "Add a new command line interface with a usage. By default, when you will "
 "execute the CLI, the default compression level is 6."
 msgstr ""
 
-#: library/gzip.rst:273
+#: library/gzip.rst:269
 msgid "Command line options"
 msgstr ""
 
-#: library/gzip.rst:277
+#: library/gzip.rst:273
 msgid "If *file* is not specified, read from :data:`sys.stdin`."
 msgstr ""
 
-#: library/gzip.rst:281
+#: library/gzip.rst:277
 msgid "Indicates the fastest compression method (less compression)."
 msgstr ""
 
-#: library/gzip.rst:285
+#: library/gzip.rst:281
 msgid "Indicates the slowest compression method (best compression)."
 msgstr ""
 
-#: library/gzip.rst:289
+#: library/gzip.rst:285
 msgid "Decompress the given file."
 msgstr ""
 
-#: library/gzip.rst:293
+#: library/gzip.rst:289
 msgid "Show the help message."
 msgstr ""

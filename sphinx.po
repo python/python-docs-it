@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: 2019-04-21 23:08+0200\n"
 "Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
 "Language-Team: \n"
@@ -42,7 +42,8 @@ msgstr ""
 
 #: tools/templates/dummy.html:8
 msgid "Deprecated since version {deprecated}, removed in version {removed}"
-msgstr "Deprecato dalla versione {deprecated}, rimosso nella versione {removed}."
+msgstr ""
+"Deprecato dalla versione {deprecated}, rimosso nella versione {removed}."
 
 #: tools/templates/dummy.html:12
 msgid "Part of the"
@@ -341,7 +342,8 @@ msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
 "    You should upgrade, and read the"
 msgstr ""
-"Questo documento è per una vecchia versione di Python che non è più supportata.\n"
+"Questo documento è per una vecchia versione di Python che non è più "
+"supportata.\n"
 "    Dovresti aggiornare e leggere"
 
 #: tools/templates/layout.html:8
@@ -354,8 +356,8 @@ msgid ""
 "%(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
-"Questa è una anteprima di distribuzione creata da una <a href=\"%(repository_url)s/pull/"
-"%(pr_id)s\">richiesta di pull</a>.\n"
+"Questa è una anteprima di distribuzione creata da una <a "
+"href=\"%(repository_url)s/pull/%(pr_id)s\">richiesta di pull</a>.\n"
 "  Per una la documentazione autorevole, vedi"
 
 #: tools/templates/layout.html:16

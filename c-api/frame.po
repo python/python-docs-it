@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Get the *frame* code."
 msgstr ""
 
-#: c-api/frame.rst:130
+#: c-api/frame.rst:125
 msgid "Return a :term:`strong reference`."
 msgstr ""
 
@@ -146,43 +146,34 @@ msgid ""
 msgstr ""
 
 #: c-api/frame.rst:123
-msgid ""
-"Get the *frame*'s :attr:`~frame.f_locals` attribute. If the frame refers to "
-"an :term:`optimized scope`, this returns a write-through proxy object that "
-"allows modifying the locals. In all other cases (classes, modules, :func:"
-"`exec`, :func:`eval`) it returns the mapping representing the frame locals "
-"directly (as described for :func:`locals`)."
+msgid "Get the *frame*'s :attr:`~frame.f_locals` attribute (:class:`dict`)."
 msgstr ""
 
-#: c-api/frame.rst:134
-msgid "As part of :pep:`667`, return a proxy object for optimized scopes."
-msgstr ""
-
-#: c-api/frame.rst:140
+#: c-api/frame.rst:132
 msgid "Return the line number that *frame* is currently executing."
 msgstr ""
 
-#: c-api/frame.rst:145
+#: c-api/frame.rst:137
 msgid "Internal Frames"
 msgstr ""
 
-#: c-api/frame.rst:147
+#: c-api/frame.rst:139
 msgid "Unless using :pep:`523`, you will not need this."
 msgstr ""
 
-#: c-api/frame.rst:151
+#: c-api/frame.rst:143
 msgid "The interpreter's internal frame representation."
 msgstr ""
 
-#: c-api/frame.rst:157
+#: c-api/frame.rst:149
 msgid "Return a :term:`strong reference` to the code object for the frame."
 msgstr ""
 
-#: c-api/frame.rst:164
+#: c-api/frame.rst:156
 msgid "Return the byte offset into the last executed instruction."
 msgstr ""
 
-#: c-api/frame.rst:171
+#: c-api/frame.rst:163
 msgid ""
 "Return the currently executing line number, or -1 if there is no line number."
 msgstr ""

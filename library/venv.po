@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,16 +89,15 @@ msgid ""
 "environments/#create-and-use-virtual-environments>`__"
 msgstr ""
 
-#: includes/wasm-ios-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not WASI, not iOS."
+#: includes/wasm-notavail.rst:3
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
-#: includes/wasm-ios-notavail.rst:5
+#: includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms, or "
-"on iOS. See :ref:`wasm-availability` for more information on WASM "
-"availability; see :ref:`iOS-availability` for more information on iOS "
-"availability."
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
 msgstr ""
 
 #: library/venv.rst:62
@@ -150,73 +149,67 @@ msgstr ""
 msgid "The command, if run with ``-h``, will show the available options::"
 msgstr ""
 
-#: using/venv-create.inc:78
-msgid ""
-"``--without-scm-ignore-file`` was added along with creating an ignore file "
-"for ``git`` by default."
-msgstr ""
-
-#: using/venv-create.inc:83
+#: using/venv-create.inc:72
 msgid "``setuptools`` is no longer a core venv dependency."
 msgstr ""
 
-#: using/venv-create.inc:85
+#: using/venv-create.inc:74
 msgid ""
 "Add ``--upgrade-deps`` option to upgrade pip + setuptools to the latest on "
 "PyPI"
 msgstr ""
 
-#: using/venv-create.inc:88
+#: using/venv-create.inc:77
 msgid ""
 "Installs pip by default, added the ``--without-pip``  and ``--copies`` "
 "options"
 msgstr ""
 
-#: using/venv-create.inc:92
+#: using/venv-create.inc:81
 msgid ""
 "In earlier versions, if the target directory already existed, an error was "
 "raised, unless the ``--clear`` or ``--upgrade`` option was provided."
 msgstr ""
 
-#: using/venv-create.inc:97
+#: using/venv-create.inc:86
 msgid ""
 "While symlinks are supported on Windows, they are not recommended. Of "
 "particular note is that double-clicking ``python.exe`` in File Explorer will "
 "resolve the symlink eagerly and ignore the virtual environment."
 msgstr ""
 
-#: using/venv-create.inc:102
+#: using/venv-create.inc:91
 msgid ""
 "On Microsoft Windows, it may be required to enable the ``Activate.ps1`` "
 "script by setting the execution policy for the user. You can do this by "
 "issuing the following PowerShell command:"
 msgstr ""
 
-#: using/venv-create.inc:106
+#: using/venv-create.inc:95
 msgid ""
 "PS C:\\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser"
 msgstr ""
 
-#: using/venv-create.inc:108
+#: using/venv-create.inc:97
 msgid ""
 "See `About Execution Policies <https://go.microsoft.com/fwlink/?"
 "LinkID=135170>`_ for more information."
 msgstr ""
 
-#: using/venv-create.inc:112
+#: using/venv-create.inc:101
 msgid ""
 "The created ``pyvenv.cfg`` file also includes the ``include-system-site-"
 "packages`` key, set to ``true`` if ``venv`` is run with the ``--system-site-"
 "packages`` option, ``false`` otherwise."
 msgstr ""
 
-#: using/venv-create.inc:116
+#: using/venv-create.inc:105
 msgid ""
 "Unless the ``--without-pip`` option is given, :mod:`ensurepip` will be "
 "invoked to bootstrap ``pip`` into the virtual environment."
 msgstr ""
 
-#: using/venv-create.inc:119
+#: using/venv-create.inc:108
 msgid ""
 "Multiple paths can be given to ``venv``, in which case an identical virtual "
 "environment will be created, according to the given options, at each "
@@ -386,46 +379,46 @@ msgid ""
 "`EnvBuilder` class."
 msgstr ""
 
-#: library/venv.rst:168
+#: library/venv.rst:167
 msgid ""
 "The :class:`EnvBuilder` class accepts the following keyword arguments on "
 "instantiation:"
 msgstr ""
 
-#: library/venv.rst:171
+#: library/venv.rst:170
 msgid ""
 "``system_site_packages`` -- a Boolean value indicating that the system "
 "Python site-packages should be available to the environment (defaults to "
 "``False``)."
 msgstr ""
 
-#: library/venv.rst:174
+#: library/venv.rst:173
 msgid ""
 "``clear`` -- a Boolean value which, if true, will delete the contents of any "
 "existing target directory, before creating the environment."
 msgstr ""
 
-#: library/venv.rst:177
+#: library/venv.rst:176
 msgid ""
 "``symlinks`` -- a Boolean value indicating whether to attempt to symlink the "
 "Python binary rather than copying."
 msgstr ""
 
-#: library/venv.rst:180
+#: library/venv.rst:179
 msgid ""
 "``upgrade`` -- a Boolean value which, if true, will upgrade an existing "
 "environment with the running Python - for use when that Python has been "
 "upgraded in-place (defaults to ``False``)."
 msgstr ""
 
-#: library/venv.rst:184
+#: library/venv.rst:183
 msgid ""
 "``with_pip`` -- a Boolean value which, if true, ensures pip is installed in "
 "the virtual environment. This uses :mod:`ensurepip` with the ``--default-"
 "pip`` option."
 msgstr ""
 
-#: library/venv.rst:188
+#: library/venv.rst:187
 msgid ""
 "``prompt`` -- a String to be used after virtual environment is activated "
 "(defaults to ``None`` which means directory name of the environment would be "
@@ -433,45 +426,33 @@ msgid ""
 "current directory is used as the prompt."
 msgstr ""
 
-#: library/venv.rst:193
+#: library/venv.rst:192
 msgid "``upgrade_deps`` -- Update the base venv modules to the latest on PyPI"
 msgstr ""
 
-#: library/venv.rst:195
-msgid ""
-"``scm_ignore_files`` -- Create ignore files based for the specified source "
-"control managers (SCM) in the iterable. Support is defined by having a "
-"method named ``create_{scm}_ignore_file``. The only value supported by "
-"default is ``\"git\"`` via :meth:`create_git_ignore_file`."
-msgstr ""
-
-#: library/venv.rst:389
+#: library/venv.rst:372
 msgid "Added the ``with_pip`` parameter"
 msgstr ""
 
-#: library/venv.rst:392
+#: library/venv.rst:375
 msgid "Added the ``prompt`` parameter"
 msgstr ""
 
-#: library/venv.rst:395
+#: library/venv.rst:378
 msgid "Added the ``upgrade_deps`` parameter"
 msgstr ""
 
-#: library/venv.rst:398
-msgid "Added the ``scm_ignore_files`` parameter"
-msgstr ""
-
-#: library/venv.rst:213
+#: library/venv.rst:203
 msgid ""
 "Creators of third-party virtual environment tools will be free to use the "
 "provided :class:`EnvBuilder` class as a base class."
 msgstr ""
 
-#: library/venv.rst:216
+#: library/venv.rst:206
 msgid "The returned env-builder is an object which has a method, ``create``:"
 msgstr ""
 
-#: library/venv.rst:220
+#: library/venv.rst:210
 msgid ""
 "Create a virtual environment by specifying the target directory (absolute or "
 "relative to the current directory) which is to contain the virtual "
@@ -479,20 +460,20 @@ msgid ""
 "the specified directory, or raise an appropriate exception."
 msgstr ""
 
-#: library/venv.rst:226
+#: library/venv.rst:216
 msgid ""
 "The ``create`` method of the :class:`EnvBuilder` class illustrates the hooks "
 "available for subclass customization::"
 msgstr ""
 
-#: library/venv.rst:241
+#: library/venv.rst:231
 msgid ""
 "Each of the methods :meth:`ensure_directories`, :meth:"
 "`create_configuration`, :meth:`setup_python`, :meth:`setup_scripts` and :"
 "meth:`post_setup` can be overridden."
 msgstr ""
 
-#: library/venv.rst:247
+#: library/venv.rst:237
 msgid ""
 "Creates the environment directory and all necessary subdirectories that "
 "don't already exist, and returns a context object.  This context object is "
@@ -502,87 +483,87 @@ msgid ""
 "subdirectories will be recreated."
 msgstr ""
 
-#: library/venv.rst:254
+#: library/venv.rst:244
 msgid ""
 "The returned context object is a :class:`types.SimpleNamespace` with the "
 "following attributes:"
 msgstr ""
 
-#: library/venv.rst:257
+#: library/venv.rst:247
 msgid ""
 "``env_dir`` - The location of the virtual environment. Used for "
 "``__VENV_DIR__`` in activation scripts (see :meth:`install_scripts`)."
 msgstr ""
 
-#: library/venv.rst:260
+#: library/venv.rst:250
 msgid ""
 "``env_name`` - The name of the virtual environment. Used for "
 "``__VENV_NAME__`` in activation scripts (see :meth:`install_scripts`)."
 msgstr ""
 
-#: library/venv.rst:263
+#: library/venv.rst:253
 msgid ""
 "``prompt`` - The prompt to be used by the activation scripts. Used for "
 "``__VENV_PROMPT__`` in activation scripts (see :meth:`install_scripts`)."
 msgstr ""
 
-#: library/venv.rst:266
+#: library/venv.rst:256
 msgid ""
 "``executable`` - The underlying Python executable used by the virtual "
 "environment. This takes into account the case where a virtual environment is "
 "created from another virtual environment."
 msgstr ""
 
-#: library/venv.rst:270
+#: library/venv.rst:260
 msgid "``inc_path`` - The include path for the virtual environment."
 msgstr ""
 
-#: library/venv.rst:272
+#: library/venv.rst:262
 msgid "``lib_path`` - The purelib path for the virtual environment."
 msgstr ""
 
-#: library/venv.rst:274
+#: library/venv.rst:264
 msgid "``bin_path`` - The script path for the virtual environment."
 msgstr ""
 
-#: library/venv.rst:276
+#: library/venv.rst:266
 msgid ""
 "``bin_name`` - The name of the script path relative to the virtual "
 "environment location. Used for ``__VENV_BIN_NAME__`` in activation scripts "
 "(see :meth:`install_scripts`)."
 msgstr ""
 
-#: library/venv.rst:280
+#: library/venv.rst:270
 msgid ""
 "``env_exe`` - The name of the Python interpreter in the virtual environment. "
 "Used for ``__VENV_PYTHON__`` in activation scripts (see :meth:"
 "`install_scripts`)."
 msgstr ""
 
-#: library/venv.rst:284
+#: library/venv.rst:274
 msgid ""
 "``env_exec_cmd`` - The name of the Python interpreter, taking into account "
 "filesystem redirections. This can be used to run Python in the virtual "
 "environment."
 msgstr ""
 
-#: library/venv.rst:289
+#: library/venv.rst:279
 msgid ""
 "The *venv* :ref:`sysconfig installation scheme <installation_paths>` is used "
 "to construct the paths of the created directories."
 msgstr ""
 
-#: library/venv.rst:294
+#: library/venv.rst:284
 msgid ""
 "The attribute ``lib_path`` was added to the context, and the context object "
 "was documented."
 msgstr ""
 
-#: library/venv.rst:300
+#: library/venv.rst:290
 msgid "Creates the ``pyvenv.cfg`` configuration file in the environment."
 msgstr ""
 
-#: library/venv.rst:304
+#: library/venv.rst:294
 msgid ""
 "Creates a copy or symlink to the Python executable in the environment. On "
 "POSIX systems, if a specific executable ``python3.x`` was used, symlinks to "
@@ -590,48 +571,48 @@ msgid ""
 "unless files with those names already exist."
 msgstr ""
 
-#: library/venv.rst:311
+#: library/venv.rst:301
 msgid ""
 "Installs activation scripts appropriate to the platform into the virtual "
 "environment."
 msgstr ""
 
-#: library/venv.rst:316
+#: library/venv.rst:306
 msgid ""
 "Upgrades the core venv dependency packages (currently ``pip``) in the "
 "environment. This is done by shelling out to the ``pip`` executable in the "
 "environment."
 msgstr ""
 
-#: library/venv.rst:327
+#: library/venv.rst:317
 msgid ""
 "A placeholder method which can be overridden in third party implementations "
 "to pre-install packages in the virtual environment or perform other post-"
 "creation steps."
 msgstr ""
 
-#: library/venv.rst:331
+#: library/venv.rst:321
 msgid ""
 "Windows now uses redirector scripts for ``python[w].exe`` instead of copying "
 "the actual binaries. In 3.7.2 only :meth:`setup_python` does nothing unless "
 "running from a build in the source tree."
 msgstr ""
 
-#: library/venv.rst:336
+#: library/venv.rst:326
 msgid ""
 "Windows copies the redirector scripts as part of :meth:`setup_python` "
 "instead of :meth:`setup_scripts`. This was not the case in 3.7.2. When using "
 "symlinks, the original executables will be linked."
 msgstr ""
 
-#: library/venv.rst:341
+#: library/venv.rst:331
 msgid ""
 "In addition, :class:`EnvBuilder` provides this utility method that can be "
 "called from :meth:`setup_scripts` or :meth:`post_setup` in subclasses to "
 "assist in installing custom scripts into the virtual environment."
 msgstr ""
 
-#: library/venv.rst:347
+#: library/venv.rst:337
 msgid ""
 "*path* is the path to a directory that should contain subdirectories "
 "\"common\", \"posix\", \"nt\", each containing scripts destined for the bin "
@@ -640,70 +621,64 @@ msgid ""
 "placeholders:"
 msgstr ""
 
-#: library/venv.rst:353
+#: library/venv.rst:343
 msgid ""
 "``__VENV_DIR__`` is replaced with the absolute path of the environment "
 "directory."
 msgstr ""
 
-#: library/venv.rst:356
+#: library/venv.rst:346
 msgid ""
 "``__VENV_NAME__`` is replaced with the environment name (final path segment "
 "of environment directory)."
 msgstr ""
 
-#: library/venv.rst:359
+#: library/venv.rst:349
 msgid ""
 "``__VENV_PROMPT__`` is replaced with the prompt (the environment name "
 "surrounded by parentheses and with a following space)"
 msgstr ""
 
-#: library/venv.rst:362
+#: library/venv.rst:352
 msgid ""
 "``__VENV_BIN_NAME__`` is replaced with the name of the bin directory (either "
 "``bin`` or ``Scripts``)."
 msgstr ""
 
-#: library/venv.rst:365
+#: library/venv.rst:355
 msgid ""
 "``__VENV_PYTHON__`` is replaced with the absolute path of the environment's "
 "executable."
 msgstr ""
 
-#: library/venv.rst:368
+#: library/venv.rst:358
 msgid ""
 "The directories are allowed to exist (for when an existing environment is "
 "being upgraded)."
 msgstr ""
 
-#: library/venv.rst:373
-msgid ""
-"Creates a ``.gitignore`` file within the virtual environment that causes the "
-"entire directory to be ignored by the ``git`` source control manager."
-msgstr ""
-
-#: library/venv.rst:378
+#: library/venv.rst:361
 msgid "There is also a module-level convenience function:"
 msgstr ""
 
-#: library/venv.rst:384
+#: library/venv.rst:367
 msgid ""
 "Create an :class:`EnvBuilder` with the given keyword arguments, and call "
 "its :meth:`~EnvBuilder.create` method with the *env_dir* argument."
 msgstr ""
 
-#: library/venv.rst:402
+#: library/venv.rst:382
 msgid "An example of extending ``EnvBuilder``"
 msgstr ""
 
-#: library/venv.rst:404
+#: library/venv.rst:384
 msgid ""
 "The following script shows how to extend :class:`EnvBuilder` by implementing "
 "a subclass which installs setuptools and pip into a created virtual "
 "environment::"
 msgstr ""
 
-#: library/venv.rst:615
+#: library/venv.rst:595
 msgid ""
 "This script is also available for download `online <https://gist.github.com/"
 "vsajip/4673395>`_."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,7 +365,7 @@ msgstr ""
 msgid "Value"
 msgstr ""
 
-#: library/codecs.rst:373 library/codecs.rst:1331 library/codecs.rst:1454
+#: library/codecs.rst:373 library/codecs.rst:1330 library/codecs.rst:1455
 msgid "Meaning"
 msgstr ""
 
@@ -1364,11 +1364,11 @@ msgstr ""
 msgid "an IBM PC code page, which is ASCII compatible"
 msgstr ""
 
-#: library/codecs.rst:1331 library/codecs.rst:1454
+#: library/codecs.rst:1330 library/codecs.rst:1455
 msgid "Codec"
 msgstr ""
 
-#: library/codecs.rst:1331 library/codecs.rst:1454
+#: library/codecs.rst:1330 library/codecs.rst:1455
 msgid "Aliases"
 msgstr ""
 
@@ -1396,7 +1396,7 @@ msgstr ""
 msgid "big5-tw, csbig5"
 msgstr ""
 
-#: library/codecs.rst:1081 library/codecs.rst:1140
+#: library/codecs.rst:1081 library/codecs.rst:1139
 msgid "Traditional Chinese"
 msgstr ""
 
@@ -1436,7 +1436,7 @@ msgstr ""
 msgid "EBCDIC-CP-HE, IBM424"
 msgstr ""
 
-#: library/codecs.rst:1109 library/codecs.rst:1163 library/codecs.rst:1226
+#: library/codecs.rst:1109 library/codecs.rst:1162 library/codecs.rst:1225
 msgid "Hebrew"
 msgstr ""
 
@@ -1456,8 +1456,8 @@ msgstr ""
 msgid "EBCDIC-CP-BE, EBCDIC-CP-CH, IBM500"
 msgstr ""
 
-#: library/codecs.rst:1102 library/codecs.rst:1150 library/codecs.rst:1210
-#: library/codecs.rst:1266
+#: library/codecs.rst:1102 library/codecs.rst:1149 library/codecs.rst:1209
+#: library/codecs.rst:1265
 msgid "Western Europe"
 msgstr ""
 
@@ -1465,7 +1465,7 @@ msgstr ""
 msgid "cp720"
 msgstr ""
 
-#: library/codecs.rst:1123 library/codecs.rst:1222
+#: library/codecs.rst:1123 library/codecs.rst:1221
 msgid "Arabic"
 msgstr ""
 
@@ -1473,7 +1473,7 @@ msgstr ""
 msgid "cp737"
 msgstr ""
 
-#: library/codecs.rst:1129 library/codecs.rst:1159 library/codecs.rst:1259
+#: library/codecs.rst:1129 library/codecs.rst:1158 library/codecs.rst:1258
 msgid "Greek"
 msgstr ""
 
@@ -1485,7 +1485,7 @@ msgstr ""
 msgid "IBM775"
 msgstr ""
 
-#: library/codecs.rst:1167 library/codecs.rst:1234
+#: library/codecs.rst:1166 library/codecs.rst:1233
 msgid "Baltic languages"
 msgstr ""
 
@@ -1505,7 +1505,7 @@ msgstr ""
 msgid "852, IBM852"
 msgstr ""
 
-#: library/codecs.rst:1152 library/codecs.rst:1263
+#: library/codecs.rst:1151 library/codecs.rst:1262
 msgid "Central and Eastern Europe"
 msgstr ""
 
@@ -1517,7 +1517,7 @@ msgstr ""
 msgid "855, IBM855"
 msgstr ""
 
-#: library/codecs.rst:1154 library/codecs.rst:1256
+#: library/codecs.rst:1153 library/codecs.rst:1255
 msgid "Bulgarian, Byelorussian, Macedonian, Russian, Serbian"
 msgstr ""
 
@@ -1533,7 +1533,7 @@ msgstr ""
 msgid "857, IBM857"
 msgstr ""
 
-#: library/codecs.rst:1144 library/codecs.rst:1228 library/codecs.rst:1268
+#: library/codecs.rst:1143 library/codecs.rst:1227 library/codecs.rst:1267
 msgid "Turkish"
 msgstr ""
 
@@ -1565,7 +1565,7 @@ msgstr ""
 msgid "861, CP-IS, IBM861"
 msgstr ""
 
-#: library/codecs.rst:1261
+#: library/codecs.rst:1260
 msgid "Icelandic"
 msgstr ""
 
@@ -1617,7 +1617,7 @@ msgstr ""
 msgid "866, IBM866"
 msgstr ""
 
-#: library/codecs.rst:1244
+#: library/codecs.rst:1243
 msgid "Russian"
 msgstr ""
 
@@ -1646,625 +1646,625 @@ msgid "cp932"
 msgstr ""
 
 #: library/codecs.rst:1135
-msgid "932, ms932, mskanji, ms-kanji, windows-31j"
+msgid "932, ms932, mskanji, ms-kanji"
 msgstr ""
 
-#: library/codecs.rst:1171 library/codecs.rst:1175 library/codecs.rst:1195
-#: library/codecs.rst:1203 library/codecs.rst:1273 library/codecs.rst:1279
+#: library/codecs.rst:1170 library/codecs.rst:1174 library/codecs.rst:1194
+#: library/codecs.rst:1202 library/codecs.rst:1272 library/codecs.rst:1278
 msgid "Japanese"
 msgstr ""
 
-#: library/codecs.rst:1138
+#: library/codecs.rst:1137
 msgid "cp949"
 msgstr ""
 
-#: library/codecs.rst:1138
+#: library/codecs.rst:1137
 msgid "949, ms949, uhc"
 msgstr ""
 
-#: library/codecs.rst:1177 library/codecs.rst:1242
+#: library/codecs.rst:1176 library/codecs.rst:1241
 msgid "Korean"
 msgstr ""
 
-#: library/codecs.rst:1140
+#: library/codecs.rst:1139
 msgid "cp950"
 msgstr ""
 
-#: library/codecs.rst:1140
+#: library/codecs.rst:1139
 msgid "950, ms950"
 msgstr ""
 
-#: library/codecs.rst:1142
+#: library/codecs.rst:1141
 msgid "cp1006"
 msgstr ""
 
-#: library/codecs.rst:1142
+#: library/codecs.rst:1141
 msgid "Urdu"
 msgstr ""
 
-#: library/codecs.rst:1144
+#: library/codecs.rst:1143
 msgid "cp1026"
 msgstr ""
 
-#: library/codecs.rst:1144
+#: library/codecs.rst:1143
 msgid "ibm1026"
 msgstr ""
 
-#: library/codecs.rst:1146
+#: library/codecs.rst:1145
 msgid "cp1125"
 msgstr ""
 
-#: library/codecs.rst:1146
+#: library/codecs.rst:1145
 msgid "1125, ibm1125, cp866u, ruscii"
 msgstr ""
 
-#: library/codecs.rst:1250
+#: library/codecs.rst:1249
 msgid "Ukrainian"
 msgstr ""
 
-#: library/codecs.rst:1150
+#: library/codecs.rst:1149
 msgid "cp1140"
 msgstr ""
 
-#: library/codecs.rst:1150
+#: library/codecs.rst:1149
 msgid "ibm1140"
 msgstr ""
 
-#: library/codecs.rst:1152
+#: library/codecs.rst:1151
 msgid "cp1250"
 msgstr ""
 
-#: library/codecs.rst:1152
+#: library/codecs.rst:1151
 msgid "windows-1250"
 msgstr ""
 
-#: library/codecs.rst:1154
+#: library/codecs.rst:1153
 msgid "cp1251"
 msgstr ""
 
-#: library/codecs.rst:1154
+#: library/codecs.rst:1153
 msgid "windows-1251"
 msgstr ""
 
-#: library/codecs.rst:1157
+#: library/codecs.rst:1156
 msgid "cp1252"
 msgstr ""
 
-#: library/codecs.rst:1157
+#: library/codecs.rst:1156
 msgid "windows-1252"
 msgstr ""
 
-#: library/codecs.rst:1159
+#: library/codecs.rst:1158
 msgid "cp1253"
 msgstr ""
 
-#: library/codecs.rst:1159
+#: library/codecs.rst:1158
 msgid "windows-1253"
 msgstr ""
 
-#: library/codecs.rst:1161
+#: library/codecs.rst:1160
 msgid "cp1254"
 msgstr ""
 
-#: library/codecs.rst:1161
+#: library/codecs.rst:1160
 msgid "windows-1254"
 msgstr ""
 
-#: library/codecs.rst:1163
+#: library/codecs.rst:1162
 msgid "cp1255"
 msgstr ""
 
-#: library/codecs.rst:1163
+#: library/codecs.rst:1162
 msgid "windows-1255"
 msgstr ""
 
-#: library/codecs.rst:1165
+#: library/codecs.rst:1164
 msgid "cp1256"
 msgstr ""
 
-#: library/codecs.rst:1165
+#: library/codecs.rst:1164
 msgid "windows-1256"
 msgstr ""
 
-#: library/codecs.rst:1167
+#: library/codecs.rst:1166
 msgid "cp1257"
 msgstr ""
 
-#: library/codecs.rst:1167
+#: library/codecs.rst:1166
 msgid "windows-1257"
 msgstr ""
 
-#: library/codecs.rst:1169
+#: library/codecs.rst:1168
 msgid "cp1258"
 msgstr ""
 
-#: library/codecs.rst:1169
+#: library/codecs.rst:1168
 msgid "windows-1258"
 msgstr ""
 
-#: library/codecs.rst:1169
+#: library/codecs.rst:1168
 msgid "Vietnamese"
 msgstr ""
 
-#: library/codecs.rst:1171
+#: library/codecs.rst:1170
 msgid "euc_jp"
 msgstr ""
 
-#: library/codecs.rst:1171
+#: library/codecs.rst:1170
 msgid "eucjp, ujis, u-jis"
 msgstr ""
 
-#: library/codecs.rst:1173
+#: library/codecs.rst:1172
 msgid "euc_jis_2004"
 msgstr ""
 
-#: library/codecs.rst:1173
+#: library/codecs.rst:1172
 msgid "jisx0213, eucjis2004"
 msgstr ""
 
-#: library/codecs.rst:1175
+#: library/codecs.rst:1174
 msgid "euc_jisx0213"
 msgstr ""
 
-#: library/codecs.rst:1175
+#: library/codecs.rst:1174
 msgid "eucjisx0213"
 msgstr ""
 
-#: library/codecs.rst:1177
+#: library/codecs.rst:1176
 msgid "euc_kr"
 msgstr ""
 
-#: library/codecs.rst:1177
+#: library/codecs.rst:1176
 msgid "euckr, korean, ksc5601, ks_c-5601, ks_c-5601-1987, ksx1001, ks_x-1001"
 msgstr ""
 
-#: library/codecs.rst:1181
+#: library/codecs.rst:1180
 msgid "gb2312"
 msgstr ""
 
-#: library/codecs.rst:1181
+#: library/codecs.rst:1180
 msgid ""
 "chinese, csiso58gb231280, euc-cn, euccn, eucgb2312-cn, gb2312-1980, "
 "gb2312-80, iso-ir-58"
 msgstr ""
 
-#: library/codecs.rst:1190
+#: library/codecs.rst:1189
 msgid "Simplified Chinese"
 msgstr ""
 
-#: library/codecs.rst:1186
+#: library/codecs.rst:1185
 msgid "gbk"
 msgstr ""
 
-#: library/codecs.rst:1186
+#: library/codecs.rst:1185
 msgid "936, cp936, ms936"
 msgstr ""
 
-#: library/codecs.rst:1188
+#: library/codecs.rst:1187
 msgid "Unified Chinese"
 msgstr ""
 
-#: library/codecs.rst:1188
+#: library/codecs.rst:1187
 msgid "gb18030"
 msgstr ""
 
-#: library/codecs.rst:1188
+#: library/codecs.rst:1187
 msgid "gb18030-2000"
 msgstr ""
 
-#: library/codecs.rst:1190
+#: library/codecs.rst:1189
 msgid "hz"
 msgstr ""
 
-#: library/codecs.rst:1190
+#: library/codecs.rst:1189
 msgid "hzgb, hz-gb, hz-gb-2312"
 msgstr ""
 
-#: library/codecs.rst:1192
+#: library/codecs.rst:1191
 msgid "iso2022_jp"
 msgstr ""
 
-#: library/codecs.rst:1192
+#: library/codecs.rst:1191
 msgid "csiso2022jp, iso2022jp, iso-2022-jp"
 msgstr ""
 
-#: library/codecs.rst:1195
+#: library/codecs.rst:1194
 msgid "iso2022_jp_1"
 msgstr ""
 
-#: library/codecs.rst:1195
+#: library/codecs.rst:1194
 msgid "iso2022jp-1, iso-2022-jp-1"
 msgstr ""
 
-#: library/codecs.rst:1197
+#: library/codecs.rst:1196
 msgid "iso2022_jp_2"
 msgstr ""
 
-#: library/codecs.rst:1197
+#: library/codecs.rst:1196
 msgid "iso2022jp-2, iso-2022-jp-2"
 msgstr ""
 
-#: library/codecs.rst:1197
+#: library/codecs.rst:1196
 msgid "Japanese, Korean, Simplified Chinese, Western Europe, Greek"
 msgstr ""
 
-#: library/codecs.rst:1200
+#: library/codecs.rst:1199
 msgid "iso2022_jp_2004"
 msgstr ""
 
-#: library/codecs.rst:1200
+#: library/codecs.rst:1199
 msgid "iso2022jp-2004, iso-2022-jp-2004"
 msgstr ""
 
-#: library/codecs.rst:1203
+#: library/codecs.rst:1202
 msgid "iso2022_jp_3"
 msgstr ""
 
-#: library/codecs.rst:1203
+#: library/codecs.rst:1202
 msgid "iso2022jp-3, iso-2022-jp-3"
 msgstr ""
 
-#: library/codecs.rst:1205
+#: library/codecs.rst:1204
 msgid "iso2022_jp_ext"
 msgstr ""
 
-#: library/codecs.rst:1205
+#: library/codecs.rst:1204
 msgid "iso2022jp-ext, iso-2022-jp-ext"
 msgstr ""
 
-#: library/codecs.rst:1207
+#: library/codecs.rst:1206
 msgid "iso2022_kr"
 msgstr ""
 
-#: library/codecs.rst:1207
+#: library/codecs.rst:1206
 msgid "csiso2022kr, iso2022kr, iso-2022-kr"
 msgstr ""
 
-#: library/codecs.rst:1210
+#: library/codecs.rst:1209
 msgid "latin_1"
 msgstr ""
 
-#: library/codecs.rst:1210
+#: library/codecs.rst:1209
 msgid "iso-8859-1, iso8859-1, 8859, cp819, latin, latin1, L1"
 msgstr ""
 
-#: library/codecs.rst:1213
+#: library/codecs.rst:1212
 msgid "iso8859_2"
 msgstr ""
 
-#: library/codecs.rst:1213
+#: library/codecs.rst:1212
 msgid "iso-8859-2, latin2, L2"
 msgstr ""
 
-#: library/codecs.rst:1215
+#: library/codecs.rst:1214
 msgid "iso8859_3"
 msgstr ""
 
-#: library/codecs.rst:1215
+#: library/codecs.rst:1214
 msgid "iso-8859-3, latin3, L3"
 msgstr ""
 
-#: library/codecs.rst:1215
+#: library/codecs.rst:1214
 msgid "Esperanto, Maltese"
 msgstr ""
 
-#: library/codecs.rst:1217
+#: library/codecs.rst:1216
 msgid "iso8859_4"
 msgstr ""
 
-#: library/codecs.rst:1217
+#: library/codecs.rst:1216
 msgid "iso-8859-4, latin4, L4"
 msgstr ""
 
-#: library/codecs.rst:1219
+#: library/codecs.rst:1218
 msgid "iso8859_5"
 msgstr ""
 
-#: library/codecs.rst:1219
+#: library/codecs.rst:1218
 msgid "iso-8859-5, cyrillic"
 msgstr ""
 
-#: library/codecs.rst:1222
+#: library/codecs.rst:1221
 msgid "iso8859_6"
 msgstr ""
 
-#: library/codecs.rst:1222
+#: library/codecs.rst:1221
 msgid "iso-8859-6, arabic"
 msgstr ""
 
-#: library/codecs.rst:1224
+#: library/codecs.rst:1223
 msgid "iso8859_7"
 msgstr ""
 
-#: library/codecs.rst:1224
+#: library/codecs.rst:1223
 msgid "iso-8859-7, greek, greek8"
 msgstr ""
 
-#: library/codecs.rst:1226
+#: library/codecs.rst:1225
 msgid "iso8859_8"
 msgstr ""
 
-#: library/codecs.rst:1226
+#: library/codecs.rst:1225
 msgid "iso-8859-8, hebrew"
 msgstr ""
 
-#: library/codecs.rst:1228
+#: library/codecs.rst:1227
 msgid "iso8859_9"
 msgstr ""
 
-#: library/codecs.rst:1228
+#: library/codecs.rst:1227
 msgid "iso-8859-9, latin5, L5"
 msgstr ""
 
-#: library/codecs.rst:1230
+#: library/codecs.rst:1229
 msgid "iso8859_10"
 msgstr ""
 
-#: library/codecs.rst:1230
+#: library/codecs.rst:1229
 msgid "iso-8859-10, latin6, L6"
 msgstr ""
 
-#: library/codecs.rst:1230
+#: library/codecs.rst:1229
 msgid "Nordic languages"
 msgstr ""
 
-#: library/codecs.rst:1232
+#: library/codecs.rst:1231
 msgid "iso8859_11"
 msgstr ""
 
-#: library/codecs.rst:1232
+#: library/codecs.rst:1231
 msgid "iso-8859-11, thai"
 msgstr ""
 
-#: library/codecs.rst:1232
+#: library/codecs.rst:1231
 msgid "Thai languages"
 msgstr ""
 
-#: library/codecs.rst:1234
+#: library/codecs.rst:1233
 msgid "iso8859_13"
 msgstr ""
 
-#: library/codecs.rst:1234
+#: library/codecs.rst:1233
 msgid "iso-8859-13, latin7, L7"
 msgstr ""
 
-#: library/codecs.rst:1236
+#: library/codecs.rst:1235
 msgid "iso8859_14"
 msgstr ""
 
-#: library/codecs.rst:1236
+#: library/codecs.rst:1235
 msgid "iso-8859-14, latin8, L8"
 msgstr ""
 
-#: library/codecs.rst:1236
+#: library/codecs.rst:1235
 msgid "Celtic languages"
 msgstr ""
 
-#: library/codecs.rst:1238
+#: library/codecs.rst:1237
 msgid "iso8859_15"
 msgstr ""
 
-#: library/codecs.rst:1238
+#: library/codecs.rst:1237
 msgid "iso-8859-15, latin9, L9"
 msgstr ""
 
-#: library/codecs.rst:1240
+#: library/codecs.rst:1239
 msgid "iso8859_16"
 msgstr ""
 
-#: library/codecs.rst:1240
+#: library/codecs.rst:1239
 msgid "iso-8859-16, latin10, L10"
 msgstr ""
 
-#: library/codecs.rst:1240
+#: library/codecs.rst:1239
 msgid "South-Eastern Europe"
 msgstr ""
 
-#: library/codecs.rst:1242
+#: library/codecs.rst:1241
 msgid "johab"
 msgstr ""
 
-#: library/codecs.rst:1242
+#: library/codecs.rst:1241
 msgid "cp1361, ms1361"
 msgstr ""
 
-#: library/codecs.rst:1244
+#: library/codecs.rst:1243
 msgid "koi8_r"
 msgstr ""
 
-#: library/codecs.rst:1246
+#: library/codecs.rst:1245
 msgid "koi8_t"
 msgstr ""
 
-#: library/codecs.rst:1246
+#: library/codecs.rst:1245
 msgid "Tajik"
 msgstr ""
 
-#: library/codecs.rst:1250
+#: library/codecs.rst:1249
 msgid "koi8_u"
 msgstr ""
 
-#: library/codecs.rst:1252
+#: library/codecs.rst:1251
 msgid "kz1048"
 msgstr ""
 
-#: library/codecs.rst:1252
+#: library/codecs.rst:1251
 msgid "kz_1048, strk1048_2002, rk1048"
 msgstr ""
 
-#: library/codecs.rst:1270
+#: library/codecs.rst:1269
 msgid "Kazakh"
 msgstr ""
 
-#: library/codecs.rst:1256
+#: library/codecs.rst:1255
 msgid "mac_cyrillic"
 msgstr ""
 
-#: library/codecs.rst:1256
+#: library/codecs.rst:1255
 msgid "maccyrillic"
 msgstr ""
 
-#: library/codecs.rst:1259
+#: library/codecs.rst:1258
 msgid "mac_greek"
 msgstr ""
 
-#: library/codecs.rst:1259
+#: library/codecs.rst:1258
 msgid "macgreek"
 msgstr ""
 
-#: library/codecs.rst:1261
+#: library/codecs.rst:1260
 msgid "mac_iceland"
 msgstr ""
 
-#: library/codecs.rst:1261
+#: library/codecs.rst:1260
 msgid "maciceland"
 msgstr ""
 
-#: library/codecs.rst:1263
+#: library/codecs.rst:1262
 msgid "mac_latin2"
 msgstr ""
 
-#: library/codecs.rst:1263
+#: library/codecs.rst:1262
 msgid "maclatin2, maccentraleurope, mac_centeuro"
 msgstr ""
 
-#: library/codecs.rst:1266
+#: library/codecs.rst:1265
 msgid "mac_roman"
 msgstr ""
 
-#: library/codecs.rst:1266
+#: library/codecs.rst:1265
 msgid "macroman, macintosh"
 msgstr ""
 
-#: library/codecs.rst:1268
+#: library/codecs.rst:1267
 msgid "mac_turkish"
 msgstr ""
 
-#: library/codecs.rst:1268
+#: library/codecs.rst:1267
 msgid "macturkish"
 msgstr ""
 
-#: library/codecs.rst:1270
+#: library/codecs.rst:1269
 msgid "ptcp154"
 msgstr ""
 
-#: library/codecs.rst:1270
+#: library/codecs.rst:1269
 msgid "csptcp154, pt154, cp154, cyrillic-asian"
 msgstr ""
 
-#: library/codecs.rst:1273
+#: library/codecs.rst:1272
 msgid "shift_jis"
 msgstr ""
 
-#: library/codecs.rst:1273
+#: library/codecs.rst:1272
 msgid "csshiftjis, shiftjis, sjis, s_jis"
 msgstr ""
 
-#: library/codecs.rst:1276
+#: library/codecs.rst:1275
 msgid "shift_jis_2004"
 msgstr ""
 
-#: library/codecs.rst:1276
+#: library/codecs.rst:1275
 msgid "shiftjis2004, sjis_2004, sjis2004"
 msgstr ""
 
-#: library/codecs.rst:1279
+#: library/codecs.rst:1278
 msgid "shift_jisx0213"
 msgstr ""
 
-#: library/codecs.rst:1279
+#: library/codecs.rst:1278
 msgid "shiftjisx0213, sjisx0213, s_jisx0213"
 msgstr ""
 
-#: library/codecs.rst:1282
+#: library/codecs.rst:1281
 msgid "utf_32"
 msgstr ""
 
-#: library/codecs.rst:1282
+#: library/codecs.rst:1281
 msgid "U32, utf32"
 msgstr ""
 
-#: library/codecs.rst:1284 library/codecs.rst:1288 library/codecs.rst:1292
-#: library/codecs.rst:1296 library/codecs.rst:1298
+#: library/codecs.rst:1283 library/codecs.rst:1287 library/codecs.rst:1291
+#: library/codecs.rst:1295 library/codecs.rst:1297
 msgid "all languages"
 msgstr ""
 
-#: library/codecs.rst:1284
+#: library/codecs.rst:1283
 msgid "utf_32_be"
 msgstr ""
 
-#: library/codecs.rst:1284
+#: library/codecs.rst:1283
 msgid "UTF-32BE"
 msgstr ""
 
-#: library/codecs.rst:1286
+#: library/codecs.rst:1285
 msgid "utf_32_le"
 msgstr ""
 
-#: library/codecs.rst:1286
+#: library/codecs.rst:1285
 msgid "UTF-32LE"
 msgstr ""
 
-#: library/codecs.rst:1288
+#: library/codecs.rst:1287
 msgid "utf_16"
 msgstr ""
 
-#: library/codecs.rst:1288
+#: library/codecs.rst:1287
 msgid "U16, utf16"
 msgstr ""
 
-#: library/codecs.rst:1290
+#: library/codecs.rst:1289
 msgid "utf_16_be"
 msgstr ""
 
-#: library/codecs.rst:1290
+#: library/codecs.rst:1289
 msgid "UTF-16BE"
 msgstr ""
 
-#: library/codecs.rst:1292
+#: library/codecs.rst:1291
 msgid "utf_16_le"
 msgstr ""
 
-#: library/codecs.rst:1292
+#: library/codecs.rst:1291
 msgid "UTF-16LE"
 msgstr ""
 
-#: library/codecs.rst:1294
+#: library/codecs.rst:1293
 msgid "utf_7"
 msgstr ""
 
-#: library/codecs.rst:1294
+#: library/codecs.rst:1293
 msgid "U7, unicode-1-1-utf-7"
 msgstr ""
 
-#: library/codecs.rst:1296
+#: library/codecs.rst:1295
 msgid "utf_8"
 msgstr ""
 
-#: library/codecs.rst:1296
+#: library/codecs.rst:1295
 msgid "U8, UTF, utf8, cp65001"
 msgstr ""
 
-#: library/codecs.rst:1298
+#: library/codecs.rst:1297
 msgid "utf_8_sig"
 msgstr ""
 
-#: library/codecs.rst:1301
+#: library/codecs.rst:1300
 msgid ""
 "The utf-16\\* and utf-32\\* encoders no longer allow surrogate code points "
 "(``U+D800``--``U+DFFF``) to be encoded. The utf-32\\* decoders no longer "
 "decode byte sequences that correspond to surrogate code points."
 msgstr ""
 
-#: library/codecs.rst:1307
+#: library/codecs.rst:1306
 msgid "``cp65001`` is now an alias to ``utf_8``."
 msgstr ""
 
-#: library/codecs.rst:1312
+#: library/codecs.rst:1311
 msgid "Python Specific Encodings"
 msgstr ""
 
-#: library/codecs.rst:1314
+#: library/codecs.rst:1313
 msgid ""
 "A number of predefined codecs are specific to Python, so their codec names "
 "have no meaning outside Python. These are listed in the tables below based "
@@ -2274,268 +2274,273 @@ msgid ""
 "asymmetric codecs, the stated meaning describes the encoding direction."
 msgstr ""
 
-#: library/codecs.rst:1322
+#: library/codecs.rst:1321
 msgid "Text Encodings"
 msgstr ""
 
-#: library/codecs.rst:1324
+#: library/codecs.rst:1323
 msgid ""
 "The following codecs provide :class:`str` to :class:`bytes` encoding and :"
 "term:`bytes-like object` to :class:`str` decoding, similar to the Unicode "
 "text encodings."
 msgstr ""
 
-#: library/codecs.rst:1333
+#: library/codecs.rst:1332
 msgid "idna"
 msgstr ""
 
-#: library/codecs.rst:1333
+#: library/codecs.rst:1332
 msgid ""
 "Implement :rfc:`3490`, see also :mod:`encodings.idna`. Only "
 "``errors='strict'`` is supported."
 msgstr ""
 
-#: library/codecs.rst:1339
+#: library/codecs.rst:1338
 msgid "mbcs"
 msgstr ""
 
-#: library/codecs.rst:1339
+#: library/codecs.rst:1338
 msgid "ansi, dbcs"
 msgstr ""
 
-#: library/codecs.rst:1339
+#: library/codecs.rst:1338
 msgid ""
 "Windows only: Encode the operand according to the ANSI codepage (CP_ACP)."
 msgstr ""
 
-#: library/codecs.rst:1343
+#: library/codecs.rst:1342
 msgid "oem"
 msgstr ""
 
-#: library/codecs.rst:1343
+#: library/codecs.rst:1342
 msgid ""
 "Windows only: Encode the operand according to the OEM codepage (CP_OEMCP)."
 msgstr ""
 
-#: library/codecs.rst:1349
+#: library/codecs.rst:1348
 msgid "palmos"
 msgstr ""
 
-#: library/codecs.rst:1349
+#: library/codecs.rst:1348
 msgid "Encoding of PalmOS 3.5."
 msgstr ""
 
-#: library/codecs.rst:1351
+#: library/codecs.rst:1350
 msgid "punycode"
 msgstr ""
 
-#: library/codecs.rst:1351
+#: library/codecs.rst:1350
 msgid "Implement :rfc:`3492`. Stateful codecs are not supported."
 msgstr ""
 
-#: library/codecs.rst:1355
+#: library/codecs.rst:1354
 msgid "raw_unicode_escape"
 msgstr ""
 
-#: library/codecs.rst:1355
+#: library/codecs.rst:1354
 msgid ""
 "Latin-1 encoding with :samp:`\\\\u{XXXX}` and :samp:`\\\\U{XXXXXXXX}` for "
 "other code points. Existing backslashes are not escaped in any way. It is "
 "used in the Python pickle protocol."
 msgstr ""
 
-#: library/codecs.rst:1365
+#: library/codecs.rst:1364
 msgid "undefined"
 msgstr ""
 
-#: library/codecs.rst:1365
+#: library/codecs.rst:1364
 msgid ""
 "Raise an exception for all conversions, even empty strings. The error "
 "handler is ignored."
 msgstr ""
 
-#: library/codecs.rst:1370
+#: library/codecs.rst:1369
 msgid "unicode_escape"
 msgstr ""
 
-#: library/codecs.rst:1370
+#: library/codecs.rst:1369
 msgid ""
 "Encoding suitable as the contents of a Unicode literal in ASCII-encoded "
 "Python source code, except that quotes are not escaped. Decode from Latin-1 "
 "source code. Beware that Python source code actually uses UTF-8 by default."
 msgstr ""
 
-#: library/codecs.rst:1382
+#: library/codecs.rst:1381
 msgid "\"unicode_internal\" codec is removed."
 msgstr ""
 
-#: library/codecs.rst:1389
+#: library/codecs.rst:1388
 msgid "Binary Transforms"
 msgstr ""
 
-#: library/codecs.rst:1391
+#: library/codecs.rst:1390
 msgid ""
 "The following codecs provide binary transforms: :term:`bytes-like object` "
 "to :class:`bytes` mappings. They are not supported by :meth:`bytes.decode` "
 "(which only produces :class:`str` output)."
 msgstr ""
 
-#: library/codecs.rst:1399
+#: library/codecs.rst:1398
 msgid "Encoder / decoder"
 msgstr ""
 
-#: library/codecs.rst:1401
+#: library/codecs.rst:1400
 msgid "base64_codec [#b64]_"
 msgstr ""
 
-#: library/codecs.rst:1401
+#: library/codecs.rst:1400
 msgid "base64, base_64"
 msgstr ""
 
-#: library/codecs.rst:1401
+#: library/codecs.rst:1400
 msgid ""
 "Convert the operand to multiline MIME base64 (the result always includes a "
 "trailing ``'\\n'``)."
 msgstr ""
 
-#: library/codecs.rst:1406
+#: library/codecs.rst:1405
 msgid ""
 "accepts any :term:`bytes-like object` as input for encoding and decoding"
 msgstr ""
 
-#: library/codecs.rst:1401
+#: library/codecs.rst:1400
 msgid ":meth:`base64.encodebytes` / :meth:`base64.decodebytes`"
 msgstr ""
 
-#: library/codecs.rst:1412
+#: library/codecs.rst:1411
 msgid "bz2_codec"
 msgstr ""
 
-#: library/codecs.rst:1412
+#: library/codecs.rst:1411
 msgid "bz2"
 msgstr ""
 
-#: library/codecs.rst:1412
+#: library/codecs.rst:1411
 msgid "Compress the operand using bz2."
 msgstr ""
 
-#: library/codecs.rst:1412
+#: library/codecs.rst:1411
 msgid ":meth:`bz2.compress` / :meth:`bz2.decompress`"
 msgstr ""
 
-#: library/codecs.rst:1415
+#: library/codecs.rst:1414
 msgid "hex_codec"
 msgstr ""
 
-#: library/codecs.rst:1415
+#: library/codecs.rst:1414
 msgid "hex"
 msgstr ""
 
-#: library/codecs.rst:1415
+#: library/codecs.rst:1414
 msgid ""
 "Convert the operand to hexadecimal representation, with two digits per byte."
 msgstr ""
 
-#: library/codecs.rst:1415
+#: library/codecs.rst:1414
 msgid ":meth:`binascii.b2a_hex` / :meth:`binascii.a2b_hex`"
 msgstr ""
 
-#: library/codecs.rst:1420
+#: library/codecs.rst:1419
 msgid "quopri_codec"
 msgstr ""
 
-#: library/codecs.rst:1420
+#: library/codecs.rst:1419
 msgid "quopri, quotedprintable, quoted_printable"
 msgstr ""
 
-#: library/codecs.rst:1420
+#: library/codecs.rst:1419
 msgid "Convert the operand to MIME quoted printable."
 msgstr ""
 
-#: library/codecs.rst:1420
+#: library/codecs.rst:1419
 msgid ":meth:`quopri.encode` with ``quotetabs=True`` / :meth:`quopri.decode`"
 msgstr ""
 
-#: library/codecs.rst:1424
+#: library/codecs.rst:1423
 msgid "uu_codec"
 msgstr ""
 
-#: library/codecs.rst:1424
+#: library/codecs.rst:1423
 msgid "uu"
 msgstr ""
 
-#: library/codecs.rst:1424
+#: library/codecs.rst:1423
 msgid "Convert the operand using uuencode."
 msgstr ""
 
-#: library/codecs.rst:1427
+#: library/codecs.rst:1423
+msgid ""
+":meth:`!uu.encode` / :meth:`!uu.decode` (Note: :mod:`uu` is deprecated.)"
+msgstr ""
+
+#: library/codecs.rst:1428
 msgid "zlib_codec"
 msgstr ""
 
-#: library/codecs.rst:1427
+#: library/codecs.rst:1428
 msgid "zip, zlib"
 msgstr ""
 
-#: library/codecs.rst:1427
+#: library/codecs.rst:1428
 msgid "Compress the operand using gzip."
 msgstr ""
 
-#: library/codecs.rst:1427
+#: library/codecs.rst:1428
 msgid ":meth:`zlib.compress` / :meth:`zlib.decompress`"
 msgstr ""
 
-#: library/codecs.rst:1431
+#: library/codecs.rst:1432
 msgid ""
 "In addition to :term:`bytes-like objects <bytes-like object>`, "
 "``'base64_codec'`` also accepts ASCII-only instances of :class:`str` for "
 "decoding"
 msgstr ""
 
-#: library/codecs.rst:1435
+#: library/codecs.rst:1436
 msgid "Restoration of the binary transforms."
 msgstr ""
 
-#: library/codecs.rst:1438
+#: library/codecs.rst:1439
 msgid "Restoration of the aliases for the binary transforms."
 msgstr ""
 
-#: library/codecs.rst:1445
+#: library/codecs.rst:1446
 msgid "Text Transforms"
 msgstr ""
 
-#: library/codecs.rst:1447
+#: library/codecs.rst:1448
 msgid ""
 "The following codec provides a text transform: a :class:`str` to :class:"
 "`str` mapping. It is not supported by :meth:`str.encode` (which only "
 "produces :class:`bytes` output)."
 msgstr ""
 
-#: library/codecs.rst:1456
+#: library/codecs.rst:1457
 msgid "rot_13"
 msgstr ""
 
-#: library/codecs.rst:1456
+#: library/codecs.rst:1457
 msgid "rot13"
 msgstr ""
 
-#: library/codecs.rst:1456
+#: library/codecs.rst:1457
 msgid "Return the Caesar-cypher encryption of the operand."
 msgstr ""
 
-#: library/codecs.rst:1461
+#: library/codecs.rst:1462
 msgid "Restoration of the ``rot_13`` text transform."
 msgstr ""
 
-#: library/codecs.rst:1464
+#: library/codecs.rst:1465
 msgid "Restoration of the ``rot13`` alias."
 msgstr ""
 
-#: library/codecs.rst:1469
+#: library/codecs.rst:1470
 msgid ""
 ":mod:`encodings.idna` --- Internationalized Domain Names in Applications"
 msgstr ""
 
-#: library/codecs.rst:1475
+#: library/codecs.rst:1476
 msgid ""
 "This module implements :rfc:`3490` (Internationalized Domain Names in "
 "Applications) and :rfc:`3492` (Nameprep: A Stringprep Profile for "
@@ -2543,13 +2548,13 @@ msgid ""
 "encoding and :mod:`stringprep`."
 msgstr ""
 
-#: library/codecs.rst:1480
+#: library/codecs.rst:1481
 msgid ""
 "If you need the IDNA 2008 standard from :rfc:`5891` and :rfc:`5895`, use the "
 "third-party :pypi:`idna` module."
 msgstr ""
 
-#: library/codecs.rst:1483
+#: library/codecs.rst:1484
 msgid ""
 "These RFCs together define a protocol to support non-ASCII characters in "
 "domain names. A domain name containing non-ASCII characters (such as ``www."
@@ -2563,7 +2568,7 @@ msgid ""
 "presenting them to the user."
 msgstr ""
 
-#: library/codecs.rst:1494
+#: library/codecs.rst:1495
 msgid ""
 "Python supports this conversion in several ways:  the ``idna`` codec "
 "performs conversion between Unicode and ACE, separating an input string into "
@@ -2580,14 +2585,14 @@ msgid ""
 "sends that field at all)."
 msgstr ""
 
-#: library/codecs.rst:1507
+#: library/codecs.rst:1508
 msgid ""
 "When receiving host names from the wire (such as in reverse name lookup), no "
 "automatic conversion to Unicode is performed: applications wishing to "
 "present such host names to the user should decode them to Unicode."
 msgstr ""
 
-#: library/codecs.rst:1511
+#: library/codecs.rst:1512
 msgid ""
 "The module :mod:`encodings.idna` also implements the nameprep procedure, "
 "which performs certain normalizations on host names, to achieve case-"
@@ -2595,49 +2600,49 @@ msgid ""
 "characters. The nameprep functions can be used directly if desired."
 msgstr ""
 
-#: library/codecs.rst:1519
+#: library/codecs.rst:1520
 msgid ""
 "Return the nameprepped version of *label*. The implementation currently "
 "assumes query strings, so ``AllowUnassigned`` is true."
 msgstr ""
 
-#: library/codecs.rst:1525
+#: library/codecs.rst:1526
 msgid ""
 "Convert a label to ASCII, as specified in :rfc:`3490`. ``UseSTD3ASCIIRules`` "
 "is assumed to be false."
 msgstr ""
 
-#: library/codecs.rst:1531
+#: library/codecs.rst:1532
 msgid "Convert a label to Unicode, as specified in :rfc:`3490`."
 msgstr ""
 
-#: library/codecs.rst:1535
+#: library/codecs.rst:1536
 msgid ":mod:`encodings.mbcs` --- Windows ANSI codepage"
 msgstr ""
 
-#: library/codecs.rst:1540
+#: library/codecs.rst:1541
 msgid "This module implements the ANSI codepage (CP_ACP)."
 msgstr ""
 
-#: library/codecs.rst:1542
+#: library/codecs.rst:1543
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
-#: library/codecs.rst:1544
+#: library/codecs.rst:1545
 msgid ""
 "Before 3.2, the *errors* argument was ignored; ``'replace'`` was always used "
 "to encode, and ``'ignore'`` to decode."
 msgstr ""
 
-#: library/codecs.rst:1548
+#: library/codecs.rst:1549
 msgid "Support any error handler."
 msgstr ""
 
-#: library/codecs.rst:1553
+#: library/codecs.rst:1554
 msgid ":mod:`encodings.utf_8_sig` --- UTF-8 codec with BOM signature"
 msgstr ""
 
-#: library/codecs.rst:1559
+#: library/codecs.rst:1560
 msgid ""
 "This module implements a variant of the UTF-8 codec. On encoding, a UTF-8 "
 "encoded BOM will be prepended to the UTF-8 encoded bytes. For the stateful "

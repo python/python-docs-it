@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,30 +120,24 @@ msgid ""
 "put_nowait`) is called on a :class:`Queue` object which is full."
 msgstr ""
 
-#: library/queue.rst:98
-msgid ""
-"Exception raised when :meth:`~Queue.put` or :meth:`~Queue.get` is called on "
-"a :class:`Queue` object which has been shut down."
-msgstr ""
-
-#: library/queue.rst:107
+#: library/queue.rst:99
 msgid "Queue Objects"
 msgstr ""
 
-#: library/queue.rst:109
+#: library/queue.rst:101
 msgid ""
 "Queue objects (:class:`Queue`, :class:`LifoQueue`, or :class:"
 "`PriorityQueue`) provide the public methods described below."
 msgstr ""
 
-#: library/queue.rst:115
+#: library/queue.rst:107
 msgid ""
 "Return the approximate size of the queue.  Note, qsize() > 0 doesn't "
 "guarantee that a subsequent get() will not block, nor will qsize() < maxsize "
 "guarantee that put() will not block."
 msgstr ""
 
-#: library/queue.rst:122
+#: library/queue.rst:114
 msgid ""
 "Return ``True`` if the queue is empty, ``False`` otherwise.  If empty() "
 "returns ``True`` it doesn't guarantee that a subsequent call to put() will "
@@ -151,7 +145,7 @@ msgid ""
 "that a subsequent call to get() will not block."
 msgstr ""
 
-#: library/queue.rst:130
+#: library/queue.rst:122
 msgid ""
 "Return ``True`` if the queue is full, ``False`` otherwise.  If full() "
 "returns ``True`` it doesn't guarantee that a subsequent call to get() will "
@@ -159,7 +153,7 @@ msgid ""
 "a subsequent call to put() will not block."
 msgstr ""
 
-#: library/queue.rst:138
+#: library/queue.rst:130
 msgid ""
 "Put *item* into the queue.  If optional args *block* is true and *timeout* "
 "is ``None`` (the default), block if necessary until a free slot is "
@@ -170,15 +164,11 @@ msgid ""
 "(*timeout* is ignored in that case)."
 msgstr ""
 
-#: library/queue.rst:146
-msgid "Raises :exc:`ShutDown` if the queue has been shut down."
-msgstr ""
-
-#: library/queue.rst:151
+#: library/queue.rst:141
 msgid "Equivalent to ``put(item, block=False)``."
 msgstr ""
 
-#: library/queue.rst:297
+#: library/queue.rst:258
 msgid ""
 "Remove and return an item from the queue.  If optional args *block* is true "
 "and *timeout* is ``None`` (the default), block if necessary until an item is "
@@ -189,7 +179,7 @@ msgid ""
 "ignored in that case)."
 msgstr ""
 
-#: library/queue.rst:163
+#: library/queue.rst:153
 msgid ""
 "Prior to 3.0 on POSIX systems, and for all versions on Windows, if *block* "
 "is true and *timeout* is ``None``, this operation goes into an "
@@ -198,53 +188,41 @@ msgid ""
 "`KeyboardInterrupt`."
 msgstr ""
 
-#: library/queue.rst:168
-msgid ""
-"Raises :exc:`ShutDown` if the queue has been shut down and is empty, or if "
-"the queue has been shut down immediately."
-msgstr ""
-
-#: library/queue.rst:307
+#: library/queue.rst:268
 msgid "Equivalent to ``get(False)``."
 msgstr ""
 
-#: library/queue.rst:176
+#: library/queue.rst:163
 msgid ""
 "Two methods are offered to support tracking whether enqueued tasks have been "
 "fully processed by daemon consumer threads."
 msgstr ""
 
-#: library/queue.rst:182
+#: library/queue.rst:169
 msgid ""
 "Indicate that a formerly enqueued task is complete.  Used by queue consumer "
 "threads.  For each :meth:`get` used to fetch a task, a subsequent call to :"
 "meth:`task_done` tells the queue that the processing on the task is complete."
 msgstr ""
 
-#: library/queue.rst:186
+#: library/queue.rst:173
 msgid ""
 "If a :meth:`join` is currently blocking, it will resume when all items have "
 "been processed (meaning that a :meth:`task_done` call was received for every "
 "item that had been :meth:`put` into the queue)."
 msgstr ""
 
-#: library/queue.rst:190
-msgid ""
-"``shutdown(immediate=True)`` calls :meth:`task_done` for each remaining item "
-"in the queue."
-msgstr ""
-
-#: library/queue.rst:193
+#: library/queue.rst:177
 msgid ""
 "Raises a :exc:`ValueError` if called more times than there were items placed "
 "in the queue."
 msgstr ""
 
-#: library/queue.rst:199
+#: library/queue.rst:183
 msgid "Blocks until all items in the queue have been gotten and processed."
 msgstr ""
 
-#: library/queue.rst:201
+#: library/queue.rst:185
 msgid ""
 "The count of unfinished tasks goes up whenever an item is added to the "
 "queue. The count goes down whenever a consumer thread calls :meth:"
@@ -253,64 +231,33 @@ msgid ""
 "unblocks."
 msgstr ""
 
-#: library/queue.rst:207
+#: library/queue.rst:191
 msgid "Example of how to wait for enqueued tasks to be completed::"
 msgstr ""
 
-#: library/queue.rst:234
-msgid "Terminating queues"
-msgstr ""
-
-#: library/queue.rst:236
-msgid ""
-":class:`Queue` objects can be made to prevent further interaction by "
-"shutting them down."
-msgstr ""
-
-#: library/queue.rst:241
-msgid ""
-"Shut down the queue, making :meth:`~Queue.get` and :meth:`~Queue.put` raise :"
-"exc:`ShutDown`."
-msgstr ""
-
-#: library/queue.rst:244
-msgid ""
-"By default, :meth:`~Queue.get` on a shut down queue will only raise once the "
-"queue is empty. Set *immediate* to true to make :meth:`~Queue.get` raise "
-"immediately instead."
-msgstr ""
-
-#: library/queue.rst:248
-msgid ""
-"All blocked callers of :meth:`~Queue.put` and :meth:`~Queue.get` will be "
-"unblocked. If *immediate* is true, a task will be marked as done for each "
-"remaining item in the queue, which may unblock callers of :meth:`~Queue."
-"join`."
-msgstr ""
-
-#: library/queue.rst:257
+#: library/queue.rst:218
 msgid "SimpleQueue Objects"
 msgstr ""
 
-#: library/queue.rst:259
+#: library/queue.rst:220
 msgid ""
 ":class:`SimpleQueue` objects provide the public methods described below."
 msgstr ""
 
-#: library/queue.rst:263
+#: library/queue.rst:224
 msgid ""
 "Return the approximate size of the queue.  Note, qsize() > 0 doesn't "
 "guarantee that a subsequent get() will not block."
 msgstr ""
 
-#: library/queue.rst:269
+#: library/queue.rst:230
 msgid ""
 "Return ``True`` if the queue is empty, ``False`` otherwise.  If empty() "
 "returns ``False`` it doesn't guarantee that a subsequent call to get() will "
 "not block."
 msgstr ""
 
-#: library/queue.rst:276
+#: library/queue.rst:237
 msgid ""
 "Put *item* into the queue.  The method never blocks and always succeeds "
 "(except for potential low-level errors such as failure to allocate memory). "
@@ -318,7 +265,7 @@ msgid ""
 "compatibility with :meth:`Queue.put`."
 msgstr ""
 
-#: library/queue.rst:282
+#: library/queue.rst:243
 msgid ""
 "This method has a C implementation which is reentrant.  That is, a ``put()`` "
 "or ``get()`` call can be interrupted by another ``put()`` call in the same "
@@ -327,23 +274,23 @@ msgid ""
 "or :mod:`weakref` callbacks."
 msgstr ""
 
-#: library/queue.rst:291
+#: library/queue.rst:252
 msgid ""
 "Equivalent to ``put(item, block=False)``, provided for compatibility with :"
 "meth:`Queue.put_nowait`."
 msgstr ""
 
-#: library/queue.rst:312
+#: library/queue.rst:273
 msgid "Class :class:`multiprocessing.Queue`"
 msgstr ""
 
-#: library/queue.rst:313
+#: library/queue.rst:274
 msgid ""
 "A queue class for use in a multi-processing (rather than multi-threading) "
 "context."
 msgstr ""
 
-#: library/queue.rst:316
+#: library/queue.rst:277
 msgid ""
 ":class:`collections.deque` is an alternative implementation of unbounded "
 "queues with fast atomic :meth:`~collections.deque.append` and :meth:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -514,67 +514,44 @@ msgid "Return a hash of the underlying mapping."
 msgstr ""
 
 #: library/types.rst:471
-msgid "The type of :ref:`capsule objects <capsules>`."
-msgstr ""
-
-#: library/types.rst:477
 msgid "Additional Utility Classes and Functions"
 msgstr ""
 
-#: library/types.rst:481
+#: library/types.rst:475
 msgid ""
 "A simple :class:`object` subclass that provides attribute access to its "
 "namespace, as well as a meaningful repr."
 msgstr ""
 
-#: library/types.rst:484
+#: library/types.rst:478
 msgid ""
-"Unlike :class:`object`, with :class:`!SimpleNamespace` you can add and "
-"remove attributes."
+"Unlike :class:`object`, with ``SimpleNamespace`` you can add and remove "
+"attributes.  If a ``SimpleNamespace`` object is initialized with keyword "
+"arguments, those are directly added to the underlying namespace."
 msgstr ""
 
-#: library/types.rst:487
-msgid ""
-":py:class:`SimpleNamespace` objects may be initialized in the same way as :"
-"class:`dict`: either with keyword arguments, with a single positional "
-"argument, or with both. When initialized with keyword arguments, those are "
-"directly added to the underlying namespace. Alternatively, when initialized "
-"with a positional argument, the underlying namespace will be updated with "
-"key-value pairs from that argument (either a mapping object or an :term:"
-"`iterable` object producing key-value pairs). All such keys must be strings."
-msgstr ""
-
-#: library/types.rst:498
+#: library/types.rst:482
 msgid "The type is roughly equivalent to the following code::"
 msgstr ""
 
-#: library/types.rst:514
+#: library/types.rst:497
 msgid ""
 "``SimpleNamespace`` may be useful as a replacement for ``class NS: pass``. "
 "However, for a structured record type use :func:`~collections.namedtuple` "
 "instead."
 msgstr ""
 
-#: library/types.rst:518
-msgid ""
-":class:`!SimpleNamespace` objects are supported by :func:`copy.replace`."
-msgstr ""
-
-#: library/types.rst:522
+#: library/types.rst:503
 msgid ""
 "Attribute order in the repr changed from alphabetical to insertion (like "
 "``dict``)."
 msgstr ""
 
-#: library/types.rst:526
-msgid "Added support for an optional positional argument."
-msgstr ""
-
-#: library/types.rst:531
+#: library/types.rst:509
 msgid "Route attribute access on a class to __getattr__."
 msgstr ""
 
-#: library/types.rst:533
+#: library/types.rst:511
 msgid ""
 "This is a descriptor, used to define attributes that act differently when "
 "accessed through an instance and through a class.  Instance access remains "
@@ -582,18 +559,18 @@ msgid ""
 "class's __getattr__ method; this is done by raising AttributeError."
 msgstr ""
 
-#: library/types.rst:538
+#: library/types.rst:516
 msgid ""
 "This allows one to have properties active on an instance, and have virtual "
 "attributes on the class with the same name (see :class:`enum.Enum` for an "
 "example)."
 msgstr ""
 
-#: library/types.rst:545
+#: library/types.rst:523
 msgid "Coroutine Utility Functions"
 msgstr ""
 
-#: library/types.rst:549
+#: library/types.rst:527
 msgid ""
 "This function transforms a :term:`generator` function into a :term:"
 "`coroutine function` which returns a generator-based coroutine. The "
@@ -603,11 +580,11 @@ msgid ""
 "method."
 msgstr ""
 
-#: library/types.rst:556
+#: library/types.rst:534
 msgid "If *gen_func* is a generator function, it will be modified in-place."
 msgstr ""
 
-#: library/types.rst:558
+#: library/types.rst:536
 msgid ""
 "If *gen_func* is not a generator function, it will be wrapped. If it returns "
 "an instance of :class:`collections.abc.Generator`, the instance will be "

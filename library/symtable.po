@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,19 +233,4 @@ msgstr ""
 msgid ""
 "Return the namespace bound to this name. If more than one or no namespace is "
 "bound to this name, a :exc:`ValueError` is raised."
-msgstr ""
-
-#: library/symtable.rst:215
-msgid "Command-Line Usage"
-msgstr ""
-
-#: library/symtable.rst:219
-msgid ""
-"The :mod:`symtable` module can be executed as a script from the command line."
-msgstr ""
-
-#: library/symtable.rst:225
-msgid ""
-"Symbol tables are generated for the specified Python source files and dumped "
-"to stdout. If no input file is specified, the content is read from stdin."
 msgstr ""

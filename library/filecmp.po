@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,122 +119,118 @@ msgstr ""
 #: library/filecmp.rst:80
 msgid ""
 "The :class:`dircmp` class compares files by doing *shallow* comparisons as "
-"described for :func:`filecmp.cmp` by default using the *shallow* parameter."
+"described for :func:`filecmp.cmp`."
 msgstr ""
 
-#: library/filecmp.rst:86
-msgid "Added the *shallow* parameter."
-msgstr ""
-
-#: library/filecmp.rst:88
+#: library/filecmp.rst:83
 msgid "The :class:`dircmp` class provides the following methods:"
 msgstr ""
 
-#: library/filecmp.rst:92
+#: library/filecmp.rst:87
 msgid "Print (to :data:`sys.stdout`) a comparison between *a* and *b*."
 msgstr ""
 
-#: library/filecmp.rst:96
+#: library/filecmp.rst:91
 msgid ""
 "Print a comparison between *a* and *b* and common immediate subdirectories."
 msgstr ""
 
-#: library/filecmp.rst:101
+#: library/filecmp.rst:96
 msgid ""
 "Print a comparison between *a* and *b* and common subdirectories "
 "(recursively)."
 msgstr ""
 
-#: library/filecmp.rst:104
+#: library/filecmp.rst:99
 msgid ""
 "The :class:`dircmp` class offers a number of interesting attributes that may "
 "be used to get various bits of information about the directory trees being "
 "compared."
 msgstr ""
 
-#: library/filecmp.rst:108
+#: library/filecmp.rst:103
 msgid ""
 "Note that via :meth:`~object.__getattr__` hooks, all attributes are computed "
 "lazily, so there is no speed penalty if only those attributes which are "
 "lightweight to compute are used."
 msgstr ""
 
-#: library/filecmp.rst:115
+#: library/filecmp.rst:110
 msgid "The directory *a*."
 msgstr ""
 
-#: library/filecmp.rst:120
+#: library/filecmp.rst:115
 msgid "The directory *b*."
 msgstr ""
 
-#: library/filecmp.rst:125
+#: library/filecmp.rst:120
 msgid "Files and subdirectories in *a*, filtered by *hide* and *ignore*."
 msgstr ""
 
-#: library/filecmp.rst:130
+#: library/filecmp.rst:125
 msgid "Files and subdirectories in *b*, filtered by *hide* and *ignore*."
 msgstr ""
 
-#: library/filecmp.rst:135
+#: library/filecmp.rst:130
 msgid "Files and subdirectories in both *a* and *b*."
 msgstr ""
 
-#: library/filecmp.rst:140
+#: library/filecmp.rst:135
 msgid "Files and subdirectories only in *a*."
 msgstr ""
 
-#: library/filecmp.rst:145
+#: library/filecmp.rst:140
 msgid "Files and subdirectories only in *b*."
 msgstr ""
 
-#: library/filecmp.rst:150
+#: library/filecmp.rst:145
 msgid "Subdirectories in both *a* and *b*."
 msgstr ""
 
-#: library/filecmp.rst:155
+#: library/filecmp.rst:150
 msgid "Files in both *a* and *b*."
 msgstr ""
 
-#: library/filecmp.rst:160
+#: library/filecmp.rst:155
 msgid ""
 "Names in both *a* and *b*, such that the type differs between the "
 "directories, or names for which :func:`os.stat` reports an error."
 msgstr ""
 
-#: library/filecmp.rst:166
+#: library/filecmp.rst:161
 msgid ""
 "Files which are identical in both *a* and *b*, using the class's file "
 "comparison operator."
 msgstr ""
 
-#: library/filecmp.rst:172
+#: library/filecmp.rst:167
 msgid ""
 "Files which are in both *a* and *b*, whose contents differ according to the "
 "class's file comparison operator."
 msgstr ""
 
-#: library/filecmp.rst:178
+#: library/filecmp.rst:173
 msgid "Files which are in both *a* and *b*, but could not be compared."
 msgstr ""
 
-#: library/filecmp.rst:183
+#: library/filecmp.rst:178
 msgid ""
 "A dictionary mapping names in :attr:`common_dirs` to :class:`dircmp` "
 "instances (or MyDirCmp instances if this instance is of type MyDirCmp, a "
 "subclass of :class:`dircmp`)."
 msgstr ""
 
-#: library/filecmp.rst:187
+#: library/filecmp.rst:182
 msgid ""
 "Previously entries were always :class:`dircmp` instances. Now entries are "
 "the same type as *self*, if *self* is a subclass of :class:`dircmp`."
 msgstr ""
 
-#: library/filecmp.rst:196
+#: library/filecmp.rst:191
 msgid "List of directories ignored by :class:`dircmp` by default."
 msgstr ""
 
-#: library/filecmp.rst:199
+#: library/filecmp.rst:194
 msgid ""
 "Here is a simplified example of using the ``subdirs`` attribute to search "
 "recursively through two directories to show common different files::"

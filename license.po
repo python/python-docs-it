@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: 2019-04-21 23:11+0200\n"
 "Last-Translator: Alessandro Cucci <alessandro.cucci@gmail.com>\n"
 "Language-Team: \n"
@@ -361,8 +361,8 @@ msgstr "Funzioni UUencode e UUdecode"
 
 #: license.rst:479
 #, fuzzy
-msgid "The ``uu`` codec contains the following notice::"
-msgstr "Il modulo :mod:`uu` contiene il seguente avviso::"
+msgid "The :mod:`uu` module contains the following notice::"
+msgstr "Il modulo :mod:`trace` contiene il seguente avviso::"
 
 #: license.rst:507
 msgid "XML Remote Procedure Calls"
@@ -435,12 +435,12 @@ msgstr "7.4 OpenSSL"
 #: license.rst:658
 #, fuzzy
 msgid ""
-"The modules :mod:`hashlib`, :mod:`posix` and :mod:`ssl` use the OpenSSL "
-"library for added performance if made available by the operating system. "
-"Additionally, the Windows and macOS installers for Python may include a copy "
-"of the OpenSSL libraries, so we include a copy of the OpenSSL license here. "
-"For the OpenSSL 3.0 release, and later releases derived from that, the "
-"Apache License v2 applies::"
+"The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
+"OpenSSL library for added performance if made available by the operating "
+"system. Additionally, the Windows and macOS installers for Python may "
+"include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL "
+"license here. For the OpenSSL 3.0 release, and later releases derived from "
+"that, the Apache License v2 applies::"
 msgstr ""
 "I moduli :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` usano la "
 "libreria OpenSSL per prestazioni aggiuntive se resa disponibile dal sistema "
@@ -528,33 +528,66 @@ msgid ""
 "c14n2-testcases/ and is distributed under the 3-clause BSD license::"
 msgstr ""
 
+#: license.rst:1046
+msgid "Audioop"
+msgstr ""
+
 #: license.rst:1048
-msgid "mimalloc"
+msgid ""
+"The audioop module uses the code base in g771.c file of the SoX project. "
+"https://sourceforge.net/projects/sox/files/sox/12.17.7/sox-12.17.7.tar.gz"
 msgstr ""
 
-#: license.rst:1050
-msgid "MIT License::"
+#: license.rst:1051
+msgid ""
+"This source code is a product of Sun Microsystems, Inc. and is provided for "
+"unrestricted use.  Users may copy or modify this source code without charge."
 msgstr ""
 
-#: license.rst:1074
+#: license.rst:1055
+msgid ""
+"SUN SOURCE CODE IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING "
+"THE WARRANTIES OF DESIGN, MERCHANTIBILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE."
+msgstr ""
+
+#: license.rst:1059
+msgid ""
+"Sun source code is provided with no support and without any obligation on "
+"the part of Sun Microsystems, Inc. to assist in its use, correction, "
+"modification or enhancement."
+msgstr ""
+
+#: license.rst:1063
+msgid ""
+"SUN MICROSYSTEMS, INC. SHALL HAVE NO LIABILITY WITH RESPECT TO THE "
+"INFRINGEMENT OF COPYRIGHTS, TRADE SECRETS OR ANY PATENTS BY THIS SOFTWARE OR "
+"ANY PART THEREOF."
+msgstr ""
+
+#: license.rst:1067
+msgid ""
+"In no event will Sun Microsystems, Inc. be liable for any lost revenue or "
+"profits or other special, indirect and consequential damages, even if Sun "
+"has been advised of the possibility of such damages."
+msgstr ""
+
+#: license.rst:1071
+msgid ""
+"Sun Microsystems, Inc. 2550 Garcia Avenue Mountain View, California  94043"
+msgstr ""
+
+#: license.rst:1077
 msgid "asyncio"
 msgstr ""
 
-#: license.rst:1076
+#: license.rst:1079
 msgid ""
 "Parts of the :mod:`asyncio` module are incorporated from `uvloop 0.16 "
 "<https://github.com/MagicStack/uvloop/tree/v0.16.0>`_, which is distributed "
 "under the MIT license::"
 msgstr ""
 
-#: license.rst:1103
-msgid "Global Unbounded Sequences (GUS)"
-msgstr ""
-
-#: license.rst:1105
-msgid ""
-"The file :file:`Python/qsbr.c` is adapted from FreeBSD's \"Global Unbounded "
-"Sequences\" safe memory reclamation scheme in `subr_smr.c <https://github."
-"com/freebsd/freebsd-src/blob/main/sys/kern/subr_smr.c>`_. The file is "
-"distributed under the 2-Clause BSD License::"
-msgstr ""
+#, fuzzy
+#~ msgid "The ``uu`` codec contains the following notice::"
+#~ msgstr "Il modulo :mod:`uu` contiene il seguente avviso::"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1044,8 +1044,8 @@ msgstr ""
 
 #: whatsnew/3.5.rst:881
 msgid ""
-"The :class:`!FieldStorage` class now supports the :term:`context manager` "
-"protocol.  (Contributed by Berker Peksag in :issue:`20289`.)"
+"The :class:`~cgi.FieldStorage` class now supports the :term:`context "
+"manager` protocol.  (Contributed by Berker Peksag in :issue:`20289`.)"
 msgstr ""
 
 #: whatsnew/3.5.rst:886
@@ -1504,9 +1504,9 @@ msgstr ""
 
 #: whatsnew/3.5.rst:1255
 msgid ""
-"The :func:`!what` function now recognizes the `OpenEXR <https://www.openexr."
-"com>`_ format (contributed by Martin Vignali and Claudiu Popa in :issue:"
-"`20295`), and the `WebP <https://en.wikipedia.org/wiki/WebP>`_ format "
+"The :func:`~imghdr.what` function now recognizes the `OpenEXR <https://www."
+"openexr.com>`_ format (contributed by Martin Vignali and Claudiu Popa in :"
+"issue:`20295`), and the `WebP <https://en.wikipedia.org/wiki/WebP>`_ format "
 "(contributed by Fabrice Aneche and Claudiu Popa in :issue:`20197`.)"
 msgstr ""
 
@@ -2079,8 +2079,9 @@ msgstr ""
 
 #: whatsnew/3.5.rst:1717
 msgid ""
-"The :func:`!what` and :func:`!whathdr` functions  now return a :func:"
-"`~collections.namedtuple`.  (Contributed by Claudiu Popa in :issue:`18615`.)"
+"The :func:`~sndhdr.what` and :func:`~sndhdr.whathdr` functions  now return "
+"a :func:`~collections.namedtuple`.  (Contributed by Claudiu Popa in :issue:"
+"`18615`.)"
 msgstr ""
 
 #: whatsnew/3.5.rst:1723
@@ -2605,7 +2606,7 @@ msgstr ""
 
 #: whatsnew/3.5.rst:2099
 msgid ""
-"Many functions in the :mod:`mmap`, :mod:`!ossaudiodev`, :mod:`socket`, :mod:"
+"Many functions in the :mod:`mmap`, :mod:`ossaudiodev`, :mod:`socket`, :mod:"
 "`ssl`, and :mod:`codecs` modules now accept writable :term:`bytes-like "
 "objects <bytes-like object>`. (Contributed by Serhiy Storchaka in :issue:"
 "`23001`.)"

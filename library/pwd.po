@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #: library/pwd.rst:13
-msgid ":ref:`Availability <availability>`: Unix, not WASI, not iOS."
+msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
 msgstr ""
 
 #: library/pwd.rst:15
@@ -140,38 +140,55 @@ msgid ""
 "is raised if the entry asked for cannot be found."
 msgstr ""
 
-#: library/pwd.rst:42
+#: library/pwd.rst:44
 msgid ""
 "In traditional Unix the field ``pw_passwd`` usually contains a password "
-"encrypted with a DES derived algorithm.  However most modern unices  use a "
-"so-called *shadow password* system.  On those unices the *pw_passwd* field "
-"only contains an asterisk (``'*'``) or the  letter ``'x'`` where the "
-"encrypted password is stored in a file :file:`/etc/shadow` which is not "
-"world readable.  Whether the *pw_passwd* field contains anything useful is "
-"system-dependent."
+"encrypted with a DES derived algorithm (see module :mod:`crypt`).  However "
+"most modern unices  use a so-called *shadow password* system.  On those "
+"unices the *pw_passwd* field only contains an asterisk (``'*'``) or the  "
+"letter ``'x'`` where the encrypted password is stored in a file :file:`/etc/"
+"shadow` which is not world readable.  Whether the *pw_passwd* field contains "
+"anything useful is system-dependent.  If available, the :mod:`spwd` module "
+"should be used where access to the encrypted password is required."
 msgstr ""
 
-#: library/pwd.rst:50
+#: library/pwd.rst:53
 msgid "It defines the following items:"
 msgstr ""
 
-#: library/pwd.rst:55
+#: library/pwd.rst:58
 msgid "Return the password database entry for the given numeric user ID."
 msgstr ""
 
-#: library/pwd.rst:60
+#: library/pwd.rst:63
 msgid "Return the password database entry for the given user name."
 msgstr ""
 
-#: library/pwd.rst:65
+#: library/pwd.rst:68
 msgid ""
 "Return a list of all available password database entries, in arbitrary order."
 msgstr ""
 
-#: library/pwd.rst:70
+#: library/pwd.rst:73
 msgid "Module :mod:`grp`"
 msgstr ""
 
-#: library/pwd.rst:71
+#: library/pwd.rst:74
 msgid "An interface to the group database, similar to this."
+msgstr ""
+
+#: library/pwd.rst:76
+msgid "Module :mod:`spwd`"
+msgstr ""
+
+#: library/pwd.rst:77
+msgid "An interface to the shadow password database, similar to this."
+msgstr ""
+
+#: library/pwd.rst:42
+msgid "module"
+msgstr ""
+
+#: library/pwd.rst:42
+msgid "crypt"
 msgstr ""

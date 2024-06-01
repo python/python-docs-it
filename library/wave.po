@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgid ""
 "`Wave_write.close()` method is called."
 msgstr ""
 
-#: library/wave.rst:184
+#: library/wave.rst:176
 msgid "Added support for unseekable files."
 msgstr ""
 
@@ -163,51 +163,45 @@ msgstr ""
 
 #: library/wave.rst:126
 msgid ""
-"The following two methods are defined for compatibility with the old :mod:`!"
-"aifc` module, and don't do anything interesting."
+"The following two methods are defined for compatibility with the :mod:`aifc` "
+"module, and don't do anything interesting."
 msgstr ""
 
 #: library/wave.rst:132
 msgid "Returns ``None``."
 msgstr ""
 
-#: library/wave.rst:145
-msgid ""
-"The method only existed for compatibility with the :mod:`!aifc` module which "
-"has been removed in Python 3.13."
-msgstr ""
-
-#: library/wave.rst:141
+#: library/wave.rst:137
 msgid "Raise an error."
 msgstr ""
 
-#: library/wave.rst:147
+#: library/wave.rst:139
 msgid ""
 "The following two methods define a term \"position\" which is compatible "
 "between them, and is otherwise implementation dependent."
 msgstr ""
 
-#: library/wave.rst:153
+#: library/wave.rst:145
 msgid "Set the file pointer to the specified position."
 msgstr ""
 
-#: library/wave.rst:158
+#: library/wave.rst:150
 msgid "Return current file pointer position."
 msgstr ""
 
-#: library/wave.rst:164
+#: library/wave.rst:156
 msgid "Wave_write Objects"
 msgstr ""
 
-#: library/wave.rst:168
+#: library/wave.rst:160
 msgid "Write a WAV file."
 msgstr ""
 
-#: library/wave.rst:170
+#: library/wave.rst:162
 msgid "Wave_write objects, as returned by :func:`.open`."
 msgstr ""
 
-#: library/wave.rst:172
+#: library/wave.rst:164
 msgid ""
 "For seekable output streams, the ``wave`` header will automatically be "
 "updated to reflect the number of frames actually written.  For unseekable "
@@ -221,11 +215,11 @@ msgid ""
 "*nframes* accordingly before writing the frame data."
 msgstr ""
 
-#: library/wave.rst:187
+#: library/wave.rst:179
 msgid "Wave_write objects have the following methods:"
 msgstr ""
 
-#: library/wave.rst:191
+#: library/wave.rst:183
 msgid ""
 "Make sure *nframes* is correct, and close the file if it was opened by :mod:"
 "`wave`.  This method is called upon object collection.  It will raise an "
@@ -233,57 +227,57 @@ msgid ""
 "the number of frames actually written."
 msgstr ""
 
-#: library/wave.rst:199
+#: library/wave.rst:191
 msgid "Set the number of channels."
 msgstr ""
 
-#: library/wave.rst:204
+#: library/wave.rst:196
 msgid "Set the sample width to *n* bytes."
 msgstr ""
 
-#: library/wave.rst:209
+#: library/wave.rst:201
 msgid "Set the frame rate to *n*."
 msgstr ""
 
-#: library/wave.rst:211
+#: library/wave.rst:203
 msgid "A non-integral input to this method is rounded to the nearest integer."
 msgstr ""
 
-#: library/wave.rst:218
+#: library/wave.rst:210
 msgid ""
 "Set the number of frames to *n*.  This will be changed later if the number "
 "of frames actually written is different (this update attempt will raise an "
 "error if the output stream is not seekable)."
 msgstr ""
 
-#: library/wave.rst:225
+#: library/wave.rst:217
 msgid ""
 "Set the compression type and description. At the moment, only compression "
 "type ``NONE`` is supported, meaning no compression."
 msgstr ""
 
-#: library/wave.rst:231
+#: library/wave.rst:223
 msgid ""
 "The *tuple* should be ``(nchannels, sampwidth, framerate, nframes, comptype, "
 "compname)``, with values valid for the ``set*()`` methods.  Sets all "
 "parameters."
 msgstr ""
 
-#: library/wave.rst:238
+#: library/wave.rst:230
 msgid ""
 "Return current position in the file, with the same disclaimer for the :meth:"
 "`Wave_read.tell` and :meth:`Wave_read.setpos` methods."
 msgstr ""
 
-#: library/wave.rst:244
+#: library/wave.rst:236
 msgid "Write audio frames, without correcting *nframes*."
 msgstr ""
 
-#: library/wave.rst:257
+#: library/wave.rst:249
 msgid "Any :term:`bytes-like object` is now accepted."
 msgstr ""
 
-#: library/wave.rst:252
+#: library/wave.rst:244
 msgid ""
 "Write audio frames and make sure *nframes* is correct.  It will raise an "
 "error if the output stream is not seekable and the total number of frames "
@@ -291,7 +285,7 @@ msgid ""
 "previously set value for *nframes*."
 msgstr ""
 
-#: library/wave.rst:260
+#: library/wave.rst:252
 msgid ""
 "Note that it is invalid to set any parameters after calling :meth:"
 "`writeframes` or :meth:`writeframesraw`, and any attempt to do so will "

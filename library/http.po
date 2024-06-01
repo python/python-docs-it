@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid ""
 "reason phrases and long descriptions written in English."
 msgstr ""
 
-#: library/http.rst:161 library/http.rst:175
+#: library/http.rst:157 library/http.rst:171
 msgid "Usage::"
 msgstr ""
 
@@ -84,11 +84,11 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
-#: library/http.rst:208
+#: library/http.rst:204
 msgid "Enum Name"
 msgstr ""
 
-#: library/http.rst:152 library/http.rst:208
+#: library/http.rst:148 library/http.rst:204
 msgid "Details"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgid "``CONTINUE``"
 msgstr ""
 
 #: library/http.rst:62
-msgid "HTTP Semantics :rfc:`9110`, Section 15.2.1"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.2.1"
 msgstr ""
 
 #: library/http.rst:63
@@ -113,7 +113,7 @@ msgid "``SWITCHING_PROTOCOLS``"
 msgstr ""
 
 #: library/http.rst:63
-msgid "HTTP Semantics :rfc:`9110`, Section 15.2.2"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.2.2"
 msgstr ""
 
 #: library/http.rst:64
@@ -149,7 +149,7 @@ msgid "``OK``"
 msgstr ""
 
 #: library/http.rst:66
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.1"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.3.1"
 msgstr ""
 
 #: library/http.rst:67
@@ -161,7 +161,7 @@ msgid "``CREATED``"
 msgstr ""
 
 #: library/http.rst:67
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.2"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.3.2"
 msgstr ""
 
 #: library/http.rst:68
@@ -173,7 +173,7 @@ msgid "``ACCEPTED``"
 msgstr ""
 
 #: library/http.rst:68
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.3"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.3.3"
 msgstr ""
 
 #: library/http.rst:69
@@ -185,7 +185,7 @@ msgid "``NON_AUTHORITATIVE_INFORMATION``"
 msgstr ""
 
 #: library/http.rst:69
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.4"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.3.4"
 msgstr ""
 
 #: library/http.rst:70
@@ -197,7 +197,7 @@ msgid "``NO_CONTENT``"
 msgstr ""
 
 #: library/http.rst:70
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.5"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.3.5"
 msgstr ""
 
 #: library/http.rst:71
@@ -209,7 +209,7 @@ msgid "``RESET_CONTENT``"
 msgstr ""
 
 #: library/http.rst:71
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.6"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.3.6"
 msgstr ""
 
 #: library/http.rst:72
@@ -221,7 +221,7 @@ msgid "``PARTIAL_CONTENT``"
 msgstr ""
 
 #: library/http.rst:72
-msgid "HTTP Semantics :rfc:`9110`, Section 15.3.7"
+msgid "HTTP/1.1 :rfc:`7233`, Section 4.1"
 msgstr ""
 
 #: library/http.rst:73
@@ -269,7 +269,7 @@ msgid "``MULTIPLE_CHOICES``"
 msgstr ""
 
 #: library/http.rst:76
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.1"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.4.1"
 msgstr ""
 
 #: library/http.rst:77
@@ -281,7 +281,7 @@ msgid "``MOVED_PERMANENTLY``"
 msgstr ""
 
 #: library/http.rst:77
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.2"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.4.2"
 msgstr ""
 
 #: library/http.rst:78
@@ -293,7 +293,7 @@ msgid "``FOUND``"
 msgstr ""
 
 #: library/http.rst:78
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.3"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.4.3"
 msgstr ""
 
 #: library/http.rst:79
@@ -305,7 +305,7 @@ msgid "``SEE_OTHER``"
 msgstr ""
 
 #: library/http.rst:79
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.4"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.4.4"
 msgstr ""
 
 #: library/http.rst:80
@@ -317,7 +317,7 @@ msgid "``NOT_MODIFIED``"
 msgstr ""
 
 #: library/http.rst:80
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.5"
+msgid "HTTP/1.1 :rfc:`7232`, Section 4.1"
 msgstr ""
 
 #: library/http.rst:81
@@ -329,7 +329,7 @@ msgid "``USE_PROXY``"
 msgstr ""
 
 #: library/http.rst:81
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.6"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.4.5"
 msgstr ""
 
 #: library/http.rst:82
@@ -341,7 +341,7 @@ msgid "``TEMPORARY_REDIRECT``"
 msgstr ""
 
 #: library/http.rst:82
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.8"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.4.7"
 msgstr ""
 
 #: library/http.rst:83
@@ -353,7 +353,7 @@ msgid "``PERMANENT_REDIRECT``"
 msgstr ""
 
 #: library/http.rst:83
-msgid "HTTP Semantics :rfc:`9110`, Section 15.4.9"
+msgid "Permanent Redirect :rfc:`7238`, Section 3 (Experimental)"
 msgstr ""
 
 #: library/http.rst:84
@@ -365,7 +365,7 @@ msgid "``BAD_REQUEST``"
 msgstr ""
 
 #: library/http.rst:84
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.1"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.1"
 msgstr ""
 
 #: library/http.rst:85
@@ -377,7 +377,7 @@ msgid "``UNAUTHORIZED``"
 msgstr ""
 
 #: library/http.rst:85
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.2"
+msgid "HTTP/1.1 Authentication :rfc:`7235`, Section 3.1"
 msgstr ""
 
 #: library/http.rst:86
@@ -389,7 +389,7 @@ msgid "``PAYMENT_REQUIRED``"
 msgstr ""
 
 #: library/http.rst:86
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.3"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.2"
 msgstr ""
 
 #: library/http.rst:87
@@ -401,7 +401,7 @@ msgid "``FORBIDDEN``"
 msgstr ""
 
 #: library/http.rst:87
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.4"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.3"
 msgstr ""
 
 #: library/http.rst:88
@@ -413,7 +413,7 @@ msgid "``NOT_FOUND``"
 msgstr ""
 
 #: library/http.rst:88
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.5"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.4"
 msgstr ""
 
 #: library/http.rst:89
@@ -425,7 +425,7 @@ msgid "``METHOD_NOT_ALLOWED``"
 msgstr ""
 
 #: library/http.rst:89
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.6"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.5"
 msgstr ""
 
 #: library/http.rst:90
@@ -437,7 +437,7 @@ msgid "``NOT_ACCEPTABLE``"
 msgstr ""
 
 #: library/http.rst:90
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.7"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.6"
 msgstr ""
 
 #: library/http.rst:91
@@ -449,7 +449,7 @@ msgid "``PROXY_AUTHENTICATION_REQUIRED``"
 msgstr ""
 
 #: library/http.rst:91
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.8"
+msgid "HTTP/1.1 Authentication :rfc:`7235`, Section 3.2"
 msgstr ""
 
 #: library/http.rst:92
@@ -461,7 +461,7 @@ msgid "``REQUEST_TIMEOUT``"
 msgstr ""
 
 #: library/http.rst:92
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.9"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.7"
 msgstr ""
 
 #: library/http.rst:93
@@ -473,7 +473,7 @@ msgid "``CONFLICT``"
 msgstr ""
 
 #: library/http.rst:93
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.10"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.8"
 msgstr ""
 
 #: library/http.rst:94
@@ -485,7 +485,7 @@ msgid "``GONE``"
 msgstr ""
 
 #: library/http.rst:94
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.11"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.9"
 msgstr ""
 
 #: library/http.rst:95
@@ -497,7 +497,7 @@ msgid "``LENGTH_REQUIRED``"
 msgstr ""
 
 #: library/http.rst:95
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.12"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.10"
 msgstr ""
 
 #: library/http.rst:96
@@ -509,7 +509,7 @@ msgid "``PRECONDITION_FAILED``"
 msgstr ""
 
 #: library/http.rst:96
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.13"
+msgid "HTTP/1.1 :rfc:`7232`, Section 4.2"
 msgstr ""
 
 #: library/http.rst:97
@@ -517,11 +517,11 @@ msgid "``413``"
 msgstr ""
 
 #: library/http.rst:97
-msgid "``CONTENT_TOO_LARGE``"
+msgid "``REQUEST_ENTITY_TOO_LARGE``"
 msgstr ""
 
 #: library/http.rst:97
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.14"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.11"
 msgstr ""
 
 #: library/http.rst:98
@@ -529,11 +529,11 @@ msgid "``414``"
 msgstr ""
 
 #: library/http.rst:98
-msgid "``URI_TOO_LONG``"
+msgid "``REQUEST_URI_TOO_LONG``"
 msgstr ""
 
 #: library/http.rst:98
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.15"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.12"
 msgstr ""
 
 #: library/http.rst:99
@@ -545,7 +545,7 @@ msgid "``UNSUPPORTED_MEDIA_TYPE``"
 msgstr ""
 
 #: library/http.rst:99
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.16"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.13"
 msgstr ""
 
 #: library/http.rst:100
@@ -553,11 +553,11 @@ msgid "``416``"
 msgstr ""
 
 #: library/http.rst:100
-msgid "``RANGE_NOT_SATISFIABLE``"
+msgid "``REQUESTED_RANGE_NOT_SATISFIABLE``"
 msgstr ""
 
 #: library/http.rst:100
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.17"
+msgid "HTTP/1.1 Range Requests :rfc:`7233`, Section 4.4"
 msgstr ""
 
 #: library/http.rst:101
@@ -569,7 +569,7 @@ msgid "``EXPECTATION_FAILED``"
 msgstr ""
 
 #: library/http.rst:101
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.18"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.14"
 msgstr ""
 
 #: library/http.rst:102
@@ -593,7 +593,7 @@ msgid "``MISDIRECTED_REQUEST``"
 msgstr ""
 
 #: library/http.rst:103
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.20"
+msgid "HTTP/2 :rfc:`7540`, Section 9.1.2"
 msgstr ""
 
 #: library/http.rst:104
@@ -601,11 +601,11 @@ msgid "``422``"
 msgstr ""
 
 #: library/http.rst:104
-msgid "``UNPROCESSABLE_CONTENT``"
+msgid "``UNPROCESSABLE_ENTITY``"
 msgstr ""
 
 #: library/http.rst:104
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.21"
+msgid "WebDAV :rfc:`4918`, Section 11.2"
 msgstr ""
 
 #: library/http.rst:105
@@ -653,7 +653,7 @@ msgid "``UPGRADE_REQUIRED``"
 msgstr ""
 
 #: library/http.rst:108
-msgid "HTTP Semantics :rfc:`9110`, Section 15.5.22"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.5.15"
 msgstr ""
 
 #: library/http.rst:109
@@ -705,7 +705,7 @@ msgid "``INTERNAL_SERVER_ERROR``"
 msgstr ""
 
 #: library/http.rst:113
-msgid "HTTP Semantics :rfc:`9110`, Section 15.6.1"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.6.1"
 msgstr ""
 
 #: library/http.rst:114
@@ -717,7 +717,7 @@ msgid "``NOT_IMPLEMENTED``"
 msgstr ""
 
 #: library/http.rst:114
-msgid "HTTP Semantics :rfc:`9110`, Section 15.6.2"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.6.2"
 msgstr ""
 
 #: library/http.rst:115
@@ -729,7 +729,7 @@ msgid "``BAD_GATEWAY``"
 msgstr ""
 
 #: library/http.rst:115
-msgid "HTTP Semantics :rfc:`9110`, Section 15.6.3"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.6.3"
 msgstr ""
 
 #: library/http.rst:116
@@ -741,7 +741,7 @@ msgid "``SERVICE_UNAVAILABLE``"
 msgstr ""
 
 #: library/http.rst:116
-msgid "HTTP Semantics :rfc:`9110`, Section 15.6.4"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.6.4"
 msgstr ""
 
 #: library/http.rst:117
@@ -753,7 +753,7 @@ msgid "``GATEWAY_TIMEOUT``"
 msgstr ""
 
 #: library/http.rst:117
-msgid "HTTP Semantics :rfc:`9110`, Section 15.6.5"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.6.5"
 msgstr ""
 
 #: library/http.rst:118
@@ -765,7 +765,7 @@ msgid "``HTTP_VERSION_NOT_SUPPORTED``"
 msgstr ""
 
 #: library/http.rst:118
-msgid "HTTP Semantics :rfc:`9110`, Section 15.6.6"
+msgid "HTTP/1.1 :rfc:`7231`, Section 6.6.6"
 msgstr ""
 
 #: library/http.rst:119
@@ -852,162 +852,156 @@ msgid ""
 "codes."
 msgstr ""
 
-#: library/http.rst:140
-msgid ""
-"Implemented RFC9110 naming for status constants. Old constant names are "
-"preserved for backwards compatibility."
-msgstr ""
-
-#: library/http.rst:145
+#: library/http.rst:141
 msgid "HTTP status category"
 msgstr ""
 
-#: library/http.rst:149
+#: library/http.rst:145
 msgid ""
 "The enum values have several properties to indicate the HTTP status category:"
 msgstr ""
 
-#: library/http.rst:152
+#: library/http.rst:148
 msgid "Property"
 msgstr ""
 
-#: library/http.rst:152
+#: library/http.rst:148
 msgid "Indicates that"
 msgstr ""
 
-#: library/http.rst:154
+#: library/http.rst:150
 msgid "``is_informational``"
 msgstr ""
 
-#: library/http.rst:154
+#: library/http.rst:150
 msgid "``100 <= status <= 199``"
 msgstr ""
 
-#: library/http.rst:155 library/http.rst:157 library/http.rst:158
-msgid "HTTP Semantics :rfc:`9110`, Section 15"
+#: library/http.rst:151 library/http.rst:153 library/http.rst:154
+msgid "HTTP/1.1 :rfc:`7231`, Section 6"
 msgstr ""
 
-#: library/http.rst:155
+#: library/http.rst:151
 msgid "``is_success``"
 msgstr ""
 
-#: library/http.rst:155
+#: library/http.rst:151
 msgid "``200 <= status <= 299``"
 msgstr ""
 
-#: library/http.rst:156
+#: library/http.rst:152
 msgid "``is_redirection``"
 msgstr ""
 
-#: library/http.rst:156
+#: library/http.rst:152
 msgid "``300 <= status <= 399``"
 msgstr ""
 
-#: library/http.rst:157
+#: library/http.rst:153
 msgid "``is_client_error``"
 msgstr ""
 
-#: library/http.rst:157
+#: library/http.rst:153
 msgid "``400 <= status <= 499``"
 msgstr ""
 
-#: library/http.rst:158
+#: library/http.rst:154
 msgid "``is_server_error``"
 msgstr ""
 
-#: library/http.rst:158
+#: library/http.rst:154
 msgid "``500 <= status <= 599``"
 msgstr ""
 
-#: library/http.rst:173
+#: library/http.rst:169
 msgid ""
 "A subclass of :class:`enum.StrEnum` that defines a set of HTTP methods and "
 "descriptions written in English."
 msgstr ""
 
-#: library/http.rst:201
+#: library/http.rst:197
 msgid "HTTP methods"
 msgstr ""
 
-#: library/http.rst:203
+#: library/http.rst:199
 msgid ""
 "Supported, `IANA-registered methods <https://www.iana.org/assignments/http-"
 "methods/http-methods.xhtml>`_ available in :class:`http.HTTPMethod` are:"
 msgstr ""
 
-#: library/http.rst:208
+#: library/http.rst:204
 msgid "Method"
 msgstr ""
 
-#: library/http.rst:210
+#: library/http.rst:206
 msgid "``GET``"
 msgstr ""
 
-#: library/http.rst:210
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.1"
+#: library/http.rst:206
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.1"
 msgstr ""
 
-#: library/http.rst:211
+#: library/http.rst:207
 msgid "``HEAD``"
 msgstr ""
 
-#: library/http.rst:211
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.2"
+#: library/http.rst:207
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.2"
 msgstr ""
 
-#: library/http.rst:212
+#: library/http.rst:208
 msgid "``POST``"
 msgstr ""
 
-#: library/http.rst:212
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.3"
+#: library/http.rst:208
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.3"
 msgstr ""
 
-#: library/http.rst:213
+#: library/http.rst:209
 msgid "``PUT``"
 msgstr ""
 
-#: library/http.rst:213
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.4"
+#: library/http.rst:209
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.4"
 msgstr ""
 
-#: library/http.rst:214
+#: library/http.rst:210
 msgid "``DELETE``"
 msgstr ""
 
-#: library/http.rst:214
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.5"
+#: library/http.rst:210
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.5"
 msgstr ""
 
-#: library/http.rst:215
+#: library/http.rst:211
 msgid "``CONNECT``"
 msgstr ""
 
-#: library/http.rst:215
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.6"
+#: library/http.rst:211
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.6"
 msgstr ""
 
-#: library/http.rst:216
+#: library/http.rst:212
 msgid "``OPTIONS``"
 msgstr ""
 
-#: library/http.rst:216
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.7"
+#: library/http.rst:212
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.7"
 msgstr ""
 
-#: library/http.rst:217
+#: library/http.rst:213
 msgid "``TRACE``"
 msgstr ""
 
-#: library/http.rst:217
-msgid "HTTP Semantics :rfc:`9110`, Section 9.3.8"
+#: library/http.rst:213
+msgid "HTTP/1.1 :rfc:`7231`, Section 4.3.8"
 msgstr ""
 
-#: library/http.rst:218
+#: library/http.rst:214
 msgid "``PATCH``"
 msgstr ""
 
-#: library/http.rst:218
+#: library/http.rst:214
 msgid "HTTP/1.1 :rfc:`5789`"
 msgstr ""
 

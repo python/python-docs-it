@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,8 +281,8 @@ msgstr ""
 
 #: reference/executionmodel.rst:208
 msgid ""
-"The bounds, constraints, and default values for type parameters (:ref:"
-"`lazily evaluated <lazy-evaluation>`)."
+"The bounds and constraints for type variables (:ref:`lazily evaluated <lazy-"
+"evaluation>`)."
 msgstr ""
 
 #: reference/executionmodel.rst:210
@@ -332,55 +332,49 @@ msgstr ""
 msgid "Annotation scopes were introduced in Python 3.12 as part of :pep:`695`."
 msgstr ""
 
-#: reference/executionmodel.rst:235
-msgid ""
-"Annotation scopes are also used for type parameter defaults, as introduced "
-"by :pep:`696`."
-msgstr ""
-
-#: reference/executionmodel.rst:242
+#: reference/executionmodel.rst:238
 msgid "Lazy evaluation"
 msgstr ""
 
-#: reference/executionmodel.rst:244
+#: reference/executionmodel.rst:240
 msgid ""
 "The values of type aliases created through the :keyword:`type` statement are "
-"*lazily evaluated*. The same applies to the bounds, constraints, and default "
-"values of type variables created through the :ref:`type parameter syntax "
-"<type-params>`. This means that they are not evaluated when the type alias "
-"or type variable is created. Instead, they are only evaluated when doing so "
-"is necessary to resolve an attribute access."
+"*lazily evaluated*. The same applies to the bounds and constraints of type "
+"variables created through the :ref:`type parameter syntax <type-params>`. "
+"This means that they are not evaluated when the type alias or type variable "
+"is created. Instead, they are only evaluated when doing so is necessary to "
+"resolve an attribute access."
 msgstr ""
 
-#: reference/executionmodel.rst:251
+#: reference/executionmodel.rst:247
 msgid "Example:"
 msgstr ""
 
-#: reference/executionmodel.rst:267
+#: reference/executionmodel.rst:263
 msgid ""
 "Here the exception is raised only when the ``__value__`` attribute of the "
 "type alias or the ``__bound__`` attribute of the type variable is accessed."
 msgstr ""
 
-#: reference/executionmodel.rst:271
+#: reference/executionmodel.rst:267
 msgid ""
 "This behavior is primarily useful for references to types that have not yet "
 "been defined when the type alias or type variable is created. For example, "
 "lazy evaluation enables creation of mutually recursive type aliases::"
 msgstr ""
 
-#: reference/executionmodel.rst:281
+#: reference/executionmodel.rst:277
 msgid ""
 "Lazily evaluated values are evaluated in :ref:`annotation scope <annotation-"
 "scopes>`, which means that names that appear inside the lazily evaluated "
 "value are looked up as if they were used in the immediately enclosing scope."
 msgstr ""
 
-#: reference/executionmodel.rst:290
+#: reference/executionmodel.rst:286
 msgid "Builtins and restricted execution"
 msgstr ""
 
-#: reference/executionmodel.rst:296
+#: reference/executionmodel.rst:292
 msgid ""
 "Users should not touch ``__builtins__``; it is strictly an implementation "
 "detail.  Users wanting to override values in the builtins namespace should :"
@@ -388,7 +382,7 @@ msgid ""
 "appropriately."
 msgstr ""
 
-#: reference/executionmodel.rst:301
+#: reference/executionmodel.rst:297
 msgid ""
 "The builtins namespace associated with the execution of a code block is "
 "actually found by looking up the name ``__builtins__`` in its global "
@@ -399,17 +393,17 @@ msgid ""
 "`builtins` module itself."
 msgstr ""
 
-#: reference/executionmodel.rst:313
+#: reference/executionmodel.rst:309
 msgid "Interaction with dynamic features"
 msgstr ""
 
-#: reference/executionmodel.rst:315
+#: reference/executionmodel.rst:311
 msgid ""
 "Name resolution of free variables occurs at runtime, not at compile time. "
 "This means that the following code will print 42::"
 msgstr ""
 
-#: reference/executionmodel.rst:326
+#: reference/executionmodel.rst:322
 msgid ""
 "The :func:`eval` and :func:`exec` functions do not have access to the full "
 "environment for resolving names.  Names may be resolved in the local and "
@@ -420,11 +414,11 @@ msgid ""
 "for both."
 msgstr ""
 
-#: reference/executionmodel.rst:337
+#: reference/executionmodel.rst:333
 msgid "Exceptions"
 msgstr ""
 
-#: reference/executionmodel.rst:348
+#: reference/executionmodel.rst:344
 msgid ""
 "Exceptions are a means of breaking out of the normal flow of control of a "
 "code block in order to handle errors or other exceptional conditions.  An "
@@ -433,7 +427,7 @@ msgid ""
 "or indirectly invoked the code block where the error occurred."
 msgstr ""
 
-#: reference/executionmodel.rst:354
+#: reference/executionmodel.rst:350
 msgid ""
 "The Python interpreter raises an exception when it detects a run-time error "
 "(such as division by zero).  A Python program can also explicitly raise an "
@@ -444,7 +438,7 @@ msgid ""
 "exception occurred or not in the preceding code."
 msgstr ""
 
-#: reference/executionmodel.rst:364
+#: reference/executionmodel.rst:360
 msgid ""
 "Python uses the \"termination\" model of error handling: an exception "
 "handler can find out what happened and continue execution at an outer level, "
@@ -452,7 +446,7 @@ msgid ""
 "(except by re-entering the offending piece of code from the top)."
 msgstr ""
 
-#: reference/executionmodel.rst:371
+#: reference/executionmodel.rst:367
 msgid ""
 "When an exception is not handled at all, the interpreter terminates "
 "execution of the program, or returns to its interactive main loop.  In "
@@ -460,7 +454,7 @@ msgid ""
 "`SystemExit`."
 msgstr ""
 
-#: reference/executionmodel.rst:375
+#: reference/executionmodel.rst:371
 msgid ""
 "Exceptions are identified by class instances.  The :keyword:`except` clause "
 "is selected depending on the class of the instance: it must reference the "
@@ -469,7 +463,7 @@ msgid ""
 "additional information about the exceptional condition."
 msgstr ""
 
-#: reference/executionmodel.rst:383
+#: reference/executionmodel.rst:379
 msgid ""
 "Exception messages are not part of the Python API.  Their contents may "
 "change from one version of Python to the next without warning and should not "
@@ -477,17 +471,17 @@ msgid ""
 "interpreter."
 msgstr ""
 
-#: reference/executionmodel.rst:387
+#: reference/executionmodel.rst:383
 msgid ""
 "See also the description of the :keyword:`try` statement in section :ref:"
 "`try` and :keyword:`raise` statement in section :ref:`raise`."
 msgstr ""
 
-#: reference/executionmodel.rst:392
+#: reference/executionmodel.rst:388
 msgid "Footnotes"
 msgstr ""
 
-#: reference/executionmodel.rst:393
+#: reference/executionmodel.rst:389
 msgid ""
 "This limitation occurs because the code that is executed by these operations "
 "is not available at the time the module is compiled."
@@ -505,7 +499,7 @@ msgstr ""
 msgid "block"
 msgstr ""
 
-#: reference/executionmodel.rst:31 reference/executionmodel.rst:292
+#: reference/executionmodel.rst:31 reference/executionmodel.rst:288
 msgid "execution"
 msgstr ""
 
@@ -565,38 +559,38 @@ msgstr ""
 msgid "__main__"
 msgstr ""
 
-#: reference/executionmodel.rst:292
+#: reference/executionmodel.rst:288
 msgid "restricted"
 msgstr ""
 
-#: reference/executionmodel.rst:339
+#: reference/executionmodel.rst:335
 msgid "exception"
 msgstr ""
 
-#: reference/executionmodel.rst:341
+#: reference/executionmodel.rst:337
 msgid "raise an exception"
 msgstr ""
 
-#: reference/executionmodel.rst:341
+#: reference/executionmodel.rst:337
 msgid "handle an exception"
 msgstr ""
 
-#: reference/executionmodel.rst:341
+#: reference/executionmodel.rst:337
 msgid "exception handler"
 msgstr ""
 
-#: reference/executionmodel.rst:341
+#: reference/executionmodel.rst:337
 msgid "errors"
 msgstr ""
 
-#: reference/executionmodel.rst:341
+#: reference/executionmodel.rst:337
 msgid "error handling"
 msgstr ""
 
-#: reference/executionmodel.rst:362
+#: reference/executionmodel.rst:358
 msgid "termination model"
 msgstr ""
 
-#: reference/executionmodel.rst:369
+#: reference/executionmodel.rst:365
 msgid "SystemExit (built-in exception)"
 msgstr ""

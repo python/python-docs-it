@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,13 +40,14 @@ msgid "The default encoding is UTF-8, following :rfc:`2640`."
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not WASI."
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly. See :ref:`wasm-"
-"availability` for more information."
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
 msgstr ""
 
 #: library/ftplib.rst:26
@@ -182,7 +183,7 @@ msgid ""
 "timeout setting)."
 msgstr ""
 
-#: library/ftplib.rst:197
+#: library/ftplib.rst:198
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ftplib.connect`` with arguments "
 "``self``, ``host``, ``port``."
@@ -219,7 +220,7 @@ msgid ""
 "Send a simple command string to the server and return the response string."
 msgstr ""
 
-#: library/ftplib.rst:248
+#: library/ftplib.rst:249
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ftplib.sendcmd`` with arguments "
 "``self``, ``cmd``."

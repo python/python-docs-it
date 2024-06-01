@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 08:10+0200\n"
+"POT-Creation-Date: 2024-06-01 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -288,7 +288,7 @@ msgid ""
 msgstr ""
 
 #: library/token.rst:82
-msgid "Added :data:`!AWAIT` and :data:`!ASYNC` tokens."
+msgid "Added :data:`AWAIT` and :data:`ASYNC` tokens."
 msgstr ""
 
 #: library/token.rst:85
@@ -297,18 +297,14 @@ msgstr ""
 
 #: library/token.rst:88
 msgid ""
-"Removed :data:`!AWAIT` and :data:`!ASYNC` tokens. \"async\" and \"await\" "
-"are now tokenized as :data:`NAME` tokens."
+"Removed :data:`AWAIT` and :data:`ASYNC` tokens. \"async\" and \"await\" are "
+"now tokenized as :data:`NAME` tokens."
 msgstr ""
 
 #: library/token.rst:92
 msgid ""
 "Added :data:`TYPE_COMMENT`, :data:`TYPE_IGNORE`, :data:`COLONEQUAL`. Added :"
-"data:`!AWAIT` and :data:`!ASYNC` tokens back (they're needed to support "
+"data:`AWAIT` and :data:`ASYNC` tokens back (they're needed to support "
 "parsing older Python versions for :func:`ast.parse` with ``feature_version`` "
 "set to 6 or lower)."
-msgstr ""
-
-#: library/token.rst:98
-msgid "Removed :data:`!AWAIT` and :data:`!ASYNC` tokens again."
 msgstr ""
