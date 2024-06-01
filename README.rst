@@ -1,9 +1,6 @@
 Translation of the Python Documentation — it
 ============================================
 
-.. image:: https://travis-ci.org/python/python-docs-it.svg?branch=3.13
-  :target: https://travis-ci.org/python/python-docs-it
-
 
 Documentation Contribution Agreement
 ------------------------------------
@@ -93,7 +90,7 @@ Now you're ready to start a work session, each time you'll start a new task, sta
     # upstream/3.13 branch, let's say we'll work on glossary so we name
     # the branch "glossary":
     git fetch upstream
-    git checkout -b glossary upstream/3.13
+    git checkout -b glossary upstream/3.12
 
     # You can now work on the file, typically using poedit,
     poedit directory/file.po
