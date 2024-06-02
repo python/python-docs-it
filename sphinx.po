@@ -267,7 +267,7 @@ msgstr "Informazioni sul progetto:"
 
 #: tools/templates/indexcontent.html:59
 msgid "Reporting issues"
-msgstr "Segnalazione di *bug*"
+msgstr "Segnalazione di problemi"
 
 #: tools/templates/indexcontent.html:60
 msgid "Contributing to Docs"
