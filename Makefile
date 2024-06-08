@@ -29,11 +29,7 @@ LANGUAGE := it
 BRANCH := 3.12
 
 EXCLUDED := \
-	whatsnew/ \
-	c-api/ \
-	distutils/ \
-	install/ \
-	library/ 
+	locales/
 
 SPHINXERRORHANDLING = # -W
 
