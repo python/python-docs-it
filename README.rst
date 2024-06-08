@@ -27,4 +27,4 @@ the PSF for inclusion in the documentation.
 python-docs-it source code
 --------------------------
 
-You can check the latest sources switching to the `3.13` branch.
+You can check the latest sources switching to the `3.12` branch.
