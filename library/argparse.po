@@ -3,33 +3,36 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 22:23+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-06-15 12:16+0200\n"
+"Last-Translator: Adnan Said <adnansaidre@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: library/argparse.rst:2
 msgid ""
 ":mod:`!argparse` --- Parser for command-line options, arguments and sub-"
 "commands"
 msgstr ""
+":mod:`!argparse` --- Parser per le opzioni della riga di comando, argomenti e sotto-"
+"comandi"
 
 #: library/argparse.rst:12
 msgid "**Source code:** :source:`Lib/argparse.py`"
-msgstr ""
+msgstr "**Codice sorgente:** :source:`Lib/argparse.py`"
 
 #: library/argparse.rst:-1
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 #: library/argparse.rst:18
 msgid ""
@@ -37,6 +40,9 @@ msgid ""
 "introduction to Python command-line parsing, have a look at the :ref:"
 "`argparse tutorial <argparse-tutorial>`."
 msgstr ""
+"Questa pagina contiene le informazioni di riferimento sull'API. Per una introduzione "
+"più semplice al parsing della riga di comando in Python, consulta :ref:"
+"`argparse tutorial <argparse-tutorial>`."
 
 #: library/argparse.rst:22
 msgid ""
@@ -47,10 +53,16 @@ msgid ""
 "The module will also issue errors when users give the program invalid "
 "arguments."
 msgstr ""
+"Il modulo :mod:`argparse` rende facile scrivere interfacce a riga di comando "
+"user-friendly. Il programma definisce quali argomenti richiede, e :mod:"
+"`argparse` determinerà come analizzarli da :data:`sys.argv`. Il modulo :"
+"mod:`argparse` genera anche automaticamente messaggi di aiuto e di utilizzo.  "
+"Inoltre, il modulo emetterà errori quando gli utenti forniscono argomenti non validi "
+"al programma."
 
 #: library/argparse.rst:30
 msgid "Core Functionality"
-msgstr ""
+msgstr "funzionalità Principale"
 
 #: library/argparse.rst:32
 msgid ""
@@ -59,6 +71,10 @@ msgid ""
 "for argument specifications and has options that apply to the parser as "
 "whole::"
 msgstr ""
+"Il supporto del modulo :mod:`argparse` per le interfacce a riga di comando "
+"è costruito attorno a un'istanza di :class:`argparse.ArgumentParser`.  È un contenitore "
+"per le specifiche degli argomenti e ha opzioni che si applicano all'intero "
+"parser::"
 
 #: library/argparse.rst:41
 msgid ""
@@ -66,28 +82,33 @@ msgid ""
 "specifications to the parser.  It supports positional arguments, options "
 "that accept values, and on/off flags::"
 msgstr ""
+"Il metodo :meth:`ArgumentParser.add_argument` collega le specifiche degli argomenti "
+"individuali al parser. Supporta argomenti posizionali, opzioni "
+"che accettano valori, e flag di attivazione/spegnimento(on/off)::"
 
 #: library/argparse.rst:50
 msgid ""
 "The :meth:`ArgumentParser.parse_args` method runs the parser and places the "
 "extracted data in a :class:`argparse.Namespace` object::"
 msgstr ""
+"Il metodo :meth:`ArgumentParser.parse_args` esegue il parser e inserisce i "
+"dati estratti in un oggetto :class:`argparse.Namespace`::"
 
 #: library/argparse.rst:58
 msgid "Quick Links for add_argument()"
-msgstr ""
+msgstr "Ecco dei collegamenti rapidi per il metodo add_argument()"
 
 #: library/argparse.rst:61
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: library/argparse.rst:61
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #: library/argparse.rst:61
 msgid "Values"
-msgstr ""
+msgstr "Valori"
 
 #: library/argparse.rst:63
 msgid "action_"
