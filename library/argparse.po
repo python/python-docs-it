@@ -338,6 +338,9 @@ msgid ""
 "with no arguments, and the :class:`ArgumentParser` will automatically "
 "determine the command-line arguments from :data:`sys.argv`."
 msgstr ""
+"In uno script, di solito si chiama :meth:`~ArgumentParser.parse_args` "
+"senza argomenti, e il :class:`ArgumentParser` determinerà automaticamente "
+"gli argomenti della riga di comando da :data:`sys.argv`."
 
 #: library/argparse.rst:185
 msgid "ArgumentParser objects"
