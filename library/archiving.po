@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 22:23+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-06-15 12:01+0200\n"
+"Last-Translator: Adnan Said <adnansaidre@gmail.com>\n"
+"Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: library/archiving.rst:5
 msgid "Data Compression and Archiving"
-msgstr ""
+msgstr "Compressione e Archiviazione dei Dati"
 
 #: library/archiving.rst:7
 msgid ""
@@ -28,3 +29,7 @@ msgid ""
 "format archives.  See also :ref:`archiving-operations` provided by the :mod:"
 "`shutil` module."
 msgstr ""
+"I moduli descritti in questo capitolo supportano la compressione dei dati con "
+"gli algoritmi zlib, gzip, bzip2 e lzma, e la creazione di archivi nei formati "
+"ZIP- e tar-. Vedi anche :ref:`archiving-operations` fornite dal modulo :mod:"
+"`shutil`."

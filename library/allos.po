@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.7\n"
@@ -31,8 +30,8 @@ msgid ""
 "interfaces, but they are available on most other systems as well.  Here's an "
 "overview:"
 msgstr ""
-"I moduli descritti in questo capitolo forniscono interfacce al sistema operativo "
-"funzionalità che sono disponibili su (quasi) tutti i sistemi operativi, come i file "
-"e un clock. Le interfacce sono generalmente modellate su quelle Unix o C "
+"I moduli descritti in questo capitolo forniscono interfacce alle funzionalità "
+"del sistema operativo che sono disponibili su (quasi) tutti i sistemi operativi, come i file "
+"e un clock. Le interfacce sono in generale modellate sul modello Unix o C, "
 "ma sono disponibili anche sulla maggior parte degli altri sistemi. Ecco una "
 "panoramica:"
